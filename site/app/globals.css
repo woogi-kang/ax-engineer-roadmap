@@ -38,8 +38,13 @@ body {
     "Noto Sans KR", "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+html:lang(ko) body {
+  line-break: strict;
   word-break: keep-all;
-  overflow-wrap: anywhere;
 }
 
 button,

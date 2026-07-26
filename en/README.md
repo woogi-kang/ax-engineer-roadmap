@@ -62,17 +62,15 @@ Proceed through the stages in order, returning to an earlier stage when operatin
 | 7. Workflow transition and role change | What must change for the new flow to become official work? | [Open](delivery-lifecycle/07-adoption-and-change.md) |
 | 8. Standardization and scale | What is actually reusable in a second workflow? | [Open](delivery-lifecycle/08-standardization-and-scale.md) |
 
-## How competencies are assessed
+## Five questions for assessing a competency
 
-Each competency asks five questions:
+Knowing the concepts is not enough. For each competency, answer the following questions and support the answers with deliverables or operating records.
 
-```text
-Understand     Can you explain the concepts and principles?
-Decide         Can you choose based on constraints and risk?
-Practice       Have you worked under realistic constraints?
-Demonstrate    Is there a result or record another person can verify?
-Failure modes  Can you recognize and avoid common mistakes?
-```
+1. **Understand** — Can you explain the concepts and principles in your own words?
+2. **Decide** — Can you explain why you chose an approach after comparing its constraints and risks?
+3. **Practice** — Have you worked under realistic data, authority, and exception conditions?
+4. **Leave evidence** — Did you leave a result or record that another person can review or reproduce?
+5. **Handle failure** — Can you recognize common mistakes and failures, then stop or recover when needed?
 
 Proficiency is based on delivery and operating responsibility rather than tenure or the number of tools used.
 

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
 import test from "node:test";
 
 async function render(pathname = "/") {
@@ -51,4 +52,18 @@ test("server-renders the English edition from the language query", async () => {
   assert.match(html, /AX Engineer path/);
   assert.match(html, /Complete path/);
   assert.match(html, /Organization readiness/);
+});
+
+test("keeps Korean words intact while preserving long-token fallback", () => {
+  const styles = fs.readFileSync(
+    new URL("../app/globals.css", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(styles, /overflow-wrap:\s*break-word/);
+  assert.match(
+    styles,
+    /html:lang\(ko\) body\s*\{[^}]*word-break:\s*keep-all/s,
+  );
+  assert.doesNotMatch(styles, /overflow-wrap:\s*anywhere/);
 });

@@ -6,7 +6,12 @@ const files = [];
 
 function walk(directory) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
-    if (entry.name === '.git' || entry.name === 'node_modules') {
+    if (
+      entry.name === '.git' ||
+      entry.name === 'node_modules' ||
+      entry.name === '.design-runs' ||
+      entry.name === '.orchestration'
+    ) {
       continue;
     }
 
