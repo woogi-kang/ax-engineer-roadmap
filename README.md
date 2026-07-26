@@ -64,7 +64,7 @@ flowchart LR
 5. [조직 AX 성숙도](organization-maturity/README.md): 개인 활용에서 자율적 개선 체계까지의 변화
 6. [실습 프로젝트와 사례](projects/README.md): 안전한 보조부터 두 번째 업무 재사용까지 남기는 증거
 
-[인터랙티브 로드맵 빌드 및 실행](site/README.md)
+[인터랙티브 로드맵 열기](https://ax-engineer-roadmap-korea.woogi-dev.chatgpt.site/) · [로컬 빌드 안내](site/README.md)
 
 ## 8단계 업무 전환 생애주기
 

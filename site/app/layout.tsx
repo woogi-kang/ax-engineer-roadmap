@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://ax-engineer-roadmap-korea.woogi-dev.chatgpt.site",
+  ),
   icons: {
     icon: "/favicon.svg",
   },

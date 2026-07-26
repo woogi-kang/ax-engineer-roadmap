@@ -5,6 +5,8 @@ The Markdown documents in the repository remain the source of truth; this app
 helps readers choose a role, assess organizational readiness, and find the next
 material to study or apply.
 
+[Open the production site](https://ax-engineer-roadmap-korea.woogi-dev.chatgpt.site/)
+
 ## Prerequisites
 
 - Node.js `>=22.13.0`

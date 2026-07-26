@@ -64,7 +64,7 @@ flowchart LR
 5. [Organizational AX maturity](organization-maturity/README.md): the progression from individual use to an adaptive operating model
 6. [Projects and cases](projects/README.md): evidence from safe assistance through second-workflow reuse
 
-[Build and run the interactive roadmap](../site/README.md)
+[Open the interactive roadmap](https://ax-engineer-roadmap-korea.woogi-dev.chatgpt.site/?lang=en) · [Local build guide](../site/README.md)
 
 ## Eight-stage workflow transformation lifecycle
 
