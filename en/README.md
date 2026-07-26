@@ -1,3 +1,5 @@
+![AX Engineer Roadmap operating console banner](../assets/banners/readme/operating-console.png)
+
 # AX Engineer Roadmap
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)

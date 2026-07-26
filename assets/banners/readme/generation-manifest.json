@@ -1,0 +1,46 @@
+{
+  "generator": "image_gen__imagegen",
+  "required_model": "gpt-image-2",
+  "model_binding": "trusted-host-fixed",
+  "local_model_verification": "unavailable",
+  "host_reported_model": null,
+  "generation_assurance": "generated_under_trusted_host_contract",
+  "generated_at": "2026-07-26",
+  "prompt_mode": "Format A, Tier 1",
+  "requested_size": "1792x1024",
+  "actual_size": "1659x948",
+  "selected_asset": "C3-BANNER-004",
+  "selection_status": "approved_for_readme",
+  "assets": [
+    {
+      "id": "C6-BANNER-001",
+      "title": "Operational Blueprint",
+      "path": "assets/banners/readme/operational-blueprint.png",
+      "sha256": "d98cda3bf23df88dcc661f16873dc574b86c4ed5d18eac0ea9d2616088bda8e8"
+    },
+    {
+      "id": "C3-BANNER-002",
+      "title": "Technical Field Manual",
+      "path": "assets/banners/readme/technical-field-manual.png",
+      "sha256": "6153fd6735d064b9568d921c1eb4a32aa4daa5ce23397b26f63c6302ff48e192"
+    },
+    {
+      "id": "C6-BANNER-003",
+      "title": "Reuse Convergence",
+      "path": "assets/banners/readme/reuse-convergence.png",
+      "sha256": "d64ccff23c5e55c2bd37ab6004134686c92b9b31cbfc2deef4b8140097629f52"
+    },
+    {
+      "id": "C3-BANNER-004",
+      "title": "Operating Console",
+      "path": "assets/banners/readme/operating-console.png",
+      "sha256": "7d7ebf683e3cf9f3aec42cdda79a0d0110b5e6cda248cafabc288b156087ef23"
+    },
+    {
+      "id": "C3-BANNER-005",
+      "title": "Operate Typography",
+      "path": "assets/banners/readme/operate-typography.png",
+      "sha256": "bfa05fe0720af6eb24c85f716750e7510f094ead7e27409b4611f1a7f161c9c0"
+    }
+  ]
+}

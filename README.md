@@ -1,3 +1,5 @@
+![AX Engineer Roadmap 운영 콘솔 배너](assets/banners/readme/operating-console.png)
+
 # AX Engineer Roadmap
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
