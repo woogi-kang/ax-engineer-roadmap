@@ -8,7 +8,7 @@
 
 ## 근거 / Evidence
 
-<!-- 공식 원문, 공개 저장소, 연구, 재현 가능한 현장 증거를 연결해 주세요. / Link official sources, public repositories, research, or reproducible practitioner evidence. -->
+<!-- 공식 원문, 공개 저장소, 연구, 재현 가능한 현장 결과물이나 운영 기록을 연결해 주세요. / Link official sources, public repositories, research, or reproducible practitioner evidence. -->
 
 - 출처 / Source:
 - 확인일 / Verified date:
@@ -25,5 +25,5 @@
 
 - [ ] `npm run check`
 - [ ] 변경된 링크를 직접 열어 봤다. / I opened and checked the changed links.
-- [ ] 새 역량 항목이 `알기·판단하기·해보기·결과 남기기·실패 패턴` 또는 `Understand · Decide · Practice · Demonstrate · Failure modes` 형식을 따른다.
-- [ ] 한국어 문장에서 번역투와 지나친 추상어를 확인했다. / I reviewed Korean prose for translationese and unnecessary abstraction.
+- [ ] 새 역량 항목이 `이해·선택·적용·검증·실패 대응` 또는 `Understand · Choose · Apply · Verify · Handle failure` 형식을 따른다.
+- [ ] 한국어 문장의 번역투와 불필요한 추상 표현을 점검했다. / I reviewed Korean prose for translationese and unnecessary abstraction.

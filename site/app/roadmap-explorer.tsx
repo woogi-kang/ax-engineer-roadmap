@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import { useMemo, useState } from "react";
 import {
   type Language,
   type Readiness,
@@ -21,10 +22,10 @@ const copy = {
     docs: "Markdown 문서",
     title: "업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵",
     intro:
-      "업무 발굴과 재설계부터 AI·시스템 통합, 배포, 현업 정착, 재사용까지 필요한 판단과 기술을 정리했습니다. 한국 조직에서 자주 확인해야 할 결재·권한·규제 조건도 함께 다룹니다.",
-    scope: "업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개",
+      "업무를 찾고 흐름을 다시 설계한 뒤, AI를 기존 시스템에 연결해 배포하고 현업에 적용하는 데 필요한 판단과 기술을 정리했습니다. 두 번째 업무에서 무엇을 재사용할지도 다룹니다. 한국 조직에서 자주 부딪히는 결재·권한·규제와 업무 기록·연동 조건도 함께 살핍니다.",
+    scope: "AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개",
     filterTitle: "내 시작점",
-    filterHelp: "역할과 현재 업무의 준비 상태를 선택하면 관련 경로만 남습니다.",
+    filterHelp: "역할과 현재 업무의 준비 상태를 선택하면 관련 항목만 추려 볼 수 있습니다.",
     roleLegend: "주된 책임",
     readinessLegend: "조직 준비 상태",
     searchLabel: "로드맵 검색",
@@ -32,17 +33,17 @@ const copy = {
     reset: "선택 초기화",
     summaryTitle: "추천 시작 방식",
     roleSummary: {
-      all: "전체 구조를 훑은 뒤 맡은 책임과 결과물이 부족한 항목부터 시작하세요.",
-      practitioner: "업무 흐름과 검수 기준을 먼저 만들고 외부 실행이 없는 보조 도구로 확인하세요.",
-      builder: "평가·권한·복구를 포함한 작은 업무 흐름을 먼저 끝까지 배포하세요.",
-      leader: "우선순위와 중단 기준을 합의하고 두 번째 업무의 재사용 전에는 전사 표준을 서두르지 마세요.",
-      guardian: "데이터 사용과 실행 권한, 관측, 수동 대체를 발견 단계부터 공동 설계하세요.",
+      all: "전체 구조를 훑은 뒤, 내가 맡은 항목 가운데 확인 가능한 결과나 기록이 없는 곳부터 시작하세요.",
+      practitioner: "업무 흐름과 검수 기준을 먼저 정하고, 외부 시스템을 바꾸지 않는 보조 도구로 검증하세요.",
+      builder: "평가, 권한, 복구를 포함해 범위가 작은 업무 하나를 먼저 끝까지 배포하세요.",
+      leader: "우선순위와 중단 기준을 합의하고, 두 번째 업무에서도 재사용되기 전에는 전사 표준을 서두르지 마세요.",
+      guardian: "데이터 사용, 실행 권한, 운영 상태 확인, 수동 처리 절차를 업무 발굴 단계부터 함께 설계하세요.",
     },
     readinessSummary: {
       all: "업무마다 준비 상태가 다를 수 있습니다.",
       it: "API가 있어도 승인·복구·현업 정착 방안이 없으면 운영 준비가 끝난 것이 아닙니다.",
-      saas: "계정 소유권, 내보내기, 식별자, 권한과 변경 기록을 먼저 맞추세요.",
-      low: "AI보다 최소 업무 기록, 입력 규격, 책임자와 예외 흐름부터 만드세요.",
+      saas: "계정 소유권, 데이터 내보내기, 식별자, 권한, 변경 기록을 먼저 맞추세요.",
+      low: "AI 도입보다 업무 기록 방식, 입력 규격, 책임자, 예외 처리부터 정하세요.",
     },
     roadmapTitle: "전체 경로",
     resultUnit: "개 항목",
@@ -51,10 +52,10 @@ const copy = {
     emptyTitle: "조건에 맞는 항목이 없습니다",
     emptyBody: "검색어를 지우거나 역할·준비 상태를 넓혀 보세요.",
     clearSearch: "검색어 지우기",
-    principleTitle: "공통 하네스는 두 번째 업무에서 범위가 정해집니다.",
+    principleTitle: "공통 하네스의 범위는 두 번째 업무에서 검증합니다.",
     principleBody:
-      "첫 업무에서 입력·출력·평가·승인·기록·복구 규칙을 정합니다. 두 번째 업무에서도 실제로 재사용한 규칙과 도구만 여러 팀이 함께 쓰도록 만듭니다.",
-    footer: "Markdown 문서가 원본입니다. 이 화면에서는 필요한 문서를 빠르게 찾을 수 있습니다.",
+      "첫 업무에서 입력, 출력, 평가, 승인, 기록, 복구 규칙을 정합니다. 두 번째 업무에서도 실제로 재사용한 규칙과 도구만 여러 팀의 공통 기반에 포함합니다.",
+    footer: "세부 내용은 Markdown 문서를 기준으로 합니다. 이 화면에서는 필요한 문서를 빠르게 찾을 수 있습니다.",
     korean: "한국어",
     english: "English",
     navLabel: "주요 링크",
@@ -117,19 +118,14 @@ function localized(value: { ko: string; en: string }, language: Language) {
 }
 
 export function RoadmapExplorer({
-  initialLanguage,
+  language,
 }: {
-  initialLanguage: Language;
+  language: Language;
 }) {
-  const [language, setLanguage] = useState<Language>(initialLanguage);
   const [role, setRole] = useState<Role>("all");
   const [readiness, setReadiness] = useState<Readiness>("all");
   const [query, setQuery] = useState("");
   const t = copy[language];
-
-  useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
 
   const filteredGroups = useMemo(() => {
     const locale = language === "ko" ? "ko-KR" : "en-US";
@@ -169,17 +165,6 @@ export function RoadmapExplorer({
   );
   const hasSelection = role !== "all" || readiness !== "all" || query !== "";
 
-  function changeLanguage(nextLanguage: Language) {
-    setLanguage(nextLanguage);
-    const url = new URL(window.location.href);
-    if (nextLanguage === "en") {
-      url.searchParams.set("lang", "en");
-    } else {
-      url.searchParams.delete("lang");
-    }
-    window.history.replaceState({}, "", url);
-  }
-
   function reset() {
     setRole("all");
     setReadiness("all");
@@ -210,20 +195,22 @@ export function RoadmapExplorer({
             {t.docs}
           </a>
           <div className="language-switch" aria-label={t.languageLabel}>
-            <button
-              type="button"
-              aria-pressed={language === "ko"}
-              onClick={() => changeLanguage("ko")}
+            <Link
+              href="/"
+              hrefLang="ko"
+              lang="ko"
+              aria-current={language === "ko" ? "page" : undefined}
             >
               {t.korean}
-            </button>
-            <button
-              type="button"
-              aria-pressed={language === "en"}
-              onClick={() => changeLanguage("en")}
+            </Link>
+            <Link
+              href="/en/"
+              hrefLang="en"
+              lang="en"
+              aria-current={language === "en" ? "page" : undefined}
             >
               {t.english}
-            </button>
+            </Link>
           </div>
         </nav>
       </header>
@@ -312,7 +299,8 @@ export function RoadmapExplorer({
             <div className="roadmap-heading">
               <h2 id="roadmap-title">{t.roadmapTitle}</h2>
               <p aria-live="polite" aria-atomic="true">
-                <strong>{resultCount}</strong> {t.resultUnit}
+                <strong>{resultCount}</strong>
+                {language === "ko" ? t.resultUnit : ` ${t.resultUnit}`}
               </p>
             </div>
 

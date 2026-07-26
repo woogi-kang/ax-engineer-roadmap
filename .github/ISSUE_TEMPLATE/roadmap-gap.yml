@@ -22,7 +22,7 @@ body:
     id: evidence
     attributes:
       label: 근거 / Evidence
-      description: 공식 자료, 공개 저장소, 연구, 재현 가능한 현장 증거를 연결해 주세요. / Link official material, public repositories, research, or reproducible practitioner evidence.
+      description: 공식 자료, 공개 저장소, 연구, 재현 가능한 현장 결과물이나 운영 기록을 연결해 주세요. / Link official material, public repositories, research, or reproducible practitioner evidence.
     validations:
       required: true
   - type: textarea

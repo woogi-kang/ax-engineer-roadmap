@@ -45,7 +45,7 @@ flowchart LR
 4. [Practice projects](projects/README.md): progress from a safe assistant to reuse in a second workflow.
 5. [Operations and organizational scale](organization-maturity/README.md): assess whether the organization can repeat the same operating capability across workflows.
 
-[Open the interactive roadmap](https://ax-engineer-roadmap-korea.woogi-dev.chatgpt.site/?lang=en) · [Run the site locally](../site/README.md)
+[Open the interactive roadmap](https://woogi-kang.github.io/ax-engineer-roadmap/en/) · [Run the site locally](../site/README.md)
 
 ## Eight-stage AX workflow transformation
 
@@ -67,9 +67,9 @@ Proceed through the stages in order, returning to an earlier stage when operatin
 Knowing the concepts is not enough. For each competency, answer the following questions and support the answers with deliverables or operating records.
 
 1. **Understand** — Can you explain the concepts and principles in your own words?
-2. **Decide** — Can you explain why you chose an approach after comparing its constraints and risks?
-3. **Practice** — Have you worked under realistic data, authority, and exception conditions?
-4. **Leave evidence** — Did you leave a result or record that another person can review or reproduce?
+2. **Choose** — Can you explain why you chose an approach after comparing its constraints and risks?
+3. **Apply** — Have you applied it under realistic data, authority, and exception conditions?
+4. **Verify** — Did you leave a result or record that another person can review or reproduce?
 5. **Handle failure** — Can you recognize common mistakes and failures, then stop or recover when needed?
 
 Proficiency is based on delivery and operating responsibility rather than tenure or the number of tools used.

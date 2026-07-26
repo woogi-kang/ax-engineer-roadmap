@@ -10,7 +10,11 @@ function walk(directory) {
       entry.name === '.git' ||
       entry.name === 'node_modules' ||
       entry.name === '.design-runs' ||
-      entry.name === '.orchestration'
+      entry.name === '.orchestration' ||
+      entry.name === '.next' ||
+      entry.name === '.vinext' ||
+      entry.name === 'dist' ||
+      entry.name === 'out'
     ) {
       continue;
     }

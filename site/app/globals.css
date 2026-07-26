@@ -39,12 +39,18 @@ body {
   font-size: 16px;
   line-height: 1.6;
   word-break: normal;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
 }
 
 html:lang(ko) body {
   line-break: strict;
   word-break: keep-all;
+}
+
+code,
+pre {
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 button,
@@ -154,18 +160,20 @@ button {
   background: var(--surface);
 }
 
-.language-switch button {
+.language-switch a {
+  display: inline-flex;
   min-height: 36px;
+  align-items: center;
   padding: 4px 11px;
   border: 0;
   border-radius: 999px;
   background: transparent;
-  cursor: pointer;
   font-size: 0.78rem;
   font-weight: 700;
+  text-decoration: none;
 }
 
-.language-switch button[aria-pressed="true"] {
+.language-switch a[aria-current="page"] {
   background: var(--ink);
   color: var(--surface);
 }
@@ -669,7 +677,7 @@ footer a {
     display: none;
   }
 
-  .language-switch button {
+  .language-switch a {
     min-height: 40px;
     padding-inline: 10px;
   }

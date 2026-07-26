@@ -6,7 +6,7 @@ regulation, and digital-readiness conditions often encountered in Korean
 organizations. The Markdown documents remain the authoritative version; this
 app helps AX Engineers and their collaborators find the relevant material.
 
-[Open the production site](https://ax-engineer-roadmap-korea.woogi-dev.chatgpt.site/)
+[Open the production site](https://woogi-kang.github.io/ax-engineer-roadmap/)
 
 ## Prerequisites
 
@@ -32,8 +32,20 @@ npm run dev
 
 ```bash
 npm test
+npm run test:pages
 npm run lint
 ```
 
-The production build uses [vinext](https://github.com/cloudflare/vinext) and
-Cloudflare Workers through the OpenAI Sites runtime.
+## Deployment
+
+The primary deployment is a static export hosted on GitHub Pages:
+
+```bash
+npm run build:pages
+```
+
+The output is written to `out/`. Pushes to `main` deploy it through
+`.github/workflows/deploy-pages.yml`.
+
+The existing [vinext](https://github.com/cloudflare/vinext) build remains
+available for the OpenAI Sites runtime.

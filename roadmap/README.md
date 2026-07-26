@@ -1,6 +1,6 @@
 # 직무 로드맵
 
-이 디렉터리는 조직 내부 AX Engineer가 맡는 책임과 숙련도를 설명한다. 협업 상대의 책임은 [협업 역할 안내](../tracks/README.md), 구현에 필요한 학습은 [기술 역량](../technical-foundations/README.md)에서 이어진다.
+이 디렉터리는 조직 내부 AX Engineer가 맡는 책임과 숙련도를 설명한다. 협업 상대의 책임은 [협업 역할 안내](../tracks/README.md)에서, 구현에 필요한 학습 내용은 [기술 역량](../technical-foundations/README.md)에서 확인한다.
 
 ## 문서
 
