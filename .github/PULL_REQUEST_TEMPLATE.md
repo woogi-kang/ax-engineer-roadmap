@@ -25,4 +25,5 @@
 
 - [ ] `npm run check`
 - [ ] 변경된 링크를 직접 열어 봤다. / I opened and checked the changed links.
-- [ ] 새 역량 항목이 `알기·판단하기·해보기·증명하기·실패 패턴` 또는 `Understand · Decide · Practice · Demonstrate · Failure modes` 형식을 따른다.
+- [ ] 새 역량 항목이 `알기·판단하기·해보기·결과 남기기·실패 패턴` 또는 `Understand · Decide · Practice · Demonstrate · Failure modes` 형식을 따른다.
+- [ ] 한국어 문장에서 번역투와 지나친 추상어를 확인했다. / I reviewed Korean prose for translationese and unnecessary abstraction.

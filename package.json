@@ -2,7 +2,7 @@
   "name": "ax-engineer-roadmap",
   "version": "0.2.0",
   "private": true,
-  "description": "Evidence-oriented AX Engineer roadmap in Korean and English",
+  "description": "Practical AX Engineer roadmap in Korean and English",
   "scripts": {
     "check": "node scripts/check-links.mjs && node scripts/check-roadmap.mjs"
   },

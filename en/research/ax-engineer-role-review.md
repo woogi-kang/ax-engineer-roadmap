@@ -106,17 +106,17 @@ The three operating models in the [role model](../roadmap/role-model.md) describ
 
 This repository does not cover career tracks that deploy a product into external customer environments. Even when the technology overlaps, organizational relationships, success criteria, reuse paths, and handoff responsibilities differ.
 
-### Use deployment responsibility as the learning unit
+### Organize learning around deployment responsibility
 
-Prompting, RAG, agents, and automation tools are necessary competencies, but they do not describe the entire role. The unit of learning is evidence connecting one workflow from problem discovery through operations, adoption, and standardization.
+Prompting, RAG, agents, and automation tools are necessary competencies, but they do not describe the entire role. Learning should follow one workflow from problem discovery through operations, adoption, and standardization, with reviewable results at each stage.
 
 ### Separate individual proficiency from organizational maturity
 
-One excellent person producing a successful case does not mean the organization has transformed. Individual proficiency, the transformation lifecycle of one workflow, and organizational AX maturity remain separate maps.
+One excellent person producing a successful case does not mean the organization has transformed. Individual proficiency, the eight-stage transformation of one workflow, and organizational AX maturity remain separate maps.
 
-### Define the shared harness as a minimum work contract
+### Define the shared harness as common work rules
 
-The roadmap does not force one model, framework, or UI. It aligns compatibility for systems of record, inputs, outputs, validation, approval, records, permissions, and recovery. A structure is not promoted to an enterprise standard until reuse has been demonstrated in a second workflow.
+The roadmap does not force one model, framework, or UI. It aligns systems of record, inputs, outputs, validation, approval, records, permissions, and recovery so workflows can work together. A structure is not promoted to an enterprise standard until reuse has been demonstrated in a second workflow.
 
 ### Do not treat job postings as permanent truth
 

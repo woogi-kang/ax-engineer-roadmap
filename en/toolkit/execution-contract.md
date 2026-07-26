@@ -1,10 +1,12 @@
-# Execution Contract
+# Workflow Execution Rules
 
-## 1. Purpose and accountability
+Use this template to define the input, output, evaluation, permission, approval, record, and recovery rules for one AI-enabled workflow. It complements data and API contracts; it does not replace them.
+
+## 1. Purpose and ownership
 
 | Field | Content |
 |---|---|
-| Contract name and version |  |
+| Document name and version |  |
 | Workflow purpose |  |
 | Primary users |  |
 | Process owner |  |
@@ -13,19 +15,19 @@
 | Approver |  |
 | Security or policy owner |  |
 
-## 2. Input contract
+## 2. Input conditions
 
 | Input | Source | Required | Freshness | Missing or error handling | Sensitivity |
 |---|---|---:|---|---|---|
 |  |  |  |  |  |  |
 
-## 3. Output contract
+## 3. Output conditions
 
 | Output | Format or schema | Quality criteria | Evidence | Next user or system |
 |---|---|---|---|---|
 |  |  |  |  |  |
 
-## 4. Evaluation contract
+## 4. Evaluation criteria
 
 | Dimension | Criteria | Data | Adjudicator | Action on failure |
 |---|---|---|---|---|
@@ -72,7 +74,7 @@ Initial autonomy: `A0 / A1 / A2 / A3 / A4`
 
 ## 8. Change and compatibility
 
-- Contract-change approver:
+- Change approver:
 - Regression evaluation:
 - Previous-version support:
 - Retirement and migration:

@@ -1,4 +1,4 @@
-# AX Builder Track
+# AX Engineer Execution Path
 
 ## Audience
 
@@ -88,7 +88,7 @@ Builders should not decide these alone:
 - Risk tolerance and retirement of the old procedure
 - Business priority during incidents
 
-Agree through the execution contract with the [Business Practitioner](business-practitioner.md), [Leader and Governance](leader-and-governance.md), and [Data, Security, and Operations](data-security-operations.md) owners.
+Agree through the [Workflow Execution Rules](../toolkit/execution-contract.md) with the [Business Practitioner](business-practitioner.md), [Leader and Decision Owner](leader-and-governance.md), and [Data, Security, and Operations](data-security-operations.md) partners.
 
 ## Common failures
 

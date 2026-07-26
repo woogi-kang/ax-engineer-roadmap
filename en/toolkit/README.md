@@ -1,12 +1,12 @@
-# Practitioner Toolkit
+# Working Templates
 
-These templates are not forms to complete for their own sake. They are tools for checking decisions and evidence that are easy to miss.
+These templates help AX Engineers and their collaborators check decisions, ownership, and operating conditions that are easy to miss. Use only the sections needed for the workflow's risk and scope.
 
 ## Templates
 
 - [Workflow discovery card](workflow-discovery-card.md)
 - [Use-case scorecard](use-case-scorecard.md)
-- [Execution contract](execution-contract.md)
+- [Workflow execution rules](execution-contract.md)
 - [Experiment card](experiment-card.md)
 - [Evidence ledger](evidence-ledger.md)
 - [Case-study template](case-study-template.md)

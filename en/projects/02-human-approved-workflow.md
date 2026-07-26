@@ -39,7 +39,7 @@ Workflow input
 ## By role
 
 - Business practitioner: approval criteria, exceptions, workflow impact
-- AX Builder: policy, approval state, audit events
+- AX Engineer: policy, approval state, audit events
 - Leader and governance: delegation, backup approver, stop authority
 - Data, security, operations: access, retention, approval records
 

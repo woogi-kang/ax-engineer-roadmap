@@ -1,4 +1,4 @@
-# 3. Process Redesign
+# 3. Redesign the Workflow
 
 ## Purpose
 

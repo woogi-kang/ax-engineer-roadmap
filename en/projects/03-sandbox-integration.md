@@ -35,7 +35,7 @@ Approved request
 ## By role
 
 - Business practitioner: business meaning of partial success and manual priority
-- AX Builder: integration, state, deduplication, recovery
+- AX Engineer: integration, state, deduplication, recovery
 - Leader and governance: criteria for live production
 - Data, security, operations: isolation, permission, records, incident drills
 

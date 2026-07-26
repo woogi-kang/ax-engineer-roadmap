@@ -1,12 +1,12 @@
 # 실무 템플릿
 
-템플릿은 문서를 채우기 위한 형식이 아니라 빠뜨리기 쉬운 판단과 증거를 확인하기 위한 도구다.
+템플릿은 빈칸을 채우기 위한 문서가 아니다. 업무를 바꿀 때 빠뜨리기 쉬운 판단, 책임, 검증 결과를 확인하는 데 사용한다.
 
 ## 목록
 
 - [업무 발굴 카드](workflow-discovery-card.md)
 - [업무 후보 평가표](use-case-scorecard.md)
-- [실행 계약](execution-contract.md)
+- [업무 실행 규칙](execution-contract.md)
 - [실험 카드](experiment-card.md)
 - [근거 기록](evidence-ledger.md)
 - [사례 작성 템플릿](case-study-template.md)

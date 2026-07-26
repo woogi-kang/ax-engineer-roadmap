@@ -61,7 +61,7 @@ Collect public VOC
 | `topic` | Topic classification | Optional | Model and rule version |
 | `evidence_ref` | Link between proposal and source | Yes | Reverse traceability |
 
-## Draft execution contract
+## Draft workflow execution rules
 
 ### Input
 
@@ -137,7 +137,7 @@ Evaluation dimensions:
 
 - Data provenance and collection scope
 - Inventory of source, derived, and result files
-- Data and execution contracts
+- Data contracts and workflow execution rules
 - Evaluation data and results
 - Deployment architecture and runbook
 - Incident and recovery records

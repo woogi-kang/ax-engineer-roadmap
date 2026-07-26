@@ -1,14 +1,14 @@
 # 직무 로드맵
 
-이 디렉터리는 조직 내부 AX Engineer가 맡는 책임을 역량과 숙련도 관점에서 설명한다. 역할별 시작점은 [역할별 트랙](../tracks/README.md), 구현 학습은 [기술 기반](../technical-foundations/README.md)에서 이어진다.
+이 디렉터리는 조직 내부 AX Engineer가 맡는 책임과 숙련도를 설명한다. 협업 상대의 책임은 [협업 역할 안내](../tracks/README.md), 구현에 필요한 학습은 [기술 역량](../technical-foundations/README.md)에서 이어진다.
 
 ## 문서
 
 1. [역할 모델](role-model.md)
 2. [역량 지도](competency-map.md)
 3. [숙련도 기준](proficiency-levels.md)
-4. [역할별 학습 트랙](../tracks/README.md)
-5. [AX 기술 기반](../technical-foundations/README.md)
+4. [협업 역할 안내](../tracks/README.md)
+5. [AX 엔지니어의 기술 역량](../technical-foundations/README.md)
 
 ## 읽는 원칙
 

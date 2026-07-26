@@ -13,18 +13,18 @@ export const metadata: Metadata = {
     template: "%s · AX Engineer Roadmap",
   },
   description:
-    "한국 조직의 운영 현실에 기반해 다른 환경에서도 재사용할 수 있도록 설계한 AX Engineer 인터랙티브 로드맵.",
+    "AX 엔지니어가 업무를 고르고, AI를 기존 시스템에 연결하고, 운영까지 이어 가는 데 필요한 오픈 로드맵.",
   openGraph: {
     title: "AX Engineer Roadmap",
     description:
-      "범용 AX 원칙과 한국 조직의 결재·권한·규제·디지털 기반을 함께 탐색하는 오픈 로드맵.",
+      "AX 엔지니어의 역할, 업무 전환 8단계, 기술 역량, 실습 프로젝트를 한곳에서 확인하는 오픈 로드맵.",
     type: "website",
     images: [
       {
         url: "/og-roadmap.png",
         width: 1672,
         height: 941,
-        alt: "AX Engineer Roadmap 역할, 업무 흐름, 운영 증거 도해",
+        alt: "AX 엔지니어의 역할, 업무 전환 과정, 실습 프로젝트를 보여 주는 로드맵",
       },
     ],
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AX Engineer Roadmap",
     description:
-      "한국 조직의 운영 현실에 기반해 다른 환경에서도 재사용할 수 있도록 설계한 AX Engineer 인터랙티브 로드맵.",
+      "AX 엔지니어가 업무를 고르고, AI를 기존 시스템에 연결하고, 운영까지 이어 가는 데 필요한 오픈 로드맵.",
     images: ["/og-roadmap.png"],
   },
 };

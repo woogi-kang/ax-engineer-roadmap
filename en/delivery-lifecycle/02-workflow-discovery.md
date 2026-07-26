@@ -1,4 +1,4 @@
-# 2. Workflow Discovery
+# 2. Understand the Current Workflow
 
 ## Purpose
 

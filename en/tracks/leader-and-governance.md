@@ -1,4 +1,4 @@
-# Leader and Governance Track
+# Leader and Decision-Owner Collaboration Guide
 
 ## Audience
 

@@ -8,7 +8,7 @@
 | 기간 |  |
 | 책임자 |  |
 | 관련 업무 |  |
-| 관련 실행 계약 |  |
+| 관련 업무 실행 규칙 |  |
 | 현재 상태 | planned / running / complete / stopped |
 
 ## 가설

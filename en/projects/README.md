@@ -1,16 +1,16 @@
-# Evidence-Based Practice Projects
+# Practice Projects for AX Engineers
 
-These projects expand delivery responsibility step by step rather than increasing feature complexity. Do not increase autonomy or live-system impact until the prior project's exit criteria are met.
+These projects increase workflow impact and the AX Engineer's delivery responsibility step by step. Do not increase autonomy or live-system impact until the prior project's exit criteria are met.
 
 ## Project sequence
 
-| Stage | Project | Action scope | Core evidence |
+| Stage | Project | Action scope | Result to verify |
 |---|---|---|---|
 | 1 | [Safe Assistant](01-safe-assistant.md) | Public or synthetic data, no external action | Eval set, provenance, refusal |
 | 2 | [Human-Approved Workflow](02-human-approved-workflow.md) | Record only approved proposed actions | Approval criteria, before and after, audit |
 | 3 | [Sandbox Integration](03-sandbox-integration.md) | Read and write in test systems | Permission separation, deduplication, recovery |
 | 4 | [Production Pilot](04-production-pilot.md) | Limited users and workflow | SLO, adoption, incidents, handoff |
-| 5 | [Second-Workflow Reuse](05-second-workflow-reuse.md) | Reuse of validated contracts | Reuse comparison, version and extension decision |
+| 5 | [Second-Workflow Reuse](05-second-workflow-reuse.md) | Reuse of validated rules and components | Reuse comparison, versioning, and standardization decision |
 
 ```mermaid
 flowchart LR
@@ -46,10 +46,10 @@ Non-developers can produce equivalent decisions and evidence through documents, 
 Templates:
 
 - [Experiment Card](../toolkit/experiment-card.md)
-- [Execution Contract](../toolkit/execution-contract.md)
+- [Workflow Execution Rules](../toolkit/execution-contract.md)
 - [Evidence Ledger](../toolkit/evidence-ledger.md)
 - [Case Study](../toolkit/case-study-template.md)
 
 ## Exit rule
 
-Another person must verify each project's exit criteria. The implementer cannot be the sole completion judge. A failed project is still valid evidence when stop conditions were honored and the next decision is explainable.
+Another person must verify each project's exit criteria. The implementer cannot be the sole completion judge. A failed project still provides a valid result when stop conditions were honored and the next decision is explainable.

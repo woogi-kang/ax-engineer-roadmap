@@ -1,10 +1,10 @@
-# 5. Execution Contracts and Controls
+# 5. Execution Rules and Controls
 
 ## Purpose
 
-Bind input, output, evaluation, permissions, approval, records, and recovery for an AI workflow into one contract.
+Define the input, output, evaluation, permission, approval, record, and recovery rules for an AI-enabled workflow in one place. This repository calls the resulting document an `execution contract`.
 
-## Minimum contract
+## Minimum execution rules
 
 | Area | What to define |
 |---|---|
@@ -33,12 +33,12 @@ Do not increase autonomy based only on model performance. Consider potential har
 
 ## Key activities
 
-1. Complete the [execution contract template](../toolkit/execution-contract.md).
+1. Complete the [workflow execution rules template](../toolkit/execution-contract.md).
 2. Connect normal, edge, and failure evaluation cases.
 3. Define role-based permissions and approval expiry.
 4. Record execution and outcome under the same identifier.
 5. Define stop, retry, and recovery by failure type.
-6. Define contract versions and compatibility policy.
+6. Define rule versions and compatibility policy.
 
 ## Deliverables
 

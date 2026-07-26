@@ -1,6 +1,6 @@
-# AX Technical Foundations
+# Technical Foundations for AX Engineers
 
-This directory is not a list of technologies for building AI agents. It covers the technical judgments AX Builders need to deploy and operate workflow systems safely.
+This directory covers the technical judgments AX Engineers need to build, deploy, and operate workflow systems safely. Products and frameworks are implementation choices rather than the roadmap's core competencies.
 
 ## Apply this principle first
 
@@ -31,10 +31,10 @@ Keep the simpler design if it meets success criteria. Model, framework, and clou
 
 ## Depth by role
 
-- **Business practitioner:** explain risks and approval boundaries.
-- **AX Builder:** implement, test, and produce operating evidence.
-- **Leader and governance:** ask the questions needed for investment, accountability, vendor, and stop decisions.
-- **Data, security, and operations:** co-design data use, access, observability, and incident response.
+- **AX Engineer:** implement, test, deploy, and retain operating records.
+- **Business practitioner:** explain workflow criteria, acceptance, and approval boundaries.
+- **Leader and decision owner:** ask the questions needed for investment, accountability, vendor, and stop decisions.
+- **Data, security, and operations partner:** co-design data use, access, observability, and incident response.
 
 ## Technical node completion
 

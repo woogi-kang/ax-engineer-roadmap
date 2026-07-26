@@ -1,4 +1,4 @@
-# Business Practitioner Track
+# Business Practitioner Collaboration Guide
 
 ## Audience
 
@@ -119,4 +119,4 @@ Evidence:
 1. [Organization Readiness](../start-here/organization-readiness.md)
 2. [Safe Assistant](../projects/01-safe-assistant.md)
 3. [Human-Approved Workflow](../projects/02-human-approved-workflow.md)
-4. [Eight-Stage Lifecycle](../delivery-lifecycle/README.md)
+4. [Eight-Stage AX Transformation](../delivery-lifecycle/README.md)

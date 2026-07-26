@@ -1,14 +1,14 @@
 # Role Roadmap
 
-This directory describes the responsibilities of internal AX Engineers through competencies and proficiency levels. Continue to [Role-Based Tracks](../tracks/README.md) for starting points and [Technical Foundations](../technical-foundations/README.md) for implementation learning.
+This directory describes the responsibilities and proficiency of internal AX Engineers. Continue to the [Collaboration Role Guides](../tracks/README.md) for partner decisions and the [Technical Foundations](../technical-foundations/README.md) for implementation depth.
 
 ## Documents
 
 1. [Role model](role-model.md)
 2. [Competency map](competency-map.md)
 3. [Proficiency levels](proficiency-levels.md)
-4. [Role-based learning tracks](../tracks/README.md)
-5. [AX technical foundations](../technical-foundations/README.md)
+4. [Collaboration role guides](../tracks/README.md)
+5. [Technical foundations for AX Engineers](../technical-foundations/README.md)
 
 ## Reading principles
 

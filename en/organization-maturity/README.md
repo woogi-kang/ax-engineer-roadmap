@@ -61,7 +61,7 @@ Conditions for the next level:
 
 ### M3. Shared operating foundation
 
-- Teams may use different technologies but share a minimum work contract.
+- Teams may use different technologies but follow the same minimum work rules.
 - Systems of record, permissions, execution, evaluation, audit, and cost are visible through shared foundations.
 - A procedure and templates exist for adding new workflows.
 - The central AX team manages foundations and criteria instead of implementing every workflow itself.

@@ -49,7 +49,7 @@ Bottlenecks, waiting, exceptions, and handoffs:
 ## 6. Implementation and deployment
 
 - Data contract:
-- Execution contract:
+- Workflow execution rules:
 - System integration:
 - Autonomy:
 - Permissions and approvals:
@@ -57,7 +57,7 @@ Bottlenecks, waiting, exceptions, and handoffs:
 - Observability:
 - Recovery:
 
-## 7. Adoption and handoff
+## 7. Transition and handoff
 
 - User acceptance:
 - Training and support:

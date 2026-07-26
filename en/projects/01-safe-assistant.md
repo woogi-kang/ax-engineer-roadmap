@@ -37,7 +37,7 @@ Question or document
 ## By role
 
 - Business practitioner: cases, rubric, prohibited questions, corrections
-- AX Builder: retrieval, generation, structured output, evaluation
+- AX Engineer: retrieval, generation, structured output, evaluation
 - Leader and governance: scope, stop, and publication approval
 - Data, security, operations: provenance, prohibited storage, records
 

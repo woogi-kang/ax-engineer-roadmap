@@ -2,7 +2,7 @@
 
 ## 1. Definition used in this repository
 
-An **AX Engineer** is an engineer who discovers internal workflow problems, redesigns processes, and connects AI to existing data, systems, and permissions to produce an operable change.
+An **AX Engineer** is an engineer who finds problems in real internal workflows, redesigns those workflows, and connects AI to existing data, systems, and permissions. The work is complete only when another person can review, operate, and take over the resulting process.
 
 The title and scope still vary by organization. Some companies emphasize automation development embedded in a business or engineering team. Others assign agent execution foundations and internal data integration. Some roles place more weight on tool operations, training, and adoption.
 
@@ -25,14 +25,14 @@ An AX Engineer's responsibility does not end when a prototype works. One cycle e
 ```mermaid
 flowchart LR
     D["Discover<br/>Understand workflows, users, and constraints"] --> R["Redesign<br/>Redesign the workflow"]
-    R --> B["Build<br/>Implement a thin vertical slice"]
+    R --> B["Build<br/>Implement a small end-to-end slice"]
     B --> O["Operate<br/>Deploy, evaluate, and recover"]
-    O --> A["Adopt<br/>Drive adoption and handoff"]
+    O --> A["Transition<br/>Move the workflow into regular use and hand it over"]
     A --> S["Standardize<br/>Extract reusable contracts and foundations"]
     S -->|"Learning from operations"| D
 ```
 
-This does not mean the AX Engineer owns every decision. They work with process owners, data owners, security and legal teams, and existing system operators. Their responsibility is to connect technical outcomes with operational evidence.
+This does not mean the AX Engineer owns every decision. They work with process owners, data owners, security and legal teams, and existing system operators. Their responsibility is to connect technical outcomes with operating records that those owners can review.
 
 ## 3. Three operating models
 

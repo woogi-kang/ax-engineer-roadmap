@@ -1,4 +1,4 @@
-# 1. Outcomes and Boundaries
+# 1. Goals and Boundaries
 
 ## Purpose
 

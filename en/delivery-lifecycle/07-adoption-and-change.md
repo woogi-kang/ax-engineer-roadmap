@@ -1,4 +1,4 @@
-# 7. Adoption and Role Change
+# 7. Workflow Transition and Role Change
 
 ## Purpose
 

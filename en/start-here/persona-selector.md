@@ -1,27 +1,27 @@
 # Persona Selector
 
-Choose a track based on the decisions you make in the current workflow, not your job title.
+Confirm responsibility from the decisions you make in the current workflow, not your job title.
 
 ## Quick selection
 
 Start with the row that best matches your work.
 
-| Decisions you often make | Starting track |
+| Decisions you often make | Read first |
 |---|---|
-| Define the problem, accept results, and help colleagues adopt a new procedure | [Business Practitioner](../tracks/business-practitioner.md) |
-| Connect systems, implement and evaluate AI, and deploy to production | [AX Builder](../tracks/ax-builder.md) |
-| Set priorities and budget and define approval, accountability, and procurement | [Leader and Governance](../tracks/leader-and-governance.md) |
-| Authorize data use and operate access, privacy, incidents, and audit | [Data, Security, and Operations](../tracks/data-security-operations.md) |
+| Connect systems, implement and evaluate AI, and deploy to production | [AX Engineer execution path](../tracks/ax-builder.md) |
+| Define the problem, accept results, and help colleagues adopt a new procedure | [Business practitioner guide](../tracks/business-practitioner.md) |
+| Set priorities and budget and define approval, accountability, and procurement | [Leader and decision-owner guide](../tracks/leader-and-governance.md) |
+| Authorize data use and operate access, privacy, incidents, and audit | [Data, security, and operations guide](../tracks/data-security-operations.md) |
 
 ## Roles can overlap
 
-One person may be both the workflow owner and Builder in a small organization. Keep the responsibilities explicit:
+One person may own both business and AX implementation responsibilities in a small organization. Keep the decisions explicit:
 
 ```text
 Workflow outcome approval: Customer Support Owner
 Data-use approval: Privacy Officer
 Deployment and rollback: Service Operations Owner
-Model and prompt changes: AX Builder
+Model and prompt changes: AX Engineer
 Retirement of old procedure: Business Owner
 ```
 
@@ -41,8 +41,8 @@ Begin with the [Non-Developer Glossary](non-developer-glossary.md) and [Safe Ass
 
 ## What should developers add?
 
-Existing web, backend, or data experience does not replace workflow discovery, approval ownership, adoption, and retirement of the old process. Read the acceptance and SOP sections of the [Business Practitioner track](../tracks/business-practitioner.md) alongside the [AX Builder track](../tracks/ax-builder.md).
+Existing web, backend, or data experience does not replace workflow discovery, approval ownership, adoption, and retirement of the old process. Read the acceptance and SOP sections of the [Business Practitioner Guide](../tracks/business-practitioner.md) alongside the [AX Engineer Execution Path](../tracks/ax-builder.md).
 
 ## What should leaders produce?
 
-Do not stop at a strategy document. Require a baseline, stop conditions, ownership, support model, and reuse evidence from a second workflow. The [Leader and Governance track](../tracks/leader-and-governance.md) addresses organizational delivery capacity rather than technology procurement alone.
+The strategy document should include a baseline, stop conditions, ownership, a support model, and reuse results from a second workflow. The [Leader and Decision-Owner Guide](../tracks/leader-and-governance.md) addresses organizational delivery capacity rather than technology procurement alone.

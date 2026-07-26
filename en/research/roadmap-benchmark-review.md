@@ -43,7 +43,7 @@ The public [`ai-agents` content directory](https://github.com/nilbuild/developer
 10. Structured logging, tracing, and observability
 11. Privacy, sandboxing, prompt attacks, and safety testing
 
-This is a useful technical scope for AX Builders, especially because it reaches beyond model usage into evaluation, operations, and security.
+This is a useful technical scope for AX Engineers, especially because it reaches beyond model usage into evaluation, operations, and security.
 
 ## What an AX Engineer roadmap must add
 
@@ -59,7 +59,7 @@ Building an AI agent does not by itself change an organization's work. A technic
 | How does it become official work? | A new tool without changes to SOPs, KPIs, roles, and support leaves duplicate work behind. |
 | What is reused in the second workflow? | The first implementation cannot be declared an enterprise standard without reuse evidence. |
 
-This roadmap therefore places technical foundations inside an eight-stage workflow transformation lifecycle. Technology is a means to change work safely, not a separate destination.
+This roadmap therefore connects technical foundations to an eight-stage workflow transformation. Technology is a means to change work safely, not a separate destination.
 
 ## Additional conditions for Korean organizations
 
@@ -93,18 +93,16 @@ Procurement should cover service-account ownership, data export, log retention, 
 
 ```mermaid
 flowchart LR
-    A["Role and readiness diagnosis"] --> B["Common AX literacy"]
-    B --> C["Role-based tracks"]
-    C --> D["Required technical foundations"]
-    D --> E["Evidence-based projects"]
-    E --> F["Eight-stage transformation"]
-    F --> G["Reuse tested in a second workflow"]
+    A["Confirm the role and readiness"] --> B["Transform one workflow through eight stages"]
+    B --> C["Build the technical capabilities required by that workflow"]
+    C --> D["Practice through five projects"]
+    D --> E["Operate, reuse, and expand across the organization"]
 ```
 
 - [Start Here](../start-here/README.md) comes before developer prerequisites.
-- [Role-based tracks](../tracks/README.md) include non-developers and shared accountability.
-- [Technical foundations](../technical-foundations/README.md) provide implementation depth for AX Builders.
-- [Practice projects](../projects/README.md) require artifacts and evidence, not feature completion alone.
+- [Collaboration role guides](../tracks/README.md) include non-developers and shared accountability.
+- [Technical capabilities](../technical-foundations/README.md) provide implementation depth for AX Engineers.
+- [Practice projects](../projects/README.md) require reviewable results, not feature completion alone.
 - The interactive map is a navigation layer; Markdown remains the source of truth.
 
 ## Sources

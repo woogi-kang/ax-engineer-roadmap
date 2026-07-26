@@ -18,12 +18,12 @@ flowchart LR
 - Add actions that change external systems only after human approval and recovery paths are ready.
 - Every week, decide `continue / revise / hold / stop` and record the evidence.
 - Preserve workflow identifiers, evaluation, approvals, and records even when changing tools or models.
-- Select a primary and collaboration track in the [Persona Selector](../start-here/persona-selector.md).
+- Confirm the AX Engineer responsibilities and collaboration roles in the [Role Guide](../start-here/persona-selector.md).
 - Use [Organization Readiness](../start-here/organization-readiness.md) to bound the action scope.
 
-## Choose a practice track
+## Choose a practice setting
 
-Choose a track according to your access to organizational systems and users. The deliverables may look similar, but their evidentiary strength differs.
+Choose a setting according to your access to organizational systems and users. The deliverables may look similar, but they support different claims.
 
 | Area | Organization track | Public simulation track |
 |---|---|---|
@@ -33,9 +33,9 @@ Choose a track according to your access to organizational systems and users. The
 | What it can verify | Production deployment, adoption, handoff, and procedure change | Design, implementation, evaluation, recovery practice, and usability feedback |
 | What it cannot claim | Unmeasured organizational impact | Real production adoption, official procedure change, or organizational impact |
 
-A public simulation can provide valid technical and judgment evidence for role preparation. By itself, it is not evidence of Builder- or Operator-level production responsibility. Mark the case title and outcomes as a `simulation`.
+A public simulation can show technical skill and judgment. By itself, it does not prove production responsibility at the Builder or Operator level. Mark the case title and outcomes as a `simulation`.
 
-The five [Evidence-Based Practice Projects](../projects/README.md) provide exit points for this 12-week path. Weeks 1–4 produce the safe assistant, weeks 5–6 add approval and sandbox integration, weeks 7–8 run a pilot or simulation, and weeks 9–12 test reuse in a second workflow.
+The five [practice projects](../projects/README.md) provide checkpoints for this 12-week path. Weeks 1–4 produce the safe assistant, weeks 5–6 add approval and sandbox integration, weeks 7–8 run a pilot or simulation, and weeks 9–12 test reuse in a second workflow.
 
 ## Cycle 1. Validate the problem and solution
 
@@ -97,7 +97,7 @@ Evidence:
 
 ## Cycle 2. Production deployment and adoption
 
-### Week 5: Define execution contracts and integration
+### Week 5: Define workflow execution rules and integration
 
 - Separate what AI may read, propose, and execute.
 - Define human approval points and criteria by role.
@@ -106,7 +106,7 @@ Evidence:
 
 Evidence:
 
-- [Execution contract](../toolkit/execution-contract.md)
+- [Workflow execution rules](../toolkit/execution-contract.md)
 - Permission and approval matrix
 - API, event, and identifier contracts
 - Threat model and integration design
@@ -233,7 +233,7 @@ Evidence:
 
 ## Completion criteria
 
-- Within the selected track, one workflow connects discovery through deployment and acceptance.
+- Within the selected practice setting, one workflow connects discovery through deployment and acceptance.
 - Normal, edge, and failure evaluation plus recovery records exist.
 - Someone other than the implementer has directly tested the core flow and representative exceptions.
 - Reused parts and failed abstractions from the second workflow can be explained.

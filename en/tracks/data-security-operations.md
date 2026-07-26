@@ -1,4 +1,4 @@
-# Data, Security, and Operations Track
+# Data, Security, and Operations Collaboration Guide
 
 ## Audience
 
@@ -117,6 +117,6 @@ Without the implementer, an operator should be able to:
 ## Recommended path
 
 1. [Data and Context](../delivery-lifecycle/04-data-and-context.md)
-2. [Execution Contracts and Controls](../delivery-lifecycle/05-execution-contracts.md)
+2. [Execution Rules and Controls](../delivery-lifecycle/05-execution-contracts.md)
 3. [Sandbox Integration](../projects/03-sandbox-integration.md)
 4. [Production Pilot](../projects/04-production-pilot.md)

@@ -8,7 +8,7 @@
 | Period |  |
 | Owner |  |
 | Related workflow |  |
-| Related execution contract |  |
+| Related workflow execution rules |  |
 | Current state | planned / running / complete / stopped |
 
 ## Hypothesis

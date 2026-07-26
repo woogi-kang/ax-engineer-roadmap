@@ -8,15 +8,18 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 - Unified the primary repository and site name as `AX Engineer Roadmap`
 - Clarified the scope as a universal AX core with Korean organizational conditions
+- Made AX Engineers the primary readers and reframed the other groups as collaborators
+- Replaced internal shorthand in the Korean edition with terms used in day-to-day work
+- Aligned the Korean and English entry paths, eight-stage structure, projects, and interactive site
 
 ## [0.2.0] - 2026-07-26
 
 ### Added
 
 - Starting-point diagnosis by role and organization readiness
-- Business Practitioner, AX Builder, Leader and Governance, and Data, Security, and Operations tracks
+- AX Engineer execution guidance and collaboration guides for business practitioners, leaders, and data, security, and operations owners
 - Technical foundations for software and APIs, LLMs, agents, tools and MCP, evaluation, operations, and security
-- Five evidence-based projects from safe assistance through reuse in a second workflow
+- Five practice projects from safe assistance through reuse in a second workflow
 - Review of roadmap.sh and the AI Agents roadmap, its AX gaps, and Korean adoption conditions
 - Korean and English interactive roadmap
 

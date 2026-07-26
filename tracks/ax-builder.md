@@ -1,8 +1,8 @@
-# AX Builder 트랙
+# AX 엔지니어 실행 경로
 
 ## 대상
 
-업무 흐름을 소프트웨어, 데이터, LLM, 도구 호출과 연결해 배포·운영하는 사람을 위한 트랙이다. 기존 백엔드·프론트엔드·데이터·자동화 경험은 도움이 되지만 필수 출발점은 아니다.
+업무 흐름을 소프트웨어, 데이터, LLM, 도구 호출과 연결해 배포·운영하려는 AX 엔지니어를 위한 실행 경로다. 기존 백엔드·프론트엔드·데이터·자동화 경험은 도움이 되지만 필수 출발점은 아니다.
 
 ## 목표
 
@@ -13,10 +13,10 @@
 복잡한 에이전트를 기본값으로 두지 않는다.
 
 ```text
-결정적 규칙
+규칙 기반 처리
 → 검색·분류
 → 초안·제안
-→ 사람 승인 후 실행
+→ 담당자 승인 후 실행
 → 범위가 제한된 자동 실행
 → 앞 방식으로 풀리지 않을 때만 Agent Loop
 ```
@@ -68,7 +68,7 @@
 
 상세: [운영과 관측성](../technical-foundations/production-operations.md)
 
-## 만들어야 할 증거
+## 남길 결과물
 
 - 실행 가능한 코드와 재현 절차
 - 입력·출력·API·이벤트 계약
@@ -88,7 +88,7 @@ Builder가 혼자 정하지 않는 항목:
 - 위험 허용 수준과 기존 절차 종료
 - 운영 장애의 사업 우선순위
 
-각 항목은 [비개발 실무자](business-practitioner.md), [리더·거버넌스](leader-and-governance.md), [데이터·보안·운영](data-security-operations.md) 책임자와 실행 계약에서 합의한다.
+각 항목은 [현업 실무자](business-practitioner.md), [리더·의사결정자](leader-and-governance.md), [데이터·보안·운영 담당자](data-security-operations.md)와 [업무 실행 규칙](../toolkit/execution-contract.md)을 작성하며 합의한다.
 
 ## 자주 발생하는 실패
 
@@ -100,6 +100,6 @@ Builder가 혼자 정하지 않는 항목:
 
 ## 추천 경로
 
-1. [기술 기반](../technical-foundations/README.md)에서 공백을 진단한다.
+1. [기술 역량](../technical-foundations/README.md)에서 부족한 영역을 찾는다.
 2. [안전한 보조 도구](../projects/01-safe-assistant.md)부터 순서대로 구현한다.
-3. [12주 실습 경로](../learning-paths/12-week-practice.md)로 한 업무와 두 번째 재사용 증거를 묶는다.
+3. [12주 실습 경로](../learning-paths/12-week-practice.md)로 한 업무의 운영 결과와 두 번째 업무의 재사용 결과를 함께 남긴다.

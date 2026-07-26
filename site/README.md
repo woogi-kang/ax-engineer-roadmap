@@ -1,11 +1,10 @@
 # AX Engineer Roadmap Explorer
 
-The bilingual interactive navigation layer for the AX Engineer Roadmap.
-Its universal AX core is grounded in Korean organizational realities and
-designed for reuse across markets.
-The Markdown documents in the repository remain the source of truth; this app
-helps readers choose a role, assess organizational readiness, and find the next
-material to study or apply.
+This is the bilingual interactive guide for the AX Engineer Roadmap.
+It covers reusable AX engineering practices and the approval, authority,
+regulation, and digital-readiness conditions often encountered in Korean
+organizations. The Markdown documents remain the authoritative version; this
+app helps AX Engineers and their collaborators find the relevant material.
 
 [Open the production site](https://ax-engineer-roadmap-korea.woogi-dev.chatgpt.site/)
 

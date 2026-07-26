@@ -18,12 +18,12 @@ AX Engineer Roadmap prioritizes contributions that strengthen decisions and evid
 3. If the change substantially alters the content, agree on the scope in an issue first.
 4. Confirm that it contains no confidential information about a company, customer, or colleague.
 
-## Roadmap node format
+## Roadmap item format
 
-New roadmap nodes should answer the following questions whenever possible.
+New roadmap items should answer the following questions whenever possible.
 
 ```markdown
-## Node name
+## Item name
 
 ### Why it matters
 ### What to know
@@ -38,6 +38,14 @@ New roadmap nodes should answer the following questions whenever possible.
 When adding a tool or course, do not list only its name. Explain which competency it helps practice and how.
 
 When adding a Korean document, update the same path under `en/`. The English edition must preserve the same decisions, practice, and evidence rather than serving as a summary.
+
+## Writing and terminology
+
+- Write for the reader doing the work, not for the repository maintainer.
+- Prefer a concrete owner such as `process owner`, `approver`, or `operator` over an unspecified `human`.
+- Explain repository-specific terms when they first appear.
+- Keep Korean and English semantically aligned without translating idioms word for word.
+- Review AI-assisted drafts for stock transitions, inflated claims, repeated conclusions, and translationese.
 
 ## Case-study format
 

@@ -28,7 +28,7 @@ The goal is not memorizing technical terms. Understand the decision or risk each
 ## Recommended reading order
 
 1. [Persona Selector](persona-selector.md)
-2. [Business Practitioner Track](../tracks/business-practitioner.md)
+2. [Business Practitioner Collaboration Guide](../tracks/business-practitioner.md)
 3. [Outcomes and Boundaries](../delivery-lifecycle/01-outcomes-and-boundaries.md)
 4. [Workflow Discovery](../delivery-lifecycle/02-workflow-discovery.md)
 5. [Safe Assistant Project](../projects/01-safe-assistant.md)
