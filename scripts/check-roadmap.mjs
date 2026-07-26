@@ -40,7 +40,13 @@ const requiredFiles = [
 const koreanMarkdownFiles = walk(root)
   .filter((file) => file.endsWith('.md'))
   .map((file) => path.relative(root, file).split(path.sep).join('/'))
-  .filter((file) => !file.startsWith('en/') && !file.startsWith('.github/'));
+  .filter(
+    (file) =>
+      !file.startsWith('en/') &&
+      !file.startsWith('.github/') &&
+      !file.startsWith('.claude/') &&
+      !file.startsWith('site/')
+  );
 
 for (const file of koreanMarkdownFiles) {
   requiredFiles.push(`en/${file}`);
@@ -121,7 +127,15 @@ const blockedTerms = [
   ['career', '-', 'docs', '/'].join('')
 ];
 
-for (const file of walk(root)) {
+for (const file of walk(root).filter((target) => {
+  const ignoredSegments = [
+    `${path.sep}.claude${path.sep}goals${path.sep}`,
+    `${path.sep}site${path.sep}dist${path.sep}`,
+    `${path.sep}site${path.sep}.vinext${path.sep}`,
+    `${path.sep}site${path.sep}.design-runs${path.sep}`
+  ];
+  return ignoredSegments.every((segment) => !target.includes(segment));
+})) {
   const content = fs.readFileSync(file, 'utf8');
   for (const term of blockedTerms) {
     if (content.includes(term)) {

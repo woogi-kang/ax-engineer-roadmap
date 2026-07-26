@@ -18,6 +18,8 @@ flowchart LR
 - Add actions that change external systems only after human approval and recovery paths are ready.
 - Every week, decide `continue / revise / hold / stop` and record the evidence.
 - Preserve workflow identifiers, evaluation, approvals, and records even when changing tools or models.
+- Select a primary and collaboration track in the [Persona Selector](../start-here/persona-selector.md).
+- Use [Organization Readiness](../start-here/organization-readiness.md) to bound the action scope.
 
 ## Choose a practice track
 
@@ -32,6 +34,8 @@ Choose a track according to your access to organizational systems and users. The
 | What it cannot claim | Unmeasured organizational impact | Real production adoption, official procedure change, or organizational impact |
 
 A public simulation can provide valid technical and judgment evidence for role preparation. By itself, it is not evidence of Builder- or Operator-level production responsibility. Mark the case title and outcomes as a `simulation`.
+
+The five [Evidence-Based Practice Projects](../projects/README.md) provide exit points for this 12-week path. Weeks 1–4 produce the safe assistant, weeks 5–6 add approval and sandbox integration, weeks 7–8 run a pilot or simulation, and weeks 9–12 test reuse in a second workflow.
 
 ## Cycle 1. Validate the problem and solution
 

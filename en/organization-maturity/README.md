@@ -8,6 +8,8 @@ It is not a score assigned to the entire organization. Different workflows and d
 
 M0 through M4 are not validated industry standards or certification criteria. They are a practical diagnostic model proposed by this repository to compare AX operating states.
 
+[Organization Readiness](../start-here/organization-readiness.md) asks how one workflow can start now. This maturity model asks whether operating capability repeats across workflows. One highly ready workflow does not imply high organization-wide maturity.
+
 ## 2. Five levels
 
 ```mermaid
@@ -111,3 +113,5 @@ There is no permanent completion state for the whole organization. However, the 
 - business teams can propose and operate new workflows on shared foundations;
 - the central AX team is not the bottleneck for every routine operation;
 - criteria exist for retiring both old procedures and shared assets.
+
+This first completion point is not permanent or equivalent to automating every workflow. It means the organization can reassess readiness for new work, validate within a bounded scope, and expand or stop based on operating evidence.

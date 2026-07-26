@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Language: Korean](https://img.shields.io/badge/Language-Korean-0f766e.svg)](README.md)
-[![Status: v0.1.0](https://img.shields.io/badge/Status-v0.1.0-f59e0b.svg)](CHANGELOG.md)
+[![Status: v0.2.0](https://img.shields.io/badge/Status-v0.2.0-7c3aed.svg)](CHANGELOG.md)
 
 [한국어](README.md) | [English](en/README.md)
 
-한국 조직 안에서 AI를 실제 업무에 배포하고, 운영 가능한 변화로 정착시키는 **AX Engineer 실전 로드맵**이다.
+한국 조직 안에서 AI를 실제 업무에 배포하고, 운영 가능한 변화로 정착시키는 **AX Engineer 실전 로드맵**이다. 개발자뿐 아니라 현업 실무자, 리더, 데이터·보안·운영 담당자도 자신의 책임에서 시작할 수 있다.
 
 기술 목록만 나열하지 않는다. AX Engineer가 어떤 판단을 해야 하는지, 무엇을 직접 만들어야 하는지, 그 과정을 어떤 증거로 남겨야 하는지까지 연결한다.
 
@@ -43,22 +43,28 @@ AI 도구를 도입했다고 조직의 업무가 저절로 바뀌지는 않는�
 
 따라서 AX의 목표 상태는 “모든 업무의 자동화”가 아니다. 조직이 새 업무를 발견하고, 안전하게 실험하고, 운영에 배포하고, 필요하면 중단하거나 개선할 수 있는 능력을 갖추는 것이다.
 
-## 네 개의 지도
+## 여섯 개의 지도
 
-직무 준비, 한 업무의 전환 과정, 조직 전체의 성숙도를 한 장에 섞지 않는다.
+역할 선택, 기술 학습, 한 업무의 전환 과정, 조직 전체의 성숙도를 한 장에 섞지 않는다.
 
 ```mermaid
 flowchart LR
-    A["직무 역량 지도<br/>무엇을 할 수 있어야 하는가"] --> B["업무 전환 생애주기<br/>한 업무를 어떻게 끝까지 바꾸는가"]
-    B --> C["조직 성숙도<br/>개별 활용을 어떻게 공통 운영체계로 확장하는가"]
-    C --> D["사례와 증거<br/>무엇으로 판단과 결과를 증명하는가"]
-    D -->|"운영에서 얻은 학습"| A
+    A["시작점<br/>역할과 준비도"] --> B["역량과 역할 트랙<br/>무엇을 책임지는가"]
+    B --> C["기술 기반<br/>무엇을 구현·판단하는가"]
+    C --> D["업무 전환 생애주기<br/>어떻게 끝까지 바꾸는가"]
+    D --> E["조직 성숙도<br/>어떻게 반복 가능한가"]
+    E --> F["프로젝트와 증거<br/>무엇으로 증명하는가"]
+    F -->|"운영에서 얻은 학습"| A
 ```
 
-1. [직무 역량 지도](roadmap/competency-map.md): 문제 발견부터 조직 확장까지 필요한 역량
-2. [8단계 업무 전환 생애주기](delivery-lifecycle/README.md): 한 업무를 운영 가능한 상태로 만드는 과정
-3. [조직 AX 성숙도](organization-maturity/README.md): 개인 활용에서 자율적 개선 체계까지의 변화
-4. [사례와 증거](case-studies/beauty-d2c-voc/README.md): 가설·결정·실패·결과를 남기는 방식
+1. [시작점 진단](start-here/README.md): 역할과 조직 준비도에 따라 첫 문서를 고르는 안내
+2. [직무 역량과 역할별 트랙](roadmap/competency-map.md): 공통 역량과 역할별 책임
+3. [AX 기술 기반](technical-foundations/README.md): 소프트웨어·LLM·에이전트·평가·운영·보안
+4. [8단계 업무 전환 생애주기](delivery-lifecycle/README.md): 한 업무를 운영 가능한 상태로 만드는 과정
+5. [조직 AX 성숙도](organization-maturity/README.md): 개인 활용에서 자율적 개선 체계까지의 변화
+6. [실습 프로젝트와 사례](projects/README.md): 안전한 보조부터 두 번째 업무 재사용까지 남기는 증거
+
+[인터랙티브 로드맵 빌드 및 실행](site/README.md)
 
 ## 8단계 업무 전환 생애주기
 
@@ -98,24 +104,31 @@ flowchart LR
 
 ## 어디서 시작할까
 
-### AX Engineer 전환을 준비하는 개발자
+먼저 [시작점 안내](start-here/README.md)에서 역할과 조직 준비도를 확인한다. 직함이 아니라 이번 업무에서 실제로 내리는 결정으로 트랙을 고른다.
 
-1. [역할 모델](roadmap/role-model.md)에서 직무의 책임과 경계를 확인한다.
-2. [역량 지도](roadmap/competency-map.md)에서 증거가 없는 영역을 찾는다.
-3. [12주 실습 경로](learning-paths/12-week-practice.md)로 하나의 업무 전환 사례를 만든다.
+### 비개발 현업 실무자
 
-### 현재 조직에서 AX 업무를 맡고 있는 사람
+1. [비개발자를 위한 용어 안내](start-here/non-developer-glossary.md)로 기술의 업무 경계를 확인한다.
+2. [비개발 실무자 트랙](tracks/business-practitioner.md)에서 업무 정의·검수·SOP·채택 책임을 익힌다.
+3. [안전한 보조 도구](projects/01-safe-assistant.md)로 외부 실행 없는 첫 증거를 만든다.
 
-1. [조직 성숙도](organization-maturity/README.md)로 현재 상태를 진단한다.
-2. [업무 발굴 카드](toolkit/workflow-discovery-card.md)로 후보를 기록한다.
-3. [업무 후보 평가표](toolkit/use-case-scorecard.md)로 첫 업무를 고른다.
-4. 8단계 생애주기를 따라 운영·채택·인수인계까지 확인한다.
+### 구현·통합을 맡는 AX Builder
 
-### AX팀이나 전환 프로그램을 설계하는 리더
+1. [AX Builder 트랙](tracks/ax-builder.md)에서 배포 책임과 협업 경계를 확인한다.
+2. [기술 기반](technical-foundations/README.md)에서 증거가 없는 영역을 찾는다.
+3. 다섯 [실습 프로젝트](projects/README.md)와 [12주 실습 경로](learning-paths/12-week-practice.md)로 한 업무와 두 번째 재사용을 연결한다.
 
-1. [역할 모델](roadmap/role-model.md)로 중앙팀·현업·IT·보안의 책임을 나눈다.
-2. [조직 성숙도](organization-maturity/README.md)에서 목표 수준과 필수 통제를 정한다.
-3. [실행 계약](toolkit/execution-contract.md)과 [근거 기록](toolkit/evidence-ledger.md)을 공통 작업 규격의 출발점으로 사용한다.
+### AX 프로그램을 설계하는 리더
+
+1. [리더·거버넌스 트랙](tracks/leader-and-governance.md)으로 우선순위·책임·조달·중단 기준을 정한다.
+2. [조직 준비도](start-here/organization-readiness.md)와 [조직 성숙도](organization-maturity/README.md)를 구분해 진단한다.
+3. [운영 파일럿](projects/04-production-pilot.md)과 [두 번째 업무 재사용](projects/05-second-workflow-reuse.md)의 증거 뒤에 공통 기반을 결정한다.
+
+### 데이터·보안·운영 담당자
+
+1. [데이터·보안·운영 트랙](tracks/data-security-operations.md)에서 수명주기 전체의 공동 설계 책임을 확인한다.
+2. [샌드박스 통합](projects/03-sandbox-integration.md)에서 권한·중복·복구를 시험한다.
+3. [실행 계약](toolkit/execution-contract.md)과 [근거 기록](toolkit/evidence-ledger.md)을 공통 작업 규격으로 사용한다.
 
 ## 첫 번째 공개 사례
 
@@ -155,7 +168,7 @@ VOC 수집
 
 ## 근거와 기여
 
-[AX Engineer 공개 역할 검토](research/ax-engineer-role-review.md)는 현재 채용·현장 자료에서 반복되는 책임과 이 로드맵의 편집 결정을 설명한다. 로드맵의 빈 영역, 반례, 실제 배포 사례, 더 나은 검증 방법에 대한 기여를 환영한다.
+[AX Engineer 공개 역할 검토](research/ax-engineer-role-review.md)는 현재 채용·현장 자료에서 반복되는 책임을 설명한다. [개발자·AI Agent 로드맵 검토](research/roadmap-benchmark-review.md)는 roadmap.sh에서 가져온 구조와 AX 관점에서 보완한 영역, 한국 조직의 적용 조건을 기록한다. 로드맵의 빈 영역, 반례, 실제 배포 사례, 더 나은 검증 방법에 대한 기여를 환영한다.
 
 - 잘못되거나 오래된 내용은 `Source update` Issue로 제안한다.
 - 빠진 역량이나 단계를 발견하면 `Roadmap gap` Issue를 연다.
@@ -164,7 +177,7 @@ VOC 수집
 
 ## 상태와 라이선스
 
-- 현재 버전: `v0.1.0`
-- 기준일: `2026-07-23`
-- 상태: AX Engineer 단일 직무 기준의 초기 공개본
+- 현재 버전: `v0.2.0`
+- 기준일: `2026-07-26`
+- 상태: 다중 역할·조직 준비도·기술 기반·증거 프로젝트를 포함한 공개본
 - 라이선스: [MIT](LICENSE)

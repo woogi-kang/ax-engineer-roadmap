@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
 [![Language: English](https://img.shields.io/badge/Language-English-2563eb.svg)](README.md)
-[![Status: v0.1.0](https://img.shields.io/badge/Status-v0.1.0-f59e0b.svg)](CHANGELOG.md)
+[![Status: v0.2.0](https://img.shields.io/badge/Status-v0.2.0-7c3aed.svg)](CHANGELOG.md)
 
 [한국어](../README.md) | [English](README.md)
 
-An evidence-oriented field guide for **AX Engineers** who deploy AI into real work and turn it into an operable way of working inside Korean organizations.
+An evidence-oriented field guide for **AX Engineers** who deploy AI into real work and turn it into an operable way of working inside Korean organizations. Developers, business practitioners, leaders, and data, security, and operations owners can begin from their own responsibilities.
 
 This is not a catalog of technologies. It connects the decisions an AX Engineer must make, the systems they must build, and the evidence they must leave behind.
 
@@ -43,22 +43,28 @@ At a minimum, the organization should be able to inspect:
 
 The target state of AX is therefore not “automate every task.” It is the organizational capability to discover new workflows, test them safely, deploy them into operations, and improve or stop them when the evidence calls for it.
 
-## Four maps
+## Six maps
 
-The roadmap keeps role readiness, the transformation of one workflow, and organizational maturity separate.
+The roadmap keeps role selection, technical learning, workflow transformation, and organizational maturity separate.
 
 ```mermaid
 flowchart LR
-    A["Role competency map<br/>What must an AX Engineer be able to do?"] --> B["Workflow transformation lifecycle<br/>How is one workflow changed end to end?"]
-    B --> C["Organizational maturity<br/>How does individual use become a shared operating model?"]
-    C --> D["Cases and evidence<br/>What proves decisions and outcomes?"]
-    D -->|"Learning from operations"| A
+    A["Starting point<br/>Role and readiness"] --> B["Competency and tracks<br/>What do you own?"]
+    B --> C["Technical foundations<br/>What do you build and decide?"]
+    C --> D["Workflow lifecycle<br/>How do you change work end to end?"]
+    D --> E["Organization maturity<br/>How does it become repeatable?"]
+    E --> F["Projects and evidence<br/>What proves it?"]
+    F -->|"Learning from operations"| A
 ```
 
-1. [Role competency map](roadmap/competency-map.md): competencies from problem discovery through organizational scale
-2. [Eight-stage workflow transformation lifecycle](delivery-lifecycle/README.md): the path from an existing workflow to an operable one
-3. [Organizational AX maturity](organization-maturity/README.md): the progression from individual use to an adaptive operating model
-4. [Cases and evidence](case-studies/beauty-d2c-voc/README.md): how to record hypotheses, decisions, failures, and outcomes
+1. [Start Here](start-here/README.md): choose a starting point by role and readiness
+2. [Competencies and role-based tracks](roadmap/competency-map.md): common skills and role responsibilities
+3. [AX Technical Foundations](technical-foundations/README.md): software, LLMs, agents, evaluation, operations, and security
+4. [Eight-stage workflow transformation lifecycle](delivery-lifecycle/README.md): the path from existing work to an operable workflow
+5. [Organizational AX maturity](organization-maturity/README.md): the progression from individual use to an adaptive operating model
+6. [Projects and cases](projects/README.md): evidence from safe assistance through second-workflow reuse
+
+[Build and run the interactive roadmap](../site/README.md)
 
 ## Eight-stage workflow transformation lifecycle
 
@@ -98,24 +104,31 @@ Proficiency is defined by the scope of deployment responsibility, not tenure or 
 
 ## Where to start
 
-### Developer preparing to become an AX Engineer
+Begin with [Start Here](start-here/README.md) to identify your role and the workflow's readiness. Choose by the decisions you own, not your title.
 
-1. Read the [role model](roadmap/role-model.md) to understand the responsibilities and boundaries.
-2. Use the [competency map](roadmap/competency-map.md) to find areas where you lack evidence.
-3. Follow the [12-week practice path](learning-paths/12-week-practice.md) to build one end-to-end workflow transformation case.
+### Business practitioner
 
-### Practitioner already responsible for AX work
+1. Use the [Non-Developer Glossary](start-here/non-developer-glossary.md) to understand technical workflow boundaries.
+2. Follow the [Business Practitioner track](tracks/business-practitioner.md) for problem definition, acceptance, SOP, and adoption.
+3. Produce first evidence with the [Safe Assistant](projects/01-safe-assistant.md).
 
-1. Diagnose the current state with the [organizational maturity model](organization-maturity/README.md).
-2. Record candidates with the [workflow discovery card](toolkit/workflow-discovery-card.md).
-3. Select the first workflow with the [use-case scorecard](toolkit/use-case-scorecard.md).
-4. Follow the eight-stage lifecycle through operations, adoption, and handoff.
+### AX Builder
 
-### Leader designing an AX team or transformation program
+1. Review delivery responsibility and collaboration boundaries in the [AX Builder track](tracks/ax-builder.md).
+2. Find evidence gaps in [Technical Foundations](technical-foundations/README.md).
+3. Use the five [Practice Projects](projects/README.md) and [12-Week Path](learning-paths/12-week-practice.md) to connect one workflow to reuse in a second.
 
-1. Use the [role model](roadmap/role-model.md) to divide responsibilities among the central team, business teams, IT, data, and security.
-2. Use the [organizational maturity model](organization-maturity/README.md) to define the target level and mandatory controls.
-3. Start a shared work contract with the [execution contract](toolkit/execution-contract.md) and [evidence ledger](toolkit/evidence-ledger.md).
+### Leader or program owner
+
+1. Use the [Leader and Governance track](tracks/leader-and-governance.md) to define priority, accountability, procurement, and stop criteria.
+2. Diagnose [Organization Readiness](start-here/organization-readiness.md) separately from [Organization Maturity](organization-maturity/README.md).
+3. Decide shared foundations only after evidence from a [Production Pilot](projects/04-production-pilot.md) and [Second-Workflow Reuse](projects/05-second-workflow-reuse.md).
+
+### Data, security, or operations owner
+
+1. Review lifecycle co-design responsibilities in the [Data, Security, and Operations track](tracks/data-security-operations.md).
+2. Test permissions, duplicates, and recovery through [Sandbox Integration](projects/03-sandbox-integration.md).
+3. Use the [Execution Contract](toolkit/execution-contract.md) and [Evidence Ledger](toolkit/evidence-ledger.md) as shared working standards.
 
 ## First public case
 
@@ -155,7 +168,7 @@ It is not an internal diagnosis of a specific company. It is a learning simulati
 
 ## Evidence and contributions
 
-[Review of public AX Engineer roles](research/ax-engineer-role-review.md) explains the recurring responsibilities found in current public role and practitioner materials and the editorial decisions behind this roadmap. Contributions are welcome when they add gaps, counterexamples, production cases, or better validation methods.
+[Review of public AX Engineer roles](research/ax-engineer-role-review.md) explains recurring responsibilities in current public role and practitioner materials. [Review of Developer and AI Agent Roadmaps](research/roadmap-benchmark-review.md) records what was adopted from roadmap.sh, what AX must add, and the Korean adoption conditions considered here. Contributions are welcome when they add gaps, counterexamples, production cases, or better validation methods.
 
 - Propose incorrect or outdated material with a `Source update` issue.
 - Open a `Roadmap gap` issue for a missing competency or lifecycle stage.
@@ -164,7 +177,7 @@ It is not an internal diagnosis of a specific company. It is a learning simulati
 
 ## Status and license
 
-- Current version: `v0.1.0`
-- Reference date: `2026-07-23`
-- Status: initial public edition focused on the AX Engineer role
+- Current version: `v0.2.0`
+- Reference date: `2026-07-26`
+- Status: public edition with multiple roles, readiness, technical foundations, and evidence projects
 - License: [MIT](../LICENSE)

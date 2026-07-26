@@ -18,22 +18,26 @@ AX Engineer Roadmap Korea prioritizes contributions that strengthen decisions an
 3. If the change substantially alters the content, agree on the scope in an issue first.
 4. Confirm that it contains no confidential information about a company, customer, or colleague.
 
-## Competency format
+## Roadmap node format
 
-New competencies should answer the following questions whenever possible.
+New roadmap nodes should answer the following questions whenever possible.
 
 ```markdown
-## Competency name
+## Node name
 
-### Understand
-### Decide
-### Practice
-### Demonstrate
+### Why it matters
+### What to know
+### How to decide
+### What to practice
+### What evidence to produce
 ### Failure modes
+### Who must agree
 ### Sources
 ```
 
 When adding a tool or course, do not list only its name. Explain which competency it helps practice and how.
+
+When adding a Korean document, update the same path under `en/`. The English edition must preserve the same decisions, practice, and evidence rather than serving as a summary.
 
 ## Case-study format
 
@@ -56,7 +60,7 @@ Any real impact metric must include its measurement method and period. If those 
 - Keep one issue or argument per pull request.
 - Explain why the change is needed and how it affects readers.
 - Record the verification date and source type for new links.
-- Run `node scripts/check-links.mjs` and `node scripts/check-roadmap.mjs`.
+- Run `npm run check`.
 - Even when a draft is generated with AI, the submitter must personally review its facts and language.
 
 ## License
