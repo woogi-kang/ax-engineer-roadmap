@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+### Added
+
+- 사례 카탈로그와 기계 검증 가능한 `case.json` 메타데이터 규격
+- 파일·CSV → AX Hub, Slack 회의 신호 → 실행 항목, 중앙 메일 업무 보조, 회사 에이전트 운영 계층 사례
+- 인터랙티브 로드맵의 현업 조합 사례 그룹
+
 ### Changed
 
 - 저장소와 사이트의 프로젝트 이름을 `AX Engineer Roadmap`으로 통일

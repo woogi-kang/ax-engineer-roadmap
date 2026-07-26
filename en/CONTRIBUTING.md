@@ -61,6 +61,8 @@ A case should include at least:
 - outcomes and limitations;
 - reusable patterns.
 
+Add `case.json` to each new case directory and follow [`case.schema.json`](../case-studies/_schema/case.schema.json). Keep documentation readiness in `status` separate from the level of verified evidence in `evidence_stage`.
+
 Any real impact metric must include its measurement method and period. If those details cannot be disclosed, remove the metric and retain only observable states.
 
 ## Pull requests

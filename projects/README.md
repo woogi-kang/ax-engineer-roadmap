@@ -32,6 +32,20 @@ flowchart LR
 
 개발 환경이 없다면 문서, 표, 노코드 샌드박스, 수동 시뮬레이션으로 같은 판단 과정을 연습할 수 있다. 실제 외부 실행이 없었다는 점은 결과에 명시한다.
 
+## 사례별 실습 경로
+
+[현업 조합 사례](../case-studies/README.md)는 같은 P1~P5 통과 기준을 서로 다른 업무와 시스템에 적용한다.
+
+| 사례 | P1 보조 | P2 승인 | P3 샌드박스 | P4 제한 운영 | P5 재사용 |
+|---|---|---|---|---|---|
+| [Beauty/D2C VOC](../case-studies/beauty-d2c-voc/README.md) | 분류·요약 | 업무 제안 | 업무 생성 | — | 다른 시장·채널 비교 |
+| [파일·CSV → AX Hub](../case-studies/file-csv-to-ax-hub/README.md) | 자료 정리 | Hub 반영 검수 | 구조화 저장 | — | 두 번째 자료 흐름 비교 |
+| [Slack 회의 신호 → 실행 항목](../case-studies/slack-meeting-actions/README.md) | 회의 전 요약 | 할 일 승인 | 업무 생성 | 제한된 팀 | 두 번째 회의 유형 |
+| [중앙 메일 업무 보조](../case-studies/centralized-mail-assist/README.md) | 분류·답장 초안 | 발송 승인 | 테스트 메일함 | 선택한 공용 메일함 | 두 번째 메일 업무 |
+| [회사 에이전트 운영 계층](../case-studies/company-agent-operating-layer/README.md) | 기존 결과 사용 | 공통 정책 판정 | 분리된 실행 환경 | 두 업무 제한 운영 | 공통화·폐기 결정 |
+
+`—`는 해당 사례가 실제 운영 성과를 검증했다는 뜻이 아니라, 현재 공개 시뮬레이션 범위에서 P4를 수행하지 않는다는 뜻이다.
+
 ## 모든 프로젝트의 공통 제출물
 
 - 문제, 사용자, 기준선

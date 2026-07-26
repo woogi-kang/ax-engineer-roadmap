@@ -4,6 +4,12 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ## [Unreleased]
 
+### Added
+
+- A case catalog with a machine-validated `case.json` metadata contract
+- Cases for files and CSV to AX Hub, Slack meetings to actions, centralized Mail Assist, and a shared agent operating layer
+- An applied AX case group in the interactive roadmap
+
 ### Changed
 
 - Unified the primary repository and site name as `AX Engineer Roadmap`

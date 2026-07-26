@@ -23,6 +23,8 @@ test("exports a static GitHub Pages site", () => {
     koreanHtml,
     /업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵/,
   );
+  assert.match(koreanHtml, /현업 조합 사례/);
+  assert.match(koreanHtml, /회사 에이전트 운영 계층/);
   assert.match(koreanHtml, /property="og:locale" content="ko_KR"/);
   assert.match(koreanHtml, /href="\/ax-engineer-roadmap\/en\/"/);
 
@@ -33,8 +35,10 @@ test("exports a static GitHub Pages site", () => {
   );
   assert.match(
     englishHtml,
-    /An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, and carry the work into operations\./,
+    /An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, carry the work into operations, and explore applied AX cases\./,
   );
+  assert.match(englishHtml, /Applied AX cases/);
+  assert.match(englishHtml, /Company Agent Operating Layer/);
   assert.match(englishHtml, /property="og:locale" content="en_US"/);
   assert.match(englishHtml, /href="\/ax-engineer-roadmap\/"/);
   assert.doesNotMatch(

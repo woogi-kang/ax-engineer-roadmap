@@ -1,0 +1,28 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "beauty-d2c-voc",
+  "title": {
+    "ko": "Beauty/D2C 글로벌 VOC → 업무 제안",
+    "en": "Beauty/D2C global VOC → workflow proposal"
+  },
+  "type": "workflow",
+  "status": "ready",
+  "evidence_stage": "public-simulation",
+  "readiness": ["low", "saas"],
+  "risk": "moderate",
+  "entry_channels": ["Public review data"],
+  "systems": [
+    "Public VOC sources",
+    "Analysis workspace",
+    "Work-management sandbox"
+  ],
+  "write_impact": "approved-sandbox-write",
+  "autonomy": "A1-A3",
+  "project_stages": [1, 2, 3, 5],
+  "verified_at": "2026-07-27",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "Public data may not represent internal VOC composition.",
+    "No live organizational adoption or business outcome has been verified."
+  ]
+}

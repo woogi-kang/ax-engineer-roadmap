@@ -32,6 +32,20 @@ Use public or synthetic data and an isolated environment. Publish assumptions, t
 
 Non-developers can produce equivalent decisions and evidence through documents, tables, no-code sandboxes, and role-play. State clearly when no external action occurred.
 
+## Case-to-project paths
+
+The [applied AX cases](../case-studies/README.md) apply the same P1–P5 exit criteria to different workflows and systems.
+
+| Case | P1 assist | P2 approval | P3 sandbox | P4 limited operations | P5 reuse |
+|---|---|---|---|---|---|
+| [Beauty/D2C VOC](../case-studies/beauty-d2c-voc/README.md) | Classify and summarize | Action proposal | Create work item | — | Compare another market or channel |
+| [Files and CSV → AX Hub](../case-studies/file-csv-to-ax-hub/README.md) | Organize material | Review Hub update | Structured storage | — | Compare a second material flow |
+| [Slack meeting signals → actions](../case-studies/slack-meeting-actions/README.md) | Pre-meeting brief | Approve actions | Create work items | Bounded team | Second meeting type |
+| [Centralized mail assistance](../case-studies/centralized-mail-assist/README.md) | Classify and draft | Approve outbound mail | Test mailbox | Selected shared inbox | Second mail workflow |
+| [Company Agent Operating Layer](../case-studies/company-agent-operating-layer/README.md) | Reuse prior results | Shared policy decision | Isolated runtime | Two bounded workflows | Standardize or retire |
+
+`—` means that the current public-simulation scope does not perform P4. It does not indicate verified production outcomes.
+
 ## Common submission package
 
 - Problem, user, and baseline

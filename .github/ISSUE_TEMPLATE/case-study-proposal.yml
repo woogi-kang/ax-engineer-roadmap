@@ -14,6 +14,41 @@ body:
         - 개인 실습 / Individual practice
     validations:
       required: true
+  - type: dropdown
+    id: scope_type
+    attributes:
+      label: 사례 범위 / Case scope
+      options:
+        - 업무 흐름 / Workflow
+        - 공용 통합 / Shared integration
+        - 조직 캡스톤 / Organizational capstone
+    validations:
+      required: true
+  - type: dropdown
+    id: readiness
+    attributes:
+      label: 필요한 조직 준비 상태 / Required organization readiness
+      options:
+        - 메신저·파일 중심 / File-and-message centered
+        - SaaS 중심 / SaaS-centered
+        - 사내 시스템·API 보유 / IT-native
+    validations:
+      required: true
+  - type: input
+    id: systems
+    attributes:
+      label: 진입 채널과 연결 시스템 / Entry channels and connected systems
+      description: 최신 상태를 확인할 원본 시스템과 AI가 사용하는 진입점을 구분해 적어 주세요. / Separate source systems from the channels used to access AI.
+    validations:
+      required: true
+  - type: input
+    id: project_stages
+    attributes:
+      label: 연결할 실습 프로젝트 / Connected practice projects
+      description: P1~P5 중 실제로 다룰 단계를 적어 주세요. / List the P1–P5 stages the case actually covers.
+      placeholder: "P1, P2, P3"
+    validations:
+      required: true
   - type: textarea
     id: problem
     attributes:

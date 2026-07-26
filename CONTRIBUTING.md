@@ -62,6 +62,8 @@ AX Engineer Roadmap은 기술 이름을 늘리는 것보다 현장에서 검증�
 - 결과와 한계
 - 재사용할 패턴
 
+새 사례는 사례 디렉터리에 `case.json`을 추가하고 [`case.schema.json`](case-studies/_schema/case.schema.json)을 따른다. `status`는 문서 준비 상태, `evidence_stage`는 실제로 확인한 근거 수준으로 나눠 기록한다.
+
 실제 성과 수치는 측정 방법과 기간을 함께 제공해야 한다. 공개할 수 없다면 수치를 지우고 관찰 가능한 상태만 남긴다.
 
 ## Pull Request

@@ -35,15 +35,17 @@ flowchart LR
     A["Confirm role and readiness"] --> B["Eight-stage AX transformation"]
     B --> C["Learn required technical foundations"]
     C --> D["Build practice projects"]
-    D --> E["Operate, reuse, and scale"]
-    E -->|"Operating results and new constraints"| A
+    D --> E["Explore applied AX cases"]
+    E --> F["Operate, reuse, and scale"]
+    F -->|"Operating results and new constraints"| A
 ```
 
 1. [Starting point](start-here/README.md): confirm your responsibility and the workflow's current readiness.
 2. [Eight-stage AX transformation](delivery-lifecycle/README.md): move one workflow from discovery and redesign into operations.
 3. [Technical foundations for AX Engineers](technical-foundations/README.md): learn software, LLMs, agents, evaluation, operations, and security.
 4. [Practice projects](projects/README.md): progress from a safe assistant to reuse in a second workflow.
-5. [Operations and organizational scale](organization-maturity/README.md): assess whether the organization can repeat the same operating capability across workflows.
+5. [Applied AX cases](case-studies/README.md): choose a case by readiness and risk, then practice P1–P5 as one flow.
+6. [Operations and organizational scale](organization-maturity/README.md): assess whether the organization can repeat the same operating capability across workflows.
 
 [Open the interactive roadmap](https://woogi-kang.github.io/ax-engineer-roadmap/en/) · [Run the site locally](../site/README.md)
 
@@ -131,21 +133,19 @@ Workflow discovery, redesign, integration, evaluation, and operations principles
 
 The roadmap does not treat Korean companies as one culture. Readers elsewhere can replace legal, procurement, labor, and organizational conditions with their local context.
 
-## First public case
+## Applied AX cases
 
-[Beauty/D2C global VOC → workflow proposal](case-studies/beauty-d2c-voc/README.md) is a simulation that can be practiced with public data.
+The [case catalog](case-studies/README.md) helps readers choose a case by organization readiness and the responsibility they want to practice.
 
-```text
-Collect VOC
-→ preserve source text and provenance
-→ identify recurring issues and opportunities
-→ have an accountable reviewer inspect the evidence
-→ create a workflow proposal
-→ obtain accountable approval
-→ record execution results
-```
+| Starting point | Case |
+|---|---|
+| Public-data analysis | [Beauty/D2C global VOC → workflow proposal](case-studies/beauty-d2c-voc/README.md) |
+| Distributed files and personal AI use | [From Scattered Files and CSVs to a Reviewable AX Hub](case-studies/file-csv-to-ax-hub/README.md) |
+| Existing-SaaS integration | [From Slack Meeting Signals to Human-Approved Actions](case-studies/slack-meeting-actions/README.md) |
+| Shared connector and high-risk input | [Centralized Mail Assistance Integration](case-studies/centralized-mail-assist/README.md) |
+| Shared operations after second-workflow reuse | [Company Agent Operating Layer](case-studies/company-agent-operating-layer/README.md) |
 
-It is not an internal diagnosis of a named company and makes no claim about real organizational impact. It separates verified facts from assumptions.
+The cases are public-data simulations or simulation designs. They make no claim about a named company's internal diagnosis, live adoption, or productivity, cost, or revenue improvements.
 
 ## Contributing
 
@@ -159,7 +159,7 @@ It is not an internal diagnosis of a named company and makes no claim about real
 ## Status and license
 
 - Current version: `v0.2.0`
-- Reference date: `2026-07-26`
-- Status: public draft covering the AX Engineer role, workflow transformation, technical learning, and practice
+- Reference date: `2026-07-27`
+- Status: public draft covering the AX Engineer role, workflow transformation, technical learning, practice, and applied AX cases
 - Scope: reusable AX principles plus conditions to verify in Korean organizations
 - License: [MIT](../LICENSE)

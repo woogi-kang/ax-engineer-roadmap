@@ -10,6 +10,7 @@ These templates help AX Engineers and their collaborators check decisions, owner
 - [Experiment card](experiment-card.md)
 - [Evidence ledger](evidence-ledger.md)
 - [Case-study template](case-study-template.md)
+- [Applied AX case catalog](../case-studies/README.md)
 
 ## Usage principles
 

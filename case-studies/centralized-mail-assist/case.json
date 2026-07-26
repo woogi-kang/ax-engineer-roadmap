@@ -1,0 +1,29 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "centralized-mail-assist",
+  "title": {
+    "ko": "중앙 메일 업무 보조 통합",
+    "en": "Centralized Mail Assistance Integration"
+  },
+  "type": "shared-integration",
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": ["saas", "it"],
+  "risk": "high",
+  "entry_channels": ["Email", "Slack"],
+  "systems": [
+    "Mail connector",
+    "Shared inbox",
+    "Slack",
+    "Audit store"
+  ],
+  "write_impact": "approved-sandbox-write",
+  "autonomy": "A1-A3",
+  "project_stages": [1, 2, 3, 4, 5],
+  "verified_at": "2026-07-27",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The design has not been connected to a live organizational mailbox.",
+    "No user adoption, operating reliability, security-control effectiveness, or business outcome has been verified."
+  ]
+}

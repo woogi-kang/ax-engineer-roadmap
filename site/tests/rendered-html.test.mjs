@@ -33,9 +33,13 @@ test("server-renders the Korean roadmap explorer", async () => {
   assert.match(html, /<title>AX Engineer Roadmap<\/title>/i);
   assert.match(html, /AX 엔지니어를 위한 오픈 로드맵/);
   assert.match(html, /업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵/);
-  assert.match(html, /AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개/);
-  assert.match(html, /<strong>31<\/strong>(?:<!-- -->)?개 항목/);
+  assert.match(
+    html,
+    /AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 현업 조합 사례 5개/,
+  );
+  assert.match(html, /<strong>36<\/strong>(?:<!-- -->)?개 항목/);
   assert.match(html, /AX 엔지니어 실행 경로/);
+  assert.match(html, /회의 전후 Slack 신호를 승인 가능한 실행 항목으로/);
   assert.match(html, /전체 경로/);
   assert.match(html, /조직 준비도/);
   assert.match(html, /aria-live="polite"/);
@@ -50,12 +54,16 @@ test("server-renders the English edition from its static route", async () => {
   assert.match(html, /<html lang="en"/i);
   assert.match(
     html,
-    /An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, and carry the work into operations\./,
+    /An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, carry the work into operations, and explore applied AX cases\./,
   );
   assert.match(html, /An open roadmap for AX Engineers/);
   assert.match(html, /Choose the workflow\. Carry it into operations\./);
-  assert.match(html, /8 transformation stages · 7 technical capabilities · 5 practice projects/);
+  assert.match(
+    html,
+    /8 transformation stages · 7 technical capabilities · 5 practice projects · 5 applied AX cases/,
+  );
   assert.match(html, /AX Engineer path/);
+  assert.match(html, /From Slack Meeting Signals to Human-Approved Actions/);
   assert.match(html, /Complete path/);
   assert.match(html, /Organization readiness/);
   assert.doesNotMatch(

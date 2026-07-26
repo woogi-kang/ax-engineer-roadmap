@@ -12,20 +12,20 @@ const siteOrigin = isPagesBuild
 const metadataCopy = {
   ko: {
     description:
-      "AX 엔지니어가 업무를 고르고, AI를 기존 시스템에 연결하고, 운영까지 이어 가는 데 필요한 오픈 로드맵.",
+      "AX 엔지니어가 업무를 고르고, AI를 기존 시스템에 연결해 운영하며, 현업 조합 사례로 적용 방식을 살피는 오픈 로드맵.",
     openGraphDescription:
-      "AX 엔지니어의 역할, 업무 전환 8단계, 기술 역량, 실습 프로젝트를 한곳에서 확인하는 오픈 로드맵.",
+      "AX 엔지니어의 역할, 업무 전환 8단계, 기술 역량, 실습 프로젝트, 현업 조합 사례를 한곳에서 확인하는 오픈 로드맵.",
     imageAlt:
-      "AX 엔지니어의 역할, 업무 전환 과정, 실습 프로젝트를 보여 주는 로드맵",
+      "AX 엔지니어의 역할, 업무 전환 과정, 실습 프로젝트와 현업 조합 사례를 보여 주는 로드맵",
     locale: "ko_KR",
   },
   en: {
     description:
-      "An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, and carry the work into operations.",
+      "An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, carry the work into operations, and explore applied AX cases.",
     openGraphDescription:
-      "Explore the AX Engineer role, eight workflow transformation stages, technical capabilities, and practice projects.",
+      "Explore the AX Engineer role, eight workflow transformation stages, technical capabilities, practice projects, and applied AX cases.",
     imageAlt:
-      "A roadmap of the AX Engineer role, workflow transformation stages, and practice projects",
+      "A roadmap of the AX Engineer role, workflow transformation stages, practice projects, and applied AX cases",
     locale: "en_US",
   },
 } as const;

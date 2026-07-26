@@ -47,15 +47,17 @@ flowchart LR
     A["역할과 준비 상태 확인"] --> B["AX 업무 전환 8단계"]
     B --> C["필요한 기술 역량 학습"]
     C --> D["실습 프로젝트"]
-    D --> E["운영·재사용·조직 확장"]
-    E -->|"운영 결과와 새 과제"| A
+    D --> E["현업 조합 사례"]
+    E --> F["운영·재사용·조직 확장"]
+    F -->|"운영 결과와 새 과제"| A
 ```
 
 1. [시작점 안내](start-here/README.md): 현재 맡은 책임과 업무 준비 상태를 확인한다.
 2. [AX 업무 전환 8단계](delivery-lifecycle/README.md): 한 업무를 발견하고 재설계해 운영까지 연결한다.
 3. [AX 엔지니어의 기술 역량](technical-foundations/README.md): 소프트웨어·LLM·에이전트·평가·운영·보안을 학습한다.
 4. [실습 프로젝트](projects/README.md): 안전한 보조 도구를 만들고, 두 번째 업무에서 재사용할 부분까지 검증한다.
-5. [운영과 조직 확장](organization-maturity/README.md): 여러 업무에서 같은 운영 능력을 반복할 수 있는지 확인한다.
+5. [현업 조합 사례](case-studies/README.md): 준비 상태와 위험에 맞는 사례를 골라 P1~P5를 한 흐름으로 연습한다.
+6. [운영과 조직 확장](organization-maturity/README.md): 여러 업무에서 같은 운영 능력을 반복할 수 있는지 확인한다.
 
 [인터랙티브 로드맵 열기](https://woogi-kang.github.io/ax-engineer-roadmap/) · [사이트 실행 안내](site/README.md)
 
@@ -143,21 +145,19 @@ flowchart LR
 
 한국 기업 전체가 같은 방식으로 일한다고 가정하지 않는다. 다른 지역의 독자는 법률·조달·노사관계·조직 구조에 해당하는 조건을 현지 상황에 맞게 바꿔 적용할 수 있다.
 
-## 첫 번째 공개 사례
+## 현업 조합 사례
 
-[Beauty/D2C 글로벌 VOC → 업무 제안](case-studies/beauty-d2c-voc/README.md)은 공개 데이터로 연습할 수 있는 시뮬레이션 사례다.
+[사례 카탈로그](case-studies/README.md)는 조직의 준비 상태와 연습할 책임에 따라 사례를 고를 수 있게 구성했다.
 
-```text
-VOC 수집
-→ 원문과 출처 보존
-→ 반복 이슈와 기회 탐지
-→ 담당자가 근거 확인
-→ 업무 제안
-→ 담당자 승인
-→ 실행 결과 기록
-```
+| 출발점 | 사례 |
+|---|---|
+| 공개 데이터 분석 | [Beauty/D2C 글로벌 VOC → 업무 제안](case-studies/beauty-d2c-voc/README.md) |
+| 분산 파일과 개인 AI 사용 | [흩어진 파일·CSV를 검토 가능한 AX Hub로](case-studies/file-csv-to-ax-hub/README.md) |
+| 기존 SaaS 연동 | [회의 전후 Slack 신호를 승인 가능한 실행 항목으로](case-studies/slack-meeting-actions/README.md) |
+| 공용 커넥터와 고위험 입력 | [중앙 메일 업무 보조 통합](case-studies/centralized-mail-assist/README.md) |
+| 두 번째 업무 뒤 공통 운영 | [회사 에이전트 운영 계층](case-studies/company-agent-operating-layer/README.md) |
 
-특정 회사의 내부 진단이나 실제 성과를 주장하지 않는다. 공개적으로 확인할 수 있는 업무 구조를 바탕으로 설계했으며, 확인한 사실과 가설을 구분한다.
+사례는 공개 데이터 시뮬레이션 또는 시뮬레이션 설계다. 특정 회사의 내부 진단, 실제 현업 정착, 생산성·비용·매출 개선을 주장하지 않는다.
 
 ## 기여하기
 
@@ -171,7 +171,7 @@ VOC 수집
 ## 상태와 라이선스
 
 - 현재 버전: `v0.2.0`
-- 기준일: `2026-07-26`
-- 상태: AX 엔지니어의 역할·업무 전환·기술 학습·실습을 포함한 공개본
+- 기준일: `2026-07-27`
+- 상태: AX 엔지니어의 역할·업무 전환·기술 학습·실습·현업 조합 사례를 포함한 공개본
 - 적용 범위: 여러 조직에 적용할 AX 원칙과 한국 조직에서 확인할 조건
 - 라이선스: [MIT](LICENSE)

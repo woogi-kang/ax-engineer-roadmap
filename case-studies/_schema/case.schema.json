@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://woogi-kang.github.io/ax-engineer-roadmap/case-studies/_schema/case.schema.json",
+  "title": "AX Engineer Roadmap case metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "id",
+    "title",
+    "type",
+    "status",
+    "evidence_stage",
+    "readiness",
+    "risk",
+    "entry_channels",
+    "systems",
+    "write_impact",
+    "autonomy",
+    "project_stages",
+    "verified_at",
+    "owner",
+    "limitations"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "../_schema/case.schema.json"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ko", "en"],
+      "properties": {
+        "ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "type": {
+      "enum": ["workflow", "shared-integration", "organizational-capstone"]
+    },
+    "status": {
+      "enum": ["draft", "ready", "archived"]
+    },
+    "evidence_stage": {
+      "enum": [
+        "simulation-design",
+        "public-simulation",
+        "anonymized-practice",
+        "limited-pilot",
+        "operating-evidence"
+      ]
+    },
+    "readiness": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["low", "saas", "it"]
+      }
+    },
+    "risk": {
+      "enum": ["low", "moderate", "high"]
+    },
+    "entry_channels": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "systems": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "write_impact": {
+      "enum": [
+        "none",
+        "draft-only",
+        "approved-sandbox-write",
+        "approved-limited-write",
+        "mixed"
+      ]
+    },
+    "autonomy": {
+      "type": "string",
+      "pattern": "^A[0-4](?:-A[0-4])?$"
+    },
+    "project_stages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 5
+      }
+    },
+    "verified_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

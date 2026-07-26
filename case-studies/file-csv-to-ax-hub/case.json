@@ -1,0 +1,41 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "file-csv-to-ax-hub",
+  "title": {
+    "ko": "흩어진 파일·CSV를 검토 가능한 AX Hub로",
+    "en": "From Scattered Files and CSVs to a Reviewable AX Hub"
+  },
+  "type": "workflow",
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "low",
+    "saas"
+  ],
+  "risk": "moderate",
+  "entry_channels": [
+    "Personal AI outputs",
+    "Distributed CSV files",
+    "Meeting, blocker, and approval signals"
+  ],
+  "systems": [
+    "Notion-style AX Hub",
+    "Structured database v0",
+    "Slack"
+  ],
+  "write_impact": "draft-only",
+  "autonomy": "A1-A2",
+  "project_stages": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "verified_at": "2026-07-27",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "Simulation design only; no production deployment or organizational outcome is claimed.",
+    "Source ownership, CSV semantics, and approval rules require human confirmation.",
+    "The workflow creates reviewed drafts and does not autonomously change source files or publish Slack messages."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "slack-meeting-actions",
+  "title": {
+    "ko": "회의 전후 Slack 신호를 승인 가능한 실행 항목으로",
+    "en": "From Slack Meeting Signals to Human-Approved Actions"
+  },
+  "type": "workflow",
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "saas",
+    "it"
+  ],
+  "risk": "moderate",
+  "entry_channels": [
+    "Slack"
+  ],
+  "systems": [
+    "Slack",
+    "Notion",
+    "Google Workspace",
+    "monday.com",
+    "Workflow execution ledger"
+  ],
+  "write_impact": "approved-sandbox-write",
+  "autonomy": "A1-A3",
+  "project_stages": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "verified_at": "2026-07-27",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "Simulation design only; no production deployment or organizational outcome is claimed.",
+    "Only explicitly approved actions may be written to an isolated monday.com sandbox.",
+    "Source permissions, API limits, and team-specific approval rules must be validated locally."
+  ]
+}
