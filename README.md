@@ -16,6 +16,18 @@ AX 엔지니어가 바꿀 업무를 고르고, AI를 기존 데이터와 시스�
 >
 > 실제 사용자가 업무에 적용하고, 문제가 생기면 멈추거나 복구하며, 다른 사람이 이어서 운영할 수 있어야 한다.
 
+## 왜 지금 AX Engineer인가
+
+`AX Engineer`는 아직 업계에서 하나로 표준화된 직함이 아니다. 그러나 최근 국내 기업들은 업무를 다시 설계하고, 기존 SaaS·데이터에 AI를 연결하며, 에이전트를 평가·운영하고, 현업이 실제로 쓰도록 정착시키는 사람을 실제로 모집했다. 직함은 달라도 이 일을 맡길 채용 수요는 확인된다.
+
+| 채용 맥락 | 최근 공고 | 역할에서 확인되는 일 |
+|---|---|---|
+| 대기업 환경 | [한화시스템 — 2026 방산부문 AX 대규모 채용 (AI/ML 엔지니어)](https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=53927637) | RAG·AI Agent, 평가·MLOps, 보안이 필요한 온프레미스 서비스 |
+| 성장·제품 조직 | [Lunit — Senior AX Engineer](https://www.wanted.co.kr/wd/368564), [Liner — AX Engineer (Internal)](https://www.wanted.co.kr/wd/353689) | SaaS·데이터 통합과 승인 흐름, 에이전트 하네스·평가·배포·관측 |
+| 현업 확산·운영 | [미리디 — AX 엔지니어 (AX Engineer)](https://www.wanted.co.kr/wd/366267), [대웅·WELDA — AX Engineer (3~8년)](https://www.wanted.co.kr/wd/364116) | 현업 자동화·에이전트 구축 지원, 운영·문서화·플레이북과 업무 정착 |
+
+> **2026-07-26 스냅샷.** 채용 공고는 수시로 바뀌거나 종료되며, 위 사례 중 일부도 이미 마감됐다. 비슷한 책임은 `AX Engineer`, `AI/ML Engineer`, `AI Product Engineer`, `FDE`, `DX Engineer`처럼 서로 다른 직함으로 나타난다.
+
 ## AX 엔지니어는 어떤 일을 하는가
 
 이 저장소에서 **AX Engineer**는 조직의 업무 문제를 찾고, 업무 흐름을 다시 설계하며, AI를 기존 데이터·시스템·권한 구조에 연결하는 엔지니어를 뜻한다. 직함과 세부 범위는 회사마다 다르지만 다음 책임을 공통으로 다룬다.
