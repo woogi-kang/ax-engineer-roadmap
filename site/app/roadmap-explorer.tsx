@@ -10,7 +10,7 @@ import {
   roleLabels,
 } from "./roadmap-data";
 
-const repositoryUrl = "https://github.com/woogi-kang/ax-engineer-roadmap-kr";
+const repositoryUrl = "https://github.com/woogi-kang/ax-engineer-roadmap";
 
 const copy = {
   ko: {
