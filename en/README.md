@@ -1,18 +1,24 @@
-# AX Engineer Roadmap Korea
+# AX Engineer Roadmap
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
-[![Language: English](https://img.shields.io/badge/Language-English-2563eb.svg)](README.md)
+[![Bilingual: KO/EN](https://img.shields.io/badge/Bilingual-KO%2FEN-0f766e.svg)](README.md)
 [![Status: v0.2.0](https://img.shields.io/badge/Status-v0.2.0-7c3aed.svg)](CHANGELOG.md)
 
 [한국어](../README.md) | [English](README.md)
 
-An evidence-oriented field guide for **AX Engineers** who deploy AI into real work and turn it into an operable way of working inside Korean organizations. Developers, business practitioners, leaders, and data, security, and operations owners can begin from their own responsibilities.
+An evidence-driven **AX engineering roadmap** grounded in Korean organizational realities and designed for reuse across markets. Developers, business practitioners, leaders, and data, security, and operations owners can begin from their own responsibilities.
 
 This is not a catalog of technologies. It connects the decisions an AX Engineer must make, the systems they must build, and the evidence they must leave behind.
 
 > An AX Engineer's deliverable is not a demo.
 >
 > It is a system and way of working that people use in real operations, that makes failures visible, and that another person can safely take over.
+
+## Scope
+
+Workflow discovery, process redesign, data and integration, evaluation, operations, and adoption form a reusable core across regions and industries. The roadmap then adds conditions that often shape delivery in Korean organizations: approval lines, actual decision rights, privacy and AI regulation, and uneven digital foundations.
+
+It does not claim to be a standard only for Korean companies. Readers elsewhere can retain the common core and replace legal, procurement, labor, and organizational assumptions with their local conditions.
 
 ## Why this roadmap exists
 
@@ -180,4 +186,5 @@ It is not an internal diagnosis of a specific company. It is a learning simulati
 - Current version: `v0.2.0`
 - Reference date: `2026-07-26`
 - Status: public edition with multiple roles, readiness, technical foundations, and evidence projects
+- Scope: universal AX core with Korean organizational context
 - License: [MIT](../LICENSE)

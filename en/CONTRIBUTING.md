@@ -1,6 +1,6 @@
 # Contributing
 
-AX Engineer Roadmap Korea prioritizes contributions that strengthen decisions and evidence that can be validated in practice, rather than contributions that merely add more technology names.
+AX Engineer Roadmap prioritizes contributions that strengthen decisions and evidence that can be validated in practice, rather than contributions that merely add more technology names.
 
 ## What you can contribute
 

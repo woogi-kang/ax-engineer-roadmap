@@ -2,6 +2,13 @@
 
 이 프로젝트는 [Semantic Versioning](https://semver.org/)의 취지를 따라 공개 콘텐츠의 구조와 호환성을 기록한다.
 
+## [Unreleased]
+
+### Changed
+
+- 저장소와 사이트의 주 이름을 `AX Engineer Roadmap`으로 통일
+- 범용 AX 코어에 한국 조직의 운영 조건을 더하는 적용 범위를 명시
+
 ## [0.2.0] - 2026-07-26
 
 ### Added

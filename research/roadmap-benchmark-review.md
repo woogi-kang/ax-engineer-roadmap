@@ -6,6 +6,8 @@
 
 [`nilbuild/developer-roadmap`](https://github.com/nilbuild/developer-roadmap)은 [`roadmap.sh`](https://roadmap.sh/)를 만드는 공개 저장소다. 둘을 서로 다른 로드맵 두 개로 세어 비교하지 않는다. 이 문서는 저장소의 실제 파일, 기여 규칙, [`AI Agents Roadmap`](https://roadmap.sh/ai-agents)을 함께 읽고 AX Engineer 로드맵에 가져올 구조와 보완할 공백을 정리한다.
 
+이 로드맵은 한국 기업만을 위한 표준을 주장하지 않는다. 공통 AX 원칙을 코어로 두고, 한국 조직의 결재·권한·규제·디지털 기반을 별도 적용 조건으로 다룬다.
+
 ## 가져올 구조
 
 ### 한눈에 보고 필요한 곳부터 들어간다

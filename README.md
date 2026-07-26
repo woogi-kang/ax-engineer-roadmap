@@ -1,18 +1,24 @@
-# AX Engineer Roadmap Korea
+# AX Engineer Roadmap
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Language: Korean](https://img.shields.io/badge/Language-Korean-0f766e.svg)](README.md)
+[![Bilingual: KO/EN](https://img.shields.io/badge/Bilingual-KO%2FEN-0f766e.svg)](README.md)
 [![Status: v0.2.0](https://img.shields.io/badge/Status-v0.2.0-7c3aed.svg)](CHANGELOG.md)
 
 [한국어](README.md) | [English](en/README.md)
 
-한국 조직 안에서 AI를 실제 업무에 배포하고, 운영 가능한 변화로 정착시키는 **AX Engineer 실전 로드맵**이다. 개발자뿐 아니라 현업 실무자, 리더, 데이터·보안·운영 담당자도 자신의 책임에서 시작할 수 있다.
+한국 조직의 결재·권한·규제·디지털 격차를 반영하되, 다른 환경에서도 재사용할 수 있도록 설계한 **AX Engineer 실전 로드맵**이다. 개발자뿐 아니라 현업 실무자, 리더, 데이터·보안·운영 담당자도 자신의 책임에서 시작할 수 있다.
 
 기술 목록만 나열하지 않는다. AX Engineer가 어떤 판단을 해야 하는지, 무엇을 직접 만들어야 하는지, 그 과정을 어떤 증거로 남겨야 하는지까지 연결한다.
 
 > AX Engineer의 결과물은 데모가 아니다.
 >
 > 사람이 실제 업무에서 사용하고, 실패를 발견하고, 다른 사람이 이어서 운영할 수 있는 시스템과 작업 방식이다.
+
+## 적용 범위
+
+이 로드맵의 업무 발굴, 프로세스 재설계, 데이터·통합, 평가, 운영, 채택 원칙은 지역과 업종에 관계없이 재사용할 수 있는 공통 코어다. 여기에 한국 조직에서 자주 마주치는 결재선, 실제 의사결정권, 개인정보·AI 규제, 기업 간 디지털 기반 격차를 별도 적용 조건으로 더한다.
+
+한국 기업만을 위한 표준을 주장하지 않는다. 다른 환경의 독자는 공통 코어를 유지하고, 법률·조달·노사관계·조직 구조에 해당하는 부분을 현지 조건으로 바꿔 적용할 수 있다.
 
 ## 왜 이 로드맵을 만드는가
 
@@ -180,4 +186,5 @@ VOC 수집
 - 현재 버전: `v0.2.0`
 - 기준일: `2026-07-26`
 - 상태: 다중 역할·조직 준비도·기술 기반·증거 프로젝트를 포함한 공개본
+- 적용 범위: 범용 AX 코어 + 한국 조직의 운영 맥락
 - 라이선스: [MIT](LICENSE)

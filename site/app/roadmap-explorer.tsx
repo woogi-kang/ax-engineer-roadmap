@@ -15,12 +15,13 @@ const repositoryUrl = "https://github.com/woogi-kang/ax-engineer-roadmap";
 const copy = {
   ko: {
     skip: "로드맵으로 바로가기",
+    contextLabel: "범용 AX 코어 · 한국 조직 맥락",
     version: "공개본 v0.2.0",
     repository: "GitHub 저장소",
     docs: "Markdown 문서",
     title: "역할에서 시작해 운영 증거로 끝내는 AX 로드맵",
     intro:
-      "비개발 실무자와 개발자, 리더, 데이터·보안·운영 담당자가 같은 업무 전환을 서로 다른 책임에서 탐색합니다.",
+      "한국 조직의 결재·권한·규제·디지털 격차를 반영하면서, 다른 환경에서도 재사용할 수 있는 AX 업무 전환 원칙을 정리했습니다.",
     scope: "6개 지도 · 4개 역할 · 7개 기술 기반 · 5개 증거 프로젝트",
     filterTitle: "내 시작점",
     filterHelp: "역할과 현재 업무의 준비 상태를 선택하면 관련 경로만 남습니다.",
@@ -61,12 +62,13 @@ const copy = {
   },
   en: {
     skip: "Skip to roadmap",
+    contextLabel: "Universal AX core · Korean organizational context",
     version: "Public release v0.2.0",
     repository: "GitHub repository",
     docs: "Markdown docs",
     title: "Start with responsibility. Finish with operating evidence.",
     intro:
-      "Business practitioners, developers, leaders, and data, security, and operations owners explore the same transformation from different responsibilities.",
+      "Grounded in Korean organizational realities, this roadmap organizes AX transformation principles for reuse across markets.",
     scope: "6 maps · 4 roles · 7 technical foundations · 5 evidence projects",
     filterTitle: "Your starting point",
     filterHelp: "Select a role and current readiness to keep only the relevant path.",
@@ -195,9 +197,9 @@ export function RoadmapExplorer({
       </a>
 
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="AX Engineer Roadmap Korea">
+        <a className="wordmark" href="#top" aria-label="AX Engineer Roadmap">
           <span aria-hidden="true">AX/RM</span>
-          <span className="wordmark-text">Engineer Roadmap Korea</span>
+          <span className="wordmark-text">Engineer Roadmap</span>
         </a>
         <nav className="header-actions" aria-label={t.navLabel}>
           <span className="version">{t.version}</span>
@@ -229,7 +231,7 @@ export function RoadmapExplorer({
       <main id="top">
         <section className="intro" aria-labelledby="page-title">
           <div>
-            <p className="eyebrow">AX Engineer Roadmap Korea</p>
+            <p className="eyebrow">{t.contextLabel}</p>
             <h1 id="page-title">{t.title}</h1>
           </div>
           <div className="intro-copy">

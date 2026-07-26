@@ -2,6 +2,13 @@
 
 This project follows the intent of [Semantic Versioning](https://semver.org/) to record changes to the structure and compatibility of its public content.
 
+## [Unreleased]
+
+### Changed
+
+- Unified the primary repository and site name as `AX Engineer Roadmap`
+- Clarified the scope as a universal AX core with Korean organizational conditions
+
 ## [0.2.0] - 2026-07-26
 
 ### Added

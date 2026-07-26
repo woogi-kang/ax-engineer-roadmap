@@ -6,6 +6,8 @@
 
 [`nilbuild/developer-roadmap`](https://github.com/nilbuild/developer-roadmap) is the public repository behind [`roadmap.sh`](https://roadmap.sh/). They are not two independent roadmaps. This review reads the repository files, contribution rules, and the [`AI Agents Roadmap`](https://roadmap.sh/ai-agents) together to decide what this AX Engineer roadmap should adopt and what it must add.
 
+This roadmap does not claim to be a standard only for Korean companies. It keeps common AX principles as the core and treats Korean approval, authority, regulation, and digital foundations as explicit application conditions.
+
 ## Structures worth adopting
 
 ### Show the whole path, then let readers enter where needed
