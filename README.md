@@ -37,17 +37,17 @@ AX 엔지니어가 바꿀 업무를 고르고, AI를 기존 데이터와 시스�
 
 ## 왜 지금 AX Engineer인가
 
-`AX Engineer`는 아직 업계에서 하나로 표준화된 직함이 아니다. 그러나 최근 국내 기업들은 업무를 다시 설계하고, 기존 SaaS·데이터에 AI를 연결하며, 에이전트를 평가·운영하고, 현업이 실제로 쓰도록 정착시키는 사람을 실제로 모집했다. 아래 표는 이 흐름을 과장하지 않도록 공고 제목에 `AX Engineer`가 직접 쓰인 사례만 모았다.
+`AX Engineer`는 아직 업계에서 하나로 표준화된 직함이 아니다. 그러나 최근 국내 대기업과 계열사는 `AX 엔지니어`, `AX/DX Engineer`, `AX (AI/ML Engineer)`처럼 AX를 명시한 이름으로 관련 인력을 모집했다. 아래 표는 기업 규모와 AX 표기를 함께 확인할 수 있는 공고만 모았다.
 
-| 기업 | 최근 공고 | AX 업무 신호 | 게시·모집 상태 |
+| 기업 | 공고에서 사용한 AX 표기 | 확인되는 AX 업무 | 게시·모집 상태 |
 |---|---|---|---|
-| 대웅·WELDA | [AX Engineer (3~8년)](https://www.wanted.co.kr/wd/364116) | 제품·비즈니스·개발 전반의 자동화, 멀티에이전트, 하네스, 현업 정착 | 상시채용 |
-| 루닛 | [Senior AX Engineer](https://www.wanted.co.kr/wd/368564) | Slack 결재·승인, 도메인 에이전트, SaaS 데이터 연동, 플랫폼 SDK | 상시채용 |
-| 라이너 | [AX Engineer (Internal)](https://www.wanted.co.kr/wd/353689) | 사내 업무 재설계, 에이전트 하네스, RAG·평가, 배포·관측 | 상시채용 |
-| 에어스메디컬 | [AX Engineer](https://www.wanted.co.kr/wd/361768) | 통합 데이터 계층, MCP·워크플로 빌더, 부서별 업무 재설계, 교육·가이드 | 상시채용 |
-| 에고이즘 | [AX Engineer](https://www.wanted.co.kr/wd/350984) | 운영 병목 발굴, 반복 업무 자동화, 내부 관리 도구, 성과 측정 | 상시채용 |
+| DB Inc. | [AX 엔지니어 경력 채용](https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=53998687) | AX 과제 분석, AI Agent·Multi-Agent, RAG, AIOps, 사내 확산 | 2026-07-27 마감 |
+| LG CNS | [AX/DX Engineer](https://careers.lg.com/apply/detail?id=1001774) | 금융·공공·교육 IT 지식과 AI·Cloud 활용 역량을 함께 요구 | 2026-06-16 마감 |
+| LG생활건강 | [AX (AI/ML Engineer)](https://careers.lg.com/apply/detail?id=1001576) | AX를 AI/ML 엔지니어 직무군으로 명시해 신입 채용 | 2026-04-14 마감 |
+| 한화시스템 | [2026 방산부문 AX 대규모 채용](https://www.catch.co.kr/NCS/RecruitInfoDetails/552043) | AI Agent·VLM·Ontology, AX 전략, 방산 업무·의사결정 전환 | 2026년 5월 마감 |
+| SK inc. (AX) | [Cloud-native AI/Data Platform Engineer](https://www.skcareers.com/Recruit/Detail/R261176) | RAG·AI Agent·업무 자동화, LLMOps, 보안·거버넌스, 내부 SDK | 2026-07-13 마감 |
 
-> **2026-07-31 스냅샷.** 채용 공고는 수시로 바뀌거나 종료되므로 지원 가능 여부는 원문에서 다시 확인해야 한다. `AI Agent Engineer`, `AI/ML Engineer`, `LLM Engineer`, `FDE`, `DX Engineer`처럼 비슷한 일을 맡는 인접 직무도 있지만, 위 표에는 포함하지 않았다.
+> **2026-07-31 스냅샷.** 모두 대기업 또는 대기업 계열사의 최근 공고이며 현재는 마감됐다. 공고 상세 페이지는 변경되거나 사라질 수 있다. 회사마다 `AX`를 직무명, 모집 분야, 조직·회사명에 쓰는 방식이 다르므로 같은 직무라고 단정하지 않고 실제 표기를 그대로 적었다.
 
 ## AX 엔지니어는 어떤 일을 하는가
 

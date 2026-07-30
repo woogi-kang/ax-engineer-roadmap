@@ -37,17 +37,17 @@ All cases are public or synthetic simulations or simulation designs. Compare rea
 
 ## Why AX Engineers now?
 
-`AX Engineer` is not yet a standardized title. Recent Korean employers have nevertheless recruited people to redesign workflows, connect AI to existing systems and data, evaluate and operate agents, and help teams adopt them in real work. To keep the signal precise, the table below includes only postings that use `AX Engineer` in the job title.
+`AX Engineer` is not yet a standardized title. Recent Korean enterprises and their affiliates have nevertheless recruited related talent under labels such as `AX Engineer`, `AX/DX Engineer`, and `AX (AI/ML Engineer)`. The table below includes only postings where both the enterprise context and explicit use of `AX` can be verified.
 
-| Company | Recent posting | AX work signal | Posting status |
+| Company | AX label used in the posting | Verified AX work | Posting status |
 |---|---|---|---|
-| Daewoong · WELDA | [AX Engineer (3–8 years)](https://www.wanted.co.kr/wd/364116) | End-to-end automation, multi-agent systems, harness engineering, and workflow adoption | Always open |
-| Lunit | [Senior AX Engineer](https://www.wanted.co.kr/wd/368564) | Slack approvals, domain agents, SaaS data integration, and a platform SDK | Always open |
-| Liner | [AX Engineer (Internal)](https://www.wanted.co.kr/wd/353689) | Internal workflow redesign, agent harnesses, RAG and evaluation, deployment and observability | Always open |
-| AIRS Medical | [AX Engineer](https://www.wanted.co.kr/wd/361768) | A central data layer, MCP and workflow builders, cross-functional redesign, and enablement | Always open |
-| Egoism | [AX Engineer](https://www.wanted.co.kr/wd/350984) | Operational bottleneck discovery, automation, internal tools, and outcome measurement | Always open |
+| DB Inc. | [Experienced AX Engineer](https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=53998687) | AX initiative analysis, AI agents and multi-agent systems, RAG, AIOps, and internal adoption | Closed 2026-07-27 |
+| LG CNS | [AX/DX Engineer](https://careers.lg.com/apply/detail?id=1001774) | A role combining finance, public-sector, or education IT knowledge with AI and cloud skills | Closed 2026-06-16 |
+| LG H&H | [AX (AI/ML Engineer)](https://careers.lg.com/apply/detail?id=1001576) | An entry-level AI/ML engineering role explicitly grouped under AX | Closed 2026-04-14 |
+| Hanwha Systems | [2026 large-scale Defense AX recruitment](https://www.catch.co.kr/NCS/RecruitInfoDetails/552043) | AI agents, VLM, ontology, AX strategy, and transformation of defense workflows and decisions | Closed May 2026 |
+| SK inc. (AX) | [Cloud-native AI/Data Platform Engineer](https://www.skcareers.com/Recruit/Detail/R261176) | RAG, AI agents, workflow automation, LLMOps, governance, and internal SDKs | Closed 2026-07-13 |
 
-> **Snapshot as of 2026-07-31.** Postings change and close, so check the original page before applying. Adjacent roles may use titles such as `AI Agent Engineer`, `AI/ML Engineer`, `LLM Engineer`, `FDE`, or `DX Engineer`, but they are not included in this table.
+> **Snapshot as of 2026-07-31.** All five are recent postings from Korean enterprises or their affiliates and are now closed. Detail pages may change or disappear. Companies use `AX` differently—in job titles, recruitment tracks, organization names, or company branding—so the table preserves each posting's actual wording rather than treating them as one standardized role.
 
 ## What an AX Engineer does
 
