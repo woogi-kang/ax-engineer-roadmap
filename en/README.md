@@ -20,45 +20,18 @@ The primary audience is practicing and aspiring AX Engineers. Business practitio
 
 Start with one case in a work area you already know. Open a case to see its systems of record, human approvals, external impact, and recovery path.
 
-### Customer and revenue
-
-**[Find recurring issues in public VOC](case-studies/beauty-d2c-voc/README.md)**<br>
-Start with public data. Keep the output read-only and limited to workflow proposals.
-
-**[Issue electronic tax invoices and reconcile payments](case-studies/electronic-tax-invoice-reconciliation/README.md)**<br>
-Start in an accounting or ERP sandbox. Even after approval, stop at test issuance.
-
-### People and collaboration
-
-**[Turn Slack meeting notes into action items](case-studies/slack-meeting-actions/README.md)**<br>
-Start in a SaaS sandbox. Write only the items a responsible person approves.
-
-**[Manage access for joiner, mover, and leaver events](case-studies/employee-lifecycle-access/README.md)**<br>
-Start in HR and identity sandboxes. Provision or revoke access only after role-based approval.
-
-### Finance and procurement
-
-**[Turn card transactions and receipts into journal-entry drafts](case-studies/corporate-card-expense/README.md)**<br>
-Practice with synthetic transactions and evidence. Create drafts without posting real journal entries.
-
-**[Validate vendor onboarding and bank-account changes](case-studies/vendor-master-account-change/README.md)**<br>
-Start in a vendor-master sandbox. Apply a change only after independent verification and dual approval.
-
-### Data and operations
-
-**[Turn files and CSVs into a reviewable AX Hub](case-studies/file-csv-to-ax-hub/README.md)**<br>
-Start with files and chat. Produce drafts that a responsible person can review.
-
-**[Detect inventory exceptions and propose purchase or transfer actions](case-studies/inventory-exception-replenishment/README.md)**<br>
-Start in ERP and WMS sandboxes. Record approved proposals without placing real orders.
-
-### Shared integration and operations
-
-**[Classify mail and draft replies](case-studies/centralized-mail-assist/README.md)**<br>
-Start in a mail sandbox. Do not send anything before human approval.
-
-**[Operate workflow agents under common controls](case-studies/company-agent-operating-layer/README.md)**<br>
-Start after a second workflow and internal APIs are available. Scope access and actions separately for each workflow.
+| Work area | Case | Starting condition | Action boundary |
+|---|---|---|---|
+| Customer and revenue | [Public VOC issues → improvement proposals](case-studies/beauty-d2c-voc/README.md) | Public data | Read and propose |
+| Customer and revenue | [Electronic tax invoice issuance and payment reconciliation](case-studies/electronic-tax-invoice-reconciliation/README.md) | Accounting and ERP sandbox | Approved test issuance |
+| People and collaboration | [Slack meetings → action items](case-studies/slack-meeting-actions/README.md) | SaaS sandboxes | Write after approval |
+| People and collaboration | [Joiner, mover, and leaver access](case-studies/employee-lifecycle-access/README.md) | HR and identity sandboxes | Role-based approval |
+| Finance and procurement | [Card transactions and receipts → journal-entry drafts](case-studies/corporate-card-expense/README.md) | Synthetic transactions and evidence | Draft only |
+| Finance and procurement | [Vendor onboarding and bank-account change validation](case-studies/vendor-master-account-change/README.md) | Vendor-master sandbox | Dual approval |
+| Data and operations | [Files and CSVs → reviewable AX Hub](case-studies/file-csv-to-ax-hub/README.md) | Files and messaging | Draft only |
+| Data and operations | [Inventory exceptions → purchase and transfer proposals](case-studies/inventory-exception-replenishment/README.md) | ERP and WMS sandboxes | Record approved proposals |
+| Shared operations | [Mail classification and response drafts](case-studies/centralized-mail-assist/README.md) | Mail sandbox | Approval before sending |
+| Shared operations | [Multi-workflow agent operations](case-studies/company-agent-operating-layer/README.md) | Second workflow and internal APIs | Bounded by workflow |
 
 All cases are public or synthetic simulations or simulation designs. Compare readiness, risk, P1–P5, and current evidence in the [full case catalog](case-studies/README.md).
 

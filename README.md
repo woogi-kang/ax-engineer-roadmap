@@ -20,45 +20,18 @@ AX 엔지니어가 바꿀 업무를 고르고, AI를 기존 데이터와 시스�
 
 익숙한 업무 영역에서 사례를 하나 골라 시작한다. 사례 이름을 누르면 원본 시스템, 담당자 승인, 외부 시스템에 미치는 영향, 실패했을 때 복구하는 방법을 확인할 수 있다.
 
-### 고객·매출
-
-**[공개 VOC에서 반복 문제 찾기](case-studies/beauty-d2c-voc/README.md)**<br>
-공개 데이터에서 시작한다. 결과는 읽기와 업무 제안으로 제한한다.
-
-**[전자세금계산서 발행과 입금 대사](case-studies/electronic-tax-invoice-reconciliation/README.md)**<br>
-회계·ERP 샌드박스에서 시작한다. 승인을 받아도 테스트 발행까지만 다룬다.
-
-### 사람·협업
-
-**[Slack 회의 내용을 실행 항목으로 옮기기](case-studies/slack-meeting-actions/README.md)**<br>
-SaaS 샌드박스에서 시작한다. 담당자가 승인한 항목만 기록한다.
-
-**[입사·이동·퇴사에 맞춰 계정과 권한 관리하기](case-studies/employee-lifecycle-access/README.md)**<br>
-HR·계정 샌드박스에서 시작한다. 역할별 승인을 거쳐 계정과 권한을 발급하거나 회수한다.
-
-### 재무·구매
-
-**[법인카드 거래와 영수증으로 전표 초안 만들기](case-studies/corporate-card-expense/README.md)**<br>
-합성 거래와 증빙으로 연습한다. 실제 전표를 등록하지 않고 초안만 만든다.
-
-**[거래처 등록과 계좌 변경 검증하기](case-studies/vendor-master-account-change/README.md)**<br>
-거래처 마스터 샌드박스에서 시작한다. 독립 확인과 이중 승인을 마친 변경만 반영한다.
-
-### 데이터·운영
-
-**[파일과 CSV를 검토 가능한 AX Hub로 모으기](case-studies/file-csv-to-ax-hub/README.md)**<br>
-파일과 메신저에서 시작한다. 담당자가 검토할 수 있는 초안까지만 만든다.
-
-**[재고 예외를 찾아 발주·창고 이동안 제안하기](case-studies/inventory-exception-replenishment/README.md)**<br>
-ERP·WMS 샌드박스에서 시작한다. 승인받은 제안만 기록하며 실제 발주는 내지 않는다.
-
-### 공통 통합·운영
-
-**[메일을 분류하고 답변 초안 만들기](case-studies/centralized-mail-assist/README.md)**<br>
-메일 샌드박스에서 시작한다. 담당자가 승인하기 전에는 발송하지 않는다.
-
-**[여러 업무 에이전트를 공통 기준으로 운영하기](case-studies/company-agent-operating-layer/README.md)**<br>
-두 번째 업무와 사내 API가 준비된 뒤 시작한다. 권한과 실행 범위는 업무별로 제한한다.
+| 업무 영역 | 사례 | 시작 조건 | 실행 범위 |
+|---|---|---|---|
+| 고객·매출 | [공개 VOC 반복 문제 → 개선 업무 제안](case-studies/beauty-d2c-voc/README.md) | 공개 데이터 | 읽기·제안 |
+| 고객·매출 | [전자세금계산서 발행·입금 대사](case-studies/electronic-tax-invoice-reconciliation/README.md) | 회계·ERP 샌드박스 | 승인 후 테스트 발행 |
+| 사람·협업 | [Slack 회의 → 실행 항목](case-studies/slack-meeting-actions/README.md) | SaaS 샌드박스 | 승인 후 기록 |
+| 사람·협업 | [입사·이동·퇴사 계정·권한 관리](case-studies/employee-lifecycle-access/README.md) | HR·계정 샌드박스 | 역할별 승인 후 반영 |
+| 재무·구매 | [법인카드 거래·영수증 → 전표 초안](case-studies/corporate-card-expense/README.md) | 합성 거래·증빙 | 초안 전용 |
+| 재무·구매 | [거래처 등록·계좌 변경 검증](case-studies/vendor-master-account-change/README.md) | 거래처 마스터 샌드박스 | 이중 승인 후 반영 |
+| 데이터·운영 | [파일·CSV → 검토 가능한 AX Hub](case-studies/file-csv-to-ax-hub/README.md) | 파일·메신저 | 초안 전용 |
+| 데이터·운영 | [재고 예외 → 발주·창고 이동안](case-studies/inventory-exception-replenishment/README.md) | ERP·WMS 샌드박스 | 승인 후 제안 기록 |
+| 공통 운영 | [메일 분류·답변 초안](case-studies/centralized-mail-assist/README.md) | 메일 샌드박스 | 발송 전 승인 |
+| 공통 운영 | [여러 업무 에이전트 운영](case-studies/company-agent-operating-layer/README.md) | 두 번째 업무·사내 API | 업무별로 제한 |
 
 모든 사례는 공개·합성 데이터 시뮬레이션 또는 시뮬레이션 설계다. `준비 상태`, 위험, P1~P5, 현재 근거 수준은 [전체 사례 비교표](case-studies/README.md)에서 확인할 수 있다.
 
