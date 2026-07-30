@@ -9,6 +9,10 @@
     "id",
     "title",
     "type",
+    "primary_domain",
+    "difficulty",
+    "capabilities",
+    "recommended_after",
     "status",
     "evidence_stage",
     "readiness",
@@ -47,6 +51,53 @@
     },
     "type": {
       "enum": ["workflow", "shared-integration", "organizational-capstone"]
+    },
+    "primary_domain": {
+      "enum": [
+        "customer-revenue",
+        "people-collaboration",
+        "finance-procurement",
+        "data-operations",
+        "shared-operations"
+      ]
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "workflow-discovery",
+          "data-contracts",
+          "retrieval-analysis",
+          "document-processing",
+          "human-approval",
+          "saas-integration",
+          "identity-access",
+          "transaction-reconciliation",
+          "policy-checks",
+          "master-data-controls",
+          "event-driven-operations",
+          "evaluation",
+          "observability",
+          "audit",
+          "recovery",
+          "reuse-governance"
+        ]
+      }
+    },
+    "recommended_after": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
     },
     "status": {
       "enum": ["draft", "ready", "archived"]

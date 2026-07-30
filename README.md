@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Bilingual: KO/EN](https://img.shields.io/badge/Bilingual-KO%2FEN-0f766e.svg)](README.md)
-[![Status: v0.2.0](https://img.shields.io/badge/Status-v0.2.0-7c3aed.svg)](CHANGELOG.md)
+[![Status: v0.3.0](https://img.shields.io/badge/Status-v0.3.0-7c3aed.svg)](CHANGELOG.md)
 
 [한국어](README.md) | [English](en/README.md)
 
@@ -15,6 +15,25 @@ AX 엔지니어가 바꿀 업무를 고르고, AI를 기존 데이터와 시스�
 > AX 엔지니어의 일은 데모가 동작할 때 끝나지 않는다.
 >
 > 실제 사용자가 업무에 적용하고, 문제가 생기면 멈추거나 복구하며, 다른 사람이 이어서 운영할 수 있어야 한다.
+
+## 어떤 업무를 AX로 바꿔볼 수 있나
+
+먼저 자신이 아는 업무와 비슷한 사례를 고른다. 각 사례는 AI 기능보다 원본 시스템, 담당자 승인, 외부 시스템에 미치는 영향, 실패 복구를 중심으로 설명한다.
+
+| 업무 영역 | 해볼 수 있는 일 | 시작 조건 | 실행 범위 | 문서 |
+|---|---|---|---|---|
+| 고객·매출 | 공개 VOC에서 반복 문제를 찾아 개선 업무로 제안하기 | `공개 데이터` | 읽기·제안 | [사례 보기](case-studies/beauty-d2c-voc/README.md) |
+| 고객·매출 | 매출 근거를 확인하고 전자세금계산서 발행·입금을 맞춰 보기 | `회계·ERP 샌드박스` | 승인 후 테스트 발행 | [사례 보기](case-studies/electronic-tax-invoice-reconciliation/README.md) |
+| 사람·협업 | Slack 회의 내용을 승인된 실행 항목으로 옮기기 | `SaaS 샌드박스` | 승인 후 쓰기 | [사례 보기](case-studies/slack-meeting-actions/README.md) |
+| 사람·협업 | 입사·이동·퇴사에 맞춰 계정과 권한을 발급·회수하기 | `HR·계정 샌드박스` | 역할별 승인 후 쓰기 | [사례 보기](case-studies/employee-lifecycle-access/README.md) |
+| 재무·구매 | 법인카드 거래와 영수증을 확인하고 전표 초안 만들기 | `합성 거래·증빙` | 초안 전용 | [사례 보기](case-studies/corporate-card-expense/README.md) |
+| 재무·구매 | 거래처 등록과 계좌 변경을 독립적으로 검증하기 | `거래처 마스터 샌드박스` | 이중 승인 후 쓰기 | [사례 보기](case-studies/vendor-master-account-change/README.md) |
+| 데이터·운영 | 흩어진 파일과 CSV를 검토 가능한 AX Hub로 모으기 | `파일·메신저` | 초안 전용 | [사례 보기](case-studies/file-csv-to-ax-hub/README.md) |
+| 데이터·운영 | 재고 예외를 찾아 발주·창고 이동안을 제안하기 | `ERP·WMS 샌드박스` | 승인 후 제안 기록 | [사례 보기](case-studies/inventory-exception-replenishment/README.md) |
+| 공통 통합·운영 | 선택한 메일을 분류하고 답변 초안을 만들기 | `메일 샌드박스` | 발송 전 승인 | [사례 보기](case-studies/centralized-mail-assist/README.md) |
+| 공통 통합·운영 | 여러 업무 에이전트를 권한·승인·감사 기준으로 운영하기 | `두 번째 업무·사내 API` | 업무별로 제한 | [사례 보기](case-studies/company-agent-operating-layer/README.md) |
+
+모든 사례는 공개·합성 데이터 시뮬레이션 또는 시뮬레이션 설계다. `준비 상태`, 위험, P1~P5, 현재 근거 수준은 [전체 사례 비교표](case-studies/README.md)에서 확인할 수 있다.
 
 ## 왜 지금 AX Engineer인가
 
@@ -145,19 +164,11 @@ flowchart LR
 
 한국 기업 전체가 같은 방식으로 일한다고 가정하지 않는다. 다른 지역의 독자는 법률·조달·노사관계·조직 구조에 해당하는 조건을 현지 상황에 맞게 바꿔 적용할 수 있다.
 
-## 현업 조합 사례
+## 사례를 읽는 방법
 
-[사례 카탈로그](case-studies/README.md)는 조직의 준비 상태와 연습할 책임에 따라 사례를 고를 수 있게 구성했다.
+위의 빠른 목록은 익숙한 업무에서 시작하기 위한 안내다. [사례 카탈로그](case-studies/README.md)에서는 난이도, 준비 상태, 위험, 외부 쓰기 영향, P1~P5, 현재 근거 수준을 비교할 수 있다.
 
-| 출발점 | 사례 |
-|---|---|
-| 공개 데이터 분석 | [Beauty/D2C 글로벌 VOC → 업무 제안](case-studies/beauty-d2c-voc/README.md) |
-| 분산 파일과 개인 AI 사용 | [흩어진 파일·CSV를 검토 가능한 AX Hub로](case-studies/file-csv-to-ax-hub/README.md) |
-| 기존 SaaS 연동 | [회의 전후 Slack 신호를 승인 가능한 실행 항목으로](case-studies/slack-meeting-actions/README.md) |
-| 공용 커넥터와 고위험 입력 | [중앙 메일 업무 보조 통합](case-studies/centralized-mail-assist/README.md) |
-| 두 번째 업무 뒤 공통 운영 | [회사 에이전트 운영 계층](case-studies/company-agent-operating-layer/README.md) |
-
-사례는 공개 데이터 시뮬레이션 또는 시뮬레이션 설계다. 특정 회사의 내부 진단, 실제 현업 정착, 생산성·비용·매출 개선을 주장하지 않는다.
+특정 회사의 내부 진단, 실제 현업 정착, 생산성·비용·매출 개선을 사례 제목만으로 추정하지 않는다. 각 문서의 `결과와 한계`에서 현재 확인한 범위를 따로 밝힌다.
 
 ## 기여하기
 
@@ -170,8 +181,8 @@ flowchart LR
 
 ## 상태와 라이선스
 
-- 현재 버전: `v0.2.0`
-- 기준일: `2026-07-27`
+- 현재 버전: `v0.3.0`
+- 기준일: `2026-07-31`
 - 상태: AX 엔지니어의 역할·업무 전환·기술 학습·실습·현업 조합 사례를 포함한 공개본
 - 적용 범위: 여러 조직에 적용할 AX 원칙과 한국 조직에서 확인할 조건
 - 라이선스: [MIT](LICENSE)

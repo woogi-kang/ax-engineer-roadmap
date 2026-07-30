@@ -1,0 +1,55 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "corporate-card-expense",
+  "title": {
+    "ko": "법인카드·경비 증빙에서 승인 가능한 전표 초안까지",
+    "en": "From corporate-card evidence to an approvable journal-entry draft"
+  },
+  "type": "workflow",
+  "primary_domain": "finance-procurement",
+  "difficulty": 2,
+  "capabilities": [
+    "document-processing",
+    "policy-checks",
+    "human-approval",
+    "transaction-reconciliation",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "file-csv-to-ax-hub"
+  ],
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "low",
+    "saas"
+  ],
+  "risk": "moderate",
+  "entry_channels": [
+    "Corporate-card export",
+    "Receipt upload",
+    "Expense-approval queue"
+  ],
+  "systems": [
+    "Corporate-card transaction export",
+    "Receipt and evidence store",
+    "Expense-policy knowledge base",
+    "Accounting sandbox",
+    "Approval and audit store"
+  ],
+  "write_impact": "draft-only",
+  "autonomy": "A1-A2",
+  "project_stages": [
+    1,
+    2,
+    3
+  ],
+  "verified_at": "2026-07-31",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The workflow uses synthetic transactions and evidence and does not post entries to a live accounting system.",
+    "Account mapping, deductible treatment, evidence requirements, and approval limits remain organization-specific decisions.",
+    "No reduction in close time, correction workload, or expense leakage has been verified."
+  ]
+}

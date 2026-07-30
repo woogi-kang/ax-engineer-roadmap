@@ -1,0 +1,55 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "electronic-tax-invoice-reconciliation",
+  "title": {
+    "ko": "매출 근거에서 전자세금계산서 발행·입금 대사까지",
+    "en": "From sales evidence to electronic tax invoice and payment reconciliation"
+  },
+  "type": "workflow",
+  "primary_domain": "customer-revenue",
+  "difficulty": 4,
+  "capabilities": [
+    "data-contracts",
+    "document-processing",
+    "human-approval",
+    "transaction-reconciliation",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "corporate-card-expense"
+  ],
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "saas",
+    "it"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "Approved sales transaction",
+    "Accounting approval queue"
+  ],
+  "systems": [
+    "Contract, order, and acceptance evidence",
+    "ERP or accounting sandbox",
+    "Certified electronic tax invoice provider sandbox",
+    "Issuance and transmission-result store",
+    "Bank-statement sandbox"
+  ],
+  "write_impact": "approved-sandbox-write",
+  "autonomy": "A1-A3",
+  "project_stages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "verified_at": "2026-07-31",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The workflow does not issue, correct, cancel, or transmit a real tax invoice.",
+    "Taxability, exemption, correction reasons, issuance timing, and filing treatment require confirmation by an accountable tax professional.",
+    "No accounting close, collection, compliance, or cash-flow outcome has been verified."
+  ]
+}

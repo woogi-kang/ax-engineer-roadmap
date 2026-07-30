@@ -1,0 +1,56 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "vendor-master-account-change",
+  "title": {
+    "ko": "거래처 등록·계좌 변경을 검증 가능한 승인 흐름으로",
+    "en": "Vendor onboarding and bank-account change with verifiable approval"
+  },
+  "type": "workflow",
+  "primary_domain": "finance-procurement",
+  "difficulty": 4,
+  "capabilities": [
+    "data-contracts",
+    "master-data-controls",
+    "human-approval",
+    "saas-integration",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "corporate-card-expense"
+  ],
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "saas",
+    "it"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "Procurement request form",
+    "Vendor change request",
+    "Finance approval queue"
+  ],
+  "systems": [
+    "Procurement request system",
+    "Business-registration status service",
+    "Vendor master sandbox",
+    "Bank-account evidence store",
+    "Independent approval and audit store"
+  ],
+  "write_impact": "approved-sandbox-write",
+  "autonomy": "A1-A3",
+  "project_stages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "verified_at": "2026-07-31",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The workflow does not verify ownership of a real bank account or change a live vendor master.",
+    "Business-registration status is only one input and does not establish the legitimacy or creditworthiness of a counterparty.",
+    "No fraud reduction, payment accuracy, or procurement-cycle outcome has been verified."
+  ]
+}

@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
 [![Bilingual: KO/EN](https://img.shields.io/badge/Bilingual-KO%2FEN-0f766e.svg)](README.md)
-[![Status: v0.2.0](https://img.shields.io/badge/Status-v0.2.0-7c3aed.svg)](CHANGELOG.md)
+[![Status: v0.3.0](https://img.shields.io/badge/Status-v0.3.0-7c3aed.svg)](CHANGELOG.md)
 
 [한국어](../README.md) | [English](README.md)
 
@@ -15,6 +15,25 @@ The primary audience is practicing and aspiring AX Engineers. Business practitio
 > An AX Engineer's work does not end when the demo runs.
 >
 > The workflow must be usable in real work, stoppable and recoverable when it fails, and operable by someone other than its original builder.
+
+## What work can you transform with AX?
+
+Begin with a case that resembles work you already understand. Each case is organized around authoritative systems, accountable approval, external impact, and recovery rather than a list of AI features.
+
+| Work area | What you can practice | Starting condition | Action boundary | Document |
+|---|---|---|---|---|
+| Customer and revenue | Turn recurring public VOC into evidence-linked improvement proposals | `Public data` | Read and propose | [Open case](case-studies/beauty-d2c-voc/README.md) |
+| Customer and revenue | Check sales evidence, issue a test electronic tax invoice, and reconcile payment | `Accounting and ERP sandbox` | Approved test issuance | [Open case](case-studies/electronic-tax-invoice-reconciliation/README.md) |
+| People and collaboration | Turn Slack meeting signals into approved work items | `SaaS sandboxes` | Write after approval | [Open case](case-studies/slack-meeting-actions/README.md) |
+| People and collaboration | Provision and revoke accounts and access across the employee lifecycle | `HR and identity sandboxes` | Role-based approval | [Open case](case-studies/employee-lifecycle-access/README.md) |
+| Finance and procurement | Match corporate-card transactions and receipts into journal-entry drafts | `Synthetic transactions and evidence` | Draft only | [Open case](case-studies/corporate-card-expense/README.md) |
+| Finance and procurement | Independently verify vendor onboarding and bank-account changes | `Vendor-master sandbox` | Dual approval | [Open case](case-studies/vendor-master-account-change/README.md) |
+| Data and operations | Consolidate scattered files and CSVs into a reviewable AX Hub | `Files and messaging` | Draft only | [Open case](case-studies/file-csv-to-ax-hub/README.md) |
+| Data and operations | Turn inventory exceptions into purchase and transfer proposals | `ERP and WMS sandboxes` | Record approved proposals | [Open case](case-studies/inventory-exception-replenishment/README.md) |
+| Shared integration and operations | Classify selected mail and prepare response drafts | `Mail sandbox` | Approval before sending | [Open case](case-studies/centralized-mail-assist/README.md) |
+| Shared integration and operations | Operate multiple workflow agents with permission, approval, and audit boundaries | `Second workflow and internal APIs` | Bounded by workflow | [Open case](case-studies/company-agent-operating-layer/README.md) |
+
+All cases are public or synthetic simulations or simulation designs. Compare readiness, risk, P1–P5, and current evidence in the [full case catalog](case-studies/README.md).
 
 ## What an AX Engineer does
 
@@ -133,19 +152,11 @@ Workflow discovery, redesign, integration, evaluation, and operations principles
 
 The roadmap does not treat Korean companies as one culture. Readers elsewhere can replace legal, procurement, labor, and organizational conditions with their local context.
 
-## Applied AX cases
+## How to read the cases
 
-The [case catalog](case-studies/README.md) helps readers choose a case by organization readiness and the responsibility they want to practice.
+The quick list above helps you begin with familiar work. The [case catalog](case-studies/README.md) compares difficulty, readiness, risk, write impact, P1–P5, and current evidence.
 
-| Starting point | Case |
-|---|---|
-| Public-data analysis | [Beauty/D2C global VOC → workflow proposal](case-studies/beauty-d2c-voc/README.md) |
-| Distributed files and personal AI use | [From Scattered Files and CSVs to a Reviewable AX Hub](case-studies/file-csv-to-ax-hub/README.md) |
-| Existing-SaaS integration | [From Slack Meeting Signals to Human-Approved Actions](case-studies/slack-meeting-actions/README.md) |
-| Shared connector and high-risk input | [Centralized Mail Assistance Integration](case-studies/centralized-mail-assist/README.md) |
-| Shared operations after second-workflow reuse | [Company Agent Operating Layer](case-studies/company-agent-operating-layer/README.md) |
-
-The cases are public-data simulations or simulation designs. They make no claim about a named company's internal diagnosis, live adoption, or productivity, cost, or revenue improvements.
+Do not infer a named company's internal diagnosis, live adoption, or productivity, cost, or revenue improvement from a case title. Each document states its current result and limits separately.
 
 ## Contributing
 
@@ -158,8 +169,8 @@ The cases are public-data simulations or simulation designs. They make no claim 
 
 ## Status and license
 
-- Current version: `v0.2.0`
-- Reference date: `2026-07-27`
+- Current version: `v0.3.0`
+- Reference date: `2026-07-31`
 - Status: public draft covering the AX Engineer role, workflow transformation, technical learning, practice, and applied AX cases
 - Scope: reusable AX principles plus conditions to verify in Korean organizations
 - License: [MIT](../LICENSE)

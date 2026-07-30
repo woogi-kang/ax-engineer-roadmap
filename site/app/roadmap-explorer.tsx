@@ -17,14 +17,14 @@ const copy = {
   ko: {
     skip: "로드맵으로 바로가기",
     contextLabel: "AX 엔지니어를 위한 오픈 로드맵",
-    version: "공개본 v0.2.0",
+    version: "공개본 v0.3.0",
     repository: "GitHub 저장소",
     docs: "Markdown 문서",
     title: "업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵",
     intro:
       "업무를 찾고 흐름을 다시 설계한 뒤, AI를 기존 시스템에 연결해 배포하고 현업에 적용하는 데 필요한 판단과 기술을 정리했습니다. 두 번째 업무에서 무엇을 재사용할지도 다룹니다. 한국 조직에서 자주 부딪히는 결재·권한·규제와 업무 기록·연동 조건도 함께 살핍니다.",
     scope:
-      "AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 현업 조합 사례 5개",
+      "AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 현업 조합 사례 10개",
     filterTitle: "내 시작점",
     filterHelp: "역할과 현재 업무의 준비 상태를 선택하면 관련 항목만 추려 볼 수 있습니다.",
     roleLegend: "주된 책임",
@@ -65,14 +65,14 @@ const copy = {
   en: {
     skip: "Skip to roadmap",
     contextLabel: "An open roadmap for AX Engineers",
-    version: "Public release v0.2.0",
+    version: "Public release v0.3.0",
     repository: "GitHub repository",
     docs: "Markdown docs",
     title: "Choose the workflow. Carry it into operations.",
     intro:
       "A practical path from workflow discovery and redesign through AI integration, deployment, adoption, and reuse, including approval, authority, regulation, and digital-readiness conditions common in Korean organizations.",
     scope:
-      "8 transformation stages · 7 technical capabilities · 5 practice projects · 5 applied AX cases",
+      "8 transformation stages · 7 technical capabilities · 5 practice projects · 10 applied AX cases",
     filterTitle: "Your starting point",
     filterHelp: "Select a role and current readiness to keep only the relevant path.",
     roleLegend: "Primary responsibility",

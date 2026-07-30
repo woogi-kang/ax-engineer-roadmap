@@ -8,6 +8,31 @@ const failures = [];
 
 const allowed = {
   type: new Set(['workflow', 'shared-integration', 'organizational-capstone']),
+  primary_domain: new Set([
+    'customer-revenue',
+    'people-collaboration',
+    'finance-procurement',
+    'data-operations',
+    'shared-operations'
+  ]),
+  capabilities: new Set([
+    'workflow-discovery',
+    'data-contracts',
+    'retrieval-analysis',
+    'document-processing',
+    'human-approval',
+    'saas-integration',
+    'identity-access',
+    'transaction-reconciliation',
+    'policy-checks',
+    'master-data-controls',
+    'event-driven-operations',
+    'evaluation',
+    'observability',
+    'audit',
+    'recovery',
+    'reuse-governance'
+  ]),
   status: new Set(['draft', 'ready', 'archived']),
   evidence_stage: new Set([
     'simulation-design',
@@ -32,6 +57,10 @@ const requiredFields = [
   'id',
   'title',
   'type',
+  'primary_domain',
+  'difficulty',
+  'capabilities',
+  'recommended_after',
   'status',
   'evidence_stage',
   'readiness',
@@ -69,6 +98,7 @@ const directories = fs
   .sort();
 
 const ids = new Set();
+const metadataById = new Map();
 
 function nonEmptyStringArray(value) {
   return (
@@ -131,6 +161,7 @@ for (const directory of directories) {
     failures.push(`${relativeMetadata}: 중복 id ${metadata.id}`);
   }
   ids.add(metadata.id);
+  metadataById.set(metadata.id, metadata);
 
   if (
     !metadata.title ||
@@ -146,6 +177,40 @@ for (const directory of directories) {
     if (!allowed[field].has(metadata[field])) {
       failures.push(`${relativeMetadata}: 허용되지 않은 ${field}`);
     }
+  }
+
+  if (!allowed.primary_domain.has(metadata.primary_domain)) {
+    failures.push(`${relativeMetadata}: 허용되지 않은 primary_domain`);
+  }
+
+  if (
+    !Number.isInteger(metadata.difficulty) ||
+    metadata.difficulty < 1 ||
+    metadata.difficulty > 5
+  ) {
+    failures.push(`${relativeMetadata}: difficulty 오류`);
+  }
+
+  if (
+    !Array.isArray(metadata.capabilities) ||
+    metadata.capabilities.length === 0 ||
+    new Set(metadata.capabilities).size !== metadata.capabilities.length ||
+    metadata.capabilities.some((value) => !allowed.capabilities.has(value))
+  ) {
+    failures.push(`${relativeMetadata}: capabilities 오류`);
+  }
+
+  if (
+    !Array.isArray(metadata.recommended_after) ||
+    new Set(metadata.recommended_after).size !== metadata.recommended_after.length ||
+    metadata.recommended_after.some(
+      (value) =>
+        typeof value !== 'string' ||
+        !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value) ||
+        value === metadata.id
+    )
+  ) {
+    failures.push(`${relativeMetadata}: recommended_after 오류`);
   }
 
   if (
@@ -196,6 +261,14 @@ for (const directory of directories) {
     const indexContent = fs.readFileSync(file, 'utf8');
     if (!indexContent.includes(`(${directory}/README.md)`)) {
       failures.push(`${path.relative(root, file)}: ${directory} 링크 누락`);
+    }
+  }
+}
+
+for (const [id, metadata] of metadataById) {
+  for (const dependency of metadata.recommended_after) {
+    if (!ids.has(dependency)) {
+      failures.push(`case-studies/${id}/case.json: 존재하지 않는 recommended_after ${dependency}`);
     }
   }
 }

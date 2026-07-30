@@ -6,6 +6,16 @@
     "en": "From Scattered Files and CSVs to a Reviewable AX Hub"
   },
   "type": "workflow",
+  "primary_domain": "data-operations",
+  "difficulty": 1,
+  "capabilities": [
+    "data-contracts",
+    "document-processing",
+    "human-approval",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [],
   "status": "ready",
   "evidence_stage": "simulation-design",
   "readiness": [

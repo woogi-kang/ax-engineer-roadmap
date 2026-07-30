@@ -6,6 +6,15 @@
     "en": "Beauty/D2C global VOC → workflow proposal"
   },
   "type": "workflow",
+  "primary_domain": "customer-revenue",
+  "difficulty": 1,
+  "capabilities": [
+    "workflow-discovery",
+    "retrieval-analysis",
+    "human-approval",
+    "evaluation"
+  ],
+  "recommended_after": [],
   "status": "ready",
   "evidence_stage": "public-simulation",
   "readiness": ["low", "saas"],

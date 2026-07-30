@@ -1,0 +1,58 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "inventory-exception-replenishment",
+  "title": {
+    "ko": "재고 예외에서 발주·창고 이동 제안까지",
+    "en": "From inventory exceptions to purchase and transfer proposals"
+  },
+  "type": "workflow",
+  "primary_domain": "data-operations",
+  "difficulty": 4,
+  "capabilities": [
+    "data-contracts",
+    "event-driven-operations",
+    "human-approval",
+    "saas-integration",
+    "observability",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "slack-meeting-actions",
+    "vendor-master-account-change"
+  ],
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "saas",
+    "it"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "Inventory exception event",
+    "Operations review queue"
+  ],
+  "systems": [
+    "ERP sandbox",
+    "Warehouse-management sandbox",
+    "Order and demand snapshot",
+    "Vendor master sandbox",
+    "Procurement sandbox",
+    "Operations ledger"
+  ],
+  "write_impact": "approved-sandbox-write",
+  "autonomy": "A1-A3",
+  "project_stages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "verified_at": "2026-07-31",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The workflow uses synthetic inventory, order, and supplier data and does not place a live purchase order or transfer.",
+    "Safety stock, lead time, allocation, substitution, and approval rules must be confirmed for each operation.",
+    "No stockout, inventory-turn, service-level, or purchasing-cost outcome has been verified."
+  ]
+}

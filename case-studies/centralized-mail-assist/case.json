@@ -6,6 +6,18 @@
     "en": "Centralized Mail Assistance Integration"
   },
   "type": "shared-integration",
+  "primary_domain": "shared-operations",
+  "difficulty": 4,
+  "capabilities": [
+    "saas-integration",
+    "human-approval",
+    "identity-access",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "slack-meeting-actions"
+  ],
   "status": "ready",
   "evidence_stage": "simulation-design",
   "readiness": ["saas", "it"],

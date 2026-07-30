@@ -6,6 +6,21 @@
     "en": "Company Agent Operating Layer"
   },
   "type": "organizational-capstone",
+  "primary_domain": "shared-operations",
+  "difficulty": 5,
+  "capabilities": [
+    "saas-integration",
+    "identity-access",
+    "human-approval",
+    "observability",
+    "audit",
+    "recovery",
+    "reuse-governance"
+  ],
+  "recommended_after": [
+    "slack-meeting-actions",
+    "centralized-mail-assist"
+  ],
   "status": "ready",
   "evidence_stage": "simulation-design",
   "readiness": ["saas", "it"],

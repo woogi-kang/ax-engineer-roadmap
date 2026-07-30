@@ -1,0 +1,57 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "employee-lifecycle-access",
+  "title": {
+    "ko": "입사·이동·퇴사에 맞춘 계정·권한 운영",
+    "en": "Employee lifecycle account and access operations"
+  },
+  "type": "workflow",
+  "primary_domain": "people-collaboration",
+  "difficulty": 3,
+  "capabilities": [
+    "saas-integration",
+    "identity-access",
+    "human-approval",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "slack-meeting-actions"
+  ],
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "saas",
+    "it"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "HRIS lifecycle event",
+    "IT service request",
+    "Slack approval queue"
+  ],
+  "systems": [
+    "HRIS sandbox",
+    "Identity provider sandbox",
+    "Google Workspace or Microsoft 365 sandbox",
+    "Slack sandbox",
+    "ITSM and device-management sandbox",
+    "Audit store"
+  ],
+  "write_impact": "approved-sandbox-write",
+  "autonomy": "A1-A3",
+  "project_stages": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "verified_at": "2026-07-31",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The workflow has not provisioned or revoked access in a live organization.",
+    "Role definitions, approvers, account systems, and device controls must be confirmed for each organization.",
+    "No reduction in onboarding time, access risk, support workload, or other organizational outcome has been verified."
+  ]
+}

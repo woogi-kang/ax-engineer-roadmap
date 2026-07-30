@@ -6,6 +6,17 @@
     "en": "From Slack Meeting Signals to Human-Approved Actions"
   },
   "type": "workflow",
+  "primary_domain": "people-collaboration",
+  "difficulty": 2,
+  "capabilities": [
+    "saas-integration",
+    "human-approval",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "file-csv-to-ax-hub"
+  ],
   "status": "ready",
   "evidence_stage": "simulation-design",
   "readiness": [
