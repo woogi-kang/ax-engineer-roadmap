@@ -37,17 +37,17 @@ AX 엔지니어가 바꿀 업무를 고르고, AI를 기존 데이터와 시스�
 
 ## 왜 지금 AX Engineer인가
 
-`AX Engineer`는 아직 업계에서 하나로 표준화된 직함이 아니다. 그러나 최근 국내 기업들은 업무를 다시 설계하고, 기존 SaaS·데이터에 AI를 연결하며, 에이전트를 평가·운영하고, 현업이 실제로 쓰도록 정착시키는 사람을 실제로 모집했다. 직함은 달라도 이 일을 맡길 채용 수요는 확인된다.
+`AX Engineer`는 아직 업계에서 하나로 표준화된 직함이 아니다. 그러나 최근 국내 기업들은 업무를 다시 설계하고, 기존 SaaS·데이터에 AI를 연결하며, 에이전트를 평가·운영하고, 현업이 실제로 쓰도록 정착시키는 사람을 실제로 모집했다. 아래 표는 이 흐름을 과장하지 않도록 공고 제목에 `AX Engineer`가 직접 쓰인 사례만 모았다.
 
 | 기업 | 최근 공고 | AX 업무 신호 | 게시·모집 상태 |
 |---|---|---|---|
-| KT | [AI Agent Engineer](https://recruit.kt.com/careers/260209) | 멀티에이전트 오케스트레이션, A2A, 에이전트 메모리, 평가 벤치마크, LLMOps | 2026-07-28 마감 |
-| 현대오토에버 | [AI Engineer - AI Agent 엔지니어](https://kr.linkedin.com/jobs/view/tech-ai-engineer-ai-agent-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4-at-hyundai-autoever-4394471434) | Agentic AI 아키텍처, MCP 연동, API·마이크로서비스, 업무 자동화, MLOps | 채용 시 마감 |
-| LG CNS | [AI 전 영역 전문가 모집](https://connect.lgcns.com/kr/careers/jobs/AI) | Agent·RAG·MCP·Tool Calling, 기업 시스템 연동, AI 아키텍처·PM/PL | 2026년 상반기 모집 |
-| 한화시스템 | [LLM Engineer(AI 서비스 개발)](https://m.hanwhain.com/hanwha/jobs/jobs_recruit_detail.do?rtSeq=18321) | 고객 업무·레거시 분석, ERP·MES 연동, AI Tool·워크플로 개발, MLOps 운영 | 2026-03-26 마감 |
-| 카카오헬스케어 | [AI Native EHR 개발](https://careers.kakao.com/jobs/S-4699) | 병원 업무 분석, EMR·AI Agent 연동, 임상 데이터 모델, 운영 정책 반영 | 채용 시 마감 |
+| 대웅·WELDA | [AX Engineer (3~8년)](https://www.wanted.co.kr/wd/364116) | 제품·비즈니스·개발 전반의 자동화, 멀티에이전트, 하네스, 현업 정착 | 상시채용 |
+| 루닛 | [Senior AX Engineer](https://www.wanted.co.kr/wd/368564) | Slack 결재·승인, 도메인 에이전트, SaaS 데이터 연동, 플랫폼 SDK | 상시채용 |
+| 라이너 | [AX Engineer (Internal)](https://www.wanted.co.kr/wd/353689) | 사내 업무 재설계, 에이전트 하네스, RAG·평가, 배포·관측 | 상시채용 |
+| 에어스메디컬 | [AX Engineer](https://www.wanted.co.kr/wd/361768) | 통합 데이터 계층, MCP·워크플로 빌더, 부서별 업무 재설계, 교육·가이드 | 상시채용 |
+| 에고이즘 | [AX Engineer](https://www.wanted.co.kr/wd/350984) | 운영 병목 발굴, 반복 업무 자동화, 내부 관리 도구, 성과 측정 | 상시채용 |
 
-> **2026-07-31 스냅샷.** 채용 공고는 수시로 바뀌거나 종료된다. 지원 가능 여부는 원문에서 다시 확인해야 한다. 비슷한 책임은 `AX Engineer`, `AI Agent Engineer`, `AI/ML Engineer`, `LLM Engineer`, `FDE`, `DX Engineer`처럼 서로 다른 직함으로 나타난다.
+> **2026-07-31 스냅샷.** 채용 공고는 수시로 바뀌거나 종료되므로 지원 가능 여부는 원문에서 다시 확인해야 한다. `AI Agent Engineer`, `AI/ML Engineer`, `LLM Engineer`, `FDE`, `DX Engineer`처럼 비슷한 일을 맡는 인접 직무도 있지만, 위 표에는 포함하지 않았다.
 
 ## AX 엔지니어는 어떤 일을 하는가
 

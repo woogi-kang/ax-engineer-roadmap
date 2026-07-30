@@ -37,17 +37,17 @@ All cases are public or synthetic simulations or simulation designs. Compare rea
 
 ## Why AX Engineers now?
 
-`AX Engineer` is not yet a standardized title. Recent Korean employers have nevertheless recruited people to redesign workflows, connect AI to existing systems and data, evaluate and operate agents, and help teams adopt them in real work. The titles differ, but the work appears in actual hiring.
+`AX Engineer` is not yet a standardized title. Recent Korean employers have nevertheless recruited people to redesign workflows, connect AI to existing systems and data, evaluate and operate agents, and help teams adopt them in real work. To keep the signal precise, the table below includes only postings that use `AX Engineer` in the job title.
 
 | Company | Recent posting | AX work signal | Posting status |
 |---|---|---|---|
-| KT | [AI Agent Engineer](https://recruit.kt.com/careers/260209) | Multi-agent orchestration, A2A, agent memory, evaluation benchmarks, and LLMOps | Closed 2026-07-28 |
-| Hyundai AutoEver | [AI Engineer - AI Agent Engineer](https://kr.linkedin.com/jobs/view/tech-ai-engineer-ai-agent-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4-at-hyundai-autoever-4394471434) | Agentic AI architecture, MCP integration, APIs and microservices, workflow automation, and MLOps | Open until filled |
-| LG CNS | [AI specialists across all domains](https://connect.lgcns.com/kr/careers/jobs/AI) | Agents, RAG, MCP, tool calling, enterprise integration, AI architecture, and PM/PL | Recruited in the first half of 2026 |
-| Hanwha Systems | [LLM Engineer (AI service development)](https://m.hanwhain.com/hanwha/jobs/jobs_recruit_detail.do?rtSeq=18321) | Workflow and legacy analysis, ERP and MES integration, AI tools and workflows, and MLOps | Closed 2026-03-26 |
-| Kakao Healthcare | [AI Native EHR development](https://careers.kakao.com/jobs/S-4699) | Hospital workflow analysis, EMR and AI-agent integration, clinical data models, and operating policies | Open until filled |
+| Daewoong · WELDA | [AX Engineer (3–8 years)](https://www.wanted.co.kr/wd/364116) | End-to-end automation, multi-agent systems, harness engineering, and workflow adoption | Always open |
+| Lunit | [Senior AX Engineer](https://www.wanted.co.kr/wd/368564) | Slack approvals, domain agents, SaaS data integration, and a platform SDK | Always open |
+| Liner | [AX Engineer (Internal)](https://www.wanted.co.kr/wd/353689) | Internal workflow redesign, agent harnesses, RAG and evaluation, deployment and observability | Always open |
+| AIRS Medical | [AX Engineer](https://www.wanted.co.kr/wd/361768) | A central data layer, MCP and workflow builders, cross-functional redesign, and enablement | Always open |
+| Egoism | [AX Engineer](https://www.wanted.co.kr/wd/350984) | Operational bottleneck discovery, automation, internal tools, and outcome measurement | Always open |
 
-> **Snapshot as of 2026-07-31.** Postings change and close. Check the original page before applying. Comparable responsibilities may appear under titles such as `AX Engineer`, `AI Agent Engineer`, `AI/ML Engineer`, `LLM Engineer`, `FDE`, or `DX Engineer`.
+> **Snapshot as of 2026-07-31.** Postings change and close, so check the original page before applying. Adjacent roles may use titles such as `AI Agent Engineer`, `AI/ML Engineer`, `LLM Engineer`, `FDE`, or `DX Engineer`, but they are not included in this table.
 
 ## What an AX Engineer does
 
