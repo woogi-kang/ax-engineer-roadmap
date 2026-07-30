@@ -18,20 +18,47 @@ The primary audience is practicing and aspiring AX Engineers. Business practitio
 
 ## What work can you transform with AX?
 
-Begin with a case that resembles work you already understand. Each case is organized around authoritative systems, accountable approval, external impact, and recovery rather than a list of AI features.
+Start with one case in a work area you already know. Open a case to see its systems of record, human approvals, external impact, and recovery path.
 
-| Work area | What you can practice | Starting condition | Action boundary | Document |
-|---|---|---|---|---|
-| Customer and revenue | Turn recurring public VOC into evidence-linked improvement proposals | `Public data` | Read and propose | [Open case](case-studies/beauty-d2c-voc/README.md) |
-| Customer and revenue | Check sales evidence, issue a test electronic tax invoice, and reconcile payment | `Accounting and ERP sandbox` | Approved test issuance | [Open case](case-studies/electronic-tax-invoice-reconciliation/README.md) |
-| People and collaboration | Turn Slack meeting signals into approved work items | `SaaS sandboxes` | Write after approval | [Open case](case-studies/slack-meeting-actions/README.md) |
-| People and collaboration | Provision and revoke accounts and access across the employee lifecycle | `HR and identity sandboxes` | Role-based approval | [Open case](case-studies/employee-lifecycle-access/README.md) |
-| Finance and procurement | Match corporate-card transactions and receipts into journal-entry drafts | `Synthetic transactions and evidence` | Draft only | [Open case](case-studies/corporate-card-expense/README.md) |
-| Finance and procurement | Independently verify vendor onboarding and bank-account changes | `Vendor-master sandbox` | Dual approval | [Open case](case-studies/vendor-master-account-change/README.md) |
-| Data and operations | Consolidate scattered files and CSVs into a reviewable AX Hub | `Files and messaging` | Draft only | [Open case](case-studies/file-csv-to-ax-hub/README.md) |
-| Data and operations | Turn inventory exceptions into purchase and transfer proposals | `ERP and WMS sandboxes` | Record approved proposals | [Open case](case-studies/inventory-exception-replenishment/README.md) |
-| Shared integration and operations | Classify selected mail and prepare response drafts | `Mail sandbox` | Approval before sending | [Open case](case-studies/centralized-mail-assist/README.md) |
-| Shared integration and operations | Operate multiple workflow agents with permission, approval, and audit boundaries | `Second workflow and internal APIs` | Bounded by workflow | [Open case](case-studies/company-agent-operating-layer/README.md) |
+### Customer and revenue
+
+**[Find recurring issues in public VOC](case-studies/beauty-d2c-voc/README.md)**<br>
+Start with public data. Keep the output read-only and limited to workflow proposals.
+
+**[Issue electronic tax invoices and reconcile payments](case-studies/electronic-tax-invoice-reconciliation/README.md)**<br>
+Start in an accounting or ERP sandbox. Even after approval, stop at test issuance.
+
+### People and collaboration
+
+**[Turn Slack meeting notes into action items](case-studies/slack-meeting-actions/README.md)**<br>
+Start in a SaaS sandbox. Write only the items a responsible person approves.
+
+**[Manage access for joiner, mover, and leaver events](case-studies/employee-lifecycle-access/README.md)**<br>
+Start in HR and identity sandboxes. Provision or revoke access only after role-based approval.
+
+### Finance and procurement
+
+**[Turn card transactions and receipts into journal-entry drafts](case-studies/corporate-card-expense/README.md)**<br>
+Practice with synthetic transactions and evidence. Create drafts without posting real journal entries.
+
+**[Validate vendor onboarding and bank-account changes](case-studies/vendor-master-account-change/README.md)**<br>
+Start in a vendor-master sandbox. Apply a change only after independent verification and dual approval.
+
+### Data and operations
+
+**[Turn files and CSVs into a reviewable AX Hub](case-studies/file-csv-to-ax-hub/README.md)**<br>
+Start with files and chat. Produce drafts that a responsible person can review.
+
+**[Detect inventory exceptions and propose purchase or transfer actions](case-studies/inventory-exception-replenishment/README.md)**<br>
+Start in ERP and WMS sandboxes. Record approved proposals without placing real orders.
+
+### Shared integration and operations
+
+**[Classify mail and draft replies](case-studies/centralized-mail-assist/README.md)**<br>
+Start in a mail sandbox. Do not send anything before human approval.
+
+**[Operate workflow agents under common controls](case-studies/company-agent-operating-layer/README.md)**<br>
+Start after a second workflow and internal APIs are available. Scope access and actions separately for each workflow.
 
 All cases are public or synthetic simulations or simulation designs. Compare readiness, risk, P1–P5, and current evidence in the [full case catalog](case-studies/README.md).
 
