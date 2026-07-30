@@ -35,6 +35,20 @@ Start with one case in a work area you already know. Open a case to see its syst
 
 All cases are public or synthetic simulations or simulation designs. Compare readiness, risk, P1–P5, and current evidence in the [full case catalog](case-studies/README.md).
 
+## Why AX Engineers now?
+
+`AX Engineer` is not yet a standardized title. Recent Korean employers have nevertheless recruited people to redesign workflows, connect AI to existing systems and data, evaluate and operate agents, and help teams adopt them in real work. The titles differ, but the work appears in actual hiring.
+
+| Company | Recent posting | AX work signal | Posting status |
+|---|---|---|---|
+| KT | [AI Agent Engineer](https://recruit.kt.com/careers/260209) | Multi-agent orchestration, A2A, agent memory, evaluation benchmarks, and LLMOps | Closed 2026-07-28 |
+| Hyundai AutoEver | [AI Engineer - AI Agent Engineer](https://kr.linkedin.com/jobs/view/tech-ai-engineer-ai-agent-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4-at-hyundai-autoever-4394471434) | Agentic AI architecture, MCP integration, APIs and microservices, workflow automation, and MLOps | Open until filled |
+| LG CNS | [AI specialists across all domains](https://connect.lgcns.com/kr/careers/jobs/AI) | Agents, RAG, MCP, tool calling, enterprise integration, AI architecture, and PM/PL | Recruited in the first half of 2026 |
+| Hanwha Systems | [LLM Engineer (AI service development)](https://m.hanwhain.com/hanwha/jobs/jobs_recruit_detail.do?rtSeq=18321) | Workflow and legacy analysis, ERP and MES integration, AI tools and workflows, and MLOps | Closed 2026-03-26 |
+| Kakao Healthcare | [AI Native EHR development](https://careers.kakao.com/jobs/S-4699) | Hospital workflow analysis, EMR and AI-agent integration, clinical data models, and operating policies | Open until filled |
+
+> **Snapshot as of 2026-07-31.** Postings change and close. Check the original page before applying. Comparable responsibilities may appear under titles such as `AX Engineer`, `AI Agent Engineer`, `AI/ML Engineer`, `LLM Engineer`, `FDE`, or `DX Engineer`.
+
 ## What an AX Engineer does
 
 In this repository, an **AX Engineer** discovers organizational workflow problems, redesigns the flow, and connects AI to existing data, systems, and authority boundaries. Titles and exact scope vary by organization, but the roadmap focuses on five recurring responsibilities:

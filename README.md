@@ -39,13 +39,15 @@ AX 엔지니어가 바꿀 업무를 고르고, AI를 기존 데이터와 시스�
 
 `AX Engineer`는 아직 업계에서 하나로 표준화된 직함이 아니다. 그러나 최근 국내 기업들은 업무를 다시 설계하고, 기존 SaaS·데이터에 AI를 연결하며, 에이전트를 평가·운영하고, 현업이 실제로 쓰도록 정착시키는 사람을 실제로 모집했다. 직함은 달라도 이 일을 맡길 채용 수요는 확인된다.
 
-| 채용 맥락 | 최근 공고 | 역할에서 확인되는 일 |
-|---|---|---|
-| 대기업 환경 | [한화시스템 — 2026 방산부문 AX 대규모 채용 (AI/ML 엔지니어)](https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=53927637) | RAG·AI Agent, 평가·MLOps, 보안이 필요한 온프레미스 서비스 |
-| 성장·제품 조직 | [Lunit — Senior AX Engineer](https://www.wanted.co.kr/wd/368564), [Liner — AX Engineer (Internal)](https://www.wanted.co.kr/wd/353689) | SaaS·데이터 통합과 승인 흐름, 에이전트 하네스·평가·배포·관측 |
-| 현업 확산·운영 | [미리디 — AX 엔지니어 (AX Engineer)](https://www.wanted.co.kr/wd/366267), [대웅·WELDA — AX Engineer (3~8년)](https://www.wanted.co.kr/wd/364116) | 현업 자동화·에이전트 구축 지원, 운영·문서화·플레이북과 업무 정착 |
+| 기업 | 최근 공고 | AX 업무 신호 | 게시·모집 상태 |
+|---|---|---|---|
+| KT | [AI Agent Engineer](https://recruit.kt.com/careers/260209) | 멀티에이전트 오케스트레이션, A2A, 에이전트 메모리, 평가 벤치마크, LLMOps | 2026-07-28 마감 |
+| 현대오토에버 | [AI Engineer - AI Agent 엔지니어](https://kr.linkedin.com/jobs/view/tech-ai-engineer-ai-agent-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4-at-hyundai-autoever-4394471434) | Agentic AI 아키텍처, MCP 연동, API·마이크로서비스, 업무 자동화, MLOps | 채용 시 마감 |
+| LG CNS | [AI 전 영역 전문가 모집](https://connect.lgcns.com/kr/careers/jobs/AI) | Agent·RAG·MCP·Tool Calling, 기업 시스템 연동, AI 아키텍처·PM/PL | 2026년 상반기 모집 |
+| 한화시스템 | [LLM Engineer(AI 서비스 개발)](https://m.hanwhain.com/hanwha/jobs/jobs_recruit_detail.do?rtSeq=18321) | 고객 업무·레거시 분석, ERP·MES 연동, AI Tool·워크플로 개발, MLOps 운영 | 2026-03-26 마감 |
+| 카카오헬스케어 | [AI Native EHR 개발](https://careers.kakao.com/jobs/S-4699) | 병원 업무 분석, EMR·AI Agent 연동, 임상 데이터 모델, 운영 정책 반영 | 채용 시 마감 |
 
-> **2026-07-26 스냅샷.** 채용 공고는 수시로 바뀌거나 종료되며, 위 사례 중 일부도 이미 마감됐다. 비슷한 책임은 `AX Engineer`, `AI/ML Engineer`, `AI Product Engineer`, `FDE`, `DX Engineer`처럼 서로 다른 직함으로 나타난다.
+> **2026-07-31 스냅샷.** 채용 공고는 수시로 바뀌거나 종료된다. 지원 가능 여부는 원문에서 다시 확인해야 한다. 비슷한 책임은 `AX Engineer`, `AI Agent Engineer`, `AI/ML Engineer`, `LLM Engineer`, `FDE`, `DX Engineer`처럼 서로 다른 직함으로 나타난다.
 
 ## AX 엔지니어는 어떤 일을 하는가
 
