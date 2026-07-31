@@ -31,7 +31,7 @@
 2. [조직 준비도 진단](start-here/organization-readiness.md)에서 현재 업무가 파일·메신저, SaaS, 사내 시스템 중 어디까지 준비됐는지 확인한다.
 3. 아래 업무별 적용 사례에서 접근 가능한 데이터와 테스트 환경이 있는 사례를 하나 고른다.
 
-[전체 Markdown 문서](start-here/README.md) · [사이트 실행 안내](site/README.md)
+[Markdown 시작 안내](start-here/README.md) · [사이트 실행 안내](site/README.md)
 
 ## 어떤 업무부터 자동화하거나 보조할까
 
@@ -124,7 +124,7 @@ flowchart LR
 
 ## 공통 운영 기반(harness)은 언제 만드는가
 
-**공통 운영 기반(harness)**은 여러 업무가 함께 지키는 최소 운영 규칙과 재사용 도구의 묶음이다.
+**공통 운영 기반(harness)**: 여러 업무가 함께 지키는 최소 운영 규칙과 재사용 도구의 묶음이다.
 
 팀마다 같은 모델·프레임워크·화면을 쓸 필요는 없다.
 
