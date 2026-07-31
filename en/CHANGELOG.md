@@ -4,6 +4,11 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ## [Unreleased]
 
+### Changed
+
+- Aligned the Korean README and interactive roadmap around one AX definition, case-title set, and editorial voice
+- Added a copy-sync check for the shared definition and ten case titles
+
 ## [0.3.0] - 2026-07-31
 
 ### Added

@@ -4,7 +4,7 @@
   "private": true,
   "description": "Practical AX Engineer roadmap in Korean and English",
   "scripts": {
-    "check": "node scripts/check-links.mjs && node scripts/check-roadmap.mjs && node scripts/check-cases.mjs"
+    "check": "node scripts/check-links.mjs && node scripts/check-roadmap.mjs && node scripts/check-cases.mjs && node scripts/check-korean-copy-sync.mjs"
   },
   "license": "MIT"
 }

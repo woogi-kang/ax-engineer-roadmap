@@ -21,10 +21,10 @@ test("exports a static GitHub Pages site", () => {
   assert.match(koreanHtml, /<html lang="ko"/i);
   assert.match(
     koreanHtml,
-    /업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵/,
+    /자동화와 AI 보조를 실제 운영까지 이어 가는 AX Engineer 로드맵/,
   );
   assert.match(koreanHtml, /업무별 적용 사례/);
-  assert.match(koreanHtml, /회사 에이전트 운영 계층/);
+  assert.match(koreanHtml, /여러 업무 에이전트 운영/);
   assert.match(koreanHtml, /property="og:locale" content="ko_KR"/);
   assert.match(koreanHtml, /href="\/ax-engineer-roadmap\/en\/"/);
 
@@ -43,7 +43,7 @@ test("exports a static GitHub Pages site", () => {
   assert.match(englishHtml, /href="\/ax-engineer-roadmap\/"/);
   assert.doesNotMatch(
     englishHtml,
-    /업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵/,
+    /자동화와 AI 보조를 실제 운영까지 이어 가는 AX Engineer 로드맵/,
   );
 
   for (const html of [koreanHtml, englishHtml]) {

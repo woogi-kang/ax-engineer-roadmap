@@ -12,11 +12,11 @@ const siteOrigin = isPagesBuild
 const metadataCopy = {
   ko: {
     description:
-      "AX 엔지니어가 업무를 고르고, AI를 기존 시스템에 연결해 운영하며, 현업 조합 사례로 적용 방식을 살피는 오픈 로드맵.",
+      "AX Engineer가 자동화하거나 AI로 보조할 업무를 찾고, 사람이 판단할 지점을 남겨 실제 운영까지 이어 가는 공개 로드맵.",
     openGraphDescription:
-      "AX 엔지니어의 역할, 업무 전환 8단계, 기술 역량, 실습 프로젝트, 현업 조합 사례를 한곳에서 확인하는 오픈 로드맵.",
+      "AX Engineer의 역할, 업무 전환 8단계, 기술 역량, 실습 프로젝트, 업무별 적용 사례를 한곳에서 확인하는 공개 로드맵.",
     imageAlt:
-      "AX 엔지니어의 역할, 업무 전환 과정, 실습 프로젝트와 현업 조합 사례를 보여 주는 로드맵",
+      "AX Engineer의 역할, 업무 전환 과정, 실습 프로젝트와 업무별 적용 사례를 보여 주는 로드맵",
     locale: "ko_KR",
   },
   en: {
