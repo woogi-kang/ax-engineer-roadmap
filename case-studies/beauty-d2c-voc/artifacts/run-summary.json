@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-07-31T00:00:00+00:00",
+  "classifier": "deterministic-rules-v1",
+  "dataset": "synthetic-voc-sample-v1",
+  "evaluation_passed": true,
+  "input_count": 16,
+  "limitations": [
+    "Synthetic records do not represent the distribution of a real company's VOC.",
+    "Keyword rules are a deterministic baseline, not a production multilingual classifier.",
+    "Proposals are review artifacts and do not create or modify external work."
+  ],
+  "proposal_count": 4,
+  "status_counts": {
+    "duplicate": 1,
+    "invalid": 2,
+    "ready": 5,
+    "review_required": 7,
+    "spam": 1
+  },
+  "topic_counts": {
+    "delivery": 2,
+    "irritation": 2,
+    "packaging": 4,
+    "product_effect": 1,
+    "scent": 2,
+    "unknown": 1
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "evidence_ref": "voc-003",
+    "next_action": "human_review",
+    "safety_flag": true,
+    "source_id": "voc-003",
+    "status": "review_required",
+    "topic": "irritation",
+    "validation_errors": [],
+    "warnings": [
+      "safety_review_required"
+    ]
+  },
+  {
+    "evidence_ref": "voc-005",
+    "next_action": "correct_or_exclude_input",
+    "safety_flag": false,
+    "source_id": "voc-005",
+    "status": "invalid",
+    "topic": null,
+    "validation_errors": [
+      "missing_or_empty:text_original"
+    ],
+    "warnings": []
+  },
+  {
+    "evidence_ref": "voc-006",
+    "next_action": "human_review",
+    "safety_flag": false,
+    "source_id": "voc-006",
+    "status": "review_required",
+    "topic": "packaging",
+    "validation_errors": [],
+    "warnings": [
+      "missing:product_id"
+    ]
+  },
+  {
+    "evidence_ref": "voc-008",
+    "next_action": "human_review",
+    "safety_flag": false,
+    "source_id": "voc-008",
+    "status": "review_required",
+    "topic": "scent",
+    "validation_errors": [],
+    "warnings": [
+      "mixed_language"
+    ]
+  },
+  {
+    "evidence_ref": "voc-009",
+    "next_action": "human_review",
+    "safety_flag": false,
+    "source_id": "voc-009",
+    "status": "review_required",
+    "topic": "delivery",
+    "validation_errors": [],
+    "warnings": [
+      "stale:published_at"
+    ]
+  },
+  {
+    "evidence_ref": "voc-010",
+    "next_action": "human_review",
+    "safety_flag": false,
+    "source_id": "voc-010",
+    "status": "review_required",
+    "topic": "packaging",
+    "validation_errors": [],
+    "warnings": [
+      "missing:published_at"
+    ]
+  },
+  {
+    "evidence_ref": "voc-011",
+    "next_action": "human_review",
+    "safety_flag": true,
+    "source_id": "voc-011",
+    "status": "review_required",
+    "topic": "irritation",
+    "validation_errors": [],
+    "warnings": [
+      "safety_review_required"
+    ]
+  },
+  {
+    "evidence_ref": "voc-015",
+    "next_action": "human_review",
+    "safety_flag": false,
+    "source_id": "voc-015",
+    "status": "review_required",
+    "topic": "unknown",
+    "validation_errors": [],
+    "warnings": [
+      "unclassified:topic"
+    ]
+  },
+  {
+    "evidence_ref": "voc-016",
+    "next_action": "correct_or_exclude_input",
+    "safety_flag": false,
+    "source_id": "voc-016",
+    "status": "invalid",
+    "topic": null,
+    "validation_errors": [
+      "missing_or_empty:source_url"
+    ],
+    "warnings": []
+  }
+]

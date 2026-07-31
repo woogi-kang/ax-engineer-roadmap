@@ -4,6 +4,18 @@
 
 This is not an internal diagnosis or consulting outcome for a specific company. It is a **learning simulation of an AX workflow transformation** based on public data and common Beauty/D2C workflow patterns.
 
+## Current execution evidence
+
+This case now includes a reproducible pipeline that processes 16 synthetic VOC records with the Python standard library and no external API or model call. The dataset deliberately includes duplicates, missing required fields, spam, mixed language, stale records, and safety signals.
+
+![Beauty/D2C synthetic VOC pipeline dashboard](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.png)
+
+The current run produced 5 ready records, 7 manual-review records, 2 invalid records, 1 duplicate, and 1 spam record. It generated four proposal artifacts with source identifiers and no external write. All 16 expected status, topic, and safety outcomes matched, with a 100% traceability rate.
+
+[Runbook](RUNBOOK.md) · [Evaluation report](artifacts/evaluation-report.md) · [Dashboard HTML](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.html) · [Run manifest](../../../case-studies/beauty-d2c-voc/artifacts/run-manifest.json)
+
+These numbers verify the code path on a synthetic evaluation set. They do not measure real VOC distribution, production classification quality, workflow adoption, or business outcomes.
+
 ## Problem hypothesis
 
 Global consumer reviews and inquiries are distributed across countries, languages, and channels. Marketing, product, customer-support, and operations teams repeat similar research, but different provenance, periods, samples, and classification rules make the output difficult for another team to reuse.

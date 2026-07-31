@@ -23,7 +23,7 @@ test("exports a static GitHub Pages site", () => {
     koreanHtml,
     /업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵/,
   );
-  assert.match(koreanHtml, /현업 조합 사례/);
+  assert.match(koreanHtml, /업무별 적용 사례/);
   assert.match(koreanHtml, /회사 에이전트 운영 계층/);
   assert.match(koreanHtml, /property="og:locale" content="ko_KR"/);
   assert.match(koreanHtml, /href="\/ax-engineer-roadmap\/en\/"/);

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://woogi-kang.github.io/ax-engineer-roadmap/case-studies/beauty-d2c-voc/schemas/voc-record.schema.json",
+  "title": "Synthetic VOC input record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_id",
+    "source_type",
+    "source_url",
+    "captured_at",
+    "market",
+    "channel",
+    "language",
+    "text_original"
+  ],
+  "properties": {
+    "source_id": {"type": "string", "pattern": "^voc-[0-9]{3}$"},
+    "source_type": {"const": "synthetic"},
+    "source_url": {"type": "string", "pattern": "^https://"},
+    "captured_at": {"type": "string", "format": "date-time"},
+    "published_at": {"type": "string", "format": "date-time"},
+    "market": {"enum": ["KR", "US", "JP"]},
+    "channel": {"enum": ["review", "support"]},
+    "product_id": {"type": "string", "minLength": 1},
+    "language": {"enum": ["ko", "en", "ja", "mixed"]},
+    "text_original": {"type": "string", "minLength": 1}
+  }
+}

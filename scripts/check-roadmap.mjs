@@ -14,7 +14,8 @@ function walk(directory) {
       entry.name === '.next' ||
       entry.name === '.vinext' ||
       entry.name === 'dist' ||
-      entry.name === 'out'
+      entry.name === 'out' ||
+      entry.name === '__pycache__'
     ) {
       continue;
     }

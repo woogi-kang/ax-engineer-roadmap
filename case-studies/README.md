@@ -1,6 +1,6 @@
-# 현업 조합 사례
+# 업무별 적용 사례
 
-사례는 로드맵의 원칙을 한 업무 흐름에 적용해 보는 세로형 실습이다. 어떤 도구를 설치했는지가 아니라 원본 시스템, 승인, 실행, 평가, 복구를 어떻게 연결했는지 확인한다.
+사례는 로드맵의 원칙을 한 업무 흐름에 끝까지 적용해 보는 실습이다. 어떤 도구를 설치했는지가 아니라 원본 시스템, 승인, 실행, 평가, 복구를 어떻게 연결했는지 확인한다.
 
 모든 사례는 [다섯 개 실습 프로젝트](../projects/README.md)의 통과 기준을 사용한다. `ready`는 문서가 실습에 사용할 수 있는 상태라는 뜻이며, 실제 조직에서 운영 성과를 검증했다는 뜻이 아니다.
 
@@ -8,20 +8,20 @@
 
 | 업무 영역 | 사례 | 난이도 | 시작 조건 | 실행 범위 | P단계 | 현재 근거 |
 |---|---|---:|---|---|---|---|
-| 고객·매출 | [Beauty/D2C 글로벌 VOC → 업무 제안](beauty-d2c-voc/README.md) | 1 | 메신저·파일, SaaS | 읽기·제안 | P1·P2·P3·P5 | 공개 데이터 시뮬레이션 |
-| 고객·매출 | [매출 근거 → 전자세금계산서 발행·입금 대사](electronic-tax-invoice-reconciliation/README.md) | 4 | SaaS, 사내 API | 승인 후 샌드박스 쓰기 | P1~P4 | 시뮬레이션 설계 |
+| 고객·매출 | [Beauty/D2C 글로벌 VOC → 업무 제안](beauty-d2c-voc/README.md) | 1 | 메신저·파일, SaaS | 읽기·제안 | P1·P2·P3·P5 | 합성 데이터 실행·평가 |
 | 사람·협업 | [Slack 회의 신호 → 승인 가능한 실행 항목](slack-meeting-actions/README.md) | 2 | SaaS, 사내 API | 승인 후 샌드박스 쓰기 | P1~P5 | 시뮬레이션 설계 |
 | 사람·협업 | [입사·이동·퇴사 → 계정·권한 운영](employee-lifecycle-access/README.md) | 3 | SaaS, 사내 API | 역할별 승인 후 샌드박스 쓰기 | P1~P5 | 시뮬레이션 설계 |
 | 재무·구매 | [법인카드·경비 증빙 → 전표 초안](corporate-card-expense/README.md) | 2 | 메신저·파일, SaaS | 초안 전용 | P1~P3 | 시뮬레이션 설계 |
+| 재무·구매 | [매출 근거 → 전자세금계산서 발행·입금 대사](electronic-tax-invoice-reconciliation/README.md) | 4 | SaaS, 사내 API | 승인 후 샌드박스 쓰기 | P1~P4 | 시뮬레이션 설계 |
 | 재무·구매 | [거래처 등록·계좌 변경 → 검증 가능한 승인](vendor-master-account-change/README.md) | 4 | SaaS, 사내 API | 이중 승인 후 샌드박스 쓰기 | P1~P4 | 시뮬레이션 설계 |
-| 데이터·운영 | [흩어진 파일·CSV → 검토 가능한 AX Hub](file-csv-to-ax-hub/README.md) | 1 | 메신저·파일, SaaS | 초안 전용 | P1·P2·P3·P5 | 시뮬레이션 설계 |
+| 데이터·운영 | [흩어진 파일·CSV → 검토 가능한 업무 허브(AX Hub)](file-csv-to-ax-hub/README.md) | 1 | 메신저·파일, SaaS | 초안 전용 | P1·P2·P3·P5 | 시뮬레이션 설계 |
 | 데이터·운영 | [재고 예외 → 발주·창고 이동 제안](inventory-exception-replenishment/README.md) | 4 | SaaS, 사내 API | 승인 후 제안 기록 | P1~P4 | 시뮬레이션 설계 |
 | 공통 통합·운영 | [중앙 메일 업무 보조 통합](centralized-mail-assist/README.md) | 4 | SaaS, 사내 API | 발송 전 승인 | P1~P5 | 시뮬레이션 설계 |
 | 공통 통합·운영 | [회사 에이전트 운영 계층](company-agent-operating-layer/README.md) | 5 | SaaS, 사내 API | 업무별로 제한 | P2~P5 | 시뮬레이션 설계 |
 
 ## 추천 학습 순서
 
-1. [흩어진 파일·CSV → 검토 가능한 AX Hub](file-csv-to-ax-hub/README.md)
+1. [흩어진 파일·CSV → 검토 가능한 업무 허브(AX Hub)](file-csv-to-ax-hub/README.md)
 2. [Beauty/D2C 글로벌 VOC → 업무 제안](beauty-d2c-voc/README.md)
 3. [Slack 회의 신호 → 승인 가능한 실행 항목](slack-meeting-actions/README.md)
 4. [법인카드·경비 증빙 → 전표 초안](corporate-card-expense/README.md)
@@ -67,7 +67,7 @@
 | `evidence_stage` | 시뮬레이션 설계부터 운영 근거까지의 현재 수준 |
 | `readiness` | 메신저·파일, SaaS, 사내 시스템·API 준비 상태 |
 | `risk` | 사례의 기본 위험 수준 |
-| `write_impact` | 외부 시스템에 미치는 쓰기 영향 |
+| `write_impact` | 외부 시스템에 쓰는 작업의 영향 |
 | `autonomy` | 사례에서 허용하는 자율성 범위 |
 | `project_stages` | 연결할 P1~P5 프로젝트 |
 | `verified_at` | 문서와 외부 기술 자료를 마지막으로 확인한 날짜 |

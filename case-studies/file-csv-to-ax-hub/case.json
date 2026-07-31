@@ -2,7 +2,7 @@
   "$schema": "../_schema/case.schema.json",
   "id": "file-csv-to-ax-hub",
   "title": {
-    "ko": "흩어진 파일·CSV를 검토 가능한 AX Hub로",
+    "ko": "흩어진 파일·CSV를 검토 가능한 업무 허브(AX Hub)로",
     "en": "From Scattered Files and CSVs to a Reviewable AX Hub"
   },
   "type": "workflow",

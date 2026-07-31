@@ -6,7 +6,7 @@
     "en": "From sales evidence to electronic tax invoice and payment reconciliation"
   },
   "type": "workflow",
-  "primary_domain": "customer-revenue",
+  "primary_domain": "finance-procurement",
   "difficulty": 4,
   "capabilities": [
     "data-contracts",

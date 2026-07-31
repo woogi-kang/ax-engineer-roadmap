@@ -28,7 +28,7 @@
   "write_impact": "approved-sandbox-write",
   "autonomy": "A1-A3",
   "project_stages": [1, 2, 3, 5],
-  "verified_at": "2026-07-27",
+  "verified_at": "2026-07-31",
   "owner": "AX Engineer Roadmap maintainers",
   "limitations": [
     "Public data may not represent internal VOC composition.",

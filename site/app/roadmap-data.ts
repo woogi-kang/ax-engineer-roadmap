@@ -283,7 +283,7 @@ export const roadmapGroups: RoadmapGroup[] = [
   },
   {
     id: "cases",
-    label: { ko: "현업 조합 사례", en: "Applied AX cases" },
+    label: { ko: "업무별 적용 사례", en: "Applied AX cases" },
     prompt: {
       ko: "데이터, 도구, 승인, 운영 조건을 실제 업무 맥락에 조합하는 방식을 사례별로 살핀다.",
       en: "Explore how data, tools, approval, and operating controls combine in applied workflow contexts.",
@@ -293,10 +293,10 @@ export const roadmapGroups: RoadmapGroup[] = [
         "case-beauty-d2c-voc",
         "Beauty/D2C 글로벌 VOC → 업무 제안",
         "Beauty/D2C global VOC → workflow proposal",
-        "공개 VOC의 원문과 출처를 보존하고, 사람이 근거를 확인한 뒤 업무 제안을 승인하는 흐름을 연습한다.",
-        "Practice preserving public VOC and its provenance before a person reviews evidence and approves work proposals.",
-        "공개 데이터 기반 학습 시뮬레이션·평가 기준",
-        "Public-data learning simulation and evaluation criteria",
+        "합성 VOC를 실제 코드로 검증·정규화·분류하고, 사람이 원문 근거를 확인한 뒤 업무 제안을 승인하는 흐름을 연습한다.",
+        "Run synthetic VOC through validation, normalization, and classification code before a person reviews source evidence and approves work proposals.",
+        "합성 데이터 파이프라인·회귀 평가·원문 추적 결과",
+        "Synthetic-data pipeline, regression evaluation, and source traceability",
         "case-studies/beauty-d2c-voc/README.md",
         everyRole,
         ["low", "saas"],

@@ -8,20 +8,20 @@ Every case uses the exit criteria from the [five practice projects](../projects/
 
 | Work area | Case | Difficulty | Starting condition | Action boundary | P path | Evidence |
 |---|---|---:|---|---|---|---|
-| Customer and revenue | [Beauty/D2C global VOC → workflow proposal](beauty-d2c-voc/README.md) | 1 | File-and-message, SaaS | Read and propose | P1, P2, P3, P5 | Public-data simulation |
-| Customer and revenue | [Sales evidence → electronic tax invoice and payment reconciliation](electronic-tax-invoice-reconciliation/README.md) | 4 | SaaS, internal APIs | Approved sandbox write | P1–P4 | Simulation design |
+| Customer and revenue | [Beauty/D2C global VOC → workflow proposal](beauty-d2c-voc/README.md) | 1 | File-and-message, SaaS | Read and propose | P1, P2, P3, P5 | Synthetic-data run and evaluation |
 | People and collaboration | [Slack meeting signals → approved actions](slack-meeting-actions/README.md) | 2 | SaaS, internal APIs | Approved sandbox write | P1–P5 | Simulation design |
 | People and collaboration | [Employee lifecycle → account and access operations](employee-lifecycle-access/README.md) | 3 | SaaS, internal APIs | Role-based approval | P1–P5 | Simulation design |
 | Finance and procurement | [Corporate-card evidence → journal-entry draft](corporate-card-expense/README.md) | 2 | File-and-message, SaaS | Draft only | P1–P3 | Simulation design |
+| Finance and procurement | [Sales evidence → electronic tax invoice and payment reconciliation](electronic-tax-invoice-reconciliation/README.md) | 4 | SaaS, internal APIs | Approved sandbox write | P1–P4 | Simulation design |
 | Finance and procurement | [Vendor onboarding and bank-account change → verifiable approval](vendor-master-account-change/README.md) | 4 | SaaS, internal APIs | Dual-approved sandbox write | P1–P4 | Simulation design |
-| Data and operations | [Scattered files and CSVs → reviewable AX Hub](file-csv-to-ax-hub/README.md) | 1 | File-and-message, SaaS | Draft only | P1, P2, P3, P5 | Simulation design |
+| Data and operations | [Scattered files and CSVs → reviewable work hub (AX Hub)](file-csv-to-ax-hub/README.md) | 1 | File-and-message, SaaS | Draft only | P1, P2, P3, P5 | Simulation design |
 | Data and operations | [Inventory exceptions → purchase and transfer proposals](inventory-exception-replenishment/README.md) | 4 | SaaS, internal APIs | Record approved proposals | P1–P4 | Simulation design |
 | Shared integration and operations | [Centralized Mail Assistance Integration](centralized-mail-assist/README.md) | 4 | SaaS, internal APIs | Approval before sending | P1–P5 | Simulation design |
 | Shared integration and operations | [Company Agent Operating Layer](company-agent-operating-layer/README.md) | 5 | SaaS, internal APIs | Bounded by workflow | P2–P5 | Simulation design |
 
 ## Recommended learning order
 
-1. [Scattered files and CSVs → reviewable AX Hub](file-csv-to-ax-hub/README.md)
+1. [Scattered files and CSVs → reviewable work hub (AX Hub)](file-csv-to-ax-hub/README.md)
 2. [Beauty/D2C global VOC → workflow proposal](beauty-d2c-voc/README.md)
 3. [Slack meeting signals → approved actions](slack-meeting-actions/README.md)
 4. [Corporate-card evidence → journal-entry draft](corporate-card-expense/README.md)

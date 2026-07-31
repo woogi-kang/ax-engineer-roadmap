@@ -4,11 +4,14 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-31
+
 ### Added
 
 - A case catalog with a machine-validated `case.json` metadata contract
 - Cases for files and CSV to AX Hub, Slack meetings to actions, centralized Mail Assist, and a shared agent operating layer
 - An applied AX case group in the interactive roadmap
+- A synthetic Beauty/D2C VOC data contract, normalization and classification pipeline, regression evaluation, runbook, and result dashboard
 
 ### Changed
 
@@ -17,6 +20,11 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Made AX Engineers the primary readers and reframed the other groups as collaborators
 - Replaced internal shorthand in the Korean edition with terms used in day-to-day work
 - Aligned the Korean and English entry paths, eight-stage structure, projects, and interactive site
+- Reduced the mobile hero, kept a GitHub link visible, added a primary start action, and made roadmap groups collapsible
+- Synchronized role, readiness, and search filters with the URL for sharing
+- Reordered the README around the role definition, quick start, applied cases, roadmap structure, and hiring signals
+- Reclassified electronic tax invoice reconciliation under finance and procurement
+- Removed four unused banner candidates and their generation prompts
 
 ## [0.2.0] - 2026-07-26
 

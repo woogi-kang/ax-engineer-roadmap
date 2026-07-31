@@ -35,7 +35,7 @@ test("server-renders the Korean roadmap explorer", async () => {
   assert.match(html, /업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵/);
   assert.match(
     html,
-    /AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 현업 조합 사례 10개/,
+    /AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 업무별 적용 사례 10개/,
   );
   assert.match(html, /<strong>41<\/strong>(?:<!-- -->)?개 항목/);
   assert.match(html, /AX 엔지니어 실행 경로/);
@@ -44,6 +44,10 @@ test("server-renders the Korean roadmap explorer", async () => {
   assert.match(html, /전체 경로/);
   assert.match(html, /조직 준비도/);
   assert.match(html, /aria-live="polite"/);
+  assert.match(html, />로드맵 시작하기</);
+  assert.match(html, />GitHub 저장소</);
+  assert.match(html, /aria-expanded="true"/);
+  assert.match(html, /그룹 접기/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 

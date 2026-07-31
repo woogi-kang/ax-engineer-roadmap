@@ -1,0 +1,68 @@
+[
+  {
+    "action_boundary": "proposal_only",
+    "evidence_refs": [
+      "voc-003",
+      "voc-011"
+    ],
+    "markets": [
+      "KR",
+      "US"
+    ],
+    "observed_count": 2,
+    "proposal_id": "proposal-irritation",
+    "requires_human_approval": true,
+    "safety_signal": true,
+    "topic": "irritation"
+  },
+  {
+    "action_boundary": "proposal_only",
+    "evidence_refs": [
+      "voc-001",
+      "voc-006",
+      "voc-010",
+      "voc-013"
+    ],
+    "markets": [
+      "KR",
+      "US"
+    ],
+    "observed_count": 4,
+    "proposal_id": "proposal-packaging",
+    "requires_human_approval": true,
+    "safety_signal": false,
+    "topic": "packaging"
+  },
+  {
+    "action_boundary": "proposal_only",
+    "evidence_refs": [
+      "voc-009",
+      "voc-014"
+    ],
+    "markets": [
+      "KR",
+      "US"
+    ],
+    "observed_count": 2,
+    "proposal_id": "proposal-delivery",
+    "requires_human_approval": true,
+    "safety_signal": false,
+    "topic": "delivery"
+  },
+  {
+    "action_boundary": "proposal_only",
+    "evidence_refs": [
+      "voc-004",
+      "voc-008"
+    ],
+    "markets": [
+      "JP",
+      "KR"
+    ],
+    "observed_count": 2,
+    "proposal_id": "proposal-scent",
+    "requires_human_approval": true,
+    "safety_signal": false,
+    "topic": "scent"
+  }
+]

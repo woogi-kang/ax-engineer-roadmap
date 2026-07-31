@@ -1,0 +1,16 @@
+{"source_id":"voc-001","expected_status":"ready","expected_topic":"packaging","expected_safety_flag":false}
+{"source_id":"voc-002","expected_status":"duplicate","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-003","expected_status":"review_required","expected_topic":"irritation","expected_safety_flag":true}
+{"source_id":"voc-004","expected_status":"ready","expected_topic":"scent","expected_safety_flag":false}
+{"source_id":"voc-005","expected_status":"invalid","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-006","expected_status":"review_required","expected_topic":"packaging","expected_safety_flag":false}
+{"source_id":"voc-007","expected_status":"spam","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-008","expected_status":"review_required","expected_topic":"scent","expected_safety_flag":false}
+{"source_id":"voc-009","expected_status":"review_required","expected_topic":"delivery","expected_safety_flag":false}
+{"source_id":"voc-010","expected_status":"review_required","expected_topic":"packaging","expected_safety_flag":false}
+{"source_id":"voc-011","expected_status":"review_required","expected_topic":"irritation","expected_safety_flag":true}
+{"source_id":"voc-012","expected_status":"ready","expected_topic":"product_effect","expected_safety_flag":false}
+{"source_id":"voc-013","expected_status":"ready","expected_topic":"packaging","expected_safety_flag":false}
+{"source_id":"voc-014","expected_status":"ready","expected_topic":"delivery","expected_safety_flag":false}
+{"source_id":"voc-015","expected_status":"review_required","expected_topic":"unknown","expected_safety_flag":false}
+{"source_id":"voc-016","expected_status":"invalid","expected_topic":null,"expected_safety_flag":false}

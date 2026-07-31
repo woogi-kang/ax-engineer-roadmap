@@ -1,0 +1,128 @@
+{
+  "all_expectations_passed": true,
+  "as_of": "2026-07-31T00:00:00+00:00",
+  "metrics": {
+    "duplicate_precision": 1.0,
+    "duplicate_recall": 1.0,
+    "record_exact_match": 1.0,
+    "safety_recall": 1.0,
+    "status_accuracy": 1.0,
+    "topic_accuracy": 1.0,
+    "traceability_rate": 1.0
+  },
+  "record_count": 16,
+  "rows": [
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-001",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-002",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-003",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-004",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-005",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-006",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-007",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-008",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-009",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-010",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-011",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-012",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-013",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-014",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-015",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-016",
+      "status_match": true,
+      "topic_match": true
+    }
+  ]
+}

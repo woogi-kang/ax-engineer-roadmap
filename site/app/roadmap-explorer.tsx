@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   type Language,
   type Readiness,
@@ -19,14 +19,16 @@ const copy = {
     contextLabel: "AX 엔지니어를 위한 오픈 로드맵",
     version: "공개본 v0.3.0",
     repository: "GitHub 저장소",
+    repositoryShort: "GitHub",
     docs: "Markdown 문서",
     title: "업무를 고르고 운영까지 이어 가는 AX 엔지니어 로드맵",
     intro:
       "업무를 찾고 흐름을 다시 설계한 뒤, AI를 기존 시스템에 연결해 배포하고 현업에 적용하는 데 필요한 판단과 기술을 정리했습니다. 두 번째 업무에서 무엇을 재사용할지도 다룹니다. 한국 조직에서 자주 부딪히는 결재·권한·규제와 업무 기록·연동 조건도 함께 살핍니다.",
     scope:
-      "AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 현업 조합 사례 10개",
+      "AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 업무별 적용 사례 10개",
+    startRoadmap: "로드맵 시작하기",
     filterTitle: "내 시작점",
-    filterHelp: "역할과 현재 업무의 준비 상태를 선택하면 관련 항목만 추려 볼 수 있습니다.",
+    filterHelp: "역할과 조직 준비 상태를 선택하면 관련 항목만 추려 볼 수 있습니다.",
     roleLegend: "주된 책임",
     readinessLegend: "조직 준비 상태",
     searchLabel: "로드맵 검색",
@@ -53,7 +55,9 @@ const copy = {
     emptyTitle: "조건에 맞는 항목이 없습니다",
     emptyBody: "검색어를 지우거나 역할·준비 상태를 넓혀 보세요.",
     clearSearch: "검색어 지우기",
-    principleTitle: "공통 하네스의 범위는 두 번째 업무에서 검증합니다.",
+    expandGroup: "그룹 펼치기",
+    collapseGroup: "그룹 접기",
+    principleTitle: "공통 운영 기반(harness)의 범위는 두 번째 업무에서 검증합니다.",
     principleBody:
       "첫 업무에서 입력, 출력, 평가, 승인, 기록, 복구 규칙을 정합니다. 두 번째 업무에서도 실제로 재사용한 규칙과 도구만 여러 팀의 공통 기반에 포함합니다.",
     footer: "세부 내용은 Markdown 문서를 기준으로 합니다. 이 화면에서는 필요한 문서를 빠르게 찾을 수 있습니다.",
@@ -67,12 +71,14 @@ const copy = {
     contextLabel: "An open roadmap for AX Engineers",
     version: "Public release v0.3.0",
     repository: "GitHub repository",
+    repositoryShort: "GitHub",
     docs: "Markdown docs",
     title: "Choose the workflow. Carry it into operations.",
     intro:
       "A practical path from workflow discovery and redesign through AI integration, deployment, adoption, and reuse, including approval, authority, regulation, and digital-readiness conditions common in Korean organizations.",
     scope:
       "8 transformation stages · 7 technical capabilities · 5 practice projects · 10 applied AX cases",
+    startRoadmap: "Start the roadmap",
     filterTitle: "Your starting point",
     filterHelp: "Select a role and current readiness to keep only the relevant path.",
     roleLegend: "Primary responsibility",
@@ -101,6 +107,8 @@ const copy = {
     emptyTitle: "No items match these conditions",
     emptyBody: "Clear the search or broaden the role and readiness filters.",
     clearSearch: "Clear search",
+    expandGroup: "Expand group",
+    collapseGroup: "Collapse group",
     principleTitle: "A shared harness takes shape in the second workflow.",
     principleBody:
       "Define input, output, evaluation, approval, record, and recovery rules in the first workflow. Share only the rules and tools that are actually reused in a second workflow.",
@@ -114,6 +122,7 @@ const copy = {
 
 const roleKeys: Role[] = ["all", "practitioner", "builder", "leader", "guardian"];
 const readinessKeys: Readiness[] = ["all", "it", "saas", "low"];
+const allGroupIds = roadmapGroups.map((group) => group.id);
 
 function localized(value: { ko: string; en: string }, language: Language) {
   return value[language];
@@ -127,7 +136,58 @@ export function RoadmapExplorer({
   const [role, setRole] = useState<Role>("all");
   const [readiness, setReadiness] = useState<Readiness>("all");
   const [query, setQuery] = useState("");
+  const [filtersHydrated, setFiltersHydrated] = useState(false);
+  const [expandedGroupIds, setExpandedGroupIds] = useState(
+    () => new Set(allGroupIds.slice(0, 1)),
+  );
   const t = copy[language];
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const requestedRole = url.searchParams.get("role");
+    const requestedReadiness = url.searchParams.get("readiness");
+    const requestedQuery = url.searchParams.get("q") ?? "";
+    const validRequestedRole =
+      requestedRole !== null && roleKeys.includes(requestedRole as Role);
+    const validRequestedReadiness =
+      requestedReadiness !== null &&
+      readinessKeys.includes(requestedReadiness as Readiness);
+    const hasSharedFilter =
+      validRequestedRole || validRequestedReadiness || requestedQuery !== "";
+
+    queueMicrotask(() => {
+      if (validRequestedRole) {
+        setRole(requestedRole as Role);
+      }
+      if (validRequestedReadiness) {
+        setReadiness(requestedReadiness as Readiness);
+      }
+      setQuery(requestedQuery);
+
+      if (hasSharedFilter) {
+        setExpandedGroupIds(new Set(allGroupIds));
+      }
+      setFiltersHydrated(true);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!filtersHydrated) return;
+
+    const url = new URL(window.location.href);
+    if (role === "all") url.searchParams.delete("role");
+    else url.searchParams.set("role", role);
+    if (readiness === "all") url.searchParams.delete("readiness");
+    else url.searchParams.set("readiness", readiness);
+    if (query === "") url.searchParams.delete("q");
+    else url.searchParams.set("q", query);
+
+    window.history.replaceState(
+      window.history.state,
+      "",
+      `${url.pathname}${url.search}${url.hash}`,
+    );
+  }, [filtersHydrated, query, readiness, role]);
 
   const filteredGroups = useMemo(() => {
     const locale = language === "ko" ? "ko-KR" : "en-US";
@@ -167,14 +227,32 @@ export function RoadmapExplorer({
   );
   const hasSelection = role !== "all" || readiness !== "all" || query !== "";
 
+  function restoreCompactGroups() {
+    setExpandedGroupIds(new Set(allGroupIds.slice(0, 1)));
+  }
+
   function reset() {
     setRole("all");
     setReadiness("all");
     setQuery("");
+    restoreCompactGroups();
   }
 
   function documentUrl(path: string) {
     return `${repositoryUrl}/blob/main/${language === "en" ? `en/${path}` : path}`;
+  }
+
+  function toggleGroup(groupId: string) {
+    setExpandedGroupIds((current) => {
+      const next = new Set(current);
+      if (next.has(groupId)) next.delete(groupId);
+      else next.add(groupId);
+      return next;
+    });
+  }
+
+  function expandAllGroups() {
+    setExpandedGroupIds(new Set(allGroupIds));
   }
 
   return (
@@ -190,8 +268,12 @@ export function RoadmapExplorer({
         </a>
         <nav className="header-actions" aria-label={t.navLabel}>
           <span className="version">{t.version}</span>
-          <a href={repositoryUrl}>{t.repository}</a>
+          <a className="repository-link" href={repositoryUrl}>
+            <span className="repository-label-long">{t.repository}</span>
+            <span className="repository-label-short">{t.repositoryShort}</span>
+          </a>
           <a
+            className="docs-link"
             href={`${repositoryUrl}/blob/main/${language === "en" ? "en/README.md" : "README.md"}`}
           >
             {t.docs}
@@ -225,6 +307,10 @@ export function RoadmapExplorer({
           </div>
           <div className="intro-copy">
             <p>{t.intro}</p>
+            <a className="hero-cta" href="#roadmap">
+              {t.startRoadmap}
+              <span aria-hidden="true"> ↓</span>
+            </a>
             <p className="scope-line">{t.scope}</p>
           </div>
         </section>
@@ -245,7 +331,10 @@ export function RoadmapExplorer({
                     type="button"
                     key={roleKey}
                     aria-pressed={role === roleKey}
-                    onClick={() => setRole(roleKey)}
+                    onClick={() => {
+                      setRole(roleKey);
+                      expandAllGroups();
+                    }}
                   >
                     {localized(roleLabels[roleKey], language)}
                   </button>
@@ -262,7 +351,10 @@ export function RoadmapExplorer({
                     type="button"
                     key={readinessKey}
                     aria-pressed={readiness === readinessKey}
-                    onClick={() => setReadiness(readinessKey)}
+                    onClick={() => {
+                      setReadiness(readinessKey);
+                      expandAllGroups();
+                    }}
                   >
                     {localized(readinessLabels[readinessKey], language)}
                   </button>
@@ -277,7 +369,10 @@ export function RoadmapExplorer({
                 type="search"
                 value={query}
                 placeholder={t.searchPlaceholder}
-                onChange={(event) => setQuery(event.target.value)}
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  expandAllGroups();
+                }}
               />
             </div>
 
@@ -310,7 +405,13 @@ export function RoadmapExplorer({
               <div className="empty-state" id="empty-state" role="status">
                 <h3>{t.emptyTitle}</h3>
                 <p>{t.emptyBody}</p>
-                <button type="button" onClick={() => setQuery("")}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setQuery("");
+                    restoreCompactGroups();
+                  }}
+                >
                   {t.clearSearch}
                 </button>
               </div>
@@ -322,13 +423,37 @@ export function RoadmapExplorer({
                       <span className="group-index" aria-hidden="true">
                         {String(groupIndex + 1).padStart(2, "0")}
                       </span>
-                      <div>
-                        <h3>{localized(group.label, language)}</h3>
-                        <p>{localized(group.prompt, language)}</p>
-                      </div>
+                      <button
+                        className="group-toggle"
+                        type="button"
+                        aria-expanded={expandedGroupIds.has(group.id)}
+                        aria-controls={`roadmap-group-${group.id}`}
+                        onClick={() => toggleGroup(group.id)}
+                      >
+                        <span className="group-copy">
+                          <span className="group-title">
+                            {localized(group.label, language)}
+                          </span>
+                          <span className="group-prompt">
+                            {localized(group.prompt, language)}
+                          </span>
+                        </span>
+                        <span className="group-toggle-label">
+                          {expandedGroupIds.has(group.id)
+                            ? t.collapseGroup
+                            : t.expandGroup}
+                          <span aria-hidden="true">
+                            {expandedGroupIds.has(group.id) ? "−" : "+"}
+                          </span>
+                        </span>
+                      </button>
                     </div>
 
-                    <ol className="node-list">
+                    <ol
+                      className="node-list"
+                      id={`roadmap-group-${group.id}`}
+                      hidden={!expandedGroupIds.has(group.id)}
+                    >
                       {group.nodes.map((roadmapNode) => (
                         <li key={roadmapNode.id}>
                           <article className="roadmap-node">
@@ -342,7 +467,9 @@ export function RoadmapExplorer({
                                 ))}
                               </div>
                               <h4>{localized(roadmapNode.title, language)}</h4>
-                              <p>{localized(roadmapNode.description, language)}</p>
+                              <p>
+                                {localized(roadmapNode.description, language)}
+                              </p>
                               <div className="node-footer">
                                 <p>
                                   <span>{t.evidence}</span>

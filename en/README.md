@@ -8,13 +8,30 @@
 
 [한국어](../README.md) | [English](README.md)
 
-A practical roadmap for AX Engineers who need to choose a workflow, connect AI to existing data and systems, and carry the change into operations. It also covers approval, authority, regulation, and digital-readiness conditions commonly encountered in Korean organizations.
+An **AX Engineer** finds work worth changing, redesigns the workflow, and connects AI to existing data, systems, and authority boundaries while taking responsibility for the path into operations.
 
-The primary audience is practicing and aspiring AX Engineers. Business practitioners, leaders, and data, security, and operations partners can use the collaboration guides to understand the decisions they own with an AX Engineer.
+This repository turns that work into a public roadmap from workflow selection through deployment, adoption, recovery, and reuse. It also covers approval, authority, regulation, and digital-readiness conditions commonly encountered in Korean organizations.
 
 > An AX Engineer's work does not end when the demo runs.
 >
 > The workflow must be usable in real work, stoppable and recoverable when it fails, and operable by someone other than its original builder.
+
+## What you can get from this repository
+
+- **A sequence for changing work**: move from goals and boundaries through redesign, data integration, controls, deployment, adoption, and scale in eight stages.
+- **Implementation and operating criteria**: connect software, LLM, evaluation, and security skills to artifacts, approval, records, and recovery.
+- **Applied cases by work area**: compare source systems and action boundaries across customer, people, finance, data, and shared operations.
+- **A starting point by role**: find the decisions shared by practicing and aspiring AX Engineers, business practitioners, leaders, and data, security, and operations partners.
+
+## Interactive roadmap and quick start
+
+[**Find your starting point in the interactive roadmap →**](https://woogi-kang.github.io/ax-engineer-roadmap/en/)
+
+1. Review the [role model](roadmap/role-model.md) to understand the decisions and boundaries owned by an AX Engineer.
+2. Use the [organization readiness diagnostic](start-here/organization-readiness.md) to place the workflow in a file-and-message, SaaS, or internal-system context.
+3. Choose one applied case below where you can access the data and a safe test environment.
+
+[Browse the Markdown guide](start-here/README.md) · [Run the site locally](../site/README.md)
 
 ## What work can you transform with AX?
 
@@ -23,43 +40,19 @@ Start with one case in a work area you already know. Open a case to see its syst
 | Work area | Case | Starting condition | Action boundary |
 |---|---|---|---|
 | Customer and revenue | [Public VOC issues → improvement proposals](case-studies/beauty-d2c-voc/README.md) | Public data | Read and propose |
-| Customer and revenue | [Electronic tax invoice issuance and payment reconciliation](case-studies/electronic-tax-invoice-reconciliation/README.md) | Accounting and ERP sandbox | Approved test issuance |
 | People and collaboration | [Slack meetings → action items](case-studies/slack-meeting-actions/README.md) | SaaS sandboxes | Write after approval |
 | People and collaboration | [Joiner, mover, and leaver access](case-studies/employee-lifecycle-access/README.md) | HR and identity sandboxes | Role-based approval |
 | Finance and procurement | [Card transactions and receipts → journal-entry drafts](case-studies/corporate-card-expense/README.md) | Synthetic transactions and evidence | Draft only |
+| Finance and procurement | [Electronic tax invoice issuance and payment reconciliation](case-studies/electronic-tax-invoice-reconciliation/README.md) | Accounting and ERP sandbox | Approved test issuance |
 | Finance and procurement | [Vendor onboarding and bank-account change validation](case-studies/vendor-master-account-change/README.md) | Vendor-master sandbox | Dual approval |
-| Data and operations | [Files and CSVs → reviewable AX Hub](case-studies/file-csv-to-ax-hub/README.md) | Files and messaging | Draft only |
+| Data and operations | [Files and CSVs → reviewable work hub (AX Hub)](case-studies/file-csv-to-ax-hub/README.md) | Files and messaging | Draft only |
 | Data and operations | [Inventory exceptions → purchase and transfer proposals](case-studies/inventory-exception-replenishment/README.md) | ERP and WMS sandboxes | Record approved proposals |
 | Shared operations | [Mail classification and response drafts](case-studies/centralized-mail-assist/README.md) | Mail sandbox | Approval before sending |
 | Shared operations | [Multi-workflow agent operations](case-studies/company-agent-operating-layer/README.md) | Second workflow and internal APIs | Bounded by workflow |
 
-All cases are public or synthetic simulations or simulation designs. Compare readiness, risk, P1–P5, and current evidence in the [full case catalog](case-studies/README.md).
+The Beauty/D2C case includes a reproducible synthetic VOC pipeline and evaluation results. All remaining cases are currently at the simulation-design stage. Compare readiness, risk, P1–P5, and current evidence in the [full case catalog](case-studies/README.md).
 
-## Why AX Engineers now?
-
-`AX Engineer` is not yet a standardized title. Recent Korean enterprises and their affiliates have nevertheless recruited related talent under labels such as `AX Engineer`, `AX/DX Engineer`, and `AX (AI/ML Engineer)`. The table below includes only postings where both the enterprise context and explicit use of `AX` can be verified.
-
-| Company | AX label used in the posting | Verified AX work | Posting status |
-|---|---|---|---|
-| DB Inc. | [Experienced AX Engineer](https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=53998687) | AX initiative analysis, AI agents and multi-agent systems, RAG, AIOps, and internal adoption | Closed 2026-07-27 |
-| LG CNS | [AX/DX Engineer](https://careers.lg.com/apply/detail?id=1001774) | A role combining finance, public-sector, or education IT knowledge with AI and cloud skills | Closed 2026-06-16 |
-| LG H&H | [AX (AI/ML Engineer)](https://careers.lg.com/apply/detail?id=1001576) | An entry-level AI/ML engineering role explicitly grouped under AX | Closed 2026-04-14 |
-| Hanwha Systems | [2026 large-scale Defense AX recruitment](https://www.catch.co.kr/NCS/RecruitInfoDetails/552043) | AI agents, VLM, ontology, AX strategy, and transformation of defense workflows and decisions | Closed May 2026 |
-| SK inc. (AX) | [Cloud-native AI/Data Platform Engineer](https://www.skcareers.com/Recruit/Detail/R261176) | RAG, AI agents, workflow automation, LLMOps, governance, and internal SDKs | Closed 2026-07-13 |
-
-> **Snapshot as of 2026-07-31.** All five are recent postings from Korean enterprises or their affiliates and are now closed. Detail pages may change or disappear. Companies use `AX` differently—in job titles, recruitment tracks, organization names, or company branding—so the table preserves each posting's actual wording rather than treating them as one standardized role.
-
-## What an AX Engineer does
-
-In this repository, an **AX Engineer** discovers organizational workflow problems, redesigns the flow, and connects AI to existing data, systems, and authority boundaries. Titles and exact scope vary by organization, but the roadmap focuses on five recurring responsibilities:
-
-- find valuable workflows and their actual bottlenecks;
-- separate steps to remove or simplify from steps where AI can help;
-- connect data, software, models, permissions, and accountable approval in one workflow;
-- operate quality, cost, security, incidents, and adoption;
-- test which rules and components can be reused in a second workflow.
-
-[Read the detailed role model](roadmap/role-model.md)
+Here, **AX Hub** means a thin work hub where reviewers can trace scattered files and CSVs to their source, owner, and review state. Do not infer a named company's internal diagnosis, live adoption, or productivity, cost, or revenue improvement from a case title.
 
 ## Roadmap structure
 
@@ -79,8 +72,6 @@ flowchart LR
 4. [Practice projects](projects/README.md): progress from a safe assistant to reuse in a second workflow.
 5. [Applied AX cases](case-studies/README.md): choose a case by readiness and risk, then practice P1–P5 as one flow.
 6. [Operations and organizational scale](organization-maturity/README.md): assess whether the organization can repeat the same operating capability across workflows.
-
-[Open the interactive roadmap](https://woogi-kang.github.io/ax-engineer-roadmap/en/) · [Run the site locally](../site/README.md)
 
 ## Eight-stage AX workflow transformation
 
@@ -135,6 +126,8 @@ The [non-developer glossary](start-here/non-developer-glossary.md) explains LLMs
 
 ## When to build a shared harness
 
+A **shared harness** is the minimum set of operating rules and reusable tools that multiple workflows follow together.
+
 Teams do not need to use the same model, framework, or interface. They do need compatible rules for:
 
 - authoritative systems for current data;
@@ -166,11 +159,19 @@ Workflow discovery, redesign, integration, evaluation, and operations principles
 
 The roadmap does not treat Korean companies as one culture. Readers elsewhere can replace legal, procurement, labor, and organizational conditions with their local context.
 
-## How to read the cases
+## Current hiring signals
 
-The quick list above helps you begin with familiar work. The [case catalog](case-studies/README.md) compares difficulty, readiness, risk, write impact, P1–P5, and current evidence.
+`AX Engineer` is not yet a standardized title. Recent Korean enterprises and their affiliates have nevertheless recruited related talent under labels such as `AX Engineer`, `AX/DX Engineer`, and `AX (AI/ML Engineer)`. The table below includes only postings where both the enterprise context and explicit use of `AX` can be verified.
 
-Do not infer a named company's internal diagnosis, live adoption, or productivity, cost, or revenue improvement from a case title. Each document states its current result and limits separately.
+| Company | AX label used in the posting | Verified AX work | Posting status |
+|---|---|---|---|
+| DB Inc. | [Experienced AX Engineer](https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=53998687) | AX initiative analysis, AI agents and multi-agent systems, RAG, AIOps, and internal adoption | Closed 2026-07-27 |
+| LG CNS | [AX/DX Engineer](https://careers.lg.com/apply/detail?id=1001774) | A role combining finance, public-sector, or education IT knowledge with AI and cloud skills | Closed 2026-06-16 |
+| LG H&H | [AX (AI/ML Engineer)](https://careers.lg.com/apply/detail?id=1001576) | An entry-level AI/ML engineering role explicitly grouped under AX | Closed 2026-04-14 |
+| Hanwha Systems | [2026 large-scale Defense AX recruitment](https://www.catch.co.kr/NCS/RecruitInfoDetails/552043) | AI agents, VLM, ontology, AX strategy, and transformation of defense workflows and decisions | Closed May 2026 |
+| SK inc. (AX) | [Cloud-native AI/Data Platform Engineer](https://www.skcareers.com/Recruit/Detail/R261176) | RAG, AI agents, workflow automation, LLMOps, governance, and internal SDKs | Closed 2026-07-13 |
+
+> **Snapshot as of 2026-07-31.** All five are recent postings from Korean enterprises or their affiliates and are now closed. Detail pages may change or disappear. Companies use `AX` differently—in job titles, recruitment tracks, organization names, or company branding—so the table preserves each posting's actual wording rather than treating them as one standardized role.
 
 ## Contributing
 
@@ -180,6 +181,10 @@ Do not infer a named company's internal diagnosis, live adoption, or productivit
 - Open a `Roadmap gap` issue for missing competencies or stages.
 - Submit de-identified cases through a `Case study proposal`.
 - Follow the [contribution guide](CONTRIBUTING.md) and [source policy](research/source-policy.md).
+
+## Maintainer note
+
+This project began with a product engineer's need to make the gap between building an AI feature and changing a real organizational workflow explicit. Maintainer [Woogi](https://github.com/woogi-kang) builds and verifies the case documents and runnable artifacts, while separating simulations from any claim that would require operating or business evidence.
 
 ## Status and license
 

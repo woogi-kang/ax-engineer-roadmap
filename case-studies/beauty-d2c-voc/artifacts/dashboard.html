@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beauty/D2C 합성 VOC 실행 결과</title>
+  <style>
+    :root { color-scheme: light; --paper:#f3efe6; --surface:#fbf9f4; --ink:#23221f; --muted:#6d685f; --line:#cbc3b6; --accent:#aa3524; --teal:#0f5d72; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.55; word-break:keep-all; }
+    main { width:min(1080px,calc(100% - 32px)); margin:0 auto; padding:56px 0 72px; }
+    header { display:grid; grid-template-columns:1.5fr 1fr; gap:40px; align-items:end; padding-bottom:32px; border-bottom:1px solid var(--line); }
+    h1 { max-width:13ch; margin:0; font-size:clamp(2.2rem,6vw,5.2rem); line-height:1; letter-spacing:-.055em; }
+    header p { margin:0; color:var(--muted); }
+    .eyebrow { margin-bottom:14px; color:var(--accent); font:700 .78rem ui-monospace,monospace; letter-spacing:.05em; }
+    section { margin-top:48px; }
+    h2 { margin:0 0 18px; font-size:1.45rem; }
+    ul { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:10px; margin:0; padding:0; list-style:none; }
+    li { padding:18px; border:1px solid var(--line); background:var(--surface); }
+    li strong { display:block; color:var(--accent); font-size:2rem; font-variant-numeric:tabular-nums; }
+    li span { color:var(--muted); font:650 .75rem ui-monospace,monospace; }
+    table { width:100%; border-collapse:collapse; background:var(--surface); font-size:.88rem; }
+    th,td { padding:12px 14px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { color:var(--muted); font-size:.75rem; }
+    .note { padding:18px 20px; border-left:4px solid var(--teal); background:var(--surface); color:var(--muted); }
+    @media (max-width:720px) { main { padding-top:36px; } header { grid-template-columns:1fr; gap:24px; } ul { grid-template-columns:repeat(2,minmax(0,1fr)); } .table-wrap { overflow-x:auto; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div><p class="eyebrow">SYNTHETIC VOC · RULES V1</p><h1>실행 결과를 원문까지 추적합니다.</h1></div>
+    <p>합성 VOC 16건을 검증·정규화·중복 제거·분류한 결과입니다. 외부 업무는 만들거나 변경하지 않았습니다. 기준 시각은 2026-07-31T00:00:00+00:00입니다.</p>
+  </header>
+  <section><h2>처리 상태</h2><ul><li><strong>1</strong><span>duplicate</span></li><li><strong>2</strong><span>invalid</span></li><li><strong>5</strong><span>ready</span></li><li><strong>7</strong><span>review_required</span></li><li><strong>1</strong><span>spam</span></li></ul></section>
+  <section><h2>검토할 업무 제안</h2><div class="table-wrap"><table><thead><tr><th>주제</th><th>근거 수</th><th>시장</th><th>원문 식별자</th></tr></thead><tbody><tr><td>irritation</td><td>2</td><td>KR, US</td><td>voc-003, voc-011</td></tr><tr><td>packaging</td><td>4</td><td>KR, US</td><td>voc-001, voc-006, voc-010, voc-013</td></tr><tr><td>delivery</td><td>2</td><td>KR, US</td><td>voc-009, voc-014</td></tr><tr><td>scent</td><td>2</td><td>JP, KR</td><td>voc-004, voc-008</td></tr></tbody></table></div></section>
+  <section><h2>평가 지표</h2><div class="table-wrap"><table><thead><tr><th>지표</th><th>결과</th></tr></thead><tbody><tr><td>record_exact_match</td><td>100.0%</td></tr><tr><td>status_accuracy</td><td>100.0%</td></tr><tr><td>topic_accuracy</td><td>100.0%</td></tr><tr><td>duplicate_precision</td><td>100.0%</td></tr><tr><td>duplicate_recall</td><td>100.0%</td></tr><tr><td>safety_recall</td><td>100.0%</td></tr><tr><td>traceability_rate</td><td>100.0%</td></tr></tbody></table></div></section>
+  <section><p class="note">수동 검토 큐 9건 · 제안 4건. 이 결과는 코드 경로를 검증하는 합성 데이터 실행 증거이며, 실제 고객 분포·분류 성능·업무 성과를 뜻하지 않습니다.</p></section>
+</main>
+</body>
+</html>
