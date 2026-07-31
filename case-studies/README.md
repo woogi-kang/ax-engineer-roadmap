@@ -6,18 +6,20 @@
 
 ## 업무별 사례 목록
 
-| 업무 영역 | 사례 | 난이도 | 시작 조건 | 실행 범위 | P단계 | 현재 근거 |
-|---|---|---:|---|---|---|---|
-| 고객·매출 | [Beauty/D2C 글로벌 VOC → 업무 제안](beauty-d2c-voc/README.md) | 1 | 메신저·파일, SaaS | 읽기·제안 | P1·P2·P3·P5 | 합성 데이터 실행·평가 |
-| 사람·협업 | [Slack 회의 신호 → 승인 가능한 실행 항목](slack-meeting-actions/README.md) | 2 | SaaS, 사내 API | 승인 후 샌드박스 쓰기 | P1~P5 | 시뮬레이션 설계 |
-| 사람·협업 | [입사·이동·퇴사 → 계정·권한 운영](employee-lifecycle-access/README.md) | 3 | SaaS, 사내 API | 역할별 승인 후 샌드박스 쓰기 | P1~P5 | 시뮬레이션 설계 |
-| 재무·구매 | [법인카드·경비 증빙 → 전표 초안](corporate-card-expense/README.md) | 2 | 메신저·파일, SaaS | 초안 전용 | P1~P3 | 시뮬레이션 설계 |
-| 재무·구매 | [매출 근거 → 전자세금계산서 발행·입금 대사](electronic-tax-invoice-reconciliation/README.md) | 4 | SaaS, 사내 API | 승인 후 샌드박스 쓰기 | P1~P4 | 시뮬레이션 설계 |
-| 재무·구매 | [거래처 등록·계좌 변경 → 검증 가능한 승인](vendor-master-account-change/README.md) | 4 | SaaS, 사내 API | 이중 승인 후 샌드박스 쓰기 | P1~P4 | 시뮬레이션 설계 |
-| 데이터·운영 | [흩어진 파일·CSV → 검토 가능한 업무 허브(AX Hub)](file-csv-to-ax-hub/README.md) | 1 | 메신저·파일, SaaS | 초안 전용 | P1·P2·P3·P5 | 시뮬레이션 설계 |
-| 데이터·운영 | [재고 예외 → 발주·창고 이동 제안](inventory-exception-replenishment/README.md) | 4 | SaaS, 사내 API | 승인 후 제안 기록 | P1~P4 | 시뮬레이션 설계 |
-| 공통 통합·운영 | [중앙 메일 업무 보조 통합](centralized-mail-assist/README.md) | 4 | SaaS, 사내 API | 발송 전 승인 | P1~P5 | 시뮬레이션 설계 |
-| 공통 통합·운영 | [회사 에이전트 운영 계층](company-agent-operating-layer/README.md) | 5 | SaaS, 사내 API | 업무별로 제한 | P2~P5 | 시뮬레이션 설계 |
+| 업무 영역 | 사례 | 난이도·위험 | 준비 상태 | 실행 범위 | P단계 | 근거 단계·바로가기 |
+|---|---|---|---|---|---|---|
+| 고객·매출 | [Beauty/D2C 글로벌 VOC → 업무 제안](beauty-d2c-voc/README.md) | 1 · 보통 | 메신저·파일, SaaS | 읽기·제안 | P1·P2·P3·P5 | [공개 실행·평가](beauty-d2c-voc/README.md#현재-실행물과-근거) |
+| 사람·협업 | [Slack 회의 신호 → 승인 가능한 실행 항목](slack-meeting-actions/README.md) | 2 · 보통 | SaaS, 사내 API | 승인 후 샌드박스 쓰기 | P1~P5 | [시뮬레이션 설계](slack-meeting-actions/README.md#현재-실행물과-근거) |
+| 사람·협업 | [입사·이동·퇴사 → 계정·권한 운영](employee-lifecycle-access/README.md) | 3 · 높음 | SaaS, 사내 API | 역할별 승인 후 샌드박스 쓰기 | P1~P5 | [시뮬레이션 설계](employee-lifecycle-access/README.md#현재-실행물과-근거) |
+| 재무·구매 | [법인카드·경비 증빙 → 전표 초안](corporate-card-expense/README.md) | 2 · 보통 | 메신저·파일, SaaS | 초안 전용 | P1~P3 | [시뮬레이션 설계](corporate-card-expense/README.md#현재-실행물과-근거) |
+| 재무·구매 | [매출 근거 → 전자세금계산서 발행·입금 대사](electronic-tax-invoice-reconciliation/README.md) | 4 · 높음 | SaaS, 사내 API | 승인 후 샌드박스 쓰기 | P1~P4 | [시뮬레이션 설계](electronic-tax-invoice-reconciliation/README.md#현재-실행물과-근거) |
+| 재무·구매 | [거래처 등록·계좌 변경 → 검증 가능한 승인](vendor-master-account-change/README.md) | 4 · 높음 | SaaS, 사내 API | 이중 승인 후 샌드박스 쓰기 | P1~P4 | [시뮬레이션 설계](vendor-master-account-change/README.md#현재-실행물과-근거) |
+| 데이터·운영 | [흩어진 파일·CSV → 검토 가능한 업무 허브(AX Hub)](file-csv-to-ax-hub/README.md) | 1 · 보통 | 메신저·파일, SaaS | 초안 전용 | P1·P2·P3·P5 | [시뮬레이션 설계](file-csv-to-ax-hub/README.md#현재-실행물과-근거) |
+| 데이터·운영 | [재고 예외 → 발주·창고 이동 제안](inventory-exception-replenishment/README.md) | 4 · 높음 | SaaS, 사내 API | 승인 후 제안 기록 | P1~P4 | [시뮬레이션 설계](inventory-exception-replenishment/README.md#현재-실행물과-근거) |
+| 공통 통합·운영 | [중앙 메일 업무 보조 통합](centralized-mail-assist/README.md) | 4 · 높음 | SaaS, 사내 API | 발송 전 승인 | P1~P5 | [시뮬레이션 설계](centralized-mail-assist/README.md#현재-실행물과-근거) |
+| 공통 통합·운영 | [회사 에이전트 운영 계층](company-agent-operating-layer/README.md) | 5 · 높음 | SaaS, 사내 API | 업무별로 제한 | P2~P5 | [시뮬레이션 설계](company-agent-operating-layer/README.md#현재-실행물과-근거) |
+
+사례명과 근거 단계만으로 특정 회사의 내부 상태나 현업 정착 여부, 생산성·비용·매출 개선 효과를 추정해서는 안 된다.
 
 ## 추천 학습 순서
 

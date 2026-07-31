@@ -8,6 +8,7 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 - Aligned the Korean README and interactive roadmap around one AX definition, case-title set, and editorial voice
 - Added a copy-sync check for the shared definition and ten case titles
+- Linked each Korean case's evidence stage to a standard evidence section and added validation for those links
 
 ## [0.3.0] - 2026-07-31
 

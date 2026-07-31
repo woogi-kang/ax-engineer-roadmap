@@ -99,6 +99,13 @@ const directories = fs
 
 const ids = new Set();
 const metadataById = new Map();
+const evidenceStageLabels = new Map([
+  ['simulation-design', '시뮬레이션 설계'],
+  ['public-simulation', '공개 실행·평가'],
+  ['anonymized-practice', '익명화 실습'],
+  ['limited-pilot', '제한 파일럿'],
+  ['operating-evidence', '운영 근거']
+]);
 
 function nonEmptyStringArray(value) {
   return (
@@ -257,10 +264,30 @@ for (const directory of directories) {
     failures.push(`${relativeMetadata}: owner 오류`);
   }
 
+  if (fs.existsSync(koreanReadme)) {
+    const koreanReadmeContent = fs.readFileSync(koreanReadme, 'utf8');
+    if (!koreanReadmeContent.includes('## 현재 실행물과 근거')) {
+      failures.push(`${path.relative(root, koreanReadme)}: 현재 실행물과 근거 섹션 누락`);
+    }
+  }
+
   for (const file of indexFiles.filter((target) => fs.existsSync(target))) {
     const indexContent = fs.readFileSync(file, 'utf8');
     if (!indexContent.includes(`(${directory}/README.md)`)) {
       failures.push(`${path.relative(root, file)}: ${directory} 링크 누락`);
+    }
+  }
+
+  const koreanIndex = indexFiles[0];
+  if (fs.existsSync(koreanIndex)) {
+    const koreanIndexContent = fs.readFileSync(koreanIndex, 'utf8');
+    const evidenceLabel = evidenceStageLabels.get(metadata.evidence_stage);
+    const evidenceLink =
+      `[${evidenceLabel}](${directory}/README.md#현재-실행물과-근거)`;
+    if (!koreanIndexContent.includes(evidenceLink)) {
+      failures.push(
+        `case-studies/README.md: ${directory}의 근거 단계 또는 바로가기 불일치`
+      );
     }
   }
 }
