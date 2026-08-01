@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public AX case registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "verified_at", "cases"],
+  "properties": {
+    "$schema": { "const": "./public-ax-cases.schema.json" },
+    "verified_at": { "type": "string", "format": "date" },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id", "region", "organization", "workflow", "industry",
+          "source_type", "deployment_stage", "outcome_verification",
+          "source_urls", "related_cases"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[KG][0-9]{2}$" },
+          "region": { "type": "string", "minLength": 2 },
+          "organization": { "type": "string", "minLength": 1 },
+          "workflow": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["ko", "en"],
+            "properties": {
+              "ko": { "type": "string", "minLength": 1 },
+              "en": { "type": "string", "minLength": 1 }
+            }
+          },
+          "industry": { "type": "string", "minLength": 1 },
+          "source_type": {
+            "enum": [
+              "organization-official", "joint-official", "vendor-customer-case",
+              "mixed-official-independent"
+            ]
+          },
+          "deployment_stage": {
+            "enum": [
+              "pilot", "limited-operation", "operation", "expanding-operation",
+              "adjusted-operation", "unknown"
+            ]
+          },
+          "outcome_verification": {
+            "enum": ["none", "self-reported", "cross-checked", "independently-evaluated"]
+          },
+          "source_urls": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "format": "uri", "pattern": "^https://" }
+          },
+          "related_cases": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+          }
+        }
+      }
+    }
+  }
+}

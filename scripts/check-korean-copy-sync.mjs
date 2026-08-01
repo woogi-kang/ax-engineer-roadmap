@@ -1,12 +1,18 @@
 import fs from "node:fs";
+import path from "node:path";
 
-const read = (path) => fs.readFileSync(new URL(`../${path}`, import.meta.url), "utf8");
-
+const root = path.resolve(new URL("..", import.meta.url).pathname);
+const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 const readme = read("README.md");
 const explorer = read("site/app/roadmap-explorer.tsx");
 const roadmapData = read("site/app/roadmap-data.ts");
-const metadata = read("site/app/site-metadata.ts");
-const koreanSiteCopy = `${explorer}\n${roadmapData}\n${metadata}`;
+const generatedCases = read("site/app/case-metadata.generated.ts");
+const caseIndex = read("case-studies/README.md");
+const metadataFiles = fs
+  .readdirSync(path.join(root, "case-studies"), { withFileTypes: true })
+  .filter((entry) => entry.isDirectory() && entry.name !== "_schema")
+  .map((entry) => `case-studies/${entry.name}/case.json`)
+  .sort();
 
 const sharedDefinition =
   "자동화하거나 AI로 보조할 업무를 찾고, 사람이 판단할 지점을 남겨 흐름을 다시 설계";
@@ -20,39 +26,54 @@ for (const [name, source] of [
   }
 }
 
-const caseTitles = [
-  "공개 VOC 반복 문제 → 개선 업무 제안",
-  "Slack 회의 → 실행 항목",
-  "입사·이동·퇴사 계정·권한 관리",
-  "법인카드 거래·영수증 → 전표 초안",
-  "전자세금계산서 발행·입금 대사",
-  "거래처 등록·계좌 변경 검증",
-  "파일·CSV → 검토 가능한 업무 허브(AX Hub)",
-  "재고 예외 → 발주·창고 이동안",
-  "메일 분류·답변 초안",
-  "여러 업무 에이전트 운영",
-];
-
-for (const title of caseTitles) {
-  if (!readme.includes(title)) {
-    throw new Error(`README에서 사례명을 찾을 수 없습니다: ${title}`);
+for (const metadataFile of metadataFiles) {
+  const metadata = JSON.parse(read(metadataFile));
+  const casePath = `${metadata.id}/README.md`;
+  if (!readme.includes(`case-studies/${casePath}`)) {
+    throw new Error(`README에서 사례 링크를 찾을 수 없습니다: ${metadata.id}`);
   }
-  if (!roadmapData.includes(title)) {
-    throw new Error(`인터랙티브 로드맵의 사례명이 README와 다릅니다: ${title}`);
+  if (!caseIndex.includes(`(${casePath})`)) {
+    throw new Error(`사례 인덱스에서 링크를 찾을 수 없습니다: ${metadata.id}`);
+  }
+  if (!roadmapData.includes(`"case-${metadata.id}"`)) {
+    throw new Error(`인터랙티브 로드맵에서 사례 ID를 찾을 수 없습니다: ${metadata.id}`);
+  }
+  for (const title of [metadata.title.ko, metadata.title.en]) {
+    if (!generatedCases.includes(title)) {
+      throw new Error(`생성된 사이트 데이터에서 사례 제목을 찾을 수 없습니다: ${title}`);
+    }
   }
 }
 
 const staleTerms = [
-  "바꿀 업무",
   "업무를 AX로 바꿔",
   "현업 조합 사례",
   "오픈 로드맵",
+  "공개 실행·평가",
 ];
 
+const koreanSources = [readme, explorer, roadmapData];
+function collectKoreanMarkdown(directory) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    if ([".claude", ".git", ".design-runs", "en", "node_modules", ".next", "dist", "out"].includes(entry.name)) continue;
+    const target = path.join(directory, entry.name);
+    if (entry.isDirectory()) collectKoreanMarkdown(target);
+    else if (entry.name.endsWith(".md")) koreanSources.push(fs.readFileSync(target, "utf8"));
+  }
+}
+collectKoreanMarkdown(root);
+
 for (const term of staleTerms) {
-  if (readme.includes(term) || koreanSiteCopy.includes(term)) {
+  if (koreanSources.some((source) => source.includes(term))) {
     throw new Error(`이전 표현이 남아 있습니다: ${term}`);
   }
 }
 
-console.log(`한국어 카피 동기화 통과: 핵심 정의 1개, 사례명 ${caseTitles.length}개`);
+if (
+  !/재현 가능한 공개 시뮬레이션\s*\|\s*1개/.test(readme) ||
+  !/실행 설계\s*\|\s*14개/.test(readme)
+) {
+  throw new Error("README의 사례 근거 분포가 현재 metadata와 다릅니다.");
+}
+
+console.log(`한국어 카피 동기화 통과: 핵심 정의 1개, 사례 ${metadataFiles.length}개`);

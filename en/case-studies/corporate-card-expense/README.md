@@ -1,5 +1,18 @@
 # Case: From corporate-card evidence to an approvable journal-entry draft
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Draft only | A1-A2 | P1, P2, P3 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: G11's OCR, sensitive-data, source-document, and expert-approval pattern informs evidence extraction and accounting review through the [application map](../../research/public-case-application-map.md).
+
 Collecting card transactions and receipts is relatively easy to automate. The harder work is deciding which evidence is missing, which expense conflicts with company policy, and who confirms the account and cost allocation.
 
 ## 1. Case type and current evidence

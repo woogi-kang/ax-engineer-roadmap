@@ -1,0 +1,60 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "public-service-petition-response",
+  "title": {
+    "ko": "공공 민원에서 근거가 표시된 답변 초안과 중복 민원 묶음까지",
+    "en": "From public petitions to cited response drafts and reviewable clusters"
+  },
+  "type": "workflow",
+  "primary_domain": "customer-revenue",
+  "industry": "public-sector",
+  "difficulty": 2,
+  "capabilities": [
+    "workflow-discovery",
+    "retrieval-analysis",
+    "document-processing",
+    "human-approval",
+    "policy-checks",
+    "evaluation",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "beauty-d2c-voc"
+  ],
+  "learning_order": 3,
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "low",
+    "saas"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "Synthetic petition inbox",
+    "Caseworker review queue"
+  ],
+  "systems": [
+    "Petition sandbox",
+    "Policy and statute corpus",
+    "Precedent response archive",
+    "Audit ledger"
+  ],
+  "current_write_impact": "none",
+  "designed_write_impact": "draft-only",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A2",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
+    1,
+    2,
+    3
+  ],
+  "verified_at": "2026-08-01",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The case uses synthetic petitions and a sandbox corpus and does not send a public response.",
+    "Statutes, policies, retention, appeals, and disclosure rules require jurisdiction-specific review.",
+    "No accuracy, processing-time, or citizen-satisfaction outcome has been verified."
+  ]
+}

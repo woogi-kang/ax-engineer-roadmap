@@ -1,0 +1,61 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "credit-underwriting-review",
+  "title": {
+    "ko": "기업 자료에서 여신·인수심사 검토 초안까지",
+    "en": "From company evidence to a credit and underwriting review draft"
+  },
+  "type": "workflow",
+  "primary_domain": "finance-procurement",
+  "industry": "financial-services",
+  "difficulty": 4,
+  "capabilities": [
+    "data-contracts",
+    "retrieval-analysis",
+    "document-processing",
+    "human-approval",
+    "policy-checks",
+    "evaluation",
+    "audit"
+  ],
+  "recommended_after": [
+    "corporate-card-expense",
+    "vendor-master-account-change"
+  ],
+  "learning_order": 11,
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "low",
+    "saas",
+    "it"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "Synthetic application package",
+    "Reviewer work queue"
+  ],
+  "systems": [
+    "Document vault sandbox",
+    "Financial statement snapshot",
+    "Policy rule registry",
+    "Review ledger"
+  ],
+  "current_write_impact": "none",
+  "designed_write_impact": "draft-only",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A2",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
+    1,
+    2,
+    3
+  ],
+  "verified_at": "2026-08-01",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The case uses synthetic applicants and does not make or record a real credit or insurance decision.",
+    "Eligibility, pricing, fairness, explanation, and retention rules require product and jurisdiction review.",
+    "No approval quality, loss, conversion, or review-time outcome has been verified."
+  ]
+}

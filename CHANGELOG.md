@@ -4,12 +4,36 @@
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-08-01 (릴리스 후보)
+
+### Added
+
+- 국내 10개·해외 15개 공개 AX 사례 카탈로그와 25개 전체의 로드맵 적용 맵
+- 공공 민원, 여신·인수심사, 설비 이상·정비, 상담·진료 기록, 규제 근거 문서 시뮬레이션 사례
+- 업무 기능과 별도로 공통·리테일·공공·금융·제조·의료·복지·법무·생명과학 조건을 비교하는 `industry` 메타데이터
+- 공개 사례 25개의 출처 유형·도입 단계·성과 검증·원문 URL·내부 사례 연결을 기록한 JSON registry
+- `SECURITY.md`, `SUPPORT.md`, `CITATION.cff`, CODEOWNERS, Bug report 양식, Dependabot, CodeQL
+- 사례 산업 필터, URL 상태 공유, 사례별 산업·난이도·위험·근거 단계 표시
+- 주간 외부 링크 상태 검사와 fresh clone 한 명령 전체 검증(`npm run verify`)
+
 ### Changed
 
+- 업무별 적용 사례를 10개에서 15개로 확장하고 README·영문판·인터랙티브 로드맵을 동기화
+- 기존 10개 사례에 관련 공개 사례의 설계 질문과 통제 패턴을 연결
 - README와 인터랙티브 로드맵의 AX 정의, 사례명, 안내 문구를 같은 한국어 용어와 문체로 맞춤
-- 핵심 정의와 사례명 열 개가 다시 어긋나지 않도록 카피 동기화 검사를 추가
+- 핵심 정의와 사례명 15개가 다시 어긋나지 않도록 카피 동기화 검사를 추가
 - 사례 비교표에서 현재 근거 단계와 실행물로 바로 이동하고, 각 사례 문서의 근거 섹션과 링크를 함께 검사하도록 변경
 - README의 굵은 글씨와 링크·이미지를 GFM으로 렌더링해 화면에 Markdown 구문이 남지 않는지 검사
+- 사례 메타데이터에서 사이트용 데이터를 생성하고 diff를 검사하도록 변경
+- 현재 실행 범위와 설계 목표 범위를 쓰기 영향·자율성·P단계별로 분리
+- Beauty/D2C manifest에서 파이프라인 생성물과 수동 표시 자산을 분리하고 clean-run byte 검증 추가
+- Pages 배포를 문서·사례·Python·사이트 검증 뒤에만 실행하도록 통합
+- Next.js·React·Vite·Cloudflare·Wrangler 관련 의존성을 보안 패치하고 감사 결과를 0건으로 정리
+
+### Security
+
+- GitHub Actions를 전체 커밋 SHA에 고정하고 PR dependency review를 추가
+- 비공개 취약점 신고 경로와 선의의 보안 연구 정책을 문서화
 
 ## [0.3.0] - 2026-07-31
 
@@ -71,3 +95,9 @@
 - 공개 채용·현장 자료를 바탕으로 한 역할 검토와 출처 정책
 - 공개 기여 규칙과 GitHub Issue·PR 템플릿
 - 로드맵·업무 전환 8단계·성숙도·실습·사례·템플릿 전체 영어판
+
+[Unreleased]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.3.0...HEAD
+[0.4.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/woogi-kang/ax-engineer-roadmap/releases/tag/v0.1.0

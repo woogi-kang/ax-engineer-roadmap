@@ -70,5 +70,5 @@ Agent Loop를 사용하기 전에 묻는다.
 
 ## 출처
 
-- [`PRIMARY_REPOSITORY` AI Agents content: Agent Loop and architectures](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` AI Agents content: Agent Loop and architectures](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)
 - [`PRIMARY_OFFICIAL` NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework)

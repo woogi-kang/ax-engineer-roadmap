@@ -1,0 +1,8 @@
+# Default review owner
+* @woogi-kang
+
+# Changes to security policy and automation require maintainer review.
+/.github/ @woogi-kang
+/SECURITY.md @woogi-kang
+/en/SECURITY.md @woogi-kang
+/scripts/ @woogi-kang

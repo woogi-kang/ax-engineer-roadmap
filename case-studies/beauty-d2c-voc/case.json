@@ -7,6 +7,7 @@
   },
   "type": "workflow",
   "primary_domain": "customer-revenue",
+  "industry": "consumer-retail",
   "difficulty": 1,
   "capabilities": [
     "workflow-discovery",
@@ -15,19 +16,35 @@
     "evaluation"
   ],
   "recommended_after": [],
+  "learning_order": 2,
   "status": "ready",
   "evidence_stage": "public-simulation",
-  "readiness": ["low", "saas"],
+  "readiness": [
+    "low",
+    "saas"
+  ],
   "risk": "moderate",
-  "entry_channels": ["Public review data"],
+  "entry_channels": [
+    "Public review data"
+  ],
   "systems": [
     "Public VOC sources",
     "Analysis workspace",
     "Work-management sandbox"
   ],
-  "write_impact": "approved-sandbox-write",
-  "autonomy": "A1-A3",
-  "project_stages": [1, 2, 3, 5],
+  "current_write_impact": "none",
+  "designed_write_impact": "approved-sandbox-write",
+  "current_autonomy": "A1-A2",
+  "designed_autonomy": "A1-A3",
+  "implemented_project_stages": [
+    1
+  ],
+  "designed_project_stages": [
+    1,
+    2,
+    3,
+    5
+  ],
   "verified_at": "2026-07-31",
   "owner": "AX Engineer Roadmap maintainers",
   "limitations": [

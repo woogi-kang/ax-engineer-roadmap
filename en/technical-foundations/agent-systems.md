@@ -70,5 +70,5 @@ Separate source systems from agent memory. Long-term memory needs purpose, prove
 
 ## Sources
 
-- [`PRIMARY_REPOSITORY` AI Agents content: loop and architectures](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` AI Agents content: loop and architectures](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)
 - [`PRIMARY_OFFICIAL` NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework)

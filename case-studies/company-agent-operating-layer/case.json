@@ -7,6 +7,7 @@
   },
   "type": "organizational-capstone",
   "primary_domain": "shared-operations",
+  "industry": "cross-industry",
   "difficulty": 5,
   "capabilities": [
     "saas-integration",
@@ -21,20 +22,35 @@
     "slack-meeting-actions",
     "centralized-mail-assist"
   ],
+  "learning_order": 15,
   "status": "ready",
   "evidence_stage": "simulation-design",
-  "readiness": ["saas", "it"],
+  "readiness": [
+    "saas",
+    "it"
+  ],
   "risk": "high",
-  "entry_channels": ["Slack", "Microsoft Teams"],
+  "entry_channels": [
+    "Slack",
+    "Microsoft Teams"
+  ],
   "systems": [
     "Workflow source SaaS",
     "Policy and approval broker",
     "Agent runtime adapters",
     "Audit and observability store"
   ],
-  "write_impact": "mixed",
-  "autonomy": "A1-A3",
-  "project_stages": [2, 3, 4, 5],
+  "current_write_impact": "none",
+  "designed_write_impact": "mixed",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A3",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
+    2,
+    3,
+    4,
+    5
+  ],
   "verified_at": "2026-07-27",
   "owner": "AX Engineer Roadmap maintainers",
   "limitations": [

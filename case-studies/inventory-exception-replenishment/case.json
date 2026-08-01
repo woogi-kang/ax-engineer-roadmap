@@ -7,6 +7,7 @@
   },
   "type": "workflow",
   "primary_domain": "data-operations",
+  "industry": "consumer-retail",
   "difficulty": 4,
   "capabilities": [
     "data-contracts",
@@ -21,6 +22,7 @@
     "slack-meeting-actions",
     "vendor-master-account-change"
   ],
+  "learning_order": 12,
   "status": "ready",
   "evidence_stage": "simulation-design",
   "readiness": [
@@ -40,9 +42,12 @@
     "Procurement sandbox",
     "Operations ledger"
   ],
-  "write_impact": "approved-sandbox-write",
-  "autonomy": "A1-A3",
-  "project_stages": [
+  "current_write_impact": "none",
+  "designed_write_impact": "approved-sandbox-write",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A3",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
     1,
     2,
     3,

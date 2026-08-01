@@ -8,6 +8,8 @@ test("exports a static GitHub Pages site", () => {
   assert.equal(fs.existsSync(new URL("index.html", outputDirectory)), true);
   assert.equal(fs.existsSync(new URL("en/index.html", outputDirectory)), true);
   assert.equal(fs.existsSync(new URL("404.html", outputDirectory)), true);
+  assert.equal(fs.existsSync(new URL("sitemap.xml", outputDirectory)), true);
+  assert.equal(fs.existsSync(new URL("robots.txt", outputDirectory)), true);
 
   const koreanHtml = fs.readFileSync(
     new URL("index.html", outputDirectory),
@@ -24,7 +26,7 @@ test("exports a static GitHub Pages site", () => {
     /자동화와 AI 보조를 실제 운영까지 이어 가는 AX Engineer 로드맵/,
   );
   assert.match(koreanHtml, /업무별 적용 사례/);
-  assert.match(koreanHtml, /여러 업무 에이전트 운영/);
+  assert.match(koreanHtml, /회사 에이전트 운영 계층/);
   assert.match(koreanHtml, /property="og:locale" content="ko_KR"/);
   assert.match(koreanHtml, /href="\/ax-engineer-roadmap\/en\/"/);
 
@@ -35,7 +37,7 @@ test("exports a static GitHub Pages site", () => {
   );
   assert.match(
     englishHtml,
-    /An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, carry the work into operations, and explore applied AX cases\./,
+    /An open roadmap for AX Engineers with 15 practice cases and 25 public references, separated by current evidence level\./,
   );
   assert.match(englishHtml, /Applied AX cases/);
   assert.match(englishHtml, /Company Agent Operating Layer/);
@@ -50,6 +52,8 @@ test("exports a static GitHub Pages site", () => {
     assert.match(html, /AX Engineer Roadmap/);
     assert.match(html, /\/ax-engineer-roadmap\/_next\/static\//);
     assert.match(html, /href="\/ax-engineer-roadmap\/favicon\.svg"/);
+    assert.match(html, /application\/ld\+json/);
+    assert.match(html, /"numberOfItems":15/);
     assert.doesNotMatch(html, /src="\/_next\/static\//);
     assert.doesNotMatch(html, /href="\/_next\/static\//);
   }

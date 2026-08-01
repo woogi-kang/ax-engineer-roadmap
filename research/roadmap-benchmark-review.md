@@ -29,7 +29,7 @@ developer-roadmap의 기여 규칙은 가능한 기술을 전부 모으는 것�
 
 ## AI Agents Roadmap이 잘 다루는 영역
 
-공개 저장소의 [`ai-agents` 콘텐츠 디렉터리](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)는 다음 기술 범위를 다룬다.
+공개 저장소의 [`ai-agents` 콘텐츠 디렉터리](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)는 다음 기술 범위를 다룬다.
 
 1. 백엔드 기초, Git·터미널, REST API
 2. LLM, 토큰, 컨텍스트 창, 생성 제어, 모델 비용
@@ -110,9 +110,9 @@ flowchart LR
 
 - [`PRIMARY_REPOSITORY` nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) — 2026-07-26 확인
 - [`PRIMARY_OFFICIAL` roadmap.sh, AI Agents Roadmap](https://roadmap.sh/ai-agents) — 2026-07-26 확인
-- [`PRIMARY_REPOSITORY` AI Agents roadmap source](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents) — 2026-07-26 확인
+- [`PRIMARY_REPOSITORY` AI Agents roadmap source](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents) — 2026-07-26 확인
 - [`PRIMARY_REPOSITORY` developer-roadmap contribution guidelines](https://github.com/nilbuild/developer-roadmap/blob/master/contributing.md) — 2026-07-26 확인
 - [`PRIMARY_OFFICIAL` 중소벤처기업부, 지역 주도형 AI 대전환 사업](https://www.mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1060505&cbIdx=86) — 2026-07-26 확인
 - [`PRIMARY_OFFICIAL` 중소벤처기업부, AI 기반 스마트제조혁신 3.0 전략](https://www.mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1062738&cbIdx=86) — 2026-07-26 확인
 - [`PRIMARY_OFFICIAL` 개인정보보호위원회, 생성형 AI 개인정보 처리 안내서 주요 내용](https://m.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS212&mCode=C040030000&nttId=11360) — 2026-07-26 확인
-- [`PRIMARY_OFFICIAL` 국가법령정보센터, 인공지능기본법 시행령 제23조](https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lspttninfSeq=198075) — 2026-07-26 확인
+- [`PRIMARY_OFFICIAL` 국가법령정보센터, 인공지능기본법 시행령 제23조](https://www.law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=198075) — 2026-07-26 확인

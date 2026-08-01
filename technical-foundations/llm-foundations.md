@@ -71,4 +71,4 @@ LLM은 확률적으로 결과를 생성한다. 입력 형식과 모델 이름만
 ## 출처
 
 - [`PRIMARY_OFFICIAL` roadmap.sh, AI Agents Roadmap](https://roadmap.sh/ai-agents)
-- [`PRIMARY_REPOSITORY` AI Agents content: tokens, context, RAG, model controls](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` AI Agents content: tokens, context, RAG, model controls](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)

@@ -1,8 +1,21 @@
 # 사례: Beauty/D2C 글로벌 VOC 분석에서 업무 제안까지
 
+<!-- case-boundary:start -->
+## 현재 범위와 설계 목표
+
+| 구분 | 쓰기 영향 | 자율성 | P 단계 |
+|---|---|---|---|
+| 현재 공개 실행물 | 외부 쓰기 없음 | A1-A2 | P1 |
+| 설계 목표 | 승인 후 샌드박스 쓰기 | A1-A3 | P1, P2, P3, P5 |
+
+현재 값은 이 저장소에서 재현할 수 있는 범위만 나타낸다. 설계 목표는 아직 구현 범위나 조직 운영 성과가 아니다.
+<!-- case-boundary:end -->
+
+> 공개 사례 연결: K04의 상담사 검토와 G07의 편집 승인·수정률 질문을 [공개 사례 적용 맵](../../research/public-case-application-map.md)에서 이 사례의 평가 기준으로 연결했다.
+
 ## 사례 성격
 
-이 문서는 특정 회사의 내부 진단이나 컨설팅 결과가 아니다. 공개 데이터를 적용 대상으로 삼고, 합성 VOC와 일반적인 Beauty/D2C 업무 구조로 만든 **학습용 AX 업무 전환 시뮬레이션**이다.
+이 문서는 특정 회사의 내부 진단이나 컨설팅 결과가 아니다. 공개 사례에서는 평가 질문만 가져오고, 실제 실행 입력은 합성 VOC와 일반적인 Beauty/D2C 업무 구조로 만든 **학습용 AX 업무 전환 시뮬레이션**이다.
 
 ## 현재 실행물과 근거
 
@@ -21,6 +34,8 @@
 [실행 방법과 복구 절차](RUNBOOK.md) · [평가 결과](artifacts/evaluation-report.md) · [대시보드 HTML](artifacts/dashboard.html) · [실행 파일 해시](artifacts/run-manifest.json)
 
 이 수치는 합성 평가 세트가 코드대로 처리됐는지를 보여 줄 뿐, 실제 고객 VOC 분포나 실서비스 분류 성능·업무 성과를 뜻하지 않는다.
+
+현재 실행물의 경계는 `current_autonomy=A1-A2`, `current_write_impact=none`, `implemented_project_stages=[1]`이다. 승인 뒤 샌드박스에 쓰는 A3와 P2·P3·P5는 이 문서가 설계한 다음 실습 범위이며 아직 구현됐다는 뜻이 아니다.
 
 ## 문제 가설
 
@@ -195,7 +210,7 @@ python3 -m unittest discover \
 - [평가 데이터와 실행 결과](artifacts/evaluation-report.md)
 - [실행·실패·복구 절차](RUNBOOK.md)
 - [결과 대시보드](artifacts/dashboard.html)
-- [입력·코드·결과 SHA-256](artifacts/run-manifest.json)
+- [입력·코드·파이프라인 생성물 SHA-256과 수동 표시 자산 구분](artifacts/run-manifest.json)
 
 ## 결과와 한계
 

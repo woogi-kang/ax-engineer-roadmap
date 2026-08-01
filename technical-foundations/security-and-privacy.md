@@ -70,6 +70,6 @@ LLM 시스템에서는 같은 자연어가 명령으로도, 데이터로도 쓰�
 ## 출처
 
 - [`PRIMARY_OFFICIAL` 개인정보보호위원회, 생성형 AI 개인정보 처리 안내서 주요 내용](https://m.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS212&mCode=C040030000&nttId=11360) — 2026-07-26 확인
-- [`PRIMARY_OFFICIAL` 국가법령정보센터, 인공지능기본법 시행령 제23조](https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lspttninfSeq=198075) — 2026-07-26 확인
+- [`PRIMARY_OFFICIAL` 국가법령정보센터, 인공지능기본법 시행령 제23조](https://www.law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=198075) — 2026-07-26 확인
 - [`PRIMARY_OFFICIAL` OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) — 2026-07-26 확인
 - [`PRIMARY_OFFICIAL` NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) — 2026-07-26 확인

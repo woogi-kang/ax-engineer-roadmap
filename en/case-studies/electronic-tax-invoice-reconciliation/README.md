@@ -1,14 +1,27 @@
 # Case: From sales evidence to electronic tax invoice and payment reconciliation
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: K03's separation of generative recommendation and deterministic rules informs tax-rule, approval, and issuance controls in the [application map](../../research/public-case-application-map.md).
+
 Electronic tax invoice work does not end when one document is created. Contract, order, acceptance, and accounting state must be checked; an accountable person must approve issuance; and issuance, transmission, and payment results must be reconciled. This case practices that full flow with synthetic data and test systems.
 
 ## 1. Case type and current evidence
 
 - Type: workflow
-- Domain: customer and revenue
+- Domain: finance and procurement
 - Current stage: simulation design
-- Practice path: P1–P4
-- External impact: sandbox issuance only after accountable approval
+- Designed practice path: P1–P4
+- Designed external impact: sandbox issuance only after accountable approval
 
 The case does not issue, correct, cancel, or transmit a real tax invoice. Taxability, exemption, document date, correction reason, and filing treatment remain decisions for an accountable tax professional.
 

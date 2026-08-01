@@ -65,4 +65,4 @@ Offline evaluation supports fast pre-change comparison. Production evaluation re
 
 - [`PRIMARY_REPOSITORY` OpenAI Evals](https://github.com/openai/evals) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) — verified 2026-07-26
-- [`PRIMARY_REPOSITORY` AI Agents evaluation content](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` AI Agents evaluation content](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)

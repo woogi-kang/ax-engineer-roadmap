@@ -3,10 +3,14 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import {
+  evidenceStageLabels,
+  type Industry,
   type Language,
   type Readiness,
   type Role,
+  industryLabels,
   readinessLabels,
+  riskLabels,
   roadmapGroups,
   roleLabels,
 } from "./roadmap-data";
@@ -17,7 +21,7 @@ const copy = {
   ko: {
     skip: "로드맵으로 바로가기",
     contextLabel: "AX 엔지니어를 위한 공개 로드맵",
-    version: "공개본 v0.3.0",
+    version: "릴리스 준비본 v0.4.0",
     repository: "GitHub 저장소",
     repositoryShort: "GitHub",
     docs: "Markdown 문서",
@@ -25,12 +29,16 @@ const copy = {
     intro:
       "AX Engineer는 자동화하거나 AI로 보조할 업무를 찾고, 사람이 판단할 지점을 남겨 흐름을 다시 설계합니다. 이 로드맵은 AI를 기존 데이터·시스템·권한 구조에 연결해 배포하고 실제 업무에서 운영하는 데 필요한 판단과 기술을 다룹니다. 현업 적용과 복구, 두 번째 업무에서 재사용할 규칙도 다룹니다. 한국 조직에서 자주 마주치는 결재·권한·규제와 업무 기록·시스템 연동 조건도 함께 살핍니다.",
     scope:
-      "AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 업무별 적용 사례 10개",
+      "업무 전환 8단계 · 실습 5개 · 사례 15개(재현 가능한 공개 시뮬레이션 1개, 실행 설계 14개) · 공개 근거 25개",
     startRoadmap: "로드맵 시작하기",
+    startCases: "사례 15개 보기",
+    publicCases: "공개 AX 사례 25개",
     filterTitle: "내 시작점",
-    filterHelp: "내 역할과 조직 준비 상태를 선택하면 먼저 볼 항목만 남습니다.",
+    filterHelp:
+      "역할과 준비 상태는 전체 로드맵에, 산업은 사례 15개에만 적용됩니다.",
     roleLegend: "주된 책임",
     readinessLegend: "조직 준비 상태",
+    industryLegend: "사례 산업",
     searchLabel: "로드맵 검색",
     searchPlaceholder: "예: 승인, RAG, 복구",
     reset: "선택 초기화",
@@ -53,14 +61,16 @@ const copy = {
     evidence: "확인할 결과물",
     openDoc: "문서 보기",
     emptyTitle: "조건에 맞는 항목이 없습니다",
-    emptyBody: "검색어를 지우거나 역할·준비 상태를 넓혀 보세요.",
-    clearSearch: "검색어 지우기",
+    emptyBody: "검색어를 지우거나 선택 조건을 넓혀 보세요.",
+    clearSearch: "모든 조건 초기화",
     expandGroup: "항목 펼치기",
     collapseGroup: "항목 접기",
     principleTitle: "공통 운영 기반(harness)은 언제 만드는가",
     principleBody:
       "첫 업무에서 입력·출력·평가·승인·기록·복구 규칙을 정합니다. 이 가운데 두 번째 업무에서도 실제로 재사용한 규칙과 도구만 여러 팀이 함께 쓰는 기반으로 삼습니다.",
     footer: "Markdown 문서가 세부 내용의 기준입니다. 이 화면에서는 역할과 준비 상태에 맞는 문서를 빠르게 찾아볼 수 있습니다.",
+    contribute: "기여하기",
+    sourcePolicy: "출처 정책",
     korean: "한국어",
     english: "English",
     navLabel: "주요 링크",
@@ -69,7 +79,7 @@ const copy = {
   en: {
     skip: "Skip to roadmap",
     contextLabel: "An open roadmap for AX Engineers",
-    version: "Public release v0.3.0",
+    version: "v0.4.0 release candidate",
     repository: "GitHub repository",
     repositoryShort: "GitHub",
     docs: "Markdown docs",
@@ -77,12 +87,16 @@ const copy = {
     intro:
       "A practical path from workflow discovery and redesign through AI integration, deployment, adoption, and reuse, including approval, authority, regulation, and digital-readiness conditions common in Korean organizations.",
     scope:
-      "8 transformation stages · 7 technical capabilities · 5 practice projects · 10 applied AX cases",
+      "8 transformation stages · 5 projects · 15 cases (1 reproducible public simulation, 14 design blueprints) · 25 public references",
     startRoadmap: "Start the roadmap",
+    startCases: "Explore 15 cases",
+    publicCases: "25 public AX cases",
     filterTitle: "Your starting point",
-    filterHelp: "Select a role and current readiness to keep only the relevant path.",
+    filterHelp:
+      "Role and readiness filter the roadmap; industry filters only the 15 cases.",
     roleLegend: "Primary responsibility",
     readinessLegend: "Organization readiness",
+    industryLegend: "Case industry",
     searchLabel: "Search roadmap",
     searchPlaceholder: "Try approval, RAG, recovery",
     reset: "Reset selection",
@@ -105,14 +119,16 @@ const copy = {
     evidence: "Result to verify",
     openDoc: "Open document",
     emptyTitle: "No items match these conditions",
-    emptyBody: "Clear the search or broaden the role and readiness filters.",
-    clearSearch: "Clear search",
+    emptyBody: "Clear the search or broaden the selected conditions.",
+    clearSearch: "Reset all filters",
     expandGroup: "Expand group",
     collapseGroup: "Collapse group",
     principleTitle: "A shared harness takes shape in the second workflow.",
     principleBody:
       "Define input, output, evaluation, approval, record, and recovery rules in the first workflow. Share only the rules and tools that are actually reused in a second workflow.",
     footer: "The Markdown documents are the source. This interface helps readers find the right one.",
+    contribute: "Contribute",
+    sourcePolicy: "Source policy",
     korean: "한국어",
     english: "English",
     navLabel: "Primary links",
@@ -122,6 +138,16 @@ const copy = {
 
 const roleKeys: Role[] = ["all", "practitioner", "builder", "leader", "guardian"];
 const readinessKeys: Readiness[] = ["all", "it", "saas", "low"];
+const industryKeys: Industry[] = [
+  "all",
+  "cross-industry",
+  "consumer-retail",
+  "public-sector",
+  "financial-services",
+  "manufacturing",
+  "healthcare-social-care",
+  "legal-life-sciences",
+];
 const allGroupIds = roadmapGroups.map((group) => group.id);
 
 function localized(value: { ko: string; en: string }, language: Language) {
@@ -135,25 +161,54 @@ export function RoadmapExplorer({
 }) {
   const [role, setRole] = useState<Role>("all");
   const [readiness, setReadiness] = useState<Readiness>("all");
+  const [industry, setIndustry] = useState<Industry>("all");
   const [query, setQuery] = useState("");
   const [filtersHydrated, setFiltersHydrated] = useState(false);
   const [expandedGroupIds, setExpandedGroupIds] = useState(
     () => new Set(allGroupIds.slice(0, 1)),
   );
   const t = copy[language];
+  const pageUrl =
+    language === "en"
+      ? "https://woogi-kang.github.io/ax-engineer-roadmap/en/"
+      : "https://woogi-kang.github.io/ax-engineer-roadmap/";
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": ["CollectionPage", "LearningResource"],
+    name: "AX Engineer Roadmap",
+    url: pageUrl,
+    inLanguage: language === "ko" ? "ko-KR" : "en-US",
+    isAccessibleForFree: true,
+    learningResourceType: "Roadmap and practice case collection",
+    numberOfItems: 15,
+    about: [
+      "AI Transformation",
+      "workflow redesign",
+      "AI operations",
+      "human approval",
+      "evaluation and recovery",
+    ],
+    sameAs: repositoryUrl,
+  };
 
   useEffect(() => {
     const url = new URL(window.location.href);
     const requestedRole = url.searchParams.get("role");
     const requestedReadiness = url.searchParams.get("readiness");
+    const requestedIndustry = url.searchParams.get("industry");
     const requestedQuery = url.searchParams.get("q") ?? "";
     const validRequestedRole =
       requestedRole !== null && roleKeys.includes(requestedRole as Role);
     const validRequestedReadiness =
       requestedReadiness !== null &&
       readinessKeys.includes(requestedReadiness as Readiness);
-    const hasSharedFilter =
-      validRequestedRole || validRequestedReadiness || requestedQuery !== "";
+    const validRequestedIndustry =
+      requestedIndustry !== null &&
+      industryKeys.includes(requestedIndustry as Industry);
+    const hasGlobalFilter =
+      validRequestedRole ||
+      validRequestedReadiness ||
+      requestedQuery !== "";
 
     queueMicrotask(() => {
       if (validRequestedRole) {
@@ -162,10 +217,15 @@ export function RoadmapExplorer({
       if (validRequestedReadiness) {
         setReadiness(requestedReadiness as Readiness);
       }
+      if (validRequestedIndustry) {
+        setIndustry(requestedIndustry as Industry);
+      }
       setQuery(requestedQuery);
 
-      if (hasSharedFilter) {
+      if (hasGlobalFilter) {
         setExpandedGroupIds(new Set(allGroupIds));
+      } else if (validRequestedIndustry) {
+        setExpandedGroupIds(new Set(["cases"]));
       }
       setFiltersHydrated(true);
     });
@@ -179,6 +239,8 @@ export function RoadmapExplorer({
     else url.searchParams.set("role", role);
     if (readiness === "all") url.searchParams.delete("readiness");
     else url.searchParams.set("readiness", readiness);
+    if (industry === "all") url.searchParams.delete("industry");
+    else url.searchParams.set("industry", industry);
     if (query === "") url.searchParams.delete("q");
     else url.searchParams.set("q", query);
 
@@ -187,7 +249,7 @@ export function RoadmapExplorer({
       "",
       `${url.pathname}${url.search}${url.hash}`,
     );
-  }, [filtersHydrated, query, readiness, role]);
+  }, [filtersHydrated, industry, query, readiness, role]);
 
   const filteredGroups = useMemo(() => {
     const locale = language === "ko" ? "ko-KR" : "en-US";
@@ -201,11 +263,21 @@ export function RoadmapExplorer({
             role === "all" || roadmapNode.roles.includes(role);
           const readinessMatches =
             readiness === "all" || roadmapNode.readiness.includes(readiness);
+          const industryMatches =
+            industry === "all" ||
+            group.id !== "cases" ||
+            roadmapNode.case?.industry === industry;
           const searchableText = [
             localized(roadmapNode.title, language),
             localized(roadmapNode.description, language),
             localized(roadmapNode.evidence, language),
             localized(group.label, language),
+            roadmapNode.case
+              ? localized(roadmapNode.case.title, language)
+              : "",
+            roadmapNode.case
+              ? localized(industryLabels[roadmapNode.case.industry], language)
+              : "",
           ]
             .join(" ")
             .toLocaleLowerCase(locale);
@@ -213,19 +285,21 @@ export function RoadmapExplorer({
           return (
             roleMatches &&
             readinessMatches &&
+            industryMatches &&
             (normalizedQuery.length === 0 ||
               searchableText.includes(normalizedQuery))
           );
         }),
       }))
       .filter((group) => group.nodes.length > 0);
-  }, [language, query, readiness, role]);
+  }, [industry, language, query, readiness, role]);
 
   const resultCount = filteredGroups.reduce(
     (total, group) => total + group.nodes.length,
     0,
   );
-  const hasSelection = role !== "all" || readiness !== "all" || query !== "";
+  const hasSelection =
+    role !== "all" || readiness !== "all" || industry !== "all" || query !== "";
 
   function restoreCompactGroups() {
     setExpandedGroupIds(new Set(allGroupIds.slice(0, 1)));
@@ -234,12 +308,24 @@ export function RoadmapExplorer({
   function reset() {
     setRole("all");
     setReadiness("all");
+    setIndustry("all");
     setQuery("");
     restoreCompactGroups();
   }
 
   function documentUrl(path: string) {
     return `${repositoryUrl}/blob/main/${language === "en" ? `en/${path}` : path}`;
+  }
+
+  function languageHref(targetLanguage: Language) {
+    const params = new URLSearchParams();
+    if (role !== "all") params.set("role", role);
+    if (readiness !== "all") params.set("readiness", readiness);
+    if (industry !== "all") params.set("industry", industry);
+    if (query !== "") params.set("q", query);
+    const path = targetLanguage === "en" ? "/en/" : "/";
+    const search = params.toString();
+    return search ? `${path}?${search}` : path;
   }
 
   function toggleGroup(groupId: string) {
@@ -257,6 +343,12 @@ export function RoadmapExplorer({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <a className="skip-link" href="#roadmap">
         {t.skip}
       </a>
@@ -280,7 +372,7 @@ export function RoadmapExplorer({
           </a>
           <div className="language-switch" aria-label={t.languageLabel}>
             <Link
-              href="/"
+              href={languageHref("ko")}
               hrefLang="ko"
               lang="ko"
               aria-current={language === "ko" ? "page" : undefined}
@@ -288,7 +380,7 @@ export function RoadmapExplorer({
               {t.korean}
             </Link>
             <Link
-              href="/en/"
+              href={languageHref("en")}
               hrefLang="en"
               lang="en"
               aria-current={language === "en" ? "page" : undefined}
@@ -307,10 +399,26 @@ export function RoadmapExplorer({
           </div>
           <div className="intro-copy">
             <p>{t.intro}</p>
-            <a className="hero-cta" href="#roadmap">
-              {t.startRoadmap}
-              <span aria-hidden="true"> ↓</span>
-            </a>
+            <div className="hero-actions">
+              <a className="hero-cta" href="#roadmap">
+                {t.startRoadmap}
+                <span aria-hidden="true"> ↓</span>
+              </a>
+              <a
+                className="hero-secondary"
+                href="#roadmap-group-cases"
+                onClick={() => setExpandedGroupIds(new Set(allGroupIds))}
+              >
+                {t.startCases}
+              </a>
+              <a
+                className="hero-secondary"
+                href={documentUrl("research/public-ax-cases.md")}
+              >
+                {t.publicCases}
+                <span aria-hidden="true"> ↗</span>
+              </a>
+            </div>
             <p className="scope-line">{t.scope}</p>
           </div>
         </section>
@@ -362,6 +470,26 @@ export function RoadmapExplorer({
               </div>
             </fieldset>
 
+            <fieldset>
+              <legend>{t.industryLegend}</legend>
+              <div className="choice-list">
+                {industryKeys.map((industryKey) => (
+                  <button
+                    className="choice"
+                    type="button"
+                    key={industryKey}
+                    aria-pressed={industry === industryKey}
+                    onClick={() => {
+                      setIndustry(industryKey);
+                      setExpandedGroupIds(new Set(["cases"]));
+                    }}
+                  >
+                    {localized(industryLabels[industryKey], language)}
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+
             <div className="search-field">
               <label htmlFor="roadmap-search">{t.searchLabel}</label>
               <input
@@ -392,7 +520,12 @@ export function RoadmapExplorer({
             </div>
           </aside>
 
-          <section className="roadmap" id="roadmap" aria-labelledby="roadmap-title">
+          <section
+            className="roadmap"
+            id="roadmap"
+            aria-labelledby="roadmap-title"
+            tabIndex={-1}
+          >
             <div className="roadmap-heading">
               <h2 id="roadmap-title">{t.roadmapTitle}</h2>
               <p aria-live="polite" aria-atomic="true">
@@ -407,10 +540,7 @@ export function RoadmapExplorer({
                 <p>{t.emptyBody}</p>
                 <button
                   type="button"
-                  onClick={() => {
-                    setQuery("");
-                    restoreCompactGroups();
-                  }}
+                  onClick={reset}
                 >
                   {t.clearSearch}
                 </button>
@@ -423,30 +553,30 @@ export function RoadmapExplorer({
                       <span className="group-index" aria-hidden="true">
                         {String(groupIndex + 1).padStart(2, "0")}
                       </span>
-                      <button
-                        className="group-toggle"
-                        type="button"
-                        aria-expanded={expandedGroupIds.has(group.id)}
-                        aria-controls={`roadmap-group-${group.id}`}
-                        onClick={() => toggleGroup(group.id)}
-                      >
-                        <span className="group-copy">
+                      <h3 className="group-copy">
+                        <button
+                          className="group-toggle"
+                          type="button"
+                          aria-expanded={expandedGroupIds.has(group.id)}
+                          aria-controls={`roadmap-group-${group.id}`}
+                          onClick={() => toggleGroup(group.id)}
+                        >
                           <span className="group-title">
                             {localized(group.label, language)}
                           </span>
                           <span className="group-prompt">
                             {localized(group.prompt, language)}
                           </span>
-                        </span>
-                        <span className="group-toggle-label">
-                          {expandedGroupIds.has(group.id)
-                            ? t.collapseGroup
-                            : t.expandGroup}
-                          <span aria-hidden="true">
-                            {expandedGroupIds.has(group.id) ? "−" : "+"}
+                          <span className="group-toggle-label">
+                            {expandedGroupIds.has(group.id)
+                              ? t.collapseGroup
+                              : t.expandGroup}
+                            <span aria-hidden="true">
+                              {expandedGroupIds.has(group.id) ? "−" : "+"}
+                            </span>
                           </span>
-                        </span>
-                      </button>
+                        </button>
+                      </h3>
                     </div>
 
                     <ol
@@ -460,6 +590,37 @@ export function RoadmapExplorer({
                             <div className="node-marker" aria-hidden="true" />
                             <div className="node-content">
                               <div className="node-meta">
+                                {roadmapNode.case ? (
+                                  <>
+                                    <span>
+                                      {localized(
+                                        industryLabels[
+                                          roadmapNode.case.industry
+                                        ],
+                                        language,
+                                      )}
+                                    </span>
+                                    <span>
+                                      {localized(
+                                        evidenceStageLabels[
+                                          roadmapNode.case.evidenceStage
+                                        ],
+                                        language,
+                                      )}
+                                    </span>
+                                    <span>
+                                      {language === "ko"
+                                        ? `난이도 ${roadmapNode.case.difficulty}`
+                                        : `Difficulty ${roadmapNode.case.difficulty}`}
+                                    </span>
+                                    <span>
+                                      {localized(
+                                        riskLabels[roadmapNode.case.risk],
+                                        language,
+                                      )}
+                                    </span>
+                                  </>
+                                ) : null}
                                 {roadmapNode.roles.map((nodeRole) => (
                                   <span key={nodeRole}>
                                     {localized(roleLabels[nodeRole], language)}
@@ -475,7 +636,13 @@ export function RoadmapExplorer({
                                   <span>{t.evidence}</span>
                                   {localized(roadmapNode.evidence, language)}
                                 </p>
-                                <a href={documentUrl(roadmapNode.doc)}>
+                                <a
+                                  href={documentUrl(roadmapNode.doc)}
+                                  aria-label={`${t.openDoc}: ${localized(
+                                    roadmapNode.title,
+                                    language,
+                                  )}`}
+                                >
                                   {t.openDoc}
                                   <span aria-hidden="true"> ↗</span>
                                 </a>
@@ -503,7 +670,16 @@ export function RoadmapExplorer({
 
       <footer>
         <p>{t.footer}</p>
-        <a href={repositoryUrl}>MIT · GitHub</a>
+        <div className="footer-links">
+          <a href={repositoryUrl}>MIT · GitHub</a>
+          <a href={documentUrl("CONTRIBUTING.md")}>{t.contribute}</a>
+          <a href={documentUrl("research/source-policy.md")}>
+            {t.sourcePolicy}
+          </a>
+          <a href={documentUrl("research/public-ax-cases.md")}>
+            {t.publicCases}
+          </a>
+        </div>
       </footer>
     </>
   );

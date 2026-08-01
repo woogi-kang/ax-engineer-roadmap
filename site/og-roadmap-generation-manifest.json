@@ -1,0 +1,37 @@
+{
+  "schema": "generated-image-provenance-v1",
+  "generator": "image_gen__imagegen",
+  "required_model": "gpt-image-2",
+  "model_binding": "trusted-host-fixed",
+  "local_model_verification": "unavailable",
+  "host_reported_model": null,
+  "generation_assurance": "generated_under_trusted_host_contract",
+  "generated_at": "2026-08-01",
+  "operation": "minimal edit",
+  "prompt_summary": "Remove only the small ‘0.2.0’ version label in the bottom-right corner and preserve everything else.",
+  "source": {
+    "path": "site/public/og-roadmap.png",
+    "git_revision": "HEAD before the v0.4.0 release-candidate edit",
+    "sha256": "767ec66bd8a8fd5fc118477c89e6cce165d9fcfd3d0a00b74b943ed32e59b31e"
+  },
+  "output": {
+    "path": "site/public/og-roadmap.png",
+    "sha256": "e30045dc6ff1d180521966776abd3b49bb7a5afa27d006299b0d48cfd6732746",
+    "width": 1672,
+    "height": 941,
+    "bytes": 706956,
+    "post_processing": [
+      "palette optimization with pngquant",
+      "lossless PNG optimization with oxipng"
+    ]
+  },
+  "review": {
+    "status": "reviewed_for_release_candidate",
+    "checks": [
+      "version label removed",
+      "composition preserved by visual inspection",
+      "dimensions preserved",
+      "Open Graph metadata dimensions synchronized"
+    ]
+  }
+}

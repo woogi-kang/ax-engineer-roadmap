@@ -1,0 +1,38 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /site
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: Asia/Seoul
+    open-pull-requests-limit: 5
+    groups:
+      next-react:
+        patterns:
+          - next
+          - eslint-config-next
+          - react
+          - react-dom
+          - react-server-dom-webpack
+      cloudflare-vite:
+        patterns:
+          - "@cloudflare/*"
+          - "@vitejs/*"
+          - vite
+          - vinext
+          - wrangler
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:30"
+      timezone: Asia/Seoul
+    open-pull-requests-limit: 5
+    groups:
+      actions:
+        patterns:
+          - "*"

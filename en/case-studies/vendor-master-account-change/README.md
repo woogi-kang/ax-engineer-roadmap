@@ -1,5 +1,18 @@
 # Case: Vendor onboarding and bank-account change with verifiable approval
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: G11's sensitive-document extraction and expert-review pattern informs bank evidence and dual approval through the [application map](../../research/public-case-application-map.md).
+
 Vendor and payment-account changes affect many future payments. This case focuses less on document extraction and more on separating requester, verifier, approver, and executor while keeping evidence and the actual master-data result traceable.
 
 ## 1. Case type and current evidence

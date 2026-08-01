@@ -1,5 +1,18 @@
 # Case: Company Agent Operating Layer
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Draft plus approved limited write | A1-A3 | P2, P3, P4, P5 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: G02's gradual transaction expansion and G10's defect and rework measures shape the scale gates in the [application map](../../research/public-case-application-map.md).
+
 ## Case type
 
 This is not a company-wide agent deployed at a real organization or evidence of operating outcomes. It is a **learning and reference organizational-capstone simulation design** that assumes common execution rules have already been reused in two different workflows, then asks what should be shared at organization scale.

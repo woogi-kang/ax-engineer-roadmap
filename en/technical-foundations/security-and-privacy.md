@@ -70,6 +70,6 @@ Do not rely on one instruction telling the model to ignore hostile content. Mark
 ## Sources
 
 - [`PRIMARY_OFFICIAL` PIPC generative AI privacy guidance summary](https://m.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS212&mCode=C040030000&nttId=11360) — verified 2026-07-26
-- [`PRIMARY_OFFICIAL` Korean Law Information Center, AI Basic Act Enforcement Decree Article 23](https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lspttninfSeq=198075) — verified 2026-07-26
+- [`PRIMARY_OFFICIAL` Korean Law Information Center, AI Basic Act Enforcement Decree Article 23](https://www.law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=198075) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) — verified 2026-07-26

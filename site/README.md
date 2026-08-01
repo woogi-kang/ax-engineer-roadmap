@@ -10,19 +10,26 @@ app helps AX Engineers and their collaborators find the relevant material.
 
 ## Prerequisites
 
-- Node.js `>=22.13.0`
+- Node.js `>=22.23.1`
+- Python `>=3.11.15`
 
 ## Quick start
 
 ```bash
-npm install
+cd site
+npm ci
 npm run dev
 ```
+
+From the repository root, `npm run bootstrap` and `npm run dev:site` provide the same setup and start path.
 
 ## Product behavior
 
 - Korean and English views
-- role and readiness filters
+- role and readiness filters, plus an industry filter for the 15 applied cases
+- URL-preserved filter state and language switching
+- case metadata generated from the 15 authoritative `case.json` files
+- explicit navigation to the 25-source public AX catalog
 - full-text search across roadmap nodes
 - direct links to the corresponding source documents
 - keyboard-visible focus and reduced-motion support
@@ -31,10 +38,10 @@ npm run dev
 ## Validation
 
 ```bash
-npm test
-npm run test:pages
-npm run lint
+npm run verify
 ```
+
+Run the command from the repository root. It installs the site dependencies and Playwright Chromium, then verifies the Markdown corpus, case metadata, executable Python evidence, dependency audit, Vinext rendering, browser interactions, accessibility, and the Pages export.
 
 ## Deployment
 
@@ -44,8 +51,7 @@ The primary deployment is a static export hosted on GitHub Pages:
 npm run build:pages
 ```
 
-The output is written to `out/`. Pushes to `main` deploy it through
-`.github/workflows/deploy-pages.yml`.
+The output is written to `out/`. The `Validate roadmap` workflow uploads and deploys the Pages artifact only after the repository, Python, security, lint, rendering, and static-export checks pass.
 
 The existing [vinext](https://github.com/cloudflare/vinext) build remains
 available for the OpenAI Sites runtime.

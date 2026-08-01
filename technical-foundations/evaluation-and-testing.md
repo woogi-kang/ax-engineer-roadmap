@@ -65,4 +65,4 @@ LLM 시스템은 입력, 검색, 모델, 프롬프트, 도구, 정책, 외부 �
 
 - [`PRIMARY_REPOSITORY` OpenAI Evals](https://github.com/openai/evals) — 2026-07-26 확인
 - [`PRIMARY_OFFICIAL` NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — 2026-07-26 확인
-- [`PRIMARY_REPOSITORY` AI Agents content: unit, integration, human-in-the-loop evaluation](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` AI Agents content: unit, integration, human-in-the-loop evaluation](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)

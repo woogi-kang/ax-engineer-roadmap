@@ -71,4 +71,4 @@ Fix missing data, ambiguous instruction, bad retrieval, or unclear acceptance be
 ## Sources
 
 - [`PRIMARY_OFFICIAL` roadmap.sh, AI Agents Roadmap](https://roadmap.sh/ai-agents)
-- [`PRIMARY_REPOSITORY` AI Agents content](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` AI Agents content](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)
