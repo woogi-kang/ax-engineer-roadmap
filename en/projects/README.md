@@ -32,9 +32,9 @@ Use public or synthetic data and an isolated environment. Publish assumptions, t
 
 Non-developers can produce equivalent decisions and evidence through documents, tables, no-code sandboxes, and role-play. State clearly when no external action occurred.
 
-## Case-to-project paths
+## Project paths for five representative cases
 
-The [applied AX cases](../case-studies/README.md) apply the same P1–P5 exit criteria to different workflows and systems.
+The [applied AX cases](../case-studies/README.md) apply the same P1–P5 exit criteria to different workflows and systems. The table shows five representative patterns; the case index and each `case.json` record the stages for all 15.
 
 | Case | P1 assist | P2 approval | P3 sandbox | P4 limited operations | P5 reuse |
 |---|---|---|---|---|---|

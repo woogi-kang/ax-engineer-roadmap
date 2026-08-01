@@ -7,6 +7,7 @@
   },
   "type": "shared-integration",
   "primary_domain": "shared-operations",
+  "industry": "cross-industry",
   "difficulty": 4,
   "capabilities": [
     "saas-integration",
@@ -18,20 +19,36 @@
   "recommended_after": [
     "slack-meeting-actions"
   ],
+  "learning_order": 8,
   "status": "ready",
   "evidence_stage": "simulation-design",
-  "readiness": ["saas", "it"],
+  "readiness": [
+    "saas",
+    "it"
+  ],
   "risk": "high",
-  "entry_channels": ["Email", "Slack"],
+  "entry_channels": [
+    "Email",
+    "Slack"
+  ],
   "systems": [
     "Mail connector",
     "Shared inbox",
     "Slack",
     "Audit store"
   ],
-  "write_impact": "approved-sandbox-write",
-  "autonomy": "A1-A3",
-  "project_stages": [1, 2, 3, 4, 5],
+  "current_write_impact": "none",
+  "designed_write_impact": "approved-sandbox-write",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A3",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
   "verified_at": "2026-07-27",
   "owner": "AX Engineer Roadmap maintainers",
   "limitations": [

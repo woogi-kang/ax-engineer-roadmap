@@ -18,6 +18,16 @@ AX Engineer Roadmap prioritizes contributions that strengthen decisions and evid
 3. If the change substantially alters the content, agree on the scope in an issue first.
 4. Confirm that it contains no confidential information about a company, customer, or colleague.
 
+## Local setup and full validation
+
+Use Node.js `22.23.1` or newer and Python `3.11.15` or newer. Run the same validation as CI from a fresh clone.
+
+```bash
+npm run verify
+```
+
+`verify` installs dependencies and Chromium, then checks internal links, bilingual mirrors, case metadata, the public-case registry, version synchronization, the Beauty/D2C Python tests and committed-artifact reproduction, npm security audit, site lint, Vinext rendering, browser accessibility, and the GitHub Pages static export. Full external-link health depends on the network and therefore runs separately through `npm run check:external` and the weekly workflow.
+
 ## Roadmap item format
 
 New roadmap items should answer the following questions whenever possible.
@@ -63,6 +73,10 @@ A case should include at least:
 
 Add `case.json` to each new case directory and follow [`case.schema.json`](../case-studies/_schema/case.schema.json). Keep documentation readiness in `status` separate from the level of verified evidence in `evidence_stage`.
 
+Do not mix current execution with the target design. Put only the scope demonstrated by published artifacts in `current_write_impact`, `current_autonomy`, and `implemented_project_stages`. Put broader designed targets in `designed_write_impact`, `designed_autonomy`, and `designed_project_stages`. After changing `case.json`, run `npm run generate:cases` and commit the generated site data.
+
+When adding or changing a public organization case, update both language catalogs and [`public-ax-cases.json`](../research/public-ax-cases.json). Keep source provenance, deployment stage, and outcome verification in separate fields.
+
 Any real impact metric must include its measurement method and period. If those details cannot be disclosed, remove the metric and retain only observable states.
 
 ## Pull requests
@@ -70,7 +84,7 @@ Any real impact metric must include its measurement method and period. If those 
 - Keep one issue or argument per pull request.
 - Explain why the change is needed and how it affects readers.
 - Record the verification date and source type for new links.
-- Run `npm run check`.
+- Run `npm run verify`.
 - Even when a draft is generated with AI, the submitter must personally review its facts and language.
 
 ## License

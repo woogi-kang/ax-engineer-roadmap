@@ -65,4 +65,4 @@ AX 시스템은 모델 호출만으로 끝나지 않는다. 사용자, 원본 �
 ## 출처
 
 - [`PRIMARY_OFFICIAL` MDN, HTTP overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview)
-- [`PRIMARY_REPOSITORY` roadmap.sh AI Agents, backend·REST API prerequisites](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` roadmap.sh AI Agents, backend·REST API prerequisites](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)

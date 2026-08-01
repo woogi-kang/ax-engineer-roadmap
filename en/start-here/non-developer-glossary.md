@@ -25,6 +25,17 @@ The goal is not memorizing technical terms. Understand the decision or risk each
 | Manual fallback | The official procedure people use when automation stops. | Are owner, required input, and response time defined? |
 | Harness | A shared foundation for inputs, outputs, evaluation, approval, records, and recovery. | Does it reuse validated contracts or force the first project's stack? |
 
+## Roadmap codes at a glance
+
+| Code | Meaning | Question that remains separate |
+|---|---|---|
+| `P1–P5` | Practice-project and execution-evidence stage | How far was the workflow actually built and verified? |
+| `A0–A4` | Action authority given to AI | What may it recommend, and what may it execute? |
+| `M0–M4` | Organizational ability to repeat operations across workflows | Can the organization keep operating this beyond one demo? |
+| Evidence stage | Current level of published material | Is the evidence a design, simulation, pilot, or operating record? |
+
+A higher number is not always better. Keeping autonomy low for high-harm or hard-to-reverse work can be the more mature decision.
+
 ## Recommended reading order
 
 1. [Persona Selector](persona-selector.md)

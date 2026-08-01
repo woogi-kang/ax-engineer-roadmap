@@ -7,6 +7,7 @@
   },
   "type": "workflow",
   "primary_domain": "data-operations",
+  "industry": "cross-industry",
   "difficulty": 1,
   "capabilities": [
     "data-contracts",
@@ -16,6 +17,7 @@
     "recovery"
   ],
   "recommended_after": [],
+  "learning_order": 1,
   "status": "ready",
   "evidence_stage": "simulation-design",
   "readiness": [
@@ -33,9 +35,12 @@
     "Structured database v0",
     "Slack"
   ],
-  "write_impact": "draft-only",
-  "autonomy": "A1-A2",
-  "project_stages": [
+  "current_write_impact": "none",
+  "designed_write_impact": "draft-only",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A2",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
     1,
     2,
     3,

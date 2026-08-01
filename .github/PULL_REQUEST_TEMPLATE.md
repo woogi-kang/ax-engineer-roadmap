@@ -23,7 +23,7 @@
 
 ## 검증 / Validation
 
-- [ ] `npm run check`
+- [ ] `npm run verify`
 - [ ] 변경된 링크를 직접 열어 봤다. / I opened and checked the changed links.
 - [ ] 새 역량 항목이 `이해·선택·적용·검증·실패 대응` 또는 `Understand · Choose · Apply · Verify · Handle failure` 형식을 따른다.
 - [ ] 한국어 문장의 번역투와 불필요한 추상 표현을 점검했다. / I reviewed Korean prose for translationese and unnecessary abstraction.

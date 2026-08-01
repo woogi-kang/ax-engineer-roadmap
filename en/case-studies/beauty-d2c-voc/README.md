@@ -1,8 +1,21 @@
 # Case: From Global Beauty/D2C VOC to an Action Proposal
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A1-A2 | P1 |
+| Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P5 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: K04 agent review and G07 editorial approval and edit-rate questions are mapped into this case through the [application map](../../research/public-case-application-map.md).
+
 ## Case type
 
-This is not an internal diagnosis or consulting outcome for a specific company. It is a **learning simulation of an AX workflow transformation** based on public data and common Beauty/D2C workflow patterns.
+This is not an internal diagnosis or consulting outcome for a specific company. Public cases contribute evaluation questions only; the executable input is a synthetic fixture built around common Beauty/D2C workflow patterns.
 
 ## Current execution evidence
 
@@ -12,9 +25,11 @@ This case now includes a reproducible pipeline that processes 16 synthetic VOC r
 
 The current run produced 5 ready records, 7 manual-review records, 2 invalid records, 1 duplicate, and 1 spam record. It generated four proposal artifacts with source identifiers and no external write. All 16 expected status, topic, and safety outcomes matched, with a 100% traceability rate.
 
-[Runbook](RUNBOOK.md) · [Evaluation report](artifacts/evaluation-report.md) · [Dashboard HTML](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.html) · [Run manifest](../../../case-studies/beauty-d2c-voc/artifacts/run-manifest.json)
+[Runbook](../../../case-studies/beauty-d2c-voc/RUNBOOK.md) · [Evaluation report](../../../case-studies/beauty-d2c-voc/artifacts/evaluation-report.md) · [Dashboard HTML](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.html) · [Run manifest](../../../case-studies/beauty-d2c-voc/artifacts/run-manifest.json)
 
 These numbers verify the code path on a synthetic evaluation set. They do not measure real VOC distribution, production classification quality, workflow adoption, or business outcomes.
+
+The demonstrated boundary is `current_autonomy=A1-A2`, `current_write_impact=none`, and `implemented_project_stages=[1]`. A3 sandbox writes and P2, P3, and P5 are designed next steps, not implemented evidence.
 
 ## Problem hypothesis
 
@@ -38,7 +53,7 @@ This hypothesis does not imply improvements in time, quality, or revenue for a r
 ## In scope
 
 ```text
-Collect public VOC
+Load the synthetic VOC fixture
 → Preserve original text, provenance, time, and channel
 → Normalize language, product, and topic
 → Detect recurring issues and opportunities
@@ -47,6 +62,8 @@ Collect public VOC
 → Human approval
 → Record execution status and outcomes
 ```
+
+The current code stops at `Generate an action proposal`. Human approval and internal task creation would change another system, so the published output records `requires_human_approval=true` and `action_boundary=proposal_only` instead.
 
 ## Initially out of scope
 
@@ -61,7 +78,8 @@ Collect public VOC
 | Field | Meaning | Required | Quality check |
 |---|---|---:|---|
 | `source_id` | Original review or inquiry identifier | Yes | Duplicate check |
-| `source_url` | Verifiable provenance | Yes | Accessibility |
+| `source_type` | Synthetic or other allowed input provenance | Yes | Allowed collection path |
+| `source_url` | Source location or synthetic fixture URL | Yes | HTTPS and `source_type` consistency |
 | `captured_at` | Collection time | Yes | Time zone |
 | `published_at` | Original publication time | Optional | Missingness distinguished |
 | `market` | Country or market | Yes | Standardized code |
@@ -71,7 +89,19 @@ Collect public VOC
 | `text_original` | Original text | Yes | Empty or truncated values |
 | `text_normalized` | Normalized analysis text | Optional | Transformation version |
 | `topic` | Topic classification | Optional | Model and rule version |
-| `evidence_ref` | Link between proposal and source | Yes | Reverse traceability |
+| `evidence_ref` | Link between proposal and source | Created in output | Reverse traceability |
+
+The machine-readable contract is [`voc-record.schema.json`](../../../case-studies/beauty-d2c-voc/schemas/voc-record.schema.json), and the executable fixture is [`voc-sample.jsonl`](../../../case-studies/beauty-d2c-voc/data/input/voc-sample.jsonl). No public-site collection adapter is included. Before adding one, verify the source's terms, license, privacy conditions, and collection scope.
+
+## Pipeline
+
+Run from the repository root:
+
+```bash
+python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py
+```
+
+The deterministic baseline validates input, normalizes text while preserving the original, marks duplicates, classifies a declared keyword set, sends missing, mixed-language, stale, unclassified, and safety cases to review, then creates only source-linked proposals. It is a reproducible control-flow baseline, not a production multilingual model.
 
 ## Draft workflow execution rules
 
@@ -92,9 +122,9 @@ Collect public VOC
 
 ### Autonomy
 
-- Collection, normalization, and classification: A1–A2
-- Issue and opportunity proposals: A2
-- Internal task creation: A3
+- Current fixture loading, normalization, and classification: A1–A2
+- Current issue and opportunity proposals: A2
+- Designed next step for approved internal task creation: A3
 - External publishing and price or inventory changes: outside initial scope
 
 ## Evaluation
@@ -119,7 +149,16 @@ Evaluation dimensions:
 - Processing time and rework
 - Reasons for approval, hold, and rejection
 
-## Four-week deployment plan
+The expected outcomes are fixed in [`expected.jsonl`](../../../case-studies/beauty-d2c-voc/data/evaluation/expected.jsonl). Run the regression suite with:
+
+```bash
+python3 -m unittest discover \
+  -s case-studies/beauty-d2c-voc/tests \
+  -p 'test_*.py' \
+  -v
+```
+
+## Four-week next-stage validation plan
 
 ### Week 1
 
@@ -145,16 +184,22 @@ Evaluation dimensions:
 - Record correction burden, trust, and workflow completion.
 - Decide which contracts to reuse and which abstractions to discard.
 
-## Public evidence package
+## Published artifacts
 
-- Data provenance and collection scope
-- Inventory of source, derived, and result files
-- Data contracts and workflow execution rules
-- Evaluation data and results
-- Deployment architecture and runbook
-- Incident and recovery records
-- User acceptance
-- Outcomes, limitations, and next decision
+- [Synthetic input and collection boundary](../../../case-studies/beauty-d2c-voc/data/input/voc-sample.jsonl)
+- [Data schema](../../../case-studies/beauty-d2c-voc/schemas/voc-record.schema.json)
+- [Normalization and classification code](../../../case-studies/beauty-d2c-voc/pipeline/run_pipeline.py)
+- [Classified records](../../../case-studies/beauty-d2c-voc/artifacts/classified-records.jsonl)
+- [Manual review queue](../../../case-studies/beauty-d2c-voc/artifacts/review-queue.json)
+- [Source-linked workflow proposals](../../../case-studies/beauty-d2c-voc/artifacts/workflow-proposals.json)
+- [Evaluation report](../../../case-studies/beauty-d2c-voc/artifacts/evaluation-report.md)
+- [Run and recovery instructions](../../../case-studies/beauty-d2c-voc/RUNBOOK.md)
+- [Result dashboard](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.html)
+- [Hashes separating generated outputs from the manual preview asset](../../../case-studies/beauty-d2c-voc/artifacts/run-manifest.json)
+
+## Results and limitations
+
+The current evidence shows that the same code can replay the synthetic fixture, separate failures, duplicates, and missing data, and trace each proposal to its source identifier. It does not verify public-site collection, a multilingual model, accountable approval, task-system integration, long-running operations, or user acceptance. It therefore supports no claim about real complaint mix, generalization quality, time saved, product improvement, or revenue effect.
 
 ## Open questions
 

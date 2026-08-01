@@ -1,10 +1,26 @@
 {
   "name": "ax-engineer-roadmap",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "Practical AX Engineer roadmap in Korean and English",
+  "engines": {
+    "node": ">=22.23.1"
+  },
   "scripts": {
-    "check": "node scripts/check-links.mjs && node scripts/check-roadmap.mjs && node scripts/check-cases.mjs && node scripts/check-korean-copy-sync.mjs && npm run check:readme --prefix site"
+    "bootstrap": "npm ci --prefix site && npm run setup:e2e --prefix site",
+    "dev:site": "npm run dev --prefix site",
+    "generate:cases": "node scripts/generate-case-site-data.mjs && node scripts/generate-case-boundary-blocks.mjs",
+    "check:docs": "node scripts/check-links.mjs && node scripts/check-roadmap.mjs && node scripts/check-public-cases.mjs",
+    "check:cases": "node scripts/check-cases.mjs && node scripts/generate-case-site-data.mjs --check && node scripts/generate-case-boundary-blocks.mjs --check",
+    "check:copy": "node scripts/check-korean-copy-sync.mjs",
+    "check:version": "node scripts/check-version-sync.mjs",
+    "check:external": "node scripts/check-external-links.mjs",
+    "check": "npm run check:docs && npm run check:cases && npm run check:copy && npm run check:version && npm run check:readme --prefix site",
+    "test:python": "python3 -m unittest discover -s case-studies/beauty-d2c-voc/tests -p 'test_*.py' -v && python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py --verify-committed",
+    "test:site": "npm run lint --prefix site && npm test --prefix site && npm run test:e2e --prefix site && npm run test:pages --prefix site",
+    "audit": "npm audit --prefix site --audit-level=high",
+    "validate": "npm run check && npm run test:python && npm run audit && npm run test:site",
+    "verify": "npm run bootstrap && npm run validate"
   },
   "license": "MIT"
 }

@@ -6,79 +6,29 @@ const casesRoot = path.join(root, 'case-studies');
 const schemaPath = path.join(casesRoot, '_schema', 'case.schema.json');
 const failures = [];
 
-const allowed = {
-  type: new Set(['workflow', 'shared-integration', 'organizational-capstone']),
-  primary_domain: new Set([
-    'customer-revenue',
-    'people-collaboration',
-    'finance-procurement',
-    'data-operations',
-    'shared-operations'
-  ]),
-  capabilities: new Set([
-    'workflow-discovery',
-    'data-contracts',
-    'retrieval-analysis',
-    'document-processing',
-    'human-approval',
-    'saas-integration',
-    'identity-access',
-    'transaction-reconciliation',
-    'policy-checks',
-    'master-data-controls',
-    'event-driven-operations',
-    'evaluation',
-    'observability',
-    'audit',
-    'recovery',
-    'reuse-governance'
-  ]),
-  status: new Set(['draft', 'ready', 'archived']),
-  evidence_stage: new Set([
-    'simulation-design',
-    'public-simulation',
-    'anonymized-practice',
-    'limited-pilot',
-    'operating-evidence'
-  ]),
-  readiness: new Set(['low', 'saas', 'it']),
-  risk: new Set(['low', 'moderate', 'high']),
-  write_impact: new Set([
-    'none',
-    'draft-only',
-    'approved-sandbox-write',
-    'approved-limited-write',
-    'mixed'
-  ])
-};
-
-const requiredFields = [
-  '$schema',
-  'id',
-  'title',
-  'type',
-  'primary_domain',
-  'difficulty',
-  'capabilities',
-  'recommended_after',
-  'status',
-  'evidence_stage',
-  'readiness',
-  'risk',
-  'entry_channels',
-  'systems',
-  'write_impact',
-  'autonomy',
-  'project_stages',
-  'verified_at',
-  'owner',
-  'limitations'
-];
-const allowedFields = new Set(requiredFields);
-
 if (!fs.existsSync(schemaPath)) {
   failures.push('case-studies/_schema/case.schema.json 누락');
 }
+
+const schema = fs.existsSync(schemaPath)
+  ? JSON.parse(fs.readFileSync(schemaPath, 'utf8'))
+  : { required: [], properties: {} };
+const requiredFields = schema.required ?? [];
+const allowedFields = new Set(Object.keys(schema.properties ?? {}));
+const enumValues = (field) => new Set(schema.properties?.[field]?.enum ?? []);
+const arrayEnumValues = (field) =>
+  new Set(schema.properties?.[field]?.items?.enum ?? []);
+const allowed = {
+  type: enumValues('type'),
+  primary_domain: enumValues('primary_domain'),
+  industry: enumValues('industry'),
+  capabilities: arrayEnumValues('capabilities'),
+  status: enumValues('status'),
+  evidence_stage: enumValues('evidence_stage'),
+  readiness: arrayEnumValues('readiness'),
+  risk: enumValues('risk'),
+  writeImpact: enumValues('current_write_impact')
+};
 
 const indexFiles = [
   path.join(casesRoot, 'README.md'),
@@ -98,13 +48,21 @@ const directories = fs
   .sort();
 
 const ids = new Set();
+const learningOrders = new Set();
 const metadataById = new Map();
 const evidenceStageLabels = new Map([
   ['simulation-design', '시뮬레이션 설계'],
-  ['public-simulation', '공개 실행·평가'],
+  ['public-simulation', '재현 가능한 공개 시뮬레이션'],
   ['anonymized-practice', '익명화 실습'],
   ['limited-pilot', '제한 파일럿'],
   ['operating-evidence', '운영 근거']
+]);
+const promotionDecisionCases = new Set([
+  'public-service-petition-response',
+  'credit-underwriting-review',
+  'equipment-anomaly-maintenance',
+  'care-conversation-record',
+  'regulated-evidence-document'
 ]);
 
 function nonEmptyStringArray(value) {
@@ -170,6 +128,14 @@ for (const directory of directories) {
   ids.add(metadata.id);
   metadataById.set(metadata.id, metadata);
 
+  if (!Number.isInteger(metadata.learning_order) || metadata.learning_order < 1) {
+    failures.push(`${relativeMetadata}: learning_order 오류`);
+  } else if (learningOrders.has(metadata.learning_order)) {
+    failures.push(`${relativeMetadata}: 중복 learning_order ${metadata.learning_order}`);
+  } else {
+    learningOrders.add(metadata.learning_order);
+  }
+
   if (
     !metadata.title ||
     typeof metadata.title.ko !== 'string' ||
@@ -180,14 +146,24 @@ for (const directory of directories) {
     failures.push(`${relativeMetadata}: title.ko/title.en 오류`);
   }
 
-  for (const field of ['type', 'status', 'evidence_stage', 'risk', 'write_impact']) {
+  for (const field of ['type', 'status', 'evidence_stage', 'risk']) {
     if (!allowed[field].has(metadata[field])) {
+      failures.push(`${relativeMetadata}: 허용되지 않은 ${field}`);
+    }
+  }
+
+  for (const field of ['current_write_impact', 'designed_write_impact']) {
+    if (!allowed.writeImpact.has(metadata[field])) {
       failures.push(`${relativeMetadata}: 허용되지 않은 ${field}`);
     }
   }
 
   if (!allowed.primary_domain.has(metadata.primary_domain)) {
     failures.push(`${relativeMetadata}: 허용되지 않은 primary_domain`);
+  }
+
+  if (!allowed.industry.has(metadata.industry)) {
+    failures.push(`${relativeMetadata}: 허용되지 않은 industry`);
   }
 
   if (
@@ -235,19 +211,42 @@ for (const directory of directories) {
     }
   }
 
-  if (!/^A[0-4](?:-A[0-4])?$/.test(metadata.autonomy ?? '')) {
-    failures.push(`${relativeMetadata}: autonomy 오류`);
+  for (const field of ['current_autonomy', 'designed_autonomy']) {
+    if (!/^A[0-4](?:-A[0-4])?$/.test(metadata[field] ?? '')) {
+      failures.push(`${relativeMetadata}: ${field} 오류`);
+    }
+  }
+
+  for (const field of ['implemented_project_stages', 'designed_project_stages']) {
+    const stages = metadata[field];
+    if (
+      !Array.isArray(stages) ||
+      (field === 'designed_project_stages' && stages.length === 0) ||
+      new Set(stages).size !== stages.length ||
+      stages.some((value) => !Number.isInteger(value) || value < 1 || value > 5)
+    ) {
+      failures.push(`${relativeMetadata}: ${field} 오류`);
+    }
+  }
+
+  const designedStages = new Set(metadata.designed_project_stages ?? []);
+  if (
+    (metadata.implemented_project_stages ?? []).some(
+      (stage) => !designedStages.has(stage)
+    )
+  ) {
+    failures.push(`${relativeMetadata}: implemented_project_stages가 designed_project_stages의 부분집합이 아님`);
   }
 
   if (
-    !Array.isArray(metadata.project_stages) ||
-    metadata.project_stages.length === 0 ||
-    new Set(metadata.project_stages).size !== metadata.project_stages.length ||
-    metadata.project_stages.some(
-      (value) => !Number.isInteger(value) || value < 1 || value > 5
-    )
+    metadata.evidence_stage === 'simulation-design' &&
+    (metadata.current_write_impact !== 'none' ||
+      metadata.current_autonomy !== 'A0' ||
+      metadata.implemented_project_stages?.length !== 0)
   ) {
-    failures.push(`${relativeMetadata}: project_stages 오류`);
+    failures.push(
+      `${relativeMetadata}: simulation-design의 현재 범위는 none / A0 / 빈 P 단계여야 함`
+    );
   }
 
   const verifiedAt = metadata.verified_at ?? '';
@@ -268,6 +267,17 @@ for (const directory of directories) {
     const koreanReadmeContent = fs.readFileSync(koreanReadme, 'utf8');
     if (!koreanReadmeContent.includes('## 현재 실행물과 근거')) {
       failures.push(`${path.relative(root, koreanReadme)}: 현재 실행물과 근거 섹션 누락`);
+    }
+  }
+
+  if (promotionDecisionCases.has(directory)) {
+    const koreanContent = fs.readFileSync(koreanReadme, 'utf8');
+    const englishContent = fs.readFileSync(englishReadme, 'utf8');
+    if (!koreanContent.includes('## 9. 다음 결정')) {
+      failures.push(`${path.relative(root, koreanReadme)}: 공개 실행 승격 조건 누락`);
+    }
+    if (!englishContent.includes('## 6. Next decision')) {
+      failures.push(`${path.relative(root, englishReadme)}: public-simulation promotion gate missing`);
     }
   }
 
@@ -298,6 +308,10 @@ for (const [id, metadata] of metadataById) {
       failures.push(`case-studies/${id}/case.json: 존재하지 않는 recommended_after ${dependency}`);
     }
   }
+}
+
+for (let order = 1; order <= directories.length; order += 1) {
+  if (!learningOrders.has(order)) failures.push(`learning_order ${order} 누락`);
 }
 
 if (failures.length > 0) {

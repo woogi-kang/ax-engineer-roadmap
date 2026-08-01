@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If this roadmap informed your research, teaching, or implementation, cite the repository and the version or commit you used."
+type: software
+title: "AX Engineer Roadmap"
+abstract: "A bilingual, evidence-led roadmap for redesigning workflows with AI and carrying them into safe operations."
+authors:
+  - family-names: "Kang"
+    given-names: "Woogi"
+    alias: "woogi-kang"
+repository-code: "https://github.com/woogi-kang/ax-engineer-roadmap"
+url: "https://woogi-kang.github.io/ax-engineer-roadmap/"
+license: MIT
+keywords:
+  - "AI transformation"
+  - "AX engineering"
+  - "workflow redesign"
+  - "agentic AI"
+  - "AI operations"

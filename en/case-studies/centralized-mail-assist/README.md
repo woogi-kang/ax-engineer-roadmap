@@ -1,5 +1,18 @@
 # Case: Centralized Mail Assistance Integration
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4, P5 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: K04, G13, and G15 contribute answer recommendation, account research, and complex-case human escalation questions through the [application map](../../research/public-case-application-map.md).
+
 ## Case type
 
 This is not the result of a real company implementation or evidence of operating outcomes. It is a **learning and reference simulation design for a shared integration** using synthetic email, test accounts, and a sandbox delivery environment.

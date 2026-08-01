@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 공개하기 어려운 안전 문제 / Private safety issue
-    url: https://github.com/woogi-kang
-    about: 저장소 소유자의 GitHub 프로필에 공개된 연락 수단을 이용해 주세요. / Use a contact method published on the repository owner's GitHub profile.
+  - name: 질문과 사용법 / Questions and usage
+    url: https://github.com/woogi-kang/ax-engineer-roadmap/discussions
+    about: 로드맵 사용법과 사례 선택은 Discussions에서 함께 다룹니다. / Ask usage and case-selection questions in Discussions.
+  - name: 비공개 보안 신고 / Private security report
+    url: https://github.com/woogi-kang/ax-engineer-roadmap/security/advisories/new
+    about: 취약점과 민감한 재현 정보는 공개 Issue 대신 비공개로 신고합니다. / Report vulnerabilities and sensitive reproductions privately.

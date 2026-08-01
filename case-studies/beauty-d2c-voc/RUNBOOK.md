@@ -12,6 +12,12 @@ python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py
 
 성공하면 `artifacts/`에 분류 결과, 검토 큐, 업무 제안, 평가 결과, 실행 요약, 대시보드, 입력·출력 해시가 생성된다. 기대 결과가 하나라도 맞지 않으면 프로세스는 종료 코드 `1`을 반환한다.
 
+커밋된 산출물이 깨끗한 임시 디렉터리에서 재생성한 결과와 같은지 확인하려면 다음 명령을 사용한다.
+
+```bash
+python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py --verify-committed
+```
+
 ## 테스트
 
 ```bash
@@ -44,4 +50,4 @@ python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py \
 | `review_required` | 상품·게시 시각 누락, 혼합 언어, 오래된 데이터, 미분류, 안전 신호를 수동 검토 큐로 보낸다. | 검토자가 원문과 `evidence_ref`를 확인해 보완·보류·제외한다. |
 | 평가 실패 | 실제 상태·주제·안전 신호가 기대 결과와 다르면 종료 코드 `1`을 반환한다. | `evaluation.json`에서 실패 레코드를 확인하고 코드 또는 기대 결과 변경 이유를 기록한다. |
 
-같은 입력과 코드로 다시 실행하면 같은 결과가 생성된다. `run-manifest.json`의 SHA-256으로 실행에 사용한 입력·스키마·코드와 결과 파일을 대조할 수 있다.
+같은 입력과 코드로 다시 실행하면 같은 결과가 생성된다. `run-manifest.json`은 코드가 만든 일곱 파일을 `generated_outputs`에 고정해 기록하고, 수동으로 캡처한 `dashboard.png`는 `presentation_assets`로 분리한다. `--verify-committed`는 깨끗한 임시 디렉터리의 일곱 파일을 byte 단위로 비교하고 입력·스키마·코드·결과 SHA-256도 다시 확인한다.

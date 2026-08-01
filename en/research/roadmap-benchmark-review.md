@@ -29,7 +29,7 @@ The same rule fits AX. A growing list of framework names becomes stale quickly a
 
 ## What the AI Agents Roadmap covers well
 
-The public [`ai-agents` content directory](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content) covers:
+The public [`ai-agents` content directory](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content) covers:
 
 1. Backend basics, Git and terminal use, and REST APIs
 2. LLMs, tokens, context windows, generation controls, and model cost
@@ -109,9 +109,9 @@ flowchart LR
 
 - [`PRIMARY_REPOSITORY` nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` roadmap.sh, AI Agents Roadmap](https://roadmap.sh/ai-agents) — verified 2026-07-26
-- [`PRIMARY_REPOSITORY` AI Agents roadmap source](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents) — verified 2026-07-26
+- [`PRIMARY_REPOSITORY` AI Agents roadmap source](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents) — verified 2026-07-26
 - [`PRIMARY_REPOSITORY` developer-roadmap contribution guidelines](https://github.com/nilbuild/developer-roadmap/blob/master/contributing.md) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` Ministry of SMEs and Startups, regional AI transformation program](https://www.mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1060505&cbIdx=86) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` Ministry of SMEs and Startups, Smart Manufacturing Innovation 3.0](https://www.mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1062738&cbIdx=86) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` PIPC, generative AI privacy guidance summary](https://m.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS212&mCode=C040030000&nttId=11360) — verified 2026-07-26
-- [`PRIMARY_OFFICIAL` Korean Law Information Center, AI Basic Act Enforcement Decree Article 23](https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lspttninfSeq=198075) — verified 2026-07-26
+- [`PRIMARY_OFFICIAL` Korean Law Information Center, AI Basic Act Enforcement Decree Article 23](https://www.law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=198075) — verified 2026-07-26

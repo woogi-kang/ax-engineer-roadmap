@@ -1,0 +1,62 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "regulated-evidence-document",
+  "title": {
+    "ko": "근거 자료에서 출처가 연결된 규제 문서 초안까지",
+    "en": "From evidence packets to a source-linked regulated document draft"
+  },
+  "type": "workflow",
+  "primary_domain": "data-operations",
+  "industry": "legal-life-sciences",
+  "difficulty": 4,
+  "capabilities": [
+    "data-contracts",
+    "retrieval-analysis",
+    "document-processing",
+    "human-approval",
+    "policy-checks",
+    "evaluation",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "file-csv-to-ax-hub",
+    "corporate-card-expense"
+  ],
+  "learning_order": 6,
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "low",
+    "saas",
+    "it"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "Synthetic evidence packet",
+    "Domain review workspace"
+  ],
+  "systems": [
+    "Controlled document vault",
+    "Citation index",
+    "Template and rule registry",
+    "Approval ledger"
+  ],
+  "current_write_impact": "none",
+  "designed_write_impact": "draft-only",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A2",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
+    1,
+    2,
+    3
+  ],
+  "verified_at": "2026-08-01",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The case uses synthetic legal and life-science material and produces no filing, advice, or regulatory submission.",
+    "Jurisdiction, confidentiality, validation, retention, and sign-off rules require domain-owner review.",
+    "No legal quality, submission acceptance, development speed, or compliance outcome has been verified."
+  ]
+}

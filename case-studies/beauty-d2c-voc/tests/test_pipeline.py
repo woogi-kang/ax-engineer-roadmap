@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -64,6 +65,18 @@ class PipelineTest(unittest.TestCase):
             self.assertEqual(summary["input_count"], 16)
             self.assertTrue((output / "dashboard.html").exists())
             self.assertTrue((output / "run-manifest.json").exists())
+            manifest = json.loads(
+                (output / "run-manifest.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                [item["path"] for item in manifest["generated_outputs"]],
+                [f"output/{name}" for name in pipeline.GENERATED_OUTPUT_NAMES],
+            )
+            self.assertEqual(manifest["presentation_assets"], [])
+            self.assertNotIn(
+                "dashboard.png",
+                {item["path"] for item in manifest["generated_outputs"]},
+            )
             self.assertIn(
                 "실행 결과를 원문까지 추적합니다.",
                 (output / "dashboard.html").read_text(encoding="utf-8"),

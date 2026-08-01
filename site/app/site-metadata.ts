@@ -2,28 +2,28 @@ import type { Metadata } from "next";
 import type { Language } from "./roadmap-data";
 
 const isPagesBuild = process.env.GITHUB_PAGES === "true";
-const pagesBasePath = isPagesBuild
+export const pagesBasePath = isPagesBuild
   ? (process.env.PAGES_BASE_PATH ?? "/ax-engineer-roadmap")
   : "";
-const siteOrigin = isPagesBuild
+export const siteOrigin = isPagesBuild
   ? (process.env.PAGES_ORIGIN ?? "https://woogi-kang.github.io")
   : "https://ax-engineer-roadmap-korea.woogi-dev.chatgpt.site";
 
 const metadataCopy = {
   ko: {
     description:
-      "AX Engineer가 자동화하거나 AI로 보조할 업무를 찾고, 사람이 판단할 지점을 남겨 실제 운영까지 이어 가는 공개 로드맵.",
+      "AX Engineer가 자동화하거나 AI로 보조할 업무를 찾고 실제 운영까지 이어 가는 공개 로드맵. 실습 사례 15개와 국내외 공개 사례 25개를 근거 수준과 함께 제공한다.",
     openGraphDescription:
-      "AX Engineer의 역할, 업무 전환 8단계, 기술 역량, 실습 프로젝트, 업무별 적용 사례를 한곳에서 확인하는 공개 로드맵.",
+      "AX Engineer의 역할, 업무 전환 8단계, 실습 사례 15개, 공개 근거 25개를 현재 근거 수준과 함께 탐색한다.",
     imageAlt:
       "AX Engineer의 역할, 업무 전환 과정, 실습 프로젝트와 업무별 적용 사례를 보여 주는 로드맵",
     locale: "ko_KR",
   },
   en: {
     description:
-      "An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, carry the work into operations, and explore applied AX cases.",
+      "An open roadmap for AX Engineers with 15 practice cases and 25 public references, separated by current evidence level.",
     openGraphDescription:
-      "Explore the AX Engineer role, eight workflow transformation stages, technical capabilities, practice projects, and applied AX cases.",
+      "Explore the AX Engineer role, eight transformation stages, 15 practice cases, and 25 public references with explicit evidence levels.",
     imageAlt:
       "A roadmap of the AX Engineer role, workflow transformation stages, practice projects, and applied AX cases",
     locale: "en_US",

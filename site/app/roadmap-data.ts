@@ -1,6 +1,20 @@
+import { caseMetadata } from "./case-metadata.generated";
+
 export type Language = "ko" | "en";
 export type Role = "all" | "practitioner" | "builder" | "leader" | "guardian";
 export type Readiness = "all" | "it" | "saas" | "low";
+export type Industry =
+  | "all"
+  | "cross-industry"
+  | "consumer-retail"
+  | "public-sector"
+  | "financial-services"
+  | "manufacturing"
+  | "healthcare-social-care"
+  | "legal-life-sciences";
+
+type CaseId = keyof typeof caseMetadata;
+type CaseMetadata = (typeof caseMetadata)[CaseId];
 
 type LocalizedText = { ko: string; en: string };
 
@@ -12,6 +26,7 @@ export type RoadmapNode = {
   doc: string;
   roles: Exclude<Role, "all">[];
   readiness: Exclude<Readiness, "all">[];
+  case?: CaseMetadata & { id: CaseId };
 };
 
 export type RoadmapGroup = {
@@ -41,14 +56,27 @@ function node(
   roles = everyRole,
   readiness = everyReadiness,
 ): RoadmapNode {
+  const caseId = id.startsWith("case-") ? id.slice(5) : "";
+  const caseDetails = caseId in caseMetadata
+    ? {
+        id: caseId as CaseId,
+        ...caseMetadata[caseId as CaseId],
+      }
+    : undefined;
+
   return {
     id,
-    title: { ko: koTitle, en: enTitle },
+    title: caseDetails
+      ? { ko: caseDetails.title.ko, en: caseDetails.title.en }
+      : { ko: koTitle, en: enTitle },
     description: { ko: koDescription, en: enDescription },
     evidence: { ko: koEvidence, en: enEvidence },
-    doc,
+    doc: caseDetails ? `case-studies/${caseDetails.id}/README.md` : doc,
     roles,
-    readiness,
+    readiness: caseDetails
+      ? [...caseDetails.readiness] as Exclude<Readiness, "all">[]
+      : readiness,
+    case: caseDetails,
   };
 }
 
@@ -314,6 +342,18 @@ export const roadmapGroups: RoadmapGroup[] = [
         ["it", "saas"],
       ),
       node(
+        "case-public-service-petition-response",
+        "공공 민원 → 근거 답변·중복 묶음",
+        "Public petitions → cited drafts and clusters",
+        "합성 민원을 유효한 법령·정책과 연결해 답변 초안과 유사 민원 후보를 만들고, 담당자가 수정·분리·승인하도록 설계한다.",
+        "Design cited response drafts and reviewable similarity clusters from synthetic petitions, with caseworker edits, splits, and approval.",
+        "시뮬레이션 설계: 출처·관할·군집 검토·긴급 이관",
+        "Simulation design, provenance, jurisdiction, cluster review, and urgent escalation",
+        "case-studies/public-service-petition-response/README.md",
+        everyRole,
+        ["low", "saas"],
+      ),
+      node(
         "case-file-csv-to-ax-hub",
         "파일·CSV → 검토 가능한 업무 허브(AX Hub)",
         "From Scattered Files and CSVs to a Reviewable AX Hub",
@@ -336,6 +376,18 @@ export const roadmapGroups: RoadmapGroup[] = [
         "case-studies/slack-meeting-actions/README.md",
         ["practitioner", "builder", "guardian"],
         ["it", "saas"],
+      ),
+      node(
+        "case-regulated-evidence-document",
+        "근거 자료 → 출처 연결 규제 문서",
+        "Evidence → source-linked regulated document",
+        "합성 계약·연구 자료에서 사실과 가정을 구분하고 문장별 출처가 있는 초안을 만든 뒤 분야별 승인을 받도록 설계한다.",
+        "Design a regulated-document draft that separates facts from assumptions, links material statements to sources, and requires domain approval.",
+        "시뮬레이션 설계: 문장별 인용·버전·분야별 승인",
+        "Simulation design, sentence-level citation, version control, and domain approval",
+        "case-studies/regulated-evidence-document/README.md",
+        ["practitioner", "builder", "guardian"],
+        ["low", "saas", "it"],
       ),
       node(
         "case-employee-lifecycle-access",
@@ -374,6 +426,18 @@ export const roadmapGroups: RoadmapGroup[] = [
         ["it", "saas"],
       ),
       node(
+        "case-credit-underwriting-review",
+        "기업 자료 → 여신·인수심사 검토",
+        "Company evidence → credit and underwriting review",
+        "합성 신청·재무 자료와 유효한 심사 규칙을 대조해 사실·규칙·가정을 분리한 검토 초안을 만든다. 최종 금융 판단은 자동화하지 않는다.",
+        "Create a review draft that separates facts, deterministic rules, and assumptions from synthetic application evidence without automating the final decision.",
+        "시뮬레이션 설계: 수치 원본·규칙 버전·심사자 승인",
+        "Simulation design, source values, rule versions, and reviewer approval",
+        "case-studies/credit-underwriting-review/README.md",
+        ["practitioner", "builder", "guardian"],
+        ["low", "saas", "it"],
+      ),
+      node(
         "case-inventory-exception-replenishment",
         "재고 예외 → 발주·창고 이동안",
         "From inventory exceptions to purchase and transfer proposals",
@@ -396,6 +460,30 @@ export const roadmapGroups: RoadmapGroup[] = [
         "case-studies/centralized-mail-assist/README.md",
         ["practitioner", "builder", "guardian"],
         ["it", "saas"],
+      ),
+      node(
+        "case-equipment-anomaly-maintenance",
+        "설비 이상 → 정비 제안",
+        "Equipment anomaly → maintenance proposal",
+        "합성 센서 신호를 설비 이력·안전 절차와 대조해 정비자가 검토할 티켓 초안을 만든다. 물리 설비와 안전 제어는 건드리지 않는다.",
+        "Compare synthetic sensor signals with asset history and safety procedures, then draft a maintainer-reviewed ticket without controlling equipment.",
+        "시뮬레이션 설계: 센서 상태·오탐과 누락·CMMS 복구",
+        "Simulation design, sensor state, false and missed alerts, and CMMS recovery",
+        "case-studies/equipment-anomaly-maintenance/README.md",
+        ["practitioner", "builder", "guardian"],
+        ["it"],
+      ),
+      node(
+        "case-care-conversation-record",
+        "상담·진료 대화 → 기록·위험 이관",
+        "Care conversation → record and risk escalation",
+        "허구 대화를 원구간과 연결된 기록 초안으로 만들고, 위험 신호는 전문가에게 즉시 이관해 수신 상태까지 확인한다.",
+        "Turn fictional conversations into source-linked record drafts and route risk candidates to professionals with receipt confirmation.",
+        "시뮬레이션 설계: 동의·전문가 서명·긴급 이관",
+        "Simulation design, consent, professional sign-off, and urgent escalation",
+        "case-studies/care-conversation-record/README.md",
+        ["practitioner", "builder", "guardian"],
+        ["low", "saas", "it"],
       ),
       node(
         "case-company-agent-operating-layer",
@@ -424,7 +512,18 @@ export const roadmapGroups: RoadmapGroup[] = [
       node("toolkit", "실무 템플릿", "Shared toolkit", "업무 발굴, 평가, 실행 규칙, 실험, 근거 기록 템플릿을 재사용한다.", "Reuse workflow discovery, evaluation, execution-rule, experiment, and evidence templates.", "다른 사람이 이어서 사용할 문서", "Working documents another person can continue", "toolkit/README.md"),
     ],
   },
-];
+].map((group) =>
+  group.id === "cases"
+    ? {
+        ...group,
+        nodes: [...group.nodes].sort(
+          (left, right) =>
+            (left.case?.learningOrder ?? Number.MAX_SAFE_INTEGER) -
+            (right.case?.learningOrder ?? Number.MAX_SAFE_INTEGER),
+        ),
+      }
+    : group,
+);
 
 export const roleLabels: Record<Role, LocalizedText> = {
   all: { ko: "모든 역할", en: "All roles" },
@@ -440,3 +539,31 @@ export const readinessLabels: Record<Readiness, LocalizedText> = {
   saas: { ko: "SaaS 중심", en: "SaaS-centered" },
   low: { ko: "메신저·파일 중심", en: "File-and-message centered" },
 };
+
+export const industryLabels: Record<Industry, LocalizedText> = {
+  all: { ko: "모든 사례 산업", en: "All case industries" },
+  "cross-industry": { ko: "공통 업무", en: "Cross-industry" },
+  "consumer-retail": { ko: "소비자·리테일", en: "Consumer and retail" },
+  "public-sector": { ko: "공공", en: "Public sector" },
+  "financial-services": { ko: "금융", en: "Financial services" },
+  manufacturing: { ko: "제조", en: "Manufacturing" },
+  "healthcare-social-care": { ko: "의료·복지", en: "Healthcare and social care" },
+  "legal-life-sciences": { ko: "법무·생명과학", en: "Legal and life sciences" },
+};
+
+export const riskLabels = {
+  low: { ko: "낮은 위험", en: "Low risk" },
+  moderate: { ko: "보통 위험", en: "Moderate risk" },
+  high: { ko: "높은 위험", en: "High risk" },
+} as const;
+
+export const evidenceStageLabels = {
+  "simulation-design": { ko: "실행 설계", en: "Design blueprint" },
+  "public-simulation": {
+    ko: "재현 가능한 공개 시뮬레이션",
+    en: "Reproducible public simulation",
+  },
+  "anonymized-practice": { ko: "익명화 실습", en: "Anonymized practice" },
+  "limited-pilot": { ko: "제한 파일럿", en: "Limited pilot" },
+  "operating-evidence": { ko: "운영 근거", en: "Operating evidence" },
+} as const;

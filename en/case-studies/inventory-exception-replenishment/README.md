@@ -1,5 +1,18 @@
 # Case: From inventory exceptions to purchase and transfer proposals
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: G06's state refresh, cause candidates, and operations-ticket pattern informs inventory proposal controls through the [application map](../../research/public-case-application-map.md).
+
 Reordering whenever inventory crosses a threshold can create excess stock or duplicate orders. This case combines current stock, committed orders, inbound supply, stock in other locations, and supplier constraints to present accountable operators with bounded options.
 
 ## 1. Case type and current evidence

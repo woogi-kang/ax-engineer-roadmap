@@ -42,3 +42,5 @@ The AX Engineer role and its technical environment change quickly. This reposito
 ## Updates
 
 Open a `Source update` issue when a source is outdated or conflicts with current content. A pull request should state the old claim, new evidence, and effect on readers.
+
+External links are checked weekly. A definite `404` or `410` fails the check. Other abnormal responses remain warnings for manual review, with `4xx` authentication, bot-blocking, or rate-limit responses distinguished from temporary `5xx` and network errors. [`public-ax-cases.json`](../../research/public-ax-cases.json) is the registry for 25 public cases and 26 unique source URLs, including provenance, deployment stage, and outcome-verification status.

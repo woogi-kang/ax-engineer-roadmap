@@ -35,12 +35,15 @@ test("server-renders the Korean roadmap explorer", async () => {
   assert.match(html, /자동화와 AI 보조를 실제 운영까지 이어 가는 AX Engineer 로드맵/);
   assert.match(
     html,
-    /AX 업무 전환 8단계 · 기술 역량 7개 · 실습 프로젝트 5개 · 업무별 적용 사례 10개/,
+    /업무 전환 8단계 · 실습 5개 · 사례 15개\(재현 가능한 공개 시뮬레이션 1개, 실행 설계 14개\) · 공개 근거 25개/,
   );
-  assert.match(html, /<strong>41<\/strong>(?:<!-- -->)?개 항목/);
+  assert.match(html, /<strong>46<\/strong>(?:<!-- -->)?개 항목/);
   assert.match(html, /AX 엔지니어 실행 경로/);
-  assert.match(html, /Slack 회의 → 실행 항목/);
-  assert.match(html, /전자세금계산서 발행·입금 대사/);
+  assert.match(html, /회의 전후 Slack 신호를 승인 가능한 실행 항목으로/);
+  assert.match(html, /매출 근거에서 전자세금계산서 발행·입금 대사까지/);
+  assert.match(html, /사례 산업/);
+  assert.match(html, /재현 가능한 공개 시뮬레이션/);
+  assert.match(html, /공개 AX 사례 25개/);
   assert.match(html, /전체 로드맵/);
   assert.match(html, /조직 준비도/);
   assert.match(html, /aria-live="polite"/);
@@ -59,13 +62,13 @@ test("server-renders the English edition from its static route", async () => {
   assert.match(html, /<html lang="en"/i);
   assert.match(
     html,
-    /An open roadmap for AX Engineers to choose workflows, connect AI to existing systems, carry the work into operations, and explore applied AX cases\./,
+    /An open roadmap for AX Engineers with 15 practice cases and 25 public references, separated by current evidence level\./,
   );
   assert.match(html, /An open roadmap for AX Engineers/);
   assert.match(html, /Choose the workflow\. Carry it into operations\./);
   assert.match(
     html,
-    /8 transformation stages · 7 technical capabilities · 5 practice projects · 10 applied AX cases/,
+    /8 transformation stages · 5 projects · 15 cases \(1 reproducible public simulation, 14 design blueprints\) · 25 public references/,
   );
   assert.match(html, /AX Engineer path/);
   assert.match(html, /From Slack Meeting Signals to Human-Approved Actions/);
@@ -75,6 +78,8 @@ test("server-renders the English edition from its static route", async () => {
   );
   assert.match(html, /Complete path/);
   assert.match(html, /Organization readiness/);
+  assert.match(html, /Case industry/);
+  assert.match(html, /25 public AX cases/);
   assert.doesNotMatch(
     html,
     /자동화와 AI 보조를 실제 운영까지 이어 가는 AX Engineer 로드맵/,

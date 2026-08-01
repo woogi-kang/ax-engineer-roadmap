@@ -1,0 +1,62 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "care-conversation-record",
+  "title": {
+    "ko": "상담·진료 대화에서 검토 가능한 기록과 위험 이관까지",
+    "en": "From care conversations to reviewed records and risk escalation"
+  },
+  "type": "workflow",
+  "primary_domain": "data-operations",
+  "industry": "healthcare-social-care",
+  "difficulty": 5,
+  "capabilities": [
+    "data-contracts",
+    "document-processing",
+    "human-approval",
+    "policy-checks",
+    "event-driven-operations",
+    "evaluation",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "centralized-mail-assist",
+    "public-service-petition-response"
+  ],
+  "learning_order": 14,
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "low",
+    "saas",
+    "it"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "Synthetic consented conversation",
+    "Professional review queue"
+  ],
+  "systems": [
+    "Consent registry sandbox",
+    "Record system sandbox",
+    "Escalation roster",
+    "Audit ledger"
+  ],
+  "current_write_impact": "none",
+  "designed_write_impact": "draft-only",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A2",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
+    1,
+    2,
+    3
+  ],
+  "verified_at": "2026-08-01",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The case uses fictional conversations and does not provide diagnosis, treatment, or emergency services.",
+    "Consent, protected data, mandatory reporting, and professional record rules require local clinical and legal review.",
+    "No clinical, safety, care-quality, or staff-time outcome has been verified."
+  ]
+}

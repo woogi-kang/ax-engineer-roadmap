@@ -21,4 +21,6 @@ This project aims to be a collaborative space that respects different levels of 
 
 ## Reporting
 
-For issues that are not appropriate for a public issue, use a contact method published on the repository owner's GitHub profile. Maintainers may remove content, restrict participation, or adjust visibility when necessary.
+Report conduct issues that are unsafe to post publicly to [woogi.dev@gmail.com](mailto:woogi.dev@gmail.com). Include the subject, location and time, relevant material, and the safety outcome you need when possible. Retaliation is not allowed, and only the minimum people needed for the review will receive the report. Maintainers may warn participants, remove content, restrict participation, or adjust visibility; a conflicted maintainer delegates the decision to an independent reviewer.
+
+Use the private advisory route in the [security policy](SECURITY.md), not this email, for vulnerabilities or credential exposure.

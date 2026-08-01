@@ -1,5 +1,18 @@
 # Case: From Scattered Files and CSVs to a Reviewable AX Hub
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Draft only | A1-A2 | P1, P2, P3, P5 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: K10, G04, and G05 contribute record integration, site-specific knowledge, and product-version constraints through the [application map](../../research/public-case-application-map.md).
+
 This is a **learning simulation of an AX workflow transformation** that consolidates personal AI outputs, CSV files spread across multiple folders, and meeting signals about blockers and approvals into structured work records, then prepares a Slack digest draft. It is not a case of an actual company adoption, nor does it claim improvements in time, cost, or quality.
 
 ## 1. Case type and classification
@@ -10,9 +23,9 @@ This is a **learning simulation of an AX workflow transformation** that consolid
 | Public evidence stage | Simulation design |
 | Starting readiness | From teams without a separate development environment to teams already using SaaS |
 | Risk | Moderate |
-| Write impact | Draft only |
-| Autonomy | A1–A2 |
-| Related projects | P1, P2, P3, P5 |
+| Designed write impact | Draft only |
+| Designed autonomy | A1–A2 |
+| Designed P stages | P1, P2, P3, P5 |
 | Verified on | 2026-07-27 |
 
 `ready` means the design is ready for a simulation using public or synthetic data. It does not mean that the workflow has proved effective in production.

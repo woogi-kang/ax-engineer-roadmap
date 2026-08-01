@@ -8,6 +8,7 @@ import hashlib
 import html
 import json
 import re
+import tempfile
 import unicodedata
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
@@ -19,6 +20,16 @@ DEFAULT_INPUT = CASE_ROOT / "data/input/voc-sample.jsonl"
 DEFAULT_EXPECTED = CASE_ROOT / "data/evaluation/expected.jsonl"
 DEFAULT_OUTPUT = CASE_ROOT / "artifacts"
 AS_OF = datetime(2026, 7, 31, tzinfo=timezone.utc)
+GENERATED_OUTPUT_NAMES = (
+    "classified-records.jsonl",
+    "dashboard.html",
+    "evaluation-report.md",
+    "evaluation.json",
+    "review-queue.json",
+    "run-summary.json",
+    "workflow-proposals.json",
+)
+PRESENTATION_ASSET_NAMES = ("dashboard.png",)
 
 REQUIRED_FIELDS = (
     "source_id",
@@ -532,22 +543,77 @@ def build_manifest(input_path: Path, expected_path: Path, output_dir: Path) -> d
         CASE_ROOT / "schemas/voc-record.schema.json",
         Path(__file__).resolve(),
     ]
-    output_paths = sorted(
-        path
-        for path in output_dir.iterdir()
-        if path.is_file() and path.name != "run-manifest.json"
-    )
+    output_paths = [output_dir / name for name in GENERATED_OUTPUT_NAMES]
+    missing_outputs = [path.name for path in output_paths if not path.is_file()]
+    if missing_outputs:
+        raise FileNotFoundError(
+            f"Missing generated outputs: {', '.join(missing_outputs)}"
+        )
+    presentation_assets = [
+        output_dir / name
+        for name in PRESENTATION_ASSET_NAMES
+        if (output_dir / name).is_file()
+    ]
     return {
-        "schema": "beauty-d2c-voc-run-manifest-v1",
+        "schema": "beauty-d2c-voc-run-manifest-v2",
         "as_of": AS_OF.isoformat(),
         "sources": [
             {"path": manifest_path(path), "sha256": sha256(path)}
             for path in source_paths
         ],
-        "outputs": [
+        "generated_outputs": [
             {"path": manifest_path(path, output=True), "sha256": sha256(path)}
             for path in output_paths
         ],
+        "presentation_assets": [
+            {
+                "path": manifest_path(path, output=True),
+                "sha256": sha256(path),
+                "generated_by_pipeline": False,
+                "source": manifest_path(output_dir / "dashboard.html", output=True),
+                "source_sha256": sha256(output_dir / "dashboard.html"),
+            }
+            for path in presentation_assets
+        ],
+    }
+
+
+def verify_committed_artifacts(
+    input_path: Path = DEFAULT_INPUT,
+    expected_path: Path = DEFAULT_EXPECTED,
+    committed_output_dir: Path = DEFAULT_OUTPUT,
+) -> dict[str, Any]:
+    mismatches: list[str] = []
+    with tempfile.TemporaryDirectory(prefix="beauty-voc-") as temporary_directory:
+        temporary_output = Path(temporary_directory)
+        summary = run(input_path, expected_path, temporary_output)
+        for name in GENERATED_OUTPUT_NAMES:
+            regenerated = temporary_output / name
+            committed = committed_output_dir / name
+            if not committed.is_file():
+                mismatches.append(f"missing committed output: {name}")
+            elif regenerated.read_bytes() != committed.read_bytes():
+                mismatches.append(f"committed output differs: {name}")
+
+    manifest_path_value = committed_output_dir / "run-manifest.json"
+    if not manifest_path_value.is_file():
+        mismatches.append("missing committed output: run-manifest.json")
+    else:
+        committed_manifest = json.loads(manifest_path_value.read_text(encoding="utf-8"))
+        expected_manifest = build_manifest(
+            input_path,
+            expected_path,
+            committed_output_dir,
+        )
+        if committed_manifest != expected_manifest:
+            mismatches.append("committed manifest differs from current sources and outputs")
+
+    if mismatches:
+        raise RuntimeError("; ".join(mismatches))
+    return {
+        "verified": True,
+        "generated_output_count": len(GENERATED_OUTPUT_NAMES),
+        "evaluation_passed": summary["evaluation_passed"],
     }
 
 
@@ -586,11 +652,20 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--expected", type=Path, default=DEFAULT_EXPECTED)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--verify-committed",
+        action="store_true",
+        help="Regenerate in a clean directory and compare with committed artifacts.",
+    )
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     arguments = parse_args()
-    result = run(arguments.input, arguments.expected, arguments.output_dir)
+    result = (
+        verify_committed_artifacts(arguments.input, arguments.expected, arguments.output_dir)
+        if arguments.verify_committed
+        else run(arguments.input, arguments.expected, arguments.output_dir)
+    )
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
     raise SystemExit(0 if result["evaluation_passed"] else 1)

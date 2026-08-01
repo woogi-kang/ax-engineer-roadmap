@@ -7,3 +7,5 @@ __pycache__/
 .claude/goals/
 .design-runs/
 .orchestration/
+site/playwright-report/
+site/test-results/

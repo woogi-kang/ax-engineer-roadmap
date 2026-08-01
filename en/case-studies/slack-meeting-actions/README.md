@@ -1,5 +1,18 @@
 # Case: From Slack Meeting Signals to Human-Approved Actions
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4, P5 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: K05 and G01 contribute meeting summaries, decision-versus-suggestion labels, consent, and review before CRM writes through the [application map](../../research/public-case-application-map.md).
+
 This is a **learning simulation of an AX workflow transformation** that receives a request in Slack, connects knowledge in Notion, Google Workspace artifacts, and work state in monday.com, then prepares a meeting pre-read and action items. Only human-approved items are written to a monday.com sandbox, with a Friday follow-up on current state. It does not claim adoption or actual workflow outcomes at a specific company.
 
 ## 1. Case type and classification
@@ -10,9 +23,9 @@ This is a **learning simulation of an AX workflow transformation** that receives
 | Public evidence stage | Simulation design |
 | Starting readiness | Environment with SaaS accounts and internal IT support |
 | Risk | Moderate |
-| Write impact | Approved sandbox write |
-| Autonomy | A1–A3 |
-| Related projects | P1, P2, P3, P4, P5 |
+| Designed write impact | Approved sandbox write |
+| Designed autonomy | A1–A3 |
+| Designed P stages | P1, P2, P3, P4, P5 |
 | Verified on | 2026-07-27 |
 
 `ready` means the simulation can begin with synthetic materials and test accounts. It does not mean that P4 production piloting or real organizational outcomes have been completed.

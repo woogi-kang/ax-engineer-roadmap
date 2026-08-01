@@ -1,0 +1,49 @@
+name: 사이트·저장소 오류 / Site or repository bug
+description: 재현 가능한 사이트, 접근성, 검사 또는 개발 환경 문제를 알려 주세요. / Report a reproducible site, accessibility, validation, or setup issue.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        보안상 민감한 문제는 이 양식을 쓰지 말고 [비공개 보안 권고](https://github.com/woogi-kang/ax-engineer-roadmap/security/advisories/new)를 이용해 주세요.
+        Do not use this form for a sensitive security issue; open a private security advisory instead.
+  - type: dropdown
+    id: area
+    attributes:
+      label: 영향 영역 / Area
+      options:
+        - 인터랙티브 사이트 / Interactive site
+        - Markdown 문서 / Markdown documentation
+        - 검사·CI / Validation or CI
+        - 로컬 개발 환경 / Local development setup
+        - 접근성 / Accessibility
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: 실제 결과 / Observed result
+      description: 무엇이 잘못됐는지, 오류 문구가 있다면 그대로 적어 주세요. / Describe what failed and include the exact error when available.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 결과 / Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 재현 방법 / Reproduction
+      description: URL, 명령, 브라우저·Node·Python 버전과 최소 재현 순서를 적어 주세요. / Include the URL, command, environment, and minimal steps.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 공개 안전 / Public safety
+      options:
+        - label: 회사·고객·개인을 식별하는 정보, 자격 증명, 비밀값이 없습니다. / This report contains no identifying confidential information, credentials, or secrets.
+          required: true

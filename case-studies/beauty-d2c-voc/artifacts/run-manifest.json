@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-31T00:00:00+00:00",
-  "outputs": [
+  "generated_outputs": [
     {
       "path": "artifacts/classified-records.jsonl",
       "sha256": "32baf606a55714335563c1ccf417f1991f0a3ac003974cf6e91e55a275c68cd0"
@@ -8,10 +8,6 @@
     {
       "path": "artifacts/dashboard.html",
       "sha256": "6df8991a4d4d1c8eac7b51c872bba9f7f1a8d331fb1b393c2e0e0eafd8f8096d"
-    },
-    {
-      "path": "artifacts/dashboard.png",
-      "sha256": "f2ef917e7cb9a5a9b15de0ad2d8afdb822f4dd262e1caee56c053b7f72d6cde7"
     },
     {
       "path": "artifacts/evaluation-report.md",
@@ -34,7 +30,16 @@
       "sha256": "50458dc93f93c0f3edffbd71f7be226ebe3c10f4d725edb2fbfea84d4251dba3"
     }
   ],
-  "schema": "beauty-d2c-voc-run-manifest-v1",
+  "presentation_assets": [
+    {
+      "generated_by_pipeline": false,
+      "path": "artifacts/dashboard.png",
+      "sha256": "f2ef917e7cb9a5a9b15de0ad2d8afdb822f4dd262e1caee56c053b7f72d6cde7",
+      "source": "artifacts/dashboard.html",
+      "source_sha256": "6df8991a4d4d1c8eac7b51c872bba9f7f1a8d331fb1b393c2e0e0eafd8f8096d"
+    }
+  ],
+  "schema": "beauty-d2c-voc-run-manifest-v2",
   "sources": [
     {
       "path": "data/input/voc-sample.jsonl",
@@ -50,7 +55,7 @@
     },
     {
       "path": "pipeline/run_pipeline.py",
-      "sha256": "909698f84af2fda332d90035687bbe83fe499a08ec5623c9256bfdfa02cf97fd"
+      "sha256": "5a1d669a0a6d2d5c51ff25e10d1a2d17864ff94d9e923cb51779f4c49eccf556"
     }
   ]
 }

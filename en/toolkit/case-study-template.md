@@ -6,11 +6,12 @@ Create `case.json` in the case directory and follow [`case.schema.json`](../../c
 
 - Case ID and Korean and English titles:
 - Scope type: workflow / shared integration / organizational capstone
+- Primary work domain, industry, and difficulty:
 - Documentation status and current evidence stage:
 - Organization readiness and risk:
 - Entry channels and connected systems:
-- External write impact and autonomy:
-- Connected P1–P5 stages:
+- Write impact, autonomy, and P1–P5 stages demonstrated now:
+- Maximum write impact, autonomy, and P1–P5 stages covered by the design:
 - Last verification date and limitations:
 
 A `ready` status means the document is usable for practice. It does not imply production operation or verified organizational outcomes.

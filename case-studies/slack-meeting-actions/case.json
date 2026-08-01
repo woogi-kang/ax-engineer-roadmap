@@ -7,6 +7,7 @@
   },
   "type": "workflow",
   "primary_domain": "people-collaboration",
+  "industry": "cross-industry",
   "difficulty": 2,
   "capabilities": [
     "saas-integration",
@@ -17,6 +18,7 @@
   "recommended_after": [
     "file-csv-to-ax-hub"
   ],
+  "learning_order": 4,
   "status": "ready",
   "evidence_stage": "simulation-design",
   "readiness": [
@@ -34,9 +36,12 @@
     "monday.com",
     "Workflow execution ledger"
   ],
-  "write_impact": "approved-sandbox-write",
-  "autonomy": "A1-A3",
-  "project_stages": [
+  "current_write_impact": "none",
+  "designed_write_impact": "approved-sandbox-write",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A3",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
     1,
     2,
     3,

@@ -10,7 +10,7 @@
 - [실험 카드](experiment-card.md)
 - [근거 기록](evidence-ledger.md)
 - [사례 작성 템플릿](case-study-template.md)
-- [현업 조합 사례 카탈로그](../case-studies/README.md)
+- [업무별 적용 사례 카탈로그](../case-studies/README.md)
 
 ## 사용 원칙
 

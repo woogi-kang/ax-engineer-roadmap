@@ -18,6 +18,16 @@ AX Engineer Roadmap은 기술 이름을 늘리는 것보다 현장에서 검증�
 3. 내용이 크게 달라지면 먼저 Issue에서 범위를 합의한다.
 4. 회사·고객·동료의 비공개 정보가 없는지 확인한다.
 
+## 로컬 준비와 전체 검사
+
+Node.js `22.23.1` 이상과 Python `3.11.15` 이상이 필요하다. fresh clone에서 CI와 같은 검사를 실행한다.
+
+```bash
+npm run verify
+```
+
+`verify`는 의존성과 Chromium을 설치한 뒤 내부 링크·한영 미러·사례 metadata·공개 사례 registry·버전 동기화, Beauty/D2C Python 테스트와 커밋 산출물 재현, npm 보안 감사, 사이트 lint, Vinext 렌더링, 브라우저 접근성, GitHub Pages 정적 export를 차례로 확인한다. 외부 링크 전체 상태 검사는 네트워크에 의존하므로 `npm run check:external`과 주간 workflow로 따로 실행한다.
+
 ## 로드맵 항목 형식
 
 새 역량 항목에는 가능한 한 다음 내용을 포함한다.
@@ -64,6 +74,10 @@ AX Engineer Roadmap은 기술 이름을 늘리는 것보다 현장에서 검증�
 
 새 사례는 사례 디렉터리에 `case.json`을 추가하고 [`case.schema.json`](case-studies/_schema/case.schema.json)을 따른다. `status`는 문서 준비 상태, `evidence_stage`는 실제로 확인한 근거 수준으로 나눠 기록한다.
 
+현재 실행물과 목표 설계를 섞지 않는다. `current_write_impact`, `current_autonomy`, `implemented_project_stages`에는 공개 산출물이 실제로 증명한 범위만 기록한다. 더 넓게 설계한 목표는 `designed_write_impact`, `designed_autonomy`, `designed_project_stages`에 둔다. `case.json`을 바꾸면 `npm run generate:cases`로 사이트용 데이터를 다시 만들고 함께 커밋한다.
+
+공개 조직 사례를 추가하거나 바꾸면 한국어·영어 카탈로그와 [`public-ax-cases.json`](research/public-ax-cases.json)을 함께 갱신한다. 출처 유형, 도입 단계, 성과 검증을 서로 다른 필드로 유지한다.
+
 실제 성과 수치는 측정 방법과 기간을 함께 제공해야 한다. 공개할 수 없다면 수치를 지우고 관찰 가능한 상태만 남긴다.
 
 ## Pull Request
@@ -71,7 +85,7 @@ AX Engineer Roadmap은 기술 이름을 늘리는 것보다 현장에서 검증�
 - 한 PR에는 하나의 논점만 담는다.
 - 변경 이유와 독자에게 미치는 영향을 설명한다.
 - 새 링크에는 확인일과 출처 유형을 기록한다.
-- `npm run check`를 실행한다.
+- `npm run verify`를 실행한다.
 - 자동 생성한 초안이라도 제출자가 사실, 책임 주체, 한국어 문장을 직접 검토한다.
 
 ## 라이선스

@@ -81,4 +81,4 @@ Reduce or stop automation on prohibited outcomes, permission anomalies, quality 
 
 - [`PRIMARY_OFFICIAL` OpenTelemetry concepts](https://opentelemetry.io/docs/concepts/) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` OpenTelemetry signals](https://opentelemetry.io/docs/concepts/signals/) — verified 2026-07-26
-- [`PRIMARY_REPOSITORY` AI Agents logging and tracing content](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` AI Agents logging and tracing content](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)

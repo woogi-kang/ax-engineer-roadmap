@@ -81,4 +81,4 @@
 
 - [`PRIMARY_OFFICIAL` OpenTelemetry concepts](https://opentelemetry.io/docs/concepts/) — 2026-07-26 확인
 - [`PRIMARY_OFFICIAL` OpenTelemetry signals](https://opentelemetry.io/docs/concepts/signals/) — 2026-07-26 확인
-- [`PRIMARY_REPOSITORY` AI Agents content: structured logging and tracing](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps/ai-agents/content)
+- [`PRIMARY_REPOSITORY` AI Agents content: structured logging and tracing](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps/ai-agents/content)

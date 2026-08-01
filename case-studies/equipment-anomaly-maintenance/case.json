@@ -1,0 +1,61 @@
+{
+  "$schema": "../_schema/case.schema.json",
+  "id": "equipment-anomaly-maintenance",
+  "title": {
+    "ko": "설비 이상 신호에서 검토 가능한 정비 제안까지",
+    "en": "From equipment anomaly signals to a reviewable maintenance proposal"
+  },
+  "type": "workflow",
+  "primary_domain": "data-operations",
+  "industry": "manufacturing",
+  "difficulty": 4,
+  "capabilities": [
+    "data-contracts",
+    "event-driven-operations",
+    "human-approval",
+    "saas-integration",
+    "evaluation",
+    "observability",
+    "audit",
+    "recovery"
+  ],
+  "recommended_after": [
+    "inventory-exception-replenishment"
+  ],
+  "learning_order": 13,
+  "status": "ready",
+  "evidence_stage": "simulation-design",
+  "readiness": [
+    "it"
+  ],
+  "risk": "high",
+  "entry_channels": [
+    "Synthetic sensor event stream",
+    "Maintenance review queue"
+  ],
+  "systems": [
+    "Historian sandbox",
+    "Equipment registry",
+    "CMMS sandbox",
+    "Safety procedure corpus",
+    "Operations ledger"
+  ],
+  "current_write_impact": "none",
+  "designed_write_impact": "approved-sandbox-write",
+  "current_autonomy": "A0",
+  "designed_autonomy": "A1-A3",
+  "implemented_project_stages": [],
+  "designed_project_stages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "verified_at": "2026-08-01",
+  "owner": "AX Engineer Roadmap maintainers",
+  "limitations": [
+    "The case uses synthetic sensor streams and writes only a sandbox maintenance proposal.",
+    "It never starts, stops, or changes physical equipment or safety controls.",
+    "No downtime, failure-rate, yield, or maintenance-cost outcome has been verified."
+  ]
+}

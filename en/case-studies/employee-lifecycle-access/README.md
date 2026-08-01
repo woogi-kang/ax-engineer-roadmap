@@ -1,5 +1,18 @@
 # Case: Employee lifecycle account and access operations
 
+<!-- case-boundary:start -->
+## Current scope and designed target
+
+| Scope | Write impact | Autonomy | P stages |
+|---|---|---|---|
+| Current public artifact | No external write | A0 | None |
+| Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4, P5 |
+
+Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+<!-- case-boundary:end -->
+
+> Public-case link: G02's gradual move from HR answers to transactions and human escalation informs access-change controls through the [application map](../../research/public-case-application-map.md).
+
 When an employee's status changes, accounts, permissions, devices, and initial work should change with it. This case goes beyond generating onboarding instructions. It prepares the required changes, allows only approved actions in test systems, and keeps cancellation and offboarding recoverable.
 
 ## 1. Case type and current evidence
