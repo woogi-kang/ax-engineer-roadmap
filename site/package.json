@@ -18,7 +18,7 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
   },
   "dependencies": {
-    "next": "16.2.12",
+    "next": "16.3.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -33,7 +33,7 @@
     "@vitejs/plugin-react": "6.0.5",
     "@vitejs/plugin-rsc": "0.5.32",
     "eslint": "9.39.4",
-    "eslint-config-next": "16.2.12",
+    "eslint-config-next": "16.3.0",
     "marked": "18.0.7",
     "react-server-dom-webpack": "19.2.8",
     "tailwindcss": "4.3.3",
