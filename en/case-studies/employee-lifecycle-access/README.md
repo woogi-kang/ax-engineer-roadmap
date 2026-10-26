@@ -15,7 +15,7 @@ The published assets are design documentation and metadata. The problem and curr
 
 The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
 
-> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies G02's gradual move from HR guidance to employment-verification and leave operations. This case practices task drafts and approval first, permits only approved account and access changes in a sandbox, and hands conflicts or high-risk requests to IT and security.
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies G02's move from HR guidance to transfers and employment verification. This case practices task drafts and approval first, permits only approved account and access changes in a sandbox, and hands conflicts or high-risk requests to IT and security.
 
 When an employee's status changes, accounts, permissions, devices, and initial work should change with it. This case goes beyond generating onboarding instructions. It prepares the required changes, allows only approved actions in test systems, and keeps cancellation and offboarding recoverable.
 

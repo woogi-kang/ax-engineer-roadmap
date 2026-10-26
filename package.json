@@ -9,7 +9,8 @@
   "scripts": {
     "bootstrap": "npm ci --ignore-scripts",
     "generate:cases": "node scripts/generate-case-boundary-blocks.mjs",
-    "check:docs": "node scripts/check-links.mjs && node scripts/check-roadmap.mjs && node scripts/check-public-cases.mjs",
+    "check:docs": "node scripts/check-links.mjs && node scripts/check-roadmap.mjs && node scripts/check-public-cases.mjs && npm run check:hiring",
+    "check:hiring": "node scripts/check-hiring-signals.mjs",
     "check:cases": "node scripts/check-cases.mjs && node scripts/generate-case-boundary-blocks.mjs --check",
     "check:copy": "node scripts/check-korean-copy-sync.mjs",
     "check:version": "node scripts/check-version-sync.mjs",
@@ -17,9 +18,10 @@
     "check:readme": "node scripts/check-readme-rendering.mjs",
     "check": "npm run check:docs && npm run check:cases && npm run check:copy && npm run check:version && npm run check:readme",
     "test:research": "node --test scripts/check-public-cases.test.mjs",
+    "test:hiring": "node --test scripts/check-hiring-signals.test.mjs",
     "test:python": "python3 -m unittest discover -s case-studies/beauty-d2c-voc/tests -p 'test_*.py' -v && python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py --verify-committed",
     "audit": "npm audit --audit-level=high",
-    "validate": "npm run check && npm run test:research && npm run test:python && npm run audit",
+    "validate": "npm run check && npm run test:research && npm run test:hiring && npm run test:python && npm run audit",
     "verify": "npm run bootstrap && npm run validate"
   },
   "license": "MIT",

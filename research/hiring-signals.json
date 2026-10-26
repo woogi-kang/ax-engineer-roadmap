@@ -1,0 +1,2209 @@
+{
+  "$schema": "./hiring-signals.schema.json",
+  "checked_at": "2026-10-26",
+  "recent_since": "2026-08-01",
+  "scope": {
+    "ko": "AX와 인접 직무의 공고 기록을 비교한다. 고유 채용 건수나 전체 시장을 대표하지 않으며 ID 대응이 미확인인 채널은 분리한다.",
+    "en": "Compares posting records for AX and adjacent roles. It does not count unique vacancies or represent the market; channels with unconfirmed identity matches remain separate."
+  },
+  "postings": [
+    {
+      "id": "J001",
+      "company": "FuriosaAI",
+      "title_original": "Software Engineer, Compiler (AX Engineer)",
+      "location": "Seoul, South Korea",
+      "canonical_job_id": "furiosa-career:4005376201",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "unknown",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "컴파일러 팀의 개발 흐름을 개선하는 내부 AX 공고다.",
+        "en": "An internal AX posting focused on the Compiler team’s engineering workflow."
+      },
+      "responsibilities": [
+        {
+          "ko": "개발·리뷰·CI의 병목을 찾고 도구를 실제 업무로 비교한다.",
+          "en": "Find bottlenecks in development, review, and CI; compare tools on real work."
+        },
+        {
+          "ko": "템플릿·가이드·온보딩을 운영하고 PR 주기와 CI 지표를 확인한다.",
+          "en": "Maintain templates, guidance, and onboarding; track PR and CI measures."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "관련 분야 학사, LLM 코딩 도구 경험과 소프트웨어 개발 흐름 이해를 요구한다.",
+          "en": "Requires a related bachelor’s degree, LLM coding-tool experience, and understanding of development workflows."
+        },
+        {
+          "ko": "도구 평가를 팀이 쓸 가이드로 옮길 수 있어야 한다.",
+          "en": "Must turn tool evaluations into usable team guidance."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "개발 3년 이상 또는 관련 석사·박사, 컴파일러·시스템 배경을 우대한다.",
+          "en": "Prefers 3+ years of development or a relevant master’s/PhD, and compiler or systems experience."
+        },
+        {
+          "ko": "LLM API 도구 구현, 내부 도구 확산과 기술 문서화 경험을 우대한다.",
+          "en": "Prefers LLM API tooling, internal-tool adoption, and technical documentation experience."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J001-S1",
+          "url": "https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문을 읽었다. Apply Here가 자기 페이지로 돌아가 모집 상태는 미확인이다.",
+            "en": "The job body was read. Apply Here looped to the same page, leaving availability unknown."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "Apply Here가 같은 페이지로 돌아가 접수 경로를 확인하지 못했다. 모집 상태는 미확인으로 둔다.",
+          "en": "Apply Here returned to the same page, so the application route was not established. Availability remains unknown."
+        },
+        {
+          "ko": "3년 이상은 우대 조건이다. 이전 Ashby와 현재 회사 페이지의 원 공고 ID 대응은 미확인이다.",
+          "en": "3+ years is preferred. The old Ashby record has not been confirmed as the same original posting."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/",
+          "relationship": "historical-reference",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "기존 Ashby 주소는 JavaScript 안내만 반환했다. 현재 회사 페이지와 원 공고 ID 대응은 미확인이다.",
+            "en": "The old Ashby URL returned only a JavaScript notice. Its original ID match to the current company page is unconfirmed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J002",
+      "company": "Lunit",
+      "title_original": "[영어 우대] Senior AX Engineer",
+      "location": "서울 강남구",
+      "canonical_job_id": "wanted:368564",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "closed",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "사내 승인·정책·데이터 기반을 설계하는 과거 공고다.",
+        "en": "A closed posting for internal approval, policy, and data foundations."
+      },
+      "responsibilities": [
+        {
+          "ko": "Slack 승인과 정책 에이전트, 데이터 커넥터를 만든다.",
+          "en": "Build Slack approval and policy agents and data connectors."
+        },
+        {
+          "ko": "SDK·런타임을 제공해 현업의 워크플로우 제작을 지원한다.",
+          "en": "Provide SDKs and runtimes that support business-team workflow creation."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "풀스택 개발 6년 이상, LLM API 운영 적용과 RAG 경험을 요구한다.",
+          "en": "Requires 6+ years of full-stack development, production LLM APIs, and RAG experience."
+        },
+        {
+          "ko": "승인 워크플로우, Python 또는 TypeScript 운영 경험과 비개발 부서 협업을 요구한다.",
+          "en": "Requires approval-workflow and production Python or TypeScript experience, plus non-engineering collaboration."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J002-S1",
+          "url": "https://recruit.wanted.co.kr/wd/368564",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "closed",
+          "availability_basis": "explicit-closed",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "마감된 공고라고 명시한다. 상시채용 문구도 남아 있다.",
+            "en": "Explicitly marked closed; rolling-recruitment wording remains."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/02-human-approved-workflow.md",
+        "projects/03-sandbox-integration.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "원티드는 마감 표시와 상시채용 문구를 함께 보여 준다. 명시적 마감 표시를 따른다.",
+          "en": "Wanted shows both a closed label and rolling-recruitment wording; the explicit closed label takes precedence."
+        },
+        {
+          "ko": "기존 Workable 본문은 접근하지 못했고 원 공고 ID 대응도 미확인이다.",
+          "en": "The old Workable body was unavailable and its original-posting identity match is unconfirmed."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://apply.workable.com/lunit/j/E3C22F589F/",
+          "relationship": "historical-reference",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "기존 Workable 주소는 not_found=true로 이동했다. 현재 Wanted 기록과 원 공고 ID 대응은 미확인이다.",
+            "en": "The old Workable URL redirected to not_found=true. Its original ID match to the Wanted record is unconfirmed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J003",
+      "company": "미리디",
+      "title_original": "AX 엔지니어 (AX Engineer)",
+      "location": "서울 구로구",
+      "canonical_job_id": "wanted:384409",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "closed",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "경력 초반의 사내 Agent·인프라 운영 지원 공고다.",
+        "en": "An early-career posting supporting internal agents and infrastructure operations."
+      },
+      "responsibilities": [
+        {
+          "ko": "Cloudflare·n8n·사내 Agent를 운영하고 작은 연동·배포·런북을 개선한다.",
+          "en": "Operate Cloudflare, n8n, and internal agents; improve small integrations, deployments, and runbooks."
+        },
+        {
+          "ko": "AX Manager·DevOps·정보보호 검토 아래 작업한다.",
+          "en": "Work under AX Manager, DevOps, and security review."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "Python 또는 TypeScript/Node.js로 프로그램·API를 만들고 Git 피드백을 반영한 경험을 요구한다.",
+          "en": "Requires building programs or APIs in Python or TypeScript/Node.js and incorporating feedback through Git."
+        },
+        {
+          "ko": "작은 서비스 배포, 로그 기반 문제 해결과 자동화 도구 또는 LLM API 프로젝트 경험을 요구한다.",
+          "en": "Requires small-service deployment, log-based troubleshooting, and an automation-tool or LLM API project."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J003-S1",
+          "url": "https://recruit.wanted.co.kr/wd/384409",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "closed",
+          "availability_basis": "explicit-closed",
+          "published_at": null,
+          "closing_date": "2026-11-02",
+          "note": {
+            "ko": "마감 표시를 확인했다. 남아 있는 마감일은 2026-11-02다.",
+            "en": "A closed label was observed; the retained deadline is 2026-11-02."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "2026-11-02 마감일이 남아 있어도 본문은 마감됐다고 표시한다.",
+          "en": "The body explicitly says closed despite retaining a 2026-11-02 deadline."
+        },
+        {
+          "ko": "1년 계약직이며 상단은 신입~3년으로 표시한다. 중요한 인프라·보안 판단이나 고객 서비스 온콜을 혼자 맡는 역할은 아니다.",
+          "en": "It is a one-year contract, summarized as entry-level to 3 years of experience. It excludes sole responsibility for major infrastructure/security decisions or customer-service on-call."
+        },
+        {
+          "ko": "Greeting 주소와 원티드 공고의 ID 대응은 확인하지 못했다.",
+          "en": "The identity match between the Greeting URL and Wanted record is unconfirmed."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://miridih.career.greetinghr.com/ko/o/220034",
+          "relationship": "possible-duplicate",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "Greeting 주소는 접근하지 못해 본문과 원 공고 ID 대응을 확인하지 못했다. Wanted의 모집 상태와 합치지 않는다.",
+            "en": "The Greeting URL was inaccessible, leaving its body and original ID match unverified. Its state is not merged with Wanted."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J004",
+      "company": "POSTECH AIR센터",
+      "title_original": "AX 엔지니어 (채용 중)",
+      "location": "경북 포항, 포항공과대학교",
+      "canonical_job_id": "postechair:recruit/ax-engineer",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "unknown",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "학내 행정부서를 대상으로 한 사내 FDE 모델을 설명한다.",
+        "en": "Describes an internal FDE model serving university administrative departments."
+      },
+      "responsibilities": [
+        {
+          "ko": "현장의 문제를 정의하고 폐쇄망 등 제약 안에서 솔루션을 배포한다.",
+          "en": "Define field problems and deploy solutions within constraints such as isolated networks."
+        },
+        {
+          "ko": "현업 정착을 지원하고 부서 간 재사용 패턴과 설계 결정을 기록한다.",
+          "en": "Support adoption and document reusable patterns and design decisions across departments."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "풀스택 개발, LLM/RAG/agent 앱, 비개발 조직 협업과 Linux·Docker 배포 역량을 요구한다.",
+          "en": "Requires full-stack development, LLM/RAG/agent applications, non-engineering collaboration, and Linux/Docker deployment skills."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "온프레미스·GPU 운영, 평가·관측, ELT·벡터 검색과 행정·공공 도메인 경험을 우대한다.",
+          "en": "Prefers on-premises/GPU operations, evaluation and observability, ELT/vector retrieval, and administrative or public-sector experience."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J004-S1",
+          "url": "https://postechair.github.io/recruit/ax-engineer/",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "제목은 채용 중이지만 같은 AX 공고의 접수 경로를 확인하지 못했다.",
+            "en": "The title says hiring, but an application route for this AX posting was not established."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "제목에는 채용 중이라고 적혀 있지만 접수 링크가 종료된 다른 직무를 가리킨다. 같은 AX 공고의 접수 가능 여부를 확인하지 못해 모집 상태를 미확인으로 둔다.",
+          "en": "The title says hiring, but the application link points to a closed different role. Availability for this AX posting remains unknown."
+        },
+        {
+          "ko": "게시일이 없어 최근 신설이나 모집 증가의 근거로 쓰지 않는다.",
+          "en": "No publication date is established, so it does not show recent creation or hiring growth."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54573987",
+          "relationship": "application-route-mismatch",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "연결된 사람인 공고는 마감 표시가 있고 세부 직무가 platform-lead를 가리킨다. 같은 AX 공고의 접수·마감 근거로 쓰지 않는다.",
+            "en": "The linked Saramin posting is closed and its role details point to platform-lead. It does not establish application availability or closure for this AX posting."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J005",
+      "company": "대웅",
+      "title_original": "AX Engineer",
+      "location": "서울 강남구",
+      "canonical_job_id": "wanted:390449",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "unknown",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "현업 요구부터 구현·평가·운영 전환까지 맡는 AX TF 공고다.",
+        "en": "An AX TF posting spanning business requirements, implementation, evaluation, and operational transition."
+      },
+      "responsibilities": [
+        {
+          "ko": "정답 데이터로 품질을 확인하고 사내 시스템과 AI를 연결한다.",
+          "en": "Evaluate quality against reference data and connect internal systems with AI."
+        },
+        {
+          "ko": "공용 구성요소를 운영하고 실행 방법과 한계를 운영자에게 넘긴다.",
+          "en": "Operate shared components and hand off execution procedures and limitations."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "학사와 소프트웨어 개발 3년 이상, LLM 기능을 실제 사용자에게 제공한 경험을 요구한다.",
+          "en": "Requires a bachelor’s degree, 3+ years of software development, and delivering LLM features to users."
+        },
+        {
+          "ko": "Python 또는 TypeScript와 불명확한 요구를 구체화한 경험을 요구한다.",
+          "en": "Requires Python or TypeScript and experience clarifying ambiguous requirements."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J005-S1",
+          "url": "https://recruit.wanted.co.kr/wd/390449",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 상시채용 문구는 읽었지만 현재 지원 경로는 확인하지 못했다.",
+            "en": "The body and rolling-recruitment wording were read, but a current application route was not verified."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "상시채용 문구만으로 현재 지원 가능 여부를 확인하지 못했다.",
+          "en": "Rolling-recruitment wording alone did not establish current application availability."
+        },
+        {
+          "ko": "리멤버와 내용이 유사하지만 원 공고 ID 대응이 없어 상태·날짜를 합치지 않는다.",
+          "en": "The Remember description is similar, but original IDs are not linked; dates and availability are not merged."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://career.rememberapp.co.kr/job/posting/344925",
+          "relationship": "possible-duplicate",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "같은 회사·직함 또는 유사한 설명이지만 원 공고 ID 대응은 확인되지 않았다. 이 URL의 상태·날짜는 위 공고에 합치지 않는다.",
+            "en": "The company/title or description is similar, but the original ID match is unconfirmed. Its dates and availability are not merged into this record."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J006",
+      "company": "대웅",
+      "title_original": "Senior AX Engineer",
+      "location": "서울 강남구",
+      "canonical_job_id": "wanted:390450",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "unknown",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "AX 과제의 기술 선택·공용 기반·코칭을 맡는 선임 공고다.",
+        "en": "A senior posting owning technical choices, shared AX foundations, and coaching."
+      },
+      "responsibilities": [
+        {
+          "ko": "구축·도입·비구축을 판단하고 과제의 기술 방향과 품질을 관리한다.",
+          "en": "Decide whether to build, adopt, or not build; guide technical direction and quality."
+        },
+        {
+          "ko": "게이트웨이·커넥터·평가 기반을 설계하고 코드·보안 리뷰와 코칭을 맡는다.",
+          "en": "Design gateways, connectors, and evaluation foundations; review code and security and coach engineers."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "학사와 개발 5년 이상, 엔터프라이즈 AI 시스템의 설계·운영 경험을 요구한다.",
+          "en": "Requires a bachelor’s degree, 5+ years of development, and enterprise AI design and operations experience."
+        },
+        {
+          "ko": "기술 선택과 여러 엔지니어의 출시·운영을 이끈 경험을 요구한다.",
+          "en": "Requires technical selection and leadership of multi-engineer delivery and operations."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J006-S1",
+          "url": "https://recruit.wanted.co.kr/wd/390450",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 상시채용 문구는 읽었지만 현재 지원 경로는 확인하지 못했다.",
+            "en": "The body and rolling-recruitment wording were read, but a current application route was not verified."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "상시채용 문구만으로 현재 지원 가능 여부를 확인하지 못했다.",
+          "en": "Rolling-recruitment wording alone did not establish current application availability."
+        },
+        {
+          "ko": "리멤버와 원 공고 ID 대응이 확인되지 않아 별도 기록으로 둔다.",
+          "en": "The original ID match with Remember is unconfirmed, so it remains a separate record."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://career.rememberapp.co.kr/job/posting/344926",
+          "relationship": "possible-duplicate",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "같은 회사·직함 또는 유사한 설명이지만 원 공고 ID 대응은 확인되지 않았다. 이 URL의 상태·날짜는 위 공고에 합치지 않는다.",
+            "en": "The company/title or description is similar, but the original ID match is unconfirmed. Its dates and availability are not merged into this record."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J007",
+      "company": "대웅",
+      "title_original": "AX Product Manager",
+      "location": "서울 강남구",
+      "canonical_job_id": "wanted:390448",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "unknown",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "사내 AI 제품의 문제·KPI·직접 프로토타입·실제 사용을 맡는 PM 공고다.",
+        "en": "A PM posting for internal AI problem definition, KPIs, hands-on prototypes, and adoption."
+      },
+      "responsibilities": [
+        {
+          "ko": "업무 기준선·KPI·중단 기준을 정하고 현업과 가설을 검증한다.",
+          "en": "Define workflow baselines, KPIs, and stop criteria, then validate hypotheses with business users."
+        },
+        {
+          "ko": "AI 도구로 프로토타입을 만들고 사용 결과에 따라 제품을 개선하거나 중단한다.",
+          "en": "Prototype with AI tools and improve or retire products based on usage results."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "학사와 PM/PO 또는 제품 기획 5년 이상, 사내 시스템·B2B 제품 개선 경험을 요구한다.",
+          "en": "Requires a bachelor’s degree, 5+ years in PM/PO or product planning, and internal-system or B2B product improvement experience."
+        },
+        {
+          "ko": "AI 프로토타입 제작, LLM 제품 기획과 가설 검증·중단 판단 경험을 요구한다.",
+          "en": "Requires AI prototyping, LLM product planning, and hypothesis-testing and stop decisions."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J007-S1",
+          "url": "https://recruit.wanted.co.kr/wd/390448",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 상시채용 문구는 읽었지만 현재 지원 경로는 확인하지 못했다.",
+            "en": "The body and rolling-recruitment wording were read, but a current application route was not verified."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/02-human-approved-workflow.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "게시일과 실제 지원 경로는 미확인이다. 집계사이트의 2026-10-06을 원문 게시일로 옮기지 않았다.",
+          "en": "Publication and the active application route are unconfirmed. The aggregator’s 2026-10-06 date was not treated as the original publication date."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J008",
+      "company": "윗유",
+      "title_original": "AX Engineer",
+      "location": "서울 강남구",
+      "canonical_job_id": "wanted:392673",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "unknown",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "기존 사내 플랫폼을 개선하고 업무 자동화를 운영하는 공고다.",
+        "en": "A posting for improving an existing internal platform and operating workflow automation."
+      },
+      "responsibilities": [
+        {
+          "ko": "기존 코드·테스트·관측을 개선하고 현업 자동화 과제를 구현한다.",
+          "en": "Improve existing code, tests, and observability; implement business automation tasks."
+        },
+        {
+          "ko": "SaaS·데이터를 연결하고 처리 시간·오류·사용 현황을 측정한다.",
+          "en": "Connect SaaS and data, measuring completion time, errors, and use."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "서비스 운영, 타인 코드의 분석·유지보수와 Git·테스트·리뷰 경험을 요구한다.",
+          "en": "Requires service operations, analysis and maintenance of others’ code, and Git, testing, and review experience."
+        },
+        {
+          "ko": "웹·자동화 개발, REST·인증·장애 처리와 AI 코딩 결과 검증을 요구한다.",
+          "en": "Requires web or automation development, REST/authentication/failure handling, and verification of AI-generated code."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J008-S1",
+          "url": "https://recruit.wanted.co.kr/wd/392673",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 상시채용 문구는 읽었지만 현재 지원 경로는 확인하지 못했다.",
+            "en": "The body and rolling-recruitment wording were read, but a current application route was not verified."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "지원 버튼은 확인하지 못했다. 상단의 경력 2년 이상 표시는 다른 채널의 요약과 다를 수 있다.",
+          "en": "No application button was verified. The header’s 2+ years summary may differ from other channels."
+        },
+        {
+          "ko": "리멤버·사람인과 원 공고 ID 대응이 없어 각 채널의 날짜·상태를 이전하지 않는다.",
+          "en": "Original IDs are not matched to Remember or Saramin, so their dates and states are not transferred."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://career.rememberapp.co.kr/job/posting/347613",
+          "relationship": "possible-duplicate",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "같은 회사·직함 또는 유사한 설명이지만 원 공고 ID 대응은 확인되지 않았다. 이 URL의 상태·날짜는 위 공고에 합치지 않는다.",
+            "en": "The company/title or description is similar, but the original ID match is unconfirmed. Its dates and availability are not merged into this record."
+          }
+        },
+        {
+          "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55308192",
+          "relationship": "possible-duplicate",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "사람인 동명 기록은 본문 대신 메타데이터만 확인했고 2026-10-16 마감을 표시한다. 원 공고 ID 대응이 없어 상태·날짜를 합치지 않는다.",
+            "en": "Only metadata was read for the same-titled Saramin record, showing a 2026-10-16 closure. Without an original ID match, its state and dates are not merged."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J009",
+      "company": "라이넨스",
+      "title_original": "[세탁공장] AX Engineer (풀스택, Forward Deployed)",
+      "location": "서울 강서구, 직영 공장 현장",
+      "canonical_job_id": "wanted:379254",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "unknown",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "자사 세탁공장 현장에서 문제를 찾고 배포하는 내부 FDE 공고다.",
+        "en": "An internal FDE posting for discovery and deployment in directly operated laundry factories."
+      },
+      "responsibilities": [
+        {
+          "ko": "생산·품질·수배송·설비 흐름을 관찰해 도구와 데이터 연결을 만든다.",
+          "en": "Observe production, quality, delivery, and equipment workflows to build tools and data integrations."
+        },
+        {
+          "ko": "현장 사용과 운영 지표를 확인하고 공장별 차이를 남겨 재사용한다.",
+          "en": "Track field use and operational measures, preserving site differences when reusing solutions."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "현장 문제 정의, 사용자 소통과 웹·자동화 구현·배포 경험을 요구한다.",
+          "en": "Requires field-problem definition, user communication, and web or automation implementation and deployment."
+        },
+        {
+          "ko": "Python·TypeScript·JavaScript·SQL 등 한 기술과 API·DB·클라우드 활용을 요구한다.",
+          "en": "Requires a stack such as Python, TypeScript, JavaScript, or SQL and use of APIs, databases, and cloud services."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J009-S1",
+          "url": "https://recruit.wanted.co.kr/wd/379254",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 상시채용 문구는 읽었지만 현재 지원 경로는 확인하지 못했다.",
+            "en": "The body and rolling-recruitment wording were read, but a current application route was not verified."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "Forward Deployed라는 제목이지만 대상은 자사 직영 공장이다.",
+          "en": "Despite the Forward Deployed title, the target is the company’s own factories."
+        },
+        {
+          "ko": "게시일과 현재 지원 경로는 확인하지 못했다.",
+          "en": "Publication and a current application route were not established."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J010",
+      "company": "바잉스퀘어",
+      "title_original": "AX Engineer",
+      "location": "서울 강남구",
+      "canonical_job_id": "wanted:372625",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "closed",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "홀세일의 상품·주문·재고·정산을 다루는 사내 AX 공고다.",
+        "en": "An internal AX posting covering wholesale products, orders, inventory, and settlement."
+      },
+      "responsibilities": [
+        {
+          "ko": "현업 흐름을 분석해 Agent·RAG와 내부 도구를 만든다.",
+          "en": "Analyze business workflows and build agents, RAG, and internal tools."
+        },
+        {
+          "ko": "Slack·ERP·CRM 등을 연결하고 AWS에서 운영하며 피드백을 반영한다.",
+          "en": "Integrate systems such as Slack, ERP, and CRM; operate on AWS and incorporate feedback."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "Python 또는 TypeScript 제품 개발, LLM API 서비스와 현업 요구 구조화 경험을 제시한다.",
+          "en": "Lists Python or TypeScript product development, LLM API services, and structuring business requirements."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "Prompt/Agent/RAG, Docker, REST 연동과 현장 문제 분해는 우대형 문구로 제시한다.",
+          "en": "Uses preference wording for Prompt/Agent/RAG, Docker, REST integration, and field-problem decomposition."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J010-S1",
+          "url": "https://recruit.wanted.co.kr/wd/372625",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "closed",
+          "availability_basis": "explicit-closed",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "마감된 공고라고 명시한다.",
+            "en": "Explicitly marked closed."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "원티드에서 마감 표시를 확인했다. 자격요건 절에는 필수형 문장과 우대형 문구가 섞여 있다.",
+          "en": "Wanted marks the record closed. Its qualifications section mixes requirement and preference wording."
+        },
+        {
+          "ko": "상단의 경력 5~10년은 플랫폼 요약이며 별도 우대 섹션은 확인되지 않았다.",
+          "en": "The 5–10-year header is a platform summary; no separate preferred-qualifications section was observed."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J011",
+      "company": "대웅 / 웰다",
+      "title_original": "[웰다] AX Engineer (3~8년)",
+      "location": "서울 강남구",
+      "canonical_job_id": "wanted:364116",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "closed",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "웰다의 제품·비즈니스·개발 업무 자동화 공고다.",
+        "en": "A posting for automation across Welda’s product, business, and engineering workflows."
+      },
+      "responsibilities": [
+        {
+          "ko": "AI 워크플로우와 멀티에이전트를 구현해 팀 업무에 적용한다.",
+          "en": "Implement AI workflows and multi-agent systems in team work."
+        },
+        {
+          "ko": "성능·안정성·비용을 관찰하며 사용자의 피드백을 반영한다.",
+          "en": "Monitor performance, reliability, and cost and incorporate user feedback."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "학사와 AI 서비스·자동화 개발 3년 이상, 팀 업무에 Agentic AI를 적용한 경험을 요구한다.",
+          "en": "Requires a bachelor’s degree, 3+ years of AI-service or automation development, and applying agentic AI to team workflows."
+        },
+        {
+          "ko": "Skills/Hooks/Plugins·MCP 또는 유사 도구, 프롬프트·하네스 개선과 Python/TypeScript/Go 중 한 언어를 요구한다.",
+          "en": "Requires Skills/Hooks/Plugins, MCP or comparable tools, prompt/harness improvement, and one of Python, TypeScript, or Go."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J011-S1",
+          "url": "https://recruit.wanted.co.kr/wd/364116",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "closed",
+          "availability_basis": "explicit-closed",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "마감된 공고라고 명시한다.",
+            "en": "Explicitly marked closed."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "마감 표시가 있으며 상시채용 문구도 남아 있다. 대웅 AX TF 공고와 팀·직무·기록 ID가 다르다.",
+          "en": "It is marked closed while retaining rolling-recruitment wording. Its team, duties, and record ID differ from the Daewoong AX TF posting."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J012",
+      "company": "라이너(Liner)",
+      "title_original": "AX Engineer (Enterprise)",
+      "location": "서울 마포구",
+      "canonical_job_id": "wanted:351750",
+      "role_scope": "customer-delivery",
+      "added_at": "2026-10-26",
+      "availability": "closed",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "기업 고객의 AI 업무를 구현하고 재사용하는 딜리버리 공고다.",
+        "en": "A customer-delivery posting for implementing and reusing enterprise AI workflows."
+      },
+      "responsibilities": [
+        {
+          "ko": "고객 업무를 RAG·에이전트 흐름으로 재설계하고 평가·관측·가드레일을 만든다.",
+          "en": "Redesign customer work into RAG and agent workflows with evaluation, monitoring, and guardrails."
+        },
+        {
+          "ko": "여러 고객에서 반복되는 구조를 플랫폼 구성요소로 옮긴다.",
+          "en": "Turn patterns shared across customers into platform components."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "본문은 소프트웨어·ML 3년 이상 또는 동등 경험과 LLM 앱의 운영 적용을 요구한다.",
+          "en": "The body requires 3+ years in software/ML or equivalent experience, plus production LLM applications."
+        },
+        {
+          "ko": "고객·비개발 조직과 문제를 정의하고 구현을 이끈 경험을 요구한다.",
+          "en": "Requires defining problems with customers or non-engineering teams and leading delivery."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J012-S1",
+          "url": "https://recruit.wanted.co.kr/wd/351750",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "closed",
+          "availability_basis": "explicit-closed",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "마감된 공고라고 명시한다.",
+            "en": "Explicitly marked closed."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "상단은 5년 이상, 본문은 3년 이상 또는 동등 경험으로 다르다. 하나의 연차 조건으로 합치지 않는다.",
+          "en": "The header says 5+ years while the body says 3+ years or equivalent. These are not normalized into one requirement."
+        },
+        {
+          "ko": "마감된 고객 딜리버리 공고이며 내부 AX 역할과 구분한다.",
+          "en": "This is a closed customer-delivery posting, distinct from internal AX."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J013",
+      "company": "Anthropic",
+      "title_original": "Staff Software Engineer, GTM AI Engineering",
+      "location": "Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA",
+      "canonical_job_id": "greenhouse:5390966008",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "자사 영업 업무의 에이전트·평가·공유 도구를 만드는 공고다.",
+        "en": "A posting for agents, evaluation, and shared tooling in the company’s own go-to-market work."
+      },
+      "responsibilities": [
+        {
+          "ko": "사내 영업 에이전트를 구현하고 승인·인계·운영 평가와 관측을 설계한다.",
+          "en": "Build internal sales agents and design approval, handoff, production evaluation, and observability."
+        },
+        {
+          "ko": "CRM·데이터와 연결하고 여러 빌더가 쓰는 코드와 도구를 관리한다.",
+          "en": "Integrate CRM and data and maintain code and tooling shared by builders."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "Python 또는 TypeScript 운영 앱, LLM·컨텍스트·MCP·평가 경험과 SQL을 요구한다.",
+          "en": "Requires production Python or TypeScript applications, LLM/context/MCP/evaluation experience, and SQL."
+        },
+        {
+          "ko": "평가와 대화 기록으로 실제 결함을 찾고 고친 경험을 요구한다.",
+          "en": "Requires finding and fixing real defects using evaluations and transcripts."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "소프트웨어·ML·FDE 8년 이상, Claude Code·Agent SDK와 GTM 시스템 경험을 우대한다.",
+          "en": "Prefers 8+ years in software/ML/FDE, Claude Code/Agent SDK, and GTM systems."
+        },
+        {
+          "ko": "공유 코드 운영과 실험·인과 분석 경험을 우대한다.",
+          "en": "Prefers shared-code maintenance and experimentation or causal-analysis experience."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J013-S1",
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390966008",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원 링크 또는 버튼을 확인했다. 실제 지원 제출은 하지 않았다.",
+            "en": "The job body and an application link or button were observed. No application was submitted."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "8년 이상은 우대 조건이다. 이전 검색 제목 GTM Claudification은 별칭으로만 참고하며 제목이 바뀐 날짜는 모른다.",
+          "en": "8+ years is preferred. The older search title GTM Claudification is only an alias reference; its change date is unknown."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J014",
+      "company": "Anthropic",
+      "title_original": "AI Operations Engineer, Partnerships",
+      "location": "San Francisco, CA",
+      "canonical_job_id": "greenhouse:5391151008",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "파트너 운영 시스템 위에 업무 자동화를 만드는 공고다.",
+        "en": "A posting for workflow automation on top of partner-operations systems."
+      },
+      "responsibilities": [
+        {
+          "ko": "파트너 온보딩·등록·연락을 원본 시스템과 연결해 자동화한다.",
+          "en": "Automate partner onboarding, registration, and communications through systems of record."
+        },
+        {
+          "ko": "위험 단계의 검토·오류·이관을 운영하고 재사용 패턴을 남긴다.",
+          "en": "Operate review, failure handling, and escalation for risky steps and preserve reusable patterns."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "LLM·도구 호출·MCP·평가와 업무 API 연동 경험을 요구한다.",
+          "en": "Requires LLM, tool-calling, MCP, evaluation, and business-API integration experience."
+        },
+        {
+          "ko": "Python/JavaScript, 자동화 위험 판단, 업무 재설계와 문서화를 요구한다.",
+          "en": "Requires Python/JavaScript, automation-risk judgment, workflow redesign, and documentation."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "운영엔지니어링·RevOps 등 5년 이상, 파트너 도메인과 운영 중인 사내 AI 경험을 우대한다.",
+          "en": "Prefers 5+ years in operations engineering/RevOps or similar work, partner-domain knowledge, and operating internal AI tools."
+        },
+        {
+          "ko": "Claude API·Code·에이전트 프레임워크 경험을 우대한다.",
+          "en": "Prefers Claude API, Claude Code, or agent-framework experience."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J014-S1",
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원 링크 또는 버튼을 확인했다. 실제 지원 제출은 하지 않았다.",
+            "en": "The job body and an application link or button were observed. No application was submitted."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "5년 이상은 우대 조건이다. 시스템 기반 담당자와 그 위의 업무 자동화 담당자를 구분한다.",
+          "en": "5+ years is preferred. The posting separates the systems-foundation owner from the workflow-automation owner."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J015",
+      "company": "Anthropic",
+      "title_original": "Staff Forward Deployed Engineer",
+      "location": "New York City, NY; San Francisco, CA; Seattle, WA",
+      "canonical_job_id": "greenhouse:5449229008",
+      "role_scope": "customer-delivery",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "기업 고객의 기술 전략과 구현·인수인계를 이끄는 Staff FDE 공고다.",
+        "en": "A Staff FDE posting leading enterprise-customer strategy, implementation, and handoff."
+      },
+      "responsibilities": [
+        {
+          "ko": "여러 고객 과제의 설계와 직접 구현을 보안·조달 조건에 맞춰 이끈다.",
+          "en": "Lead architecture and hands-on delivery across customer workstreams within security and procurement constraints."
+        },
+        {
+          "ko": "고객이 운영할 수 있도록 넘기고 반복 배포 패턴을 정리한다.",
+          "en": "Hand over systems customers can operate and document repeatable deployment patterns."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "기업 시스템 설계와 고객 기술 리딩, 운영 소프트웨어 경험을 제시한다.",
+          "en": "Lists enterprise system design, customer-facing technical leadership, and production-software experience."
+        },
+        {
+          "ko": "Python, LLM·에이전트 실습과 AI 코딩 결과 검토를 기대한다.",
+          "en": "Expects Python, hands-on LLM/agent work, and review of AI-generated code."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "금융·의료 등 산업 배경과 Python 외 추가 언어를 우대한다.",
+          "en": "Values an industry background such as finance or healthcare and languages beyond Python."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J015-S1",
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5449229008",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원 링크 또는 버튼을 확인했다. 실제 지원 제출은 하지 않았다.",
+            "en": "The job body and an application link or button were observed. No application was submitted."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "정식 필수·우대 목록 대신 인재 프로필을 제시한다. 에이전트의 운영 배포 이력은 필수가 아니지만 운영 소프트웨어 경험과 에이전트 실습은 기대한다.",
+          "en": "The posting uses a candidate profile rather than formal required/preferred lists. Production-agent delivery is not required, but production-software experience and agent practice are expected."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J016",
+      "company": "Anthropic",
+      "title_original": "Applied AI Architect",
+      "location": "Seoul, South Korea",
+      "canonical_job_id": "greenhouse:5390735008",
+      "role_scope": "pre-sales",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "한국 기업의 기술 평가와 설계를 지원하는 pre-sales 공고다.",
+        "en": "A pre-sales posting supporting technical evaluation and architecture for Korean enterprises."
+      },
+      "responsibilities": [
+        {
+          "ko": "기업의 기술 도입을 자문하고 업무별 평가·아키텍처를 안내한다.",
+          "en": "Advise enterprise adoption and guide use-case evaluation and architecture."
+        },
+        {
+          "ko": "공통 통합 패턴과 고객 피드백을 제품 조직에 전달한다.",
+          "en": "Feed recurring integration patterns and customer feedback into product teams."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "고객 기술 역할, 기업 구매 절차 대응과 기술·사업 소통 경험을 요구한다.",
+          "en": "Requires customer-facing technical work, enterprise buying-cycle experience, and technical/business communication."
+        },
+        {
+          "ko": "원어민 수준 한국어와 비즈니스 영어를 요구한다.",
+          "en": "Requires native-level Korean and business-level English."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "관련 경력 5년 이상, 클라우드·기업 통합, Python과 LLM/ML 배경을 우대한다.",
+          "en": "Prefers 5+ years of relevant experience, cloud/enterprise integration, Python, and an LLM/ML background."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J016-S1",
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390735008",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원 링크 또는 버튼을 확인했다. 실제 지원 제출은 하지 않았다.",
+            "en": "The job body and an application link or button were observed. No application was submitted."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "5년 이상은 우대 조건이며 본문은 pre-sales라고 명시한다. 직접 구현·운영 소유와 같은 역할로 묶지 않는다.",
+          "en": "5+ years is preferred and the body explicitly identifies pre-sales. Do not equate this with ownership of implementation and operations."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J017",
+      "company": "General Motors",
+      "title_original": "Sr. AI/Automation Engineer - HR Technology (Remote India - Night Shift)",
+      "location": "Remote, India",
+      "canonical_job_id": "gm:JR-202605425",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "dated-recent",
+      "summary": {
+        "ko": "HR 플랫폼의 AI·자동화 통합을 맡는 내부 역할이다.",
+        "en": "An internal role integrating AI and automation into HR platforms."
+      },
+      "responsibilities": [
+        {
+          "ko": "ServiceNow·Workday를 연결하고 HR 자동화 로드맵을 구현한다.",
+          "en": "Integrate ServiceNow and Workday and implement the HR automation roadmap."
+        },
+        {
+          "ko": "요구 분석, 테스트·배포, 보안·데이터 무결성과 문서화를 맡는다.",
+          "en": "Own requirements, testing, deployment, security, data integrity, and documentation."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "관련 학사·석사, HR 플랫폼 통합 6년 이상과 백엔드 개발 3년 이상을 요구한다.",
+          "en": "Requires a relevant bachelor’s/master’s degree, 6+ years in HR-platform integration, and 3+ years in backend development."
+        },
+        {
+          "ko": "API 역량과 HR·IT·PM·현업 협업을 요구한다.",
+          "en": "Requires API skills and collaboration across HR, IT, PM, and business users."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "Workday·ServiceNow·자동화 자격과 Azure/AWS/GCP 경험을 우대한다.",
+          "en": "Prefers Workday, ServiceNow, or automation certifications and Azure/AWS/GCP experience."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J017-S1",
+          "url": "https://search-careers.gm.com/en/jobs/jr-202605425/sr-ai-automation-engineer-hr-technology-remote-india-night-shift/",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": "2026-09-21",
+          "closing_date": null,
+          "note": {
+            "ko": "공식 게시일 2026-09-21과 Apply Now를 확인했다.",
+            "en": "The official 2026-09-21 posting date and Apply Now link were observed."
+          }
+        },
+        {
+          "id": "J017-S2",
+          "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Remote---India/Sr-AI-Automation-Engineer----HR-Technology--Remote-India---Night-Shift-_JR-202605425/apply",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "unavailable",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "회사 페이지의 지원 링크 대상이지만 본문은 추출하지 못했다. 모집 상태는 미확인이다.",
+            "en": "The company page links here for applications, but its body was not extracted. Availability is unknown."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "2026-09-21은 공식 페이지 게시일이다. 직무가 처음 생긴 날이나 시장 증가를 뜻하지 않는다.",
+          "en": "2026-09-21 is the official page’s posting date, not proof of the role’s creation or market growth."
+        },
+        {
+          "ko": "Apply Now가 보이지만 연결된 Workday 본문은 추출하지 못했다. 지원 제출은 시도하지 않았다.",
+          "en": "Apply Now is visible, but the linked Workday body was not extracted. No application was submitted."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J018",
+      "company": "OneSpan",
+      "title_original": "AI Automation Engineer",
+      "location": "Barcelona",
+      "canonical_job_id": "onespan:8278879",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "unknown",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "R&D 팀의 수작업을 줄이고 팀에 운영을 넘기는 공고다.",
+        "en": "A posting for reducing R&D manual work and handing ownership to the team."
+      },
+      "responsibilities": [
+        {
+          "ko": "반복 작업의 빈도·비용을 살펴 에이전트나 스크립트를 선택한다.",
+          "en": "Prioritize repetitive work by frequency and cost and choose agents or scripts."
+        },
+        {
+          "ko": "팀과 함께 구현하고 유지할 수 있는 문서·도구를 넘긴다.",
+          "en": "Build with the team and hand over maintainable tools and documentation."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "Agentic AI 이해, 백엔드·스크립팅·CI/CD 구현과 협업을 인재 프로필로 제시한다.",
+          "en": "Lists agentic-AI understanding, backend/scripting/CI/CD implementation, and collaboration as the desired profile."
+        },
+        {
+          "ko": "유창한 영어는 필수로 명시한다.",
+          "en": "Explicitly requires fluent English."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "스페인어를 우대하며 리더십은 필수가 아니라고 설명한다.",
+          "en": "Values Spanish and explicitly states that leadership is not required."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J018-S1",
+          "url": "https://www.onespan.com/about/careers/job/ai-automation-engineer-8278879?gh_jid=8278879&langcode=en",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문은 있지만 지원 버튼·현재 모집 표시·마감일은 미확인이다.",
+            "en": "The body is available, but an application button, current hiring label, and deadline are unverified."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "직무 본문은 읽었으나 지원 버튼·명시적 모집 상태·마감일을 확인하지 못했다.",
+          "en": "The body was read, but no application button, explicit availability, or closing date was verified."
+        },
+        {
+          "ko": "정식 필수·우대 구획 없이 인재 프로필을 설명하며 영어를 필수로 표시한다.",
+          "en": "The page presents a candidate profile without formal required/preferred sections and explicitly requires English."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J019",
+      "company": "OpenAI",
+      "title_original": "Forward Deployed Engineer - Seoul",
+      "location": "Seoul, South Korea",
+      "canonical_job_id": "ashby:b43339a1-e830-4761-a193-3438f34f9ebb",
+      "role_scope": "customer-delivery",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "서울에서 고객 AI 과제를 운영 배포까지 맡는 FDE 공고다.",
+        "en": "A Seoul FDE posting owning customer AI work through production rollout."
+      },
+      "responsibilities": [
+        {
+          "ko": "고객 과제 발견·범위·설계·구현·배포를 맡는다.",
+          "en": "Own customer discovery, scoping, design, implementation, and rollout."
+        },
+        {
+          "ko": "채택·업무 영향·평가 피드백을 확인하고 반복 패턴을 남긴다.",
+          "en": "Track adoption, workflow impact, and evaluation feedback and retain repeatable patterns."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "고객 대응을 포함한 엔지니어링·배포 5년 이상을 인재 프로필로 제시한다.",
+          "en": "Lists 5+ years of engineering or deployment including customer-facing work in the candidate profile."
+        },
+        {
+          "ko": "운영 코드 작성·리뷰, LLM 시스템 배포와 이해관계자 소통을 기대한다.",
+          "en": "Expects production-code writing/review, LLM deployment, and stakeholder communication."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J019-S1",
+          "url": "https://openai.com/careers/forward-deployed-engineer-seoul-seoul-south-korea/",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원 링크 또는 버튼을 확인했다. 실제 지원 제출은 하지 않았다.",
+            "en": "The job body and an application link or button were observed. No application was submitted."
+          }
+        },
+        {
+          "id": "J019-S2",
+          "url": "https://jobs.ashbyhq.com/openai/b43339a1-e830-4761-a193-3438f34f9ebb/application",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "unavailable",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "회사 페이지의 지원 링크 대상이지만 본문은 추출하지 못했다. 모집 상태는 미확인이다.",
+            "en": "The company page links here for applications, but its body was not extracted. Availability is unknown."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "인재 프로필 형태의 조건이다. 공식 페이지의 Apply now를 확인했지만 연결 ATS는 JavaScript 안내만 반환했다.",
+          "en": "The conditions are a candidate profile. Apply now was visible on the company page, but the linked ATS returned only a JavaScript notice."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J020",
+      "company": "OpenAI",
+      "title_original": "Applied AI Engineer",
+      "location": "Seoul, South Korea",
+      "canonical_job_id": "ashby:04435c05-7a05-4802-894d-c173327fbac8",
+      "role_scope": "customer-delivery",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "서울에서 기업 고객의 AI 시스템을 직접 구현하는 공고다.",
+        "en": "A Seoul posting for hands-on implementation of enterprise-customer AI systems."
+      },
+      "responsibilities": [
+        {
+          "ko": "과제 선정부터 평가·통합·운영 출시까지 직접 구현한다.",
+          "en": "Build directly from use-case selection through evaluation, integration, and production launch."
+        },
+        {
+          "ko": "실패를 재현하고 참조 구현·도구·플레이북을 재사용한다.",
+          "en": "Reproduce failures and create reusable reference implementations, tools, and playbooks."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "기업 AI·ML의 운영 적용과 코드·평가·디버깅의 직접 기여를 제시한다.",
+          "en": "Lists enterprise production AI/ML and personal contributions to code, evaluation, and debugging."
+        },
+        {
+          "ko": "Python, 체계적 평가와 기업 통합·보안·비용 조건 이해를 기대한다.",
+          "en": "Expects Python, systematic evaluation, and understanding of enterprise integration, security, and cost."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "JavaScript·TypeScript 등 추가 언어는 가치 있는 경험으로 제시한다.",
+          "en": "Lists additional languages such as JavaScript or TypeScript as valuable."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J020-S1",
+          "url": "https://openai.com/careers/applied-ai-engineer-seoul-south-korea/",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원 링크 또는 버튼을 확인했다. 실제 지원 제출은 하지 않았다.",
+            "en": "The job body and an application link or button were observed. No application was submitted."
+          }
+        },
+        {
+          "id": "J020-S2",
+          "url": "https://jobs.ashbyhq.com/openai/04435c05-7a05-4802-894d-c173327fbac8/application",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "unavailable",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "회사 페이지의 지원 링크 대상이지만 본문은 추출하지 못했다. 모집 상태는 미확인이다.",
+            "en": "The company page links here for applications, but its body was not extracted. Availability is unknown."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "인재 프로필 형태이며 특정 산업이나 OpenAI 제품 경험은 필수가 아니라고 설명한다.",
+          "en": "The conditions are a candidate profile; a particular industry or OpenAI-product background is explicitly not required."
+        },
+        {
+          "ko": "회사 페이지의 지원 링크를 확인했지만 연결 ATS 본문은 추출하지 못했다.",
+          "en": "The company application link was visible, but the linked ATS body was not extracted."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J021",
+      "company": "OpenAI",
+      "title_original": "Enablement Lead, Knowledge Work",
+      "location": "Seoul, South Korea",
+      "canonical_job_id": "ashby:8842f4d5-dabb-4b15-a339-36ab13a6db11",
+      "role_scope": "customer-delivery",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "서울에서 판매 이후 교육·활용 정착을 맡는 역할이다.",
+        "en": "A Seoul role focused on post-sales training and sustained adoption."
+      },
+      "responsibilities": [
+        {
+          "ko": "고객 온보딩·워크숍·교육 여정을 설계한다.",
+          "en": "Design customer onboarding, workshops, and learning journeys."
+        },
+        {
+          "ko": "활성화·지속 사용을 확인하고 교육 자료와 제품 피드백을 개선한다.",
+          "en": "Track activation and sustained use and improve training assets and product feedback."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "고객 대응·교육·enablement 6년 이상을 인재 프로필로 제시한다.",
+          "en": "Lists 6+ years in customer-facing, instructional, or enablement roles in the candidate profile."
+        },
+        {
+          "ko": "제품 이해, 워크숍 설계와 AI 기능을 업무 결과에 연결하는 소통을 기대한다.",
+          "en": "Expects product fluency, workshop design, and communication linking AI capabilities to workflow outcomes."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J021-S1",
+          "url": "https://openai.com/careers/enablement-lead-knowledge-work-seoul-south-korea/",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원 링크 또는 버튼을 확인했다. 실제 지원 제출은 하지 않았다.",
+            "en": "The job body and an application link or button were observed. No application was submitted."
+          }
+        },
+        {
+          "id": "J021-S2",
+          "url": "https://jobs.ashbyhq.com/openai/8842f4d5-dabb-4b15-a339-36ab13a6db11/application",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "unavailable",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "회사 페이지의 지원 링크 대상이지만 본문은 추출하지 못했다. 모집 상태는 미확인이다.",
+            "en": "The company page links here for applications, but its body was not extracted. Availability is unknown."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/02-human-approved-workflow.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "인재 프로필 형태의 조건이다. 직접 소프트웨어 구현을 요구하는 엔지니어 공고와 구분한다.",
+          "en": "The conditions are a candidate profile. Distinguish this from engineering postings requiring direct software implementation."
+        },
+        {
+          "ko": "지원 링크가 보이지만 연결 ATS 본문은 추출하지 못했다.",
+          "en": "An application link was visible, but the linked ATS body was not extracted."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J022",
+      "company": "OpenAI",
+      "title_original": "Applied AI Architect",
+      "location": "Seoul, South Korea",
+      "canonical_job_id": "ashby:ad06299f-d4e2-4de6-a925-b2e94b3c1d0b",
+      "role_scope": "hybrid",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "서울에서 판매 전후의 기술 계정과 도입 경로를 맡는 역할이다.",
+        "en": "A Seoul role owning technical accounts and adoption across pre-sales and post-sales."
+      },
+      "responsibilities": [
+        {
+          "ko": "고객의 과제 포트폴리오·설계·평가·채택 계획을 이끈다.",
+          "en": "Lead customer use-case portfolios, architecture, evaluation, and adoption plans."
+        },
+        {
+          "ko": "구현·교육 전문가를 연결하고 실행 책임과 인수인계를 나눈다.",
+          "en": "Coordinate implementation and enablement specialists with clear execution ownership and handoffs."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "고객 기술 역할과 기업 기술 평가·운영 채택 경험을 제시한다.",
+          "en": "Lists customer-facing technical work and enterprise evaluation-to-adoption experience."
+        },
+        {
+          "ko": "클라우드·API·보안·AI 평가, 프로토타입과 기술 계정 계획 역량을 기대한다.",
+          "en": "Expects cloud/API/security/AI-evaluation foundations, prototyping, and technical account planning."
+        }
+      ],
+      "preferred_qualifications": [],
+      "sources": [
+        {
+          "id": "J022-S1",
+          "url": "https://openai.com/careers/applied-ai-architect-seoul-south-korea/",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원 링크 또는 버튼을 확인했다. 실제 지원 제출은 하지 않았다.",
+            "en": "The job body and an application link or button were observed. No application was submitted."
+          }
+        },
+        {
+          "id": "J022-S2",
+          "url": "https://jobs.ashbyhq.com/openai/ad06299f-d4e2-4de6-a925-b2e94b3c1d0b/application",
+          "authority": "company-official",
+          "checked_at": "2026-10-26",
+          "access_status": "unavailable",
+          "availability": "unknown",
+          "availability_basis": "undetermined",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "회사 페이지의 지원 링크 대상이지만 본문은 추출하지 못했다. 모집 상태는 미확인이다.",
+            "en": "The company page links here for applications, but its body was not extracted. Availability is unknown."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "판매 전후의 기술 계정 책임이며 구현 실행은 참여한 전문 팀이 맡는다고 설명한다.",
+          "en": "It owns technical accounts across pre-sales and post-sales; specialist teams own implementation execution."
+        },
+        {
+          "ko": "조건은 인재 프로필 형태이며 지원 링크 이후 ATS 본문은 추출하지 못했다.",
+          "en": "The conditions are a candidate profile; the ATS body after the application link was not extracted."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J023",
+      "company": "뉴셀렉트(주)",
+      "title_original": "AX Product Manager",
+      "location": "서울 성동구",
+      "canonical_job_id": "remember:325079",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "closed",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "전사 업무 문제를 정의하고 에이전트를 직접 만드는 AX PM 공고다.",
+        "en": "An AX PM posting for defining company-wide workflow problems and building agents directly."
+      },
+      "responsibilities": [
+        {
+          "ko": "현업 병목·입출력·성공 기준을 정한다.",
+          "en": "Define business bottlenecks, inputs, outputs, and success criteria."
+        },
+        {
+          "ko": "엔지니어가 만든 기반 위에 프로토타입을 배포하고 현업 피드백으로 개선한다.",
+          "en": "Deploy prototypes on an engineering foundation and iterate with business feedback."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "PM·사업개발·컨설팅·기획 등 2년 이상과 문제를 해결책으로 구체화한 경험을 요구한다.",
+          "en": "Requires 2+ years in PM, business development, consulting, planning, or similar work and turning problems into solutions."
+        },
+        {
+          "ko": "AI 코딩 도구로 결과물을 만들고 이해관계자와 협업한 경험을 요구한다.",
+          "en": "Requires building artifacts with AI coding tools and collaborating with stakeholders."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "마케팅·SCM·재무 도메인, 부서 간 리딩과 SQL 분석을 우대한다.",
+          "en": "Prefers marketing/SCM/finance knowledge, cross-functional leadership, and SQL analysis."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J023-S1",
+          "url": "https://career.rememberapp.co.kr/job/posting/325079",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "closed",
+          "availability_basis": "explicit-closed",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직접 연 본문에 마감된 공고 버튼이 있다.",
+            "en": "The directly opened page has a closed-posting button."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "검색 요약에는 지원 가능으로 보였지만 직접 연 본문은 마감된 공고였다.",
+          "en": "The search summary appeared open, but the directly opened body marked the posting closed."
+        },
+        {
+          "ko": "본문은 유관 경험 2년 이상을 요구하며 상단은 2~7년·학사 이상으로 요약한다.",
+          "en": "The body requires 2+ years of relevant experience; the header summarizes 2–7 years and a bachelor’s degree."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J024",
+      "company": "인딥에이아이",
+      "title_original": "AX Engineer / FDE (신입·경력 / 연차 무관)",
+      "location": "서울 서초구 양재대로 12길 56 (페이지 분류는 서울 강남구)",
+      "canonical_job_id": "groupby:13339",
+      "role_scope": "hybrid",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "고객 AX 딜리버리와 사내 KB·플랫폼 개발을 함께 제시한다.",
+        "en": "Combines customer AX delivery with internal knowledge-base and platform development."
+      },
+      "responsibilities": [
+        {
+          "ko": "고객 업무를 분석하고 Agent·RAG·API 연동을 구현한다.",
+          "en": "Analyze customer workflows and implement agents, RAG, and API integrations."
+        },
+        {
+          "ko": "사내 KB·공통 도구를 만들고 실제 시나리오로 품질을 확인한다.",
+          "en": "Build internal knowledge and shared tools and evaluate quality on workflow scenarios."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "신입·경력 모두 지원 가능하며 연차 제한이 없다고 명시한다.",
+          "en": "Explicitly accepts new and experienced applicants without a years-of-experience limit."
+        },
+        {
+          "ko": "한 프로그래밍 언어, API·DB·웹 앱 기초와 비개발 동료·고객 소통을 요구한다.",
+          "en": "Requires a programming language, API/database/web-app fundamentals, and communication with non-engineering colleagues or customers."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "LLM API·LangChain/LangGraph, RAG·벡터DB, MCP·Tool Calling 경험을 우대한다.",
+          "en": "Prefers LLM APIs, LangChain/LangGraph, RAG/vector databases, and MCP/tool calling."
+        },
+        {
+          "ko": "서비스 개발, 고객 PoC·AX 프로젝트와 AI 평가 경험을 우대한다.",
+          "en": "Prefers service development, customer PoCs or AX projects, and AI evaluation."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J024-S1",
+          "url": "https://groupby.kr/positions/13339",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": null,
+          "note": {
+            "ko": "직무 본문과 지원하기 액션을 확인했다.",
+            "en": "The job body and an application action were observed."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "연차 제한이 없는 단일 공고를 신입 수요 증가나 채용 보장으로 일반화하지 않는다.",
+          "en": "One posting without a years limit does not establish growth in entry-level demand or guarantee employment."
+        },
+        {
+          "ko": "본문 주소는 서초구인데 플랫폼 분류는 강남구다. 실제 근무지는 원문 담당자에게 재확인이 필요하다.",
+          "en": "The body gives a Seocho address while the platform classifies Gangnam. The actual location needs confirmation with the employer."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ]
+    },
+    {
+      "id": "J025",
+      "company": "대웅",
+      "title_original": "[대웅] AX Engineer",
+      "location": "서울 강남구",
+      "canonical_job_id": "remember:344925",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "closed",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "현업 요구부터 구현·평가·운영 전환까지 맡는 AX TF 공고다.",
+        "en": "An AX TF posting spanning business requirements, implementation, evaluation, and operational transition."
+      },
+      "responsibilities": [
+        {
+          "ko": "정답 데이터로 품질을 확인하고 사내 시스템과 AI를 연결한다.",
+          "en": "Evaluate quality against reference data and connect internal systems with AI."
+        },
+        {
+          "ko": "공용 구성요소를 운영하고 실행 방법과 한계를 운영자에게 넘긴다.",
+          "en": "Operate shared components and hand off execution procedures and limitations."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "학사와 소프트웨어 개발 3년 이상, LLM 기능을 실제 사용자에게 제공한 경험을 요구한다.",
+          "en": "Requires a bachelor’s degree, 3+ years of software development, and delivering LLM features to users."
+        },
+        {
+          "ko": "Python 또는 TypeScript와 불명확한 요구를 구체화한 경험을 요구한다.",
+          "en": "Requires Python or TypeScript and experience clarifying ambiguous requirements."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "RAG·벡터 검색, 에이전트·MCP, OCR와 정량 평가를 우대한다.",
+          "en": "Prefers RAG/vector retrieval, agents/MCP, OCR, and quantitative evaluation."
+        },
+        {
+          "ko": "GCP·SSO/OAuth·게이트웨이 운영 경험을 우대한다.",
+          "en": "Prefers GCP, SSO/OAuth, and gateway operations."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J025-S1",
+          "url": "https://career.rememberapp.co.kr/job/posting/344925",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "closed",
+          "availability_basis": "explicit-closed",
+          "published_at": null,
+          "closing_date": "2026-10-25",
+          "note": {
+            "ko": "2026-10-25 마감일과 마감된 공고 버튼을 확인했다.",
+            "en": "A 2026-10-25 deadline and closed-posting button were observed."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "2026-10-25 마감일과 마감된 공고 버튼을 확인했다. Wanted 기록과 원 공고 ID가 연결되지 않아 별도로 유지한다.",
+          "en": "A 2026-10-25 deadline and closed button were observed. The original ID is not linked to the Wanted record, so this remains separate."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://recruit.wanted.co.kr/wd/390449",
+          "relationship": "possible-duplicate",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "같은 회사·직함 또는 유사한 설명이지만 원 공고 ID 대응은 확인되지 않았다. 이 URL의 상태·날짜는 위 공고에 합치지 않는다.",
+            "en": "The company/title or description is similar, but the original ID match is unconfirmed. Its dates and availability are not merged into this record."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J026",
+      "company": "대웅",
+      "title_original": "[대웅] Senior AX Engineer",
+      "location": "서울 강남구",
+      "canonical_job_id": "remember:344926",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "closed",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "AX 과제의 기술 선택·공용 기반·코칭을 맡는 선임 공고다.",
+        "en": "A senior posting owning technical choices, shared AX foundations, and coaching."
+      },
+      "responsibilities": [
+        {
+          "ko": "구축·도입·비구축을 판단하고 과제의 기술 방향과 품질을 관리한다.",
+          "en": "Decide whether to build, adopt, or not build; guide technical direction and quality."
+        },
+        {
+          "ko": "게이트웨이·커넥터·평가 기반을 설계하고 코드·보안 리뷰와 코칭을 맡는다.",
+          "en": "Design gateways, connectors, and evaluation foundations; review code and security and coach engineers."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "학사와 개발 5년 이상, 엔터프라이즈 AI 시스템의 설계·운영 경험을 요구한다.",
+          "en": "Requires a bachelor’s degree, 5+ years of development, and enterprise AI design and operations experience."
+        },
+        {
+          "ko": "기술 선택과 여러 엔지니어의 출시·운영을 이끈 경험을 요구한다.",
+          "en": "Requires technical selection and leadership of multi-engineer delivery and operations."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "MCP·게이트웨이·평가 운영, 기업 권한·감사·보안 경험을 우대한다.",
+          "en": "Prefers MCP/gateway/evaluation operations and enterprise authorization, audit, and security experience."
+        },
+        {
+          "ko": "클라우드·SSO·CI/CD와 규제 산업 경험을 우대한다.",
+          "en": "Prefers cloud, SSO, CI/CD, and regulated-industry experience."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J026-S1",
+          "url": "https://career.rememberapp.co.kr/job/posting/344926",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "closed",
+          "availability_basis": "explicit-closed",
+          "published_at": null,
+          "closing_date": "2026-10-25",
+          "note": {
+            "ko": "2026-10-25 마감일과 마감된 공고 버튼을 확인했다.",
+            "en": "A 2026-10-25 deadline and closed-posting button were observed."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/04-production-pilot.md",
+        "projects/05-second-workflow-reuse.md"
+      ],
+      "limitations": [
+        {
+          "ko": "2026-10-25 마감일과 마감된 공고 버튼을 확인했다. Wanted의 상시 문구를 이 기록의 상태에 적용하지 않는다.",
+          "en": "A 2026-10-25 deadline and closed button were observed. Wanted’s rolling-recruitment wording does not change this record’s state."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://recruit.wanted.co.kr/wd/390450",
+          "relationship": "possible-duplicate",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "같은 회사·직함 또는 유사한 설명이지만 원 공고 ID 대응은 확인되지 않았다. 이 URL의 상태·날짜는 위 공고에 합치지 않는다.",
+            "en": "The company/title or description is similar, but the original ID match is unconfirmed. Its dates and availability are not merged into this record."
+          }
+        }
+      ]
+    },
+    {
+      "id": "J027",
+      "company": "윗유",
+      "title_original": "[윗유] AX Engineer",
+      "location": "서울 강남구",
+      "canonical_job_id": "remember:347613",
+      "role_scope": "internal-ax",
+      "added_at": "2026-10-26",
+      "availability": "open",
+      "temporal_class": "undated",
+      "summary": {
+        "ko": "기존 사내 플랫폼을 개선하고 업무 자동화를 운영하는 공고다.",
+        "en": "A posting for improving an existing internal platform and operating workflow automation."
+      },
+      "responsibilities": [
+        {
+          "ko": "기존 코드·테스트·관측을 개선하고 현업 자동화 과제를 구현한다.",
+          "en": "Improve existing code, tests, and observability; implement business automation tasks."
+        },
+        {
+          "ko": "SaaS·데이터를 연결하고 처리 시간·오류·사용 현황을 측정한다.",
+          "en": "Connect SaaS and data, measuring completion time, errors, and use."
+        }
+      ],
+      "required_qualifications": [
+        {
+          "ko": "서비스 운영, 타인 코드의 분석·유지보수와 Git·테스트·리뷰 경험을 요구한다.",
+          "en": "Requires service operations, analysis and maintenance of others’ code, and Git, testing, and review experience."
+        },
+        {
+          "ko": "웹·자동화 개발, REST·인증·장애 처리와 AI 코딩 결과 검증을 요구한다.",
+          "en": "Requires web or automation development, REST/authentication/failure handling, and verification of AI-generated code."
+        }
+      ],
+      "preferred_qualifications": [
+        {
+          "ko": "Agent/RAG 운영, 이커머스·SaaS 연결과 운영 중 레거시 개선을 우대한다.",
+          "en": "Prefers Agent/RAG operations, e-commerce/SaaS integration, and improvements to live legacy systems."
+        },
+        {
+          "ko": "커머스 데이터·SQL/Python과 영문 기술문서 경험을 우대한다.",
+          "en": "Prefers commerce-data, SQL/Python, and English technical-documentation experience."
+        }
+      ],
+      "sources": [
+        {
+          "id": "J027-S1",
+          "url": "https://career.rememberapp.co.kr/job/posting/347613",
+          "authority": "employer-platform",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "availability": "open",
+          "availability_basis": "application-route-visible",
+          "published_at": null,
+          "closing_date": "2026-11-09",
+          "note": {
+            "ko": "2026-11-09 마감일과 간편 지원하기 버튼을 확인했다.",
+            "en": "A 2026-11-09 deadline and application button were observed."
+          }
+        }
+      ],
+      "related_projects": [
+        "projects/01-safe-assistant.md",
+        "projects/03-sandbox-integration.md",
+        "projects/04-production-pilot.md"
+      ],
+      "limitations": [
+        {
+          "ko": "2026-11-09 마감일과 지원 버튼을 확인했다. 실제 지원 제출은 시도하지 않았다.",
+          "en": "A 2026-11-09 deadline and application button were observed; no application was submitted."
+        },
+        {
+          "ko": "상단은 경력무관이다. 다른 채널과 원 공고 ID 대응이 확인되지 않아 연차·상태·날짜를 합치지 않는다.",
+          "en": "The header says experience unrestricted. Unconfirmed original-ID matches mean experience, state, and dates are not merged across channels."
+        },
+        {
+          "ko": "요건은 확인한 본문의 핵심 요약이다. 빈 우대 목록은 우대 조건이 없다는 뜻이 아니라 확인된 별도 목록이 없다는 뜻이다.",
+          "en": "Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist."
+        }
+      ],
+      "related_sources": [
+        {
+          "url": "https://recruit.wanted.co.kr/wd/392673",
+          "relationship": "possible-duplicate",
+          "identity_confirmed": false,
+          "note": {
+            "ko": "같은 회사·직함 또는 유사한 설명이지만 원 공고 ID 대응은 확인되지 않았다. 이 URL의 상태·날짜는 위 공고에 합치지 않는다.",
+            "en": "The company/title or description is similar, but the original ID match is unconfirmed. Its dates and availability are not merged into this record."
+          }
+        }
+      ]
+    }
+  ]
+}

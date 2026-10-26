@@ -1,0 +1,287 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed AX hiring signals",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "checked_at",
+    "recent_since",
+    "scope",
+    "postings"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "./hiring-signals.schema.json"
+    },
+    "checked_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "recent_since": {
+      "type": "string",
+      "format": "date"
+    },
+    "scope": {
+      "$ref": "#/$defs/localizedText"
+    },
+    "postings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/posting"
+      }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ko",
+        "en"
+      ],
+      "properties": {
+        "ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "nullableDate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "url",
+        "authority",
+        "checked_at",
+        "access_status",
+        "availability",
+        "availability_basis",
+        "published_at",
+        "closing_date",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^J[0-9]{3}-S[0-9]+$"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "authority": {
+          "enum": [
+            "company-official",
+            "employer-platform",
+            "secondary"
+          ]
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "access_status": {
+          "enum": [
+            "read",
+            "blocked",
+            "unavailable",
+            "search-only"
+          ]
+        },
+        "availability": {
+          "enum": [
+            "open",
+            "closed",
+            "unknown"
+          ]
+        },
+        "availability_basis": {
+          "enum": [
+            "application-route-visible",
+            "explicit-open",
+            "explicit-closed",
+            "deadline-passed",
+            "undetermined"
+          ]
+        },
+        "published_at": {
+          "$ref": "#/$defs/nullableDate"
+        },
+        "closing_date": {
+          "$ref": "#/$defs/nullableDate"
+        },
+        "note": {
+          "$ref": "#/$defs/localizedText"
+        }
+      }
+    },
+    "posting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "company",
+        "title_original",
+        "location",
+        "canonical_job_id",
+        "role_scope",
+        "added_at",
+        "availability",
+        "temporal_class",
+        "summary",
+        "responsibilities",
+        "required_qualifications",
+        "preferred_qualifications",
+        "sources",
+        "related_projects",
+        "limitations"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^J[0-9]{3}$"
+        },
+        "company": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title_original": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "canonical_job_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "role_scope": {
+          "enum": [
+            "internal-ax",
+            "customer-delivery",
+            "pre-sales",
+            "hybrid",
+            "unknown"
+          ]
+        },
+        "added_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "availability": {
+          "enum": [
+            "open",
+            "closed",
+            "unknown",
+            "conflicting"
+          ]
+        },
+        "temporal_class": {
+          "enum": [
+            "dated-recent",
+            "newly-found-older",
+            "undated",
+            "historical"
+          ]
+        },
+        "summary": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "responsibilities": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/localizedText"
+          }
+        },
+        "required_qualifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/localizedText"
+          }
+        },
+        "preferred_qualifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/localizedText"
+          }
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "related_projects": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^projects/[^/]+\\.md$"
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/localizedText"
+          }
+        },
+        "related_sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "url",
+              "relationship",
+              "identity_confirmed",
+              "note"
+            ],
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "relationship": {
+                "enum": [
+                  "possible-duplicate",
+                  "historical-reference",
+                  "application-route-mismatch"
+                ]
+              },
+              "identity_confirmed": {
+                "type": "boolean"
+              },
+              "note": {
+                "$ref": "#/$defs/localizedText"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

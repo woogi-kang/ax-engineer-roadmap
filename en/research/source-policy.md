@@ -43,7 +43,7 @@ The AX Engineer role and its technical environment change quickly. This reposito
 
 Open a `Source update` issue when a source is outdated or conflicts with current content. A pull request should state the old claim, new evidence, and effect on readers.
 
-External links are checked weekly. A definite `404` or `410` fails the check. Other abnormal responses remain warnings for manual review, with `4xx` authentication, bot-blocking, or rate-limit responses distinguished from temporary `5xx` and network errors. [`public-ax-cases.json`](../../research/public-ax-cases.json) is the registry for 25 public cases, 26 original source URLs, and three follow-up sources, including provenance, deployment stage, and outcome-verification status.
+External links are checked weekly. A definite `404` or `410` fails the check. Other abnormal responses remain warnings for manual review, with `4xx` authentication, bot-blocking, or rate-limit responses distinguished from temporary `5xx` and network errors. [`public-ax-cases.json`](../../research/public-ax-cases.json) records provenance, deployment stage, and outcome-verification status. As of 2026-10-26 it contains 40 cases and 54 unique URLs, preserving the original 25 cases and 26 sources. Reading new evidence and updating content are separate from link-health checks.
 
 ## Dates and claim-level records
 
@@ -59,10 +59,23 @@ Publication, verification, and observation dates are separate. Reading a source 
 | Historical material | Preserve the previous reading and original source without claiming current recruitment, operation, or outcomes. |
 | `unknown` | The original was unreadable or evidence conflicts; do not fill gaps by inference. |
 
-In [`public-ax-cases.json`](../../research/public-ax-cases.json), `verified_at` preserves the last full-catalog check, `2026-08-01`. `updated_at` and `review_scope` describe the selected-claim review of K04, K05, K07, K08, K09, G02, G07, G08, and G10 on `2026-10-26`. They do not redate all 25 cases as freshly verified.
+In [`public-ax-cases.json`](../../research/public-ax-cases.json), `verified_at` preserves the original 25-case baseline of `2026-08-01`. `review_scope.baseline_case_ids` fixes that original list; `updated_at` and `review_scope` record the new review scope. All 25 existing cases were attempted on 2026-10-26. Main bodies were read for 24; K06 remains on hold because access failed. Rereading a source does not independently verify current operations or reported outcomes.
+
+An added case uses `introduced_at` and an `initial-review` claim to record its first review. It requires directly read evidence and must not invent a historical `baseline-summary`. Existing cases use `source-confirmation` for rechecks and supported correction claims for changes.
 
 Each `claims` entry records its statement, source URLs, publication/check dates, access status, temporal category, observation period, sample, method, and limitations. Unknown dates and sample sizes remain `null`, with missing conditions explained in text. `source-reported` means that the source makes the claim; `study-reported` means a study reports it for its stated sample and method. Neither automatically upgrades independent outcome verification. An unread follow-up stays `unknown`.
 
-The original 26 URLs remain in case `source_urls` and baseline claims. Three follow-up sources bring the total to 29 unique URLs. Validation checks real calendar dates, publication/observation chronology, partial-review scope, and bilingual claim IDs, links, and classifications. A successful link check does not verify source content or outcomes.
+The original 26 URLs remain in case `source_urls` and baseline claims. Additions and follow-up claims bring the total to 54 unique URLs. Validation checks real calendar dates, publication/observation chronology, review scope, and bilingual claim IDs, links, and classifications. A successful link check does not verify source content or outcomes.
 
-`baseline_deployment_stage` preserves the classification from the last full review. Correct source-inconsistent values with a `deployment_correction` containing `from` (the preserved baseline), `to` (the supported correction), bilingual reasons, and evidence. A current classification differing from the baseline needs a read correction claim supporting it; preserve prior correction history as well. `not-rechecked` means the original case-wide evidence was not reverified, not that no original figure was spot-checked.
+`baseline_deployment_stage` preserves an existing case's baseline classification or an added case's initial classification. Correct source-inconsistent classifications with `deployment_correction`, retaining `from` (the baseline), `to` (the corrected value), bilingual reasons, and evidence. A classification that differs from its baseline requires a read correction claim, and earlier corrections remain preserved. `not-rechecked` means no follow-up claim was added in this review. `selected-claims-reviewed` and `initial-claims-reviewed` likewise cover only the recorded claims.
+
+## Job availability and duplicates
+
+[`hiring-signals.json`](../../research/hiring-signals.json) records job content, source accessibility, recruitment signals, and publication dates separately. `added_at` is the date a record entered the registry. Unknown publication dates remain `null` and do not qualify as recent postings.
+
+- `open`: a directly read source shows an application route for that role or an explicit open state. This does not establish a successful submission.
+- `closed`: an explicit closed state or expired deadline was observed. A closed state takes precedence over rolling-recruitment wording or a future deadline.
+- `unknown`: the application route is unclear or the source cannot be read, so availability is unresolved.
+- `conflicting`: sources confirmed to describe the same vacancy show incompatible recruitment states.
+
+Group sources when their original job ID confirms identity. If only the company and title match, record the relationship and limits in `related_sources` and exclude it from availability aggregation. Record counts therefore do not equal unique vacancies or new jobs. The [refresh record](evidence-refresh-2026-10-26.md) retains search scope, exclusions, held candidates, and access failures.

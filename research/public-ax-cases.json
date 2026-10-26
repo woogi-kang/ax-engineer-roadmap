@@ -2,7 +2,78 @@
   "$schema": "./public-ax-cases.schema.json",
   "verified_at": "2026-08-01",
   "updated_at": "2026-10-26",
-  "review_scope": {"reviewed_case_ids": ["K04", "K05", "K07", "K08", "K09", "G02", "G07", "G08", "G10"], "scope": "selected-claims-only", "baseline_source_count": 26},
+  "review_scope": {
+    "reviewed_case_ids": [
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05",
+      "K07",
+      "K08",
+      "K09",
+      "K10",
+      "K11",
+      "K12",
+      "K13",
+      "K14",
+      "K15",
+      "K16",
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G16",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "G21",
+      "G22",
+      "G23",
+      "G24"
+    ],
+    "scope": "selected-claims-only",
+    "baseline_source_count": 26,
+    "baseline_case_ids": [
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05",
+      "K06",
+      "K07",
+      "K08",
+      "K09",
+      "K10",
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15"
+    ]
+  },
   "cases": [
     {
       "id": "K01",
@@ -22,7 +93,7 @@
       "related_cases": [
         "public-service-petition-response"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "K01-baseline",
@@ -67,6 +138,50 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "K01-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "일부 기관의 시범 운영과 담당자의 초안 수정·민원 묶음 선택을 원문에서 확인했다.",
+            "en": "The source confirms a pilot at selected agencies and caseworker control over drafts and petition groups."
+          },
+          "source_urls": [
+            "https://www.korea.kr/news/policyNewsView.do?newsId=156743148"
+          ],
+          "published_at": "2026-02-05",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "limited-operation"
@@ -89,7 +204,7 @@
       "related_cases": [
         "credit-underwriting-review"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "K02-baseline",
@@ -134,6 +249,50 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "K02-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "여신 검토 지원 도입을 확인했다. 12개 업종은 분석 범위이며 직원의 최종 판단을 대체한다는 설명은 없다.",
+            "en": "Deployment supports credit review; twelve industries describe coverage, not an evaluation sample or autonomous approval."
+          },
+          "source_urls": [
+            "https://www.shinhangroup.com/kr/archive/press/detail/679"
+          ],
+          "published_at": "2026-03-27",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "limited-operation"
@@ -149,14 +308,14 @@
       "industry": "financial-services",
       "source_type": "organization-official",
       "deployment_stage": "limited-operation",
-      "outcome_verification": "none",
+      "outcome_verification": "self-reported",
       "source_urls": [
         "https://shinhangroup.com/kr/archive/press/detail/637"
       ],
       "related_cases": [
         "credit-underwriting-review"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "K03-baseline",
@@ -199,6 +358,94 @@
             {
               "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "K03-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "고객 동의와 상품 규칙을 반영해 설계사가 가입설계와 전산심사를 진행하는 흐름을 확인했다.",
+            "en": "The source describes planners using consented customer data and product rules for design and computerized checks."
+          },
+          "source_urls": [
+            "https://shinhangroup.com/kr/archive/press/detail/637"
+          ],
+          "published_at": "2026-02-12",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
+            }
+          ]
+        },
+        {
+          "id": "K03-lico2-speed",
+          "kind": "outcome",
+          "statement": {
+            "ko": "LICO 2.0의 설계 추천 속도가 이전 버전보다 약 35% 개선됐다고 회사가 발표했다.",
+            "en": "The company reports about 35% faster design recommendations in LICO 2.0."
+          },
+          "source_urls": [
+            "https://shinhangroup.com/kr/archive/press/detail/993"
+          ],
+          "published_at": "2026-10-16",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "속도 정의·기준값·시험 구성은 미공개다.",
+              "en": "Speed definition, baseline values, and test design are undisclosed."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "설계사가 결과를 확인·수정한다. 설계 품질 향상이나 인수 결정 자동화의 증거는 아니다.",
+              "en": "Planners check and edit results; this does not prove better design quality or autonomous underwriting."
             }
           ]
         }
@@ -401,6 +648,50 @@
               "en": "Corrects the claim that no calculation basis was public. Extrapolation assumptions are not independent verification and do not make the 2026 16% figure a matched trend."
             }
           ]
+        },
+        {
+          "id": "K04-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "기존 원문의 통화당 절감 시간과 월간 환산 가정을 다시 확인했다.",
+            "en": "The original per-call savings and monthly extrapolation assumptions were checked again."
+          },
+          "source_urls": [
+            "https://www.lg.co.kr/media/release/29014"
+          ],
+          "published_at": "2025-05-27",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "operation"
@@ -514,6 +805,94 @@
             {
               "ko": "이 자료만으로 9곳 모두의 운영 개시나 성과를 확인할 수 없다. 기존 PILOT 분류는 보존한다.",
               "en": "This source does not verify operation or outcomes across all nine ministries. The original PILOT classification is preserved."
+            }
+          ]
+        },
+        {
+          "id": "K05-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "기존 시간 절감 수치는 약 1만 명 사내 시범에 관한 자체 발표임을 확인했다.",
+            "en": "The original time-saving claims concern a self-reported internal pilot of about 10,000 people."
+          },
+          "source_urls": [
+            "https://www.samsungsds.com/kr/news/sds-genai-mediaday.html"
+          ],
+          "published_at": "2024-05-02",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
+            }
+          ]
+        },
+        {
+          "id": "K05-public-service-launch",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "공급사는 온AI 협업 서비스의 정식 개시와 별도로 70여 기관의 Drive 사용을 발표했다.",
+            "en": "The vendor reports an official OnAI collaboration-service launch and, separately, Drive use at about 70 agencies."
+          },
+          "source_urls": [
+            "https://www.samsungsds.com/kr/news/bw-260430.html"
+          ],
+          "published_at": "2026-04-30",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2025년 11월 시범 후 2026-04-30 정식 개시 발표다.",
+              "en": "A 2026-04-30 launch announcement following a pilot from November 2025."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "70여 기관은 Drive 이용 범위다.",
+              "en": "About 70 agencies describes Drive coverage."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "8월 발표의 9개 부처와 다른 분모다. 사내 시범의 절감률을 적용하지 않으며 K05의 PILOT은 사내 시범 분류로 유지한다.",
+              "en": "This differs from the nine ministries in August; internal savings do not transfer, and K05’s PILOT still describes the internal pilot."
             }
           ]
         }
@@ -706,6 +1085,50 @@
               "en": "Technology development and a platform launch plan do not establish actual operation."
             }
           }
+        },
+        {
+          "id": "K07-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "기술 개발과 Eng.AI 플랫폼 적용 계획을 구분한 기존 정정을 확인했다.",
+            "en": "The source supports the existing distinction between developed technology and planned Eng.AI deployment."
+          },
+          "source_urls": [
+            "https://www.lg.co.kr/media/release/28789"
+          ],
+          "published_at": "2025-03-27",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "limited-operation"
@@ -815,6 +1238,50 @@
             {
               "ko": "영문에서 인원을 check-ins 건수처럼 옮긴 오류를 정정했다. 서비스 규모를 안전·돌봄 효과나 현재 이용 규모로 해석하지 않는다.",
               "en": "Corrects the English translation of people as a count of check-ins. Service scale does not establish safety or care effects or current usage."
+            }
+          ]
+        },
+        {
+          "id": "K08-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "안부 확인 대상 인원, 통화 건수와 전문 상담 연결 인원을 구분한 기존 정정을 확인했다.",
+            "en": "The source supports the existing distinction among people reached, calls, and people referred to counseling."
+          },
+          "source_urls": [
+            "https://news.sktelecom.com/200115"
+          ],
+          "published_at": "2023-11-28",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
             }
           ]
         }
@@ -940,6 +1407,94 @@
               "en": "The source explicitly reports use at 12 facilities at publication, correcting the pilot label."
             }
           }
+        },
+        {
+          "id": "K09-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "발표 당시 12개 시설에서 사용 중이라는 기존 도입 범위 정정을 확인했다.",
+            "en": "The source supports the existing correction to use at twelve sites at publication."
+          },
+          "source_urls": [
+            "https://news.sktelecom.com/214674"
+          ],
+          "published_at": "2025-08-28",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
+            }
+          ]
+        },
+        {
+          "id": "K09-expert-intervention-boundary",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "전문가가 행동 데이터를 검토해 중재를 정한다. 케어 LLM은 개발 추진, 보호자 AI는 구상 단계다.",
+            "en": "Experts review behavioral data for intervention; the care LLM is under development and guardian AI is planned."
+          },
+          "source_urls": [
+            "https://news.sktelecom.com/226306"
+          ],
+          "published_at": "2026-06-10",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "발표는 12개 운영 시설을 설명한다.",
+              "en": "The release describes twelve operating sites."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "행동 감소·만족도는 표본·관측기간·통제집단이 없는 자체 발표다. 임상 효과나 새 AI 기능의 운영을 입증하지 않는다.",
+              "en": "Behavior and satisfaction claims lack samples, dates, and controls; they do not establish clinical effects or operation of the planned AI features."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "pilot"
@@ -954,7 +1509,7 @@
       },
       "industry": "education",
       "source_type": "organization-official",
-      "deployment_stage": "pilot",
+      "deployment_stage": "unknown",
       "outcome_verification": "none",
       "source_urls": [
         "https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140"
@@ -962,7 +1517,7 @@
       "related_cases": [
         "care-conversation-record"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "K10-baseline",
@@ -1007,9 +1562,558 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "K10-source-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "현재 제품 페이지는 교사 행정 기능을 설명하지만 시범 운영 개시일은 제시하지 않는다.",
+            "en": "The undated product page describes teacher-administration functions without a pilot start date."
+          },
+          "source_urls": [
+            "https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "세부 관측기간은 공개하지 않았다.",
+              "en": "Detailed observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본과 분모는 공개하지 않았다.",
+              "en": "Evaluation sample and denominator are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이번 확인은 위 주장과 원문의 대조다. 기존 이력은 유지하며 성과를 독립 검증했다고 보지 않는다.",
+              "en": "This checks the stated claim against its source; it preserves history and does not independently verify outcomes."
+            }
+          ]
+        },
+        {
+          "id": "K10-pilot-plan-correction",
+          "kind": "deployment-plan",
+          "statement": {
+            "ko": "제주 시범학교 10곳 선정과 2026학년도 서비스 제공을 계획한 협약 발표다.",
+            "en": "The agreement plans ten Jeju pilot schools and service during the 2026 school year."
+          },
+          "source_urls": [
+            "https://news.lguplus.com/20952"
+          ],
+          "published_at": "2025-12-12",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "협약 발표 당시의 계획이며 운영 관측기간이 아니다.",
+              "en": "A plan at announcement, not an observed operating period."
+            }
+          },
+          "sample": {
+            "size": 10,
+            "description": {
+              "ko": "10곳은 예정된 학교 수이며 실제 이용 표본이 아니다.",
+              "en": "Ten is the intended school count, not an observed usage sample."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "개시 완료를 입증하지 못해 PILOT을 UNKNOWN으로 정정한다. 이후 실제 개시 자료는 이번 검색에서 확보하지 못했다.",
+              "en": "Without evidence of a start, PILOT is corrected to UNKNOWN; this search did not establish a later launch."
+            }
+          ],
+          "deployment_correction": {
+            "from": "pilot",
+            "to": "unknown",
+            "reason": {
+              "ko": "제품 소개와 협약의 제공 계획만으로 실제 시범 운영을 입증할 수 없다.",
+              "en": "Product descriptions and an agreement to provide service do not establish actual pilot operation."
+            }
+          }
         }
       ],
       "baseline_deployment_stage": "pilot"
+    },
+    {
+      "id": "K11",
+      "region": "KR",
+      "organization": "HSAD",
+      "workflow": {
+        "ko": "대화형 소비자 조사와 분석",
+        "en": "Conversational consumer research and analysis"
+      },
+      "industry": "marketing",
+      "source_type": "organization-official",
+      "deployment_stage": "operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://lg.co.kr/media/release/30615"
+      ],
+      "related_cases": [
+        "beauty-d2c-voc"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26",
+      "claims": [
+        {
+          "id": "K11-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "응답별 추가 질문을 활용한 조사로 기간 4주 이상→약 2주, 조사·분석 비용 약 70% 절감을 발표했다.",
+            "en": "Adaptive follow-up surveys reportedly reduced research from over four weeks to about two and research/analysis costs by about 70%."
+          },
+          "source_urls": [
+            "https://lg.co.kr/media/release/30615"
+          ],
+          "published_at": "2026-09-30",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "관측기간 미공개.",
+              "en": "Observation dates undisclosed."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본·분모 미공개.",
+              "en": "Evaluation sample/denominator undisclosed."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "회사 자체 비교다. 프로젝트 수·비용 포함 항목은 미공개다.",
+              "en": "Company comparison; project count and included costs are undisclosed."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "조사 품질·대표성·동의 절차와 최종 승인 통제는 확인하지 못했다.",
+              "en": "Research quality, representativeness, consent procedures, and final approval controls were not established."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K12",
+      "region": "KR",
+      "organization": "현대자동차그룹",
+      "workflow": {
+        "ko": "앱 리뷰 분류와 답변 초안",
+        "en": "App-review classification and reply drafts"
+      },
+      "industry": "customer-service",
+      "source_type": "organization-official",
+      "deployment_stage": "operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation"
+      ],
+      "related_cases": [
+        "beauty-d2c-voc",
+        "centralized-mail-assist"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26",
+      "claims": [
+        {
+          "id": "K12-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "리뷰 답변을 담당자가 검토한 뒤 전달한다. 평균 처리 35→5분과 AI 처리 범위 약 85% 이상은 자체 발표다.",
+            "en": "Staff review replies before delivery; 35-to-5-minute handling and about 85% or more AI coverage are self-reported."
+          },
+          "source_urls": [
+            "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation"
+          ],
+          "published_at": "2026-08-12",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "관측기간 미공개.",
+              "en": "Observation dates undisclosed."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본·분모 미공개.",
+              "en": "Evaluation sample/denominator undisclosed."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "평균 시간 비교이며 표본·산식은 미공개다.",
+              "en": "Average-time comparison; sample and calculation are undisclosed."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "85%는 정확도가 아니다. 9월 전체 자동화는 당시 계획이다.",
+              "en": "85% is not accuracy; full automation in September was a plan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K13",
+      "region": "KR",
+      "organization": "현대자동차그룹",
+      "workflow": {
+        "ko": "매뉴얼 근거를 제공하는 정비 지원",
+        "en": "Manual-grounded maintenance assistance"
+      },
+      "industry": "automotive-service",
+      "source_type": "organization-official",
+      "deployment_stage": "operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26",
+      "claims": [
+        {
+          "id": "K13-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "정비사에게 매뉴얼·정비 기록을 찾아주며 대응 시간 약 42% 단축을 발표했다.",
+            "en": "It retrieves manuals and service records for technicians, with a reported 42% response-time reduction."
+          },
+          "source_urls": [
+            "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation"
+          ],
+          "published_at": "2026-08-12",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "관측기간 미공개.",
+              "en": "Observation dates undisclosed."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본·분모 미공개.",
+              "en": "Evaluation sample/denominator undisclosed."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "회사 비교이며 작업별 정의는 미공개다.",
+              "en": "Company comparison; task-level definitions are undisclosed."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "진단 정확도나 자율 수리의 증거가 아니다.",
+              "en": "Not evidence of diagnostic accuracy or autonomous repair."
+            }
+          ]
+        },
+        {
+          "id": "K13-manual-evidence-review",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "정비 AI는 공식 매뉴얼 근거를 함께 제시해 정비사가 직접 확인하도록 한다.",
+            "en": "Maintenance AI presents official-manual evidence for technicians to verify."
+          },
+          "source_urls": [
+            "https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day"
+          ],
+          "published_at": "2026-10-22",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "관측기간 미공개.",
+              "en": "Observation dates undisclosed."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본·분모 미공개.",
+              "en": "Evaluation sample/denominator undisclosed."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "근거의 정확도와 검토 이행률은 공개하지 않았다.",
+              "en": "Citation accuracy and review compliance are not reported."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K14",
+      "region": "KR",
+      "organization": "현대자동차그룹",
+      "workflow": {
+        "ko": "VIN 기반 생산 순서 대조",
+        "en": "VIN-based production-sequence checks"
+      },
+      "industry": "manufacturing",
+      "source_type": "organization-official",
+      "deployment_stage": "operation",
+      "outcome_verification": "none",
+      "source_urls": [
+        "https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26",
+      "claims": [
+        {
+          "id": "K14-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "공장별 VIN 인식 모델을 통합해 국내외 73개 공정에 적용했다고 발표했다.",
+            "en": "The group reports unifying VIN recognition across 73 domestic and overseas processes."
+          },
+          "source_urls": [
+            "https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day"
+          ],
+          "published_at": "2026-10-22",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "관측기간 미공개.",
+              "en": "Observation dates undisclosed."
+            }
+          },
+          "sample": {
+            "size": 73,
+            "description": {
+              "ko": "73은 적용 공정 수이며 평가 표본이 아니다.",
+              "en": "73 counts deployed processes, not an evaluation sample."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "발표 주체의 설명이며 독립 평가가 아니다.",
+              "en": "Publisher’s account, not an independent evaluation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "자동 정지·무시·재개 권한은 미공개다. 8월의 약 70개 생산 거점과 단위가 달라 추세로 비교하지 않는다.",
+              "en": "Stop, override, and restart authority is undisclosed; 73 processes is not directly comparable with August’s roughly 70 production locations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K15",
+      "region": "KR",
+      "organization": "동원그룹",
+      "workflow": {
+        "ko": "해외 법인 협업 번역과 회의록",
+        "en": "Translation and minutes for global collaboration"
+      },
+      "industry": "collaboration",
+      "source_type": "vendor-customer-case",
+      "deployment_stage": "limited-operation",
+      "outcome_verification": "none",
+      "source_urls": [
+        "https://www.samsungsds.com/kr/news/sds20260908.html"
+      ],
+      "related_cases": [
+        "slack-meeting-actions"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "baseline_deployment_stage": "limited-operation",
+      "introduced_at": "2026-10-26",
+      "claims": [
+        {
+          "id": "K15-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "공급사는 동원이 번역·AI 회의록과 일정·사내 정보 조회를 사용한다고 설명한다.",
+            "en": "The vendor describes Dongwon using translation, AI minutes, schedules, and internal-information lookup."
+          },
+          "source_urls": [
+            "https://www.samsungsds.com/kr/news/sds20260908.html"
+          ],
+          "published_at": "2026-09-08",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "관측기간 미공개.",
+              "en": "Observation dates undisclosed."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본·분모 미공개.",
+              "en": "Evaluation sample/denominator undisclosed."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "공급사 고객 사례이며 성과 측정치는 없다.",
+              "en": "Vendor customer account without measured outcomes."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "사용자 범위·발송 승인 절차는 미공개다. 같은 행사에서 소개된 Cowork의 운영을 뜻하지 않는다.",
+              "en": "User coverage and send approvals are undisclosed; this does not establish use of Cowork, shown at the same event."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K16",
+      "region": "KR",
+      "organization": "LG전자",
+      "workflow": {
+        "ko": "판금 불량 원인과 생산 조건 분석",
+        "en": "Sheet-metal defect and production-condition analysis"
+      },
+      "industry": "manufacturing",
+      "source_type": "government-report",
+      "deployment_stage": "limited-operation",
+      "outcome_verification": "none",
+      "source_urls": [
+        "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172187/view"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "baseline_deployment_stage": "limited-operation",
+      "introduced_at": "2026-10-26",
+      "claims": [
+        {
+          "id": "K16-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "정부 자료는 LG전자의 제조 데이터 연결과 AI 불량 원인·생산 조건 분석을 소개한다.",
+            "en": "A government release describes LG connecting manufacturing data for AI defect and production-condition analysis."
+          },
+          "source_urls": [
+            "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172187/view"
+          ],
+          "published_at": "2026-09-11",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "관측기간 미공개.",
+              "en": "Observation dates undisclosed."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "평가 표본·분모 미공개.",
+              "en": "Evaluation sample/denominator undisclosed."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "기업의 컨퍼런스 발표를 정부가 정리했다.",
+              "en": "Government summary of the company’s conference presentation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "개별 성과·승인 권한은 미공개다. 170여 사업장의 집계 성과를 LG전자 효과로 옮기지 않는다. K07과 다른 업무다.",
+              "en": "Individual outcomes and approval authority are undisclosed; aggregated results across about 170 sites are not LG’s effect. This differs from K07."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "G01",
@@ -1030,7 +2134,7 @@
         "slack-meeting-actions",
         "centralized-mail-assist"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G01-baseline",
@@ -1075,6 +2179,94 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G01-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "98%는 Assistant를 사용하는 자문팀 비율이다. Debrief의 정확도나 사용률이 아니다.",
+            "en": "The 98% figure concerns adviser teams using Assistant, not Debrief accuracy or adoption."
+          },
+          "source_urls": [
+            "https://openai.com/index/morgan-stanley/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ]
+        },
+        {
+          "id": "G01-finance-design-partnership",
+          "kind": "deployment-plan",
+          "statement": {
+            "ko": "투자은행·주식리서치 설계 협력은 기존 Debrief와 다른 업무다.",
+            "en": "Investment-banking and equity-research design work is separate from Debrief."
+          },
+          "source_urls": [
+            "https://openai.com/index/introducing-chatgpt-financial-services/"
+          ],
+          "published_at": "2026-09-10",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "제품 출시·협력을 배포 성과로 합치지 않는다.",
+              "en": "Do not combine a product partnership with verified deployment outcomes."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "operation"
@@ -1084,8 +2276,8 @@
       "region": "GLOBAL",
       "organization": "IBM",
       "workflow": {
-        "ko": "HR 문의에서 증명서 발급·휴가 처리까지",
-        "en": "From HR questions to employment documents and leave requests"
+        "ko": "HR 문의에서 인사이동·재직증명 처리까지",
+        "en": "From HR questions to employee transfers and employment verification"
       },
       "industry": "people-operations",
       "source_type": "organization-official",
@@ -1190,6 +2382,50 @@
               "en": "Only the metric wording was rechecked to correct the catalog. Unknown publication and observation dates prevent classification as a new post-baseline market change."
             }
           ]
+        },
+        {
+          "id": "G02-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "NPS -35와 CSAT +74는 서로 다른 지표다. 현재 원문의 업무 예시는 인사이동·재직증명이다.",
+            "en": "NPS -35 and CSAT +74 are different metrics; the current source names transfers and employment verification."
+          },
+          "source_urls": [
+            "https://www.ibm.com/case-studies/ibm-transformation/ask-hr"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "휴가 기능의 부재를 뜻하지 않는다. 지표 조사기간·표본은 미공개다.",
+              "en": "This does not establish absence of leave functions; metric periods and samples are unreported."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "operation"
@@ -1204,7 +2440,7 @@
       },
       "industry": "manufacturing",
       "source_type": "joint-official",
-      "deployment_stage": "expanding-operation",
+      "deployment_stage": "operation",
       "outcome_verification": "self-reported",
       "source_urls": [
         "https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai"
@@ -1212,7 +2448,7 @@
       "related_cases": [
         "equipment-anomaly-maintenance"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G03-baseline",
@@ -1257,6 +2493,58 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G03-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "2024년 실제 사용과 2025년 전세계 확대 계획을 분리한다. 12만 명은 TIA Portal 사용자 기반이다.",
+            "en": "Separate use reported in 2024 from planned global rollout in 2025; 120,000 refers to the TIA Portal user base."
+          },
+          "source_urls": [
+            "https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai"
+          ],
+          "published_at": "2024-10-24",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ],
+          "deployment_correction": {
+            "from": "expanding-operation",
+            "to": "operation",
+            "reason": {
+              "ko": "실제 사용과 예정된 확대를 분리해 expanding-operation을 operation으로 정정한다.",
+              "en": "Correct expanding-operation to operation by separating reported use from planned rollout."
+            }
+          }
         }
       ],
       "baseline_deployment_stage": "expanding-operation"
@@ -1280,7 +2568,7 @@
         "equipment-anomaly-maintenance",
         "inventory-exception-replenishment"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G04-baseline",
@@ -1325,6 +2613,50 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G04-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "배포 67~83%·처리 74%·비용 23% 개선은 클라우드 현대화 지표이며 생성형 도우미만의 효과가 아니다.",
+            "en": "Deployment 67–83%, processing 74%, and cost 23% improvements concern cloud modernization, not the assistant alone."
+          },
+          "source_urls": [
+            "https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "operation"
@@ -1347,7 +2679,7 @@
       "related_cases": [
         "equipment-anomaly-maintenance"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G05-baseline",
@@ -1392,6 +2724,94 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G05-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "Smart Assistant가 50만 개 이상 제품 자료 검색을 지원한다. 운영 효과의 평가 표본은 미공개다.",
+            "en": "Smart Assistant supports retrieval across over 500,000 products; an outcome-evaluation sample is not reported."
+          },
+          "source_urls": [
+            "https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ]
+        },
+        {
+          "id": "G05-hydraulic-hub-workflow",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "제품 식별, 기술문서, 정비 체크리스트와 서비스 요청을 연결한다.",
+            "en": "The product connects identification, technical documents, maintenance checklists, and service requests."
+          },
+          "source_urls": [
+            "https://www.boschrexroth.com/en/gb/connected-hydraulics/products/hydraulic-hub/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "최대 개선율의 표본·기간·측정법은 미공개다. 새 운영 성과로 분류하지 않는다.",
+              "en": "Samples, periods, and methods behind advertised maximum improvements are unreported; not a new measured outcome."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "operation"
@@ -1414,7 +2834,7 @@
       "related_cases": [
         "inventory-exception-replenishment"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G06-baseline",
@@ -1457,6 +2877,94 @@
             {
               "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "G06-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "Wally의 질의·분석·티켓 지원과 향후 자율 실행 목표를 구분한다.",
+            "en": "Separate Wally’s query, analysis, and ticket support from its future autonomous-action objective."
+          },
+          "source_urls": [
+            "https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants"
+          ],
+          "published_at": "2025-03-18",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ]
+        },
+        {
+          "id": "G06-agent-profiles-plan",
+          "kind": "deployment-plan",
+          "statement": {
+            "ko": "소비자용 Agent Profiles는 다음 달 출시 계획이며 Wally와 다른 업무다.",
+            "en": "Consumer Agent Profiles were planned for the following month and are separate from Wally."
+          },
+          "source_urls": [
+            "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers"
+          ],
+          "published_at": "2026-10-21",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "승인·지출 한도 설계를 완료된 도입이나 내부 상품 업무 성과로 쓰지 않는다.",
+              "en": "Approval and spending-limit designs are not completed adoption or merchant-workflow outcomes."
             }
           ]
         }
@@ -1568,6 +3076,94 @@
             {
               "ko": "비교 기준 전체가 미공개라는 서술을 정정한다. 수작업 11년은 추산이며 실측 절감 시간, 장기 품질이나 인과효과로 취급하지 않는다.",
               "en": "Corrects the claim that the entire comparison basis was unavailable. Eleven manual years is an estimate, not measured time saved, long-term quality, or a causal effect."
+            }
+          ]
+        },
+        {
+          "id": "G07-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "5,000개 페이지의 수작업 11년은 추정이다. 편집 승인율 80%는 사실 정확도가 아니다.",
+            "en": "Eleven manual years for 5,000 pages is an estimate; 80% editorial approval is not factual accuracy."
+          },
+          "source_urls": [
+            "https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service"
+          ],
+          "published_at": "2022-05-24",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ]
+        },
+        {
+          "id": "G07-customer-app-boundary",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "차량 검색·견적 도구 연결 앱의 출시는 기존 편집 업무와 별개다.",
+            "en": "The vehicle-search and offer-tool app launch is separate from editorial production."
+          },
+          "source_urls": [
+            "https://media.carmax.com/press-releases/news-release/2026/CarMax-Launches-First-of-Its-Kind-Car-Shopping-and-Selling-Experience-in-ChatGPT-App-Store/default.aspx"
+          ],
+          "published_at": "2026-02-27",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기준일 이전 자료이며 앱 출시를 콘텐츠 편집 성과에 합치지 않는다.",
+              "en": "Pre-baseline publication; app availability does not establish editorial outcomes."
             }
           ]
         }
@@ -1689,6 +3285,94 @@
               "en": "A quality counterexample separate from the vendor expansion plan; it does not upgrade deployment or independent-outcome evidence."
             }
           ]
+        },
+        {
+          "id": "G08-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "90일 파일럿과 4,000명 확대 계획을 구분한다. 별도 레지던시 연구를 같은 표본으로 합치지 않는다.",
+            "en": "Separate the 90-day pilot from planned access for 4,000 clinicians; the residency study is a different sample."
+          },
+          "source_urls": [
+            "https://www.abridge.com/case-study/corewell-health"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ]
+        },
+        {
+          "id": "G08-clinician-assistant-interview",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "임상가가 차트·근거를 조회하고 검토한 답신을 보낸다는 인터뷰다.",
+            "en": "A clinician describes chart and evidence lookup and sending reviewed replies."
+          },
+          "source_urls": [
+            "https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant"
+          ],
+          "published_at": "2026-10-07",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": 1,
+            "description": {
+              "ko": "인터뷰한 임상가 수. 환자 코호트는 미공개.",
+              "en": "One interviewed clinician; patient cohort unreported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "공급사가 편집한 인터뷰.",
+              "en": "Vendor-edited interview."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "임상가 1명의 편집된 인터뷰다. 90일 파일럿·레지던시 연구와 합치지 않는다.",
+              "en": "An edited interview with one clinician; not the same cohort as the pilot or residency study."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "pilot"
@@ -1711,7 +3395,7 @@
       "related_cases": [
         "regulated-evidence-document"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G09-baseline",
@@ -1754,6 +3438,50 @@
             {
               "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "G09-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "시간 절감 설문은 변호사 55명의 자기보고다. 사건별 수치와 전사 성과를 구분한다.",
+            "en": "The time-saving survey is self-report from 55 lawyers; matter-specific figures are not firmwide outcomes."
+          },
+          "source_urls": [
+            "https://www.harvey.ai/customers/foley-hoag"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": 55,
+            "description": {
+              "ko": "변호사 설문. 다른 사건별 지표의 분모는 별도다.",
+              "en": "Lawyer survey; denominators for other matter-specific metrics differ."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "내부 자기보고 설문; 기간 미상.",
+              "en": "Internal self-report survey; fieldwork dates unknown."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
             }
           ]
         }
@@ -1879,6 +3607,50 @@
               "en": "The source explicitly reports rollout to thousands after the pilot, correcting the pilot label."
             }
           }
+        },
+        {
+          "id": "G10-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "20명 파일럿, 450명 사용군·200명 대조군과 이후 확대를 구분한다. 12,000석은 접근 규모다.",
+            "en": "Separate the 20-person pilot, 450-user/200-control trial, and later rollout; 12,000 seats describes access."
+          },
+          "source_urls": [
+            "https://github.com/customer-stories/accenture"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": 650,
+            "description": {
+              "ko": "450명 사용군과 200명 대조군.",
+              "en": "450 users plus 200 controls."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "공급사 고객 사례가 설명한 무작위 대조시험. 전체 프로토콜 미공개.",
+              "en": "Vendor-described randomized trial; full protocol unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "pilot"
@@ -1893,15 +3665,15 @@
       },
       "industry": "financial-services",
       "source_type": "vendor-customer-case",
-      "deployment_stage": "unknown",
-      "outcome_verification": "self-reported",
+      "deployment_stage": "limited-operation",
+      "outcome_verification": "none",
       "source_urls": [
         "https://aws.amazon.com/solutions/case-studies/exl-case-study/"
       ],
       "related_cases": [
         "credit-underwriting-review"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G11-baseline",
@@ -1946,6 +3718,58 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G11-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "2024년 8월 출시 후 초기 고객이 온보딩했다. 최대 80%는 EXL 분석상 잠재 절감이다.",
+            "en": "Initial customers onboarded after the August 2024 launch. Up to 80% is EXL’s estimated savings potential."
+          },
+          "source_urls": [
+            "https://aws.amazon.com/solutions/case-studies/exl-case-study/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이전 SELF를 NONE으로 정정한다. 심사 비용·시간은 잠재 효과이며 60일 개발 이력은 별개다.",
+              "en": "Correct prior SELF to NONE: underwriting savings are potential; 60-day development is separate."
+            }
+          ],
+          "deployment_correction": {
+            "from": "unknown",
+            "to": "limited-operation",
+            "reason": {
+              "ko": "출시·초기 고객 온보딩이 있어 unknown을 당시 제한 운영으로 정정한다.",
+              "en": "Launch and initial onboarding support limited operation rather than unknown."
+            }
+          }
         }
       ],
       "baseline_deployment_stage": "unknown"
@@ -1961,14 +3785,14 @@
       "industry": "public-sector",
       "source_type": "vendor-customer-case",
       "deployment_stage": "limited-operation",
-      "outcome_verification": "none",
+      "outcome_verification": "self-reported",
       "source_urls": [
         "https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service"
       ],
       "related_cases": [
         "public-service-petition-response"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G12-baseline",
@@ -2013,6 +3837,50 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G12-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "전체 Boti의 월 200만 문의와 생성형 관광 경험 누적 17,000건을 구분한다. 후자는 업무부담 50% 감소를 자체 보고한다.",
+            "en": "Separate Boti’s two million monthly queries from 17,000 generative-tourism queries; the latter reports 50% lower workload."
+          },
+          "source_urls": [
+            "https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service"
+          ],
+          "published_at": "2025-01-28",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이전 NONE을 SELF로 정정한다. 원문에 자체 보고가 있으나 독립 검증으로 승격하지 않는다.",
+              "en": "Correct prior NONE to SELF because a self-report exists; this is not independent verification."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "limited-operation"
@@ -2036,7 +3904,7 @@
         "centralized-mail-assist",
         "slack-meeting-actions"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G13-baseline",
@@ -2081,6 +3949,50 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G13-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "조사 4시간→15분과 연간 5,000만 달러 가치는 회사 설명이며 실현 매출 증가의 증거가 아니다.",
+            "en": "Four-hour to 15-minute research and $50 million annual value are company claims, not verified realized revenue."
+          },
+          "source_urls": [
+            "https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/"
+          ],
+          "published_at": "2024-05-21",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다.",
+              "en": "Source review, not a live operating audit or independent outcome validation."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "operation"
@@ -2096,14 +4008,14 @@
       "industry": "legal-life-sciences",
       "source_type": "vendor-customer-case",
       "deployment_stage": "limited-operation",
-      "outcome_verification": "none",
+      "outcome_verification": "self-reported",
       "source_urls": [
         "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/"
       ],
       "related_cases": [
         "regulated-evidence-document"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G14-baseline",
@@ -2148,6 +4060,50 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G14-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "일부 핵심 분석 단계를 수주에서 수시간으로 줄였다는 보고이며 전체 TPP 기간은 아니다.",
+            "en": "The reported weeks-to-hours change concerns a core analytical step in some cases, not the entire TPP."
+          },
+          "source_urls": [
+            "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/"
+          ],
+          "published_at": "2025-12-17",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "이전 NONE을 SELF로 정정한다. 원문에 자체 보고가 있으나 독립 검증으로 승격하지 않는다.",
+              "en": "Correct prior NONE to SELF because a self-report exists; this is not independent verification."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "limited-operation"
@@ -2171,7 +4127,7 @@
       "related_cases": [
         "centralized-mail-assist"
       ],
-      "review_status": "not-rechecked",
+      "review_status": "selected-claims-reviewed",
       "claims": [
         {
           "id": "G15-baseline",
@@ -2217,9 +4173,764 @@
               "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
             }
           ]
+        },
+        {
+          "id": "G15-source-confirmation-20261026",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "초기 상담 수치는 회사·공급사 자체 발표다.",
+            "en": "Initial service metrics are company and vendor self-reports."
+          },
+          "source_urls": [
+            "https://openai.com/index/klarna/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "700명 업무 상당량은 실제 해고 인원이 아니다.",
+              "en": "Work equivalent to 700 agents is not an actual layoff count."
+            }
+          ]
+        },
+        {
+          "id": "G15-operating-adjustment-confirmation",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "복잡한 상담에 사람 지원을 보강했다고 보도했다.",
+            "en": "AP reports additional human support for complex cases."
+          },
+          "source_urls": [
+            "https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 기간 미상.",
+              "en": "Exact period unknown."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "미공개.",
+              "en": "Unreported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "언론 보도.",
+              "en": "News reporting."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "운영 방향만 교차 확인하며 초기 수치의 독립 검증은 아니다.",
+              "en": "Only the operating direction is cross-checked, not the initial metrics."
+            }
+          ]
         }
       ],
       "baseline_deployment_stage": "adjusted-operation"
+    },
+    {
+      "id": "G16",
+      "region": "UK",
+      "organization": "Virgin Atlantic",
+      "workflow": {
+        "ko": "경쟁사 고객 여정 조사와 제품 기획·데이터 통합",
+        "en": "Customer-journey research, product planning, and data consolidation"
+      },
+      "industry": "travel",
+      "source_type": "vendor-customer-case",
+      "deployment_stage": "operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://openai.com/index/virgin-atlantic/chatgpt-work/"
+      ],
+      "related_cases": [
+        "file-csv-to-ax-hub",
+        "beauty-d2c-voc"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G16-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "자료를 모아 고객 여정을 비교하고 제품팀이 결과를 수정·선택한다.",
+            "en": "Teams assemble journey evidence; product staff review findings and choose actions."
+          },
+          "source_urls": [
+            "https://openai.com/index/virgin-atlantic/chatgpt-work/"
+          ],
+          "published_at": "2026-08-10",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "관측기간·비교군 미공개.",
+              "en": "Observation dates and comparison group unreported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "업무 건수 미공개.",
+              "en": "Workflow count unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "담당자 인터뷰의 수주→수시간 비교.",
+              "en": "Interview-based weeks-to-hours comparison."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "전사 ROI나 고객 성과는 검증하지 않았다.",
+              "en": "Firmwide ROI and customer outcomes were not validated."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26"
+    },
+    {
+      "id": "G17",
+      "region": "US",
+      "organization": "Zapier",
+      "workflow": {
+        "ko": "영업 리드 누락 점검과 캠페인 자료·보고 자동화",
+        "en": "Lead-quality checks, campaign preparation, and recurring reporting"
+      },
+      "industry": "software-marketing",
+      "source_type": "vendor-customer-case",
+      "deployment_stage": "operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://openai.com/index/zapier/"
+      ],
+      "related_cases": [
+        "beauty-d2c-voc",
+        "slack-meeting-actions"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G17-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "리드 누락 점검·캠페인 자료 준비·보고를 연결하고 팀이 결과를 검토한다.",
+            "en": "Lead checks, campaign preparation, and reporting are connected, with team review."
+          },
+          "source_urls": [
+            "https://openai.com/index/zapier/"
+          ],
+          "published_at": "2026-08-10",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 운영·측정기간 미공개.",
+              "en": "Exact operating and measurement dates unreported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "월 수천 리드라고만 보고한다.",
+              "en": "Reports thousands of leads monthly without an exact denominator."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "책임자 인터뷰와 자체 파이프라인 산정.",
+              "en": "Manager interview and internal pipeline valuation."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "7자리 파이프라인 가치는 실현 매출이 아니며 상시 공통 맥락 체계는 계획이다.",
+              "en": "Seven-figure pipeline value is not realized revenue; a persistent shared-context system remains a plan."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26"
+    },
+    {
+      "id": "G18",
+      "region": "DE",
+      "organization": "Bundesagentur für Arbeit",
+      "workflow": {
+        "ko": "전화 문의 접수·표준 답변과 맥락을 보존한 상담사 인계",
+        "en": "Telephone intake, routine answers, and contextual human handoff"
+      },
+      "industry": "public-sector",
+      "source_type": "organization-official",
+      "deployment_stage": "pilot",
+      "outcome_verification": "none",
+      "source_urls": [
+        "https://www.arbeitsagentur.de/en/press/2026-36-more-service-and-shorter-waiting-times-federal-employment-agency-starts-test-phase-with-ai-voice-assistance"
+      ],
+      "related_cases": [
+        "public-service-petition-response",
+        "care-conversation-record"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G18-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "표준 전화 문의를 보조하고 복잡한 문의와 법적 결정은 직원에게 남긴다.",
+            "en": "Routine calls are assisted; complex cases and legally binding decisions remain with staff."
+          },
+          "source_urls": [
+            "https://www.arbeitsagentur.de/en/press/2026-36-more-service-and-shorter-waiting-times-federal-employment-agency-starts-test-phase-with-ai-voice-assistance"
+          ],
+          "published_at": "2026-09-23",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": "2026-09-22",
+            "end": null,
+            "description": {
+              "ko": "전국 접수와 일부 지역 응답 파일럿 시작.",
+              "en": "National intake and regional response pilot began."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "연 1,800만 통은 전체 유입이다.",
+              "en": "18 million annual calls is total inbound volume."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "공식 단계별 출시 발표.",
+              "en": "Official staged-launch announcement."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "AI 처리량·시간 절감 실적은 미공개다. 개인기록 활용은 후속 계획이다.",
+              "en": "AI throughput and time savings are unreported; personal-record use is a later plan."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "pilot",
+      "introduced_at": "2026-10-26"
+    },
+    {
+      "id": "G19",
+      "region": "US",
+      "organization": "Deaconess Health",
+      "workflow": {
+        "ko": "환자 대화·차트에 맞춘 근거 조회와 진료 판단 지원",
+        "en": "Evidence lookup contextualized to the patient conversation and chart"
+      },
+      "industry": "healthcare-social-care",
+      "source_type": "vendor-customer-case",
+      "deployment_stage": "limited-operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://www.abridge.com/blog/deaconess-olivia-taylor-abridge-assistant"
+      ],
+      "related_cases": [
+        "care-conversation-record",
+        "regulated-evidence-document"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G19-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "환자 대화·차트에 맞춘 근거를 조회하고 임상가가 판단한다.",
+            "en": "Evidence lookup uses the conversation and chart; the clinician decides."
+          },
+          "source_urls": [
+            "https://www.abridge.com/blog/deaconess-olivia-taylor-abridge-assistant"
+          ],
+          "published_at": "2026-09-29",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "사용일·평가기간 미공개.",
+              "en": "Usage and evaluation dates unreported."
+            }
+          },
+          "sample": {
+            "size": 1,
+            "description": {
+              "ko": "인터뷰한 임상가 수.",
+              "en": "Number of interviewed clinicians."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "공급사가 편집한 사용자 인터뷰.",
+              "en": "Vendor-edited user interview."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "진단 정확도·임상 효과 연구가 아니며 300개 기관은 실증 표본이 아니다.",
+              "en": "Not a diagnostic or clinical-outcome study; 300 systems is not the evaluation sample."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation",
+      "introduced_at": "2026-10-26"
+    },
+    {
+      "id": "G20",
+      "region": "US_GLOBAL",
+      "organization": "DXC Technology",
+      "workflow": {
+        "ko": "보험 문서 접수·분류·검토 경로와 결정 이력 관리",
+        "en": "Insurance document intake, review routing, and decision audit"
+      },
+      "industry": "financial-services",
+      "source_type": "organization-official",
+      "deployment_stage": "operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://dxc.com/insights/customer-stories/dxc-claude-insurance-backbone"
+      ],
+      "related_cases": [
+        "credit-underwriting-review",
+        "regulated-evidence-document"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G20-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "보험 문서를 분류·구조화하고 중요한 결정은 사람에게 넘겨 이력을 남긴다.",
+            "en": "Insurance documents are structured and routed to people for consequential decisions with audit records."
+          },
+          "source_urls": [
+            "https://dxc.com/insights/customer-stories/dxc-claude-insurance-backbone"
+          ],
+          "published_at": "2026-10-15",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "운영·측정기간 미공개.",
+              "en": "Operating and measurement dates unreported."
+            }
+          },
+          "sample": {
+            "size": 10,
+            "description": {
+              "ko": "별도 지시 준수 데모의 사례 수; 운영 분모는 미상.",
+              "en": "Separate instruction-following demo; operating denominator unknown."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "자체 사례와 데모·인터뷰.",
+              "en": "Company case, demonstration, and interview."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "첫 계산 초안 80%를 전체 정확도로 쓰지 않는다. 1,100개 고객·전체 보험계약 규모도 Claude 실사용 분모가 아니다.",
+              "en": "The 80% first draft is not overall accuracy; 1,100 customers and total policy volume are not Claude usage denominators."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26"
+    },
+    {
+      "id": "G21",
+      "region": "US",
+      "organization": "Carvana",
+      "workflow": {
+        "ko": "Slack 운영 경보 조사에서 PR·사람 검토·배포 후 확인까지",
+        "en": "Slack incident investigation through pull requests and post-release checks"
+      },
+      "industry": "software-engineering",
+      "source_type": "vendor-customer-case",
+      "deployment_stage": "operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://claude.com/customers/carvana"
+      ],
+      "related_cases": [
+        "company-agent-operating-layer",
+        "slack-meeting-actions"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G21-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "Slack 경보에서 PR을 제안하고 사람이 검토한다.",
+            "en": "Slack alerts lead to PRs for human review."
+          },
+          "source_urls": [
+            "https://claude.com/customers/carvana"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2주·5건은 별도 조사 시험이며 성과 지표의 측정기간이 아니다.",
+              "en": "Two weeks/five cases describes a separate investigation test, not the outcome-metric measurement period."
+            }
+          },
+          "sample": {
+            "size": 5,
+            "description": {
+              "ko": "별도 조사 시험 5건. 56%·65% 성과의 표본·기간은 미공개.",
+              "en": "Five investigation cases; samples and periods for the 56%/65% outcomes are unreported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "공급사가 설명한 별도 시험과 팀별 운영 비교.",
+              "en": "Vendor-described separate test and team-level comparisons."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "56%와 65%는 다른 팀의 자체 보고이며 게시일도 미상이다.",
+              "en": "56% and 65% are different teams’ self-reports; publication date is unknown."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26"
+    },
+    {
+      "id": "G22",
+      "region": "CH",
+      "organization": "Pictet",
+      "workflow": {
+        "ko": "내부 규정 대조와 역할별 데이터 접근을 갖춘 업무 도구 제작",
+        "en": "Internal policy comparison and role-scoped workflow tooling"
+      },
+      "industry": "financial-services",
+      "source_type": "vendor-customer-case",
+      "deployment_stage": "limited-operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://claude.com/customers/pictet"
+      ],
+      "related_cases": [
+        "regulated-evidence-document",
+        "employee-lifecycle-access"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G22-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "내부 지침 대조·업무 도구 제작을 지원하며 리스크팀이 용도·데이터 범위를 검토한다.",
+            "en": "Internal policy comparison and tooling are supported within risk-reviewed use and data boundaries."
+          },
+          "source_urls": [
+            "https://claude.com/customers/pictet"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2026년 초 도입 시작; 개별 평가일 미상.",
+              "en": "Rollout began early 2026; individual evaluation dates unknown."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "약 700명은 접근 규모. 지침 대조는 단일 사례다.",
+              "en": "About 700 describes access; policy comparison is one case."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "3명·2주 추정과 수시간 작업을 비교한다.",
+              "en": "Compares a three-person/two-week estimate with hours of work."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "본문 게시일·전체 품질 평가 미공개. 접근·교육 규모를 업무 성과로 쓰지 않는다.",
+              "en": "Body publication date and full quality evaluation unreported; access and training are not outcomes."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation",
+      "introduced_at": "2026-10-26"
+    },
+    {
+      "id": "G23",
+      "region": "US",
+      "organization": "GE Appliances",
+      "workflow": {
+        "ko": "부품 공급사 주문 상태 문의와 공급망 처리",
+        "en": "Supplier order-status inquiries and parts operations"
+      },
+      "industry": "manufacturing",
+      "source_type": "organization-official",
+      "deployment_stage": "operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://pressroom.geappliances.com/news/ge-appliances-reinvents-manufacturing-operations-at-scale-with-google-clouds-gemini-enterprise"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance",
+        "inventory-exception-replenishment"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G23-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "부품 공급사 주문 상태 문의를 자동화하고 담당자가 공급망 업무를 처리한다.",
+            "en": "Supplier order-status inquiries are automated within the parts team’s workflow."
+          },
+          "source_urls": [
+            "https://pressroom.geappliances.com/news/ge-appliances-reinvents-manufacturing-operations-at-scale-with-google-clouds-gemini-enterprise"
+          ],
+          "published_at": "2026-04-22",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "공급사 에이전트는 2025년 도입.",
+              "en": "Supplier agent introduced in 2025."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "600개 이상 공급사; 평가 건수·기간 미상.",
+              "en": "Over 600 suppliers; evaluation volume and period unknown."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "백오더 25% 감소의 회사 발표.",
+              "en": "Company-reported 25% backorder reduction."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "계산식·대조군·세부 승인 절차 미공개. 기준일 이전 근거다.",
+              "en": "Formula, controls, and detailed approval procedures unreported; pre-baseline evidence."
+            }
+          ]
+        },
+        {
+          "id": "G23-later-recap",
+          "kind": "source-confirmation",
+          "statement": {
+            "ko": "9월 공급사 글은 4월 회사 발표의 성과를 다시 설명한다.",
+            "en": "The September vendor article repeats outcomes in the April company release."
+          },
+          "source_urls": [
+            "https://cloud.google.com/transform/agentic-factory-manufacturing-new-age-of-autonomy-industrial-ai"
+          ],
+          "published_at": "2026-09-10",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "정확한 관측기간 미공개. 원문 당시 범위다.",
+              "en": "Observation dates unreported; source-time scope."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "측정 표본·분모 미공개.",
+              "en": "Measurement sample and denominator unreported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "측정 설계 미공개.",
+              "en": "Measurement design unreported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "새 관측이나 독립 검증이 아니며 수치를 중복 집계하지 않는다.",
+              "en": "Not a new observation or independent validation; do not double-count the figures."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation",
+      "introduced_at": "2026-10-26"
+    },
+    {
+      "id": "G24",
+      "region": "GLOBAL",
+      "organization": "MING Labs",
+      "workflow": {
+        "ko": "전사 에이전트 조정 역할의 중단과 업무 책임 재설계",
+        "en": "Retirement of an agent-coordination role and redesign of accountability"
+      },
+      "industry": "professional-services",
+      "source_type": "organization-official",
+      "deployment_stage": "adjusted-operation",
+      "outcome_verification": "self-reported",
+      "source_urls": [
+        "https://www.minglabs.com/insights/articles/we-fired-an-ai-agent",
+        "https://www.minglabs.com/insights/articles/we-fired-an-ai-agent.json"
+      ],
+      "related_cases": [
+        "company-agent-operating-layer",
+        "slack-meeting-actions"
+      ],
+      "review_status": "initial-claims-reviewed",
+      "claims": [
+        {
+          "id": "G24-initial-review",
+          "kind": "initial-review",
+          "statement": {
+            "ko": "조정 에이전트 Major Tom을 중단하고 업무 소유권을 다시 설계했다.",
+            "en": "MING retired coordination agent Major Tom and redesigned workflow ownership."
+          },
+          "source_urls": [
+            "https://www.minglabs.com/insights/articles/we-fired-an-ai-agent",
+            "https://www.minglabs.com/insights/articles/we-fired-an-ai-agent.json"
+          ],
+          "published_at": "2026-04-02",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": "2026-03-17",
+            "end": "2026-03-30",
+            "description": {
+              "ko": "내부 메시지 감사 기간.",
+              "en": "Internal message-audit period."
+            }
+          },
+          "sample": {
+            "size": 764,
+            "description": {
+              "ko": "메시지 수; 원본 로그는 비공개.",
+              "en": "Messages; raw logs are private."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "회사 회고와 기계 판독 기록의 감사 요약.",
+              "en": "Company retrospective and machine-readable audit summary."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "13일 뒤 특정 역할을 중단한 자기보고다. 다른 에이전트 효과와 합치거나 회사 전체 철회로 쓰지 않는다.",
+              "en": "Self-report of one role retired after 13 days, not other agents’ outcomes or companywide AI withdrawal."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "adjusted-operation",
+      "introduced_at": "2026-10-26"
     }
   ]
 }

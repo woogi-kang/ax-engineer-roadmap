@@ -4,8 +4,10 @@ This directory records the external evidence behind the roadmap's role model, st
 
 ## Documents
 
-- [Public AX case catalog](public-ax-cases.md): compares the workflow, human judgment, reported result, and evidence limits of 10 Korean and 15 international cases.
-- [Public case-to-practice table](public-case-application-map.md): shows where questions and controls from all 25 public cases inform 10 existing practices and five new ones.
+- [Public AX case catalog](public-ax-cases.md): compares workflows, human judgment, reported results, and evidence limits across 16 Korean and 24 international cases.
+- [Job-posting records](hiring-signals.md): responsibilities, requirements, recruitment signals, and check dates for 27 records. Possible duplicates mean this is not a unique-vacancy count.
+- [2026-10-26 evidence refresh](evidence-refresh-2026-10-26.md): collection scope, additions, corrections, access failures, and held material.
+- [Public case-to-practice table](public-case-application-map.md): shows where the original 25 cases inform practice and suggests questions from 15 additions.
 - [Public AX Engineer role review](ax-engineer-role-review.md): separates the 2026-07-23 baseline from role and training evidence checked on 2026-10-26, and compares internal AX with adjacent responsibilities.
 - [Developer and AI Agent roadmap review](roadmap-benchmark-review.md): explains what this project borrows from existing roadmaps and what it adds for AX work.
 - [Evidence review for operations and adoption](operating-evidence-review.md): publication and observation dates, samples, and limitations of organizational surveys informing costs, policy compliance, and role-specific acceptance.
@@ -21,6 +23,8 @@ This directory records the external evidence behind the roadmap's role model, st
 
 ## Scope of this evidence update
 
-The role review was updated on 2026-10-26, separating dated changes, undated current signals, and historical material. The 25-case catalog keeps its 2026-08-01 baseline; only selected claims for K04, K05, K07, K08, K09, G02, G07, G08, and G10 were rechecked. The [case registry](../../research/public-ax-cases.json) preserves 26 original source URLs plus three follow-up sources, 29 in total.
+All 25 existing public cases were attempted on 2026-10-26. Main source bodies were read for 24; K06 POSCO remains historical because access failed. Fifteen workflow cases bring the catalog to 40. The [case registry](../../research/public-ax-cases.json) contains 54 unique URLs, including all 26 original sources.
+
+Job records show 11 open signals, eight closed signals, and eight unknown states. Only GM has a verified publication date after 2026-08-01; the other 26 records are undated. Check dates do not substitute for publication dates, and this sample does not establish market growth or decline.
 
 Company figures without observation periods, samples, or methods remain self-reported. Follow-up external evidence does not change the evidence levels of the one runnable public simulation and 14 designs without execution evidence.

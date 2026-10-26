@@ -1,0 +1,1006 @@
+{
+  "checked_at": "2026-10-26",
+  "scope": {
+    "existing_case_ids": [
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05",
+      "K06",
+      "K07",
+      "K08",
+      "K09",
+      "K10",
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15"
+    ],
+    "attempted_existing_cases": 25,
+    "existing_cases_with_direct_source": 24,
+    "new_case_ids": [
+      "K11",
+      "K12",
+      "K13",
+      "K14",
+      "K15",
+      "K16",
+      "G16",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "G21",
+      "G22",
+      "G23",
+      "G24"
+    ],
+    "case_count": 40,
+    "case_source_url_count": 54,
+    "posting_records": 27
+  },
+  "case_source_observations": [
+    {
+      "case_id": "K01",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=156743148",
+          "access_status": "read",
+          "published_at": "2026-02-05"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "K02",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.shinhangroup.com/kr/archive/press/detail/679",
+          "access_status": "read",
+          "published_at": "2026-03-27"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "K03",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://shinhangroup.com/kr/archive/press/detail/637",
+          "access_status": "read",
+          "published_at": "2026-02-12"
+        },
+        {
+          "url": "https://shinhangroup.com/kr/archive/press/detail/993",
+          "access_status": "read",
+          "published_at": "2026-10-16"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "K04",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.lg.co.kr/media/release/29014",
+          "access_status": "read",
+          "published_at": "2025-05-27"
+        },
+        {
+          "url": "https://lg.co.kr/media/release/30616",
+          "access_status": "read",
+          "published_at": "2026-09-30"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "K05",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.samsungsds.com/kr/news/sds-genai-mediaday.html",
+          "access_status": "read",
+          "published_at": "2024-05-02"
+        },
+        {
+          "url": "https://www.samsungsds.com/kr/news/sds-2608013.html",
+          "access_status": "read",
+          "published_at": "2026-08-13"
+        },
+        {
+          "url": "https://www.samsungsds.com/kr/news/bw-260430.html",
+          "access_status": "read",
+          "published_at": "2026-04-30"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "K06",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/",
+          "access_status": "search-only",
+          "published_at": "2026-03-09"
+        },
+        {
+          "url": "https://newsroom.posco.com/kr/%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EC%98%88%EC%A7%80%EC%A0%95%EB%B9%84-%EA%B3%A0%EB%8F%84%ED%99%94-%EC%9B%90%ED%8C%80-%EA%B2%B0%EC%84%B1-%EC%A0%84%EC%82%AC-%ED%98%91/",
+          "access_status": "search-only",
+          "published_at": "2026-10-02"
+        }
+      ],
+      "has_direct_source": false
+    },
+    {
+      "case_id": "K07",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.lg.co.kr/media/release/28789",
+          "access_status": "read",
+          "published_at": "2025-03-27"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "K08",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://news.sktelecom.com/200115",
+          "access_status": "read",
+          "published_at": "2023-11-28"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "K09",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://news.sktelecom.com/214674",
+          "access_status": "read",
+          "published_at": "2025-08-28"
+        },
+        {
+          "url": "https://news.sktelecom.com/226306",
+          "access_status": "read",
+          "published_at": "2026-06-10"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "K10",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140",
+          "access_status": "read",
+          "published_at": null
+        },
+        {
+          "url": "https://news.lguplus.com/20952",
+          "access_status": "read",
+          "published_at": "2025-12-12"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G01",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://openai.com/index/morgan-stanley/",
+          "access_status": "read",
+          "published_at": null
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G02",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.ibm.com/case-studies/ibm-transformation/ask-hr",
+          "access_status": "read",
+          "published_at": null
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G03",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai",
+          "access_status": "read",
+          "published_at": "2024-10-24"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G04",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/",
+          "access_status": "read",
+          "published_at": null
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G05",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/",
+          "access_status": "read",
+          "published_at": null
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G06",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants",
+          "access_status": "read",
+          "published_at": "2025-03-18"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G07",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service",
+          "access_status": "read",
+          "published_at": "2022-05-24"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G08",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.abridge.com/case-study/corewell-health",
+          "access_status": "read",
+          "published_at": null
+        },
+        {
+          "url": "https://scholarlyworks.corewellhealth.org/family_medicine_confabstract/34/",
+          "access_status": "read",
+          "published_at": "2026-06-29"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G09",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.harvey.ai/customers/foley-hoag",
+          "access_status": "read",
+          "published_at": null
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G10",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://github.com/customer-stories/accenture",
+          "access_status": "read",
+          "published_at": null
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G11",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://aws.amazon.com/solutions/case-studies/exl-case-study/",
+          "access_status": "read",
+          "published_at": null
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G12",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service",
+          "access_status": "read",
+          "published_at": "2025-01-28"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G13",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/",
+          "access_status": "read",
+          "published_at": "2024-05-21"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G14",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/",
+          "access_status": "read",
+          "published_at": "2025-12-17"
+        }
+      ],
+      "has_direct_source": true
+    },
+    {
+      "case_id": "G15",
+      "checked_at": "2026-10-26",
+      "sources": [
+        {
+          "url": "https://openai.com/index/klarna/",
+          "access_status": "read",
+          "published_at": null
+        },
+        {
+          "url": "https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929",
+          "access_status": "read",
+          "published_at": null
+        }
+      ],
+      "has_direct_source": true
+    }
+  ],
+  "field_changes": [
+    {
+      "case_id": "K03",
+      "field": "outcome_verification",
+      "before": "none",
+      "after": "self-reported",
+      "claim_ids": [
+        "K03-source-confirmation",
+        "K03-lico2-speed"
+      ]
+    },
+    {
+      "case_id": "K10",
+      "field": "deployment_stage",
+      "before": "pilot",
+      "after": "unknown",
+      "claim_ids": [
+        "K10-source-confirmation",
+        "K10-pilot-plan-correction"
+      ]
+    },
+    {
+      "case_id": "G02",
+      "field": "workflow",
+      "before": {
+        "ko": "HR 문의에서 증명서 발급·휴가 처리까지",
+        "en": "From HR questions to employment documents and leave requests"
+      },
+      "after": {
+        "ko": "HR 문의에서 인사이동·재직증명 처리까지",
+        "en": "From HR questions to employee transfers and employment verification"
+      },
+      "claim_ids": [
+        "G02-source-confirmation-20261026"
+      ]
+    },
+    {
+      "case_id": "G03",
+      "field": "deployment_stage",
+      "before": "expanding-operation",
+      "after": "operation",
+      "claim_ids": [
+        "G03-source-confirmation-20261026"
+      ]
+    },
+    {
+      "case_id": "G11",
+      "field": "deployment_stage",
+      "before": "unknown",
+      "after": "limited-operation",
+      "claim_ids": [
+        "G11-source-confirmation-20261026"
+      ]
+    },
+    {
+      "case_id": "G11",
+      "field": "outcome_verification",
+      "before": "self-reported",
+      "after": "none",
+      "claim_ids": [
+        "G11-source-confirmation-20261026"
+      ]
+    },
+    {
+      "case_id": "G12",
+      "field": "outcome_verification",
+      "before": "none",
+      "after": "self-reported",
+      "claim_ids": [
+        "G12-source-confirmation-20261026"
+      ]
+    },
+    {
+      "case_id": "G14",
+      "field": "outcome_verification",
+      "before": "none",
+      "after": "self-reported",
+      "claim_ids": [
+        "G14-source-confirmation-20261026"
+      ]
+    }
+  ],
+  "case_candidates_not_promoted": [
+    {
+      "area": "KR",
+      "organization": "GS칼텍스",
+      "url": "https://www.samsungsds.com/kr/news/sds20260908.html",
+      "reason": "차세대 ERP·업무 분석 기반을 마련 중이라는 설명은 있으나 독립된 완료 업무와 운영 범위를 확정하기 부족하다. 계획/구축 사례로만 보관."
+    },
+    {
+      "area": "KR",
+      "organization": "Vessl AI",
+      "url": "https://www.samsungsds.com/kr/news/sds20260908.html",
+      "reason": "GPU 가동률 개선은 인프라 지표다. 이번 업무 절차 사례 확장과 구분한다."
+    },
+    {
+      "area": "KR",
+      "organization": "삼성SDS Cowork",
+      "url": "https://www.samsungsds.com/kr/news/sds20260908.html",
+      "reason": "제품 공개 기능을 특정 고객의 실제 자율 실행 실적으로 바꾸지 않는다."
+    },
+    {
+      "area": "KR",
+      "organization": "현대자동차그룹 H-Launch·에이전트 ID/승인",
+      "url": "https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day",
+      "reason": "이달 출시·관리 체계 구축이라는 계획 표현이다. 현재 운영 완료나 보편 표준의 근거로 쓰지 않는다."
+    },
+    {
+      "area": "KR",
+      "organization": "삼현",
+      "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172187/view",
+      "reason": "제조 데이터 통합과 전환 경험은 설명하지만 자율 의사결정은 목표다. 완료된 AI 업무·개별 결과가 부족해 우선 후보에서 제외."
+    },
+    {
+      "area": "KR",
+      "organization": "HSAD AI 영화 수상",
+      "url": "https://www.lg.co.kr/media/release/30419",
+      "reason": "작품·수상 소개를 반복 업무 운영과 효과 측정의 증거로 대체하지 않는다. 게시일을 추가 추정하지 않았다."
+    },
+    {
+      "area": "KR",
+      "organization": "OpenAgent LOA 소개",
+      "url": "https://www.openagent.co.kr/demos/loa_intro.html",
+      "reason": "제3자 소개의 성과를 회사 원문과 대조하지 못했으므로 채택하지 않는다."
+    },
+    {
+      "area": "KR",
+      "organization": "SKT 사회적가치 페스타",
+      "url": "https://news.sktelecom.com/tag/%EC%BC%80%EC%96%B4%EB%B9%84%EC%95%84",
+      "reason": "목록 검색으로 행사 전시를 찾았으나 CareVia 운영 확대·효과의 후속 검증으로 채택하지 않는다."
+    },
+    {
+      "area": "international",
+      "organization": "International Rescue Committee",
+      "url": "https://claude.com/customers/irc",
+      "reason": "공급사 검색문에는 상세한 과거 파일럿이 있지만 직접 열기가 두 차례 시간 초과/내부 오류로 실패했다. 원문 직접 확인 후보와 구분해 보류한다."
+    },
+    {
+      "area": "international",
+      "organization": "YouTube",
+      "url": "https://newsroom.accenture.com/news/2026/accenture-and-google-cloud-deepen-partnership-with-formation-of-new-accenture-gemini-enterprise-business-group",
+      "reason": "NFL 수요 때 에이전트 배포와 11%·37%를 보고하지만 업무 흐름·사람 검수·측정기간·분모가 부족해 우선 신규 사례로 채택하지 않는다."
+    },
+    {
+      "area": "international",
+      "organization": "Morgan Stanley / Evercore",
+      "url": "https://openai.com/index/introducing-chatgpt-financial-services/",
+      "reason": "설계 협력과 제품 출시 자료다. 실제 조직 배포·운영 성과가 확인된 신규 사례로 삼지 않는다. G01의 별도 맥락 후속으로만 기록한다."
+    },
+    {
+      "area": "international",
+      "organization": "Accenture AI Factory",
+      "url": "https://newsroom.accenture.com/blogs/2026/accenture-expands-enterprise-agentic-ai-capabilities-with-ai-foundation-and-ai-factory",
+      "reason": "플랫폼·솔루션 발표이며 구체적인 고객 운영 표본이 부족하다. 기존 내부 Copilot의 후속 성과로 합치지 않는다."
+    },
+    {
+      "area": "international",
+      "organization": "Abridge platform-wide launch",
+      "url": "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare",
+      "reason": "300개 의료기관의 접근 가능 여부는 실제 사용률·임상 안전성의 분모가 아니다. 개별 임상가 인터뷰를 별도 한계로 다룬다."
+    },
+    {
+      "area": "international",
+      "organization": "Corewell nursing webinar",
+      "url": "https://www.linkedin.com/posts/abridgehq_corewell-healths-nursing-implementation-activity-7402366655877652481-eJM4",
+      "reason": "검색에서 발견한 12월 16일 행사는 2025년 자료로 보인다. 날짜 확인 없는 2026년 새 변화로 사용하지 않는다."
+    },
+    {
+      "area": "international",
+      "organization": "Klarna current help page",
+      "url": "https://www.klarna.com/uk/customer-service/",
+      "reason": "봇 확인 화면으로 차단됐다. 검색 요약의 주간 처리량을 검증 수치로 사용하지 않는다."
+    },
+    {
+      "area": "international",
+      "organization": "Claude customer catalog dates",
+      "url": "https://claude.com/customers?trk=direct",
+      "reason": "목록 검색에는 Carvana·Pictet 날짜가 있지만 열어 본 현재 본문은 날짜를 노출하지 않는다. 후보 게시일을 null로 두고 검색 단서만 보존한다."
+    },
+    {
+      "area": "KR",
+      "organization": "SK스퀘어",
+      "url": "https://www.sksquare.com/kor/news/newsMediaList.do",
+      "reason": "Official detail was not fully obtained; secondary coverage was not promoted."
+    },
+    {
+      "area": "supplementary-research",
+      "organization": "Bashi AI",
+      "url": "https://arxiv.org/abs/2610.28683",
+      "reason": "Only the abstract was reviewed; full methods were not inspected, so no catalog case was added."
+    }
+  ],
+  "job_prior_sources": [
+    {
+      "url": "https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/",
+      "checked_at": "2026-10-26",
+      "access_status": "unavailable"
+    },
+    {
+      "url": "https://apply.workable.com/lunit/j/E3C22F589F/",
+      "checked_at": "2026-10-26",
+      "access_status": "unavailable"
+    },
+    {
+      "url": "https://recruit.wanted.co.kr/wd/368564",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://blog.rapportlabs.kr/%EC%9B%94%EA%B0%84-ax-ai%EB%A5%BC-%EC%8B%A4%EC%A0%9C%EB%A1%9C-%EC%93%B0%EA%B2%8C-%EB%A7%8C%EB%93%A4%EB%A0%A4%EB%A9%B4-156677",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://search-careers.gm.com/en/jobs/jr-202605425/sr-ai-automation-engineer-hr-technology-remote-india-night-shift/",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://www.onespan.com/about/careers/job/ai-automation-engineer-8278879?gh_jid=8278879&langcode=en",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390966008",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391151008",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://recruit.wanted.co.kr/wd/390449",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://career.rememberapp.co.kr/job/posting/344926",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://openai.com/careers/forward-deployed-engineer-seoul-seoul-south-korea/",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5449229008",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390735008",
+      "checked_at": "2026-10-26",
+      "access_status": "read"
+    }
+  ],
+  "job_candidates_not_promoted": [
+    {
+      "company": "셀트리온",
+      "title": "AX Engineer (SW Development)",
+      "url": "https://www.bzpp.co.kr/biz/businessDetailView/BR260807A00443",
+      "source_authority": "secondary",
+      "access_status": "read",
+      "availability": "unknown",
+      "published_at": "2026-08-07",
+      "date_basis": "재게재 플랫폼 Posted 날짜; 기업 원 공고 게시일 미확인",
+      "reason": "플랫폼이 외부 공고를 선별 게재한다고 명시. 본문은 읽었으나 공식 원문·원 공고 ID와 회사별 지원 상태를 못 확인해 주 레지스트리 승격 보류.",
+      "observed_scope": "사내 Chatbot/Search/Agent와 데이터 파이프라인, Python·LLM·SQL·클라우드; 규제 산업 우대"
+    },
+    {
+      "company": "뉴셀렉트(주)",
+      "title": "AX Engineer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54393341",
+      "source_authority": "employer-platform",
+      "access_status": "read",
+      "content_scope": "metadata-only",
+      "availability": "closed",
+      "published_at": null,
+      "recruitment_start_at": "2026-07-07",
+      "closing_date": "2026-09-06",
+      "reason": "직무 세부 내용이 이미지로만 표시되어 원문 자격·책임을 검증하지 못함. 날짜·마감 메타데이터만 확인."
+    },
+    {
+      "company": "QueryPie",
+      "title": "AX Engineer(실무형 인턴)",
+      "url": "https://cse.cau.ac.kr/sub05/sub0502.php?code=oktomato_bbs07&keyword=&nmode=view&offset=1&search=&temp1=&uid=5172",
+      "source_authority": "secondary",
+      "access_status": "search-only",
+      "availability": "unknown",
+      "published_at": null,
+      "secondary_date": "2026-01-13",
+      "reason": "대학 재게시 검색 결과에는 날짜가 있으나 직접 열기는 timeout. 원 회사 공고·현재 모집 상태 미확인."
+    },
+    {
+      "company": "카카오",
+      "title": "Data Scientist (경력)",
+      "url": "https://careers.kakao.com/jobs/P-14324",
+      "source_authority": "company-official",
+      "access_status": "unavailable",
+      "availability": "unknown",
+      "reason": "검색 요약에는 내부 업무 혁신 한 항목이 있지만 직접 원문은 JavaScript 안내뿐. 주 업무도 광고/데이터 제품이어서 AX 직무로 승격하지 않음."
+    },
+    {
+      "company": "카카오헬스케어",
+      "title": "Data Engineer(Healthcare)",
+      "url": "https://careers.kakao.com/jobs/S-4689",
+      "source_authority": "company-official",
+      "access_status": "unavailable",
+      "availability": "unknown",
+      "reason": "직접 열기는 JavaScript 안내뿐. 검색 요약의 AI 자동화 한 항목만으로 AX 역할로 승격하지 않음."
+    },
+    {
+      "company": "미리디",
+      "title": "[미리디] AX 엔지니어 (AX Engineer)",
+      "url": "https://recruit.wanted.co.kr/wd/366267",
+      "source_authority": "employer-platform",
+      "access_status": "read",
+      "availability": "closed",
+      "published_at": null,
+      "closing_date": "2026-07-17",
+      "reason": "이전 모집·역할 자료로 별도 보존. Enablement·라이선스·오피스아워·가이드 중심이고 384409와 원 공식 ID 대응이 미확인이라 새로운 채용 수요로 중복 집계하지 않음."
+    },
+    {
+      "company": "윗유",
+      "title": "[AX] AX Engineer",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50180801",
+      "source_authority": "employer-platform",
+      "access_status": "read",
+      "content_scope": "metadata-only",
+      "availability": "unknown",
+      "published_at": null,
+      "secondary_search_date": "2026-10-16",
+      "reason": "직접 본문에는 역할·접수일·활성 지원 상태가 추출되지 않음. 검색 요약의 10/16 등록·11/14 마감은 주 레코드 날짜에 대입하지 않음."
+    },
+    {
+      "company": "SK AX 등",
+      "title": "AX 문자열 일반 검색 결과",
+      "url": "https://www.saramin.co.kr/zf_user/search?searchword=AX",
+      "source_authority": "secondary",
+      "access_status": "search-only",
+      "availability": "unknown",
+      "reason": "회사명·사업부명·일반 개발직이 섞인 검색 총수를 AX Engineer 채용 건수로 사용하지 않음."
+    },
+    {
+      "company": "윗유",
+      "title": "AX Engineer",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55308192",
+      "source_authority": "employer-platform",
+      "access_status": "read",
+      "content_scope": "metadata-only",
+      "availability": "closed",
+      "published_at": null,
+      "recruitment_start_at": "2026-10-16",
+      "closing_date": "2026-10-16",
+      "reason": "직무 세부 본문은 확인하지 못함. 마감 상태와 접수일만 확인했으며 Wanted/Remember의 공식 원 공고 ID 대응이 불명확해 상태·날짜를 병합하지 않음."
+    }
+  ],
+  "search_queries": {
+    "korean_cases": [
+      "기업 \"AI\" \"2026\" \"10월\" \"업무\" 도입 사례 공식",
+      "\"AX\" \"2026\" \"9월\" \"성과\" 기업 사례",
+      "site:lg.co.kr \"HSAD\" \"성과\" \"2026\"",
+      "site:samsungsds.com/kr/news \"2026\" \"AI\" \"9\"",
+      "국민권익위원회 민원 답변 추천 2026 8월 9월 10월 확대",
+      "신한은행 여신심사지원 Agent 2026 9월 10월",
+      "신한라이프 LICO 2026 8월 9월 10월 성과",
+      "포스코 포항제철소 PIMS 설비 AI 2026 9월",
+      "LG유플러스 AI 상담 어드바이저 2026 10월 9월",
+      "삼성SDS Brity Works 2026 중앙부처 9곳 서비스 개시 10월",
+      "LG전자 Eng.AI 2026 출시 품질 예측",
+      "SK텔레콤 AI콜 안부확인 2026 8월 9월 10월",
+      "site:news.sktelecom.com \"케어비아\" \"2026\"",
+      "\"슈퍼스쿨\" \"2026\" \"제주\"",
+      "site:lg.co.kr \"Eng.AI\" \"2026\"",
+      "site:newsroom.posco.com \"예지정비\" \"2026\" \"50\"",
+      "\"동원그룹\" \"브리티웍스\" \"2026\"",
+      "site:news.lgcns.com \"2026\" \"에이전트\" \"업무\"",
+      "site:news.skhynix.co.kr \"2026\" \"AI\" \"업무\"",
+      "\"2026\" \"9월\" \"AI\" \"업무\" \"현대오토에버\"",
+      "현대자동차그룹 AI 업무 혁신 성과 2026 10월 22일",
+      "site:samsungsds.com \"2026-09-08\" \"GS칼텍스\"",
+      "\"2026\" \"AI\" \"업무\" \"사례\" site:newsroom.kakao.com",
+      "\"2026\" \"AI\" \"업무\" site:news.hmgjournal.com",
+      "site:samsungsds.com/kr/news \"리얼 서밋 2026\" \"동원\"",
+      "site:samsungsds.com \"GS칼텍스\" \"2026\" \"계약\"",
+      "site:news.naver.com \"AX\" \"2026\" \"9월\" 사례",
+      "\"2026\" \"AI\" \"도입\" \"성과\" \"롯데\" \"9월\"",
+      "\"GS칼텍스\" \"삼성SDS\" \"2026\" \"AI\" 계약 검토",
+      "\"동원그룹\" \"브리티웍스\" site:dongwon.com",
+      "\"SK스퀘어\" \"AI 네이티브\" \"2026\"",
+      "\"다차원 AI 풀스택\" \"2026-09-08\"",
+      "site:samsungsds.com \"리얼 서밋\" \"GS칼텍스\"",
+      "site:news.sktelecom.com \"안부확인\" \"2026\"",
+      "site:sksquare.com \"AI 네이티브\" \"90\"",
+      "site:news.sktelecom.com \"케어비아\" \"2026.06.10\"",
+      "site:news.sktelecom.com \"AI콜\" \"2026\"",
+      "site:korea.kr \"2026.03.11\" \"민원\" \"AI\"",
+      "site:newsroom.posco.com \"데이터로 설비를 읽다\"",
+      "site:sksquare.com \"AI 네이티브\" \"90개\"",
+      "site:news.sktelecom.com \"선한 AI로\" \"2026\"",
+      "\"슈퍼스쿨\" \"2026\" \"시범학교\" 10월",
+      "\"신한은행\" \"여신심사지원\" \"2026\" \"10월\"",
+      "\"SK스퀘어\" \"AI 네이티브\" \"2026.09.10\"",
+      "\"LG전자\" \"판금\" \"2026\" \"AI\"",
+      "site:news.sktelecom.com \"선한 AI로 지속가능 미래 연결한다\"",
+      "\"SK스퀘어\" \"키위\" site:sk.co.kr",
+      "\"SK스퀘어\" \"네이티브\" site:sksquare.com/kor/news",
+      "\"SK스퀘어\" \"키위\" site:mediask.co.kr"
+    ],
+    "global_cases": [
+      "AP ca87ae77d7c6797ebb2628bd1b532929 September",
+      "site.openai.com Morgan Stanley 2026 September",
+      "site.ibm.com AskHR 2026 September",
+      "site.press.siemens.com 2026 September Industrial AI",
+      "Jabil generative AI assistant 2026 August September October [jabil.com, aws.amazon.com]",
+      "Bosch Rexroth Hydraulic Hub Smart Assistant 2026 [boschrexroth.com, bosch.com, aws.amazon.com]",
+      "Walmart Wally AI merchants August September October 2026 [corporate.walmart.com, public.walmart.com]",
+      "CarMax generative AI customer content 2026 [carmax.com, microsoft.com]",
+      "Corewell Health Abridge nursing 2026 September October [abridge.com, corewellhealth.org]",
+      "Foley Hoag Harvey AI 2026 [foleyhoag.com, harvey.ai]",
+      "Accenture AI coding agents 2026 September October deployment [newsroom.accenture.com, github.blog]",
+      "EXL underwriting AI August September October 2026 [exlservice.com, aws.amazon.com]",
+      "Boti generative AI Buenos Aires 2026 agosto septiembre octubre [buenosaires.gob.ar, microsoft.com]",
+      "Lumen Copilot sales generative AI 2026 [news.lumen.com, microsoft.com]",
+      "Moderna ChatGPT AI Target Product Profile 2026 [modernatx.com, openai.com]",
+      "Klarna AI customer service August September October 2026 [klarna.com, investors.klarna.com]",
+      "Virgin Atlantic August 2026 OpenAI [openai.com, virginatlantic.com]",
+      "September 2026 AI underwriting human [anthropic.com, openai.com, microsoft.com, aws.amazon.com]",
+      "October 2026 hospital AI documentation review [abridge.com, microsoft.com, healthcare.utah.edu]",
+      "September 2026 manufacturing agent customer [aws.amazon.com, cloud.google.com, siemens.com]",
+      "site.abridge.com October 2026 Deaconess",
+      "site.anthropic.com/customers 2026 insurance",
+      "site.openai.com Zapier August 10, 2026",
+      "site.cloud.google.com YouTube 37% 2026",
+      "How Zapier transformed core marketing processes",
+      "How Abridge Assistant Olivia Taylor",
+      "Corewell Health Nursing Implementation Abridge",
+      "International Rescue Committee fragmented health data Claude",
+      "site.claude.com/customers/carvana September 4, 2026",
+      "site.claude.com/customers/pictet September 2, 2026",
+      "site.abridge.com/blog Olivia Taylor"
+    ],
+    "hiring": [
+      {
+        "query_id": "Q01",
+        "query": "\"AX Engineer\" 채용 공식 2026",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q02",
+        "query": "\"AX 엔지니어\" 채용 \"greetinghr\"",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q03",
+        "query": "\"AX Product Manager\" 채용",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q04",
+        "query": "\"AI Automation\" \"Korea\" careers",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q05",
+        "query": "\"AX Engineer\" site:recruit.wanted.co.kr/wd",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q06",
+        "query": "\"AX 엔지니어\" site:career.greetinghr.com",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q07",
+        "query": "\"AX Product Manager\" \"대웅\" \"wanted\"",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q08",
+        "query": "\"AI Enablement\" \"Engineer\" \"Seoul\" careers",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q09",
+        "query": "\"대웅\" \"AX Product Manager\" site:recruit.wanted.co.kr",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q10",
+        "query": "\"AX Engineer\" \"뉴셀렉트\" 채용",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q11",
+        "query": "\"AX Product Manager\" \"뉴셀렉트\" 채용",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q12",
+        "query": "\"AX Engineer\" \"윗유\" 채용 공식",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q13",
+        "query": "\"AX Engineer\" site:careers.kakao.com",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q14",
+        "query": "\"AI Enablement\" site:toss.im/career",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q15",
+        "query": "\"AX Engineer\" \"윗유\" \"채용\" -site:wanted.co.kr -site:zighang.com -site:saramin.co.kr",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q16",
+        "query": "\"AX Product Manager\" \"뉴셀렉트\" \"greetinghr\"",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q17",
+        "query": "site:career.rememberapp.co.kr \"뉴셀렉트\" \"AX Product Manager\"",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q18",
+        "query": "site:recruit.wanted.co.kr \"뉴셀렉트\" \"AX Engineer\"",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q19",
+        "query": "\"AX Engineer\" site:jobs.smartrecruiters.com Korea",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q20",
+        "query": "\"AX\" \"Engineer\" site:careers.krafton.com",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      },
+      {
+        "query_id": "Q21",
+        "query": "\"AI\" \"업무 자동화\" site:careers.kakao.com",
+        "checked_at": "2026-10-26",
+        "backend": "built-in web search"
+      }
+    ],
+    "supplementary": [
+      "2026 October enterprise AI deployment case study human review operations",
+      "2026 September AI customer service human agents Klarna official",
+      "2026 AI August randomized workplace field experiment company",
+      "2026 10월 AI 도입 성과 기업 자동화 사례"
+    ]
+  },
+  "limits": {
+    "ko": [
+      "기존 25개 사례는 모두 원문 확인을 시도했지만 K06은 본문 접근에 실패했다.",
+      "원문 열람은 기업의 현재 운영 실사나 성과의 독립 검증이 아니다.",
+      "공고 기록에는 채널 중복 가능성이 있으며 모집 표시와 실제 지원 접수 성공은 다르다.",
+      "검색 범위는 명시한 기존 출처와 질의에 한정되며 전 세계 사례·공고의 전수조사가 아니다."
+    ],
+    "en": [
+      "All 25 existing cases were attempted, but K06 source bodies were inaccessible.",
+      "Reading sources does not audit current organizational operation or independently validate outcomes.",
+      "Posting records may overlap across channels; a recruitment display is not successful application submission.",
+      "Coverage is limited to recorded sources and queries, not a census of all global cases or vacancies."
+    ]
+  },
+  "stop_reason": "All baseline sources attempted; selected additions and hiring records supported by readable bodies; blocked and incomplete candidates retained separately."
+}
