@@ -37,7 +37,8 @@
   "current_autonomy": "A1-A2",
   "designed_autonomy": "A1-A3",
   "implemented_project_stages": [
-    1
+    1,
+    2
   ],
   "designed_project_stages": [
     1,
@@ -45,10 +46,13 @@
     3,
     5
   ],
-  "verified_at": "2026-07-31",
+  "verified_at": "2026-10-26",
   "owner": "AX Engineer Roadmap maintainers",
   "limitations": [
     "Public data may not represent internal VOC composition.",
-    "No live organizational adoption or business outcome has been verified."
+    "No live organizational adoption or business outcome has been verified.",
+    "P1 independent review by a non-implementer has not been recorded yet.",
+    "P2 approval decisions are replayed synthetic events, not actions by real approvers.",
+    "The rules-versus-model comparison required by P1 has not been run."
   ]
 }

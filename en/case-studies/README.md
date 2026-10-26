@@ -6,7 +6,7 @@ Every case uses the exit criteria from the [five practice projects](../projects/
 
 The current public evidence consists of **one reproducible public simulation and 14 pre-implementation design documents**. None of the published code or material changes an external system. The `target execution scope` and `designed P stages` below describe the maximum practice scope, not completed implementation or organizational operation.
 
-The 16-record Beauty/D2C VOC set reproduces an existing synthetic demo. It implements some P1 functionality but does not establish a full pass of the minimum 20 evaluation cases and independent review with inputs not used during development. Case-specific P-stage tables do not replace the common exit criteria.
+Beauty/D2C VOC adds a 16-case development set to the original 16 synthetic records, evaluates 32 normal, edge, and failure cases, and replays the P2 approval workflow with synthetic events. The 32 cases were written by the implementer, and there is no record yet of independent review on inputs not used in development or of a rules-versus-model comparison, so this is not a full P1 pass. Case-specific P-stage tables do not replace the common exit criteria.
 
 ## Cases by work area
 

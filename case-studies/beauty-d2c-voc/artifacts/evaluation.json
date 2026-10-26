@@ -1,7 +1,23 @@
 {
   "all_expectations_passed": true,
   "as_of": "2026-07-31T00:00:00+00:00",
+  "case_type_counts": {
+    "edge": {
+      "cases": 13,
+      "passed": 13
+    },
+    "failure": {
+      "cases": 11,
+      "passed": 11
+    },
+    "normal": {
+      "cases": 8,
+      "passed": 8
+    }
+  },
   "metrics": {
+    "blocked_input_precision": 1.0,
+    "blocked_input_recall": 1.0,
     "duplicate_precision": 1.0,
     "duplicate_recall": 1.0,
     "record_exact_match": 1.0,
@@ -10,9 +26,11 @@
     "topic_accuracy": 1.0,
     "traceability_rate": 1.0
   },
-  "record_count": 16,
+  "personal_data_leaks": 0,
+  "record_count": 32,
   "rows": [
     {
+      "case_type": "normal",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-001",
@@ -20,6 +38,7 @@
       "topic_match": true
     },
     {
+      "case_type": "failure",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-002",
@@ -27,6 +46,7 @@
       "topic_match": true
     },
     {
+      "case_type": "edge",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-003",
@@ -34,6 +54,7 @@
       "topic_match": true
     },
     {
+      "case_type": "normal",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-004",
@@ -41,6 +62,7 @@
       "topic_match": true
     },
     {
+      "case_type": "failure",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-005",
@@ -48,6 +70,7 @@
       "topic_match": true
     },
     {
+      "case_type": "edge",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-006",
@@ -55,6 +78,7 @@
       "topic_match": true
     },
     {
+      "case_type": "failure",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-007",
@@ -62,6 +86,7 @@
       "topic_match": true
     },
     {
+      "case_type": "edge",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-008",
@@ -69,6 +94,7 @@
       "topic_match": true
     },
     {
+      "case_type": "edge",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-009",
@@ -76,6 +102,7 @@
       "topic_match": true
     },
     {
+      "case_type": "edge",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-010",
@@ -83,6 +110,7 @@
       "topic_match": true
     },
     {
+      "case_type": "edge",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-011",
@@ -90,6 +118,7 @@
       "topic_match": true
     },
     {
+      "case_type": "normal",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-012",
@@ -97,6 +126,7 @@
       "topic_match": true
     },
     {
+      "case_type": "normal",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-013",
@@ -104,6 +134,7 @@
       "topic_match": true
     },
     {
+      "case_type": "normal",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-014",
@@ -111,6 +142,7 @@
       "topic_match": true
     },
     {
+      "case_type": "edge",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-015",
@@ -118,9 +150,138 @@
       "topic_match": true
     },
     {
+      "case_type": "failure",
       "passed": true,
       "safety_match": true,
       "source_id": "voc-016",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "normal",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-017",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "normal",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-018",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "edge",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-019",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "failure",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-020",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "failure",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-021",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "failure",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-022",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "failure",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-023",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "edge",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-024",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "failure",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-025",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "edge",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-026",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "failure",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-027",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "edge",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-028",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "normal",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-029",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "edge",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-030",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "edge",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-031",
+      "status_match": true,
+      "topic_match": true
+    },
+    {
+      "case_type": "failure",
+      "passed": true,
+      "safety_match": true,
+      "source_id": "voc-032",
       "status_match": true,
       "topic_match": true
     }

@@ -1,28 +1,50 @@
 {
   "as_of": "2026-07-31T00:00:00+00:00",
-  "classifier": "deterministic-rules-v1",
-  "dataset": "synthetic-voc-sample-v1",
+  "case_type_counts": {
+    "edge": {
+      "cases": 13,
+      "passed": 13
+    },
+    "failure": {
+      "cases": 11,
+      "passed": 11
+    },
+    "normal": {
+      "cases": 8,
+      "passed": 8
+    }
+  },
+  "classifier": "deterministic-rules-v2",
+  "cost": {
+    "estimated_cost_usd": 0.0,
+    "external_api_calls": 0,
+    "model_tokens": 0
+  },
+  "dataset": "synthetic-voc-sample-v1+extension-v1",
+  "evaluation_case_count": 32,
   "evaluation_passed": true,
-  "input_count": 16,
+  "input_count": 33,
   "limitations": [
     "Synthetic records do not represent the distribution of a real company's VOC.",
     "Keyword rules are a deterministic baseline, not a production multilingual classifier.",
     "Proposals are review artifacts and do not create or modify external work."
   ],
-  "proposal_count": 4,
+  "proposal_count": 5,
   "status_counts": {
+    "conflict": 2,
     "duplicate": 1,
-    "invalid": 2,
-    "ready": 5,
-    "review_required": 7,
-    "spam": 1
+    "invalid": 5,
+    "ready": 10,
+    "rejected": 2,
+    "review_required": 11,
+    "spam": 2
   },
   "topic_counts": {
-    "delivery": 2,
-    "irritation": 2,
-    "packaging": 4,
-    "product_effect": 1,
-    "scent": 2,
-    "unknown": 1
+    "delivery": 4,
+    "irritation": 4,
+    "packaging": 6,
+    "product_effect": 2,
+    "scent": 3,
+    "unknown": 2
   }
 }

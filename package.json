@@ -20,7 +20,7 @@
     "test:research": "node --test scripts/check-public-cases.test.mjs",
     "test:hiring": "node --test scripts/check-hiring-signals.test.mjs",
     "test:readme": "node --test scripts/check-korean-copy-sync.test.mjs",
-    "test:python": "python3 -m unittest discover -s case-studies/beauty-d2c-voc/tests -p 'test_*.py' -v && python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py --verify-committed",
+    "test:python": "python3 -m unittest discover -s case-studies/beauty-d2c-voc/tests -p 'test_*.py' -v && python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py --verify-committed && python3 case-studies/beauty-d2c-voc/pipeline/approval_workflow.py --verify-committed",
     "audit": "npm audit --audit-level=high",
     "validate": "npm run check && npm run test:research && npm run test:hiring && npm run test:readme && npm run test:python && npm run audit",
     "verify": "npm run bootstrap && npm run validate"
