@@ -16,9 +16,10 @@ function rejects(name, mutate, expected) {
 test("preserves original sources and baseline review date while validating selected corrections", () => {
   assert.deepEqual(validatePublicCases(fixture), []);
   assert.equal(fixture.registry.verified_at, "2026-08-01");
-  assert.equal(new Set(fixture.registry.cases.flatMap((item) => item.source_urls)).size, 26);
-  assert.equal(new Set(fixture.registry.cases.flatMap((item) => item.claims.flatMap((entry) => entry.source_urls))).size, 29);
-  assert.equal(fixture.registry.cases.filter((item) => item.review_status === "not-rechecked").length, 16);
+  const baselineIds = new Set(fixture.registry.review_scope.baseline_case_ids);
+  assert.equal(new Set(fixture.registry.cases.filter((item) => baselineIds.has(item.id)).flatMap((item) => item.source_urls)).size, 26);
+  assert.equal(fixture.registry.review_scope.baseline_case_ids.length, 25);
+  assert.ok(new Set(fixture.registry.cases.flatMap((item) => item.claims.flatMap((entry) => entry.source_urls))).size >= 26);
 });
 rejects("blocks a changed deployment classification without a correction record", (input) => {
   delete claim(input, "K07-platform-plan-correction").deployment_correction;
@@ -119,3 +120,53 @@ rejects("undated sources cannot claim observations after the check", (input) => 
     observation_period: { start: null, end: "2030-01-01", description: { ko: "미래 관측일", en: "Future observation date" } },
   });
 }, /observed period after check/);
+
+function withNewCase() {
+  const input = copy();
+  const added = structuredClone(input.registry.cases.find((item) => item.id === "K07"));
+  added.id = "K99";
+  added.introduced_at = "2026-10-26";
+  added.baseline_deployment_stage = added.deployment_stage;
+  added.review_status = "initial-claims-reviewed";
+  const initial = structuredClone(claim(input, "K07-platform-plan-correction"));
+  Object.assign(initial, { id: "K99-initial", kind: "initial-review", source_urls: added.source_urls });
+  delete initial.deployment_correction;
+  added.claims = [initial];
+  input.registry.cases.push(added);
+  input.registry.review_scope.reviewed_case_ids.push(added.id);
+  const kr = input.registry.cases.filter((item) => item.region === "KR").length;
+  const intl = input.registry.cases.length - kr;
+  input.koreanCatalog = input.koreanCatalog.replace(/국내 \d+개, 해외 \d+개/g, `국내 ${kr}개, 해외 ${intl}개`);
+  input.englishCatalog = input.englishCatalog.replace(/\d+ Korean and \d+ international cases/g, `${kr} Korean and ${intl} international cases`);
+  input.koreanCatalog += "\n| K99 | KR | Example | Example | ORG | UNKNOWN | SELF |\nK99-initial\n";
+  input.englishCatalog += "\n| K99 | KR | Example | Example | ORG | UNKNOWN | SELF |\nK99-initial\n";
+  input.applicationMap += "\nK99\n";
+  input.englishApplicationMap += "\nK99\n";
+  return input;
+}
+
+test("admits a newly reviewed case without fabricating an old baseline claim", () => {
+  assert.deepEqual(validatePublicCases(withNewCase()), []);
+});
+for (const field of ["introduced_at"]) {
+  test(`new cases require ${field}`, () => {
+    const input = withNewCase(); delete input.registry.cases.at(-1)[field];
+    assert.ok(validatePublicCases(input).some((e) => /introduction date/.test(e)));
+  });
+}
+test("does not admit a new case from an unread source", () => {
+  const input = withNewCase(); Object.assign(input.registry.cases.at(-1).claims[0], { access_status: "unavailable", status: "unknown" });
+  assert.ok(validatePublicCases(input).some((e) => /directly read initial source/.test(e)));
+});
+test("does not backdate a new case into the preserved baseline", () => {
+  const input = withNewCase(); input.registry.cases.at(-1).introduced_at = input.registry.verified_at;
+  assert.ok(validatePublicCases(input).some((e) => /introduction date/.test(e)));
+});
+test("detects stale bilingual totals after an addition", () => {
+  const input = withNewCase(); input.englishCatalog = input.englishCatalog.replace(/\d+ Korean and \d+ international cases/g, "0 Korean and 0 international cases");
+  assert.ok(validatePublicCases(input).some((e) => /지역별 사례 수/.test(e)));
+});
+test("preserved baseline IDs cannot silently disappear", () => {
+  const input = copy(); input.registry.cases = input.registry.cases.filter((item) => item.id !== "K01");
+  assert.ok(validatePublicCases(input).some((e) => /preserved baseline case missing/.test(e)));
+});

@@ -1,63 +1,71 @@
-# Public AX Case Catalog
+# Public AX case catalog
 
-This document reframes publicly reported AI and AX deployments through the lens of **workflow and operational control**. It does not rank products or claim that this repository reproduced the reported outcomes.
+Compare workflows, human decisions, and outcome evidence published by companies and institutions. This repository has not audited their operations or reproduced their outcomes.
 
-- Last full catalog check: `2026-08-01`
-- Selected claims checked: `2026-10-26`. Follow-up or correction claims are recorded for K04, K05, K07, K08, K09, G02, G07, G08, and G10. Some original figures were also checked, without reverifying current operation across all 25 cases.
-- Scope: 10 Korean and 15 international cases
-- Main sources: government and company announcements, vendor customer stories, and selected major-news follow-up
-- Excluded: unsourced summaries, product-only demos, and broad AI strategies that do not expose a workflow
+- Preserved initial-catalog baseline: `2026-08-01` (25 cases)
+- Current source review: `2026-10-26`
+- Current scope: 16 Korean and 24 international cases (40 workflows)
+- All 25 existing cases were attempted. Main source bodies were read for 24; K06 remains historical because access failed.
+- Fifteen workflows were added. Recently published, previously omitted, and undated material are separated; different workflows at one organization do not count as different companies.
+
+The original 26 unique source URLs are preserved. There are 54 unique URLs including additions and follow-ups. The [JSON registry](../../research/public-ax-cases.json) records claim-level dates, samples, methods, and limits. See the [refresh record](evidence-refresh-2026-10-26.md) for searches, access failures, and held candidates.
 
 ## Three evidence axes
 
-Source provenance, deployment stage, and outcome verification are not collapsed into one label. For example, `ORG · LIVE · SELF` means an organization officially confirms operation, while the outcome figure remains self-reported. The machine-readable [`public-ax-cases.json`](../../research/public-ax-cases.json) preserves the original 26 unique source URLs plus three follow-up sources (29 in total), and links to the internal practice cases.
-
 | Axis | Codes | Meaning |
 |---|---|---|
-| Source | `ORG` / `JOINT` / `VENDOR` / `MIXED` | Organization official / joint official statement / vendor customer story / official material plus independent reporting |
-| Deployment | `PILOT` / `LIMITED` / `LIVE` / `EXPANDING` / `ADJUSTED` / `UNKNOWN` | Pilot / limited operation / operation / expanding operation / adjusted operating model / not established publicly |
-| Outcome | `NONE` / `SELF` / `CROSS` / `INDEPENDENT` | No public outcome / self-reported / direction cross-checked independently / independently evaluated |
+| Source | `ORG` / `JOINT` / `VENDOR` / `MIXED` / `GOV` | Organization / joint announcement / vendor customer case / official and independent reporting / government account of a company case |
+| Deployment | `PILOT` / `LIMITED` / `LIVE` / `EXPANDING` / `ADJUSTED` / `UNKNOWN` | Pilot / limited operation / operation / expanding / adjusted / unresolved |
+| Outcome | `NONE` / `SELF` / `CROSS` / `INDEPENDENT` | No public outcome / self-report / independent directional cross-check / independent evaluation |
 
-`LIVE` confirms use, not independent validation of every outcome claim. Time, cost, and satisfaction figures without a public method, period, sample, or raw data remain `SELF`. None of the current 25 cases reaches `INDEPENDENT` outcome verification.
+Deployment labels describe the time and scope stated by the source, not guaranteed current operation. Neither `LIVE` nor `SELF` establishes independent outcome validation. Separate targets, potential gains, and estimated manual effort from observed results. New outside evidence does not upgrade the implementation status of local exercises. No company outcome is currently classified as independently evaluated (`INDEPENDENT`).
 
-## At a glance
+Practice questions are editorial design proposals, not implemented or validated results.
 
-| ID | Region | Work / industry | Public organization | Source | Deployment | Outcome |
-|---:|---|---|---|---|---|---|
-| K01 | Korea | Public service | ACRC and others | ORG | LIMITED | NONE |
-| K02 | Korea | Corporate lending | Shinhan Bank | ORG | LIMITED | NONE |
-| K03 | Korea | Insurance sales | Shinhan Life | ORG | LIMITED | NONE |
-| K04 | Korea | Contact center | LG Uplus | ORG | LIVE | SELF |
-| K05 | Korea | Collaboration | Samsung SDS | ORG | PILOT | SELF |
-| K06 | Korea | Manufacturing | POSCO | ORG | LIVE | NONE |
-| K07 | Korea | Product quality | LG Electronics | ORG | UNKNOWN | SELF |
-| K08 | Korea | Social care | SK Telecom | ORG | LIVE | SELF |
-| K09 | Korea | Field care | SK Telecom | ORG | LIMITED | SELF |
-| K10 | Korea | Education admin | LG Uplus | ORG | PILOT | NONE |
-| G01 | United States | Wealth management | Morgan Stanley | VENDOR | LIVE | SELF |
-| G02 | Global | HR | IBM | ORG | LIVE | SELF |
-| G03 | Germany | Industrial engineering | Siemens / thyssenkrupp | JOINT | EXPANDING | SELF |
-| G04 | United States | Manufacturing | Jabil | VENDOR | LIVE | SELF |
-| G05 | Germany | Industrial service | Bosch Rexroth | VENDOR | LIVE | NONE |
-| G06 | United States | Retail | Walmart | ORG | LIMITED | NONE |
-| G07 | United States | Retail content | CarMax | VENDOR | LIVE | SELF |
-| G08 | United States | Healthcare | Corewell Health | VENDOR | PILOT | SELF |
-| G09 | United States | Legal | Foley Hoag | VENDOR | LIVE | SELF |
-| G10 | Global | Software | Accenture | VENDOR | LIVE | SELF |
-| G11 | India / global | Insurance | EXL | VENDOR | UNKNOWN | SELF |
-| G12 | Argentina | Citizen services | City of Buenos Aires | VENDOR | LIMITED | NONE |
-| G13 | United States | B2B sales | Lumen Technologies | VENDOR | LIVE | SELF |
-| G14 | Global | Pharma R&D | Moderna | VENDOR | LIMITED | NONE |
-| G15 | Sweden | Contact center | Klarna | MIXED | ADJUSTED | CROSS |
+## Overview
 
-## Scope of this review
-
-The comparison table starts from the 2026-08-01 classifications, with source-inconsistent deployment stages for K07, K09, and G10 corrected below. Correction claims retain prior values and reasons. Deployment stage describes the scope reported at publication, not live operation verified on 2026-10-26. A plan for a different customer population or a small study does not upgrade the entire original case. Follow-up IDs below match JSON `claims`, which record publication and check dates, observation period, sample, method, limitations, and verification status. Unknown dates and sample sizes are `null`.
-
-- K04: follow-up published 2026-09-30. Unmatched measurement conditions prevent comparison with the earlier figures as a trend.
-- K05: government-ministry rollout plan published 2026-08-13. Internal-pilot outcomes do not transfer to government customers.
-- G02: correction of metric names in the original source. NPS -35 and CSAT +74 are different metrics. An unknown publication date prevents classification as a new market change.
-- G08: conference abstract published 2026-06-29. A quality counterexample that predates the baseline but was missing from the original review.
+| ID | Region | Workflow / industry | Organization | Source | Deployment | Outcome |
+|---|---|---|---|---|---|---|
+| K01 | KR | Petition response drafts and duplicate clustering | 국민권익위원회 외 | ORG | LIMITED | NONE |
+| K02 | KR | Corporate credit analysis and opinion drafting | 신한은행 | ORG | LIMITED | NONE |
+| K03 | KR | Conversational policy design and automated checks | 신한라이프 | ORG | LIMITED | SELF |
+| K04 | KR | In-call answer suggestions and after-call support | LG유플러스 | ORG | LIVE | SELF |
+| K05 | KR | Meeting notes, assigned follow-up work, and email drafts | 삼성SDS | ORG | PILOT | SELF |
+| K06 | KR | Sensor- and vision-based predictive maintenance alerts | 포스코 | ORG | LIVE | NONE |
+| K07 | KR | Finished-product quality prediction during development | LG전자 | ORG | UNKNOWN | SELF |
+| K08 | KR | Welfare check-ins and counselor escalation | SK텔레콤 | ORG | LIVE | SELF |
+| K09 | KR | Behavior-record support for people with developmental disabilities | SK텔레콤 | ORG | LIMITED | SELF |
+| K10 | KR | Attendance, counseling, and activity record integration | LG유플러스 | ORG | UNKNOWN | NONE |
+| K11 | KR | Conversational consumer research and analysis | HSAD | ORG | LIVE | SELF |
+| K12 | KR | App-review classification and reply drafts | 현대자동차그룹 | ORG | LIVE | SELF |
+| K13 | KR | Manual-grounded maintenance assistance | 현대자동차그룹 | ORG | LIVE | SELF |
+| K14 | KR | VIN-based production-sequence checks | 현대자동차그룹 | ORG | LIVE | NONE |
+| K15 | KR | Translation and minutes for global collaboration | 동원그룹 | VENDOR | LIMITED | NONE |
+| K16 | KR | Sheet-metal defect and production-condition analysis | LG전자 | GOV | LIMITED | NONE |
+| G01 | US | CRM records and follow-up drafts from client meetings | Morgan Stanley | VENDOR | LIVE | SELF |
+| G02 | GLOBAL | From HR questions to employee transfers and employment verification | IBM | ORG | LIVE | SELF |
+| G03 | DE | Automation code, sensor setup, and inspection documents | Siemens·thyssenkrupp | JOINT | LIVE | SELF |
+| G04 | US | Shop-floor troubleshooting and procurement research | Jabil | VENDOR | LIVE | SELF |
+| G05 | DE | Technical-support search across a large product range | Bosch Rexroth | VENDOR | LIVE | NONE |
+| G06 | US | Merchandise analysis and operations tickets | Walmart | ORG | LIMITED | NONE |
+| G07 | US | Review summaries and product-page content | CarMax | VENDOR | LIVE | SELF |
+| G08 | US | Clinical-note drafts from care conversations | Corewell Health | VENDOR | PILOT | SELF |
+| G09 | US | M&A diligence and litigation document drafts | Foley Hoag | VENDOR | LIVE | SELF |
+| G10 | GLOBAL | Testing, legacy understanding, and technical debt | Accenture | VENDOR | LIVE | SELF |
+| G11 | IN_GLOBAL | Underwriting-document extraction and review support | EXL | VENDOR | LIMITED | NONE |
+| G12 | AR | Unified government information and tourism queries | 부에노스아이레스시 | VENDOR | LIMITED | SELF |
+| G13 | US | Account research and outreach preparation | Lumen Technologies | VENDOR | LIVE | SELF |
+| G14 | GLOBAL | Development-document drafts from evidence | Moderna | VENDOR | LIMITED | SELF |
+| G15 | SE | Automated service with agent handoff for complex cases | Klarna | MIXED | ADJUSTED | CROSS |
+| G16 | UK | Customer-journey research, product planning, and data consolidation | Virgin Atlantic | VENDOR | LIVE | SELF |
+| G17 | US | Lead-quality checks, campaign preparation, and recurring reporting | Zapier | VENDOR | LIVE | SELF |
+| G18 | DE | Telephone intake, routine answers, and contextual human handoff | Bundesagentur für Arbeit | ORG | PILOT | NONE |
+| G19 | US | Evidence lookup contextualized to the patient conversation and chart | Deaconess Health | VENDOR | LIMITED | SELF |
+| G20 | US_GLOBAL | Insurance document intake, review routing, and decision audit | DXC Technology | ORG | LIVE | SELF |
+| G21 | US | Slack incident investigation through pull requests and post-release checks | Carvana | VENDOR | LIVE | SELF |
+| G22 | CH | Internal policy comparison and role-scoped workflow tooling | Pictet | VENDOR | LIMITED | SELF |
+| G23 | US | Supplier order-status inquiries and parts operations | GE Appliances | ORG | LIVE | SELF |
+| G24 | GLOBAL | Retirement of an agent-coordination role and redesign of accountability | MING Labs | ORG | ADJUSTED | SELF |
 
 ## Korean cases
 
@@ -70,6 +78,8 @@ The comparison table starts from the 2026-08-01 classifications, with source-inc
 - **Roadmap lesson**: Expose citations, preserve edit history, support splitting a bad cluster, and require approval and reprocessing controls.
 - **Evidence limit**: Launch at selected agencies is confirmed, but accuracy, handling time, and edit rate are not public. [Korea Policy Briefing](https://www.korea.kr/news/policyNewsView.do?newsId=156743148)
 
+Source check `K01-source-confirmation` (published 2026-02-05; checked 2026-10-26): The source confirms a pilot at selected agencies and caseworker control over drafts and petition groups.
+
 ### K02. Shinhan Bank — corporate borrower analysis and credit-opinion support
 
 - **Problem**: Branch staff gather company, financial, industry, transaction, collateral, and technology data to write a corporate credit opinion.
@@ -79,6 +89,8 @@ The comparison table starts from the 2026-08-01 classifications, with source-inc
 - **Roadmap lesson**: Separate source financials, industry-rule versions, analysis rights, approval rights, and cited evidence.
 - **Evidence limit**: Deployment is confirmed; review time, decision quality, and error rate are not public. [Shinhan Financial Group](https://www.shinhangroup.com/kr/archive/press/detail/679)
 
+Source check `K02-source-confirmation` (published 2026-03-27; checked 2026-10-26): Deployment supports credit review; twelve industries describe coverage, not an evaluation sample or autonomous approval.
+
 ### K03. Shinhan Life — conversational insurance-plan design and screening
 
 - **Problem**: Planners move across screens to align customer conditions, coverage limits, and rider rules, then repeatedly revise a plan.
@@ -86,7 +98,11 @@ The comparison table starts from the 2026-08-01 classifications, with source-inc
 - **AI role**: Direction and alternative recommendations, rule-aware edits, and explanation drafts.
 - **Human judgment**: The planner changes the recommendation and confirms the choice with the customer.
 - **Roadmap lesson**: Separate deterministic product-rule checks from generative recommendations and join consent, changes, and screening results in one audit trail.
-- **Evidence limit**: System launch is confirmed; time savings and design-quality measures are not public. [Shinhan Financial Group](https://shinhangroup.com/kr/archive/press/detail/637)
+- **Evidence limit**: The February source describes launch without outcome measures; the follow-up below adds self-reported timing evidence (`ORG · LIMITED · SELF`). [Shinhan Financial Group](https://shinhangroup.com/kr/archive/press/detail/637)
+
+Source check `K03-source-confirmation` (published 2026-02-12; checked 2026-10-26): The source describes planners using consented customer data and product rules for design and computerized checks.
+
+Additional check `K03-lico2-speed` (published 2026-10-16; checked 2026-10-26): LICO 2.0 reports about 35% faster recommendations; sample, dates, and speed definition are missing, and this is not design-quality evidence. [Source](https://shinhangroup.com/kr/archive/press/detail/993)
 
 ### K04. LG Uplus — in-call answer recommendation and after-call support
 
@@ -103,6 +119,8 @@ Follow-up `K04-followup-human-choice`: the same announcement describes customer 
 
 Calculation correction `K04-baseline-calculation-clarification` (published 2025-05-27; checked 2026-10-26): the [original LG release](https://www.lg.co.kr/media/release/29014) gives savings of 17 waiting seconds and 30 talk seconds, about 75,000 daily calls, and 20 workdays as its basis for roughly 1.17 million minutes monthly. The claim that no calculation basis was public is corrected. These assumptions do not establish independent effects or comparability with the 2026 figure.
 
+Source check `K04-source-confirmation` (published 2025-05-27; checked 2026-10-26): The original per-call savings and monthly extrapolation assumptions were checked again.
+
 ### K05. Samsung SDS — minutes, assigned follow-up work, and communication drafts
 
 - **Problem**: People repeatedly create captions, translations, minutes, follow-up work with owners and deadlines, summaries, and email drafts.
@@ -114,14 +132,20 @@ Calculation correction `K04-baseline-calculation-clarification` (published 2025-
 
 Follow-up `K05-followup-public-sector` (published 2026-08-13; checked 2026-10-26): Samsung SDS announced that nine central-government ministries had selected Brity Works, with staged service starts planned by August 2026. Nine is a count of selecting institutions, not an outcome-evaluation sample. This source does not verify operation or results in all institutions. Their population differs from the earlier internal pilot of about 10,000 people; the original `PILOT` classification and outcome scope are preserved. [Samsung SDS follow-up](https://www.samsungsds.com/kr/news/sds-2608013.html)
 
+Source check `K05-source-confirmation` (published 2024-05-02; checked 2026-10-26): The original time-saving claims concern a self-reported internal pilot of about 10,000 people.
+
+Additional check `K05-public-service-launch` (published 2026-04-30; checked 2026-10-26): Separate the OnAI launch from Drive use at about 70 agencies and August’s nine ministries; internal savings do not transfer. [Source](https://www.samsungsds.com/kr/news/bw-260430.html)
+
 ### K06. POSCO — sensor- and vision-based predictive maintenance
 
 - **Problem**: Experience-led inspection and reactive maintenance can miss subtle equipment anomalies or delay operator awareness.
-- **Verified workflow**: PIMS integrates equipment data; rolling-process and vision models detect coil-width mismatch and plate drift and warn operators.
+- **Previously recorded workflow**: PIMS integrates equipment data; rolling-process and vision models detect coil-width mismatch and plate drift and warn operators.
 - **AI role**: Sensor and video anomaly detection, state comparison, and early warning.
 - **Human judgment**: Operators confirm the warning and decide maintenance or operating action.
 - **Roadmap lesson**: Normal baselines, alert thresholds, false-positive and false-negative cost, sensor failure, manual operation, and emergency stop come before model fluency.
-- **Evidence limit**: Field use is confirmed, but failure reduction and false-alert rates are not public. [POSCO Newsroom](https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/)
+- **Evidence limit**: The earlier source described field use without failure-reduction or false-alert measures. [POSCO Newsroom](https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/)
+
+Access check on 2026-10-26: the original and a follow-up found in search returned 502. Search excerpts do not support a new verified claim; the description and `LIVE · NONE` retain their earlier evidence scope.
 
 ### K07. LG Electronics — finished-product quality prediction during development
 
@@ -134,6 +158,8 @@ Follow-up `K05-followup-public-sector` (published 2026-08-13; checked 2026-10-26
 
 Operating-boundary correction `K07-platform-plan-correction` (published 2025-03-27; checked 2026-10-26): Eng.AI was a planned platform. Existing developer use and the earlier `LIMITED` classification were not established, so deployment is corrected to `UNKNOWN`. The maximum 99% remains a company technology claim, not a platform-operating outcome.
 
+Source check `K07-source-confirmation` (published 2025-03-27; checked 2026-10-26): The source supports the existing distinction between developed technology and planned Eng.AI deployment.
+
 ### K08. SK Telecom — check-in calls and escalation for vulnerable people
 
 - **Problem**: Care workers and local governments must contact many households regularly without missing risk signals.
@@ -144,6 +170,8 @@ Operating-boundary correction `K07-platform-plan-correction` (published 2025-03-
 - **Evidence limit**: SKT reported check-ins covering more than 110,000 people and 4,063 counseling handoffs in one year; independent sensitivity and specificity are not public. [SK Telecom Newsroom](https://news.sktelecom.com/200115)
 
 Unit correction `K08-people-unit-correction` (published 2023-11-28; checked 2026-10-26): the source distinguishes 110,538 people from about 1.76 million calls. English wording implying 110,000 check-in events is corrected to more than 110,000 people. The 4,063 counseling connections also count people, not verified safety effects.
+
+Source check `K08-source-confirmation` (published 2023-11-28; checked 2026-10-26): The source supports the existing distinction among people reached, calls, and people referred to counseling.
 
 ### K09. SK Telecom — behavioral-record support for people with developmental disabilities
 
@@ -156,6 +184,10 @@ Unit correction `K08-people-unit-correction` (published 2023-11-28; checked 2026
 
 Deployment-scope correction `K09-deployment-scope-correction` (published 2025-08-28; checked 2026-10-26): the source explicitly describes 12 sites in use, correcting the earlier `PILOT` label to `LIMITED`. Site count is not the sample for the 90% measure; publication-time scope does not verify current operation.
 
+Source check `K09-source-confirmation` (published 2025-08-28; checked 2026-10-26): The source supports the existing correction to use at twelve sites at publication.
+
+Additional check `K09-expert-intervention-boundary` (published 2026-06-10; checked 2026-10-26): Experts review records for intervention; the care LLM and guardian AI remain development/plans, without verified clinical effects. [Source](https://news.sktelecom.com/226306)
+
 ### K10. LG Uplus — unified attendance, counseling, and activity records
 
 - **Problem**: Teachers manage attendance, learning activity, counseling, and schedules across different screens and documents.
@@ -163,7 +195,53 @@ Deployment-scope correction `K09-deployment-scope-correction` (published 2025-08
 - **AI role**: Record integration and analysis, student-level activity and counseling material, and suggested learning activities.
 - **Human judgment**: Teachers verify records and decide their use in counseling, evaluation, and teaching.
 - **Roadmap lesson**: Require data minimization, teacher correction rights, evidence for generated records, and approval and correction before official student-record use.
-- **Evidence limit**: Product scope and a Jeju education-office pilot are confirmed; quantitative results are not public. [LG Uplus](https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140)
+- **Evidence limit**: Product scope and a planned Jeju pilot are documented; actual pilot operation is not established, so the classification is corrected to `ORG · UNKNOWN · NONE`. [LG Uplus](https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140)
+
+Source check `K10-source-confirmation` (publication date unknown; checked 2026-10-26): The undated product page describes teacher-administration functions without a pilot start date.
+
+Additional check `K10-pilot-plan-correction` (published 2025-12-12; checked 2026-10-26): The 2025-12-12 agreement plans ten schools and 2026 service; without launch evidence, `PILOT` becomes `UNKNOWN`, preserving the prior classification in history. [Source](https://news.lguplus.com/20952)
+
+### K11. HSAD: consumer research
+
+- **Reported workflow**: Adaptive questions support research. The company reports research time falling from more than four weeks to about two and research/analysis costs falling by roughly 70%. Project count and included costs are undisclosed.
+- **Practice questions**: Test comparability after branching, consent, source retention, and analysis review.
+- **Evidence limits**: Research quality, representativeness, consent procedures, and final approval controls were not established. `ORG · LIVE · SELF`. [Source 2026-09-30](https://lg.co.kr/media/release/30615)
+- **Claim records**: `K11-initial-review`. Checked 2026-10-26; dates, samples, and methods are recorded in JSON.
+
+### K12. Hyundai Motor Group: app-review replies
+
+- **Reported workflow**: Classify reviews, draft from source knowledge, then obtain staff review before delivery. The reported average handling-time change from 35 to five minutes is a company comparison with an undisclosed sample and calculation.
+- **Practice questions**: Compare approval, correction, and send records when evidence changes or replies are wrong.
+- **Evidence limits**: 85% is coverage; September automation was planned. `ORG · LIVE · SELF`. [Source 2026-08-12](https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation)
+- **Claim records**: `K12-initial-review`. Checked 2026-10-26; dates, samples, and methods are recorded in JSON.
+
+### K13. Hyundai Motor Group: maintenance assistance
+
+- **Reported workflow**: Technicians retrieve manuals and maintenance records and verify official evidence. The reported response-time reduction of roughly 42% is a company comparison with undisclosed task definitions and evaluation sample.
+- **Practice questions**: Test rejection of wrong-model or obsolete evidence and human escalation for hazardous work.
+- **Evidence limits**: Not evidence of diagnostic accuracy or autonomous repair. `ORG · LIVE · SELF`. [Source 2026-08-12](https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation) [Source 2026-10-22](https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day)
+- **Claim records**: `K13-initial-review` · `K13-manual-evidence-review`. Checked 2026-10-26; dates, samples, and methods are recorded in JSON.
+
+### K14. Hyundai Motor Group: VIN checks
+
+- **Reported workflow**: VIN recognition checks production sequence; 73 processes describes deployment scope.
+- **Practice questions**: Test unreadable identifiers, stale records, and manual-restart authority separately.
+- **Evidence limits**: Action authority is undisclosed; process and location counts are not comparable. `ORG · LIVE · NONE`. [Source 2026-10-22](https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day)
+- **Claim records**: `K14-initial-review`. Checked 2026-10-26; dates, samples, and methods are recorded in JSON.
+
+### K15. Dongwon Group: global collaboration
+
+- **Reported workflow**: A vendor account describes translation, minutes, schedules, and internal lookup.
+- **Practice questions**: Check speaker, decision, and proposal translation errors and sharing permissions.
+- **Evidence limits**: User coverage and send approvals are undisclosed; this does not establish use of Cowork, shown at the same event. `VENDOR · LIMITED · NONE`. [Source 2026-09-08](https://www.samsungsds.com/kr/news/sds20260908.html)
+- **Claim records**: `K15-initial-review`. Checked 2026-10-26; dates, samples, and methods are recorded in JSON.
+
+### K16. LG Electronics: sheet-metal analysis
+
+- **Reported workflow**: A government account describes linking manufacturing data to analyze defects and conditions.
+- **Practice questions**: Compare predictions with inspections after material or equipment changes and check change approval.
+- **Evidence limits**: Individual outcomes and approval authority are undisclosed; aggregated results across about 170 sites are not LG’s effect. This differs from K07. `GOV · LIMITED · NONE`. [Source 2026-09-11](https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172187/view)
+- **Claim records**: `K16-initial-review`. Checked 2026-10-26; dates, samples, and methods are recorded in JSON.
 
 ## International cases
 
@@ -176,16 +254,22 @@ Deployment-scope correction `K09-deployment-scope-correction` (published 2025-08
 - **Roadmap lesson**: High-risk knowledge work needs expert scoring, regression evaluation, customer consent, and review before CRM writes—not RAG alone.
 - **Evidence limit**: Adoption figures, including 98% team usage, come from a joint vendor/customer story and are not independently verified. [OpenAI](https://openai.com/index/morgan-stanley/)
 
-### G02. IBM — from HR questions to employment documents and leave requests
+Review `G01-source-confirmation-20261026` (checked 2026-10-26): The 98% figure concerns adviser teams using Assistant, not Debrief accuracy or adoption. Source review, not a live operating audit or independent outcome validation. [Source 1](https://openai.com/index/morgan-stanley/)
+
+Review `G01-finance-design-partnership` (checked 2026-10-26): Investment-banking and equity-research design work is separate from Debrief. Do not combine a product partnership with verified deployment outcomes. [Source 1](https://openai.com/index/introducing-chatgpt-financial-services/)
+
+### G02. IBM — from HR questions to employee transfers and employment verification
 
 - **Problem**: Fragmented HR bots and channels make policy search and repetitive requests difficult.
-- **Verified workflow**: `AskHR` grew from a single policy-answering entry point to HR operations such as employment documents, leave requests, and employee transfers.
+- **Verified workflow**: `AskHR` grew from a single policy-answering entry point to HR operations such as employment verification and employee transfers.
 - **AI role**: Intent classification, policy retrieval and answers, domain routing, and structured execution.
 - **Human judgment**: HR specialists take complex cases; established permissions still govern manager actions.
 - **Roadmap lesson**: Pilot small workflows, hand complex requests to HR specialists quickly, and retain feedback instead of closing all channels in one migration.
 - **Evidence limit**: IBM reports an early NPS of -35, then a CSAT score of +74 after changing the metric. These do not establish improvement on one consistent measure; the CSAT calculation and samples are not public. [IBM](https://www.ibm.com/case-studies/ibm-transformation/ask-hr)
 
 Metric correction `G02-metric-correction` (publication date unknown; checked 2026-10-26): the [IBM source](https://www.ibm.com/case-studies/ibm-transformation/ask-hr) explicitly switches from NPS to CSAT. The earlier catalog's CSAT -35 to +74 description was incorrect. Fieldwork periods, samples, and the CSAT calculation are unreported; the case remains self-reported `SELF`. This check is limited to metric wording and establishes neither a new market change nor a causal effect.
+
+Review `G02-source-confirmation-20261026` (checked 2026-10-26): NPS -35 and CSAT +74 are different metrics; the current source names transfers and employment verification. This does not establish absence of leave functions; metric periods and samples are unreported. [Source 1](https://www.ibm.com/case-studies/ibm-transformation/ask-hr)
 
 ### G03. Siemens and thyssenkrupp — automation code, sensor setup, and inspection documents
 
@@ -196,6 +280,8 @@ Metric correction `G02-metric-correction` (publication date unknown; checked 202
 - **Roadmap lesson**: Completion requires PLC and sensor state, safety interlocks, simulation, change approval, and rollback—not generation speed alone.
 - **Evidence limit**: Siemens reported 30-second visualizations and about 20% code modification; these are vendor-reported measures. [Siemens](https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai)
 
+Review `G03-source-confirmation-20261026` (checked 2026-10-26): Separate use reported in 2024 from planned global rollout in 2025; 120,000 refers to the TIA Portal user base. Source review, not a live operating audit or independent outcome validation. [Source 1](https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai)
+
 ### G04. Jabil — shop-floor troubleshooting and procurement research
 
 - **Problem**: Operators search documents, tickets, and knowledge bases for diagnostics while procurement and account teams repeat separate research.
@@ -204,6 +290,8 @@ Metric correction `G02-metric-correction` (publication date unknown; checked 202
 - **Human judgment**: Operators decide physical action; procurement staff validate proposals.
 - **Roadmap lesson**: Document freshness, site-specific equipment, language, ticket state, dangerous-work escalation, and floor feedback matter more than prototype speed.
 - **Evidence limit**: This is an AWS customer story, and published deployment and time figures do not isolate the assistant's effect. [AWS](https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/)
+
+Review `G04-source-confirmation-20261026` (checked 2026-10-26): Deployment 67–83%, processing 74%, and cost 23% improvements concern cloud modernization, not the assistant alone. Source review, not a live operating audit or independent outcome validation. [Source 1](https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/)
 
 ### G05. Bosch Rexroth — technical-support search across a large product range
 
@@ -214,6 +302,10 @@ Metric correction `G02-metric-correction` (publication date unknown; checked 202
 - **Roadmap lesson**: Make part number, version, and installation environment an input contract; return source text and applicable products with every answer.
 - **Evidence limit**: Purpose and deployment are public, but handling time, resolution rate, and error rate are not. [AWS](https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/)
 
+Review `G05-source-confirmation-20261026` (checked 2026-10-26): Smart Assistant supports retrieval across over 500,000 products; an outcome-evaluation sample is not reported. Source review, not a live operating audit or independent outcome validation. [Source 1](https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/)
+
+Review `G05-hydraulic-hub-workflow` (checked 2026-10-26): The product connects identification, technical documents, maintenance checklists, and service requests. Samples, periods, and methods behind advertised maximum improvements are unreported; not a new measured outcome. [Source 1](https://www.boschrexroth.com/en/gb/connected-hydraulics/products/hydraulic-hub/)
+
 ### G06. Walmart — merchandise-performance analysis and operations tickets
 
 - **Problem**: Merchants combine reports and spreadsheets to explain over- or under-performance and resolve operational issues.
@@ -222,6 +314,10 @@ Metric correction `G02-metric-correction` (publication date unknown; checked 202
 - **Human judgment**: Merchants decide pricing, inventory, promotion, and execution.
 - **Roadmap lesson**: Distinguish correlation from cause and separate state refresh, recommendation evidence, strategy, and tactical execution authority.
 - **Evidence limit**: Internal deployment and capabilities are official; quantitative outcomes are not public, and future autonomy remains a plan. [Walmart](https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants)
+
+Review `G06-source-confirmation-20261026` (checked 2026-10-26): Separate Wally’s query, analysis, and ticket support from its future autonomous-action objective. Source review, not a live operating audit or independent outcome validation. [Source 1](https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants)
+
+Review `G06-agent-profiles-plan` (checked 2026-10-26): Consumer Agent Profiles were planned for the following month and are separate from Wally. Approval and spending-limit designs are not completed adoption or merchant-workflow outcomes. [Source 1](https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers)
 
 ### G07. CarMax — review summaries and product-page content
 
@@ -233,6 +329,10 @@ Metric correction `G02-metric-correction` (publication date unknown; checked 202
 - **Evidence limit**: Microsoft reports 5,000 pages produced in months and an 80% editorial approval rate, against a company estimate of 11 manual years; detailed measurement design and long-term quality are not public. [Microsoft](https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service)
 
 Comparison correction `G07-comparison-basis-clarification` (published 2022-05-24; checked 2026-10-26): the company disclosed an estimate of roughly 11 manual years as its comparator, not a concurrent control or 11 years of observed work. Distinguish the 5,000 production pages from the evaluation denominator for the 80% approval rate.
+
+Review `G07-source-confirmation-20261026` (checked 2026-10-26): Eleven manual years for 5,000 pages is an estimate; 80% editorial approval is not factual accuracy. Source review, not a live operating audit or independent outcome validation. [Source 1](https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service)
+
+Review `G07-customer-app-boundary` (checked 2026-10-26): The vehicle-search and offer-tool app launch is separate from editorial production. Pre-baseline publication; app availability does not establish editorial outcomes. [Source 1](https://media.carmax.com/press-releases/news-release/2026/CarMax-Launches-First-of-Its-Kind-Car-Shopping-and-Selling-Experience-in-ChatGPT-App-Store/default.aspx)
 
 ### G08. Corewell Health — clinical-note drafts from care conversations
 
@@ -247,6 +347,10 @@ Follow-up `G08-relationship-events-study` (published 2026-06-29; checked 2026-10
 
 Practice should evaluate omitted relationship events, clinician additions, and correction burden alongside recording time. The original case remains `PILOT · SELF`.
 
+Review `G08-source-confirmation-20261026` (checked 2026-10-26): Separate the 90-day pilot from planned access for 4,000 clinicians; the residency study is a different sample. Source review, not a live operating audit or independent outcome validation. [Source 1](https://www.abridge.com/case-study/corewell-health)
+
+Review `G08-clinician-assistant-interview` (checked 2026-10-26): A clinician describes chart and evidence lookup and sending reviewed replies. An edited interview with one clinician; not the same cohort as the pilot or residency study. [Source 1](https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant)
+
 ### G09. Foley Hoag — M&A diligence tables and litigation drafts
 
 - **Problem**: Lawyers structure clauses, issues, facts, and disclosure items from large deal rooms and litigation records.
@@ -255,6 +359,8 @@ Practice should evaluate omitted relationship events, clinician additions, and c
 - **Human judgment**: Lawyers verify quoted sources, make legal judgments, and approve client work.
 - **Roadmap lesson**: Tie each conclusion to source text and enforce confidentiality, jurisdiction, document version, access control, and lawyer sign-off.
 - **Evidence limit**: Harvey reports at least a one-third reduction in some M&A review cycles and 8–10 hours saved in a litigation experiment; case comparability and quality methods are not public. [Harvey](https://www.harvey.ai/customers/foley-hoag)
+
+Review `G09-source-confirmation-20261026` (checked 2026-10-26): The time-saving survey is self-report from 55 lawyers; matter-specific figures are not firmwide outcomes. Source review, not a live operating audit or independent outcome validation. [Source 1](https://www.harvey.ai/customers/foley-hoag)
 
 ### G10. Accenture — tests, legacy-code understanding, and technical debt
 
@@ -267,6 +373,8 @@ Practice should evaluate omitted relationship events, clinician additions, and c
 
 Deployment-scope correction `G10-rollout-scope-correction` (publication date unknown; checked 2026-10-26): the earlier `PILOT` label omitted the source-reported rollout to thousands after the trial and is corrected to `LIVE`. The 450 and 200 are trial groups, not current users. Vendor reporting and unknown dates do not establish recent hiring or adoption growth or independent outcomes.
 
+Review `G10-source-confirmation-20261026` (checked 2026-10-26): Separate the 20-person pilot, 450-user/200-control trial, and later rollout; 12,000 seats describes access. Source review, not a live operating audit or independent outcome validation. [Source 1](https://github.com/customer-stories/accenture)
+
 ### G11. EXL — underwriting-document extraction and review support
 
 - **Problem**: Insurance underwriters read hundreds of pages of medical and application records to structure an initial assessment.
@@ -275,6 +383,8 @@ Deployment-scope correction `G10-rollout-scope-correction` (publication date unk
 - **Human judgment**: Underwriters verify the evidence and own risk and enrollment decisions.
 - **Roadmap lesson**: Separate OCR completeness, health-data protection, source linkage, product rules, and final-underwriter approval.
 - **Evidence limit**: EXL estimates a shift from days to hours and potential cost reduction up to 80%, but the insurer and methodology are not disclosed. [AWS](https://aws.amazon.com/solutions/case-studies/exl-case-study/)
+
+Review `G11-source-confirmation-20261026` (checked 2026-10-26): Initial customers onboarded after the August 2024 launch. Up to 80% is EXL’s estimated savings potential. Correct prior SELF to NONE: underwriting savings are potential; 60-day development is separate. [Source 1](https://aws.amazon.com/solutions/case-studies/exl-case-study/)
 
 ### G12. City of Buenos Aires — unified government information and tourism questions
 
@@ -285,6 +395,8 @@ Deployment-scope correction `G10-rollout-scope-correction` (publication date unk
 - **Roadmap lesson**: Begin with low-sensitivity work and evaluate authoritative sources, multilingual consistency, political neutrality, privacy, and channel parity.
 - **Evidence limit**: Do not attribute Boti's overall two million monthly interactions to its limited generative feature. The Microsoft story partially blends the two. [Microsoft](https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service)
 
+Review `G12-source-confirmation-20261026` (checked 2026-10-26): Separate Boti’s two million monthly queries from 17,000 generative-tourism queries; the latter reports 50% lower workload. Correct prior NONE to SELF because a self-report exists; this is not independent verification. [Source 1](https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service)
+
 ### G13. Lumen Technologies — account research and outreach preparation
 
 - **Problem**: B2B sellers combine company, contract, relationship, and meeting data across systems before outreach.
@@ -294,6 +406,8 @@ Deployment-scope correction `G10-rollout-scope-correction` (publication date unk
 - **Roadmap lesson**: Measure CRM freshness, wrong account facts, message review, duplicate contact, and actual sales outcomes alongside research time.
 - **Evidence limit**: Lumen reports reducing account research from four hours to 15 minutes, but sample and calculation are not public. [Microsoft](https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/)
 
+Review `G13-source-confirmation-20261026` (checked 2026-10-26): Four-hour to 15-minute research and $50 million annual value are company claims, not verified realized revenue. Source review, not a live operating audit or independent outcome validation. [Source 1](https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/)
+
 ### G14. Moderna — development-document drafts from evidence
 
 - **Problem**: Clinical, product, and marketing teams jointly review hundreds of pages to create a Target Product Profile.
@@ -301,7 +415,9 @@ Deployment-scope correction `G10-rollout-scope-correction` (publication date unk
 - **AI role**: Large-corpus summarization, fact and assumption extraction, document structuring, and error candidates.
 - **Human judgment**: Domain specialists validate assumptions and trade-offs and decide the development direction.
 - **Roadmap lesson**: Explicitly separate evidence from assumptions and track sentence-level sources, domain approvals, versions, and change impact.
-- **Evidence limit**: This is a vendor report; specific cycle-time reductions and independent validation are not public. [OpenAI](https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/)
+- **Evidence limit**: This is a vendor report; Moderna reports weeks-to-hours changes for a core analytical step in some cases, not the entire TPP. Detailed measurement and independent validation are not public. [OpenAI](https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/)
+
+Review `G14-source-confirmation-20261026` (checked 2026-10-26): The reported weeks-to-hours change concerns a core analytical step in some cases, not the entire TPP. Correct prior NONE to SELF because a self-report exists; this is not independent verification. [Source 1](https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/)
 
 ### G15. Klarna — automated service with agent handoff for complex cases
 
@@ -313,35 +429,54 @@ Deployment-scope correction `G10-rollout-scope-correction` (publication date unk
 - **Roadmap lesson**: Do not optimize automation rate alone; design escalation accuracy, complex-case quality, repeat contact, the right to choose a human, and retention of expert service skills.
 - **Evidence limit**: Initial metrics are company and vendor claims; the operating adjustment is independently reported. This is better read as rebalancing human and AI roles than a complete reversal. [Initial official story](https://openai.com/index/klarna/) · [AP follow-up](https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929)
 
-## Scope of the final source check
+Review `G15-source-confirmation-20261026` (checked 2026-10-26): Initial service metrics are company and vendor self-reports. Work equivalent to 700 agents is not an actual layoff count. [Source 1](https://openai.com/index/klarna/)
 
-On 2026-10-26, original sources below were compared for quantitative wording and reported deployment scope. Follow-up or correction entries were added for the nine cases above; other checks were limited to the stated figures. This is not an operational audit or a fresh review of all 25 cases.
+Review `G15-operating-adjustment-confirmation` (checked 2026-10-26): AP reports additional human support for complex cases. Only the operating direction is cross-checked, not the initial metrics. [Source 1](https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929)
 
-| Items checked | Bounded scope |
-|---|---|
-| K04, K05, K07, K08, K09 | Time claims and extrapolation assumptions, internal-pilot population, platform plan, people versus calls, and site deployment |
-| G02, G07, G08, G09, G10 | NPS versus CSAT, estimated manual effort, expansion plan, legal-work savings scope, and trials versus later rollout |
-| G11, G12, G13, G15 | Potential cost savings, whole chatbot versus generative feature, research time, and initial self-reports versus AP's operating follow-up |
-| G03 | The Siemens source timed out; current figures were not reverified. The prior date and source remain preserved |
 
-## Turning a public example into a roadmap case candidate
+### G16. Virgin Atlantic
 
-Do not copy an external case directly. Re-specify these elements for the new organization before proposing it for `case-studies/`:
+- **Workflow and judgment**: Teams assemble journey evidence; product staff review findings and choose actions.
+- **Evidence and limits**: `G16-initial-review`, published 2026-08-10, checked 2026-10-26. Firmwide ROI and customer outcomes were not validated. [Source 1](https://openai.com/index/virgin-atlantic/chatgpt-work/)
 
-1. Trigger event and completion state
-2. Source system used to refresh current state
-3. What AI may read, recommend, and execute
-4. Where a person must approve, edit, or reject
-5. Normal, boundary, failure, and adversarial evaluation cases
-6. Recovery for duplicates, partial failure, permission errors, and external-system failure
-7. Metrics for user correction burden and real workflow outcomes
-8. Separation between verified public facts and local adoption hypotheses
+### G17. Zapier
 
-## Classification suggestion
+- **Workflow and judgment**: Lead checks, campaign preparation, and reporting are connected, with team review.
+- **Evidence and limits**: `G17-initial-review`, published 2026-08-10, checked 2026-10-26. Seven-figure pipeline value is not realized revenue; a persistent shared-context system remains a plan. [Source 1](https://openai.com/index/zapier/)
 
-The existing `primary_domain` represents a work function. To show industry diversity, first consider a separate `industry` axis instead of stretching the domain taxonomy.
+### G18. Bundesagentur für Arbeit
 
-- Work-function examples: customer and revenue, people and collaboration, finance and procurement, data and operations, shared integration and operations
-- Industry examples: manufacturing, finance, insurance, healthcare, public service, education, social care, retail, legal, software, and pharmaceuticals
+- **Workflow and judgment**: Routine calls are assisted; complex cases and legally binding decisions remain with staff.
+- **Evidence and limits**: `G18-initial-review`, published 2026-09-23, checked 2026-10-26. AI throughput and time savings are unreported; personal-record use is a later plan. [Source 1](https://www.arbeitsagentur.de/en/press/2026-36-more-service-and-shorter-waiting-times-federal-employment-agency-starts-test-phase-with-ai-voice-assistance)
 
-Work function locates responsibility and system flow. Industry is a secondary axis for comparing regulation, data, and physical operating conditions.
+### G19. Deaconess Health
+
+- **Workflow and judgment**: Evidence lookup uses the conversation and chart; the clinician decides.
+- **Evidence and limits**: `G19-initial-review`, published 2026-09-29, checked 2026-10-26. Not a diagnostic or clinical-outcome study; 300 systems is not the evaluation sample. [Source 1](https://www.abridge.com/blog/deaconess-olivia-taylor-abridge-assistant)
+
+### G20. DXC Technology
+
+- **Workflow and judgment**: Insurance documents are structured and routed to people for consequential decisions with audit records.
+- **Evidence and limits**: `G20-initial-review`, published 2026-10-15, checked 2026-10-26. The 80% first draft is not overall accuracy; 1,100 customers and total policy volume are not Claude usage denominators. [Source 1](https://dxc.com/insights/customer-stories/dxc-claude-insurance-backbone)
+
+### G21. Carvana
+
+- **Workflow and judgment**: Slack alerts lead to investigated PRs for human review.
+- **Evidence and limits**: `G21-initial-review`, publication unknown, checked 2026-10-26. The two-week/five-case investigation test is separate. Samples and measurement periods for 56% fewer alerts and 65% faster answers are unreported. [Source](https://claude.com/customers/carvana)
+
+### G22. Pictet
+
+- **Workflow and judgment**: Internal policy comparison and tooling are supported within risk-reviewed use and data boundaries.
+- **Evidence and limits**: `G22-initial-review`, published unknown, checked 2026-10-26. Body publication date and full quality evaluation unreported; access and training are not outcomes. [Source 1](https://claude.com/customers/pictet)
+
+### G23. GE Appliances
+
+- **Workflow and judgment**: Supplier order-status inquiries are automated within the parts team’s workflow.
+- **Evidence and limits**: `G23-initial-review`, published 2026-04-22, checked 2026-10-26. Formula, controls, and detailed approval procedures unreported; pre-baseline evidence. [Source 1](https://pressroom.geappliances.com/news/ge-appliances-reinvents-manufacturing-operations-at-scale-with-google-clouds-gemini-enterprise)
+
+`G23-later-recap`: The September vendor article repeats outcomes in the April company release. Not a new observation or independent validation; do not double-count the figures. [Source 1](https://cloud.google.com/transform/agentic-factory-manufacturing-new-age-of-autonomy-industrial-ai)
+
+### G24. MING Labs
+
+- **Workflow and judgment**: MING retired coordination agent Major Tom and redesigned workflow ownership.
+- **Evidence and limits**: `G24-initial-review`, published 2026-04-02, checked 2026-10-26. Self-report of one role retired after 13 days, not other agents’ outcomes or companywide AI withdrawal. [Source 1](https://www.minglabs.com/insights/articles/we-fired-an-ai-agent) · [Source 2](https://www.minglabs.com/insights/articles/we-fired-an-ai-agent.json)

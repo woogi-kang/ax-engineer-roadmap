@@ -34,7 +34,7 @@ Important competencies in this shape:
 Source:
 
 - [`PRIMARY_OFFICIAL` FuriosaAI, Software Engineer, Compiler (AX Engineer)](https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201) (checked 2026-10-26; publication date unknown)
-- The [previous Ashby posting](https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/) remains as the source used on 2026-07-23. Direct access returned only a JavaScript notice in this review; the current description was read on the company page above.
+- The Ashby address was used in the 2026-07-23 review. It returned a JavaScript notice during research and 404 in the later PR check. Its [historical URL and access record](hiring-signals.md#j001) are retained; the company page above supplies current role content.
 
 ### 2. Organizational operating foundation
 
@@ -70,7 +70,9 @@ Source:
 
 ## Additional evidence checked on 2026-10-26
 
-These are purpose-selected qualitative examples of responsibilities. Multiple channels for the same vacancy are not counted as separate jobs. They do not support hiring-growth, average-pay, or market-size estimates.
+These are purpose-selected qualitative examples of responsibilities. The [27 posting records](hiring-signals.md) preserve role content, requirements, and recruitment signals: 11 open, eight closed, and eight unknown as checked on 2026-10-26. FuriosaAI and POSTECH remain unknown because their role-specific application routes could not be confirmed, despite readable job content.
+
+Channels without a confirmed original-ID match remain separate records. These 27 records are not a unique-vacancy count and do not support hiring-growth, average-pay, or market-size estimates. Only GM has a verified publication date after 2026-08-01; the other 26 records are undated.
 
 | Category | Source and date | Finding and limit |
 |---|---|---|
@@ -79,7 +81,7 @@ These are purpose-selected qualitative examples of responsibilities. Multiple ch
 | Current signal; publication date unknown | [OneSpan, AI Automation Engineer](https://www.onespan.com/about/careers/job/ai-automation-engineer-8278879?gh_jid=8278879&langcode=en) | Observes R&D work, prioritizes by frequency and cost, chooses agents or scripts, and hands ownership to the team. Finding it now does not establish when the role was created. |
 | Current signal; publication date unknown | [Anthropic, Staff Software Engineer, GTM AI Engineering](https://job-boards.greenhouse.io/anthropic/jobs/5390966008) | Owns internal sales agents, evaluation, approval, monitoring, and shared-code quality. The older search title `GTM Claudification` is an alias for the current official role. |
 | Current signal; publication date unknown | [Anthropic, AI Operations Engineer, Partnerships](https://job-boards.greenhouse.io/anthropic/jobs/5391151008) | Builds workflows on the portal and data model owned by a systems lead. Writes back to systems of record and designs human review, failure handling, and reuse. |
-| Recruitment-platform evidence | [Daewoong, AX Engineer](https://recruit.wanted.co.kr/wd/390449), [Senior AX Engineer](https://career.rememberapp.co.kr/job/posting/344926) | Separates PM validation, engineer implementation/evaluation/operational transition, and senior technical choices/reviews/coaching. The employer ATS original and first publication dates are unverified. Remember shows a 2026-10-25 closing date; Wanted lists rolling recruitment. |
+| Recruitment-platform evidence | [Daewoong, AX Engineer](https://recruit.wanted.co.kr/wd/390449), [Senior AX Engineer](https://career.rememberapp.co.kr/job/posting/344926) | Separates PM validation, engineer implementation/evaluation/operational transition, and senior technical choices/reviews/coaching. The employer ATS original and first publication dates are unverified. Remember shows closure on 2026-10-25; Wanted’s rolling wording alone does not confirm current applications. Original-ID identity across channels is unverified. |
 
 All linked material in the table was read on 2026-10-26. Publication and current access status are separate facts. This small, selected sample cannot establish how prevalent a responsibility is across the market. Rereading pre-baseline material, such as the Rapport Labs article, is not a new market change.
 

@@ -6,6 +6,10 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ### Added
 
+- Added 15 company/institution workflow cases, bringing the catalog to 16 Korean and 24 international entries, with recheck results, corrections, and access failures for the original 25
+- Added 27 bilingual job-posting records with responsibilities, requirements, recruitment signals, publication/check dates, structured data, and status/date validation
+- Added the 2026-10-26 evidence refresh record covering collection scope, held material, source access, and limitations
+
 - Entry routes for early-career, software-experienced, and domain-experienced learners with initial deliverables and review gates
 - A P3 UI integration checklist and P5 reusable skill card, with failure tests and adopt, hold, and retire criteria
 - A standards review list separating proposals, specifications, and product support, with criteria for core-curriculum inclusion

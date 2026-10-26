@@ -1,10 +1,10 @@
 # Public Case-to-Practice Table
 
-This document shows which practice designs use the 25 entries in the [public AX case catalog](public-ax-cases.md). It selects **design questions and control methods** rather than copying a named organization's implementation or claiming its results.
+This document shows where the original 25 entries in the [public AX case catalog](public-ax-cases.md) inform practice designs and suggests questions from 15 added cases. It selects **design questions and control methods** rather than copying a named organization's implementation or claiming its results.
 
 - Original mapping baseline: `2026-08-01`
-- Selected evidence update: `2026-10-26` (only K04, K05, K07, K08, K09, G02, G07, G08, and G10 reviewed)
-- Public evidence: `K01–K10`, `G01–G15`
+- Source refresh: `2026-10-26`. All 25 baseline cases were attempted; access failures and limits are recorded separately.
+- Public evidence: `K01-K16`, `G01-G24`
 - Roadmap application: reinforce 10 existing cases and add five simulation cases
 
 ## Application rules
@@ -15,7 +15,7 @@ This document shows which practice designs use the 25 entries in the [public AX 
 4. Without real data and permissions, do not assign evidence above `simulation-design` or `public-simulation`.
 5. Keep work function in `primary_domain` and operating context in `industry`.
 
-## Placement of all 25 cases
+## Placement of the original 25 cases
 
 | Public ID | Extracted operating pattern | Roadmap target | Use |
 |---|---|---|---|
@@ -30,7 +30,7 @@ This document shows which practice designs use the 25 entries in the [public AX 
 | K09 | Behavioral events, sensitive video, contextual review | [Care records](../case-studies/care-conversation-record/README.md) | Data-control pattern |
 | K10 | Integrated education records and teacher correction | [AX Hub](../case-studies/file-csv-to-ax-hub/README.md), [care records](../case-studies/care-conversation-record/README.md) | Reinforce and add |
 | G01 | Consent, meeting records, expert CRM review, regression evaluation | [Meeting actions](../case-studies/slack-meeting-actions/README.md) | Reinforce |
-| G02 | Gradual expansion from HR answers to transactions and human escalation | [Employee access](../case-studies/employee-lifecycle-access/README.md) | Reinforce |
+| G02 | Expansion from HR answers to transfers and employment verification, with human escalation | [Employee access](../case-studies/employee-lifecycle-access/README.md) | Reinforce |
 | G03 | Automation drafts, safety interlocks, deployment approval | [Equipment anomalies](../case-studies/equipment-anomaly-maintenance/README.md) | New practice |
 | G04 | Shop-floor retrieval, site differences, dangerous-work escalation | [AX Hub](../case-studies/file-csv-to-ax-hub/README.md), [equipment anomalies](../case-studies/equipment-anomaly-maintenance/README.md) | Reinforce and add |
 | G05 | Technical retrieval constrained by product, version, and installation | [AX Hub](../case-studies/file-csv-to-ax-hub/README.md) | Reinforce |
@@ -67,3 +67,25 @@ This table translates [follow-up claims in the catalog](public-ax-cases.md) into
 | Regulated evidence documents | Sentence-level citations, fact and assumption separation, multi-domain approval |
 
 All five are documentation-ready `simulation-design` cases. Advance their evidence stage only after publishing executable synthetic evaluation, obtaining de-identified practice evidence, or completing a bounded pilot with operating and recovery proof.
+
+## Learning connections for added cases
+
+These are questions to consider in the existing 15 exercises, not new executable implementations or organizational outcomes.
+
+| Public ID | Learning question | Related practice | Application scope |
+|---|---|---|---|
+| K11 | Comparability after question branching and analysis review | [VOC case](../case-studies/beauty-d2c-voc/README.md) | Proposed questions for existing designs; no implementation or outcome validation |
+| K12 | Linking evidence, staff review, and actual delivery | [Mail assist](../case-studies/centralized-mail-assist/README.md) | Proposed questions for existing designs; no implementation or outcome validation |
+| K13 | Manual-version/model mismatch and hazardous-work escalation | [Equipment anomalies](../case-studies/equipment-anomaly-maintenance/README.md) | Proposed questions for existing designs; no implementation or outcome validation |
+| K14 | Unreadable identifiers, stale records, and manual restart | [Equipment anomalies](../case-studies/equipment-anomaly-maintenance/README.md) | Proposed questions for existing designs; no implementation or outcome validation |
+| K15 | Translation accuracy, speaker attribution, and sharing checks | [Meeting actions](../case-studies/slack-meeting-actions/README.md) | Proposed questions for existing designs; no implementation or outcome validation |
+| K16 | Material/equipment changes and approval of production conditions | [Equipment anomalies](../case-studies/equipment-anomaly-maintenance/README.md) | Proposed questions for existing designs; no implementation or outcome validation |
+| G16 | Review of research and scoped access | [AX Hub](../case-studies/file-csv-to-ax-hub/README.md), [VOC proposals](../case-studies/beauty-d2c-voc/README.md) | Review criteria for existing practices, not new implementations |
+| G17 | Lead checks and separation of pipeline from revenue | [VOC proposals](../case-studies/beauty-d2c-voc/README.md), [Meeting actions](../case-studies/slack-meeting-actions/README.md) | Review criteria for existing practices, not new implementations |
+| G18 | Contextual handoff and decision authority | [Petition response](../case-studies/public-service-petition-response/README.md), [Care records](../case-studies/care-conversation-record/README.md) | Review criteria for existing practices, not new implementations |
+| G19 | Patient context, sources, and professional judgment | [Care records](../case-studies/care-conversation-record/README.md), [Evidence documents](../case-studies/regulated-evidence-document/README.md) | Review criteria for existing practices, not new implementations |
+| G20 | Document routing, exceptions, and decision audit | [Underwriting review](../case-studies/credit-underwriting-review/README.md), [Evidence documents](../case-studies/regulated-evidence-document/README.md) | Review criteria for existing practices, not new implementations |
+| G21 | Team scopes, human review, and release comparisons | [Shared operations](../case-studies/company-agent-operating-layer/README.md), [Meeting actions](../case-studies/slack-meeting-actions/README.md) | Review criteria for existing practices, not new implementations |
+| G22 | Separate access and training from outcomes; verify rules | [Evidence documents](../case-studies/regulated-evidence-document/README.md), [Access lifecycle](../case-studies/employee-lifecycle-access/README.md) | Review criteria for existing practices, not new implementations |
+| G23 | Supplier status, replies, and metric periods | [Maintenance](../case-studies/equipment-anomaly-maintenance/README.md), [Inventory exceptions](../case-studies/inventory-exception-replenishment/README.md) | Review criteria for existing practices, not new implementations |
+| G24 | Separate message volume from value; decide when to stop | [Shared operations](../case-studies/company-agent-operating-layer/README.md), [Meeting actions](../case-studies/slack-meeting-actions/README.md) | Review criteria for existing practices, not new implementations |
