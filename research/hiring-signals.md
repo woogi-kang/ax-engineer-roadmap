@@ -66,7 +66,7 @@
 - 실습 연결: [P1](../projects/01-safe-assistant.md) · [P4](../projects/04-production-pilot.md) · [P5](../projects/05-second-workflow-reuse.md)
 
 - `J001-S1` [기업·기관 공식 또는 ATS](https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201): 본문 확인 · 미확인. 발행 미상 / 마감 미상 / 확인 2026-10-26. 직무 본문을 읽었다. Apply Here가 자기 페이지로 돌아가 모집 상태는 미확인이다.
-- [상태 집계에서 제외한 관련 자료](https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/): 기존 Ashby 주소는 JavaScript 안내만 반환했다. 현재 회사 페이지와 원 공고 ID 대응은 미확인이다.
+- 이전 주소 · 404 확인 기록: `https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/`: 기존 Ashby 주소는 JavaScript 안내만 반환했다. 현재 회사 페이지와 원 공고 ID 대응은 미확인이다. 2026-10-26 PR 외부 링크 검사에서는 404가 확인됐다. 과거 주소로 보존하며 현재 역할 본문은 위 회사 페이지를 따른다. 이 응답만으로 모집 마감을 판단하지 않는다. [검사 기록](https://github.com/woogi-kang/ax-engineer-roadmap/actions/runs/40319785897)
 
 ### J002
 
@@ -100,7 +100,7 @@
 - 실습 연결: [P1](../projects/01-safe-assistant.md) · [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
 
 - `J003-S1` [채용 플랫폼](https://recruit.wanted.co.kr/wd/384409): 본문 확인 · 마감 표시 확인. 발행 미상 / 마감 2026-11-02 / 확인 2026-10-26. 마감 표시를 확인했다. 남아 있는 마감일은 2026-11-02다.
-- [상태 집계에서 제외한 관련 자료](https://miridih.career.greetinghr.com/ko/o/220034): Greeting 주소는 접근하지 못해 본문과 원 공고 ID 대응을 확인하지 못했다. Wanted의 모집 상태와 합치지 않는다.
+- 이전 주소 · 404 확인 기록: `https://miridih.career.greetinghr.com/ko/o/220034`: Greeting 주소는 접근하지 못해 본문과 원 공고 ID 대응을 확인하지 못했다. 2026-10-26 PR 외부 링크 검사에서 404를 확인했다. 과거 주소로 보존하며 현재 읽을 수 있는 본문은 위 Wanted 기록을 따른다. 같은 공고라는 근거가 없어 모집 상태를 합치지 않는다. [검사 기록](https://github.com/woogi-kang/ax-engineer-roadmap/actions/runs/40319785897)
 
 ### J004
 

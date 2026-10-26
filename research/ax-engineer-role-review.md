@@ -34,7 +34,7 @@ FuriosaAI의 Compiler AX Engineer 공고는 특정 엔지니어링 팀 안에서
 출처:
 
 - [`PRIMARY_OFFICIAL` FuriosaAI, Software Engineer, Compiler (AX Engineer)](https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201) (2026-10-26 확인, 게시일 미상)
-- [기존 Ashby 공고](https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/)는 2026-07-23에 사용한 출처로 보존한다. 이번 직접 조회에서는 JavaScript 안내만 반환했다. 현재 역할 내용은 위 회사 공식 페이지에서 확인했다.
+- 기존 Ashby 주소는 2026-07-23에 사용한 출처다. 이번 조사에서는 JavaScript 안내만 반환했고 이후 PR 검사에서 404를 확인했다. [과거 주소와 접근 기록](hiring-signals.md#j001)을 보존하며 현재 역할 내용은 위 회사 페이지를 따른다.
 
 ### 2. 조직 운영 기반형
 

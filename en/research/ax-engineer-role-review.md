@@ -34,7 +34,7 @@ Important competencies in this shape:
 Source:
 
 - [`PRIMARY_OFFICIAL` FuriosaAI, Software Engineer, Compiler (AX Engineer)](https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201) (checked 2026-10-26; publication date unknown)
-- The [previous Ashby posting](https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/) remains as the source used on 2026-07-23. Direct access returned only a JavaScript notice in this review; the current description was read on the company page above.
+- The Ashby address was used in the 2026-07-23 review. It returned a JavaScript notice during research and 404 in the later PR check. Its [historical URL and access record](hiring-signals.md#j001) are retained; the company page above supplies current role content.
 
 ### 2. Organizational operating foundation
 

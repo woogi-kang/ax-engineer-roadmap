@@ -66,7 +66,7 @@ An internal AX posting focused on the Compiler team’s engineering workflow.
 - Practice links: [P1](../projects/01-safe-assistant.md) · [P4](../projects/04-production-pilot.md) · [P5](../projects/05-second-workflow-reuse.md)
 
 - `J001-S1` [Company/institution or official ATS](https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201): Body read · Unverified. Published unknown / closes unknown / checked 2026-10-26. The job body was read. Apply Here looped to the same page, leaving availability unknown.
-- [Related material excluded from availability aggregation](https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/): The old Ashby URL returned only a JavaScript notice. Its original ID match to the current company page is unconfirmed.
+- Historical URL · observed 404: `https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/`: The old Ashby URL returned only a JavaScript notice. Its original ID match to the current company page is unconfirmed. The PR external-link check returned 404 on 2026-10-26. Retain this as a historical URL and use the company page above for role content. This response alone does not establish recruitment closure. [Check record](https://github.com/woogi-kang/ax-engineer-roadmap/actions/runs/40319785897)
 
 ### J002
 
@@ -100,7 +100,7 @@ An early-career posting supporting internal agents and infrastructure operations
 - Practice links: [P1](../projects/01-safe-assistant.md) · [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
 
 - `J003-S1` [Recruitment platform](https://recruit.wanted.co.kr/wd/384409): Body read · Closed indication observed. Published unknown / closes 2026-11-02 / checked 2026-10-26. A closed label was observed; the retained deadline is 2026-11-02.
-- [Related material excluded from availability aggregation](https://miridih.career.greetinghr.com/ko/o/220034): The Greeting URL was inaccessible, leaving its body and original ID match unverified. Its state is not merged with Wanted.
+- Historical URL · observed 404: `https://miridih.career.greetinghr.com/ko/o/220034`: The Greeting URL was inaccessible, leaving its body and original ID match unverified. The PR external-link check returned 404 on 2026-10-26. Retain the historical URL and use the Wanted record above for readable content. Without confirmed identity, do not combine recruitment states. [Check record](https://github.com/woogi-kang/ax-engineer-roadmap/actions/runs/40319785897)
 
 ### J004
 

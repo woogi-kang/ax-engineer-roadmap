@@ -79,3 +79,5 @@ The original 26 URLs remain in case `source_urls` and baseline claims. Additions
 - `conflicting`: sources confirmed to describe the same vacancy show incompatible recruitment states.
 
 Group sources when their original job ID confirms identity. If only the company and title match, record the relationship and limits in `related_sources` and exclude it from availability aggregation. Record counts therefore do not equal unique vacancies or new jobs. The [refresh record](evidence-refresh-2026-10-26.md) retains search scope, exclusions, held candidates, and access failures.
+
+For historical sources observed to return 404 or 410, retain the URL as code text with the check date and response. Navigation links lead to a readable source or the retained record. Keep the original URL and access history without checker exceptions, and do not infer recruitment closure from a missing page.

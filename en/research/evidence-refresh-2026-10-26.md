@@ -44,3 +44,7 @@ Hiring candidates consisting only of images or JavaScript notices, uncertain rep
 Track hiring availability separately from source access. Do not substitute a check date for an unknown publication date. Record new cases as initial reviews at introduction, without backdating them into the 2026-08-01 baseline. The [source policy](source-policy.md) and validation enforce these boundaries.
 
 This is a one-time refresh; no recurring collection or automatic publication job was configured.
+
+## Additional status observed during PR validation
+
+The former FuriosaAI Ashby URL and Miridih Greeting URL returned 404 during the 2026-10-26 PR check. Original URLs and earlier observations remain in the data; the documents label them as historical addresses and direct readers to the readable company page or Wanted body. Recruitment-state counts are unchanged. [Check record](https://github.com/woogi-kang/ax-engineer-roadmap/actions/runs/40319785897)
