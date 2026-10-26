@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import { marked } from 'marked';
 
-const source = fs.readFileSync(new URL('../../README.md', import.meta.url), 'utf8');
+const source = fs.readFileSync(new URL('../README.md', import.meta.url), 'utf8');
 const html = marked.parse(source, { gfm: true });
 const failures = [];
 

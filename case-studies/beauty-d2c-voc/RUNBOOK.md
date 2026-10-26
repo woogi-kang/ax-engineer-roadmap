@@ -1,6 +1,6 @@
 # Beauty/D2C 합성 VOC 파이프라인 runbook
 
-이 실행물은 Python 표준 라이브러리만 사용한다. 외부 API, 모델, 계정, 네트워크 연결이 필요하지 않다.
+이 시뮬레이션 코드는 Python 표준 라이브러리만 사용한다. 외부 API, 모델, 계정이나 네트워크가 필요하지 않다.
 
 ## 실행
 
@@ -27,6 +27,8 @@ python3 -m unittest discover \
   -v
 ```
 
+이 검사는 기존 합성 16건과 산출물의 재현을 확인한다. P1 전체 통과에 필요한 최소 20개 평가와 새 입력의 독립 검수를 대신하지 않는다. 검토 큐를 생성하지만 사람의 검토·승인 결과를 입력받거나 저장하는 기능은 없다.
+
 ## 입력 교체
 
 입력과 기대 결과 파일을 따로 지정할 수 있다.
@@ -38,7 +40,7 @@ python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py \
   --output-dir /path/to/output
 ```
 
-운영 입력은 [`voc-record.schema.json`](schemas/voc-record.schema.json)의 필드를 따라야 한다. 평가 fixture에는 거절 경로를 확인하기 위해 스키마를 일부러 어긴 레코드가 포함돼 있다. 현재 구현은 `source_type=synthetic`만 허용한다. 실제 공개 데이터를 연결하려면 먼저 이용 약관, 라이선스, 개인정보, 수집 범위를 확인하고 별도 수집 어댑터를 만들어야 한다.
+교체할 합성 입력은 [`voc-record.schema.json`](schemas/voc-record.schema.json)의 필드를 따라야 한다. 평가 fixture에는 거절 경로를 확인하기 위해 스키마를 일부러 어긴 레코드가 포함돼 있다. 현재 구현은 `source_type=synthetic`만 허용한다. 실제 공개 데이터를 연결하려면 먼저 이용 약관, 라이선스, 개인정보, 수집 범위를 확인하고 별도 수집 어댑터를 만들어야 한다.
 
 ## 실패와 복구
 
@@ -50,4 +52,4 @@ python3 case-studies/beauty-d2c-voc/pipeline/run_pipeline.py \
 | `review_required` | 상품·게시 시각 누락, 혼합 언어, 오래된 데이터, 미분류, 안전 신호를 수동 검토 큐로 보낸다. | 검토자가 원문과 `evidence_ref`를 확인해 보완·보류·제외한다. |
 | 평가 실패 | 실제 상태·주제·안전 신호가 기대 결과와 다르면 종료 코드 `1`을 반환한다. | `evaluation.json`에서 실패 레코드를 확인하고 코드 또는 기대 결과 변경 이유를 기록한다. |
 
-같은 입력과 코드로 다시 실행하면 같은 결과가 생성된다. `run-manifest.json`은 코드가 만든 일곱 파일을 `generated_outputs`에 고정해 기록하고, 수동으로 캡처한 `dashboard.png`는 `presentation_assets`로 분리한다. `--verify-committed`는 깨끗한 임시 디렉터리의 일곱 파일을 byte 단위로 비교하고 입력·스키마·코드·결과 SHA-256도 다시 확인한다.
+같은 입력과 코드로 다시 실행하면 같은 결과가 생성된다. `run-manifest.json`은 코드가 만든 일곱 파일을 `generated_outputs`에 고정해 기록하고, 수동으로 캡처한 `dashboard.png`는 `presentation_assets`로 분리한다. `--verify-committed`는 깨끗한 임시 디렉터리의 일곱 파일을 byte 단위로 비교하고 입력·스키마·코드·결과 SHA-256도 다시 확인한다. PNG는 기록된 해시와 원본 참조를 확인하며 이미지를 새로 렌더링해 비교하지는 않는다.

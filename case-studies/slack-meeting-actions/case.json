@@ -2,8 +2,8 @@
   "$schema": "../_schema/case.schema.json",
   "id": "slack-meeting-actions",
   "title": {
-    "ko": "회의 전후 Slack 신호를 승인 가능한 실행 항목으로",
-    "en": "From Slack Meeting Signals to Human-Approved Actions"
+    "ko": "Slack 회의 기록에서 승인할 후속 업무 찾기",
+    "en": "Identifying Follow-up Actions for Approval from Slack Meeting Records"
   },
   "type": "workflow",
   "primary_domain": "people-collaboration",

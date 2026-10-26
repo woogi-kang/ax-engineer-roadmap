@@ -2,8 +2,8 @@
   "$schema": "../_schema/case.schema.json",
   "id": "centralized-mail-assist",
   "title": {
-    "ko": "중앙 메일 업무 보조 통합",
-    "en": "Centralized Mail Assistance Integration"
+    "ko": "여러 업무가 함께 쓰는 메일 보조",
+    "en": "Shared Mail Assistance Across Workflows"
   },
   "type": "shared-integration",
   "primary_domain": "shared-operations",

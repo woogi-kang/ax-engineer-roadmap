@@ -4,6 +4,30 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ## [Unreleased]
 
+### Added
+
+- Entry routes for early-career, software-experienced, and domain-experienced learners with initial deliverables and review gates
+- A P3 UI integration checklist and P5 reusable skill card, with failure tests and adopt, hold, and retire criteria
+- A standards review list separating proposals, specifications, and product support, with criteria for core-curriculum inclusion
+- Role comparisons reviewed on 2026-10-26 and follow-up evidence for public cases K04, K05, and G08
+- Claim-level publication, observation, and verification dates, sample, method, access status, limitations, and validation for public cases
+- Project and contribution instructions requiring `korean-humanizer` for added or revised Korean content
+
+### Changed
+
+- Aligned P1 input boundaries, P4 simulation and P5 entry criteria, and the order of failure tests before production deployment in the final review
+- Distinguished partial VOC functionality from full P1 completion and stated the actual scope of its traceability metric
+- Corrected IBM's NPS/CSAT conflation, people-versus-usage units in a care case, and planned/pilot/operating classifications, recording follow-up or corrected claims for nine cases
+- Restored missing bilingual case controls and review conditions, consolidated repeated guidance, and aligned rules for directly measured and externally reported outcomes
+- Updated the MCP baseline to the 2026-07-28 specification with legacy compatibility and long-running task resumption, cancellation, and outcome reconciliation
+- Strengthened authority revocation, policy-outage handling, version-change evaluation, repeated trials, and role-specific acceptance in both language editions
+- Added total cost per completed workflow, review and rework burden, and scale and stop conditions to experiment and candidate templates
+- Retained one published implementation and 14 design documents, distinguishing partial source updates from full reverification
+
+### Removed
+
+- Removed the existing web project, site links, and deployment configuration while retaining independent documentation, case, and practice validation
+
 ## [0.4.0] - 2026-08-01 (release candidate)
 
 ### Added
@@ -40,17 +64,23 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 ### Added
 
 - A case catalog with a machine-validated `case.json` metadata contract
-- Cases for files and CSV to AX Hub, Slack meetings to actions, centralized Mail Assist, and a shared agent operating layer
+- Cases for files and CSV to AX Hub, identifying follow-up actions for approval from Slack meeting records, shared mail assistance across workflows, and a shared agent operations foundation
+- Cases for employee access, tax-invoice/payment reconciliation, card expenses, vendor/account changes, and inventory exceptions
+- Case metadata distinguishing domains, difficulty, competencies, and prerequisite cases
 - An applied AX case group in the interactive roadmap
 - A synthetic Beauty/D2C VOC data contract, normalization and classification pipeline, regression evaluation, runbook, and result dashboard
 
 ### Changed
 
 - Unified the primary repository and site name as `AX Engineer Roadmap`
+- Reworked the README case overview around available workflows, starting conditions, and execution scope
+- Expanded applied cases from five to ten and synchronized the site and both language editions
 - Clarified the scope as a universal AX core with Korean organizational conditions
 - Made AX Engineers the primary readers and reframed the other groups as collaborators
 - Replaced internal shorthand in the Korean edition with terms used in day-to-day work
 - Aligned the Korean and English entry paths, eight-stage structure, projects, and interactive site
+- Renamed the Korean lifecycle to the eight-stage AX workflow transformation and aligned stage names and order
+- Configured the interactive roadmap as a static GitHub Pages export and preserved Korean word boundaries on mobile
 - Reduced the mobile hero, kept a GitHub link visible, added a primary start action, and made roadmap groups collapsible
 - Synchronized role, readiness, and search filters with the URL for sharing
 - Reordered the README around the role definition, quick start, applied cases, roadmap structure, and hiring signals
@@ -79,7 +109,7 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 ### Added
 
 - Role model and responsibility boundaries for internal AX Engineers
-- Competency map across eight areas
+- Competency framework across eight areas
 - Four proficiency levels based on deployment responsibility
 - Eight-stage workflow transformation lifecycle
 - Five-level organizational AX maturity model

@@ -12,7 +12,7 @@ Participate from workflow discovery instead of issuing late-stage review comment
 
 Confirm:
 
-- Source systems and data owners for current truth
+- Authoritative systems for current state and the owners of that data
 - Purpose, provenance, legal basis, retention, and deletion
 - Missingness, duplication, freshness, and sampling bias
 - Business terms and metric definitions
@@ -22,7 +22,7 @@ Do not treat a vector store or conversation history as the source of truth. Defi
 
 Evidence:
 
-- Data, owner, and lineage map
+- Data provenance, ownership, and lineage
 - Data classification and processing purpose
 - Glossary and quality report
 - Retention, deletion, and correction process
@@ -62,7 +62,7 @@ Detail: [Security and Privacy](../technical-foundations/security-and-privacy.md)
 
 Do not store every conversation by default. Define the minimum structure needed for diagnosis and the data that must not be stored.
 
-Correlate with a run identifier:
+Record together under one run identifier:
 
 - User and service role
 - Input reference and data version
@@ -76,7 +76,7 @@ Detail: [Production Operations](../technical-foundations/production-operations.m
 
 ## 5. Incident and recovery
 
-Inject:
+Inject failures in an isolated validation environment. Production stop/recovery exercises require separately authorized scope:
 
 - Source-system delay and failure
 - Stale and missing data
@@ -104,6 +104,12 @@ Without the implementer, an operator should be able to:
 - Stop automated action
 - Switch to manual work
 - Reconcile missing and duplicate results after recovery
+
+## Exercise stop authority and inspect exceptions
+
+In an isolated validation environment, revoke permissions after approval and stop pending or executing work. Test that changes requiring approval remain on hold when the policy service is unavailable and that recovery rechecks current permissions. Compare interface cancellation labels with actual external state; hand off actions that cannot be cancelled.
+
+Handoff must include a backup owner, unresolved incidents, manual-processing capacity, and the next review date. Record the approver, expiry, and compensating measures for each policy exception and reassess on expiry. After model, tool, or policy changes, verify regression and recovery-exercise results.
 
 ## Common failures
 

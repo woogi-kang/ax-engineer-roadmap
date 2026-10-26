@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://woogi-kang.github.io/ax-engineer-roadmap/case-studies/beauty-d2c-voc/schemas/voc-record.schema.json",
+  "$id": "urn:ax-engineer-roadmap:schema:voc-record",
   "title": "Synthetic VOC input record",
   "type": "object",
   "additionalProperties": false,

@@ -21,6 +21,21 @@ LLM이 문장을 제안하는 것과 시스템에서 조회·전송·수정·삭
 
 한 서비스의 공식 API를 직접 연결하는 것으로 충분할 수 있다. 여러 AI Host에서 같은 도구·리소스를 재사용하고 연결 방식을 표준화할 필요가 있을 때 MCP를 검토한다. MCP 도입 자체를 업무 가치나 보안 통제로 보지 않는다.
 
+### 명세 버전과 실제 지원
+
+이 문서의 기준은 MCP `2026-07-28` 정식 명세다. 이 버전은 프로토콜 세션과 `initialize` 교환을 없애고 요청마다 버전과 기능 정보를 전달한다. 서버는 `server/discover`를 구현해야 하며 클라이언트는 필요할 때 먼저 호출할 수 있다. 업무 상태는 별도 식별자로 저장한다. [공식 명세](https://modelcontextprotocol.io/specification/2026-07-28) (명세일 2026-07-28, 확인일 2026-10-26).
+
+| 구분 | 구현 전에 확인할 것 |
+|---|---|
+| `2026-07-28` 정식 명세 | 요청별 기능 정보, MRTR의 추가 입력, 연결 중단 뒤 새 요청과 중복 방지 |
+| `2025-06-18` 등 구버전 | 기존 Host·Server의 지원 버전과 호환 경로. 새 명세가 나왔다고 기존 연결을 바로 폐기하지 않음 |
+| Tasks 등 선택적 확장 | 클라이언트와 서버 양쪽의 지원, 작업 상태·결과 조회·추가 입력 처리 |
+| 향후 제안 | [검토 목록](../research/standards-watchlist.md)에 상태와 재검토 조건을 남기고 현재 구현의 필수 조건으로 사용하지 않음 |
+
+Roots·Sampling·Logging과 DCR은 새 명세에서 폐기 예정으로 분류됐다. 즉시 제거됐다는 뜻은 아니다. 인증 서버의 issuer 검증과 자격증명 분리도 확인한다. 세부 변경과 폐기 기간은 [변경 사항](https://modelcontextprotocol.io/specification/2026-07-28/changelog) (명세일 2026-07-28, 확인일 2026-10-26)을 따른다.
+
+명세의 공개일과 사용하는 제품의 지원일은 다를 수 있다. 연결별로 Host·Server·SDK 버전, 전송 방식, 인증 방식, 확장, 확인일을 적는다.
+
 ### 읽기와 쓰기
 
 첫 실험은 읽기 또는 제안으로 제한한다. 쓰기가 필요하면 별도 도구와 서비스 계정을 사용하고, 스키마 검증·정책·승인·중복 방지를 통과한 요청만 실행한다.
@@ -28,6 +43,8 @@ LLM이 문장을 제안하는 것과 시스템에서 조회·전송·수정·삭
 ### 모델과 정책 엔진
 
 모델이 자신에게 허용된 권한을 결정하게 하지 않는다. 금지 대상, 한도, 승인 여부는 코드나 정책에 정한 규칙으로 판정한다.
+
+MCP를 채택하지 않았다면 MCP 명세·확장·Host·Server 지원 항목은 `해당 없음`으로 표시하고 직접 연결을 선택한 근거를 남긴다. 도구의 권한·승인·결과 확인·중복 방지 기준은 연결 방식과 관계없이 적용한다.
 
 ## 직접 해볼 것
 
@@ -37,10 +54,12 @@ LLM이 문장을 제안하는 것과 시스템에서 조회·전송·수정·삭
 4. 변경 도구를 샌드박스에서만 실행한다.
 5. 승인 전후 요청 본문과 결과를 같은 실행 식별자로 기록한다.
 6. 도구 연결을 제거해도 수동 업무가 이어지는지 확인한다.
+7. 지원 버전이 다른 조합에서 연결·거절 동작을 시험한다. 연결 중단 뒤 원본 결과를 조회해 중복 쓰기를 막는다.
+8. 추가 입력이나 승인을 기다리는 동안 대상·인자·권한이 바뀌면 기존 승인으로 실행하지 않는지 확인한다.
 
 ## 확인할 결과
 
-- 도구 카탈로그와 소유자
+- 도구 카탈로그와 소유자, 연결별 버전·지원 확인표
 - 입력·출력 스키마
 - 읽기·쓰기·승인 권한표
 - 샌드박스와 실제 환경 분리
@@ -65,6 +84,6 @@ LLM이 문장을 제안하는 것과 시스템에서 조회·전송·수정·삭
 
 ## 출처
 
-- [`PRIMARY_OFFICIAL` Model Context Protocol architecture](https://modelcontextprotocol.io/specification/2025-06-18/architecture) — 2026-07-26 확인
-- [`PRIMARY_OFFICIAL` Model Context Protocol authorization](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization) — 2026-07-26 확인
+- [`PRIMARY_OFFICIAL` Model Context Protocol architecture](https://modelcontextprotocol.io/specification/2025-06-18/architecture) (구버전 호환 참고, 2026-07-26 확인)
+- [`PRIMARY_OFFICIAL` Model Context Protocol authorization](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization) (구버전 호환 참고, 2026-07-26 확인)
 - [`PRIMARY_OFFICIAL` OWASP, Excessive Agency](https://owasp.org/www-project-top-10-for-large-language-model-applications/2_0_vulns/LLM06_ExcessiveAgency.html) — 2026-07-26 확인

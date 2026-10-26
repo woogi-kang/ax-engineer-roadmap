@@ -1,17 +1,21 @@
-# Case: From Slack Meeting Signals to Human-Approved Actions
+# Case: Identifying Follow-up Actions for Approval from Slack Meeting Records
 
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4, P5 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: K05 and G01 contribute meeting summaries, decision-versus-suggestion labels, consent, and review before CRM writes through the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies K05 to separating decisions from suggestions and confirming owners. G01's consent and pre-CRM review inform source-permission checks and explicit approval before a monday.com write.
 
 This is a **learning simulation of an AX workflow transformation** that receives a request in Slack, connects knowledge in Notion, Google Workspace artifacts, and work state in monday.com, then prepares a meeting pre-read and action items. Only human-approved items are written to a monday.com sandbox, with a Friday follow-up on current state. It does not claim adoption or actual workflow outcomes at a specific company.
 
@@ -20,7 +24,7 @@ This is a **learning simulation of an AX workflow transformation** that receives
 | Item | Classification |
 |---|---|
 | Case type | Single workflow |
-| Public evidence stage | Simulation design |
+| Public evidence stage | Pre-implementation design document |
 | Starting readiness | Environment with SaaS accounts and internal IT support |
 | Risk | Moderate |
 | Designed write impact | Approved sandbox write |

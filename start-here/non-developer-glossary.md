@@ -41,5 +41,5 @@
 1. [역할 선택 안내](persona-selector.md)
 2. [비개발 실무자 트랙](../tracks/business-practitioner.md)
 3. [목표와 경계](../delivery-lifecycle/01-outcomes-and-boundaries.md)
-4. [업무 지도](../delivery-lifecycle/02-workflow-discovery.md)
+4. [현재 업무 파악](../delivery-lifecycle/02-workflow-discovery.md)
 5. [안전한 보조 도구 프로젝트](../projects/01-safe-assistant.md)

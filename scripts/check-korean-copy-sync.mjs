@@ -4,9 +4,6 @@ import path from "node:path";
 const root = path.resolve(new URL("..", import.meta.url).pathname);
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 const readme = read("README.md");
-const explorer = read("site/app/roadmap-explorer.tsx");
-const roadmapData = read("site/app/roadmap-data.ts");
-const generatedCases = read("site/app/case-metadata.generated.ts");
 const caseIndex = read("case-studies/README.md");
 const metadataFiles = fs
   .readdirSync(path.join(root, "case-studies"), { withFileTypes: true })
@@ -19,7 +16,6 @@ const sharedDefinition =
 
 for (const [name, source] of [
   ["README", readme],
-  ["interactive roadmap", explorer],
 ]) {
   if (!source.includes(sharedDefinition)) {
     throw new Error(`${name}에서 AX Engineer 핵심 정의가 달라졌습니다.`);
@@ -35,14 +31,6 @@ for (const metadataFile of metadataFiles) {
   if (!caseIndex.includes(`(${casePath})`)) {
     throw new Error(`사례 인덱스에서 링크를 찾을 수 없습니다: ${metadata.id}`);
   }
-  if (!roadmapData.includes(`"case-${metadata.id}"`)) {
-    throw new Error(`인터랙티브 로드맵에서 사례 ID를 찾을 수 없습니다: ${metadata.id}`);
-  }
-  for (const title of [metadata.title.ko, metadata.title.en]) {
-    if (!generatedCases.includes(title)) {
-      throw new Error(`생성된 사이트 데이터에서 사례 제목을 찾을 수 없습니다: ${title}`);
-    }
-  }
 }
 
 const staleTerms = [
@@ -52,7 +40,7 @@ const staleTerms = [
   "공개 실행·평가",
 ];
 
-const koreanSources = [readme, explorer, roadmapData];
+const koreanSources = [readme];
 function collectKoreanMarkdown(directory) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
     if ([".claude", ".git", ".design-runs", "en", "node_modules", ".next", "dist", "out"].includes(entry.name)) continue;
@@ -71,7 +59,7 @@ for (const term of staleTerms) {
 
 if (
   !/재현 가능한 공개 시뮬레이션\s*\|\s*1개/.test(readme) ||
-  !/실행 설계\s*\|\s*14개/.test(readme)
+  !/실행 전 설계 문서\s*\|\s*14개/.test(readme)
 ) {
   throw new Error("README의 사례 근거 분포가 현재 metadata와 다릅니다.");
 }

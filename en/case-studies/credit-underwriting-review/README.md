@@ -3,13 +3,17 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Draft only | A1-A2 | P1, P2, P3 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
+
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
 
 This high-risk simulation combines synthetic applications, financial statements, transaction and collateral evidence, and policy rules into a review draft. AI never approves, rejects, prices, or sets a limit.
 
@@ -19,11 +23,14 @@ This high-risk simulation combines synthetic applications, financial statements,
 - Domain / industry: finance and procurement / financial services
 - Risk / designed autonomy: high / A1–A2
 - Designed practice: P1–P3, review draft only
-- Public design inputs: [K02, K03, and G11](../../research/public-case-application-map.md)
+- Planned inputs: synthetic applications, financial statements, collateral, and missing or inconsistent documents for 12 manufacturing and service companies; no real customer, bank, or insurer data
+- Public design inputs: The [public case-to-practice table](../../research/public-case-application-map.md) applies K02 to reconciling financial and industry evidence, K03 to separating the rule registry from the AI draft, and G11 to source-number checks and reviewer approval.
 
 ## 2. Problem and target flow
 
 Reviewers reconcile documents and numbers, apply product and industry rules, and write questions and opinions. OCR errors and stale rules can create unexplained or unfair decisions.
+
+Only the reviewer makes the final decision; the policy owner is accountable for the rule version. Do not use proxies for protected characteristics, unexplained scores, or inferred training-data facts.
 
 ```text
 Receive a synthetic application packet
@@ -61,7 +68,7 @@ Measure source correctness, wrong-rule use, correction burden, uncertainty refus
 
 Inject mixed currency units, prior-year policy, a missing signature, and post-approval edits. Stop calculation, request evidence, invalidate old approval, and require a new review.
 
-Outputs are synthetic packets, data and rule contracts, rule results, review drafts, edits, and audit records. There is no evidence of improved approval quality, loss rate, conversion, or review time.
+Planned outputs are synthetic packets, data and rule contracts, rule results, review drafts, edits, and audit records. There is no evidence of improved approval quality, loss rate, conversion, or review time.
 
 ## 6. Next decision
 

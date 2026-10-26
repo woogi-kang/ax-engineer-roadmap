@@ -59,7 +59,7 @@ Complete
 | Field | Content |
 |---|---|
 | Outcome to change |  |
-| Initial autonomy | A0 / A1 / A2 / A3 / A4 |
+| Initial autonomy | A0 / A1 / A2 / A3 / A4 ([autonomy definitions](../delivery-lifecycle/05-execution-contracts.md#autonomy-levels)) |
 | Judgment retained by people |  |
 | Prohibited actions |  |
 | Success conditions |  |

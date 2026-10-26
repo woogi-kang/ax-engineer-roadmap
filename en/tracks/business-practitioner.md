@@ -6,7 +6,7 @@ For people in customer support, sales, marketing, logistics, manufacturing, fina
 
 ## Goal
 
-Explain which workflow should change, why it should change, and which judgments must remain human-led. Own acceptance, exceptions, adoption, and retirement of the old procedure rather than stopping at requirements handoff.
+Explain which workflow should change, why it should change, and which judgments must remain human-led. Own acceptance, exceptions, transition into regular use, and retirement of the old procedure rather than stopping at requirements handoff.
 
 ## 1. Make actual work visible
 
@@ -18,7 +18,7 @@ Learn:
 
 Practice:
 
-- Map 5–20 recent cases and record flow and elapsed time.
+- Map 5–20 recent cases within permitted access and record flow and elapsed time. This discovery sample is separate from P1's minimum 20 evaluation cases; create public or synthetic inputs for P1.
 - Replace “usually” with case-level differences.
 - Identify who declares the work complete and by which criteria.
 
@@ -58,7 +58,7 @@ Practice:
 
 Evidence:
 
-- Source and ownership map
+- Sources of current truth and their owners
 - Business glossary
 - Missing and conflicting examples
 
@@ -95,7 +95,13 @@ Evidence:
 - UAT record
 - Updated SOP and training materials
 - Keep or retire decision for the old process
-- Adoption and workflow outcome metrics
+- Actual-use and workflow-outcome metrics
+
+## Acceptance records from actual users
+
+Complete unseen cases directly and record approval waiting, correction time, missing context, and exception handoffs as well as output quality. A manager's satisfaction does not establish a pass if actual users cannot complete the work.
+
+Check ownership and capacity for review, coaching, or customer support that replaces reduced work. Observe who receives the difficult exceptions under the new procedure. When models, tools, policies, or the SOP change, reassess affected work and compare it with prior results.
 
 ## Boundaries to agree with developers
 
@@ -111,7 +117,7 @@ Evidence:
 - Automating unnecessary steps in the current process
 - Writing “human review” without criteria and authority
 - Testing only good examples
-- Treating tool training as adoption
+- Treating tool training as proof of regular workflow use
 - Leaving duplicate work because the old procedure was not retired
 
 ## Recommended path

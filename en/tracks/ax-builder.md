@@ -2,7 +2,13 @@
 
 ## Audience
 
-For people who connect workflows to software, data, LLMs, and tools and own deployment and operations. Backend, frontend, data, or automation experience helps but is not the only entry point.
+For people who implement workflows in software and data, integrate LLMs and tools, and own deployment and operations. Backend, frontend, data, or automation experience helps but is not the only entry point.
+
+## Choose the initial scope
+
+Use the [entry routes by background](../learning-paths/entry-routes.md) to define the first artifact and review conditions. Early-career developers start with a small capability using public or synthetic inputs; experienced developers first check the workflow baseline and gaps in approval and integration. Domain experts distinguish business collaboration from an engineering transition and choose the implementation they will own.
+
+This choice scopes learning; it does not grant proficiency or execution authority. Every route verifies P1 evidence first, then checks the authority and responsibility required for P2, P3, and P4 in order.
 
 ## Goal
 
@@ -26,7 +32,7 @@ Compare quality, cost, latency, permission, and recoverability at each level. Ke
 ## 1. Software and APIs
 
 - Understand HTTP, REST APIs, authentication, authorization, webhooks, batch, and queues.
-- Connect schemas, transactions, retries, deduplication, and idempotency to workflow impact.
+- Explain how schemas, transactions, retries, deduplication, and idempotency affect workflow errors and external-system changes.
 - Keep secrets and configuration out of code.
 - Build unit, integration, end-to-end tests, and a delivery pipeline.
 
@@ -68,6 +74,14 @@ Detail: [Evaluation and Testing](../technical-foundations/evaluation-and-testing
 
 Detail: [Production Operations](../technical-foundations/production-operations.md)
 
+## Validate unseen scenarios and operational changes
+
+- Take an assessment on inputs not used during development and preserve the first run before repairs.
+- Test reconnection during approval waits, permission revocation, duplicate and partially successful actions, actual cancellation, and policy service outages using the [practice projects](../projects/README.md).
+- Freeze model, prompt, tool, and policy versions; rerun regression evaluation and required reviews by role after changes.
+- Include failures, retries, review, and rework in [cost per completed workflow](../projects/04-production-pilot.md).
+- Verify that an operator can stop, recover, and handle remaining exceptions without the implementer's help.
+
 ## Evidence to produce
 
 - Runnable code and reproduction steps
@@ -102,4 +116,4 @@ Agree through the [Workflow Execution Rules](../toolkit/execution-contract.md) w
 
 1. Diagnose gaps in [Technical Foundations](../technical-foundations/README.md).
 2. Implement the [Practice Projects](../projects/README.md) in order.
-3. Use the [12-Week Practice Path](../learning-paths/12-week-practice.md) to connect one workflow to reuse in a second workflow.
+3. Use the [12-Week Practice Path](../learning-paths/12-week-practice.md) to record operating results for one workflow and verified reuse in a second workflow.

@@ -8,8 +8,8 @@ The latest GitHub Release and the `main` branch receive security fixes. When an 
 
 Do not post vulnerabilities, proof-of-concept code, personal data, tokens, or secrets in a public issue. Report the following through a [private GitHub security advisory](https://github.com/woogi-kang/ax-engineer-roadmap/security/advisories/new):
 
-- vulnerabilities in the site code or dependencies;
-- supply-chain risks in GitHub Actions or deployment;
+- vulnerabilities in validation scripts, practice code, or dependencies;
+- supply-chain risks in GitHub Actions or releases;
 - instructions that could expose credentials, personal information, or workflow data when followed;
 - confidential information accidentally committed to the repository.
 

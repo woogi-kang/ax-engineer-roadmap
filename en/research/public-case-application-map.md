@@ -1,8 +1,9 @@
-# Public AX Case Application Map
+# Public Case-to-Practice Table
 
-This document traces how the 25 entries in the [public AX case catalog](public-ax-cases.md) affect the roadmap. It extracts **design questions and control patterns** rather than copying a named organization's implementation or claiming its results.
+This document shows which practice designs use the 25 entries in the [public AX case catalog](public-ax-cases.md). It selects **design questions and control methods** rather than copying a named organization's implementation or claiming its results.
 
-- Checked: `2026-08-01`
+- Original mapping baseline: `2026-08-01`
+- Selected evidence update: `2026-10-26` (only K04, K05, K07, K08, K09, G02, G07, G08, and G10 reviewed)
 - Public evidence: `K01–K10`, `G01–G15`
 - Roadmap application: reinforce 10 existing cases and add five simulation cases
 
@@ -43,6 +44,17 @@ This document traces how the 25 entries in the [public AX case catalog](public-a
 | G13 | Account research, CRM freshness, message review | [Mail assist](../case-studies/centralized-mail-assist/README.md) | Reinforce |
 | G14 | Evidence-versus-assumption labels, sentence citations, domain approvals | [Regulated documents](../case-studies/regulated-evidence-document/README.md) | New practice |
 | G15 | Complex-case escalation, repeat contact, and human choice over automation rate | [Mail assist](../case-studies/centralized-mail-assist/README.md), [public petitions](../case-studies/public-service-petition-response/README.md) | Reinforce and add |
+
+## Applying the follow-up evidence checked on 2026-10-26
+
+| Public ID | Tests to add | Claims that do not transfer |
+|---|---|---|
+| K04 | Human-channel choice, exception escalation, and review of AI evaluation findings before coaching | The 19% and 16% figures from different announcements are not a matched trend. |
+| K05 | Organization-specific permissions, document scope, approvals, and separate checks for a rollout plan and actual use | Selection by ministries is not an operating outcome, and internal time savings do not transfer. |
+| G02 | Check metric names, calculations, and denominators before comparison; report different metrics separately | NPS -35 and CSAT +74 are not an improvement trend on one measure. |
+| G08 | Compare omitted relationship-significant events, clinician additions, and correction burden on the same conversation | A 47-visit single-institution study does not establish accuracy for all medical records or current models. |
+
+This table translates [follow-up claims in the catalog](public-ax-cases.md) into practice requirements. It does not newly verify practice outcomes. Evidence levels remain one runnable public simulation and 14 designs without execution evidence.
 
 ## Why these five new cases
 

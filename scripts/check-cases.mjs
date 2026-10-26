@@ -51,11 +51,11 @@ const ids = new Set();
 const learningOrders = new Set();
 const metadataById = new Map();
 const evidenceStageLabels = new Map([
-  ['simulation-design', '시뮬레이션 설계'],
+  ['simulation-design', '실행 전 설계 문서'],
   ['public-simulation', '재현 가능한 공개 시뮬레이션'],
   ['anonymized-practice', '익명화 실습'],
-  ['limited-pilot', '제한 파일럿'],
-  ['operating-evidence', '운영 근거']
+  ['limited-pilot', '소규모 운영 시험'],
+  ['operating-evidence', '실제 운영 기록']
 ]);
 const promotionDecisionCases = new Set([
   'public-service-petition-response',
@@ -265,8 +265,8 @@ for (const directory of directories) {
 
   if (fs.existsSync(koreanReadme)) {
     const koreanReadmeContent = fs.readFileSync(koreanReadme, 'utf8');
-    if (!koreanReadmeContent.includes('## 현재 실행물과 근거')) {
-      failures.push(`${path.relative(root, koreanReadme)}: 현재 실행물과 근거 섹션 누락`);
+    if (!koreanReadmeContent.includes('## 현재 공개 결과와 근거')) {
+      failures.push(`${path.relative(root, koreanReadme)}: 현재 공개 결과와 근거 섹션 누락`);
     }
   }
 
@@ -293,7 +293,7 @@ for (const directory of directories) {
     const koreanIndexContent = fs.readFileSync(koreanIndex, 'utf8');
     const evidenceLabel = evidenceStageLabels.get(metadata.evidence_stage);
     const evidenceLink =
-      `[${evidenceLabel}](${directory}/README.md#현재-실행물과-근거)`;
+      `[${evidenceLabel}](${directory}/README.md#현재-공개-결과와-근거)`;
     if (!koreanIndexContent.includes(evidenceLink)) {
       failures.push(
         `case-studies/README.md: ${directory}의 근거 단계 또는 바로가기 불일치`

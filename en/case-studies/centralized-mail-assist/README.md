@@ -1,21 +1,25 @@
-# Case: Centralized Mail Assistance Integration
+# Case: Shared Mail Assistance Across Workflows
 
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4, P5 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: K04, G13, and G15 contribute answer recommendation, account research, and complex-case human escalation questions through the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies K04 to source-checked reply drafts and G13 to customer and project-data freshness. G15 informs the conditions that stop automatic replies and hand complex cases to a responsible person.
 
 ## Case type
 
-This is not the result of a real company implementation or evidence of operating outcomes. It is a **learning and reference simulation design for a shared integration** using synthetic email, test accounts, and a sandbox delivery environment.
+This is not the result of a real company implementation or evidence of operating outcomes. It is a **learning and reference simulation design for mail assistance shared across workflows** using synthetic email, test accounts, and a sandbox delivery environment.
 
 `ready` means that the design is complete enough to begin the exercise. It does not mean that a live mailbox connection, organizational use, time savings, classification quality, or security-control effectiveness has been verified.
 

@@ -1,29 +1,33 @@
-# Case: Company Agent Operating Layer
+# Case: Shared Agent Operations Foundation
 
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Draft plus approved limited write | A1-A3 | P2, P3, P4, P5 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: G02's gradual transaction expansion and G10's defect and rework measures shape the scale gates in the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies G02's gradual workflow expansion to the gates between read-only assistance, drafts, and approved changes. G10's defect and rework measures help decide whether the shared foundation should expand to more workflows.
 
 ## Case type
 
-This is not a company-wide agent deployed at a real organization or evidence of operating outcomes. It is a **learning and reference organizational-capstone simulation design** that assumes common execution rules have already been reused in two different workflows, then asks what should be shared at organization scale.
+This is not a company-wide agent deployed at a real organization or evidence of operating outcomes. It is a **learning and reference organization-wide practice design** that assumes common execution rules have already been reused in two different workflows, then asks what should be shared at organization scale.
 
-“Company agent” does not mean one agent with every source and permission. Slack and Microsoft Teams entry points and common operating rules may be shared, while trust boundaries, credentials, memory, tools, sandboxes, and operating responsibility remain separate for each workflow.
+The shared foundation does not mean one agent with every source and permission. Slack and Microsoft Teams entry points and common operating rules may be shared, while trust boundaries, credentials, memory, tools, sandboxes, and operating responsibility remain separate for each workflow.
 
-`ready` means that the capstone design can be used for an exercise. It does not mean that OpenClaw, Hermes, or this architecture has been shown to be suitable for enterprise operation.
+`ready` means that the organization-wide practice design can be used for an exercise. It does not mean that OpenClaw, Hermes, or this architecture has been shown to be suitable for enterprise operation.
 
 ## Entry gate: reuse in a second workflow
 
-Do not turn the first workflow's code directly into an organizational standard. Begin this capstone only after confirming the following results in another workflow:
+Do not turn the first workflow's code directly into an organizational standard. Begin this organization-wide practice only after confirming the following results in another workflow:
 
 - A second workflow with different users, domain, and exceptions has been implemented or simulated to the same level.
 - The team recorded which execution identifiers, input and output schemas, approval and policy events, audit format, and stop and recovery methods were reused unchanged.
@@ -31,7 +35,7 @@ Do not turn the first workflow's code directly into an organizational standard. 
 - The team measured configuration, code, evaluation, and operating effort changed while adding the second workflow.
 - Owners of both workflows and the security and operations owners reviewed the reuse result and residual risks.
 
-If this gate is not met, the company agent operating layer remains a design review. An implementation tuned only for the first workflow is not called an organizational standard.
+If this gate is not met, the shared agent operations foundation remains a design review. An implementation tuned only for the first workflow is not called an organizational standard.
 
 ## Problem and users
 
@@ -84,7 +88,7 @@ Slack and Teams are shared entry points only. A CRM, document or work-management
 ### Goals
 
 - Test a common Slack and Teams entry together with separate workflow execution boundaries.
-- Perform policy and approval decisions in a broker outside the runtime and apply the same decision to every runtime.
+- Have a broker outside the runtime decide policy and approval status, then apply the same decision to every runtime.
 - Use source SaaS state to verify read and write outcomes.
 - Compare execution, approval, cost, quality, and incidents in an audit and observability layer separated from the runtime.
 - Compare OpenClaw and Hermes as replaceable reference runtime adapters connected to one fixed workflow.
@@ -95,7 +99,7 @@ Slack and Teams are shared entry points only. A CRM, document or work-management
 - Using a runtime session identifier or model judgment as business authorization
 - Promoting Slack or Teams conversation into the authoritative workflow record
 - Deciding enterprise suitability, regulatory compliance, or security from a vendor feature list
-- Claiming actual organizational outcomes, productivity, cost savings, or adoption
+- Claiming actual organizational outcomes, productivity, cost savings, or direct use by business teams
 
 ### Stop conditions
 
@@ -124,7 +128,7 @@ The independent audit and observability layer does not merely copy runtime conve
 
 ## Comparing runtime adapters against a fixed workflow
 
-Do not compare different demos for the two runtimes. Design the comparison so that both run the following fixed workflow against the same synthetic data and sandbox:
+Do not compare different demos for the two runtimes. Give both the following fixed workflow against the same synthetic data and sandbox, then compare their results:
 
 ```text
 Registered workflow request from Slack or Teams
@@ -192,7 +196,7 @@ Normal requests are not sufficient evidence of organizational operability.
 - Schema or tool incompatibility after upgrade and subsequent rollback
 - Per-workflow kill switch, global stop, read-only transition, and manual SOP exercise
 
-If the policy broker or audit store is unavailable before a high-risk write, fail closed and block the write. When source SaaS outcome is unknown, do not re-execute automatically; route it to a reconciliation queue and responsible operator.
+If the policy broker or audit store's status cannot be confirmed before a high-risk write, fail closed and block the write. When source SaaS outcome is unknown, do not re-execute automatically; route it to a reconciliation queue and responsible operator.
 
 ## Evaluation and handoff
 
@@ -213,7 +217,7 @@ The handoff names the workflow-cell owner, source SaaS owner, policy approver, s
 
 ### Current result
 
-- An organizational capstone design that combines common entry points with workflow-specific trust boundaries
+- An organization-wide practice design that combines common entry points with workflow-specific trust boundaries
 - Separated responsibilities for an external policy and approval broker, source SaaS truth, and independent audit and observability
 - Decision criteria for comparing OpenClaw and Hermes reference adapters against the same workflow
 - An operating and failure-injection checklist from service supervision through kill switch and manual SOP
@@ -227,13 +231,13 @@ The handoff names the workflow-cell owner, source SaaS owner, policy approver, s
 - Agreed SLOs and records of incident response, secret rotation, upgrade, and rollback
 - OpenClaw and Hermes comparison results on pinned versions
 - Organization-specific security, privacy, legal, procurement, and support requirements
-- Actual adoption, productivity, quality, cost, or revenue outcomes
+- Actual use and direct operation by business teams, productivity, quality, cost, or revenue outcomes
 
 While these items remain unverified, do not use this document as evidence of completed deployment or enterprise readiness.
 
 ## Reuse and next decision
 
-The default conclusion after the capstone is not to mandate one runtime. Classify each item as `shared`, `workflow-specific`, `revise`, or `discard`:
+The default conclusion after the organization-wide practice is not to mandate one runtime. Classify each item as `shared`, `workflow-specific`, `revise`, or `discard`:
 
 - Messaging entry and request-identification rules
 - Policy, approval, and audit event schemas

@@ -33,7 +33,7 @@ Observe how work actually starts and finishes—including handoffs, waiting, and
 ## Exit criteria
 
 - Practitioners can review the map and correct missing steps and exceptions.
-- Each step connects an owner with its source of truth.
+- Each step names its owner and the authoritative source for its current state.
 - No step hides internal judgment behind phrases such as “AI handles it.”
 - Every bottleneck is backed by evidence of time, error, waiting, or risk.
 

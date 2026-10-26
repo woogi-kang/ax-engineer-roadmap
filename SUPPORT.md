@@ -5,7 +5,7 @@
 | 필요한 도움 | 채널 |
 |---|---|
 | 로드맵 사용법, 학습 순서, 사례 선택 | [GitHub Discussions](https://github.com/woogi-kang/ax-engineer-roadmap/discussions) |
-| 사이트 오류·접근성·개발 환경 문제 | [Bug report](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=bug-report.yml) |
+| 문서·실습 오류·개발 환경 문제 | [Bug report](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=bug-report.yml) |
 | 빠진 역량·단계·반례 | [Roadmap gap](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=roadmap-gap.yml) |
 | 오래된 주장·출처·깨진 외부 링크 | [Source update](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=source-update.yml) |
 | 새 업무 사례 제안 | [Case study proposal](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=case-study-proposal.yml) |

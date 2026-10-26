@@ -25,7 +25,7 @@ Prefer structured diagnostic fields over complete conversation storage:
 Workflow and run identifier
 User and service role
 Input reference and data version
-Model, prompt, and tool version
+Model, API, SDK, prompt, tool, harness, and context-policy versions
 Policy decision and approval
 External action result
 Error, retry, stop, and recovery
@@ -33,6 +33,23 @@ Cost and latency
 ```
 
 Minimize personal and confidential data and define retention and access.
+
+Connect the workflow ID to parent runs, subagents, tool calls, and external job IDs. Deduplicate redelivered records and flag missing links. Claude's OpenTelemetry export entered beta on 2026-10-14 and defaults to metadata-only collection. Check release status and the chosen provider's collection and retention terms separately. [Official guide](https://platform.claude.com/docs/en/manage-claude/opentelemetry), [release record](https://platform.claude.com/docs/en/release-notes/overview) (checked 2026-10-26).
+
+### Total cost per completed workflow
+
+Define the comparison period and workflow scope, then calculate:
+
+```text
+Total cost per accepted completed workflow
+= total cost for the scope / accepted completed workflows, excluding duplicates
+```
+
+Include model, tool, infrastructure, failed-attempt, and retry costs; human review, rework, and operations; and fixed costs allocated to the same period and scope. Record labor rates and the fixed-cost allocation method. Disclose time not yet converted to cost and any excluded items separately.
+
+Do not add failed-attempt or retry costs again if they are already included in usage charges. Record what each cost category includes to check for omissions and double counting.
+
+The denominator is not API calls or drafts. If no workflow passes acceptance, report `N/A` and defer cost-efficiency conclusions. Compare the same workflow scope and acceptance criteria and disclose missing costs.
 
 ### Automatic retry
 
@@ -51,11 +68,14 @@ Reduce or stop automation on prohibited outcomes, permission anomalies, quality 
 5. Switch to a prior version or manual workflow.
 6. Reconcile missing and duplicate results.
 7. Have an operator perform the procedure without the implementer.
+8. Reproduce approval waits, reconnection, cancellation requests, and late tool results, then reconcile external state.
+9. Calculate total cost per accepted completed workflow for the same scope. Check the effect of duplicate records and failed attempts on the calculation.
 
 ## Evidence
 
 - Observability fields and retention policy
 - Dashboard or status report
+- Workflow-to-child-run and external-result mapping, cost numerator, denominator, and allocation basis
 - SLO and alert thresholds
 - Failure, stop, and recovery drill
 - Manual fallback and reconciliation

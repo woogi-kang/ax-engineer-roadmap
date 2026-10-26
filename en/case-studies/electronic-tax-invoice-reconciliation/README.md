@@ -3,15 +3,19 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: K03's separation of generative recommendation and deterministic rules informs tax-rule, approval, and issuance controls in the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies K03's separation of generative recommendations and deterministic rules. AI flags omissions and mismatches and drafts the request; only requests that pass tax-rule checks and accountable approval reach issuance.
 
 Electronic tax invoice work does not end when one document is created. Contract, order, acceptance, and accounting state must be checked; an accountable person must approve issuance; and issuance, transmission, and payment results must be reconciled. This case practices that full flow with synthetic data and test systems.
 
@@ -77,7 +81,7 @@ Every candidate carries `transaction_id`, `customer_id`, `evidence_version`, `su
 | P1 | Find issuance candidates and errors in synthetic transactions | Pass duplicate, amount, date, and customer evaluations |
 | P2 | Show evidence, draft, and before-and-after state | Record edits, rejection reasons, and approval |
 | P3 | Integrate provider and ERP sandboxes | Test duplicate requests, timeout, partial failure, and status lookup |
-| P4 | Plan a bounded production pilot | Prepare tax-owner approval, manual issuance, stop, and recovery criteria |
+| P4 | Plan a bounded production pilot | Prepare tax-owner approval, manual issuance, stop, and recovery criteria Planning gate only, not a complete P4 pass. |
 
 ## 7. Failure injection and recovery
 
@@ -91,7 +95,7 @@ Every candidate carries `transaction_id`, `customer_id`, `evidence_version`, `su
 
 ## 8. Deliverables and limits
 
-Public deliverables are synthetic contract, sales, receivable, and bank data; issuance drafts; approval rules; deduplication tests; and partial-failure recovery records.
+Planned deliverables are synthetic contract, sales, receivable, and bank data; issuance drafts; approval rules; deduplication tests; and partial-failure recovery records.
 
 This design is not tax advice or a filing procedure. Current law, company tax status, issuance obligations, corrections, retention, and filing treatment require accountable review. No operating outcome has been verified.
 

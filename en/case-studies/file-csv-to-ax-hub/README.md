@@ -3,15 +3,19 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Draft only | A1-A2 | P1, P2, P3, P5 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: K10, G04, and G05 contribute record integration, site-specific knowledge, and product-version constraints through the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies K10 to owner review after records are combined, G04 to routing conflicting site knowledge to an owner, and G05 to preserving source versions and operating environments in the data contract.
 
 This is a **learning simulation of an AX workflow transformation** that consolidates personal AI outputs, CSV files spread across multiple folders, and meeting signals about blockers and approvals into structured work records, then prepares a Slack digest draft. It is not a case of an actual company adoption, nor does it claim improvements in time, cost, or quality.
 
@@ -20,7 +24,7 @@ This is a **learning simulation of an AX workflow transformation** that consolid
 | Item | Classification |
 |---|---|
 | Case type | Single workflow |
-| Public evidence stage | Simulation design |
+| Public evidence stage | Pre-implementation design document |
 | Starting readiness | From teams without a separate development environment to teams already using SaaS |
 | Risk | Moderate |
 | Designed write impact | Draft only |

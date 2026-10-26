@@ -11,7 +11,7 @@
     },
     {
       "path": "artifacts/evaluation-report.md",
-      "sha256": "addbe2e580112f21a133e838a21c1aac6fc8fd2304807c6fa8734a253ce72f5d"
+      "sha256": "64b92ae1e5aba40c39e963d9e3d4214b83217703f6552bb7a60f4411cb7843c1"
     },
     {
       "path": "artifacts/evaluation.json",
@@ -51,11 +51,11 @@
     },
     {
       "path": "schemas/voc-record.schema.json",
-      "sha256": "33618d1f119189cf3264ba53cde772101cfe5b5da183eb3eaf4eaa421cb23f5c"
+      "sha256": "493f50ee4929523ff9f59f05ffb44629855968104b5c13d2f6f6ff9a1e85cb1b"
     },
     {
       "path": "pipeline/run_pipeline.py",
-      "sha256": "5a1d669a0a6d2d5c51ff25e10d1a2d17864ff94d9e923cb51779f4c49eccf556"
+      "sha256": "1e94deeb84dcf37987e47990972a6e43ffa6f7527c507cc3eb23628ebb94c5ff"
     }
   ]
 }

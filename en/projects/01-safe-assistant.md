@@ -2,7 +2,7 @@
 
 ## Goal
 
-Build an assistant that uses only public or synthetic data and performs no external action. Prove provenance, refusal, evaluation, and limits before optimizing generation.
+Build an assistant that uses only public or synthetic data and makes no external business-system changes. Prove provenance, refusal, evaluation, and limits before optimizing generation.
 
 ## Suggested workflows
 
@@ -11,7 +11,9 @@ Build an assistant that uses only public or synthetic data and performs no exter
 - Action-item drafts from synthetic meeting notes
 - Draft comparison tables from public product data
 
-Do not use customer or employee personal data, confidential business data, real accounts, or external sending.
+Do not use customer or employee personal data, confidential business data, or production business accounts. In P1, `no external action` means no customer-facing sends, publication, or writes to business systems.
+
+Sending public or synthetic inputs to an authorized local model or model API to obtain inference responses is a processing request, distinct from performing business actions. Before using an API, verify authority to use the test account and model, data-transfer/retention/training conditions, and cost limits. A model API connection does not permit adding send or write authority for business tools. Compare rule-based and LLM approaches within this processing scope.
 
 ## Flow
 
@@ -53,11 +55,17 @@ Question or document
 
 ## Exit criteria
 
-- No external system is modified.
+- No external business system is modified, and no customer-facing sending or publication occurs.
 - Users can inspect source and scope.
-- Normal, edge, and failure cases are evaluated.
+- At least 20 evaluation cases cover normal, edge, and failure conditions. Their sources, refusals, and failure behavior are checked, not just the case count.
 - Unknown and prohibited questions are not guessed.
 - A reviewer other than the implementer confirms outcomes and limits.
+
+## Independent review of unseen inputs
+
+A reviewer prepares normal, edge, and failure inputs not used in development, including conflicting sources and missing information. Evaluate both the response and the decision to refuse. The reviewer must be able to compare the result with its sources without an explanation from the implementer.
+
+Preserve the first assessment before making changes, then retest previous failures and unseen inputs. Record pass decisions, reasons for corrections, and unresolved limits separately. Adding assessment requirements does not raise a case's implementation stage.
 
 ## Stop conditions
 

@@ -3,15 +3,19 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4, P5 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: G02's gradual move from HR answers to transactions and human escalation informs access-change controls through the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies G02's gradual move from HR guidance to employment-verification and leave operations. This case practices task drafts and approval first, permits only approved account and access changes in a sandbox, and hands conflicts or high-risk requests to IT and security.
 
 When an employee's status changes, accounts, permissions, devices, and initial work should change with it. This case goes beyond generating onboarding instructions. It prepares the required changes, allows only approved actions in test systems, and keeps cancellation and offboarding recoverable.
 
@@ -83,7 +87,7 @@ Every request carries `employee_id`, `lifecycle_event`, `effective_at`, `role_ve
 | P1 | Draft work from synthetic employee events | Pass missing, duplicate, and role-conflict evaluations |
 | P2 | Review before-and-after state by approver | Record approval, edits, rejection, and reasons |
 | P3 | Provision and revoke in IdP and SaaS sandboxes | Test duplicates, partial failure, and canceled-hire recovery |
-| P4 | Design a bounded low-privilege pilot | Prepare manual fallback, stop, and handoff criteria |
+| P4 | Design a bounded low-privilege pilot | Prepare manual fallback, stop, and handoff criteria Planning gate only, not a complete P4 pass. |
 | P5 | Reuse rules in a second access workflow | Separate reused contracts from new exceptions |
 
 ## 7. Evaluation and recovery
@@ -100,7 +104,7 @@ Measure approval delay, correction effort, partial failures, residual access aft
 
 ## 8. Deliverables and limits
 
-Public deliverables are synthetic lifecycle events, a role-access matrix, approval records, sandbox action logs, failure-injection results, and revocation-drill records.
+Planned deliverables are synthetic lifecycle events, a role-access matrix, approval records, sandbox action logs, failure-injection results, and revocation-drill records.
 
 The case has not connected to a live organization's accounts or devices. Roles, approvers, account structures, licenses, labor processes, and security controls must be confirmed locally.
 

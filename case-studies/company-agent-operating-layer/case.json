@@ -2,8 +2,8 @@
   "$schema": "../_schema/case.schema.json",
   "id": "company-agent-operating-layer",
   "title": {
-    "ko": "회사 에이전트 운영 계층",
-    "en": "Company Agent Operating Layer"
+    "ko": "여러 업무를 위한 에이전트 운영 기반",
+    "en": "Shared Agent Operations Foundation"
   },
   "type": "organizational-capstone",
   "primary_domain": "shared-operations",

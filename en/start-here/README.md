@@ -5,10 +5,10 @@ Begin by confirming the AX Engineer's responsibility and the workflow's current 
 ```mermaid
 flowchart TD
     A["What responsibility do I own?"] --> B["How ready is this workflow?"]
-    B --> C["Check AX transformation foundations"]
+    B --> C["Check eight questions before changing the workflow"]
     C --> D["AX Engineer execution path"]
     D --> E{"Who shares the decisions?"}
-    E -->|"Problem, acceptance, adoption"| F["Business practitioner"]
+    E -->|"Problem, acceptance, regular use"| F["Business practitioner"]
     E -->|"Priority, investment, accountability"| G["Leader and decision owner"]
     E -->|"Data, security, reliability"| H["Data, security, operations"]
 ```
@@ -21,7 +21,7 @@ flowchart TD
 
 [Organization Readiness](organization-readiness.md) checks workflow records, authoritative systems, permissions, and operating ownership. Readiness is not a score of organizational quality and may differ across workflows in the same company.
 
-## 3. Check AX transformation foundations
+## 3. Check eight questions before changing the workflow
 
 Every role should be able to answer:
 
@@ -41,13 +41,19 @@ If many answers are unclear, begin with [Outcomes and boundaries](../delivery-li
 | Primary responsibility | Recommended document |
 |---|---|
 | Software, AI, integration, deployment | [AX Engineer execution path](../tracks/ax-builder.md) |
-| Workflow definition, acceptance, SOP, adoption | [Business practitioner guide](../tracks/business-practitioner.md) |
+| Workflow definition, acceptance, SOP, production use | [Business practitioner guide](../tracks/business-practitioner.md) |
 | Portfolio, investment, accountability | [Leader and decision-owner guide](../tracks/leader-and-governance.md) |
 | Data, privacy, security, incident response | [Data, security, and operations guide](../tracks/data-security-operations.md) |
 
-## 5. Verify results through projects
+## 5. Validate the work through a small project
 
 [Practice projects](../projects/README.md) progress from a safe assistant to reuse in a second workflow. Without an organizational development environment, use documents, tables, sandbox simulation, and independent review while making the simulation boundary explicit.
+
+## 6. Scope the first step for your current experience
+
+The [entry routes by background](../learning-paths/entry-routes.md) identify gaps and first artifacts for early-career developers, experienced developers, and domain experts. Each route also checks data, authority, independent review, and progression criteria. Domain experts distinguish collaboration as a business practitioner from directly owning implementation and operations.
+
+Prior technical experience does not waive P1–P4 pass criteria. Record document/table-based decision practice separately from verified executable code or operations.
 
 ## If the terminology is unfamiliar
 

@@ -27,7 +27,7 @@ Define the workflow outcome to change, potential harm, accountable owner, and st
 - One-sentence problem statement
 - Outcome contract
 - Baseline
-- Risk tier and hard boundaries
+- Risk tier and prohibited actions
 - Scope and non-goals
 - Stop conditions
 
@@ -41,7 +41,7 @@ Define the workflow outcome to change, potential harm, accountable owner, and st
 
 ## Stop signals
 
-- No clear user experiences the problem.
+- No affected user has been identified.
 - There is no practical way to observe the baseline.
 - A harmful action cannot be reversed.
 - Automation is requested without an accountable owner.

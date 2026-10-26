@@ -29,4 +29,6 @@
 
 ## Interpretation boundary
 
+`record_exact_match` is the proportion of records whose expected status, topic, and safety flag all match. `traceability_rate` measures the presence of a non-empty `evidence_ref` in processed records; it does not verify source-link reachability or the correctness of the connection.
+
 This evaluation verifies that the code handles the deliberately constructed failures, duplicates, classifications, and safety signals in a synthetic dataset. It does not establish real customer VOC distribution, multilingual model generalization, production usability, or business outcomes.

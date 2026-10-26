@@ -3,13 +3,17 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Draft only | A1-A2 | P1, P2, P3 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
+
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
 
 This simulation links synthetic petitions to statutes, policies, and precedent responses, then asks a caseworker to review both the draft and clusters of similar cases. AI never sends a public response or closes a case.
 
@@ -19,11 +23,14 @@ This simulation links synthetic petitions to statutes, policies, and precedent r
 - Domain / industry: customer and revenue / public sector
 - Risk / designed autonomy: high / A1–A2
 - Designed practice: P1–P3, draft only
-- Public design inputs: [K01, K04, G12, and G15](../../research/public-case-application-map.md)
+- Planned inputs: fictional noise, food-labeling, road-damage, and welfare-eligibility inquiries with deliberate duplicates; no real citizen data or agency-system connection
+- Public design inputs: The [public case-to-practice table](../../research/public-case-application-map.md) applies K01 to sentence-level sources and caseworker cluster review, K04 to caseworker correction and approval, and G12 and G15 to low-sensitivity starts and human handling of complex petitions.
 
 ## 2. Problem and target flow
 
 Caseworkers separately search the petition, jurisdiction, law, policy, and precedent. Incorrect clustering can hide location, period, or remedy differences.
+
+The caseworker owns the response; the policy owner checks source freshness and applicability. A cluster does not establish that every petition deserves the same response. Keep each petition available for separate review.
 
 ```text
 Receive a synthetic petition
@@ -33,6 +40,7 @@ Receive a synthetic petition
 → propose similar-case clusters and reasons
 → caseworker edits, splits, merges, rejects, or approves
 → record only the approved draft in a petition sandbox
+→ verify processing state and the available appeal route
 ```
 
 ## 3. Source systems and controls
@@ -45,6 +53,8 @@ Receive a synthetic petition
 | Audit ledger | Preserve draft, cluster changes, approval, rejection, and recovery. |
 
 AI may summarize, retrieve, draft, and propose clusters. A person must handle urgent safety, appeal, child-protection, self-harm, and investigation signals. No external send, state change, or bulk closure occurs without explicit approval.
+
+Remove urgent cases from the ordinary queue and hand them to a person immediately. Do not finalize a draft when a material statement lacks a valid source or the sources conflict.
 
 ## 4. Practice and evaluation
 
@@ -60,7 +70,7 @@ Measure missing provenance, incorrect clustering, correction burden, missed esca
 
 Inject retired policy, same-topic petitions with different addresses, prompt-like content inside documents, and write timeouts. Stop, expose the conflict, isolate untrusted material, and reread external state before retrying.
 
-Outputs are a synthetic petition set, cited drafts, cluster reviews, approvals, and recovery records. The case provides no evidence of improved processing time, answer accuracy, or citizen satisfaction.
+Planned outputs are a synthetic petition set, cited drafts, cluster reviews, approvals, and recovery records. The case provides no evidence of improved processing time, answer accuracy, or citizen satisfaction.
 
 ## 6. Next decision
 
