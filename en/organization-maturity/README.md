@@ -14,10 +14,10 @@ M0 through M4 are not validated industry standards or certification criteria. Th
 
 ```mermaid
 flowchart LR
-    M0["M0 Individual experiments"] --> M1["M1 Managed assistance"]
-    M1 --> M2["M2 Operated workflows"]
+    M0["M0 Individual experiments"] --> M1["M1 Workflow-level AI assistance"]
+    M1 --> M2["M2 Official workflow use"]
     M2 --> M3["M3 Shared operating foundation"]
-    M3 --> M4["M4 Adaptive improvement"]
+    M3 --> M4["M4 Business-led improvement"]
 ```
 
 ### M0. Individual experiments
@@ -25,7 +25,7 @@ flowchart LR
 - Individuals use general-purpose generative AI tools for documents, analysis, and code.
 - Input, output, quality, and security criteria depend on the individual.
 - Other people cannot easily reproduce or take over the result.
-- The organization may observe usage but cannot connect it to workflow outcomes.
+- The organization may observe usage but cannot determine workflow outcomes from those usage records.
 
 Conditions for the next level:
 
@@ -33,7 +33,7 @@ Conditions for the next level:
 - recurring workflow candidates and accountable owners;
 - a method for reviewing results and preserving evidence.
 
-### M1. Managed assistance
+### M1. Workflow-level AI assistance
 
 - Low-risk workflows use search, summaries, drafts, and proposed options.
 - People retain final judgment and execution.
@@ -46,18 +46,18 @@ Conditions for the next level:
 - an operating environment and access permissions;
 - failure detection, recovery, and user acceptance.
 
-### M2. Operated workflows
+### M2. Official workflow use
 
-- AI capabilities connect to existing systems and are used in official workflows.
+- AI capabilities are integrated with existing systems and used in official workflows.
 - Authentication, permissions, approval, audit, observability, and recovery operate in practice.
 - Model quality and workflow outcomes are reviewed together.
-- Operating responsibility and the state of the old procedure are explicit.
+- The operating owner and current state of the old procedure are documented.
 
 Conditions for the next level:
 
-- recurring patterns demonstrated in at least two workflows;
+- execution rules reused in at least two workflows;
 - version, compatibility, and change policies;
-- safe boundaries within which business teams may make adjustments.
+- a safe scope within which business teams may make adjustments.
 
 ### M3. Shared operating foundation
 
@@ -68,30 +68,30 @@ Conditions for the next level:
 
 Conditions for the next level:
 
-- self-sufficient business-team operations and improvement;
-- portfolio-level investment and stop decisions;
+- business teams that can operate and improve workflows directly;
+- criteria for prioritizing investment and stop decisions across workflows;
 - an operating review that feeds failure and outcome evidence into the next standard.
 
-### M4. Adaptive improvement
+### M4. Business-led improvement
 
 - Business teams propose, evaluate, operate, and improve workflows within approved boundaries.
 - The central organization focuses on high-risk approvals, shared foundations, and quality and security criteria.
-- Operational failures and reuse patterns feed back into foundations, policies, and training.
+- Recurring operational failures and items reused across workflows feed back into foundations, policies, and training.
 - Old procedures and shared assets are retired when evidence no longer supports them.
 
 M4 does not mean automatic execution for every workflow. It includes the mature decision to retain human judgment and approval for high-risk work.
 
-## 3. Diagnostic dimensions
+## 3. Diagnostic criteria
 
-| Dimension | M0 | M1 | M2 | M3 | M4 |
+| Criterion | M0 | M1 | M2 | M3 | M4 |
 |---|---|---|---|---|---|
 | Workflow portfolio | Individual choice | Candidates and experiment criteria | Operating-workflow review | Organizational priorities | Continuous investment and stop decisions |
 | Data | Personal files | Workflow-level sources | Contracts, owners, and lineage | Shared semantics and access foundation | Quality feedback changes contracts and improvement reviews |
 | Execution | Copy and paste | Human execution | Approved and bounded execution | Shared execution policy | Safe business-team extension |
 | Evaluation | Subjective checks | Workflow-specific cases | Regression and production evaluation | Shared evaluation contracts | Failures improve standards |
-| Controls | Individual judgment | Hard boundaries | Permissions, audit, and recovery | Central policy with team boundaries | Continuous risk-based adjustment |
-| Adoption | Voluntary use | Bounded users | Official procedures and handoff | Training, support, and autonomy | Continuous role and procedure improvement |
-| Reuse | None | Template candidates | Reuse within a workflow | Shared foundation across teams | Learning organizational operating model |
+| Controls | Individual judgment | Prohibited actions | Permissions, audit, and recovery | Central policy with team-specific allowances | Adjust controls continuously according to risk |
+| Production use | Voluntary use | Bounded user testing | Official procedures and handoff | Training, support, and business-team operation | Continuous role and procedure improvement |
+| Reuse | None | Template candidates | Reuse within a workflow | Shared foundation across teams | Operating results improve shared foundations |
 
 ## 4. Maturity assessment rules
 
@@ -101,15 +101,28 @@ M4 does not mean automatic execution for every workflow. It includes the mature 
 - Record differences among departments instead of reducing the entire organization to its lowest level.
 - Set the target level according to workflow value and risk.
 
+### Operating records required for assessment
+
+A policy document or committee does not prove that controls work. Check these records per workflow and mark missing evidence as unverified.
+
+- M1: Evaluation of unseen inputs, reviewer identity, and hold or refusal reasons
+- M2: Actual-user acceptance, operator-led stop and recovery, cost per completed workflow, and handoff
+- M3: Regression results across workflows after shared-rule changes, permission revocation, and policy exceptions with expiry
+- M4: Exceptions handled by business teams, role and procedure changes, and follow-up on expand or stop decisions
+
+If an urgent deployment bypasses a procedure, record the reason, approver, affected scope, expiry, compensating measures, and reassessment. Revisit the workflow's maturity assessment when exceptions keep being extended or work expands without an operator.
+
+Preserve differences between manager, actual-user, and operator assessments. High usage or autonomy does not offset unresolved quality or handoff problems.
+
 ## 5. First completion point for AX transformation
 
 There is no permanent completion state for the whole organization. However, the organization can say that a **first operating model exists** when:
 
 - it has a prioritized portfolio of critical workflows;
 - every operated workflow has data, execution, and evaluation contracts;
-- human and AI permissions, approvals, and accountability are explicit;
+- human and AI authority, required approvals, and accountable owners are assigned;
 - execution, change, approval, and recovery history is traceable;
-- model quality, workflow outcomes, adoption, cost, and reliability are reviewed together;
+- model quality, workflow outcomes, actual use, cost, and reliability are reviewed together;
 - business teams can propose and operate new workflows on shared foundations;
 - the central AX team is not the bottleneck for every routine operation;
 - criteria exist for retiring both old procedures and shared assets.

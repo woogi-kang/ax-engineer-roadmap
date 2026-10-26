@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://woogi-kang.github.io/ax-engineer-roadmap/case-studies/_schema/case.schema.json",
+  "$id": "urn:ax-engineer-roadmap:schema:case",
   "title": "AX Engineer Roadmap case metadata",
   "type": "object",
   "additionalProperties": false,
@@ -191,7 +191,7 @@
       "pattern": "^A[0-4](?:-A[0-4])?$"
     },
     "implemented_project_stages": {
-      "description": "P1-P5 stages demonstrated by the currently published artifacts.",
+      "description": "P1-P5 stages with implemented functionality in the published artifacts. This is not a record that all exit criteria of a stage have passed.",
       "type": "array",
       "uniqueItems": true,
       "items": {

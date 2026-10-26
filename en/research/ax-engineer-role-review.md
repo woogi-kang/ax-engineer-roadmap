@@ -1,10 +1,11 @@
 # Review of Public AX Engineer Roles
 
-> Verified: 2026-07-23
+> Previous research baseline: 2026-07-23
+> Sources checked: 2026-10-26. An undated posting is not evidence of a change after the baseline.
 
 ## Purpose
 
-`AX Engineer` is not yet a title with one settled scope. This document examines recurring responsibilities and differences in current public job and practitioner materials, then explains what this roadmap includes.
+`AX Engineer` is not yet a title with one settled scope. This document examines recurring responsibilities and differences in historical and current public job and practitioner materials, then explains what this roadmap includes.
 
 It does not treat one company's definition as a standard or claim statistical representation of the entire hiring market. Public materials may change or expire, so each source includes a link and verification date.
 
@@ -32,11 +33,12 @@ Important competencies in this shape:
 
 Source:
 
-- [`PRIMARY_OFFICIAL` FuriosaAI, Software Engineer, Compiler (AX Engineer)](https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/) — verified 2026-07-23
+- [`PRIMARY_OFFICIAL` FuriosaAI, Software Engineer, Compiler (AX Engineer)](https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201) (checked 2026-10-26; publication date unknown)
+- The [previous Ashby posting](https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/) remains as the source used on 2026-07-23. Direct access returned only a JavaScript notice in this review; the current description was read on the company page above.
 
 ### 2. Organizational operating foundation
 
-Lunit's Senior AX Engineer posting frames approval flows, internal-policy questions, collaboration-tool and data connections, and workflow SDKs and runtimes as one organizational operating foundation. Rather than having one team build every application, it aims to let non-engineering functions create workflows within approved boundaries.
+Lunit's Senior AX Engineer posting, read on 2026-07-23, frames approval flows, internal-policy questions, collaboration-tool and data connections, and workflow SDKs and runtimes as one organizational operating foundation. Rather than having one team build every application, it aims to let non-engineering functions create workflows within approved boundaries.
 
 Important competencies in this shape:
 
@@ -48,7 +50,8 @@ Important competencies in this shape:
 
 Source:
 
-- [`PRIMARY_OFFICIAL` Lunit, Senior AX Engineer](https://apply.workable.com/lunit/j/E3C22F589F/) — verified 2026-07-23
+- [`PRIMARY_OFFICIAL` Lunit, Senior AX Engineer](https://apply.workable.com/lunit/j/E3C22F589F/) (content read 2026-07-23; access checked 2026-10-26)
+- The original company URL now redirects to `not_found=true`, and the [remaining recruitment-platform listing](https://recruit.wanted.co.kr/wd/368564) is marked closed. This document preserves the historical role description. Closure does not establish that the team disappeared or demand declined.
 
 ### 3. Business-team autonomy and adoption
 
@@ -63,11 +66,44 @@ This roadmap derives the following competencies from that case:
 
 Source:
 
-- [`PRIMARY_OFFICIAL` Rapport Labs, 월간 AX: AI를 실제로 쓰게 만들려면?](https://blog.rapportlabs.kr/%EC%9B%94%EA%B0%84-ax-ai%EB%A5%BC-%EC%8B%A4%EC%A0%9C%EB%A1%9C-%EC%93%B0%EA%B2%8C-%EB%A7%8C%EB%93%A4%EB%A0%A4%EB%A9%B4-156677) — verified 2026-07-23
+- [`PRIMARY_OFFICIAL` Rapport Labs, 월간 AX: AI를 실제로 쓰게 만들려면?](https://blog.rapportlabs.kr/%EC%9B%94%EA%B0%84-ax-ai%EB%A5%BC-%EC%8B%A4%EC%A0%9C%EB%A1%9C-%EC%93%B0%EA%B2%8C-%EB%A7%8C%EB%93%A4%EB%A0%A4%EB%A9%B4-156677) (published 2026-04-10; checked again 2026-10-26)
+
+## Additional evidence checked on 2026-10-26
+
+These are purpose-selected qualitative examples of responsibilities. Multiple channels for the same vacancy are not counted as separate jobs. They do not support hiring-growth, average-pay, or market-size estimates.
+
+| Category | Source and date | Finding and limit |
+|---|---|---|
+| Published after the baseline | [GM, Sr. AI/Automation Engineer, HR Technology](https://search-careers.gm.com/en/jobs/jr-202605425/sr-ai-automation-engineer-hr-technology-remote-india-night-shift/) (posted 2026-09-21) | Integrates ServiceNow and Workday for HR, with requirements, testing, deployment, and security responsibilities. This is internal workflow transformation without an AX title. |
+| Published after the baseline | [Anthropic, Claude Frontier Academy](https://www.anthropic.com/news/claude-frontier-academy) (announced 2026-10-02) | A simulated enterprise deployment and practical assessment precede a 12-week real project at the participant's organization and another assessment. Training 10,000 engineers by the end of 2027 is a target, not a completed result. |
+| Current signal; publication date unknown | [OneSpan, AI Automation Engineer](https://www.onespan.com/about/careers/job/ai-automation-engineer-8278879?gh_jid=8278879&langcode=en) | Observes R&D work, prioritizes by frequency and cost, chooses agents or scripts, and hands ownership to the team. Finding it now does not establish when the role was created. |
+| Current signal; publication date unknown | [Anthropic, Staff Software Engineer, GTM AI Engineering](https://job-boards.greenhouse.io/anthropic/jobs/5390966008) | Owns internal sales agents, evaluation, approval, monitoring, and shared-code quality. The older search title `GTM Claudification` is an alias for the current official role. |
+| Current signal; publication date unknown | [Anthropic, AI Operations Engineer, Partnerships](https://job-boards.greenhouse.io/anthropic/jobs/5391151008) | Builds workflows on the portal and data model owned by a systems lead. Writes back to systems of record and designs human review, failure handling, and reuse. |
+| Recruitment-platform evidence | [Daewoong, AX Engineer](https://recruit.wanted.co.kr/wd/390449), [Senior AX Engineer](https://career.rememberapp.co.kr/job/posting/344926) | Separates PM validation, engineer implementation/evaluation/operational transition, and senior technical choices/reviews/coaching. The employer ATS original and first publication dates are unverified. Remember shows a 2026-10-25 closing date; Wanted lists rolling recruitment. |
+
+All linked material in the table was read on 2026-10-26. Publication and current access status are separate facts. This small, selected sample cannot establish how prevalent a responsibility is across the market. Rereading pre-baseline material, such as the Rapport Labs article, is not a new market change.
+
+### Compare adjacent roles by their working relationships
+
+| Role and source | Working relationship and responsibility | Use in this roadmap |
+|---|---|---|
+| [OpenAI, Forward Deployed Engineer, Seoul](https://openai.com/careers/forward-deployed-engineer-seoul-seoul-south-korea/) | Owns discovery, implementation, production deployment, and adoption with external customers. | Compare shared competencies while keeping customer contracts and handoff responsibilities distinct. |
+| [Anthropic, Staff Forward Deployed Engineer](https://job-boards.greenhouse.io/anthropic/jobs/5449229008) | Owns customer technical strategy, security/procurement gates, implementation, and operational handoff. | An example of a transition grounded in production-software experience and agent practice. |
+| [Anthropic, Applied AI Architect, Seoul](https://job-boards.greenhouse.io/anthropic/jobs/5390735008) | Explicitly a pre-sales role supporting technical discovery, evaluation, and architecture. | Do not classify it as the same job as an internal workflow operator or implementation owner. |
+
+These three postings were checked on 2026-10-26; publication dates are unknown. `Forward Deployed Engineer` and the Academy's `Frontier Deployed Engineer` are distinct names. The Academy also trains engineers inside customer and partner organizations, so the abbreviation `FDE` alone does not determine whether work is internal or customer-facing.
+
+### Decisions for the learning path
+
+- Retain the responsibility model linking the workflow problem, implementation, operations, adoption, and reuse.
+- Identify which decisions belong to a PM, workflow engineer, shared-foundation owner, technical lead, and security owner.
+- Review evaluation results, writes to systems of record, escalation records, and operational handoff alongside tool experience.
+- Add an entry assessment and an unfamiliar evaluation scenario to the 12-week path. Record simulation results separately from real organizational operation.
+- Distinguish bounded improvement work early in a career from full operational ownership. A vacancy's years-of-experience requirement is not a universal proficiency grade.
 
 ## Recurring responsibilities
 
-The organizations, domains, and seniority levels differ, but the following loop recurs.
+The original three sources differ in organization, domain, and seniority, but the following loop recurs.
 
 ```mermaid
 flowchart LR

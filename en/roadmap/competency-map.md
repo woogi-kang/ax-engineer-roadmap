@@ -1,8 +1,8 @@
-# AX Engineer Competency Map
+# AX Engineer Competency Framework
 
-## 1. Competency structure
+## 1. Eight competency areas
 
-AX Engineer competencies are grouped into eight areas. Not every person needs the same depth in every area, but deploying a workflow into operations requires a named owner for each one.
+This framework groups AX Engineer competencies into eight areas. Not every person needs the same depth in every area, but deploying a workflow into operations requires a named owner for each one.
 
 ```mermaid
 flowchart TB
@@ -12,7 +12,7 @@ flowchart TB
     D["4. Software and integration"]
     E["5. Applied AI and evaluation"]
     F["6. Operations, security, and reliability"]
-    G["7. Adoption and change management"]
+    G["7. Production use and change management"]
     H["8. Standardization and organizational learning"]
 
     A --> B --> C --> D --> E --> F --> G --> H
@@ -115,13 +115,13 @@ Revisit the target flow and responsibility model when these conditions appear.
 ### Verify
 
 - Data and schema contracts
-- System-of-record and owner map
+- Systems of record and their owners
 - Glossary and metric definitions
 - Data-quality report
 
 ### Handle failure
 
-Stop and correct data use or source-system links when these conditions appear.
+Stop data use and correct how the workflow reads from its systems of record when these conditions appear.
 
 - Treating a vector database as the organization's system of record
 - Removing provenance and collection scope, then comparing only model accuracy
@@ -144,7 +144,7 @@ Stop and correct data use or source-system links when these conditions appear.
 
 ### Apply
 
-- Build a thin vertical slice connecting at least two existing systems.
+- Build a thin vertical slice that integrates at least two existing systems.
 - Include authentication, permissions, failure handling, deduplication, and audit logs.
 - Let another developer reproduce it in a local or test environment.
 
@@ -193,7 +193,7 @@ Detect these conditions in testing and be able to stop or recover before deploym
 
 ### Handle failure
 
-Restrict the evaluation scope and action authority when these conditions appear.
+Revisit the evaluation design and restrict action authority when these conditions appear. Do not obtain a pass by removing failed cases from evaluation.
 
 - Declaring quality after seeing a few good examples
 - Treating an LLM evaluator score as an absolute standard without human review
@@ -216,7 +216,7 @@ Restrict the evaluation scope and action authority when these conditions appear.
 
 ### Apply
 
-- Inject permission failures, external API outages, stale data, and invalid outputs.
+- Inject permission failures, external API outages, stale data, and invalid outputs in an isolated validation environment.
 - Exercise alerting, stop, recovery, and rollback.
 - Let operators trace cause and impact with the same identifier.
 
@@ -235,14 +235,14 @@ Stop autonomous execution and recover when these conditions appear.
 - Defining only that “a human handles it” when something fails
 - Expanding autonomous execution without observability
 
-## 8. Adoption and change management
+## 8. Production use and change management
 
 ### Understand
 
 - User acceptance testing
 - Training, support, and local champions
 - Parallel operation, SOP change, and role redesign
-- Differences among adoption, satisfaction, and workflow outcomes
+- Differences among actual use, satisfaction, and workflow outcomes
 
 ### Choose
 
@@ -260,14 +260,14 @@ Stop autonomous execution and recover when these conditions appear.
 
 - User acceptance records
 - Training and support documentation
-- Workflow adoption metrics
+- Actual workflow-use metrics
 - Decision to retire or retain the old process
 
 ### Handle failure
 
 Revisit the workflow and responsibility model, not only training, when these conditions persist.
 
-- Judging adoption only by logins or generated-item counts
+- Treating logins or generated-item counts as proof that the new procedure has become regular practice
 - Treating business-team resistance as a lack of willingness to change
 - Making the AX team the permanent owner of all exceptions and change requests
 
@@ -307,6 +307,20 @@ Reduce the shared scope and record workflow-specific differences again when thes
 - Using “shared harness” to force one framework and UI
 - Adding every local exception to the core
 
+### Practice that spans competencies
+
+Use a new scenario to assess the following together. Passing individual technical tests does not establish completion of the whole workflow.
+
+| Competency | Performance and records to verify |
+|---|---|
+| Problem discovery and business judgment | Decide whether to retain or expand using accepted completed work and total cost including failures, review, and rework |
+| Software and integration | Reconnection during approval waits, permission revocation, and reconciliation after duplicate or partially successful actions |
+| Applied AI and evaluation | First runs on unseen inputs, adjudication outside implementation, and regression evaluation after repair |
+| Operations, security, and reliability | Actual cancellation, holds during policy service outages, decisions on renewed approval after recovery, and version rollback |
+| Production use and change management | Separate manager, actual-user, and operator reviews; changed roles, exception ownership, and handoff |
+
+Follow the concrete tests in [P2–P4 practice projects](../projects/README.md). Use costs and unique completed workflow items from the same period. Separate organizational responsibilities and outcomes not verified in practice from public-simulation results.
+
 ## 10. Self-assessment
 
 For each area, record the highest stage backed by **evidence another person can verify**, not the highest stage you understand conceptually.
@@ -319,5 +333,5 @@ For each area, record the highest stage backed by **evidence another person can 
 | Software and integration |  |  |  |  |  |  |
 | Applied AI and evaluation |  |  |  |  |  |  |
 | Operations, security, and reliability |  |  |  |  |  |  |
-| Adoption and change management |  |  |  |  |  |  |
+| Production use and change management |  |  |  |  |  |  |
 | Standardization and organizational learning |  |  |  |  |  |  |

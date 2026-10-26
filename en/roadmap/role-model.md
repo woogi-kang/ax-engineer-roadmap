@@ -2,9 +2,9 @@
 
 ## 1. Definition used in this repository
 
-An **AX Engineer** is an engineer who finds problems in real internal workflows, redesigns those workflows, and connects AI to existing data, systems, and permissions. The work is complete only when another person can review, operate, and take over the resulting process.
+An **AX Engineer** is an engineer who finds problems in real internal workflows, redesigns those workflows, and implements AI use of existing data and systems within defined permissions. The work is complete only when another person can review, operate, and take over the resulting process.
 
-The title and scope still vary by organization. Some companies emphasize automation development embedded in a business or engineering team. Others assign agent execution foundations and internal data integration. Some roles place more weight on tool operations, training, and adoption.
+The title and scope still vary by organization. Some companies emphasize automation development embedded in a business or engineering team. Others assign agent execution foundations and internal data integration. Some roles place more weight on tool operations, training, and workflow rollout.
 
 This roadmap therefore looks past the title and asks whether the role includes these responsibilities:
 
@@ -13,14 +13,14 @@ This roadmap therefore looks past the title and asks whether the role includes t
 - integrating existing data and systems;
 - implementing and deploying into operations;
 - evaluation, security, observability, and recovery;
-- adoption and operational handoff;
+- transition into regular use and operational handoff;
 - turning repeatable patterns into shared foundations.
 
 The evidence from current public role descriptions is documented in [Review of public AX Engineer roles](../research/ax-engineer-role-review.md).
 
 ## 2. Where the responsibility ends
 
-An AX Engineer's responsibility does not end when a prototype works. One cycle ends when workflow outcomes are connected to operating accountability and another person can safely take over.
+An AX Engineer's responsibility does not end when a prototype works. One cycle ends when the people accountable for reviewing workflow outcomes and operating the system are named and can safely take over.
 
 ```mermaid
 flowchart LR
@@ -32,7 +32,7 @@ flowchart LR
     S -->|"Learning from operations"| D
 ```
 
-This does not mean the AX Engineer owns every decision. They work with process owners, data owners, security and legal teams, and existing system operators. Their responsibility is to connect technical outcomes with operating records that those owners can review.
+This does not mean the AX Engineer owns every decision. They work with process owners, data owners, security and legal teams, and existing system operators. Their responsibility is to implement the decisions made together and preserve the results in operating records those owners can review.
 
 ## 3. Three operating models
 
@@ -46,7 +46,7 @@ Role placement varies with organizational size and AX maturity.
 
 Early on, one person may cover all three models. As the number of cases grows, split responsibilities so discovery, implementation, operations, and support do not accumulate into a single bottleneck.
 
-This table describes where AX Engineers sit in the organization. It is a separate axis from the mix of workflow transformation, foundation, and adoption responsibilities an individual carries. Multiple combinations can exist within one operating model.
+This table describes where AX Engineers sit in the organization. It is a separate axis from the mix of workflow transformation, foundation, and workflow-transition responsibilities an individual carries. Multiple combinations can exist within one operating model.
 
 ## 4. Three responsibility axes within the role
 
@@ -59,12 +59,12 @@ This table describes where AX Engineers sit in the organization. It is a separat
 
 ### Engineering foundation
 
-- Connect systems of record, workflow terminology, access permissions, and system boundaries.
+- Define how fields in systems of record correspond to workflow terminology, then design access permissions and system boundaries.
 - Choose only the necessary level of models, retrieval, rules, and tool calls.
 - Implement evaluation, execution records, approvals, observability, cost limits, and recovery.
 - Turn recurring contracts and components into a shared harness.
 
-### Adoption and organizational learning
+### Transition into regular use and organizational learning
 
 - Have users perform representative flows and exceptions themselves.
 - Design training, support, edit permissions, and handoff criteria.
@@ -84,7 +84,7 @@ An AX Engineer is not solely responsible for organizational change.
 | Security policy and exception approval | Security and legal owners | Document threats and access paths, then implement controls |
 | Reliability of existing systems | System operator | Co-design integration, failure, and recovery |
 | AI workflow system implementation | AX and engineering owners | Implement or co-implement and provide operating evidence |
-| Adoption and procedure change | Organizational and process owners | Design acceptance, training, support, parallel operation, and retirement conditions |
+| Regular use and procedure change | Organizational and process owners | Design acceptance, training, support, parallel operation, and retirement conditions |
 | Shared foundations and investment order | AX lead and executive owner | Present options grounded in case evidence and technical debt |
 
 Do not assign the following to an AX Engineer by default:
@@ -94,6 +94,14 @@ Do not assign the following to an AX Engineer by default:
 - approving risk exceptions in place of security or legal owners;
 - permanently taking over every user inquiry and manual task;
 - expanding agent permissions without recovery and approval criteria.
+
+### Sharing implementation responsibilities
+
+Do not assume one person owns problem definition, shared foundations, and incident response. A process owner or PM may own the problem and adoption criteria; a workflow engineer may own implementation, evaluation, and operational transition; and a foundation owner may own reusable integration, deployment, and recording rules. A technical lead reviews designs and code, including decisions not to build. Security and legal exception authority remains separate.
+
+Early-career work can include a bounded automation, log investigation, or runbook improvement within established contracts. It does not automatically include final responsibility for shared-infrastructure changes or incidents. Compare the actual responsibilities and experience requirements in the [public role review checked on 2026-10-26](../research/ax-engineer-role-review.md).
+
+This roadmap centers on internal workflow transformation. Use each source's meaning for a customer-facing `Forward Deployed Engineer`, a pre-sales role, and the Academy's `Frontier Deployed Engineer`. Shared abbreviations or tools do not establish identical working relationships, approval authority, or operational ownership.
 
 ## 6. Questions that reveal a sound AX Engineer role
 

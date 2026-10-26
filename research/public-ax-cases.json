@@ -1,300 +1,2165 @@
 {
   "$schema": "./public-ax-cases.schema.json",
   "verified_at": "2026-08-01",
+  "updated_at": "2026-10-26",
+  "review_scope": {"reviewed_case_ids": ["K04", "K05", "K07", "K08", "K09", "G02", "G07", "G08", "G10"], "scope": "selected-claims-only", "baseline_source_count": 26},
   "cases": [
     {
       "id": "K01",
       "region": "KR",
       "organization": "국민권익위원회 외",
-      "workflow": { "ko": "민원 답변 추천과 중복 민원 군집화", "en": "Petition response drafts and duplicate clustering" },
+      "workflow": {
+        "ko": "민원 답변 추천과 중복 민원 군집화",
+        "en": "Petition response drafts and duplicate clustering"
+      },
       "industry": "public-sector",
       "source_type": "organization-official",
       "deployment_stage": "limited-operation",
       "outcome_verification": "none",
-      "source_urls": ["https://www.korea.kr/news/policyNewsView.do?newsId=156743148"],
-      "related_cases": ["public-service-petition-response"]
+      "source_urls": [
+        "https://www.korea.kr/news/policyNewsView.do?newsId=156743148"
+      ],
+      "related_cases": [
+        "public-service-petition-response"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "K01-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 민원 답변 추천과 중복 민원 군집화. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Petition response drafts and duplicate clustering. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.korea.kr/news/policyNewsView.do?newsId=156743148"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation"
     },
     {
       "id": "K02",
       "region": "KR",
       "organization": "신한은행",
-      "workflow": { "ko": "법인 여신 분석과 의견서 작성 지원", "en": "Corporate credit analysis and opinion drafting" },
+      "workflow": {
+        "ko": "법인 여신 분석과 의견서 작성 지원",
+        "en": "Corporate credit analysis and opinion drafting"
+      },
       "industry": "financial-services",
       "source_type": "organization-official",
       "deployment_stage": "limited-operation",
       "outcome_verification": "none",
-      "source_urls": ["https://www.shinhangroup.com/kr/archive/press/detail/679"],
-      "related_cases": ["credit-underwriting-review"]
+      "source_urls": [
+        "https://www.shinhangroup.com/kr/archive/press/detail/679"
+      ],
+      "related_cases": [
+        "credit-underwriting-review"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "K02-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 법인 여신 분석과 의견서 작성 지원. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Corporate credit analysis and opinion drafting. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.shinhangroup.com/kr/archive/press/detail/679"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation"
     },
     {
       "id": "K03",
       "region": "KR",
       "organization": "신한라이프",
-      "workflow": { "ko": "대화형 가입설계와 전산심사", "en": "Conversational policy design and automated checks" },
+      "workflow": {
+        "ko": "대화형 가입설계와 전산심사",
+        "en": "Conversational policy design and automated checks"
+      },
       "industry": "financial-services",
       "source_type": "organization-official",
       "deployment_stage": "limited-operation",
       "outcome_verification": "none",
-      "source_urls": ["https://shinhangroup.com/kr/archive/press/detail/637"],
-      "related_cases": ["credit-underwriting-review"]
+      "source_urls": [
+        "https://shinhangroup.com/kr/archive/press/detail/637"
+      ],
+      "related_cases": [
+        "credit-underwriting-review"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "K03-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 대화형 가입설계와 전산심사. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Conversational policy design and automated checks. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://shinhangroup.com/kr/archive/press/detail/637"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation"
     },
     {
       "id": "K04",
       "region": "KR",
       "organization": "LG유플러스",
-      "workflow": { "ko": "상담 중 답변 추천과 후처리 지원", "en": "In-call answer suggestions and after-call support" },
+      "workflow": {
+        "ko": "상담 중 답변 추천과 후처리 지원",
+        "en": "In-call answer suggestions and after-call support"
+      },
       "industry": "customer-service",
       "source_type": "organization-official",
       "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://www.lg.co.kr/media/release/29014"],
-      "related_cases": ["beauty-d2c-voc", "centralized-mail-assist"]
+      "source_urls": [
+        "https://www.lg.co.kr/media/release/29014"
+      ],
+      "related_cases": [
+        "beauty-d2c-voc",
+        "centralized-mail-assist"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "K04-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 상담 중 답변 추천과 후처리 지원. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: In-call answer suggestions and after-call support. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.lg.co.kr/media/release/29014"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "K04-followup-metrics",
+          "kind": "outcome",
+          "statement": {
+            "ko": "LG유플러스는 2024년 대비 2026년 상담 시간 16% 감소와 연결 대기시간 47초에서 5초로 감소, 연간 약 800만 건의 AI 문의 처리를 발표했다.",
+            "en": "LG Uplus reported 16% less consultation time in 2026 than in 2024, wait time falling from 47 to 5 seconds, and about 8 million AI-handled inquiries annually."
+          },
+          "source_urls": [
+            "https://lg.co.kr/media/release/30616"
+          ],
+          "published_at": "2026-09-30",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2024년과 2026년 비교. 정확한 관측 시작일과 종료일, 연간 문의의 집계기간은 미공개다.",
+              "en": "Compares 2024 and 2026; exact dates and the annual-inquiry aggregation window are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "17개 센터 운영을 설명하지만 각 성과 지표의 표본과 분모는 밝히지 않는다.",
+              "en": "The release describes 17 centers but does not give the sample or denominator for each metric."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "회사 보도자료. 별도 통제집단과 세부 계산 방법은 공개하지 않았다.",
+              "en": "Company press release with no separately reported control group or detailed calculation method."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "자체 발표다. 기존 19% 수치와 대상·기간·분모가 같다는 근거가 없어 증감 추세로 연결하지 않는다.",
+              "en": "Self-reported. The population, period, and denominator are not matched to the earlier 19% figure, so this is not a trend comparison."
+            }
+          ]
+        },
+        {
+          "id": "K04-followup-human-choice",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "고객이 상담 방식을 선택하고 65세 이상 고객은 상담사가 우선 응대한다. 회사는 AI Auto QA 결과를 상담 코칭에 사용한다고 설명한다.",
+            "en": "Customers can choose their consultation mode; people aged 65 and above receive human-agent priority. The company describes using AI Auto QA in coaching."
+          },
+          "source_urls": [
+            "https://lg.co.kr/media/release/30616"
+          ],
+          "published_at": "2026-09-30",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "발표 당시의 운영 방식. 적용 시작일과 관측기간은 미공개다.",
+              "en": "Operating practice described at publication; start and observation dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "적용 고객 수와 검토 표본은 미공개다.",
+              "en": "Customer count and review sample are not reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "회사가 운영 원칙과 상담 평가·코칭 절차를 설명한다.",
+              "en": "The company describes operating rules and its review/coaching process."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "독립 운영 감사나 고객 선택권의 실제 보장 여부까지 검증한 자료는 아니다.",
+              "en": "This is not an independent operational audit or verification that choice is always honored."
+            }
+          ]
+        },
+        {
+          "id": "K04-baseline-calculation-clarification",
+          "kind": "counterevidence",
+          "statement": {
+            "ko": "기존 원문은 연결 대기 17초와 통화 30초 감소, 하루 약 7만5000건과 20근무일을 월 약 117만 분 절감의 환산 가정으로 공개한다.",
+            "en": "The original release gives 17 fewer waiting seconds and 30 fewer talk seconds, about 75,000 calls per day, and 20 workdays as assumptions for roughly 1.17 million minutes saved monthly."
+          },
+          "source_urls": [
+            "https://www.lg.co.kr/media/release/29014"
+          ],
+          "published_at": "2025-05-27",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2024년 9월 도입 뒤의 회사 비교다. 세부 측정 시작·종료일은 미공개다.",
+              "en": "Company comparison following adoption in September 2024; detailed measurement dates are not reported."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "일평균 처리량과 근무일은 환산 가정이며 성과 평가 표본 수가 아니다.",
+              "en": "Daily volume and workdays are extrapolation assumptions, not an outcome-evaluation sample size."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "회사는 통화당 절감 시간과 월간 처리량 가정을 공개한다. 통제집단·원자료·표본 설계는 공개하지 않았다.",
+              "en": "The company discloses per-call time savings and monthly-volume assumptions, but no control group, raw observations, or sampling design."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존의 산출 방법 전체 미공개 서술을 정정한다. 환산 가정 공개는 독립 효과 검증이 아니며 2026년의 16%와 동일 조건 추세로 묶지 않는다.",
+              "en": "Corrects the claim that no calculation basis was public. Extrapolation assumptions are not independent verification and do not make the 2026 16% figure a matched trend."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "K05",
       "region": "KR",
       "organization": "삼성SDS",
-      "workflow": { "ko": "회의록·실행 항목·메일 초안", "en": "Meeting notes, action items, and email drafts" },
+      "workflow": {
+        "ko": "회의록·담당자별 후속 업무·메일 초안",
+        "en": "Meeting notes, assigned follow-up work, and email drafts"
+      },
       "industry": "collaboration",
       "source_type": "organization-official",
       "deployment_stage": "pilot",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://www.samsungsds.com/kr/news/sds-genai-mediaday.html"],
-      "related_cases": ["slack-meeting-actions"]
+      "source_urls": [
+        "https://www.samsungsds.com/kr/news/sds-genai-mediaday.html"
+      ],
+      "related_cases": [
+        "slack-meeting-actions"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "K05-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 회의록·담당자별 후속 업무·메일 초안. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Meeting notes, assigned follow-up work, and email drafts. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.samsungsds.com/kr/news/sds-genai-mediaday.html"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "K05-followup-public-sector",
+          "kind": "deployment-plan",
+          "statement": {
+            "ko": "삼성SDS는 중앙부처 9곳의 Brity Works 도입 확정과 2026년 8월까지 순차 서비스 개시 계획을 발표했다.",
+            "en": "Samsung SDS announced that nine central-government ministries had selected Brity Works, with staged service starts planned by August 2026."
+          },
+          "source_urls": [
+            "https://www.samsungsds.com/kr/news/sds-2608013.html"
+          ],
+          "published_at": "2026-08-13",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "post-baseline",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2026-08-13 발표와 2026년 8월 개시 계획. 실제 운영 관측기간은 없다.",
+              "en": "Announcement on 2026-08-13 and a planned August 2026 start; no observed operating period."
+            }
+          },
+          "sample": {
+            "size": 9,
+            "description": {
+              "ko": "도입을 확정한 중앙부처 수다. 사용·성과 평가 표본이 아니다.",
+              "en": "Number of ministries selecting the service, not a usage or outcome-evaluation sample."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "공급사의 도입 확정 및 서비스 개시 계획 발표다.",
+              "en": "Vendor announcement of selections and planned service starts."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 삼성SDS 사내 약 1만 명 시범과 다른 모집단이다. 기존 시간 절감 수치를 정부 부처에 적용하지 않는다.",
+              "en": "A different population from Samsung SDS's earlier internal pilot of about 10,000 people; its time-saving figures do not transfer to ministries."
+            },
+            {
+              "ko": "이 자료만으로 9곳 모두의 운영 개시나 성과를 확인할 수 없다. 기존 PILOT 분류는 보존한다.",
+              "en": "This source does not verify operation or outcomes across all nine ministries. The original PILOT classification is preserved."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "pilot"
     },
     {
       "id": "K06",
       "region": "KR",
       "organization": "포스코",
-      "workflow": { "ko": "센서·영상 기반 예지정비와 경고", "en": "Sensor- and vision-based predictive maintenance alerts" },
+      "workflow": {
+        "ko": "센서·영상 기반 예지정비와 경고",
+        "en": "Sensor- and vision-based predictive maintenance alerts"
+      },
       "industry": "manufacturing",
       "source_type": "organization-official",
       "deployment_stage": "operation",
       "outcome_verification": "none",
-      "source_urls": ["https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/"],
-      "related_cases": ["equipment-anomaly-maintenance"]
+      "source_urls": [
+        "https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "K06-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 센서·영상 기반 예지정비와 경고. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Sensor- and vision-based predictive maintenance alerts. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "K07",
       "region": "KR",
       "organization": "LG전자",
-      "workflow": { "ko": "개발 단계 완성품 품질 예측", "en": "Finished-product quality prediction during development" },
+      "workflow": {
+        "ko": "개발 단계 완성품 품질 예측",
+        "en": "Finished-product quality prediction during development"
+      },
       "industry": "manufacturing",
       "source_type": "organization-official",
-      "deployment_stage": "limited-operation",
+      "deployment_stage": "unknown",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://www.lg.co.kr/media/release/28789"],
-      "related_cases": ["equipment-anomaly-maintenance"]
+      "source_urls": [
+        "https://www.lg.co.kr/media/release/28789"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "K07-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 개발 단계 완성품 품질 예측. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Finished-product quality prediction during development. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.lg.co.kr/media/release/28789"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "K07-platform-plan-correction",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "LG전자는 품질 예측 기술 개발을 발표했지만 Eng.AI 웹 플랫폼과 제품 설계 순차 적용은 계획으로 설명했다.",
+            "en": "LG announced development of quality-prediction technology, while describing the Eng.AI web platform and staged application to product design as plans."
+          },
+          "source_urls": [
+            "https://www.lg.co.kr/media/release/28789"
+          ],
+          "published_at": "2025-03-27",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2025-03-27 발표 시점의 개발·계획 설명이며 실제 플랫폼 운영 관측기간은 없다.",
+              "en": "Development and plans at publication on 2025-03-27; no observed platform-operating period."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "제품별 실제 운영 표본은 미공개다.",
+              "en": "Product-level operating samples are not reported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "회사 기술 발표는 기존 3~8시간과 새 기술의 3분 이내 예측을 비교하지만 시험 표본과 세부 방법은 제시하지 않는다.",
+              "en": "The company compares prior prediction times of 3–8 hours with under three minutes for the new technology but does not provide the test sample or detailed method."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 LIMITED 분류와 이미 플랫폼을 사용한다는 서술을 원문으로 입증하지 못해 deployment_stage를 unknown으로 정정했다.",
+              "en": "The original source does not establish the previous LIMITED classification or existing platform use, so deployment_stage is corrected to unknown."
+            },
+            {
+              "ko": "기술 개발과 공급사 최대 99% 수치를 플랫폼 운영이나 2026-10-26의 현재 상태로 확대하지 않는다. SELF는 유지한다.",
+              "en": "Technology development and the company-reported maximum 99% do not establish platform operation or live status on 2026-10-26. SELF is retained."
+            }
+          ],
+          "deployment_correction": {
+            "from": "limited-operation",
+            "to": "unknown",
+            "reason": {
+              "ko": "기술 개발과 플랫폼 출시 계획만으로 실제 운영을 입증할 수 없어 정정한다.",
+              "en": "Technology development and a platform launch plan do not establish actual operation."
+            }
+          }
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation"
     },
     {
       "id": "K08",
       "region": "KR",
       "organization": "SK텔레콤",
-      "workflow": { "ko": "취약계층 안부 확인과 상담 이관", "en": "Welfare check-ins and counselor escalation" },
+      "workflow": {
+        "ko": "취약계층 안부 확인과 상담 이관",
+        "en": "Welfare check-ins and counselor escalation"
+      },
       "industry": "healthcare-social-care",
       "source_type": "organization-official",
       "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://news.sktelecom.com/200115"],
-      "related_cases": ["care-conversation-record"]
+      "source_urls": [
+        "https://news.sktelecom.com/200115"
+      ],
+      "related_cases": [
+        "care-conversation-record"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "K08-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 취약계층 안부 확인과 상담 이관. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Welfare check-ins and counselor escalation. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://news.sktelecom.com/200115"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "K08-people-unit-correction",
+          "kind": "counterevidence",
+          "statement": {
+            "ko": "11만 명 이상은 안부 확인 대상 인원이다. 원문은 누적 110,538명과 약 176만 건의 전화, 전문 상담 연결 4,063명을 구분한다.",
+            "en": "More than 110,000 refers to people reached. The source separately reports 110,538 people, about 1.76 million calls, and 4,063 people connected to professional counseling."
+          },
+          "source_urls": [
+            "https://news.sktelecom.com/200115"
+          ],
+          "published_at": "2023-11-28",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2022년 10월 서비스 시작 후 약 1년의 회사 발표다.",
+              "en": "Company reporting for approximately one year after service began in October 2022."
+            }
+          },
+          "sample": {
+            "size": 110538,
+            "description": {
+              "ko": "서비스 대상 인원이며 통화 건수나 독립 평가 표본이 아니다.",
+              "en": "People served, not call count or an independent evaluation sample."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "회사 운영 집계다. 위험 탐지의 표본 설계와 민감도·특이도는 공개하지 않았다.",
+              "en": "Company operational totals; risk-detection sampling, sensitivity, and specificity are not reported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "영문에서 인원을 check-ins 건수처럼 옮긴 오류를 정정했다. 서비스 규모를 안전·돌봄 효과나 현재 이용 규모로 해석하지 않는다.",
+              "en": "Corrects the English translation of people as a count of check-ins. Service scale does not establish safety or care effects or current usage."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "K09",
       "region": "KR",
       "organization": "SK텔레콤",
-      "workflow": { "ko": "발달장애인 행동 기록 지원", "en": "Behavior-record support for people with developmental disabilities" },
+      "workflow": {
+        "ko": "발달장애인 행동 기록 지원",
+        "en": "Behavior-record support for people with developmental disabilities"
+      },
       "industry": "healthcare-social-care",
       "source_type": "organization-official",
-      "deployment_stage": "pilot",
+      "deployment_stage": "limited-operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://news.sktelecom.com/214674"],
-      "related_cases": ["care-conversation-record"]
+      "source_urls": [
+        "https://news.sktelecom.com/214674"
+      ],
+      "related_cases": [
+        "care-conversation-record"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "K09-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 발달장애인 행동 기록 지원. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Behavior-record support for people with developmental disabilities. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://news.sktelecom.com/214674"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "K09-deployment-scope-correction",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "SK텔레콤은 2024년 9월 출시한 케어비아가 발표 당시 12개 돌봄 시설에 도입돼 사용 중이라고 설명했다.",
+            "en": "SK Telecom describes CareVia, launched in September 2024, as deployed and used at 12 care facilities at publication."
+          },
+          "source_urls": [
+            "https://news.sktelecom.com/214674"
+          ],
+          "published_at": "2025-08-28",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2025-08-28 발표 당시 도입 범위다. 시설별 운영 시작·종료일은 미공개다.",
+              "en": "Deployment scope at publication on 2025-08-28; facility-specific start and end dates are not reported."
+            }
+          },
+          "sample": {
+            "size": 12,
+            "description": {
+              "ko": "회사 발표의 도입 시설 수이며 90% 수치의 평가 표본이 아니다.",
+              "en": "Company-reported deployment sites, not the evaluation sample behind the 90% figure."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "회사 도입 현황과 최대 시간 절감 발표다. 지표별 표본·관측기간·계산 방법은 미공개다.",
+              "en": "Company deployment and maximum time-saving claims; metric-level samples, periods, and calculation are not reported."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "원문이 사용 중인 12개 시설을 명시하므로 기존 PILOT을 limited-operation으로 정정했다.",
+              "en": "The original source names 12 sites in use, so the previous PILOT classification is corrected to limited-operation."
+            },
+            {
+              "ko": "발표 시점의 제한된 범위이며 2026-10-26 실시간 운영 확인이나 임상 효과 검증이 아니다. SELF는 유지한다.",
+              "en": "This is a bounded scope at publication, not live operating verification on 2026-10-26 or clinical-effect validation. SELF is retained."
+            }
+          ],
+          "deployment_correction": {
+            "from": "pilot",
+            "to": "limited-operation",
+            "reason": {
+              "ko": "원문에 발표 당시 12개 시설 사용이 명시돼 시범 분류를 정정한다.",
+              "en": "The source explicitly reports use at 12 facilities at publication, correcting the pilot label."
+            }
+          }
+        }
+      ],
+      "baseline_deployment_stage": "pilot"
     },
     {
       "id": "K10",
       "region": "KR",
       "organization": "LG유플러스",
-      "workflow": { "ko": "출결·상담·활동 기록 통합", "en": "Attendance, counseling, and activity record integration" },
+      "workflow": {
+        "ko": "출결·상담·활동 기록 통합",
+        "en": "Attendance, counseling, and activity record integration"
+      },
       "industry": "education",
       "source_type": "organization-official",
       "deployment_stage": "pilot",
       "outcome_verification": "none",
-      "source_urls": ["https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140"],
-      "related_cases": ["care-conversation-record"]
+      "source_urls": [
+        "https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140"
+      ],
+      "related_cases": [
+        "care-conversation-record"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "K10-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 출결·상담·활동 기록 통합. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Attendance, counseling, and activity record integration. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "pilot"
     },
     {
       "id": "G01",
       "region": "US",
       "organization": "Morgan Stanley",
-      "workflow": { "ko": "고객 미팅에서 CRM 기록과 후속 초안", "en": "CRM records and follow-up drafts from client meetings" },
+      "workflow": {
+        "ko": "고객 미팅에서 CRM 기록과 후속 초안",
+        "en": "CRM records and follow-up drafts from client meetings"
+      },
       "industry": "financial-services",
       "source_type": "vendor-customer-case",
       "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://openai.com/index/morgan-stanley/"],
-      "related_cases": ["slack-meeting-actions", "centralized-mail-assist"]
+      "source_urls": [
+        "https://openai.com/index/morgan-stanley/"
+      ],
+      "related_cases": [
+        "slack-meeting-actions",
+        "centralized-mail-assist"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G01-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 고객 미팅에서 CRM 기록과 후속 초안. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: CRM records and follow-up drafts from client meetings. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://openai.com/index/morgan-stanley/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "G02",
       "region": "GLOBAL",
       "organization": "IBM",
-      "workflow": { "ko": "HR 질의에서 실제 트랜잭션까지", "en": "From HR questions to transactions" },
+      "workflow": {
+        "ko": "HR 문의에서 증명서 발급·휴가 처리까지",
+        "en": "From HR questions to employment documents and leave requests"
+      },
       "industry": "people-operations",
       "source_type": "organization-official",
       "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://www.ibm.com/case-studies/ibm-transformation/ask-hr"],
-      "related_cases": ["employee-lifecycle-access"]
+      "source_urls": [
+        "https://www.ibm.com/case-studies/ibm-transformation/ask-hr"
+      ],
+      "related_cases": [
+        "employee-lifecycle-access"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "G02-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: HR 문의에서 증명서 발급·휴가 처리까지. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: From HR questions to employment documents and leave requests. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.ibm.com/case-studies/ibm-transformation/ask-hr"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "G02-metric-correction",
+          "kind": "counterevidence",
+          "statement": {
+            "ko": "IBM은 초기 NPS가 -35였고 이후 CSAT로 지표를 바꿔 +74를 기록했다고 설명한다. 두 수치는 같은 지표의 전후 변화가 아니다.",
+            "en": "IBM describes an early NPS of -35 and a later CSAT score of +74 after changing metrics. These are not before-and-after values of the same metric."
+          },
+          "source_urls": [
+            "https://www.ibm.com/case-studies/ibm-transformation/ask-hr"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "초기 NPS와 이후 CSAT의 구체적인 조사기간은 공개하지 않았다. 게시일도 미상이다.",
+              "en": "Exact fieldwork periods for the early NPS and later CSAT are not reported; the page publication date is also unknown."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "각 지표의 응답자 수와 분모는 공개하지 않았다.",
+              "en": "Respondent counts and denominators for each metric are not reported."
+            }
+          },
+          "method": {
+            "status": "not-reported",
+            "description": {
+              "ko": "회사는 NPS에서 CSAT로 바꿨다고 명시하지만 CSAT 산식과 표본 설계는 공개하지 않았다.",
+              "en": "The company explicitly identifies the switch from NPS to CSAT but does not report the CSAT calculation or sampling design."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "회사 자체 발표이며 독립 성과 검증이 아니다. NPS와 CSAT를 연결해 상승폭이나 인과효과를 계산하지 않는다.",
+              "en": "Company self-report, not independent outcome verification. Do not calculate an improvement or causal effect by joining NPS and CSAT."
+            },
+            {
+              "ko": "기존 카탈로그의 지표명 오류를 정정하기 위해 해당 문장만 재확인했다. 게시일과 관측기간이 없어 기준일 이후의 새 시장 변화로 분류하지 않는다.",
+              "en": "Only the metric wording was rechecked to correct the catalog. Unknown publication and observation dates prevent classification as a new post-baseline market change."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "G03",
       "region": "DE",
       "organization": "Siemens·thyssenkrupp",
-      "workflow": { "ko": "자동화 코드·센서 설정·검사 문서", "en": "Automation code, sensor setup, and inspection documents" },
+      "workflow": {
+        "ko": "자동화 코드·센서 설정·검사 문서",
+        "en": "Automation code, sensor setup, and inspection documents"
+      },
       "industry": "manufacturing",
       "source_type": "joint-official",
       "deployment_stage": "expanding-operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai"],
-      "related_cases": ["equipment-anomaly-maintenance"]
+      "source_urls": [
+        "https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G03-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 자동화 코드·센서 설정·검사 문서. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Automation code, sensor setup, and inspection documents. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "expanding-operation"
     },
     {
       "id": "G04",
       "region": "US",
       "organization": "Jabil",
-      "workflow": { "ko": "작업자 문제 해결과 구매 조사 지원", "en": "Shop-floor troubleshooting and procurement research" },
+      "workflow": {
+        "ko": "작업자 문제 해결과 구매 조사 지원",
+        "en": "Shop-floor troubleshooting and procurement research"
+      },
       "industry": "manufacturing",
       "source_type": "vendor-customer-case",
       "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/"],
-      "related_cases": ["equipment-anomaly-maintenance", "inventory-exception-replenishment"]
+      "source_urls": [
+        "https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance",
+        "inventory-exception-replenishment"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G04-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 작업자 문제 해결과 구매 조사 지원. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Shop-floor troubleshooting and procurement research. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "G05",
       "region": "DE",
       "organization": "Bosch Rexroth",
-      "workflow": { "ko": "대규모 제품군 기술지원 검색", "en": "Technical-support search across a large product range" },
+      "workflow": {
+        "ko": "대규모 제품군 기술지원 검색",
+        "en": "Technical-support search across a large product range"
+      },
       "industry": "manufacturing",
       "source_type": "vendor-customer-case",
       "deployment_stage": "operation",
       "outcome_verification": "none",
-      "source_urls": ["https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/"],
-      "related_cases": ["equipment-anomaly-maintenance"]
+      "source_urls": [
+        "https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/"
+      ],
+      "related_cases": [
+        "equipment-anomaly-maintenance"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G05-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 대규모 제품군 기술지원 검색. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Technical-support search across a large product range. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "G06",
       "region": "US",
       "organization": "Walmart",
-      "workflow": { "ko": "상품 성과 원인 분석과 운영 티켓", "en": "Merchandise analysis and operations tickets" },
+      "workflow": {
+        "ko": "상품 성과 원인 분석과 운영 티켓",
+        "en": "Merchandise analysis and operations tickets"
+      },
       "industry": "consumer-retail",
       "source_type": "organization-official",
       "deployment_stage": "limited-operation",
       "outcome_verification": "none",
-      "source_urls": ["https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants"],
-      "related_cases": ["inventory-exception-replenishment"]
+      "source_urls": [
+        "https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants"
+      ],
+      "related_cases": [
+        "inventory-exception-replenishment"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G06-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 상품 성과 원인 분석과 운영 티켓. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Merchandise analysis and operations tickets. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation"
     },
     {
       "id": "G07",
       "region": "US",
       "organization": "CarMax",
-      "workflow": { "ko": "리뷰 요약과 대규모 상품 콘텐츠", "en": "Review summaries and product-page content" },
+      "workflow": {
+        "ko": "리뷰 요약과 대규모 상품 콘텐츠",
+        "en": "Review summaries and product-page content"
+      },
       "industry": "consumer-retail",
       "source_type": "vendor-customer-case",
       "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service"],
-      "related_cases": ["beauty-d2c-voc"]
+      "source_urls": [
+        "https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service"
+      ],
+      "related_cases": [
+        "beauty-d2c-voc"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "G07-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 리뷰 요약과 대규모 상품 콘텐츠. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Review summaries and product-page content. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "G07-comparison-basis-clarification",
+          "kind": "counterevidence",
+          "statement": {
+            "ko": "CarMax는 5,000개 페이지를 수작업으로 작성하면 약 11년이 걸릴 것이라는 자체 추산과 AI로 수개월 만에 작성했다는 결과를 비교했다.",
+            "en": "CarMax compares its estimate of about 11 years to create 5,000 pages manually with its reported completion in a few months using AI."
+          },
+          "source_urls": [
+            "https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service"
+          ],
+          "published_at": "2022-05-24",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "원문은 수개월이라고만 설명하며 세부 작업·검토 기간은 제시하지 않는다.",
+              "en": "The source says a few months without detailed production or review dates."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "5,000개는 제작 페이지 수다. 80% 편집 승인율의 평가 분모는 별도로 공개하지 않았다.",
+              "en": "5,000 is the production page count; the evaluation denominator for the 80% editorial approval rate is not separately reported."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "실측한 병행 대조군이 아니라 기존 수작업 기간의 회사 추산과 생성 결과를 비교했다.",
+              "en": "Compares a company estimate of the manual process with production results, not a measured concurrent control group."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "비교 기준 전체가 미공개라는 서술을 정정한다. 수작업 11년은 추산이며 실측 절감 시간, 장기 품질이나 인과효과로 취급하지 않는다.",
+              "en": "Corrects the claim that the entire comparison basis was unavailable. Eleven manual years is an estimate, not measured time saved, long-term quality, or a causal effect."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "G08",
       "region": "US",
       "organization": "Corewell Health",
-      "workflow": { "ko": "진료 대화에서 임상 기록 초안", "en": "Clinical-note drafts from care conversations" },
+      "workflow": {
+        "ko": "진료 대화에서 임상 기록 초안",
+        "en": "Clinical-note drafts from care conversations"
+      },
       "industry": "healthcare-social-care",
       "source_type": "vendor-customer-case",
       "deployment_stage": "pilot",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://www.abridge.com/case-study/corewell-health"],
-      "related_cases": ["care-conversation-record"]
+      "source_urls": [
+        "https://www.abridge.com/case-study/corewell-health"
+      ],
+      "related_cases": [
+        "care-conversation-record"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "G08-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 진료 대화에서 임상 기록 초안. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Clinical-note drafts from care conversations. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.abridge.com/case-study/corewell-health"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "G08-relationship-events-study",
+          "kind": "counterevidence",
+          "statement": {
+            "ko": "단일 레지던시 연구는 47건 진료 중 관계상 중요 사건이 있는 26건을 비교했다. 이 사건의 기록 점수는 의료진 기록이 14건, AI 기록이 2건에서 더 높았다.",
+            "en": "A single-residency study compared the 26 of 47 visits containing relationship-significant events. Clinician notes scored higher in 14 cases and AI notes in two."
+          },
+          "source_urls": [
+            "https://scholarlyworks.corewellhealth.org/family_medicine_confabstract/34/"
+          ],
+          "published_at": "2026-06-29",
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "pre-baseline-new-evidence",
+          "status": "study-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "2025년 초 도입 후 수행했으며 진료 표본 수집일은 미공개다. 학회 발표는 2026-05-20, 초록 발행은 2026-06-29다.",
+              "en": "Conducted after adoption in early 2025; visit collection dates are not given. Conference presentation: 2026-05-20; abstract publication: 2026-06-29."
+            }
+          },
+          "sample": {
+            "size": 47,
+            "description": {
+              "ko": "단일 레지던시 진료 47건. 관계상 중요 사건이 있는 26건이 해당 비교의 분모다.",
+              "en": "47 visits in one residency; the 26 with relationship-significant events form the relevant comparison denominator."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "같은 진료의 의료진 구술 기록과 AI 기록을 전사문에 대조했다. 의사·심리학자·전공의 패널이 사건의 기록 정도를 0~2점으로 평가했다.",
+              "en": "Compared clinician-dictated and AI notes from the same visit against a transcript. A physician, psychologist, and residents scored event documentation from 0 to 2."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기준일 이전에 발표됐지만 기존 카탈로그에서 빠진 학회 초록이다. 새 시장 변화가 아니다.",
+              "en": "A conference abstract published before the baseline but missing from the earlier catalog; not a new market change."
+            },
+            {
+              "ko": "작은 단일기관 표본이며 모델 버전과 세부 수집기간은 미공개다. 모든 임상 기록이나 최신 모델의 정확도로 일반화하지 않는다.",
+              "en": "Small single-institution sample with model version and detailed collection period unreported; not generalizable to all clinical documentation or current models."
+            },
+            {
+              "ko": "공급사의 확대 계획과 별개인 품질 반례다. 원래 사례의 도입 단계나 독립 성과 등급을 올리지 않는다.",
+              "en": "A quality counterexample separate from the vendor expansion plan; it does not upgrade deployment or independent-outcome evidence."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "pilot"
     },
     {
       "id": "G09",
       "region": "US",
       "organization": "Foley Hoag",
-      "workflow": { "ko": "M&A 실사·공시표·소송 문서 초안", "en": "M&A diligence and litigation document drafts" },
+      "workflow": {
+        "ko": "M&A 실사·공시표·소송 문서 초안",
+        "en": "M&A diligence and litigation document drafts"
+      },
       "industry": "legal-life-sciences",
       "source_type": "vendor-customer-case",
       "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://www.harvey.ai/customers/foley-hoag"],
-      "related_cases": ["regulated-evidence-document"]
+      "source_urls": [
+        "https://www.harvey.ai/customers/foley-hoag"
+      ],
+      "related_cases": [
+        "regulated-evidence-document"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G09-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: M&A 실사·공시표·소송 문서 초안. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: M&A diligence and litigation document drafts. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.harvey.ai/customers/foley-hoag"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "G10",
       "region": "GLOBAL",
       "organization": "Accenture",
-      "workflow": { "ko": "테스트·레거시 이해·기술부채 처리", "en": "Testing, legacy understanding, and technical debt" },
+      "workflow": {
+        "ko": "테스트·레거시 이해·기술부채 처리",
+        "en": "Testing, legacy understanding, and technical debt"
+      },
       "industry": "software-engineering",
       "source_type": "vendor-customer-case",
-      "deployment_stage": "pilot",
+      "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://github.com/customer-stories/accenture"],
-      "related_cases": ["company-agent-operating-layer"]
+      "source_urls": [
+        "https://github.com/customer-stories/accenture"
+      ],
+      "related_cases": [
+        "company-agent-operating-layer"
+      ],
+      "review_status": "selected-claims-reviewed",
+      "claims": [
+        {
+          "id": "G10-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 테스트·레거시 이해·기술부채 처리. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Testing, legacy understanding, and technical debt. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://github.com/customer-stories/accenture"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        },
+        {
+          "id": "G10-rollout-scope-correction",
+          "kind": "operating-boundary",
+          "statement": {
+            "ko": "GitHub 고객 사례는 20명 파일럿과 450명 사용군·200명 대조군 시험 이후 Copilot을 수천 명에게 확대 배포했다고 설명한다.",
+            "en": "The GitHub customer story describes a 20-person pilot, a trial with 450 Copilot users and 200 controls, and subsequent rollout to thousands of developers."
+          },
+          "source_urls": [
+            "https://github.com/customer-stories/accenture"
+          ],
+          "published_at": null,
+          "checked_at": "2026-10-26",
+          "access_status": "read",
+          "temporal_relation": "current-undated",
+          "status": "source-reported",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "파일럿, 시험과 확대 배포의 정확한 날짜 및 원문 게시일은 미상이다.",
+              "en": "Exact pilot, trial, rollout, and page publication dates are unknown."
+            }
+          },
+          "sample": {
+            "size": 650,
+            "description": {
+              "ko": "원문이 설명하는 시험의 450명 사용군과 200명 대조군 합계다. 현재 사용자 수가 아니다.",
+              "en": "Sum of the reported trial groups: 450 users and 200 controls, not a current-user count."
+            }
+          },
+          "method": {
+            "status": "reported",
+            "description": {
+              "ko": "원문은 무작위 대조시험이라고 설명하지만 배정 절차, 전체 방법과 효과 크기는 공개하지 않는다.",
+              "en": "The source calls it a randomized controlled trial but does not disclose allocation procedures, the full method, or effect size."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "배포 이후 범위를 빠뜨린 기존 PILOT 분류를 operation으로 정정했다.",
+              "en": "The previous PILOT classification omitted the reported later rollout and is corrected to operation."
+            },
+            {
+              "ko": "공급사 고객 사례가 발표한 당시 범위다. 2026-10-26 현재 배포와 독립 성과를 확인한 것이 아니며 SELF를 유지한다.",
+              "en": "This is the scope reported by a vendor customer story, not verified live deployment on 2026-10-26 or independent outcome evidence; SELF is retained."
+            }
+          ],
+          "deployment_correction": {
+            "from": "pilot",
+            "to": "operation",
+            "reason": {
+              "ko": "원문에 파일럿 이후 수천 명 확대 배포가 명시돼 시범 분류를 정정한다.",
+              "en": "The source explicitly reports rollout to thousands after the pilot, correcting the pilot label."
+            }
+          }
+        }
+      ],
+      "baseline_deployment_stage": "pilot"
     },
     {
       "id": "G11",
       "region": "IN_GLOBAL",
       "organization": "EXL",
-      "workflow": { "ko": "인수심사 서류 추출과 검토 지원", "en": "Underwriting-document extraction and review support" },
+      "workflow": {
+        "ko": "인수심사 서류 추출과 검토 지원",
+        "en": "Underwriting-document extraction and review support"
+      },
       "industry": "financial-services",
       "source_type": "vendor-customer-case",
       "deployment_stage": "unknown",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://aws.amazon.com/solutions/case-studies/exl-case-study/"],
-      "related_cases": ["credit-underwriting-review"]
+      "source_urls": [
+        "https://aws.amazon.com/solutions/case-studies/exl-case-study/"
+      ],
+      "related_cases": [
+        "credit-underwriting-review"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G11-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 인수심사 서류 추출과 검토 지원. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Underwriting-document extraction and review support. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://aws.amazon.com/solutions/case-studies/exl-case-study/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "unknown"
     },
     {
       "id": "G12",
       "region": "AR",
       "organization": "부에노스아이레스시",
-      "workflow": { "ko": "정부 정보 통합과 관광 질의", "en": "Unified government information and tourism queries" },
+      "workflow": {
+        "ko": "정부 정보 통합과 관광 질의",
+        "en": "Unified government information and tourism queries"
+      },
       "industry": "public-sector",
       "source_type": "vendor-customer-case",
       "deployment_stage": "limited-operation",
       "outcome_verification": "none",
-      "source_urls": ["https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service"],
-      "related_cases": ["public-service-petition-response"]
+      "source_urls": [
+        "https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service"
+      ],
+      "related_cases": [
+        "public-service-petition-response"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G12-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 정부 정보 통합과 관광 질의. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Unified government information and tourism queries. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation"
     },
     {
       "id": "G13",
       "region": "US",
       "organization": "Lumen Technologies",
-      "workflow": { "ko": "고객 조사와 접촉 준비", "en": "Account research and outreach preparation" },
+      "workflow": {
+        "ko": "고객 조사와 접촉 준비",
+        "en": "Account research and outreach preparation"
+      },
       "industry": "b2b-sales",
       "source_type": "vendor-customer-case",
       "deployment_stage": "operation",
       "outcome_verification": "self-reported",
-      "source_urls": ["https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/"],
-      "related_cases": ["centralized-mail-assist", "slack-meeting-actions"]
+      "source_urls": [
+        "https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/"
+      ],
+      "related_cases": [
+        "centralized-mail-assist",
+        "slack-meeting-actions"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G13-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 고객 조사와 접촉 준비. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Account research and outreach preparation. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "operation"
     },
     {
       "id": "G14",
       "region": "GLOBAL",
       "organization": "Moderna",
-      "workflow": { "ko": "근거 자료에서 의약품 개발 문서 초안", "en": "Development-document drafts from evidence" },
+      "workflow": {
+        "ko": "근거 자료에서 의약품 개발 문서 초안",
+        "en": "Development-document drafts from evidence"
+      },
       "industry": "legal-life-sciences",
       "source_type": "vendor-customer-case",
       "deployment_stage": "limited-operation",
       "outcome_verification": "none",
-      "source_urls": ["https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/"],
-      "related_cases": ["regulated-evidence-document"]
+      "source_urls": [
+        "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/"
+      ],
+      "related_cases": [
+        "regulated-evidence-document"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G14-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 근거 자료에서 의약품 개발 문서 초안. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Development-document drafts from evidence. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "limited-operation"
     },
     {
       "id": "G15",
       "region": "SE",
       "organization": "Klarna",
-      "workflow": { "ko": "자동 상담과 복잡 민원 사람 이관", "en": "Automated service with human escalation" },
+      "workflow": {
+        "ko": "자동 상담과 복잡 민원의 상담사 인계",
+        "en": "Automated service with agent handoff for complex cases"
+      },
       "industry": "customer-service",
       "source_type": "mixed-official-independent",
       "deployment_stage": "adjusted-operation",
@@ -303,7 +2168,58 @@
         "https://openai.com/index/klarna/",
         "https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929"
       ],
-      "related_cases": ["centralized-mail-assist"]
+      "related_cases": [
+        "centralized-mail-assist"
+      ],
+      "review_status": "not-rechecked",
+      "claims": [
+        {
+          "id": "G15-baseline",
+          "kind": "baseline-summary",
+          "statement": {
+            "ko": "2026-08-01 카탈로그에 기록한 업무: 자동 상담과 복잡 민원의 상담사 인계. 분류값과 기존 출처를 보존하며 이번에 전체 내용을 다시 검증하지 않았다.",
+            "en": "Workflow recorded in the 2026-08-01 catalog: Automated service with agent handoff for complex cases. The original classifications and sources are preserved; the full entry was not reverified in this review."
+          },
+          "source_urls": [
+            "https://openai.com/index/klarna/",
+            "https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929"
+          ],
+          "published_at": null,
+          "checked_at": "2026-08-01",
+          "access_status": "not-rechecked",
+          "temporal_relation": "baseline",
+          "status": "historical-unrechecked",
+          "observation_period": {
+            "start": null,
+            "end": null,
+            "description": {
+              "ko": "기존 원문의 관측기간은 이번에 다시 확인하지 않았다.",
+              "en": "The original observation period was not rechecked."
+            }
+          },
+          "sample": {
+            "size": null,
+            "description": {
+              "ko": "기존 자료의 표본과 분모는 이번에 다시 확인하지 않았다.",
+              "en": "The original sample and denominator were not rechecked."
+            }
+          },
+          "method": {
+            "status": "not-rechecked",
+            "description": {
+              "ko": "원문과 측정 방법을 이번에 다시 확인하지 않았다.",
+              "en": "The source and measurement method were not rechecked."
+            }
+          },
+          "limitations": [
+            {
+              "ko": "기존 카탈로그의 보존 기록이며 2026-10-26 현재 상태를 뜻하지 않는다.",
+              "en": "This preserves the earlier catalog; it does not establish the state on 2026-10-26."
+            }
+          ]
+        }
+      ],
+      "baseline_deployment_stage": "adjusted-operation"
     }
   ]
 }

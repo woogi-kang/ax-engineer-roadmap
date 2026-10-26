@@ -3,13 +3,17 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Draft only | A1-A2 | P1, P2, P3 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
+
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
 
 This high-risk simulation converts fictional care conversations into structured record drafts and routes risk signals to professionals. It provides no diagnosis, treatment, or emergency service and creates no official record without professional sign-off.
 
@@ -19,11 +23,14 @@ This high-risk simulation converts fictional care conversations into structured 
 - Domain / industry: data and operations / healthcare and social care
 - Risk / designed autonomy: high / A1–A2
 - Designed practice: P1–P3, record and escalation drafts only
-- Public design inputs: [K08, K09, K10, and G08](../../research/public-case-application-map.md)
+- Planned inputs: fictional conversations with different consent states, confusable medicine names, urgent risk signals, and routine consultations; no real patient or care-recipient data
+- Public design inputs: The [public case-to-practice table](../../research/public-case-application-map.md) applies K08 to immediate on-call notification and receipt confirmation, K09 to consent and sensitive-record controls, K10 to professional correction, and G08 to sign-off before the record-system write.
 
 ## 2. Problem and target flow
 
 Professionals must focus on the person, document the encounter, and avoid missing urgent risk. Wrong speakers, medicines, symptoms, or omitted facts can directly affect safety.
+
+The professional finalizes the official record. A separate on-call or monitoring owner decides urgent handoff and verifies that the responsible person received it and that its handling state is known.
 
 ```text
 Receive synthetic consent state and conversation
@@ -47,6 +54,8 @@ Receive synthetic consent state and conversation
 
 AI may transcribe, structure, draft, and flag risk candidates. Professionals own diagnosis, treatment, medicine changes, risk classification, and record signature. Emergency routing runs in parallel and never waits for a generated response.
 
+Stop record generation when consent is absent, the subject does not match, speakers are confused, or a critical passage could not be transcribed. An alert sent without confirmed human receipt does not complete the handoff.
+
 ## 4. Practice and evaluation
 
 | Stage | Exercise | Exit criterion |
@@ -55,13 +64,19 @@ AI may transcribe, structure, draft, and flag risk candidates. Professionals own
 | P2 | Professional correction, rejection, sign-off, and escalation | Zero unsigned official records; zero missed required handoffs |
 | P3 | Reconcile record and escalation sandboxes | Receipt confirmed; duplicates and partial failures recovered |
 
-Measure material omissions, speaker and medicine errors, correction time, false and missed alerts, and delivery and acknowledgment time.
+Measure word error rate alongside material omissions, speaker, medicine and numeric errors, correction time, false and missed alerts, and delivery and acknowledgment time.
+
+### Evaluating missing context
+
+The [supplementary G08 evidence](../../research/public-ax-cases.md) includes a single-institution conference abstract published on 2026-06-29. It is a previously omitted counterexample, not a change that occurred after the last review. Its small sample does not establish the clinical accuracy of all models.
+
+Include fictional examples where family relationships, bereavement, or care circumstances could change a professional's judgment if omitted. A qualified reviewer compares source and draft, recording consequential omissions, unsupported additions, and correction time. Faster processing does not pass review when important context is missing. Use fictional conversations so the procedure can be practiced without actual patient data.
 
 ## 5. Failures, outputs, and limits
 
 Inject expired consent, a confusable medicine name, failed on-call delivery, and record-store failure after escalation. Stop processing, expose uncertainty, use an alternate roster, and preserve partial-failure state without rolling back a safety handoff.
 
-Outputs are fictional conversations, consent and record contracts, source-linked drafts, professional edits, acknowledgment, and recovery records. No clinical, safety, care-quality, or time-saving outcome is claimed.
+Planned outputs are fictional conversations, consent and record contracts, source-linked drafts, professional edits, acknowledgment, and recovery records. No clinical, safety, care-quality, or time-saving outcome is claimed.
 
 ## 6. Next decision
 

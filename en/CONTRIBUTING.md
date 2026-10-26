@@ -26,7 +26,7 @@ Use Node.js `22.23.1` or newer and Python `3.11.15` or newer. Run the same valid
 npm run verify
 ```
 
-`verify` installs dependencies and Chromium, then checks internal links, bilingual mirrors, case metadata, the public-case registry, version synchronization, the Beauty/D2C Python tests and committed-artifact reproduction, npm security audit, site lint, Vinext rendering, browser accessibility, and the GitHub Pages static export. Full external-link health depends on the network and therefore runs separately through `npm run check:external` and the weekly workflow.
+`verify` installs the dependency used for README rendering checks, then checks internal links, bilingual mirrors, case metadata, the public-case registry, version synchronization, README rendering, source-record validation regression tests, the Beauty/D2C Python tests and committed-artifact reproduction, and npm security audit. Full external-link health depends on the network and therefore runs separately through `npm run check:external` and the weekly workflow.
 
 ## Roadmap item format
 
@@ -51,11 +51,16 @@ When adding a Korean document, update the same path under `en/`. The English edi
 
 ## Writing and terminology
 
-- Write for the reader doing the work, not for the repository maintainer.
-- Prefer a concrete owner such as `process owner`, `approver`, or `operator` over an unspecified `human`.
-- Explain repository-specific terms when they first appear.
-- Keep Korean and English semantically aligned without translating idioms word for word.
-- Review AI-assisted drafts for stock transitions, inflated claims, repeated conclusions, and translationese.
+Apply the `korean-humanizer` skill whenever adding Korean content or revising Korean sentences. Verify the evidence and write a draft first, then identify and polish awkward passages in the changed text and reread it for preserved meaning. Follow the [project working instructions](AGENTS.md).
+
+- Do not change facts, numbers, dates, proper names, quotations, technical abbreviations, or evidence links for stylistic reasons.
+- Keep technical documentation plain and do not replace sound existing prose in bulk.
+- Compare responsibilities and validation criteria with the English edition. Automation alone does not establish semantic parity.
+- Write primarily for AX Engineers, presenting other roles through their collaboration responsibilities.
+- Name the role or owner responsible for approval, review, and operations rather than writing only 'human'.
+- Reduce translationese and abstract wording by describing concrete workflow actions. Retain established terms such as data contracts and API contracts.
+- Do not translate code identifiers, state values, file paths, or commands.
+- Explain new terms at first use and update the related Korean and English documents together.
 
 ## Case-study format
 
@@ -73,11 +78,11 @@ A case should include at least:
 
 Add `case.json` to each new case directory and follow [`case.schema.json`](../case-studies/_schema/case.schema.json). Keep documentation readiness in `status` separate from the level of verified evidence in `evidence_stage`.
 
-Do not mix current execution with the target design. Put only the scope demonstrated by published artifacts in `current_write_impact`, `current_autonomy`, and `implemented_project_stages`. Put broader designed targets in `designed_write_impact`, `designed_autonomy`, and `designed_project_stages`. After changing `case.json`, run `npm run generate:cases` and commit the generated site data.
+Do not mix current execution with the target design. Put only the scope demonstrated by published artifacts in `current_write_impact`, `current_autonomy`, and `implemented_project_stages`. `implemented_project_stages` identifies stages with implemented functionality, not completion of all exit criteria such as the minimum evaluation count and independent review. Put broader designed targets in `designed_write_impact`, `designed_autonomy`, and `designed_project_stages`. After changing `case.json`, run `npm run generate:cases` and commit the regenerated current-scope and design-target tables in the Korean and English case documents.
 
 When adding or changing a public organization case, update both language catalogs and [`public-ax-cases.json`](../research/public-ax-cases.json). Keep source provenance, deployment stage, and outcome verification in separate fields.
 
-Any real impact metric must include its measurement method and period. If those details cannot be disclosed, remove the metric and retain only observable states.
+To claim an outcome measured by the contributor, provide its period, sample, and calculation method. If those details cannot be disclosed, remove the figure and retain only observable states. When citing an outside organization's reported metric, identify the reporting party and unreported conditions, and distinguish self-report from independent verification. Follow the [source policy](research/source-policy.md).
 
 ## Pull requests
 
@@ -86,6 +91,7 @@ Any real impact metric must include its measurement method and period. If those 
 - Record the verification date and source type for new links.
 - Run `npm run verify`.
 - Even when a draft is generated with AI, the submitter must personally review its facts and language.
+- Apply `korean-humanizer` to added or revised Korean passages and verify that their meaning is preserved.
 
 ## License
 

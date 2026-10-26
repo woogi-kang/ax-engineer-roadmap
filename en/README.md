@@ -7,15 +7,12 @@
 [![Candidate: v0.4.0](https://img.shields.io/badge/Candidate-v0.4.0-7c3aed.svg)](CHANGELOG.md)
 [![Validate roadmap](https://github.com/woogi-kang/ax-engineer-roadmap/actions/workflows/validate.yml/badge.svg)](https://github.com/woogi-kang/ax-engineer-roadmap/actions/workflows/validate.yml)
 [![CodeQL](https://github.com/woogi-kang/ax-engineer-roadmap/actions/workflows/codeql.yml/badge.svg)](https://github.com/woogi-kang/ax-engineer-roadmap/actions/workflows/codeql.yml)
-[![Live roadmap](https://img.shields.io/badge/Live-GitHub%20Pages-aa3524.svg)](https://woogi-kang.github.io/ax-engineer-roadmap/en/)
 
 [한국어](../README.md) | [English](README.md)
 
-An **AX Engineer** finds work worth changing, redesigns the workflow, and connects AI to existing data, systems, and authority boundaries while taking responsibility for the path into operations.
+An **AX Engineer** finds work to automate or assist with AI, redesigns the workflow while retaining human judgment, implements AI's use of existing data and systems within authorized limits, and takes responsibility for operating it.
 
 In this repository, **AX** means **AI Transformation** of organizational workflows and their operating model. It is not presented as an industry-wide standardized abbreviation.
-
-This repository turns that work into a public roadmap from workflow selection through deployment, adoption, recovery, and reuse. It also covers approval, authority, regulation, and digital-readiness conditions commonly encountered in Korean organizations.
 
 > An AX Engineer's work does not end when the demo runs.
 >
@@ -23,8 +20,8 @@ This repository turns that work into a public roadmap from workflow selection th
 
 ## What you can get from this repository
 
-- **A sequence for changing work**: move from goals and boundaries through redesign, data integration, controls, deployment, adoption, and scale in eight stages.
-- **Implementation and operating criteria**: connect software, LLM, evaluation, and security skills to artifacts, approval, records, and recovery.
+- **A sequence for changing work**: define the problem and automation scope, redesign the workflow, prepare the required data, and proceed through controls, deployment, adoption, and scale in eight stages.
+- **Implementation and operating criteria**: show which deliverables demonstrate each skill and how approval, records, and recovery should operate.
 - **Applied cases by work area**: compare source systems and action boundaries across 15 cases, including cross-industry work and six industry contexts.
 - **A public case catalog**: compare real workflows, human judgment, reported outcomes, and evidence limits across 10 Korean and 15 international cases.
 - **A starting point by role**: find the decisions shared by practicing and aspiring AX Engineers, business practitioners, leaders, and data, security, and operations partners.
@@ -35,44 +32,30 @@ This repository turns that work into a public roadmap from workflow selection th
 |---|---:|---|
 | Applied workflow cases | 15 | All pass the documentation and metadata checks |
 | Reproducible public simulation | 1 | Code, evaluation, runbook, and hash manifest for 16 synthetic VOC records are regenerated in a clean directory |
-| Design blueprints | 14 | Source systems, approvals, failures, and recovery are designed; executable code and organizational outcomes are not published |
-| Public external cases | 10 Korean · 15 international | 26 source URLs are separated by provenance, deployment stage, and outcome verification |
+| Pre-implementation design documents | 14 | Source systems, approvals, failures, and recovery are designed; executable code and organizational outcomes are not published |
+| Public external cases | 10 Korean · 15 international | 26 baseline sources and 3 follow-up sources are distinguished, with provenance, deployment stage, and outcome verification recorded |
 
 `ready` means that the case documentation is ready for practice. It does not mean that organizational adoption, operating outcomes, or productivity, cost, and revenue effects were verified.
 
-## Verify it with one command
+The 16-record VOC demo implements some functionality within P1. It is not evidence of passing [P1](projects/01-safe-assistant.md)'s minimum 20 evaluation cases, rule/model comparison, and independent review with new inputs. A case's current P label identifies a stage with implemented functionality; full exit-criteria completion must be checked separately.
 
-```bash
-git clone https://github.com/woogi-kang/ax-engineer-roadmap.git
-cd ax-engineer-roadmap
-npm run verify
-```
-
-This installs dependencies and Chromium, then runs the documentation, case, security-audit, Python-reproduction, site-rendering, browser-accessibility, and Pages-export checks in the same order as CI. `"verified": true` in the Python step confirms that the synthetic input, code, and committed outputs match.
-
-- [Find a starting point by role and readiness](https://woogi-kang.github.io/ax-engineer-roadmap/en/)
-- [Compare all 15 workflow cases](case-studies/README.md)
-- [Explore 25 public AX cases](research/public-ax-cases.md)
-
-## Interactive roadmap and quick start
-
-[**Find your starting point in the interactive roadmap →**](https://woogi-kang.github.io/ax-engineer-roadmap/en/)
+## Find your starting point
 
 1. Review the [role model](roadmap/role-model.md) to understand the decisions and boundaries owned by an AX Engineer.
 2. Use the [organization readiness diagnostic](start-here/organization-readiness.md) to place the workflow in a file-and-message, SaaS, or internal-system context.
 3. Choose one applied case below where you can access the data and a safe test environment.
 
-[Browse the Markdown guide](start-here/README.md) · [Run the site locally](../site/README.md)
+[Browse the Markdown guide](start-here/README.md)
 
 ## What work can you transform with AX?
 
 Start with one case in a work area you already know. Open a case to see its systems of record, human approvals, external impact, and recovery path.
 
-| Work area | Case | Starting condition | Designed target boundary |
+| Work area | Case | Starting condition | Target execution scope |
 |---|---|---|---|
 | Customer and revenue | [Synthetic VOC issues → improvement proposals](case-studies/beauty-d2c-voc/README.md) | Synthetic VOC | Approved sandbox write |
 | Customer and revenue | [Public petitions → cited drafts and clusters](case-studies/public-service-petition-response/README.md) | Synthetic petitions and policy | Draft only |
-| People and collaboration | [Slack meetings → action items](case-studies/slack-meeting-actions/README.md) | SaaS sandboxes | Write after approval |
+| People and collaboration | [Identifying follow-up actions for approval from Slack meeting records](case-studies/slack-meeting-actions/README.md) | SaaS sandboxes | Write after approval |
 | People and collaboration | [Joiner, mover, and leaver access](case-studies/employee-lifecycle-access/README.md) | HR and identity sandboxes | Role-based approval |
 | Finance and procurement | [Card transactions and receipts → journal-entry drafts](case-studies/corporate-card-expense/README.md) | Synthetic transactions and evidence | Draft only |
 | Finance and procurement | [Electronic tax invoice issuance and payment reconciliation](case-studies/electronic-tax-invoice-reconciliation/README.md) | Accounting and ERP sandbox | Approved test issuance |
@@ -83,12 +66,12 @@ Start with one case in a work area you already know. Open a case to see its syst
 | Data and operations | [Equipment anomaly → maintenance proposal](case-studies/equipment-anomaly-maintenance/README.md) | Synthetic sensors and CMMS sandbox | Record approved proposal |
 | Data and operations | [Care conversation → record and risk escalation](case-studies/care-conversation-record/README.md) | Fictional conversations and record sandbox | Draft and human escalation |
 | Data and operations | [Evidence → source-linked regulated document](case-studies/regulated-evidence-document/README.md) | Synthetic contract and research material | Draft only |
-| Shared operations | [Mail classification and response drafts](case-studies/centralized-mail-assist/README.md) | Mail sandbox | Approval before sending |
-| Shared operations | [Multi-workflow agent operations](case-studies/company-agent-operating-layer/README.md) | Second workflow and internal APIs | Bounded by workflow |
+| Shared operations | [Shared mail assistance across workflows](case-studies/centralized-mail-assist/README.md) | Mail sandbox | Approval before sending |
+| Shared operations | [Shared agent operations foundation](case-studies/company-agent-operating-layer/README.md) | Second workflow and internal APIs | Bounded by workflow |
 
-The last column describes the **maximum boundary designed for practice**, not the currently implemented action. The Beauty/D2C case includes a reproducible synthetic VOC pipeline and evaluation results; all remaining cases are design blueprints. Compare current and target boundaries, readiness, risk, P1–P5, and evidence in the [full case catalog](case-studies/README.md).
+The last column describes the **maximum execution scope designed for practice**, not the currently implemented action. The Beauty/D2C case includes a reproducible synthetic VOC pipeline and evaluation results; all remaining cases are pre-implementation design documents. Compare current and target scope, readiness, risk, P1–P5, and evidence in the [full case catalog](case-studies/README.md).
 
-To explore a broader set of workflow candidates from other organizations, use the [public AX case catalog](research/public-ax-cases.md). The [public case application map](research/public-case-application-map.md) shows how all 25 public sources reinforce 10 existing practices and shape five new ones. External reports are reference material, not independently verified operating outcomes.
+To explore a broader set of workflow candidates from other organizations, use the [public AX case catalog](research/public-ax-cases.md). The [public case-to-practice matrix](research/public-case-application-map.md) shows where questions and controls from all 25 public cases inform 10 existing practices and five new ones. External reports are reference material, not independently verified operating outcomes.
 
 Here, **AX Hub** means a thin work hub where reviewers can trace scattered files and CSVs to their source, owner, and review state. Do not infer a named company's internal diagnosis, live adoption, or productivity, cost, or revenue improvement from a case title.
 
@@ -108,8 +91,10 @@ flowchart LR
 2. [Eight-stage AX transformation](delivery-lifecycle/README.md): move one workflow from discovery and redesign into operations.
 3. [Technical foundations for AX Engineers](technical-foundations/README.md): learn software, LLMs, agents, evaluation, operations, and security.
 4. [Practice projects](projects/README.md): progress from a safe assistant to reuse in a second workflow.
-5. [Applied AX cases](case-studies/README.md): choose a case by readiness and risk, then practice P1–P5 as one flow.
+5. [Applied AX cases](case-studies/README.md): choose a case by readiness and risk, then practice the P stages that it covers. Verify other stages in separate exercises.
 6. [Operations and organizational scale](organization-maturity/README.md): assess whether the organization can repeat the same operating capability across workflows.
+
+Select P3 [UI integration](toolkit/ui-integration-checklist.md) and P5 [skill reuse](toolkit/reusable-skill-card.md) when the workflow justifies them. The [standards and proposals review list](research/standards-watchlist.md) separates plans from actual support. These optional exercises do not claim completed implementations.
 
 ## Eight-stage AX workflow transformation
 
@@ -140,19 +125,19 @@ Proficiency is based on delivery and operating responsibility rather than tenure
 
 - **Foundation**: structure a workflow and validate a bounded prototype.
 - **Builder**: deploy one workflow into a real operating environment.
-- **Operator**: manage quality, cost, incidents, authority, and adoption over time.
+- **Operator**: manage quality, cost, incidents, and authority, and verify that users continue following the new procedure.
 - **Lead**: turn patterns repeated across workflows into shared organizational capability.
 
-[Competency map](roadmap/competency-map.md) · [Proficiency levels](roadmap/proficiency-levels.md)
+[Competency framework](roadmap/competency-map.md) · [Proficiency levels](roadmap/proficiency-levels.md)
 
 ## Where to start
 
 ### Practicing or aspiring AX Engineer
 
-1. Review the [role model](roadmap/role-model.md) and its responsibility boundaries.
+1. Review the [role model](roadmap/role-model.md), then choose the first deliverable and review conditions in [entry routes by prior experience](learning-paths/entry-routes.md).
 2. Use the [organization readiness diagnostic](start-here/organization-readiness.md) to bound the first workflow.
 3. Find gaps in the [technical foundations](technical-foundations/README.md).
-4. Use the [12-week practice path](learning-paths/12-week-practice.md) to deploy one workflow and test reuse in a second.
+4. Choose the organization or public-simulation setting in the [12-week practice path](learning-paths/12-week-practice.md) to test one workflow's operating conditions and reuse in a second.
 
 ### Business, leadership, data, security, and operations partners
 
@@ -199,7 +184,9 @@ The roadmap does not treat Korean companies as one culture. Readers elsewhere ca
 
 ## Role signals from public job material
 
-`AX Engineer` is not yet a standardized title. Korean job material checked on 2026-07-31 combined workflow analysis, AI, data and cloud implementation, existing-system integration, evaluation, operations, security, and internal adoption in different ways. The change-prone source postings and evidence bounds are maintained in the [public AX Engineer role review](research/ax-engineer-role-review.md).
+`AX Engineer` is not yet a standardized title. Official hiring and education material was reviewed on 2026-10-26 against the 2026-07-23 role-review baseline. Other job titles also include workflow integration, evaluation, approval, operations, and handoff. The [public AX Engineer role review](research/ax-engineer-role-review.md) distinguishes current listings, ended listings, and material without verified publication dates. This sample does not establish hiring growth or average compensation.
+
+The document update covers the MCP baseline, stopping and resuming long-running work, authority revocation, actual system outcome evaluation, and cost per completed workflow. Expanded instructions do not expand the published implementation: one reproducible simulation and 14 design documents remain. Follow-up and corrected claims were recorded for K04, K05, K07, K08, K09, G02, G07, G08, and G10. This compares metrics, units, and deployment stages in the reviewed sources; it does not reverify the current operations of all 25 external cases.
 
 ## Contributing
 
@@ -208,7 +195,7 @@ The [public AX case catalog](research/public-ax-cases.md) compares 25 Korean and
 - Propose outdated or incorrect material through a `Source update` issue.
 - Open a `Roadmap gap` issue for missing competencies or stages.
 - Submit de-identified cases through a `Case study proposal`.
-- Follow the [contribution guide](CONTRIBUTING.md) and [source policy](research/source-policy.md).
+- Follow the [contribution guide](CONTRIBUTING.md), including its local validation steps, and the [source policy](research/source-policy.md).
 
 [Support](SUPPORT.md) · [Security](SECURITY.md) · [Governance](GOVERNANCE.md) · [Code of Conduct](CODE_OF_CONDUCT.md) · [Changelog](CHANGELOG.md) · [Citation](../CITATION.cff)
 
@@ -218,9 +205,9 @@ This project began with a product engineer's need to make the gap between buildi
 
 ## Status and license
 
-- Latest published release: `v0.3.0`
+- Recorded published release: `v0.3.0`
 - Next release candidate: `v0.4.0`
-- Reference date: `2026-08-01`
-- Status: `v0.4.0` release candidate. Local changes are not on the public site until they reach `main` and the Pages deployment finishes.
+- Document review date: `2026-10-26` (source verification dates and observation periods are recorded separately in the research documents)
+- Status: `v0.4.0` release candidate. Local changes are not in the public repository until they reach `main`.
 - Scope: reusable AX principles plus conditions to verify in Korean organizations
 - License: [MIT](../LICENSE)

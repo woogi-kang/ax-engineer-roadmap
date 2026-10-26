@@ -3,15 +3,19 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Draft only | A1-A2 | P1, P2, P3 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: G11's OCR, sensitive-data, source-document, and expert-approval pattern informs evidence extraction and accounting review through the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies G11's OCR omissions and sensitive-data handling to receipt extraction checks and restricted storage. Source references and expert approval become conditions for the accountant's entry review.
 
 Collecting card transactions and receipts is relatively easy to automate. The harder work is deciding which evidence is missing, which expense conflicts with company policy, and who confirms the account and cost allocation.
 
@@ -86,7 +90,7 @@ Collect card transactions and expense requests
 
 ## 8. Deliverables and limits
 
-Deliverables are synthetic transactions and receipts, extraction and matching evaluations, a policy-exception queue, approval records, entry drafts, and recovery records.
+Planned deliverables are synthetic transactions and receipts, extraction and matching evaluations, a policy-exception queue, approval records, entry drafts, and recovery records.
 
 Expense policy and accounting and tax treatment differ by organization. The case does not prescribe a correct account or deduction rule and makes no claim about close time or expense leakage.
 

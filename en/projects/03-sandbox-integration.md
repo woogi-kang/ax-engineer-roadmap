@@ -2,7 +2,7 @@
 
 ## Goal
 
-Connect to test systems and validate read, write, permissions, duplicates, partial failure, and recovery without affecting customers, money, or live data.
+Integrate with test systems and validate read, write, permissions, duplicates, partial failure, and recovery without affecting customers, money, or live data.
 
 ## Suggested setups
 
@@ -32,6 +32,30 @@ Approved request
 6. Restore prior state and execute manual fallback.
 7. Have an operator diagnose from records without the implementer.
 
+## Test changing state and permissions
+
+| Situation | Expected behavior | Evidence |
+|---|---|---|
+| Restart during approval wait or execution | Resume persisted state without repeating completed external actions | Run IDs and external action IDs before and after restart |
+| Lose the response after an external action succeeds | Inspect the system of record before deciding whether to retry | Readback result and deduplication record |
+| Succeed in only some actions | Separate succeeded, failed, and unstarted actions and decide how to handle the remainder | Per-step status and compensation or handoff record |
+| Revoke service permissions after approval | Decide using current permissions and block remaining changes | Revocation and blocking timestamps |
+| Request cancellation during execution | Block new actions and inspect actions already in flight | Cancellation request, in-flight work, and completion, compensation, or handoff results |
+
+Do not label an external action as cancelled when it cannot be cancelled. Hand off its actual state and required follow-up. Passing requires an operator to read these records and recover from the same failure without help from the implementer.
+
+## UI practice for workflows without an API
+
+If an official API or MCP tool cannot perform the required action, record the selection rationale and owner-permitted scope in the [UI integration checklist](../toolkit/ui-integration-checklist.md). Use synthetic data in an existing test system. Without a test environment, review failure scenarios and decisions on paper and do not claim a verified integration.
+
+1. Verify the test account, organization, target ID, and state before the change.
+2. Freeze the content, recipients, target, permitted action, and request version, then link them to approval.
+3. Act within that scope and verify persisted results and processing history in the source system.
+4. Test login expiry, UI changes, incorrect targets, malicious instructions, duplicate submission, partial success, and reconnection from the checklist separately.
+5. Exercise cancellation, recovery, and handoff, then have an operator other than the implementer review the masked evidence.
+
+A successful click or completion message is insufficient for a pass. Hold when the target or result is uncertain, and stop automation at human-handled steps such as CAPTCHA, 2FA, or signatures. These are additional practice instructions; they do not establish implemented UI automation in any existing case.
+
 ## By role
 
 - Business practitioner: business meaning of partial success and manual priority
@@ -59,11 +83,11 @@ Approved request
 
 ## Stop conditions
 
-- Test and production boundaries are unclear.
+- Test and production accounts are not separated.
 - Action is marked successful without result confirmation.
 - Rollback overwrites valid changes.
 - Missing and duplicate actions cannot be found from records.
 
 ## Before moving on
 
-Have workflow owners and users agreed on scope, SLOs, incidents, and the old procedure? Then consider a [Production Pilot](04-production-pilot.md).
+After passing P3, consider an [organizational P4 pilot](04-production-pilot.md) if workflow owners and users have agreed on scope, SLOs, incidents, and the old procedure. Without organizational conditions, use the public-simulation requirements in that document. Without test-execution evidence, defer verification of the next stage and retain design work only.

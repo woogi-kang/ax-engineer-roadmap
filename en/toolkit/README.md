@@ -10,12 +10,16 @@ These templates help AX Engineers and their collaborators check decisions, owner
 - [Experiment card](experiment-card.md)
 - [Evidence ledger](evidence-ledger.md)
 - [Case-study template](case-study-template.md)
+- [Reusable skill card](reusable-skill-card.md)
+- [UI integration checklist](ui-integration-checklist.md)
 - [Applied AX case catalog](../case-studies/README.md)
 
 ## Usage principles
 
+Record the cost scope in the candidate scorecard, then calculate cost per completed workflow that passed review in the experiment card. Separate publication date from observation period in the evidence ledger. Use the execution rules to distinguish approval waits, authority revocation, cancellation requests, and confirmed stops.
+
 - Scale each template down to the workflow's risk and size.
-- Leave unknown values as `UNKNOWN` instead of inventing estimates.
+- Mark unverified facts as `UNKNOWN`. Label planning estimates separately with assumptions and calculation evidence, and do not mix them with measurements.
 - Link to the source instead of copying the same information into multiple documents.
 - Name a role or owner for approval and accountability instead of writing only “human.”
 - When reality differs from the template, preserve the actual decision record.

@@ -1,5 +1,5 @@
-name: 사이트·저장소 오류 / Site or repository bug
-description: 재현 가능한 사이트, 접근성, 검사 또는 개발 환경 문제를 알려 주세요. / Report a reproducible site, accessibility, validation, or setup issue.
+name: 저장소·실습 오류 / Repository or practice bug
+description: 재현 가능한 문서, 실습, 검사 또는 개발 환경 문제를 알려 주세요. / Report a reproducible documentation, practice, validation, or setup issue.
 title: "[Bug] "
 labels: ["bug"]
 body:
@@ -13,7 +13,7 @@ body:
     attributes:
       label: 영향 영역 / Area
       options:
-        - 인터랙티브 사이트 / Interactive site
+        - 실습 코드·산출물 / Practice code or artifacts
         - Markdown 문서 / Markdown documentation
         - 검사·CI / Validation or CI
         - 로컬 개발 환경 / Local development setup
@@ -37,7 +37,7 @@ body:
     id: reproduction
     attributes:
       label: 재현 방법 / Reproduction
-      description: URL, 명령, 브라우저·Node·Python 버전과 최소 재현 순서를 적어 주세요. / Include the URL, command, environment, and minimal steps.
+      description: 파일 경로, 명령, Node·Python 버전과 최소 재현 순서를 적어 주세요. / Include the URL, command, environment, and minimal steps.
     validations:
       required: true
   - type: checkboxes

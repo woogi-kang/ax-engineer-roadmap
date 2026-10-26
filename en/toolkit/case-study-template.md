@@ -5,8 +5,9 @@
 Create `case.json` in the case directory and follow [`case.schema.json`](../../case-studies/_schema/case.schema.json).
 
 - Case ID and Korean and English titles:
-- Scope type: workflow / shared integration / organizational capstone
+- Scope type: workflow / shared capability / organization-wide practice
 - Primary work domain, industry, and difficulty:
+- Core competencies and prerequisite practice cases:
 - Documentation status and current evidence stage:
 - Organization readiness and risk:
 - Entry channels and connected systems:

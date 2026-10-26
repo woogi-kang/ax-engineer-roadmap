@@ -3,15 +3,15 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A1-A2 | P1 |
 | Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P5 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: K04 agent review and G07 editorial approval and edit-rate questions are mapped into this case through the [application map](../../research/public-case-application-map.md).
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies K04's agent review to the manual review queue and owner approval. G07's editorial approval and edit-rate measures inform proposal approval and reviewer-effort evaluation.
 
 ## Case type
 
@@ -23,13 +23,13 @@ This case now includes a reproducible pipeline that processes 16 synthetic VOC r
 
 ![Beauty/D2C synthetic VOC pipeline dashboard](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.png)
 
-The current run produced 5 ready records, 7 manual-review records, 2 invalid records, 1 duplicate, and 1 spam record. It generated four proposal artifacts with source identifiers and no external write. All 16 expected status, topic, and safety outcomes matched, with a 100% traceability rate.
+The current run produced 5 ready records, 7 manual-review records, 2 invalid records, 1 duplicate, and 1 spam record. It generated four proposal artifacts with source identifiers and no external write. All 16 expected status, topic, and safety outcomes matched, with nonempty `evidence_ref` values on 100% of processed records (16/16).
 
-[Runbook](../../../case-studies/beauty-d2c-voc/RUNBOOK.md) · [Evaluation report](../../../case-studies/beauty-d2c-voc/artifacts/evaluation-report.md) · [Dashboard HTML](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.html) · [Run manifest](../../../case-studies/beauty-d2c-voc/artifacts/run-manifest.json)
+[Runbook](RUNBOOK.md) · [Evaluation report](../../../case-studies/beauty-d2c-voc/artifacts/evaluation-report.md) · [Dashboard HTML](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.html) · [Run manifest](../../../case-studies/beauty-d2c-voc/artifacts/run-manifest.json)
 
-These numbers verify the code path on a synthetic evaluation set. They do not measure real VOC distribution, production classification quality, workflow adoption, or business outcomes.
+These numbers verify the code path on a synthetic evaluation set. They do not measure real VOC distribution, production classification quality, workflow adoption, or business outcomes. `traceability_rate` measures nonempty `evidence_ref` presence; it does not test source-link reachability or evidence correctness.
 
-The demonstrated boundary is `current_autonomy=A1-A2`, `current_write_impact=none`, and `implemented_project_stages=[1]`. A3 sandbox writes and P2, P3, and P5 are designed next steps, not implemented evidence.
+The demonstrated boundary is `current_autonomy=A1-A2`, `current_write_impact=none`, and `implemented_project_stages=[1]`. `[1]` identifies some P1 functionality, not a complete stage pass. Reproducing the 16-record set does not establish P1's minimum 20 evaluation cases and independent review on new inputs. Preserve this set and add separate evaluation. A3 sandbox writes and P2, P3, and P5 remain unimplemented design targets.
 
 ## Problem hypothesis
 
@@ -50,7 +50,7 @@ This hypothesis does not imply improvements in time, quality, or revenue for a r
 | Customer support and operations | Complaints and exception flows | Confirm response and operating impact |
 | Process owner | Approvable proposal with cost and risk | Decide execution or stop |
 
-## In scope
+## Designed end-to-end flow
 
 ```text
 Load the synthetic VOC fixture
@@ -63,7 +63,7 @@ Load the synthetic VOC fixture
 → Record execution status and outcomes
 ```
 
-The current code stops at `Generate an action proposal`. Human approval and internal task creation would change another system, so the published output records `requires_human_approval=true` and `action_boundary=proposal_only` instead.
+The current code validates and classifies synthetic inputs and generates review queues and proposals. It does not implement the practitioner evidence check or approval shown above and creates no internal task. `requires_human_approval=true` and `action_boundary=proposal_only` describe the proposal boundary; they are not records of actual approval or review.
 
 ## Initially out of scope
 
@@ -78,14 +78,14 @@ The current code stops at `Generate an action proposal`. Human approval and inte
 | Field | Meaning | Required | Quality check |
 |---|---|---:|---|
 | `source_id` | Original review or inquiry identifier | Yes | Duplicate check |
-| `source_type` | Synthetic or other allowed input provenance | Yes | Allowed collection path |
-| `source_url` | Source location or synthetic fixture URL | Yes | HTTPS and `source_type` consistency |
+| `source_type` | Input provenance | Yes | Current code accepts only `synthetic` |
+| `source_url` | Source location or synthetic fixture URL | Yes | Current code checks only the `https://` prefix |
 | `captured_at` | Collection time | Yes | Time zone |
 | `published_at` | Original publication time | Optional | Missingness distinguished |
 | `market` | Country or market | Yes | Standardized code |
 | `channel` | Review or inquiry channel | Yes | Allowed values |
 | `product_id` | Product identifier | Optional | Mapping evidence |
-| `language` | Original language | Yes | Detection confidence |
+| `language` | Original language | Yes | Allowed-code check; automatic language detection is not implemented |
 | `text_original` | Original text | Yes | Empty or truncated values |
 | `text_normalized` | Normalized analysis text | Optional | Transformation version |
 | `topic` | Topic classification | Optional | Model and rule version |
@@ -107,7 +107,7 @@ The deterministic baseline validates input, normalizes text while preserving the
 
 ### Input
 
-- Public VOC that passes the data contract
+- Current implementation: synthetic VOC that passes the contract. Real public VOC is an extension requiring separate collection and review
 - Analysis period, market, channel, and product scope
 - Topic, severity, and opportunity criteria
 
@@ -184,6 +184,18 @@ python3 -m unittest discover \
 - Record correction burden, trust, and workflow completion.
 - Decide which contracts to reuse and which abstractions to discard.
 
+## Exit criteria for the next extension
+
+These criteria apply when extending the exercise to P2 and P3. The published code implements some rule-based P1 functionality; model calls, approval, and writes to a workflow system are not implemented.
+
+1. Preserve the 16 synthetic records and their expected results. Evaluate any added model in a separate run against the rule-based baseline, recording model, API, SDK, prompt, and evaluation-set versions. These 16 records alone do not establish generalization quality.
+2. Restore initial state between repeated quality trials and compare topics, safety signals, source links, and review time on the same inputs. Record retained state and starting conditions separately for duplicate and reconnection tests. Do not supply evaluation answers to the model or change the baseline answers to match its output.
+3. Block execution if a proposal changes while awaiting approval or the approver's authority is revoked. Record the approved version and execution identifier.
+4. Disconnect immediately after saving in a test task system, then reconnect. Check whether the same task already exists before retrying. Evaluate the proposal's completion message separately from the saved system state.
+5. Calculate [cost per completed workflow](../../toolkit/experiment-card.md), including failures, retries, review, and rework. If there are no completions, leave unit cost unavailable and record failure costs and the reason to hold.
+
+Use the [K04 follow-up evidence](../../research/public-ax-cases.md) to decide what work reviewers will take on when repetitive checking decreases. Record review time, correction reasons, holds, rejections, and handoffs in this exercise. Do not transfer the external contact center's outcome figures into an expected benefit for this VOC exercise.
+
 ## Published artifacts
 
 - [Synthetic input and collection boundary](../../../case-studies/beauty-d2c-voc/data/input/voc-sample.jsonl)
@@ -193,7 +205,7 @@ python3 -m unittest discover \
 - [Manual review queue](../../../case-studies/beauty-d2c-voc/artifacts/review-queue.json)
 - [Source-linked workflow proposals](../../../case-studies/beauty-d2c-voc/artifacts/workflow-proposals.json)
 - [Evaluation report](../../../case-studies/beauty-d2c-voc/artifacts/evaluation-report.md)
-- [Run and recovery instructions](../../../case-studies/beauty-d2c-voc/RUNBOOK.md)
+- [Run and recovery instructions](RUNBOOK.md)
 - [Result dashboard](../../../case-studies/beauty-d2c-voc/artifacts/dashboard.html)
 - [Hashes separating generated outputs from the manual preview asset](../../../case-studies/beauty-d2c-voc/artifacts/run-manifest.json)
 

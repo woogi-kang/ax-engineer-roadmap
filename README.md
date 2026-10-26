@@ -7,15 +7,12 @@
 [![Candidate: v0.4.0](https://img.shields.io/badge/Candidate-v0.4.0-7c3aed.svg)](CHANGELOG.md)
 [![Validate roadmap](https://github.com/woogi-kang/ax-engineer-roadmap/actions/workflows/validate.yml/badge.svg)](https://github.com/woogi-kang/ax-engineer-roadmap/actions/workflows/validate.yml)
 [![CodeQL](https://github.com/woogi-kang/ax-engineer-roadmap/actions/workflows/codeql.yml/badge.svg)](https://github.com/woogi-kang/ax-engineer-roadmap/actions/workflows/codeql.yml)
-[![Live roadmap](https://img.shields.io/badge/Live-GitHub%20Pages-aa3524.svg)](https://woogi-kang.github.io/ax-engineer-roadmap/)
 
 [한국어](README.md) | [English](en/README.md)
 
-**AX Engineer**는 자동화하거나 AI로 보조할 업무를 찾고, 사람이 판단할 지점을 남겨 흐름을 다시 설계한 뒤, AI를 기존 데이터·시스템·권한 구조에 연결해 실제 운영까지 책임지는 엔지니어다.
+**AX Engineer**는 자동화하거나 AI로 보조할 업무를 찾고, 사람이 판단할 지점을 남겨 흐름을 다시 설계한 뒤, AI가 허용된 권한 안에서 기존 데이터와 시스템을 사용하도록 구현하고 실제 운영까지 책임지는 엔지니어다.
 
 이 저장소에서 **AX**는 조직의 업무 흐름을 AI로 다시 설계하고 운영 방식까지 바꾸는 **AI Transformation**을 뜻한다. 업계 전체에서 하나로 합의된 약어라고 전제하지 않는다.
-
-이 저장소는 업무 선택과 재설계부터 배포·현업 적용·복구, 두 번째 업무에서의 재사용까지 순서대로 다룬다. 한국 조직에서 자주 마주치는 결재·권한·규제와 업무 기록·시스템 연동 조건도 함께 살핀다.
 
 > AX 엔지니어의 일은 데모가 동작할 때 끝나지 않는다.
 >
@@ -23,8 +20,8 @@
 
 ## 이 로드맵에서 다루는 것
 
-- **업무 전환 순서**: 문제와 경계 설정부터 업무 재설계, 데이터 연결, 통제, 배포, 현업 적용, 확장까지 8단계로 다룬다.
-- **구현과 운영 기준**: 소프트웨어·LLM·평가·보안 역량을 실제 결과물, 승인, 기록, 복구 기준과 연결한다.
+- **업무 전환 순서**: 문제와 자동화 범위를 정하고 업무를 다시 설계한 뒤, 필요한 데이터를 준비해 통제·배포·현업 적용·확장까지 8단계로 진행한다.
+- **구현과 운영 기준**: 각 역량을 어떤 결과물로 입증하고, 승인·기록·복구를 어떻게 운영할지 제시한다.
 - **업무별 적용 사례**: 공통 업무와 6개 산업 맥락의 15개 사례에서 원본 시스템과 실행 범위를 비교한다.
 - **외부 공개 사례 카탈로그**: 국내 10개, 해외 15개 사례에서 실제 업무 흐름, 사람의 판단 지점, 공개 성과와 근거 한계를 비교한다.
 - **역할별 시작점**: 현직 AX 엔지니어와 준비하는 사람, 현업 실무자, 리더, 데이터·보안·운영 담당자가 결정하거나 확인할 내용을 구분한다.
@@ -34,45 +31,31 @@
 | 자산 | 수량 | 공개 근거의 의미 |
 |---|---:|---|
 | 업무별 사례 | 15개 | 모두 문서·메타데이터 검사를 통과한 실습 설계 |
-| 재현 가능한 공개 시뮬레이션 | 1개 | 합성 VOC 16건을 처리하는 코드·평가·runbook·해시 manifest를 깨끗한 디렉터리에서 재검증 |
-| 실행 설계 | 14개 | 원본 시스템·승인·실패·복구를 설계했지만 실행 코드나 조직 운영 성과는 아직 없음 |
-| 외부 공개 사례 | 국내 10개·해외 15개 | 공개 원문 26개를 출처·도입 단계·성과 검증의 세 축으로 분리 |
+| 재현 가능한 공개 시뮬레이션 | 1개 | 합성 VOC 16건을 처리하는 코드·평가·실행 안내서·해시 목록을 빈 작업 디렉터리에서 다시 검증 |
+| 실행 전 설계 문서 | 14개 | 원본 시스템·승인·실패·복구를 설계했지만 실행 코드나 조직 운영 성과는 아직 없음 |
+| 외부 공개 사례 | 국내 10개·해외 15개 | 기존 원문 26개와 후속 근거 3개를 구분하고 출처·도입 단계·성과 검증을 기록 |
 
 `ready`는 사례 문서가 실습에 사용할 수 있다는 뜻이다. 조직의 실제 도입, 운영 성과, 생산성·비용·매출 효과를 검증했다는 뜻이 아니다.
 
-## 한 명령으로 검증하기
+VOC 16건 데모는 P1에 해당하는 일부 기능을 구현한 예다. [P1](projects/01-safe-assistant.md)의 최소 20개 평가, 규칙·모델 비교와 새 입력 독립 검수까지 통과한 사례로 보지 않는다. 사례의 현재 P 표시는 구현이 있는 단계를 가리키며 전체 통과 여부는 별도로 확인한다.
 
-```bash
-git clone https://github.com/woogi-kang/ax-engineer-roadmap.git
-cd ax-engineer-roadmap
-npm run verify
-```
-
-이 명령은 의존성과 Chromium을 설치한 뒤 문서·사례·보안 감사·Python 재현·사이트 렌더링·브라우저 접근성·Pages export를 CI와 같은 순서로 검사한다. Python 재현 단계의 `"verified": true`는 합성 입력·코드·커밋 산출물이 일치한다는 뜻이다.
-
-- [내 역할과 조직 준비 상태로 시작점 찾기](https://woogi-kang.github.io/ax-engineer-roadmap/)
-- [업무별 사례 15개 비교하기](case-studies/README.md)
-- [국내외 공개 AX 사례 25개 살펴보기](research/public-ax-cases.md)
-
-## 인터랙티브 로드맵으로 시작하기
-
-[**인터랙티브 로드맵에서 시작점 찾기 →**](https://woogi-kang.github.io/ax-engineer-roadmap/)
+## 내 시작점 찾기
 
 1. [역할과 책임 범위](roadmap/role-model.md)에서 AX Engineer가 맡는 결정과 경계를 확인한다.
 2. [조직 준비도 진단](start-here/organization-readiness.md)에서 현재 업무가 파일·메신저, SaaS, 사내 시스템 중 어디까지 준비됐는지 확인한다.
 3. 아래 업무별 적용 사례에서 접근 가능한 데이터와 테스트 환경이 있는 사례를 하나 고른다.
 
-[Markdown 시작 안내](start-here/README.md) · [사이트 실행 안내](site/README.md)
+[Markdown 시작 안내](start-here/README.md)
 
 ## 어떤 업무부터 자동화하거나 보조할까
 
 익숙한 업무에서 사례 하나를 골라 시작한다. 사례 이름을 누르면 원본 시스템, 담당자 승인, 외부 시스템에 미치는 영향, 실패했을 때 복구하는 방법을 확인할 수 있다.
 
-| 업무 영역 | 사례 | 시작 조건 | 설계 목표 경계 |
+| 업무 영역 | 사례 | 시작 조건 | 목표 실행 범위 |
 |---|---|---|---|
-| 고객·매출 | [합성 VOC 반복 문제 → 개선 업무 제안](case-studies/beauty-d2c-voc/README.md) | 합성 VOC | 승인 후 샌드박스 쓰기 |
+| 고객·매출 | [합성 VOC 반복 문제 → 개선 업무 제안](case-studies/beauty-d2c-voc/README.md) | 합성 VOC | 승인 후 샌드박스에 쓰기 |
 | 고객·매출 | [공공 민원 → 근거 답변·중복 묶음](case-studies/public-service-petition-response/README.md) | 합성 민원·정책 | 초안 전용 |
-| 사람·협업 | [Slack 회의 → 실행 항목](case-studies/slack-meeting-actions/README.md) | SaaS 샌드박스 | 승인 후 기록 |
+| 사람·협업 | [Slack 회의 기록에서 승인할 후속 업무 찾기](case-studies/slack-meeting-actions/README.md) | SaaS 샌드박스 | 승인 후 기록 |
 | 사람·협업 | [입사·이동·퇴사 계정·권한 관리](case-studies/employee-lifecycle-access/README.md) | HR·계정 샌드박스 | 역할별 승인 후 반영 |
 | 재무·구매 | [법인카드 거래·영수증 → 전표 초안](case-studies/corporate-card-expense/README.md) | 합성 거래·증빙 | 초안 전용 |
 | 재무·구매 | [전자세금계산서 발행·입금 대사](case-studies/electronic-tax-invoice-reconciliation/README.md) | 회계·ERP 샌드박스 | 승인 후 테스트 발행 |
@@ -83,12 +66,14 @@ npm run verify
 | 데이터·운영 | [설비 이상 → 정비 제안](case-studies/equipment-anomaly-maintenance/README.md) | 합성 센서·CMMS 샌드박스 | 승인 후 제안 기록 |
 | 데이터·운영 | [상담·진료 대화 → 기록·위험 이관](case-studies/care-conversation-record/README.md) | 허구 대화·기록 샌드박스 | 초안·사람 이관 |
 | 데이터·운영 | [근거 자료 → 출처 연결 규제 문서](case-studies/regulated-evidence-document/README.md) | 합성 계약·연구 자료 | 초안 전용 |
-| 공통 운영 | [메일 분류·답변 초안](case-studies/centralized-mail-assist/README.md) | 메일 샌드박스 | 발송 전 승인 |
-| 공통 운영 | [여러 업무 에이전트 운영](case-studies/company-agent-operating-layer/README.md) | 두 번째 업무·사내 API | 업무별로 제한 |
+| 공통 운영 | [여러 업무가 함께 쓰는 메일 보조](case-studies/centralized-mail-assist/README.md) | 메일 샌드박스 | 발송 전 승인 |
+| 공통 운영 | [여러 업무를 위한 에이전트 운영 기반](case-studies/company-agent-operating-layer/README.md) | 두 번째 업무·사내 API | 업무별로 제한 |
 
-위 표의 마지막 열은 현재 구현이 아니라 **사례가 연습하도록 설계한 최대 경계**다. 현재 실행 범위와 목표 범위, 준비 상태, 난이도와 위험, P1~P5는 [전체 사례 비교표](case-studies/README.md)에서 따로 확인할 수 있다.
+위 표의 마지막 열은 현재 구현 범위가 아니라 **사례에서 연습하도록 정한 최대 실행 범위**다. 현재 실행 범위와 목표 범위, 준비 상태, 난이도와 위험, P1~P5는 [전체 사례 비교표](case-studies/README.md)에서 따로 확인할 수 있다.
 
-다른 조직이 공개한 사례에서 더 다양한 업무 후보를 찾고 싶다면 [공개 AX 사례 카탈로그](research/public-ax-cases.md)를 참고한다. [공개 사례 적용 맵](research/public-case-application-map.md)은 25개 공개 근거가 기존 10개와 신규 5개 실습에 어떻게 연결됐는지 보여 준다. 외부 발표는 참고 자료이며, 이 저장소가 해당 조직의 운영 성과를 검증했다는 뜻이 아니다.
+다른 조직이 공개한 사례에서 더 다양한 업무 후보를 찾고 싶다면 [공개 AX 사례 카탈로그](research/public-ax-cases.md)를 참고한다. [공개 사례-실습 연결표](research/public-case-application-map.md)에서는 25개 공개 사례에서 가져온 질문과 통제 방식을 기존 10개 및 신규 5개 실습 중 어디에 반영했는지 확인할 수 있다. 외부 발표는 참고 자료이며, 이 저장소가 해당 조직의 운영 성과를 검증했다는 뜻이 아니다.
+
+**AX Hub**는 흩어진 파일·CSV의 원본, 담당자와 검토 상태를 확인하는 작은 업무 허브를 뜻한다. 사례 제목에서 특정 회사의 내부 진단, 실제 도입이나 시간·비용·매출 개선을 추정하지 않는다.
 
 ## 로드맵 구성
 
@@ -103,11 +88,13 @@ flowchart LR
 ```
 
 1. [시작점 안내](start-here/README.md): 현재 맡은 책임과 업무 준비 상태를 확인한다.
-2. [AX 업무 전환 8단계](delivery-lifecycle/README.md): 자동화하거나 AI로 보조할 업무를 찾고, 사람이 판단할 지점을 남겨 흐름을 다시 설계한 뒤 운영까지 연결한다.
+2. [AX 업무 전환 8단계](delivery-lifecycle/README.md): 자동화하거나 AI로 보조할 업무를 찾고, 사람이 판단할 지점을 남겨 흐름을 다시 설계한 뒤 실제 환경에 배포하고 업무에서 운영한다.
 3. [AX 엔지니어의 기술 역량](technical-foundations/README.md): 소프트웨어·LLM·에이전트·평가·운영·보안을 학습한다.
 4. [실습 프로젝트](projects/README.md): 안전한 보조 도구를 만들고, 두 번째 업무에서 재사용할 부분까지 검증한다.
-5. [업무별 적용 사례](case-studies/README.md): 준비 상태와 위험에 맞는 사례를 골라 P1~P5를 한 흐름으로 연습한다.
+5. [업무별 적용 사례](case-studies/README.md): 준비 상태와 위험에 맞는 사례를 골라 그 사례가 다루는 P단계를 연습한다. 나머지 단계는 별도 실습으로 확인한다.
 6. [운영과 조직 확장](organization-maturity/README.md): 여러 업무에서 같은 운영 능력을 반복할 수 있는지 확인한다.
+
+P3의 [UI 통합](toolkit/ui-integration-checklist.md)과 P5의 [Skills 재사용](toolkit/reusable-skill-card.md)은 업무에 맞을 때 선택한다. [표준과 제안의 검토 목록](research/standards-watchlist.md)에서 계획과 실제 지원을 구분한다. 선택 실습을 문서에 추가한 것이 구현 완료를 뜻하지는 않는다.
 
 ## AX 업무 전환 8단계
 
@@ -138,19 +125,19 @@ flowchart LR
 
 - **Foundation(기초)**: 업무를 구조화하고 제한된 프로토타입을 검증한다.
 - **Builder(구현)**: 한 업무를 실제 운영 환경에 배포한다.
-- **Operator(운영)**: 품질·비용·장애·권한과 현업 정착 상태를 계속 관리한다.
+- **Operator(운영)**: 품질·비용·장애·권한을 관리하고, 사용자가 새 절차를 계속 쓰는지 확인한다.
 - **Lead(확장)**: 여러 업무에서 반복되는 규칙을 찾아 조직의 공통 운영 방식으로 만든다.
 
-[역량 지도](roadmap/competency-map.md) · [숙련도 기준](roadmap/proficiency-levels.md)
+[역량 체계](roadmap/competency-map.md) · [숙련도 기준](roadmap/proficiency-levels.md)
 
 ## 어디서 시작할까
 
 ### AX 엔지니어 또는 이 직무를 준비하는 사람
 
-1. [역할 모델](roadmap/role-model.md)에서 직무의 책임과 경계를 확인한다.
+1. [역할 모델](roadmap/role-model.md)에서 책임과 경계를 확인하고 [경험별 진입 경로](learning-paths/entry-routes.md)에서 첫 결과물과 검수 조건을 고른다.
 2. [조직 준비도 진단](start-here/organization-readiness.md)으로 첫 업무에서 가능한 범위를 정한다.
 3. [기술 역량](technical-foundations/README.md)에서 부족한 영역을 찾는다.
-4. [12주 실습 경로](learning-paths/12-week-practice.md)로 한 업무의 배포와 두 번째 업무의 재사용까지 연결한다.
+4. [12주 실습 경로](learning-paths/12-week-practice.md)에서 조직 실전 또는 공개 시뮬레이션을 선택해 한 업무의 운영 조건과 두 번째 업무의 재사용을 검증한다.
 
 ### 함께 일하는 현업·리더·데이터·보안·운영 담당자
 
@@ -197,7 +184,9 @@ flowchart LR
 
 ## 공개 채용 자료에서 확인한 역할
 
-`AX Engineer`는 아직 업계에서 하나로 굳어진 직함이 아니다. 2026-07-31에 확인한 국내 채용 자료에서는 업무 과제 분석, AI·데이터·클라우드 구현, 기존 시스템 연결, 평가·운영·보안, 사내 확산 책임이 서로 다른 조합으로 나타났다. 시점에 따라 바뀌는 공고 원문과 주장 범위는 [AX Engineer 공개 역할 검토](research/ax-engineer-role-review.md)에서 관리한다.
+`AX Engineer`는 아직 업계에서 하나로 굳어진 직함이 아니다. 2026-07-23 역할 조사를 기준으로 2026-10-26에 공식 채용·교육 자료를 다시 검토했다. AX 외의 직함에서도 업무 통합, 평가, 승인, 운영과 인수인계 책임을 확인했다. 현재 공고, 종료된 공고, 날짜를 확인하지 못한 자료는 [AX Engineer 공개 역할 검토](research/ax-engineer-role-review.md)에서 구분한다. 이 표본으로 채용 증가율이나 평균 연봉을 추정하지 않는다.
+
+이번 문서 보강은 MCP 기준 버전, 장기 작업의 중단·재개, 권한 회수, 실제 시스템 결과 평가와 완료 업무당 비용을 다룬다. 실습 절차가 늘어났어도 공개 구현 범위는 시뮬레이션 1개와 설계 문서 14개로 유지한다. 공개 사례는 K04·K05·K07·K08·K09·G02·G07·G08·G10의 후속·정정 주장을 기록했다. 확인한 원문의 지표·단위·도입 단계를 대조한 것이며 25개 전체의 현재 운영을 다시 검증한 것은 아니다.
 
 ## 기여하기
 
@@ -206,19 +195,19 @@ flowchart LR
 - 잘못되거나 오래된 내용은 `Source update` Issue로 제안한다.
 - 빠진 역량이나 단계를 발견하면 `Roadmap gap` Issue를 연다.
 - 실제 사례는 조직과 개인을 식별할 수 없게 정리한 뒤 `Case study proposal`로 제안한다.
-- 모든 기여는 [기여 안내](CONTRIBUTING.md)와 [출처 정책](research/source-policy.md)을 따른다.
+- 모든 기여는 [기여 안내](CONTRIBUTING.md)를 따르고 안내된 로컬 검증 절차를 거치며, [출처 정책](research/source-policy.md)을 지킨다.
 
 [지원과 질문](SUPPORT.md) · [보안 정책](SECURITY.md) · [프로젝트 운영](GOVERNANCE.md) · [행동강령](CODE_OF_CONDUCT.md) · [변경 기록](CHANGELOG.md) · [인용 정보](CITATION.cff)
 
 ## 이 프로젝트를 만든 이유
 
-이 프로젝트는 제품 엔지니어로 일하며 AI 기능을 만드는 일과 조직의 실제 업무를 바꾸는 일 사이에 남는 간극을 정리하려고 시작했다. 유지관리자 [Woogi](https://github.com/woogi-kang)는 사례 문서와 실행물을 직접 만들고 검증하며, 공개 자료로 확인할 수 없는 조직 성과나 운영 경험은 시뮬레이션과 분리해 표시한다.
+이 프로젝트는 제품 엔지니어로 일하며 AI 기능을 만드는 일과 조직의 실제 업무를 바꾸는 일 사이에 남는 간극을 정리하려고 시작했다. 유지관리자 [Woogi](https://github.com/woogi-kang)는 사례 문서와 실행 가능한 코드·검증 자료를 직접 만들고 검증하며, 공개 자료로 확인할 수 없는 조직 성과나 운영 경험은 시뮬레이션과 분리해 표시한다.
 
 ## 상태와 라이선스
 
-- 최신 공개 릴리스: `v0.3.0`
+- 공개 릴리스 기록: `v0.3.0`
 - 다음 릴리스 후보: `v0.4.0`
-- 기준일: `2026-08-01`
-- 상태: `v0.4.0` 릴리스 준비본. 로컬 변경은 `main`에 반영되고 Pages 배포가 끝나기 전까지 공개 사이트에 나타나지 않는다.
+- 문서 검토일: `2026-10-26` (출처별 확인일과 실제 관측기간은 연구 문서에 별도 기록)
+- 상태: `v0.4.0` 릴리스 준비본. 로컬 변경은 `main`에 반영되기 전까지 공개 저장소에 나타나지 않는다.
 - 적용 범위: 여러 조직에 적용할 AX 원칙과 한국 조직에서 확인할 조건
 - 라이선스: [MIT](LICENSE)

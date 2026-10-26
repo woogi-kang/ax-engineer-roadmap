@@ -8,10 +8,20 @@ Start with the row that best matches your work.
 
 | Decisions you often make | Read first |
 |---|---|
-| Connect systems, implement and evaluate AI, and deploy to production | [AX Engineer execution path](../tracks/ax-builder.md) |
-| Define the problem, accept results, and help colleagues adopt a new procedure | [Business practitioner guide](../tracks/business-practitioner.md) |
+| Integrate AI capabilities with existing systems, evaluate them, and deploy to production | [AX Engineer execution path](../tracks/ax-builder.md) |
+| Define the problem, accept results, and move a new procedure into regular use | [Business practitioner guide](../tracks/business-practitioner.md) |
 | Set priorities and budget and define approval, accountability, and procurement | [Leader and decision-owner guide](../tracks/leader-and-governance.md) |
 | Authorize data use and operate access, privacy, incidents, and audit | [Data, security, and operations guide](../tracks/data-security-operations.md) |
+
+## Separate current responsibility from preparation
+
+The table selects responsibility for the current workflow. If you do not own implementation yet, you do not need to choose an engineering title first. Use the [entry routes by background](../learning-paths/entry-routes.md) to scope the first practice from your current experience.
+
+- With little development experience, start with a P1 capability without external actions and a reproducible evaluation.
+- With development experience, verify P1 evidence, then address gaps in workflow acceptance, approval, and integration. Prior experience does not waive stage completion.
+- Domain experts can own workflow criteria and acceptance for P1/P2. Direct ownership of implementation and deployment additionally requires software fundamentals and evidence of execution and failure handling.
+
+Neither domain knowledge nor personal-account access substitutes for organizational data-use or deployment approval in any route.
 
 ## Roles can overlap
 
@@ -41,7 +51,7 @@ Begin with the [Non-Developer Glossary](non-developer-glossary.md) and [Safe Ass
 
 ## What should developers add?
 
-Existing web, backend, or data experience does not replace workflow discovery, approval ownership, adoption, and retirement of the old process. Read the acceptance and SOP sections of the [Business Practitioner Guide](../tracks/business-practitioner.md) alongside the [AX Engineer Execution Path](../tracks/ax-builder.md).
+Existing web, backend, or data experience does not replace workflow discovery, approval ownership, production use, and retirement of the old process. Read the acceptance and SOP sections of the [Business Practitioner Guide](../tracks/business-practitioner.md) alongside the [AX Engineer Execution Path](../tracks/ax-builder.md).
 
 ## What should leaders produce?
 

@@ -31,9 +31,37 @@ If not, prefer fixed workflows, retrieval and classification, or draft and appro
 
 Use them only when separation clarifies ownership and evaluation. Avoid assigning names to duplicate model calls or creating a graph that obscures root causes.
 
+Define each subagent's input, result format, tools, time, and cost limit. The parent reviews missing, conflicting, and failed results and remains accountable for the final outcome. Delegation does not widen human-approved authority.
+
+### Long-running work and resumption
+
+Persist the task identifier, current state, and last verified external result. Map this practice-state table to the actual states of the chosen API.
+
+| State | What to persist or verify |
+|---|---|
+| Working | Execution step, external job ID, remaining time and cost |
+| Input required | Question or approval target, response deadline, resumption conditions |
+| Completed | Final source-system state and acceptance result |
+| Failed | Successful partial work, cause, retry and manual scope |
+| Cancelled | Confirmed stop and external changes already made |
+
+Record cancellation requests separately. An acknowledgment alone does not establish a cancelled task. MCP Tasks also uses cooperative cancellation and does not guarantee that work stops. [Tasks](https://modelcontextprotocol.io/extensions/tasks/overview) (moved to an official extension on 2026-07-28; checked 2026-10-26).
+
+After reconnection, query status using the persisted task ID. Recheck approval if the target or data changed or approval expired. Reconcile an uncertain write with the source system before retrying it.
+
+A managed environment is another option to compare. OpenAI released the Agents API as a public beta that manages sessions, context compaction, and recovery. Test authority, completion decisions, and operating handoff independently of that feature availability. [Agents API](https://developers.openai.com/api/docs/guides/agents-api/overview), [release record](https://developers.openai.com/api/docs/changelog) (released 2026-09-10; checked 2026-10-26).
+
 ### Memory
 
 Separate source systems from agent memory. Long-term memory needs purpose, provenance, update, correction, deletion, and access policies. Do not store model summaries as verified facts.
+
+### Reusing procedures through Skills
+
+Package repeated procedures and references in `SKILL.md` and related files. Define applicable and inapplicable requests, required tools, failure handling, and acceptance checks. Agent Skills requires `name` and `description` in YAML frontmatter; its `allowed-tools` field is experimental. Check support and enforce actual authority in the execution environment. [Agent Skills specification](https://agentskills.io/specification) (checked 2026-10-26).
+
+Agent Skills launched in October 2025 and became an open standard in December 2025; the AAIF donation was announced on 2026-10-22. Distinguish the feature's introduction from a governance change. [Official announcement](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation) (published 2026-10-22; checked 2026-10-26). Before reuse in a second workflow, review provenance, versions, and dependencies, and test incorrect activation or conflicting procedures.
+
+Use [P5's Skill reuse exercise](../projects/05-second-workflow-reuse.md#if-skill-reuse-is-selected) for the detailed comparison and exit criteria. Version, installation-review, and license fields in the [review card](../toolkit/reusable-skill-card.md) are separate roadmap records, not mandatory Agent Skills frontmatter. Non-adoption remains valid when deterministic code or documentation is sufficient.
 
 ## Practice
 
@@ -43,11 +71,14 @@ Separate source systems from agent memory. Long-term memory needs purpose, prove
 4. Inject tool errors, conflicting results, loops, and bad plans.
 5. Stop and resume at checkpoints and hand off to a person.
 6. Test memory correction and deletion.
+7. Disconnect while approval is pending and resume the task after reconnection. Test expired approval and late tool results.
+8. After cancellation, verify actual stopping and external changes. Inject subagent failures, conflicting results, and excess authority.
+9. For any reusable Skill, compare applicable and inapplicable requests and verify preservation of approval and acceptance conditions.
 
 ## Evidence
 
 - Agent decision and simpler alternative comparison
-- State, step, and stop schema
+- State, step, and stop schema, plus reconnection, cancellation, and partial-result reconciliation records
 - Tool allowlist and step-level permissions
 - Step, cost, and time limits
 - Failure injection and handoff record

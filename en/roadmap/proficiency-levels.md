@@ -16,7 +16,7 @@ Foundation through Lead are not validated industry standards or hiring grades. T
 
 ### Foundation
 
-Analyze a clearly bounded workflow and validate a safe prototype.
+Analyze a workflow with bounded users, permissions, and outputs, then validate a safe prototype.
 
 - Identify users, inputs, outputs, and success criteria for a given problem.
 - Build a thin feature with public or non-sensitive data.
@@ -32,7 +32,7 @@ Representative evidence:
 
 ### Builder
 
-Connect one workflow to existing systems and deploy it into an operable state.
+Integrate one workflow with existing systems and deploy it into an operable state.
 
 - Agree on scope, priorities, and stop conditions with the business team.
 - Deploy with authentication, authorization, failure handling, and audit records.
@@ -48,7 +48,7 @@ Representative evidence:
 
 ### Operator
 
-Continuously operate quality, cost, reliability, and adoption for deployed workflows.
+Continuously manage quality, cost, reliability, and actual use for deployed workflows.
 
 - Detect and recover from incidents and quality degradation.
 - Manage changes to permissions, cost limits, and evaluation criteria.
@@ -60,18 +60,18 @@ Representative evidence:
 
 - operational metrics and SLOs;
 - incident, recovery, and regression-evaluation records;
-- adoption and workflow-outcome reviews;
+- actual-use and workflow-outcome reviews;
 - change, version, and permission history;
 - reuse and compatibility records across cases.
 
 ### Lead
 
-Turn recurring patterns across workflows and teams into organizational capability.
+Turn execution rules validated across workflows and teams into shared organizational capability.
 
 - Manage the workflow portfolio and investment order.
 - Set the boundary between a shared harness and team autonomy.
-- Connect security, data, business, and platform owners.
-- Feed failure patterns and operational feedback into the shared-foundation roadmap.
+- Establish how security, data, business, and platform owners decide and act together.
+- Feed recurring failure causes and operational feedback into the shared-foundation roadmap.
 - Design an operating model in which the central team is not a bottleneck.
 
 Representative evidence:
@@ -79,7 +79,7 @@ Representative evidence:
 - comparisons and reuse rates across multiple cases;
 - organization-level completion criteria;
 - shared execution, evaluation, and audit foundations;
-- evidence of business-team autonomy and role transition.
+- evidence that business teams operate the workflow directly, plus role-transition records.
 
 ## 3. Expected levels by competency
 
@@ -87,12 +87,23 @@ Representative evidence:
 |---|---|---|---|---|
 | Problem discovery | Structure a given problem | Agree on one workflow's scope with the business team | Improve or stop an operating workflow | Design portfolio and investment criteria |
 | Workflow design | Map the current flow | Implement target and exception flows | Change official procedures and roles | Define shared contracts across teams |
-| Data | Define a bounded data contract | Connect source, derived, and result data | Operate quality, freshness, and lineage | Define organizational semantics and ownership |
+| Data | Define a bounded data contract | Trace relationships and lineage across source, derived, and result data | Operate quality, freshness, and lineage | Define shared business terms, metrics, and ownership |
 | Software | Build a tested prototype | Deploy and integrate one workflow | Operate reliability, cost, change, and compatibility | Build reusable foundations and scale policy |
 | Applied AI | Perform basic evaluation | Add regression, safety, and human handoff | Run production evaluation and quality improvement | Define evaluation standards and model strategy |
 | Security and operations | Identify risk | Implement permissions, logs, and recovery | Operate incidents, SLOs, and cost | Define organizational controls |
-| Adoption | Gather user feedback | Complete acceptance, training, and handoff | Manage adoption and retirement of the old process | Design a self-sustaining change model |
-| Standardization | Record pattern candidates | Template within one workflow | Reuse and version across a second workflow | Feed a shared-foundation roadmap |
+| Production use | Gather user feedback | Complete acceptance, training, and handoff | Manage regular use and retirement of the old process | Enable business teams to operate and improve directly |
+| Standardization | Record reuse candidates | Template within one workflow | Reuse and version across a second workflow | Feed a shared-foundation roadmap |
+
+### Records required to judge a level
+
+| Level | Additional evidence |
+|---|---|
+| Foundation | Evaluation on unseen inputs, review outside implementation, and reasons for refusal or hold |
+| Builder | Approval wait, permission revocation, duplicate and partial-success tests; actual-user acceptance and operating handoff |
+| Operator | Reconnection, actual cancellation, policy service outage, and rollback exercises; total cost per completed workflow; regression and renewed acceptance after changes |
+| Lead | Workflow-specific expand or stop decisions, policy exceptions and expiry, business-led operations and role changes, and change impact across workflows |
+
+Completing a course or writing an assessment checklist does not raise a proficiency level. Present the environment, reviewer roles, first assessment, and reassessment results together. If work is limited to public simulation, leave production and organizational operating responsibility unverified. Use a new scenario when advancing and rerun existing regression evaluations after repairs.
 
 ## 4. Growth, not promotion
 
@@ -105,7 +116,7 @@ Foundation → Builder
 Add authentication, permissions, failure handling, deployment, and user acceptance to a prototype.
 
 Builder → Operator
-Operate one deployment for at least four weeks and record changes in quality, cost, incidents, and adoption.
+Operate one deployment for at least four weeks and record changes in quality, cost, incidents, and actual use.
 
 Operator → Lead
 Turn a contract validated in two or more workflows into a foundation and operating model used across teams.

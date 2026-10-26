@@ -3,15 +3,19 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: G11's sensitive-document extraction and expert-review pattern informs bank evidence and dual approval through the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies G11's sensitive-document extraction and expert review. Extracted bank evidence never proves ownership by itself; an independent channel and dual approval are required before a sandbox change.
 
 Vendor and payment-account changes affect many future payments. This case focuses less on document extraction and more on separating requester, verifier, approver, and executor while keeping evidence and the actual master-data result traceable.
 
@@ -76,7 +80,7 @@ Korea's [National Tax Service business-registration validation and status API](h
 | P1 | Find missing and conflicting data in synthetic requests | Pass duplicate vendor, invalid identifier, and stale-document tests |
 | P2 | Separate verification and approval queues | Block bypass and self-approval |
 | P3 | Change the vendor-master sandbox | Test versioning, idempotent writes, and partial-failure recovery |
-| P4 | Plan a bounded pilot | Prepare independent confirmation, payment hold, and manual handling |
+| P4 | Plan a bounded pilot | Prepare independent confirmation, payment hold, and manual handling Planning gate only, not a complete P4 pass. |
 
 ## 7. Failure injection and recovery
 
@@ -90,7 +94,7 @@ Korea's [National Tax Service business-registration validation and status API](h
 
 ## 8. Deliverables and limits
 
-Public deliverables are synthetic vendor records, evidence, and change requests; a separation-of-duties matrix; mismatch evaluations; approval records; sandbox before-and-after data; and recovery-drill results.
+Planned deliverables are synthetic vendor records, evidence, and change requests; a separation-of-duties matrix; mismatch evaluations; approval records; sandbox before-and-after data; and recovery-drill results.
 
 The case does not verify real account ownership, credit, sanctions, contract suitability, fraud reduction, or payment accuracy.
 

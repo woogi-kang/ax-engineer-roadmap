@@ -5,7 +5,7 @@ Choose the public channel that matches the request so other readers can find the
 | Need | Channel |
 |---|---|
 | Roadmap use, learning order, or case selection | [GitHub Discussions](https://github.com/woogi-kang/ax-engineer-roadmap/discussions) |
-| Site bug, accessibility issue, or development setup | [Bug report](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=bug-report.yml) |
+| Documentation or practice bug, or development setup | [Bug report](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=bug-report.yml) |
 | Missing competency, stage, or counterexample | [Roadmap gap](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=roadmap-gap.yml) |
 | Stale claim, source, or external link | [Source update](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=source-update.yml) |
 | New workflow case | [Case study proposal](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new?template=case-study-proposal.yml) |

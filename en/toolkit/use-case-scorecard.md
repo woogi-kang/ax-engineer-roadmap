@@ -24,6 +24,18 @@ Score each item from `1 to 5`. Do not decide from the total alone. Hold a candid
 | B |  |  |  |  |  |  |  |  |  |  |
 | C |  |  |  |  |  |  |  |  |  |  |
 
+## Cost and workflow outcomes
+
+For each candidate, record workflow volume and costs for the same period. Include review, rework, incident response, licenses, and integration as well as model usage. Record the allocation basis for one-time implementation costs. For unknown items, distinguish estimates and name the person who will verify them.
+
+| Candidate | Completed workflows that passed review | Total cost | Cost per completed workflow | Manual baseline | Unknowns and owner |
+|---|---:|---:|---:|---|---|
+| A |  |  |  |  |  |
+| B |  |  |  |  |  |
+| C |  |  |  |  |  |
+
+Count unique completions confirmed by the source system and reviewer. Include failures and retries in total cost. Do not calculate a unit cost when there are zero completions. Record the formula and before-and-after comparison in the [experiment card](experiment-card.md).
+
 ## Mandatory gates
 
 - [ ] The process owner and users are confirmed.
@@ -31,6 +43,8 @@ Score each item from `1 to 5`. Do not decide from the total alone. Hold a candid
 - [ ] A data owner and access path exist.
 - [ ] High-risk actions can be excluded from the initial scope.
 - [ ] Failures can be detected and handled manually.
+- [ ] Reviewers and operators are named, and correction and rework burden can be measured.
+- [ ] Cost limits and stop conditions for quality, authority, and recovery are agreed.
 - [ ] A thin end-to-end slice can be built within two to four weeks.
 
 ## Decision

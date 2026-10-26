@@ -41,5 +41,5 @@ A higher number is not always better. Keeping autonomy low for high-harm or hard
 1. [Persona Selector](persona-selector.md)
 2. [Business Practitioner Collaboration Guide](../tracks/business-practitioner.md)
 3. [Outcomes and Boundaries](../delivery-lifecycle/01-outcomes-and-boundaries.md)
-4. [Workflow Discovery](../delivery-lifecycle/02-workflow-discovery.md)
+4. [Understand the Current Workflow](../delivery-lifecycle/02-workflow-discovery.md)
 5. [Safe Assistant Project](../projects/01-safe-assistant.md)

@@ -10,7 +10,7 @@ Do not treat purchasing tools or announcing a company-wide initiative as outcome
 
 ## 1. Portfolio priority
 
-Do not rank candidates by expected benefit alone. Compare value, frequency, user, baseline, data readiness, risk, recoverability, owner, and adoption difficulty.
+Do not rank candidates by expected benefit alone. Compare value, frequency, user, baseline, data readiness, risk, recoverability, owner, and difficulty of moving the workflow into regular use.
 
 Decide:
 
@@ -55,7 +55,7 @@ Separate:
 
 - Workflow outcome: completion, errors and rework, customer or employee impact, opportunity cost
 - Operations: quality, latency, cost, incidents, approval wait, manual fallback
-- Adoption: official-process use, correction burden, support, retirement of the old process
+- Production use: official-process use, correction burden, support, retirement of the old process
 
 ## 4. Procurement and vendor exit
 
@@ -69,7 +69,9 @@ Confirm before purchase:
 - Workflow fallback and data handling after termination
 - Legal review for subcontracting, cross-border transfer, and storage location
 
-## 5. Adoption and role transition
+Check current official sources and have responsible specialists review legal and regulatory applicability.
+
+## 5. Production use and role transition
 
 Look for official workflow change rather than training sessions and seats:
 
@@ -90,7 +92,7 @@ Potential shared elements:
 - Evaluation execution and records
 - Approval, permission, and audit events
 - Stop, recovery, and manual fallback
-- Cost, quality, and adoption status
+- Cost, quality, and actual-use status
 
 Elements that may stay team-specific:
 
@@ -98,6 +100,12 @@ Elements that may stay team-specific:
 - Domain terminology and rules
 - Model and framework choice
 - Source-system integration
+
+## Records required before expansion
+
+Obtain separate reviews from managers, actual users, and operators. Hold expansion when correction burden or incident handling remains unresolved, even if workflow value is high. Assign an approver, expiry, compensating measures, and review date to policy exceptions. Repeated urgent deployments do not turn an exception into a standing procedure.
+
+Use [cost per completed workflow](../projects/04-production-pilot.md) together with quality in investment decisions. Do not establish impact from usage or saved time alone: check how the time was used and whether changed roles have staffing and support capacity. Missing business-team handoff or an old-process retention or retirement decision prevents completion.
 
 ## Evidence to produce
 

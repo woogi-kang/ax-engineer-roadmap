@@ -2,20 +2,18 @@ import fs from "node:fs";
 
 const readJson = (path) => JSON.parse(fs.readFileSync(path, "utf8"));
 const rootPackage = readJson("package.json");
-const sitePackage = readJson("site/package.json");
-const siteLock = readJson("site/package-lock.json");
+const rootLock = readJson("package-lock.json");
 const version = rootPackage.version;
 const failures = [];
 
 for (const [name, value] of [
-  ["site/package.json", sitePackage.version],
-  ["site/package-lock.json", siteLock.version],
-  ["site/package-lock.json root package", siteLock.packages?.[""]?.version],
+  ["package-lock.json", rootLock.version],
+  ["package-lock.json root package", rootLock.packages?.[""]?.version],
 ]) {
   if (value !== version) failures.push(`${name}: ${value ?? "missing"} (expected ${version})`);
 }
 
-for (const file of ["README.md", "en/README.md", "site/app/roadmap-explorer.tsx"]) {
+for (const file of ["README.md", "en/README.md"]) {
   if (!fs.readFileSync(file, "utf8").includes(`v${version}`)) {
     failures.push(`${file}: v${version} 표기 누락`);
   }
@@ -45,7 +43,6 @@ if (isKoreanCandidate) {
   for (const [file, marker] of [
     ["README.md", `다음 릴리스 후보: \`v${version}\``],
     ["en/README.md", `Next release candidate: \`v${version}\``],
-    ["site/app/roadmap-explorer.tsx", `v${version} release candidate`],
   ]) {
     if (!fs.readFileSync(file, "utf8").includes(marker)) {
       failures.push(`${file}: 후보 상태 표기 누락`);

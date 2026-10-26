@@ -8,18 +8,18 @@ const startMarker = "<!-- case-boundary:start -->";
 const endMarker = "<!-- case-boundary:end -->";
 
 const writeImpactLabels = {
-  none: { ko: "외부 쓰기 없음", en: "No external write" },
+  none: { ko: "외부 시스템 변경 없음", en: "No external write" },
   "draft-only": { ko: "초안 전용", en: "Draft only" },
   "approved-sandbox-write": {
-    ko: "승인 후 샌드박스 쓰기",
+    ko: "승인 후 샌드박스에 쓰기",
     en: "Approved sandbox write",
   },
   "approved-limited-write": {
-    ko: "승인 후 제한 쓰기",
+    ko: "승인 후 제한된 범위에 쓰기",
     en: "Approved limited write",
   },
   mixed: {
-    ko: "초안과 승인 후 제한 쓰기",
+    ko: "초안 생성과 승인 후 제한된 범위에 쓰기",
     en: "Draft plus approved limited write",
   },
 };
@@ -35,14 +35,14 @@ function block(metadata, language) {
     startMarker,
     `## ${ko ? "현재 범위와 설계 목표" : "Current scope and designed target"}`,
     "",
-    `| ${ko ? "구분" : "Scope"} | ${ko ? "쓰기 영향" : "Write impact"} | ${ko ? "자율성" : "Autonomy"} | ${ko ? "P 단계" : "P stages"} |`,
+    `| ${ko ? "구분" : "Scope"} | ${ko ? "외부 시스템 변경 범위" : "Write impact"} | ${ko ? "자율성" : "Autonomy"} | ${ko ? "관련 P 단계" : "Related P stages"} |`,
     "|---|---|---|---|",
-    `| ${ko ? "현재 공개 실행물" : "Current public artifact"} | ${writeImpactLabels[metadata.current_write_impact][language]} | ${metadata.current_autonomy} | ${stages(metadata.implemented_project_stages, language)} |`,
+    `| ${ko ? "현재 공개 결과" : "Current public artifact"} | ${writeImpactLabels[metadata.current_write_impact][language]} | ${metadata.current_autonomy} | ${stages(metadata.implemented_project_stages, language)} |`,
     `| ${ko ? "설계 목표" : "Designed target"} | ${writeImpactLabels[metadata.designed_write_impact][language]} | ${metadata.designed_autonomy} | ${stages(metadata.designed_project_stages, language)} |`,
     "",
     ko
-      ? "현재 값은 이 저장소에서 재현할 수 있는 범위만 나타낸다. 설계 목표는 아직 구현 범위나 조직 운영 성과가 아니다."
-      : "Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.",
+      ? "현재 값은 이 저장소에서 재현할 수 있는 범위만 나타낸다. 현재 결과의 P 표시는 해당 단계에 속한 기능이 구현됐다는 뜻이며, 그 단계의 통과 기준을 모두 충족했다는 뜻은 아니다. 설계 목표는 아직 구현 범위나 조직 운영 성과가 아니다."
+      : "Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.",
     endMarker,
   ].join("\n");
 }

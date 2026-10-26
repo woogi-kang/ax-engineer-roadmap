@@ -9,7 +9,7 @@ During the `v0.x` period, [@woogi-kang](https://github.com/woogi-kang) serves as
 | Contributor | Improve content and artifacts through issues, pull requests, and review | Open to everyone |
 | Reviewer | Repeatedly review evidence, scope, writing, and validation in a domain | Consistent review across at least three separate pull requests and understanding of project rules |
 | Maintainer | Merge, triage, decide roadmap direction, and handle security | At least three months of sustained contribution, conflict disclosure, and a public proposal approved by existing maintainers |
-| Release manager | Verify version, changelog, tag, deployment, and recovery | A maintainer who has reproduced the release process |
+| Release manager | Verify version, changelog, tag, publication, and recovery | A maintainer who has reproduced the release process |
 
 Role grants and inactive-status changes are recorded in a Discussion or issue with their rationale and scope. After six months of inactivity, the project first checks in rather than removing access automatically, then reduces privileges only when there is no response and operations require it.
 
@@ -46,7 +46,7 @@ A person with a conflict of interest delegates decisions about the relevant orga
 
 - The project aims to triage a new issue or pull request, or state when a response is possible, within 7 days.
 - Merge decisions require more than green CI: claim boundaries, bilingual parity, and public safety are reviewed.
-- Releases follow [Semantic Versioning](https://semver.org/) and `CHANGELOG.md`; the public site is checked after the tag and GitHub Release.
+- Releases follow [Semantic Versioning](https://semver.org/) and `CHANGELOG.md`; public documents and release assets are checked after the tag and GitHub Release.
 - A serious regression is repaired with a new commit, with cause, impact, and prevention recorded in an issue or release note.
 
 These are targets for a single-maintainer project, not a service-level agreement.

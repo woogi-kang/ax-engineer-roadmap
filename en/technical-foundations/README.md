@@ -29,6 +29,17 @@ Keep the simpler design if it meets success criteria. Model, framework, and clou
 | [Production Operations](production-operations.md) | Can quality, cost, latency, and failure be detected, stopped, and recovered? |
 | [Security and Privacy](security-and-privacy.md) | Can data and action authority be controlled across the lifecycle? |
 
+## Shared practice criteria
+
+These documents define implementation exercises and exit criteria. Updating a document does not establish that an integration or operating result has been verified.
+
+- Version the execution code (harness) that connects model calls, tools, and recovery. Compare model, API, SDK, tool, prompt, and context-policy changes on the same evaluation set.
+- Persist identifiers and state for long-running work. Test additional input, approval expiry, reconnection, cancellation requests, and external-result reconciliation.
+- Verify both the response and the final state in the source system. Retain repeated runs and failures.
+- Compare [total cost per accepted completed workflow](production-operations.md#total-cost-per-completed-workflow). Include failed attempts, retries, human review, and rework.
+
+Distinguish official specifications, optional extensions, vendor beta features, and future proposals. Recheck and record support in the intended Host, Server, and SDK before implementation.
+
 ## Depth by role
 
 - **AX Engineer:** implement, test, deploy, and retain operating records.

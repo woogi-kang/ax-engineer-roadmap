@@ -3,15 +3,19 @@
 <!-- case-boundary:start -->
 ## Current scope and designed target
 
-| Scope | Write impact | Autonomy | P stages |
+| Scope | Write impact | Autonomy | Related P stages |
 |---|---|---|---|
 | Current public artifact | No external write | A0 | None |
 | Designed target | Approved sandbox write | A1-A3 | P1, P2, P3, P4 |
 
-Current values cover only what this repository can reproduce. The designed target is not yet an implemented scope or evidence of organizational outcomes.
+Current values cover only what this repository can reproduce. A current P label identifies a stage with implemented functionality, not completion of all its exit criteria. The designed target is not yet an implemented scope or evidence of organizational outcomes.
 <!-- case-boundary:end -->
 
-> Public-case link: G06's state refresh, cause candidates, and operations-ticket pattern informs inventory proposal controls through the [application map](../../research/public-case-application-map.md).
+The published assets are design documentation and metadata. The problem and current workflow below are exercise assumptions; no input set, executable code, execution logs, or acceptance results are published for this case yet. Target flows, evaluations, and deliverables describe work still to implement and verify.
+
+The case-specific P-stage tables supplement the [common project exit criteria](../../projects/README.md). They do not waive P1's minimum evaluation count or independent review, and a P4 plan or readiness document does not establish a passed production pilot.
+
+> Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies G06's state refresh and cause candidates. The workflow refreshes inventory and purchase-order state before proposing work and records only owner-approved purchase or transfer proposals in the sandbox.
 
 Reordering whenever inventory crosses a threshold can create excess stock or duplicate orders. This case combines current stock, committed orders, inbound supply, stock in other locations, and supplier constraints to present accountable operators with bounded options.
 
@@ -74,7 +78,7 @@ Receive an inventory exception
 | P1 | Find exceptions and candidates in synthetic snapshots | Pass stale-data, negative-stock, and duplicate-order tests |
 | P2 | Compare evidence and options in approval | Record edits, hold, and rejection reasons |
 | P3 | Record proposals in procurement and WMS sandboxes | Test idempotency, state refresh, and partial-failure recovery |
-| P4 | Plan a bounded item-family pilot | Prepare stop thresholds, manual purchasing, and reconciliation |
+| P4 | Plan a bounded item-family pilot | Prepare stop thresholds, manual purchasing, and reconciliation Planning gate only, not a complete P4 pass. |
 
 ## 7. Failure injection and recovery
 
@@ -90,7 +94,7 @@ Measure stale-data blocks, duplicate proposals, operator edits, partial failures
 
 ## 8. Deliverables and limits
 
-Public deliverables are synthetic inventory events, data contracts, option comparisons, approval records, sandbox writes, and failure and recovery records.
+Planned deliverables are synthetic inventory events, data contracts, option comparisons, approval records, sandbox writes, and failure and recovery records.
 
 There is no evidence of improved stockout rate, inventory turns, service level, or purchasing cost. Safety stock, lead time, substitution, and allocation rules require local definition.
 

@@ -31,6 +31,12 @@ Separate the stages so failures can be diagnosed independently.
 
 RAG can support policy and manual questions. Live order, inventory, and approval status should come from source systems. Do not treat a retrieval index as the source of truth.
 
+### Context selection and compaction
+
+Separate execution instructions, current task state, retrieved material, and long-term memory. Retain source, retrieval time, and access scope, and include what the next decision needs. When clearing old tool results or compacting a conversation, verify that approval scope, prohibited actions, unfinished work, and source references survive. This exercise applies the compaction and structured-note guidance in [Anthropic's engineering article](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents) (published 2025-09-29; checked 2026-10-26). It is not a concept introduced in the second half of 2026.
+
+A compacted summary is not the live source of truth. Requery order, permission, and approval state before acting. Test whether memory correction and deletion reach retrieval results and later runs.
+
 ### A larger model
 
 Fix missing data, ambiguous instruction, bad retrieval, or unclear acceptance before changing model size. Compare quality, cost, and latency on the same evaluation set.
@@ -43,13 +49,16 @@ Fix missing data, ambiguous instruction, bad retrieval, or unclear acceptance be
 4. Define refusal and handoff for missing or conflicting sources.
 5. Regression-test model, prompt, and context changes.
 6. Test token, latency, and cost limits.
+7. Run the same request before and after compaction and check preservation of approval scope, prohibited actions, and unfinished work.
+8. Verify input format, tool calls, and error handling against the same criteria when the API or SDK changes.
 
 ## Evidence
 
 - Model-selection decision and alternatives
 - Model, prompt, and retrieval versions
 - Evaluation set and results
-- Token, cost, and latency measurements
+- Token and latency measurements and [total cost per accepted completed workflow](production-operations.md#total-cost-per-completed-workflow)
+- Context-selection, compaction, deletion policy, and constraint-preservation tests
 - Source, refusal, and handoff rules
 - Change approval and regression record
 

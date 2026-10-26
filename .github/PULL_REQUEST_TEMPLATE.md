@@ -18,7 +18,7 @@
 
 - [ ] 회사·고객·동료를 식별할 수 있는 비공개 정보가 없다. / No confidential information identifies a company, customer, or colleague.
 - [ ] 인증정보·개인정보·내부 경로가 없다. / No credentials, personal data, or internal paths are included.
-- [ ] 수치에는 기간·표본·계산 방법이 있다. / Every metric includes its period, sample, and calculation method.
+- [ ] 직접 측정한 성과에는 기간·표본·계산 방법을 적었고, 외부 수치는 발표 주체·미공개 조건·검증 수준을 표시했다. / Directly measured outcomes include their period, sample, and calculation method; external figures identify the reporting party, unreported conditions, and verification level.
 - [ ] 확인한 사실과 가설을 구분했다. / Verified facts and hypotheses are clearly separated.
 
 ## 검증 / Validation
@@ -27,3 +27,4 @@
 - [ ] 변경된 링크를 직접 열어 봤다. / I opened and checked the changed links.
 - [ ] 새 역량 항목이 `이해·선택·적용·검증·실패 대응` 또는 `Understand · Choose · Apply · Verify · Handle failure` 형식을 따른다.
 - [ ] 한국어 문장의 번역투와 불필요한 추상 표현을 점검했다. / I reviewed Korean prose for translationese and unnecessary abstraction.
+- [ ] 한국어 추가·수정 구간에 `korean-humanizer`를 적용하고 사실·수치·출처와 한영 의미를 대조했다. / I applied `korean-humanizer` to added or revised Korean passages and checked facts, numbers, sources, and bilingual meaning.

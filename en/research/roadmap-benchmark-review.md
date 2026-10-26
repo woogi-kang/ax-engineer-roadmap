@@ -1,6 +1,7 @@
 # Review of Developer and AI Agent Roadmaps
 
-> Verified: 2026-07-26
+> Roadmap comparison baseline: 2026-07-26
+> Update scope on 2026-10-26: role/practical-assessment evidence and the version of the linked regulation below. The rest of the benchmark was not fully reverified.
 
 ## A distinction to make first
 
@@ -79,7 +80,7 @@ Record who can scope the workflow, authorize data, approve deployment, stop oper
 
 Korea's Personal Information Protection Commission guidance addresses the full generative-AI lifecycle: purpose, source verification, access control, pre-deployment testing, transparency, and internal governance led by the privacy officer. Security and privacy should not be a final paperwork step.
 
-The Enforcement Decree of the AI Basic Act has been in effect since July 21, 2026. It includes transparency duties for high-impact and generative AI products and services and an exception for internal-only use. Legal applicability must be rechecked with legal, privacy, and security owners against current law. This roadmap is not legal advice.
+The linked Article 23 of the AI Basic Act Enforcement Decree, checked on 2026-10-26, is the version effective 2026-08-20 (Presidential Decree No. 36580, amended through another law on 2026-08-18). It addresses notice methods and an internal-use exception. Article 23(4) applies when an AI business operator uses AI exclusively for internal business and permits omission of all or part of the notices and labels under paragraphs 1–3. A changed amendment date alone does not establish a new or changed transparency obligation. Legal, privacy, and security owners should check the applicable actor, purpose, and provision in the current text. This roadmap is not legal advice.
 
 ### Official workflow change, not just adoption
 
@@ -103,7 +104,7 @@ flowchart LR
 - [Collaboration role guides](../tracks/README.md) include non-developers and shared accountability.
 - [Technical capabilities](../technical-foundations/README.md) provide implementation depth for AX Engineers.
 - [Practice projects](../projects/README.md) require reviewable results, not feature completion alone.
-- The interactive map is a navigation layer; Markdown remains the source of truth.
+- Markdown remains the source of truth; the start guide and document links provide navigation.
 
 ## Sources
 
@@ -114,4 +115,8 @@ flowchart LR
 - [`PRIMARY_OFFICIAL` Ministry of SMEs and Startups, regional AI transformation program](https://www.mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1060505&cbIdx=86) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` Ministry of SMEs and Startups, Smart Manufacturing Innovation 3.0](https://www.mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1062738&cbIdx=86) — verified 2026-07-26
 - [`PRIMARY_OFFICIAL` PIPC, generative AI privacy guidance summary](https://m.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS212&mCode=C040030000&nttId=11360) — verified 2026-07-26
-- [`PRIMARY_OFFICIAL` Korean Law Information Center, AI Basic Act Enforcement Decree Article 23](https://www.law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=198075) — verified 2026-07-26
+- [`PRIMARY_OFFICIAL` Korean Law Information Center, AI Basic Act Enforcement Decree Article 23](https://www.law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=198075) — first checked 2026-07-26; linked version rechecked 2026-10-26
+
+## Learning evidence added on 2026-10-26
+
+[Claude Frontier Academy](https://www.anthropic.com/news/claude-frontier-academy), announced on 2026-10-02, combines simulated enterprise deployment and practical assessment with a 12-week real project at the participant's organization and another assessment. This roadmap uses that structure to strengthen entry assessment, unfamiliar evaluation scenarios, and handoff evidence. A vendor credential is not equivalent to this roadmap's proficiency model, and a training target is not a completed result. The [public role review](ax-engineer-role-review.md) records role differences and source status.

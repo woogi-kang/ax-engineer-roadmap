@@ -11,8 +11,6 @@ function walk(directory) {
       entry.name === 'node_modules' ||
       entry.name === '.design-runs' ||
       entry.name === '.orchestration' ||
-      entry.name === '.next' ||
-      entry.name === '.vinext' ||
       entry.name === 'dist' ||
       entry.name === 'out' ||
       entry.name === '__pycache__'
@@ -54,8 +52,7 @@ const koreanMarkdownFiles = walk(root)
     (file) =>
       !file.startsWith('en/') &&
       !file.startsWith('.github/') &&
-      !file.startsWith('.claude/') &&
-      !file.startsWith('site/')
+      !file.startsWith('.claude/')
   );
 
 for (const file of koreanMarkdownFiles) {
@@ -139,10 +136,7 @@ const blockedTerms = [
 
 for (const file of walk(root).filter((target) => {
   const ignoredSegments = [
-    `${path.sep}.claude${path.sep}goals${path.sep}`,
-    `${path.sep}site${path.sep}dist${path.sep}`,
-    `${path.sep}site${path.sep}.vinext${path.sep}`,
-    `${path.sep}site${path.sep}.design-runs${path.sep}`
+    `${path.sep}.claude${path.sep}goals${path.sep}`
   ];
   return ignoredSegments.every((segment) => !target.includes(segment));
 })) {

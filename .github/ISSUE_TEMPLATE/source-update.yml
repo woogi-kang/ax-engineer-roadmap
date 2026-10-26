@@ -24,6 +24,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: dates_and_method
+    attributes:
+      label: 발표일·관측기간·측정 방법 / Publication, observation period, and method
+      description: 발표일과 실제 관측기간을 구분하고 표본·분모·접근 상태·성과 검증 수준을 적어 주세요. 모르면 unknown으로 표시합니다. / Separate publication from observation, and record sample, denominator, access, and outcome verification. Mark unknown values explicitly.
+    validations:
+      required: true
+  - type: textarea
     id: impact
     attributes:
       label: 무엇을 바꿔야 하나요? / What should change?
