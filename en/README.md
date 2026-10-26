@@ -81,4 +81,4 @@ Runnable examples, design targets, and outside organizations' reports are distin
 
 [Contribute](CONTRIBUTING.md) · [Questions and support](SUPPORT.md) · [Source policy](research/source-policy.md) · [Governance](GOVERNANCE.md) · [Security](SECURITY.md) · [Code of conduct](CODE_OF_CONDUCT.md)
 
-Next release candidate: `v0.4.0` · Recorded published release: `v0.3.0` · [MIT License](../LICENSE)
+Latest release: `v0.4.0` · Previous release: `v0.3.0` · [MIT License](../LICENSE)

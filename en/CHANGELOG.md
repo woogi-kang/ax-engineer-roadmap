@@ -4,18 +4,26 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-10-26
+
 ### Added
 
 - Added 15 company/institution workflow cases, bringing the catalog to 16 Korean and 24 international entries, with recheck results, corrections, and access failures for the original 25
 - Added 27 bilingual job-posting records with responsibilities, requirements, recruitment signals, publication/check dates, structured data, and status/date validation
 - Added the 2026-10-26 evidence refresh record covering collection scope, held material, source access, and limitations
-
 - Entry routes for early-career, software-experienced, and domain-experienced learners with initial deliverables and review gates
 - A P3 UI integration checklist and P5 reusable skill card, with failure tests and adopt, hold, and retire criteria
 - A standards review list separating proposals, specifications, and product support, with criteria for core-curriculum inclusion
 - Role comparisons reviewed on 2026-10-26 and follow-up evidence for public cases K04, K05, and G08
 - Claim-level publication, observation, and verification dates, sample, method, access status, limitations, and validation for public cases
 - Project and contribution instructions requiring `korean-humanizer` for added or revised Korean content
+- A public AX catalog covering 10 Korean and 15 international cases, plus an application map for all 25
+- Simulation cases for public petitions, credit and underwriting, equipment anomalies, care records, and regulated evidence documents
+- An `industry` metadata axis for cross-industry, retail, public sector, finance, manufacturing, healthcare and social care, and legal and life-science contexts
+- A JSON registry for all 25 public cases with source provenance, deployment stage, outcome verification, source URLs, and internal-case links
+- `SECURITY.md`, `SUPPORT.md`, `CITATION.cff`, CODEOWNERS, a bug form, Dependabot, and CodeQL
+- A case-industry filter with URL state and case metadata for industry, difficulty, risk, and evidence stage
+- Weekly external-link health checks and one-command fresh-clone validation (`npm run verify`)
 
 ### Changed
 
@@ -27,25 +35,6 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Strengthened authority revocation, policy-outage handling, version-change evaluation, repeated trials, and role-specific acceptance in both language editions
 - Added total cost per completed workflow, review and rework burden, and scale and stop conditions to experiment and candidate templates
 - Retained one published implementation and 14 design documents, distinguishing partial source updates from full reverification
-
-### Removed
-
-- Removed the existing web project, site links, and deployment configuration while retaining independent documentation, case, and practice validation
-
-## [0.4.0] - 2026-08-01 (release candidate)
-
-### Added
-
-- A public AX catalog covering 10 Korean and 15 international cases, plus an application map for all 25
-- Simulation cases for public petitions, credit and underwriting, equipment anomalies, care records, and regulated evidence documents
-- An `industry` metadata axis for cross-industry, retail, public sector, finance, manufacturing, healthcare and social care, and legal and life-science contexts
-- A JSON registry for all 25 public cases with source provenance, deployment stage, outcome verification, source URLs, and internal-case links
-- `SECURITY.md`, `SUPPORT.md`, `CITATION.cff`, CODEOWNERS, a bug form, Dependabot, and CodeQL
-- A case-industry filter with URL state and case metadata for industry, difficulty, risk, and evidence stage
-- Weekly external-link health checks and one-command fresh-clone validation (`npm run verify`)
-
-### Changed
-
 - Expanded applied cases from 10 to 15 and synchronized the README, English edition, and interactive roadmap
 - Connected the 10 existing practices to relevant public-case design questions and control patterns
 - Aligned the Korean README and interactive roadmap around one AX definition, case-title set, and editorial voice
@@ -57,6 +46,10 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Separated generated outputs from presentation assets in the Beauty/D2C manifest and added clean-run byte verification
 - Gated Pages deployment on documentation, case, Python, and site validation
 - Patched the Next.js, React, Vite, Cloudflare, and Wrangler dependency set and reduced the npm audit result to zero
+
+### Removed
+
+- Removed the existing web project, site links, and deployment configuration while retaining independent documentation, case, and practice validation
 
 ### Security
 
@@ -124,8 +117,8 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Public contribution rules and GitHub issue and pull-request templates
 - Complete English edition of the roadmap, lifecycle, maturity model, practice path, case, and toolkit
 
-[Unreleased]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.3.0...HEAD
-[0.4.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/woogi-kang/ax-engineer-roadmap/releases/tag/v0.1.0
