@@ -34,7 +34,7 @@ FuriosaAI의 Compiler AX Engineer 공고는 특정 엔지니어링 팀 안에서
 출처:
 
 - [`PRIMARY_OFFICIAL` FuriosaAI, Software Engineer, Compiler (AX Engineer)](https://furiosa.ai/career/software-engineer-compiler-ax-engineer-4005376201) (2026-10-26 확인, 게시일 미상)
-- [기존 Ashby 공고](https://jobs.ashbyhq.com/furiosa-ai/11eafd2e-d89b-4c61-bb64-b38cf0748536/)는 2026-07-23에 사용한 출처로 보존한다. 이번 직접 조회에서는 JavaScript 안내만 반환했다. 현재 역할 내용은 위 회사 공식 페이지에서 확인했다.
+- 기존 Ashby 주소는 2026-07-23에 사용한 출처다. 이번 조사에서는 JavaScript 안내만 반환했고 이후 PR 검사에서 404를 확인했다. [과거 주소와 접근 기록](hiring-signals.md#j001)을 보존하며 현재 역할 내용은 위 회사 페이지를 따른다.
 
 ### 2. 조직 운영 기반형
 
@@ -70,7 +70,9 @@ Rapport Labs의 AX팀 공개 글은 구성원이 AI를 실제 업무에 쓰며 �
 
 ## 2026-10-26에 추가로 확인한 근거
 
-아래 자료는 책임을 비교하기 위해 고른 정성 표본이다. 같은 모집을 여러 채널에 올린 경우를 별개 채용으로 세지 않으며 채용 증가율, 평균 연봉, 시장 규모를 계산하지 않는다.
+아래 자료는 책임을 비교하기 위해 고른 정성 표본이다. [공고 기록 27개](hiring-signals.md)에서 원문 책임·요건과 모집 표시를 확인할 수 있다. 2026-10-26 기준 모집 표시 확인 11개, 마감 표시 확인 8개, 미확인 8개다. FuriosaAI와 POSTECH은 본문을 읽었지만 해당 직무의 지원 경로를 확인하지 못해 미확인으로 두었다.
+
+채널 간 원 공고 ID가 연결되지 않으면 별도 기록으로 남긴다. 이 27개를 고유 채용 건수로 세지 않으며 채용 증가율, 평균 연봉, 시장 규모를 계산하지 않는다. 게시일이 2026-08-01 이후임을 확인한 공고는 GM 1개이고 나머지 26개는 게시일 미상이다.
 
 | 구분 | 자료와 날짜 | 확인한 내용과 한계 |
 |---|---|---|
@@ -79,7 +81,7 @@ Rapport Labs의 AX팀 공개 글은 구성원이 AI를 실제 업무에 쓰며 �
 | 게시일 미상인 현재 신호 | [OneSpan, AI Automation Engineer](https://www.onespan.com/about/careers/job/ai-automation-engineer-8278879?gh_jid=8278879&langcode=en) | R&D 수작업의 빈도와 비용을 살펴 에이전트나 스크립트를 선택하고 팀이 직접 운영하도록 넘긴다. 이번에 확인했다는 이유로 새 직무가 생겼다고 보지 않는다. |
 | 게시일 미상인 현재 신호 | [Anthropic, Staff Software Engineer, GTM AI Engineering](https://job-boards.greenhouse.io/anthropic/jobs/5390966008) | 사내 영업 에이전트, 평가, 승인, 운영 관측과 공유 코드의 품질을 맡는다. 검색에 남은 이전 제목 `GTM Claudification`과 현재 공식 제목을 같은 역할의 별칭으로 기록한다. |
 | 게시일 미상인 현재 신호 | [Anthropic, AI Operations Engineer, Partnerships](https://job-boards.greenhouse.io/anthropic/jobs/5391151008) | 시스템 담당자가 관리하는 포털·데이터 모델 위에 업무 자동화를 만든다. 원본 시스템에 결과를 반영하고 위험 단계의 사람 검토, 오류 처리와 재사용을 설계한다. |
-| 채용 플랫폼에서 확인 | [대웅, AX Engineer](https://recruit.wanted.co.kr/wd/390449), [Senior AX Engineer](https://career.rememberapp.co.kr/job/posting/344926) | PM의 과제 검증, 엔지니어의 구현·평가·운영 전환, 시니어의 기술 선택·리뷰·코칭을 나눈다. 기업 ATS 원문과 최초 게시일은 미확인이다. 리멤버는 2026-10-25 마감, 원티드는 상시채용으로 표시해 채널 상태도 다르다. |
+| 채용 플랫폼에서 확인 | [대웅, AX Engineer](https://recruit.wanted.co.kr/wd/390449), [Senior AX Engineer](https://career.rememberapp.co.kr/job/posting/344926) | PM의 과제 검증, 엔지니어의 구현·평가·운영 전환, 시니어의 기술 선택·리뷰·코칭을 나눈다. 기업 ATS 원문과 최초 게시일은 미확인이다. 리멤버는 2026-10-25 마감이며 원티드의 상시채용 문구만으로 현재 접수를 확정하지 않았다. 채널 간 원 공고 ID 대응은 미확인이다. |
 
 표의 원문은 모두 2026-10-26에 확인했다. 게시일과 현재 접근 상태는 별개다. 표본이 적고 목적에 따라 고른 자료이므로 특정 책임이 시장 전체에서 얼마나 흔한지는 알 수 없다. 기존 라포랩스 글처럼 기준일 이전 자료를 다시 읽은 경우도 새 변화로 세지 않는다.
 

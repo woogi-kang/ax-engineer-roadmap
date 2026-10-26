@@ -53,6 +53,7 @@ const catalogCodes = {
     JOINT: "joint-official",
     VENDOR: "vendor-customer-case",
     MIXED: "mixed-official-independent",
+    GOV: "government-report",
   },
   deployment_stage: {
     PILOT: "pilot",
@@ -86,6 +87,12 @@ function catalogRows(content) {
   return rows;
 }
 
+export function validateSchemaValue(value, schema, label = "data") {
+  const failures = [];
+  schemaErrors(value, schema, schema, label, failures);
+  return failures;
+}
+
 export function validatePublicCases({ registry, schema, koreanCatalog, englishCatalog, applicationMap, englishApplicationMap, knownCaseIds }) {
 const failures = [];
 schemaErrors(registry, schema, schema, "registry", failures);
@@ -105,9 +112,10 @@ if (registry.$schema !== "./public-ax-cases.schema.json") {
 if (!/^\d{4}-\d{2}-\d{2}$/.test(registry.verified_at ?? "")) {
   failures.push("공개 사례 registry의 verified_at 형식 오류");
 }
-if (!Array.isArray(registry.cases) || registry.cases.length !== 25) {
-  failures.push("공개 사례 registry는 국내 10개와 해외 15개, 모두 25개여야 함");
-}
+const baselineIds = new Set(registry.review_scope.baseline_case_ids);
+const baselineSourceUrls = new Set();
+const koreaCount = registry.cases.filter((item) => item.region === "KR").length;
+const internationalCount = registry.cases.length - koreaCount;
 
 const ids = new Set();
 const sourceUrls = new Set();
@@ -120,6 +128,7 @@ for (const item of registry.cases ?? []) {
   }
   if (!/^[KG]\d{2}$/.test(item.id ?? "")) failures.push(`${item.id}: ID 형식 오류`);
   if (ids.has(item.id)) failures.push(`${item.id}: 중복 ID`);
+  if ((item.id.startsWith("K")) !== (item.region === "KR")) failures.push(`${item.id}: case ID and region disagree`);
   ids.add(item.id);
   if (!sourceTypes.has(item.source_type)) failures.push(`${item.id}: source_type 오류`);
   if (!deploymentStages.has(item.deployment_stage)) failures.push(`${item.id}: deployment_stage 오류`);
@@ -153,6 +162,7 @@ for (const item of registry.cases ?? []) {
   }
   for (const url of item.source_urls ?? []) {
     sourceUrls.add(url);
+    if (baselineIds.has(item.id)) baselineSourceUrls.add(url);
     if (!koreanCatalog.includes(url)) failures.push(`${item.id}: 한국어 카탈로그에 출처 URL 누락`);
     if (!englishCatalog.includes(url)) failures.push(`${item.id}: 영문 카탈로그에 출처 URL 누락`);
   }
@@ -173,18 +183,19 @@ for (const item of registry.cases ?? []) {
   }
 }
 
-if (sourceUrls.size !== registry.review_scope.baseline_source_count) {
-  failures.push(`공개 사례 고유 source URL은 26개여야 함 (현재 ${sourceUrls.size}개)`);
+for (const id of baselineIds) if (!ids.has(id)) failures.push(`${id}: preserved baseline case missing`);
+if (baselineSourceUrls.size !== registry.review_scope.baseline_source_count) {
+  failures.push(`기존 카탈로그의 원문 URL 수가 기준과 다릅니다 (${baselineSourceUrls.size}/${registry.review_scope.baseline_source_count}).`);
 }
-for (const [name, content, marker] of [
-  ["한국어 카탈로그", koreanCatalog, "26개 고유 원문 URL"],
-  ["영문 카탈로그", englishCatalog, "26 unique source URLs"],
+for (const [name, content, marker, countMarker] of [
+  ["한국어 카탈로그", koreanCatalog, `${registry.review_scope.baseline_source_count}개 고유 원문 URL`, `국내 ${koreaCount}개, 해외 ${internationalCount}개`],
+  ["영문 카탈로그", englishCatalog, `${registry.review_scope.baseline_source_count} unique source URLs`, `${koreaCount} Korean and ${internationalCount} international cases`],
 ]) {
-  if (!content.includes(marker)) failures.push(`${name}: 고유 URL 26개 표기 누락`);
-  if (/PRIMARY_OFFICIAL|partially_verified/.test(content)) {
-    failures.push(`${name}: 폐기한 근거 분류 코드가 남아 있음`);
-  }
+  if (!content.includes(marker)) failures.push(`${name}: 기존 원문 수 표기 누락`);
+  if (!content.includes(countMarker)) failures.push(`${name}: 현재 지역별 사례 수 표기 불일치`);
+  if (/PRIMARY_OFFICIAL|partially_verified/.test(content)) failures.push(`${name}: 폐기한 근거 분류 코드가 남아 있음`);
 }
+
 
 const reviewedIds = new Set(registry.review_scope.reviewed_case_ids);
 const claimIds = new Set();
@@ -205,16 +216,27 @@ for (const item of registry.cases) {
   if (!hasMatchingCorrection) {
     failures.push(`${item.id}: deployment classification changed without a matching correction`);
   }
-  const isReviewed = item.review_status === "selected-claims-reviewed";
+  const isBaseline = baselineIds.has(item.id);
+  const isReviewed = ["selected-claims-reviewed", "initial-claims-reviewed"].includes(item.review_status);
   if (isReviewed !== reviewedIds.has(item.id)) failures.push(`${item.id}: review scope mismatch`);
   const baselines = item.claims.filter((claim) => claim.kind === "baseline-summary");
-  if (baselines.length !== 1) failures.push(`${item.id}: exactly one preserved baseline claim required`);
-  if (isReviewed && item.claims.length < 2) failures.push(`${item.id}: reviewed case needs a follow-up claim`);
-  if (!isReviewed && item.claims.length !== 1) failures.push(`${item.id}: follow-up outside review scope`);
+  const initial = item.claims.filter((claim) => claim.kind === "initial-review");
+  if (isBaseline) {
+    if (baselines.length !== 1) failures.push(`${item.id}: exactly one preserved baseline claim required`);
+    if (initial.length || item.review_status === "initial-claims-reviewed") failures.push(`${item.id}: baseline case cannot be relabeled as newly introduced`);
+    if (isReviewed && item.claims.length < 2) failures.push(`${item.id}: reviewed case needs a follow-up claim`);
+    if (!isReviewed && item.claims.length !== 1) failures.push(`${item.id}: follow-up outside review scope`);
+  } else {
+    if (!validDate(item.introduced_at) || item.introduced_at <= registry.verified_at || item.introduced_at > registry.updated_at) failures.push(`${item.id}: new case requires a valid introduction date after the baseline`);
+    if (baselines.length || initial.length !== 1 || item.review_status !== "initial-claims-reviewed") failures.push(`${item.id}: new case requires one initial review and no historical baseline claim`);
+    if (initial.length === 1 && (initial[0].access_status !== "read" || !["source-reported", "study-reported"].includes(initial[0].status))) failures.push(`${item.id}: new cases require a directly read initial source`);
+    if (initial.length === 1 && JSON.stringify([...initial[0].source_urls].sort()) !== JSON.stringify([...item.source_urls].sort())) failures.push(`${item.id}: initial source set mismatch`);
+  }
   for (const claim of item.claims) {
     if (claimIds.has(claim.id)) failures.push(`${claim.id}: duplicate claim ID`);
     claimIds.add(claim.id);
     if (!claim.id.startsWith(`${item.id}-`)) failures.push(`${claim.id}: claim belongs to another case`);
+    if (!isBaseline && item.introduced_at && claim.checked_at < item.introduced_at) failures.push(`${claim.id}: claim check predates case introduction`);
     if (claim.checked_at > registry.updated_at) failures.push(`${claim.id}: check date after registry update`);
     if (claim.published_at && claim.published_at > claim.checked_at) failures.push(`${claim.id}: publication after check`);
     if (claim.observation_period.start && claim.observation_period.end && claim.observation_period.start > claim.observation_period.end) failures.push(`${claim.id}: reversed observation period`);
@@ -272,6 +294,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
     process.exitCode = 1;
   } else {
     const urls = new Set(inputs.registry.cases.flatMap((item) => item.claims.flatMap((claim) => claim.source_urls)));
-    console.log(`공개 사례 registry 통과: 국내 10개, 해외 15개; 기존 출처 26개, 전체 ${urls.size}개; 일부 주장 검토 ${inputs.registry.review_scope.reviewed_case_ids.length}개 사례`);
+    const kr = inputs.registry.cases.filter((item) => item.region === "KR").length;
+    console.log(`공개 사례 registry 통과: 국내 ${kr}개, 해외 ${inputs.registry.cases.length - kr}개; 기준 출처 ${inputs.registry.review_scope.baseline_source_count}개, 전체 ${urls.size}개; 주장 기록 ${inputs.registry.review_scope.reviewed_case_ids.length}개 사례`);
   }
 }

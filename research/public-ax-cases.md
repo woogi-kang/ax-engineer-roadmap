@@ -1,63 +1,71 @@
 # 공개 AX 사례 카탈로그
 
-이 문서는 국내외 조직이 공개한 AI·AX 적용 사례를 **업무 흐름과 운영 통제** 관점에서 다시 정리한 참고 자료다. 특정 제품의 순위를 매기거나, 외부 조직의 성과를 이 저장소가 재현했다고 주장하지 않는다.
+기업·기관이 공개한 업무 흐름, 사람의 판단과 성과 근거를 비교하는 자료다. 이 저장소에서 해당 조직의 운영을 실사하거나 성과를 재현한 것은 아니다.
 
-- 전체 카탈로그의 마지막 확인일: `2026-08-01`
-- 일부 주장 확인일: `2026-10-26`. K04·K05·K07·K08·K09·G02·G07·G08·G10의 후속·정정 주장만 기록했다. 별도로 일부 원문의 수치를 대조했으며 25개 전체의 현재 운영을 다시 검증한 것은 아니다.
-- 범위: 국내 10개, 해외 15개
-- 주요 출처: 정부·기업 공식 발표, 공급사 고객 사례, 보조적인 주요 언론 보도
-- 제외: 출처 없는 요약, 기능 시연만 있는 제품, 업무 흐름이 드러나지 않는 포괄적 AI 전략
+- 보존한 최초 카탈로그 기준일: `2026-08-01` (25개 사례)
+- 이번 원문 확인일: `2026-10-26`
+- 현재 범위: 국내 16개, 해외 24개 (총 40개 업무 사례)
+- 기존 25개 사례 모두 확인을 시도했다. 주요 원문 본문은 24개 사례에서 읽었고 K06은 접근 실패로 과거 기록을 유지한다.
+- 새 업무 사례 15개를 추가했다. 최근 게시된 자료, 이전 누락, 게시일 미상 자료를 구분하며 같은 조직의 서로 다른 업무를 별도 기업 수로 세지 않는다.
+
+기존 26개 고유 원문 URL은 보존했다. 추가·후속 자료를 포함한 고유 URL은 54개이며 [JSON 목록](public-ax-cases.json)에 주장별 날짜·표본·방법·한계를 기록한다. 검색어, 접근 실패와 보류 후보는 [이번 갱신 기록](evidence-refresh-2026-10-26.md)에서 확인한다.
 
 ## 근거를 읽는 세 축
 
-출처의 성격, 도입 단계, 성과 검증을 한 상태값에 섞지 않는다. 예를 들어 `ORG · LIVE · SELF`는 조직 공식 자료에서 운영은 확인했지만 성과 수치는 자체 발표라는 뜻이다. 기존 26개 고유 원문 URL과 후속 근거 3개(전체 29개), 내부 사례 연결은 기계 판독 가능한 [`public-ax-cases.json`](public-ax-cases.json)에 있다.
-
 | 축 | 코드 | 의미 |
 |---|---|---|
-| 출처 | `ORG` / `JOINT` / `VENDOR` / `MIXED` | 조직 공식 / 공동 공식 발표 / 공급사 고객 사례 / 공식 자료와 독립 보도 결합 |
-| 도입 | `PILOT` / `LIMITED` / `LIVE` / `EXPANDING` / `ADJUSTED` / `UNKNOWN` | 시범 / 제한 운영 / 운영 / 운영 확대 / 운영 방식 조정 / 공개 자료로 판단 보류 |
+| 출처 | `ORG` / `JOINT` / `VENDOR` / `MIXED` / `GOV` | 조직 공식 / 공동 발표 / 공급사 고객 사례 / 공식 자료와 독립 보도 결합 / 정부가 전한 기업 사례 |
+| 도입 | `PILOT` / `LIMITED` / `LIVE` / `EXPANDING` / `ADJUSTED` / `UNKNOWN` | 시범 / 제한 운영 / 운영 / 확대 / 운영 방식 조정 / 판단 보류 |
 | 성과 | `NONE` / `SELF` / `CROSS` / `INDEPENDENT` | 공개 성과 없음 / 자체 발표 / 독립 자료로 방향 교차 확인 / 독립 평가 |
 
-`LIVE`는 실제 사용을 뜻할 뿐 모든 성과 주장이 독립 검증됐다는 뜻이 아니다. 측정 방법·기간·표본·원자료가 없는 시간·비용·만족도 수치는 `SELF`로만 기록한다. 현재 카탈로그에는 `INDEPENDENT` 수준의 성과 검증 사례가 없다.
+도입 단계는 원문이 설명한 시점과 범위를 나타낸다. 확인일 현재도 운영 중이라는 보장은 아니다. `LIVE`와 `SELF`를 독립 성과 검증으로 읽지 않는다. 목표·잠재치·수작업 추산은 실측 결과와 구분하며, 새 자료만으로 기존 실습의 구현 단계를 올리지 않는다. 현재 독립 평가(`INDEPENDENT`)로 분류한 기업 성과 사례는 없다.
+
+각 사례의 실습 질문은 이 로드맵의 설계 제안이며 구현·검증 결과가 아니다.
 
 ## 한눈에 보기
 
 | 번호 | 지역 | 업무·산업 | 공개 조직 | 출처 | 도입 | 성과 |
-|---:|---|---|---|---|---|---|
-| K01 | 한국 | 공공·민원 | 국민권익위원회 외 | ORG | LIMITED | NONE |
-| K02 | 한국 | 금융·여신 | 신한은행 | ORG | LIMITED | NONE |
-| K03 | 한국 | 보험·영업 | 신한라이프 | ORG | LIMITED | NONE |
-| K04 | 한국 | 고객센터 | LG유플러스 | ORG | LIVE | SELF |
-| K05 | 한국 | 협업 | 삼성SDS | ORG | PILOT | SELF |
-| K06 | 한국 | 제조·정비 | 포스코 | ORG | LIVE | NONE |
-| K07 | 한국 | 제조·품질 | LG전자 | ORG | UNKNOWN | SELF |
-| K08 | 한국 | 복지·돌봄 | SK텔레콤 | ORG | LIVE | SELF |
-| K09 | 한국 | 복지·현장 | SK텔레콤 | ORG | LIMITED | SELF |
-| K10 | 한국 | 교육·행정 | LG유플러스 | ORG | PILOT | NONE |
-| G01 | 미국 | 자산관리 | Morgan Stanley | VENDOR | LIVE | SELF |
-| G02 | 글로벌 | 인사 | IBM | ORG | LIVE | SELF |
-| G03 | 독일 | 제조 엔지니어링 | Siemens·thyssenkrupp | JOINT | EXPANDING | SELF |
-| G04 | 미국 | 제조 현장 | Jabil | VENDOR | LIVE | SELF |
-| G05 | 독일 | 산업 서비스 | Bosch Rexroth | VENDOR | LIVE | NONE |
-| G06 | 미국 | 리테일 | Walmart | ORG | LIMITED | NONE |
-| G07 | 미국 | 콘텐츠·리테일 | CarMax | VENDOR | LIVE | SELF |
-| G08 | 미국 | 의료 | Corewell Health | VENDOR | PILOT | SELF |
-| G09 | 미국 | 법무 | Foley Hoag | VENDOR | LIVE | SELF |
-| G10 | 글로벌 | 소프트웨어 | Accenture | VENDOR | LIVE | SELF |
-| G11 | 인도·글로벌 | 보험 | EXL | VENDOR | UNKNOWN | SELF |
-| G12 | 아르헨티나 | 공공·시민 서비스 | 부에노스아이레스시 | VENDOR | LIMITED | NONE |
-| G13 | 미국 | B2B 영업 | Lumen Technologies | VENDOR | LIVE | SELF |
-| G14 | 글로벌 | 제약·R&D | Moderna | VENDOR | LIMITED | NONE |
-| G15 | 스웨덴 | 고객센터 | Klarna | MIXED | ADJUSTED | CROSS |
-
-## 이번에 다시 확인한 범위
-
-비교표는 2026-08-01 분류에서 시작하되 원문과 어긋난 K07·K09·G10의 도입 단계를 정정했다. 정정 전 값과 이유는 아래 주장 기록에 남겼다. 도입 단계는 원문 발표 시점에 서술된 범위이며 2026-10-26의 실시간 운영을 확인한 값이 아니다. 새 근거가 다른 고객 집단의 계획이나 작은 연구를 다룬다면 기존 사례 전체의 도입·성과 등급을 바꾸지 않는다. 아래 추가 항목의 ID는 JSON의 `claims`와 연결된다. 각 주장에 발행일, 확인일, 관측기간, 표본, 방법, 한계와 확인 상태를 기록했다. 알 수 없는 날짜와 표본 크기는 `null`이다.
-
-- K04: 2026-09-30 후속 발표. 기존 수치와의 비교 조건이 달라 성과 증감 추세로 읽지 않는다.
-- K05: 2026-08-13 정부 부처 도입 계획. 사내 시범의 성과를 정부 부처 성과로 옮기지 않는다.
-- G02: 기존 원문의 지표명 정정. NPS -35와 CSAT +74는 서로 다른 지표다. 게시일을 알 수 없어 새 시장 변화로 분류하지 않는다.
-- G08: 2026-06-29 학회 초록. 기준일 이전에 발표됐지만 기존 조사에서 빠진 품질 반례다.
+|---|---|---|---|---|---|---|
+| K01 | KR | 민원 답변 추천과 중복 민원 군집화 | 국민권익위원회 외 | ORG | LIMITED | NONE |
+| K02 | KR | 법인 여신 분석과 의견서 작성 지원 | 신한은행 | ORG | LIMITED | NONE |
+| K03 | KR | 대화형 가입설계와 전산심사 | 신한라이프 | ORG | LIMITED | SELF |
+| K04 | KR | 상담 중 답변 추천과 후처리 지원 | LG유플러스 | ORG | LIVE | SELF |
+| K05 | KR | 회의록·담당자별 후속 업무·메일 초안 | 삼성SDS | ORG | PILOT | SELF |
+| K06 | KR | 센서·영상 기반 예지정비와 경고 | 포스코 | ORG | LIVE | NONE |
+| K07 | KR | 개발 단계 완성품 품질 예측 | LG전자 | ORG | UNKNOWN | SELF |
+| K08 | KR | 취약계층 안부 확인과 상담 이관 | SK텔레콤 | ORG | LIVE | SELF |
+| K09 | KR | 발달장애인 행동 기록 지원 | SK텔레콤 | ORG | LIMITED | SELF |
+| K10 | KR | 출결·상담·활동 기록 통합 | LG유플러스 | ORG | UNKNOWN | NONE |
+| K11 | KR | 대화형 소비자 조사와 분석 | HSAD | ORG | LIVE | SELF |
+| K12 | KR | 앱 리뷰 분류와 답변 초안 | 현대자동차그룹 | ORG | LIVE | SELF |
+| K13 | KR | 매뉴얼 근거를 제공하는 정비 지원 | 현대자동차그룹 | ORG | LIVE | SELF |
+| K14 | KR | VIN 기반 생산 순서 대조 | 현대자동차그룹 | ORG | LIVE | NONE |
+| K15 | KR | 해외 법인 협업 번역과 회의록 | 동원그룹 | VENDOR | LIMITED | NONE |
+| K16 | KR | 판금 불량 원인과 생산 조건 분석 | LG전자 | GOV | LIMITED | NONE |
+| G01 | US | 고객 미팅에서 CRM 기록과 후속 초안 | Morgan Stanley | VENDOR | LIVE | SELF |
+| G02 | GLOBAL | HR 문의에서 인사이동·재직증명 처리까지 | IBM | ORG | LIVE | SELF |
+| G03 | DE | 자동화 코드·센서 설정·검사 문서 | Siemens·thyssenkrupp | JOINT | LIVE | SELF |
+| G04 | US | 작업자 문제 해결과 구매 조사 지원 | Jabil | VENDOR | LIVE | SELF |
+| G05 | DE | 대규모 제품군 기술지원 검색 | Bosch Rexroth | VENDOR | LIVE | NONE |
+| G06 | US | 상품 성과 원인 분석과 운영 티켓 | Walmart | ORG | LIMITED | NONE |
+| G07 | US | 리뷰 요약과 대규모 상품 콘텐츠 | CarMax | VENDOR | LIVE | SELF |
+| G08 | US | 진료 대화에서 임상 기록 초안 | Corewell Health | VENDOR | PILOT | SELF |
+| G09 | US | M&A 실사·공시표·소송 문서 초안 | Foley Hoag | VENDOR | LIVE | SELF |
+| G10 | GLOBAL | 테스트·레거시 이해·기술부채 처리 | Accenture | VENDOR | LIVE | SELF |
+| G11 | IN_GLOBAL | 인수심사 서류 추출과 검토 지원 | EXL | VENDOR | LIMITED | NONE |
+| G12 | AR | 정부 정보 통합과 관광 질의 | 부에노스아이레스시 | VENDOR | LIMITED | SELF |
+| G13 | US | 고객 조사와 접촉 준비 | Lumen Technologies | VENDOR | LIVE | SELF |
+| G14 | GLOBAL | 근거 자료에서 의약품 개발 문서 초안 | Moderna | VENDOR | LIMITED | SELF |
+| G15 | SE | 자동 상담과 복잡 민원의 상담사 인계 | Klarna | MIXED | ADJUSTED | CROSS |
+| G16 | UK | 경쟁사 고객 여정 조사와 제품 기획·데이터 통합 | Virgin Atlantic | VENDOR | LIVE | SELF |
+| G17 | US | 영업 리드 누락 점검과 캠페인 자료·보고 자동화 | Zapier | VENDOR | LIVE | SELF |
+| G18 | DE | 전화 문의 접수·표준 답변과 맥락을 보존한 상담사 인계 | Bundesagentur für Arbeit | ORG | PILOT | NONE |
+| G19 | US | 환자 대화·차트에 맞춘 근거 조회와 진료 판단 지원 | Deaconess Health | VENDOR | LIMITED | SELF |
+| G20 | US_GLOBAL | 보험 문서 접수·분류·검토 경로와 결정 이력 관리 | DXC Technology | ORG | LIVE | SELF |
+| G21 | US | Slack 운영 경보 조사에서 PR·사람 검토·배포 후 확인까지 | Carvana | VENDOR | LIVE | SELF |
+| G22 | CH | 내부 규정 대조와 역할별 데이터 접근을 갖춘 업무 도구 제작 | Pictet | VENDOR | LIMITED | SELF |
+| G23 | US | 부품 공급사 주문 상태 문의와 공급망 처리 | GE Appliances | ORG | LIVE | SELF |
+| G24 | GLOBAL | 전사 에이전트 조정 역할의 중단과 업무 책임 재설계 | MING Labs | ORG | ADJUSTED | SELF |
 
 ## 국내 사례
 
@@ -71,6 +79,8 @@
 - **로드맵에서 배울 점**: 법령·기존 민원·매뉴얼의 출처 표시, 수정 이력, 잘못 묶인 민원의 분리, 담당자 승인과 재처리 절차가 핵심이다.
 - **근거와 한계**: 서비스 개시는 확인되지만 정확도, 처리 시간, 담당자 수정률은 공개되지 않았다. 근거 코드는 `ORG · LIMITED · NONE`이다. [대한민국 정책브리핑](https://www.korea.kr/news/policyNewsView.do?newsId=156743148)
 
+원문 대조 `K01-source-confirmation` (발행 2026-02-05, 확인 2026-10-26): 일부 기관의 시범 운영과 담당자의 초안 수정·민원 묶음 선택을 원문에서 확인했다.
+
 ### K02. 신한은행 — 법인 여신 분석과 의견서 작성 지원
 
 - **문제**: 영업점 직원이 업체 현황, 재무, 산업, 거래, 담보와 기술 경쟁력 자료를 모아 기업을 분석하고 여신 의견서를 작성한다.
@@ -81,6 +91,8 @@
 - **로드맵에서 배울 점**: 재무 수치의 원본, 산업별 규칙 버전, 분석과 승인 권한, 의견서에 인용한 근거를 분리해야 한다.
 - **근거와 한계**: 도입은 확인되지만 심사 시간, 승인 품질, 오판률은 공개되지 않았다. 근거 코드는 `ORG · LIMITED · NONE`이다. [신한금융그룹](https://www.shinhangroup.com/kr/archive/press/detail/679)
 
+원문 대조 `K02-source-confirmation` (발행 2026-03-27, 확인 2026-10-26): 여신 검토 지원 도입을 확인했다. 12개 업종은 분석 범위이며 직원의 최종 판단을 대체한다는 설명은 없다.
+
 ### K03. 신한라이프 — 대화형 가입설계와 전산심사
 
 - **문제**: 설계사가 여러 화면을 오가며 고객 조건, 보장 한도와 특약 규칙을 맞추고 반복해서 설계를 수정한다.
@@ -89,7 +101,11 @@
 - **사람의 판단**: 설계사가 추천안을 수정하고 고객과 선택을 확인한다.
 - **운영 경계**: 고객 동의, 상품 규칙과 전산심사를 통과해야 하며 AI 추천만으로 가입이 확정되는 흐름으로 설명되지 않는다.
 - **로드맵에서 배울 점**: 상품 규칙의 결정론적 검사와 생성형 추천을 분리하고, 고객 동의·설계 변경·심사 결과를 한 감사 기록에 함께 남겨야 한다.
-- **근거와 한계**: 시스템 오픈은 확인되지만 단축 시간과 설계 품질 측정치는 공개되지 않았다. 근거 코드는 `ORG · LIMITED · NONE`이다. [신한금융그룹](https://shinhangroup.com/kr/archive/press/detail/637)
+- **근거와 한계**: 기존 2월 자료는 개시를 설명하며 성과 수치가 없었다. 아래 후속 발표의 자체 수치를 반영해 근거 코드는 `ORG · LIMITED · SELF`다. [신한금융그룹](https://shinhangroup.com/kr/archive/press/detail/637)
+
+원문 대조 `K03-source-confirmation` (발행 2026-02-12, 확인 2026-10-26): 고객 동의와 상품 규칙을 반영해 설계사가 가입설계와 전산심사를 진행하는 흐름을 확인했다.
+
+추가 확인 `K03-lico2-speed` (발행 2026-10-16, 확인 2026-10-26): LICO 2.0은 추천 속도 약 35% 개선을 발표했다. 표본·기간·속도 정의가 없으며 설계 품질 개선으로 읽지 않는다. [원문](https://shinhangroup.com/kr/archive/press/detail/993)
 
 ### K04. LG유플러스 — 상담 중 답변 추천과 후처리 지원
 
@@ -107,6 +123,8 @@
 
 추가 정정 `K04-baseline-calculation-clarification` (원문 발행 2025-05-27, 확인 2026-10-26): 기존 [LG 발표](https://www.lg.co.kr/media/release/29014)는 대기 17초와 통화 30초 절감, 하루 약 7만5000건과 20근무일을 월 약 117만 분의 환산 근거로 제시한다. 산출 방법 전체가 미공개라는 서술은 정정한다. 이 가정이 독립 효과 검증이나 2026년 수치와의 직접 비교를 가능하게 하지는 않는다.
 
+원문 대조 `K04-source-confirmation` (발행 2025-05-27, 확인 2026-10-26): 기존 원문의 통화당 절감 시간과 월간 환산 가정을 다시 확인했다.
+
 ### K05. 삼성SDS — 회의록·담당자별 후속 업무·메일 초안
 
 - **문제**: 회의 자막·번역·회의록, 담당자와 기한이 있는 후속 업무, 메일·메신저 요약을 사람이 반복 작성한다.
@@ -119,15 +137,21 @@
 
 추가 확인 `K05-followup-public-sector` (발행 2026-08-13, 확인 2026-10-26): 삼성SDS는 중앙부처 9곳이 Brity Works 도입을 확정했고 2026년 8월까지 서비스를 순차 개시할 계획이라고 발표했다. 9곳은 도입 기관 수이며 성과 평가 표본이 아니다. 모든 기관의 운영 개시나 사용 성과는 이 자료로 확인할 수 없다. 기존 약 1만 명 사내 시범과 모집단이 다르므로 `PILOT` 분류와 기존 성과의 범위를 보존한다. [삼성SDS 후속 발표](https://www.samsungsds.com/kr/news/sds-2608013.html)
 
+원문 대조 `K05-source-confirmation` (발행 2024-05-02, 확인 2026-10-26): 기존 시간 절감 수치는 약 1만 명 사내 시범에 관한 자체 발표임을 확인했다.
+
+추가 확인 `K05-public-service-launch` (발행 2026-04-30, 확인 2026-10-26): 온AI 서비스 개시와 70여 기관의 Drive 사용은 서로 구분한다. 8월의 9개 부처와도 분모가 다르며 사내 시범의 절감률을 적용하지 않는다. [원문](https://www.samsungsds.com/kr/news/bw-260430.html)
+
 ### K06. 포스코 — 센서·영상 기반 예지정비와 경고
 
 - **문제**: 설비 점검이 숙련자의 경험과 사후 대응에 의존하면 미세한 이상 징후나 작업자 인지 지연을 놓칠 수 있다.
-- **확인된 흐름**: PIMS가 공정 설비 데이터를 통합 분석하고, 압연 공정과 영상 모니터링 모델이 코일 폭 불일치와 강판 치우침을 감지해 작업자에게 경고한다.
+- **기존 기록의 흐름**: PIMS가 공정 설비 데이터를 통합 분석하고, 압연 공정과 영상 모니터링 모델이 코일 폭 불일치와 강판 치우침을 감지해 작업자에게 경고한다.
 - **AI의 역할**: 센서·영상 이상 탐지, 상태 비교, 사전 경고.
 - **사람의 판단**: 작업자가 경고를 확인하고 정비·운전 조치를 결정한다.
 - **운영 경계**: AI가 설비를 임의로 정지시키는 사례가 아니라 안전하고 정확한 작업자 판단을 돕는 구조로 설명된다.
 - **로드맵에서 배울 점**: 정상 기준, 경고 임계값, 누락·오탐 비용, 센서 장애, 수동 운전과 긴급 정지 절차가 LLM 품질보다 먼저다.
-- **근거와 한계**: 현장 적용은 확인되지만 장애 감소량과 오탐률은 공개되지 않았다. 근거 코드는 `ORG · LIVE · NONE`이다. [포스코그룹 뉴스룸](https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/)
+- **근거와 한계**: 기존 자료는 현장 적용을 설명했지만 장애 감소량과 오탐률은 제시하지 않았다. 근거 코드는 `ORG · LIVE · NONE`이다. [포스코그룹 뉴스룸](https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/)
+
+2026-10-26 접근 확인: 기존 원문과 검색에서 찾은 후속 원문은 502로 열리지 않았다. 검색 본문만으로 새 검증 주장을 등록하지 않았으며 위 설명과 `LIVE · NONE`은 이전 근거의 범위로 유지한다.
 
 ### K07. LG전자 — 개발 단계 완성품 품질 예측
 
@@ -141,6 +165,8 @@
 
 운영 경계 정정 `K07-platform-plan-correction` (원문 발행 2025-03-27, 확인 2026-10-26): Eng.AI는 발표 당시 준비 중인 플랫폼이었다. 이미 개발자가 사용한다는 서술과 `LIMITED` 분류를 입증할 수 없어 `UNKNOWN`으로 낮췄다. 기술의 최대 99% 수치는 회사 발표로 유지하며 플랫폼 운영 성과로 옮기지 않는다.
 
+원문 대조 `K07-source-confirmation` (발행 2025-03-27, 확인 2026-10-26): 기술 개발과 Eng.AI 플랫폼 적용 계획을 구분한 기존 정정을 확인했다.
+
 ### K08. SK텔레콤 — 취약계층 안부 확인과 상담 이관
 
 - **문제**: 생활지원사와 지자체가 많은 취약계층 가구에 정기적으로 연락하고 위험 신호를 놓치지 않아야 한다.
@@ -152,6 +178,8 @@
 - **근거와 한계**: 운영 규모는 공식 발표지만 독립 평가와 민감도·특이도는 공개되지 않았다. 근거 코드는 `ORG · LIVE · SELF`다. [SK텔레콤 뉴스룸](https://news.sktelecom.com/200115)
 
 단위 정정 `K08-people-unit-correction` (원문 발행 2023-11-28, 확인 2026-10-26): 원문은 110,538명과 약 176만 건의 전화를 구분한다. 영문의 11만 건 안부 확인으로 읽히는 표현을 11만 명 이상으로 고쳤다. 4,063명 전문 상담 연결도 사람 수이며 안전 효과의 검증값은 아니다.
+
+원문 대조 `K08-source-confirmation` (발행 2023-11-28, 확인 2026-10-26): 안부 확인 대상 인원, 통화 건수와 전문 상담 연결 인원을 구분한 기존 정정을 확인했다.
 
 ### K09. SK텔레콤 — 발달장애인 행동 기록 지원
 
@@ -165,15 +193,65 @@
 
 도입 범위 정정 `K09-deployment-scope-correction` (원문 발행 2025-08-28, 확인 2026-10-26): 원문이 사용 중인 12개 시설을 명시하므로 기존 `PILOT`을 `LIMITED`로 정정했다. 시설 수는 90% 수치의 표본이 아니며 발표 당시의 도입 범위를 현재 운영 확인으로 확대하지 않는다.
 
+원문 대조 `K09-source-confirmation` (발행 2025-08-28, 확인 2026-10-26): 발표 당시 12개 시설에서 사용 중이라는 기존 도입 범위 정정을 확인했다.
+
+추가 확인 `K09-expert-intervention-boundary` (발행 2026-06-10, 확인 2026-10-26): 전문가가 행동 기록을 검토해 중재를 정한다. 케어 LLM과 보호자 AI는 개발·구상 단계이며 임상 효과가 검증된 것은 아니다. [원문](https://news.sktelecom.com/226306)
+
 ### K10. LG유플러스 — 출결·상담·활동 기록 통합
 
 - **문제**: 교사가 출결 서류, 학습 활동, 상담과 학사 일정을 서로 다른 화면과 문서에서 관리한다.
 - **확인된 흐름**: 학생정보시스템, 학습관리시스템과 상담 데이터를 묶어 교사가 출결, 학생 카드, AI 기반 활동 기록과 상담 자료를 함께 조회하게 한다.
 - **AI의 역할**: 기록 통합·분석, 학생별 활동·상담 자료와 교육 활동 제안.
 - **사람의 판단**: 교사가 기록을 확인하고 상담, 평가와 교육 활동에 사용할지 결정한다.
-- **운영 경계**: 제주교육청과 교원 행정업무 경감 시범사업이 안내돼 있으며 전국 학교의 운영 성과로 일반화할 수 없다.
+- **운영 경계**: 제주교육청과의 협약은 2026학년도 시범 제공 계획이다. 실제 개시나 전국 학교의 운영 성과는 확인하지 못했다.
 - **로드맵에서 배울 점**: 학생 데이터 최소화, 교사의 수정권, 자동 생성 기록의 근거, 학교생활기록 반영 전 승인과 정정 절차가 필요하다.
-- **근거와 한계**: 제품 구성과 시범사업은 확인되지만 정량 결과는 공개되지 않았다. 근거 코드는 `ORG · PILOT · NONE`이다. [LG유플러스](https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140)
+- **근거와 한계**: 제품 구성과 시범 제공 계획을 확인했다. 실제 시범 개시를 입증하지 못해 근거 코드는 `ORG · UNKNOWN · NONE`으로 정정한다. [LG유플러스](https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140)
+
+원문 대조 `K10-source-confirmation` (발행 게시일 미상, 확인 2026-10-26): 현재 제품 페이지는 교사 행정 기능을 설명하지만 시범 운영 개시일은 제시하지 않는다.
+
+추가 확인 `K10-pilot-plan-correction` (발행 2025-12-12, 확인 2026-10-26): 2025-12-12 협약은 시범학교 10곳과 2026학년도 제공 계획이다. 개시 증거가 없어 `PILOT`을 `UNKNOWN`으로 정정하며 이전 분류를 이력으로 남긴다. [원문](https://news.lguplus.com/20952)
+
+### K11. HSAD: 소비자 조사
+
+- **공개된 업무**: 응답에 맞춘 추가 질문으로 조사하고 분석한다. 회사는 조사 기간을 4주 이상에서 약 2주로 줄이고 조사·분석 비용을 약 70% 절감했다고 발표했다. 비교한 프로젝트 수와 비용 항목은 미공개다.
+- **실습에서 물을 점**: 질문 분기 뒤에도 응답 비교가 가능한지, 동의·원문 보존·분석 검수가 어디서 필요한지 시험한다.
+- **근거와 한계**: 조사 품질·대표성·동의 절차와 최종 승인 통제는 확인하지 못했다. `ORG · LIVE · SELF`. [원문 2026-09-30](https://lg.co.kr/media/release/30615)
+- **주장 기록**: `K11-initial-review`. 확인 2026-10-26. 세부 기간·표본·방법은 JSON에 기록했다.
+
+### K12. 현대자동차그룹: 앱 리뷰 답변
+
+- **공개된 업무**: 리뷰를 분류하고 근거 지식으로 초안을 만든 뒤 담당자가 검토·전달한다. 평균 처리 시간 35분에서 5분으로의 단축은 회사 발표이며 표본과 산식은 미공개다.
+- **실습에서 물을 점**: 출처가 바뀌거나 답변이 틀렸을 때 승인·수정·발송 기록을 대조한다.
+- **근거와 한계**: 85%는 처리 범위다. 9월 자동화는 계획이다. `ORG · LIVE · SELF`. [원문 2026-08-12](https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation)
+- **주장 기록**: `K12-initial-review`. 확인 2026-10-26. 세부 기간·표본·방법은 JSON에 기록했다.
+
+### K13. 현대자동차그룹: 정비 지원
+
+- **공개된 업무**: 정비사가 매뉴얼·정비 기록을 검색하고 공식 근거를 확인한다. 대응 시간 약 42% 단축은 회사 발표이며 작업별 정의와 평가 표본은 미공개다.
+- **실습에서 물을 점**: 차종·버전이 다른 근거의 거절과 위험 작업의 사람 인계를 시험한다.
+- **근거와 한계**: 진단 정확도나 자율 수리의 증거가 아니다. `ORG · LIVE · SELF`. [원문 2026-08-12](https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation) [원문 2026-10-22](https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day)
+- **주장 기록**: `K13-initial-review` · `K13-manual-evidence-review`. 확인 2026-10-26. 세부 기간·표본·방법은 JSON에 기록했다.
+
+### K14. 현대자동차그룹: VIN 대조
+
+- **공개된 업무**: VIN 인식으로 생산 순서를 대조한다. 73개 공정은 적용 범위다.
+- **실습에서 물을 점**: 판독 실패·등록 정보 지연·수동 재개 권한을 별도 조건으로 시험한다.
+- **근거와 한계**: 조치 권한은 미공개다. 단위가 다른 거점 수와 추세를 비교하지 않는다. `ORG · LIVE · NONE`. [원문 2026-10-22](https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day)
+- **주장 기록**: `K14-initial-review`. 확인 2026-10-26. 세부 기간·표본·방법은 JSON에 기록했다.
+
+### K15. 동원그룹: 해외 법인 협업
+
+- **공개된 업무**: 번역·회의록·일정·사내 정보 조회를 활용한다는 공급사 사례다.
+- **실습에서 물을 점**: 발언자·결정·제안의 번역 오류와 공유 권한을 확인한다.
+- **근거와 한계**: 사용자 범위·발송 승인 절차는 미공개다. 같은 행사에서 소개된 Cowork의 운영을 뜻하지 않는다. `VENDOR · LIMITED · NONE`. [원문 2026-09-08](https://www.samsungsds.com/kr/news/sds20260908.html)
+- **주장 기록**: `K15-initial-review`. 확인 2026-10-26. 세부 기간·표본·방법은 JSON에 기록했다.
+
+### K16. LG전자: 판금 제조 분석
+
+- **공개된 업무**: 제조 데이터를 연결해 불량 원인과 생산 조건을 분석한다는 정부 자료다.
+- **실습에서 물을 점**: 원소재·설비 상태 변경 뒤의 예측과 실제 검사 결과, 조건 변경 승인을 대조한다.
+- **근거와 한계**: 개별 성과·승인 권한은 미공개다. 170여 사업장의 집계 성과를 LG전자 효과로 옮기지 않는다. K07과 다른 업무다. `GOV · LIMITED · NONE`. [원문 2026-09-11](https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172187/view)
+- **주장 기록**: `K16-initial-review`. 확인 2026-10-26. 세부 기간·표본·방법은 JSON에 기록했다.
 
 ## 해외 사례
 
@@ -187,10 +265,14 @@
 - **로드맵에서 배울 점**: 고위험 지식 업무에서는 RAG만이 아니라 전문가 채점, 회귀 평가, 고객 동의와 CRM 쓰기 전 검토가 함께 필요하다.
 - **근거와 한계**: 98% 팀 사용률 등은 공급사와 고객이 함께 발표한 수치로 독립 검증되지 않았다. 근거 코드는 `VENDOR · LIVE · SELF`다. [OpenAI](https://openai.com/index/morgan-stanley/)
 
-### G02. IBM — HR 문의에서 증명서 발급·휴가 처리까지
+추가 확인 `G01-source-confirmation-20261026` (확인 2026-10-26): 98%는 Assistant를 사용하는 자문팀 비율이다. Debrief의 정확도나 사용률이 아니다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://openai.com/index/morgan-stanley/)
+
+추가 확인 `G01-finance-design-partnership` (확인 2026-10-26): 투자은행·주식리서치 설계 협력은 기존 Debrief와 다른 업무다. 제품 출시·협력을 배포 성과로 합치지 않는다. [원문 1](https://openai.com/index/introducing-chatgpt-financial-services/)
+
+### G02. IBM — HR 문의에서 인사이동·재직증명 처리까지
 
 - **문제**: 여러 HR 챗봇과 문의 채널이 분산돼 직원과 관리자가 정책을 찾고 반복 요청을 처리하기 어렵다.
-- **확인된 흐름**: `AskHR`가 정책 문의에 답하는 단일 창구에서 출발해 재직증명서 발급, 휴가 신청, 직원 이동 같은 실제 HR 업무까지 처리하도록 확장됐다.
+- **확인된 흐름**: `AskHR`가 정책 문의에 답하는 단일 창구에서 출발해 재직증명서 발급과 직원 이동 같은 실제 HR 업무까지 처리하도록 확장됐다.
 - **AI의 역할**: 의도 분류, 정책 검색·응답, HR 도메인 라우팅, 정형 업무 실행.
 - **사람의 판단**: 복잡한 요청은 HR 전문가가 처리하고 조직 변경 같은 관리자 업무에는 기존 권한 체계를 적용한다.
 - **공개 결과**: IBM은 초기 NPS가 -35였고 이후 CSAT로 지표를 바꿔 +74를 기록했다고 설명한다. 같은 지표가 상승한 것으로 연결하지 않는다.
@@ -198,6 +280,8 @@
 - **근거와 한계**: 장기 운영 과정은 공식 사례지만 지표 산식과 외부 검증은 제한적이다. [IBM](https://www.ibm.com/case-studies/ibm-transformation/ask-hr)
 
 지표 정정 `G02-metric-correction` (게시일 미상, 확인 2026-10-26): [IBM 원문](https://www.ibm.com/case-studies/ibm-transformation/ask-hr)은 NPS에서 CSAT로 전환했다고 명시한다. 기존 문서의 CSAT -35→+74 표기는 잘못됐다. 각 지표의 조사기간·표본과 CSAT 산식은 미공개이며 자체 발표인 `SELF`를 유지한다. 이 확인은 지표명 정정에 한정하며 새 시장 변화나 인과효과를 입증하지 않는다.
+
+추가 확인 `G02-source-confirmation-20261026` (확인 2026-10-26): NPS -35와 CSAT +74는 서로 다른 지표다. 현재 원문의 업무 예시는 인사이동·재직증명이다. 휴가 기능의 부재를 뜻하지 않는다. 지표 조사기간·표본은 미공개다. [원문 1](https://www.ibm.com/case-studies/ibm-transformation/ask-hr)
 
 ### G03. Siemens·thyssenkrupp — 자동화 코드·센서 설정·검사 문서
 
@@ -209,6 +293,8 @@
 - **로드맵에서 배울 점**: 산업 AI는 생성 속도보다 PLC·센서 상태, 안전 인터록, 시뮬레이션, 변경 승인과 롤백이 완료 기준이다.
 - **근거와 한계**: 고객 사용과 확대 계획은 공식 발표지만 성과 수치는 공급사 측 자료다. [Siemens](https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai)
 
+추가 확인 `G03-source-confirmation-20261026` (확인 2026-10-26): 2024년 실제 사용과 2025년 전세계 확대 계획을 분리한다. 12만 명은 TIA Portal 사용자 기반이다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai)
+
 ### G04. Jabil — 작업자 문제 해결과 구매 조사 지원
 
 - **문제**: 생산 작업자가 여러 문서, 장애 티켓과 지식 문서에서 진단 방법을 찾고 구매·고객 담당자는 별도의 조사를 반복한다.
@@ -218,6 +304,8 @@
 - **운영 경계**: 첫 버전은 일주일에 만들었지만 이후 여러 데이터 원본을 추가했다고 설명한다. 빠른 프로토타입과 운영 준비는 구분해야 한다.
 - **로드맵에서 배울 점**: 문서 최신성, 설비·공장별 차이, 다국어, 티켓 상태, 위험 작업 이관과 현장 피드백이 핵심이다.
 - **근거와 한계**: 공급사 고객 사례이며 공개된 배포·처리시간 수치가 생성형 도우미만의 효과라고 분리되지는 않는다. [AWS](https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/)
+
+추가 확인 `G04-source-confirmation-20261026` (확인 2026-10-26): 배포 67~83%·처리 74%·비용 23% 개선은 클라우드 현대화 지표이며 생성형 도우미만의 효과가 아니다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/)
 
 ### G05. Bosch Rexroth — 대규모 제품군 기술지원 검색
 
@@ -229,6 +317,10 @@
 - **로드맵에서 배울 점**: 부품 번호·제품 버전·설치 환경을 입력 계약으로 두고, 답변에 원문과 적용 가능 제품을 표시해야 한다.
 - **근거와 한계**: 구축과 사용 목적은 확인되지만 처리 시간, 해결률과 오류율은 공개되지 않았다. [AWS](https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/)
 
+추가 확인 `G05-source-confirmation-20261026` (확인 2026-10-26): Smart Assistant가 50만 개 이상 제품 자료 검색을 지원한다. 운영 효과의 평가 표본은 미공개다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/)
+
+추가 확인 `G05-hydraulic-hub-workflow` (확인 2026-10-26): 제품 식별, 기술문서, 정비 체크리스트와 서비스 요청을 연결한다. 최대 개선율의 표본·기간·측정법은 미공개다. 새 운영 성과로 분류하지 않는다. [원문 1](https://www.boschrexroth.com/en/gb/connected-hydraulics/products/hydraulic-hub/)
+
 ### G06. Walmart — 상품 성과 원인 분석과 운영 티켓
 
 - **문제**: 상품 담당자가 여러 보고서와 스프레드시트를 모아 기대보다 성과가 높거나 낮은 이유를 찾고 운영 문제를 해결한다.
@@ -238,6 +330,10 @@
 - **운영 경계**: 향후 설정 가능한 통제 안에서 전술적 작업을 자율 실행하는 방향은 계획이며 현재 완료된 운영 범위로 보지 않는다.
 - **로드맵에서 배울 점**: 상관관계와 원인을 구분하고, 상품 상태 재조회, 추천 근거, 전략 결정과 전술 실행 권한을 분리해야 한다.
 - **근거와 한계**: 내부 도입과 기능은 공식 발표지만 정량 성과는 공개되지 않았다. [Walmart](https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants)
+
+추가 확인 `G06-source-confirmation-20261026` (확인 2026-10-26): Wally의 질의·분석·티켓 지원과 향후 자율 실행 목표를 구분한다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants)
+
+추가 확인 `G06-agent-profiles-plan` (확인 2026-10-26): 소비자용 Agent Profiles는 다음 달 출시 계획이며 Wally와 다른 업무다. 승인·지출 한도 설계를 완료된 도입이나 내부 상품 업무 성과로 쓰지 않는다. [원문 1](https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers)
 
 ### G07. CarMax — 리뷰 요약과 대규모 상품 콘텐츠
 
@@ -250,6 +346,10 @@
 - **근거와 한계**: Microsoft 고객 사례의 회사 측 수치이며 수작업 11년이라는 자체 추산을 비교 기준으로 제시했지만 상세 측정 설계와 장기 품질은 공개되지 않았다. [Microsoft](https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service)
 
 비교 기준 정정 `G07-comparison-basis-clarification` (원문 발행 2022-05-24, 확인 2026-10-26): 회사는 수작업으로 약 11년이 걸릴 것이라는 추산을 비교 기준으로 밝혔다. 실제 병행 대조군이나 11년의 실측 작업 기록은 아니다. 5,000개 페이지 수와 80% 편집 승인율의 평가 분모도 구분한다.
+
+추가 확인 `G07-source-confirmation-20261026` (확인 2026-10-26): 5,000개 페이지의 수작업 11년은 추정이다. 편집 승인율 80%는 사실 정확도가 아니다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service)
+
+추가 확인 `G07-customer-app-boundary` (확인 2026-10-26): 차량 검색·견적 도구 연결 앱의 출시는 기존 편집 업무와 별개다. 기준일 이전 자료이며 앱 출시를 콘텐츠 편집 성과에 합치지 않는다. [원문 1](https://media.carmax.com/press-releases/news-release/2026/CarMax-Launches-First-of-Its-Kind-Car-Shopping-and-Selling-Experience-in-ChatGPT-App-Store/default.aspx)
 
 ### G08. Corewell Health — 진료 대화에서 임상 기록 초안
 
@@ -265,6 +365,10 @@
 
 실습에서는 기록 시간과 함께 관계상 중요 사건의 누락, 의료진의 추가 기록과 수정 부담을 평가한다. 원래 사례의 `PILOT · SELF`를 승격하지 않는다.
 
+추가 확인 `G08-source-confirmation-20261026` (확인 2026-10-26): 90일 파일럿과 4,000명 확대 계획을 구분한다. 별도 레지던시 연구를 같은 표본으로 합치지 않는다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://www.abridge.com/case-study/corewell-health)
+
+추가 확인 `G08-clinician-assistant-interview` (확인 2026-10-26): 임상가가 차트·근거를 조회하고 검토한 답신을 보낸다는 인터뷰다. 임상가 1명의 편집된 인터뷰다. 90일 파일럿·레지던시 연구와 합치지 않는다. [원문 1](https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant)
+
 ### G09. Foley Hoag — M&A 실사·공시표·소송 문서 초안
 
 - **문제**: 변호사가 대규모 데이터룸과 소송 문서를 읽어 조항, 쟁점, 사실과 공시 항목을 구조화한다.
@@ -274,6 +378,8 @@
 - **공개 결과**: 공급사는 M&A 검토 주기를 최소 3분의 1 줄인 사례와 특정 소송 실험에서 8~10시간을 절감한 사례를 소개한다.
 - **로드맵에서 배울 점**: 모든 결론을 원문 인용에 연결하고, 비밀유지·권한·법역·문서 버전과 변호사 최종 검토를 강제해야 한다.
 - **근거와 한계**: 공급사 고객 사례와 내부 설문 수치이며 사건별 난이도와 품질 비교는 공개되지 않았다. [Harvey](https://www.harvey.ai/customers/foley-hoag)
+
+추가 확인 `G09-source-confirmation-20261026` (확인 2026-10-26): 시간 절감 설문은 변호사 55명의 자기보고다. 사건별 수치와 전사 성과를 구분한다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://www.harvey.ai/customers/foley-hoag)
 
 ### G10. Accenture — 테스트·레거시 이해·기술부채 처리
 
@@ -287,15 +393,19 @@
 
 도입 범위 정정 `G10-rollout-scope-correction` (게시일 미상, 확인 2026-10-26): 기존 `PILOT` 분류는 원문에 명시된 시험 이후 수천 명 확대 배포를 빠뜨려 `LIVE`로 정정했다. 450명과 200명은 시험 집단이며 현재 사용자가 아니다. 공급사 서술이고 정확한 날짜가 없어 최근 채용·도입 증가나 독립 성과로 해석하지 않는다.
 
+추가 확인 `G10-source-confirmation-20261026` (확인 2026-10-26): 20명 파일럿, 450명 사용군·200명 대조군과 이후 확대를 구분한다. 12,000석은 접근 규모다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://github.com/customer-stories/accenture)
+
 ### G11. EXL — 인수심사 서류 추출과 검토 지원
 
 - **문제**: 보험 인수심사자가 수백 쪽의 의료·가입 서류를 읽고 초기 평가를 구조화한다.
 - **확인된 흐름**: OCR과 텍스트 분석으로 문서를 추출하고 개인정보를 제거한 뒤 RAG 도우미가 심사 검토를 지원한다.
 - **AI의 역할**: 스캔 문서 추출, 민감정보 제거, 관련 문서 검색, 초기 평가 지원.
 - **사람의 판단**: 인수심사자가 자료와 제안을 검토하고 위험·가입 결정을 내린다.
-- **공개 결과**: EXL은 수일 걸리던 과정을 수시간으로 줄이고 비용을 최대 80% 낮출 잠재력이 있다고 분석했다.
+- **공개 결과**: EXL은 심사 과정을 수일에서 수시간으로 줄일 수 있고 비용을 최대 80% 낮출 잠재력이 있다고 분석했다. 실측 성과로 제시된 값은 아니다.
 - **로드맵에서 배울 점**: OCR 누락, 의료정보 보호, 근거 문서 연결, 상품별 심사 규칙과 최종 심사자 승인을 분리해야 한다.
 - **근거와 한계**: 실제 보험사 이름과 방법론이 공개되지 않은 공급사 사례다. `최대 80%`는 검증된 보편 결과가 아니라 공급사 분석이다. [AWS](https://aws.amazon.com/solutions/case-studies/exl-case-study/)
+
+추가 확인 `G11-source-confirmation-20261026` (확인 2026-10-26): 2024년 8월 출시 후 초기 고객이 온보딩했다. 최대 80%는 EXL 분석상 잠재 절감이다. 이전 SELF를 NONE으로 정정한다. 심사 비용·시간은 잠재 효과이며 60일 개발 이력은 별개다. [원문 1](https://aws.amazon.com/solutions/case-studies/exl-case-study/)
 
 ### G12. 부에노스아이레스시 — 정부 정보 통합과 관광 질의
 
@@ -307,6 +417,8 @@
 - **로드맵에서 배울 점**: 민감도가 낮은 업무로 시작하고, 공식 정보의 기준 시스템, 다국어·정치적 중립·개인정보 보호와 채널마다 같은 답을 내는지 평가해야 한다.
 - **근거와 한계**: Microsoft 고객 사례이며 생성형 기능과 기존 챗봇의 효과가 일부 함께 서술돼 있다. [Microsoft](https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service)
 
+추가 확인 `G12-source-confirmation-20261026` (확인 2026-10-26): 전체 Boti의 월 200만 문의와 생성형 관광 경험 누적 17,000건을 구분한다. 후자는 업무부담 50% 감소를 자체 보고한다. 이전 NONE을 SELF로 정정한다. 원문에 자체 보고가 있으나 독립 검증으로 승격하지 않는다. [원문 1](https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service)
+
 ### G13. Lumen Technologies — 고객 조사와 접촉 준비
 
 - **문제**: B2B 판매자가 고객에게 연락하기 전 여러 시스템에서 기업·계약·관계 정보를 모으고 회의 기록을 정리한다.
@@ -317,6 +429,8 @@
 - **로드맵에서 배울 점**: 조사 시간뿐 아니라 CRM 최신성, 잘못된 고객 정보, 메시지 검수, 중복 접촉과 실제 영업 결과를 함께 측정해야 한다.
 - **근거와 한계**: Microsoft 고객 사례의 회사 측 추산이며 표본과 산출법은 공개되지 않았다. [Microsoft](https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/)
 
+추가 확인 `G13-source-confirmation-20261026` (확인 2026-10-26): 조사 4시간→15분과 연간 5,000만 달러 가치는 회사 설명이며 실현 매출 증가의 증거가 아니다. 공개 원문 확인이며 실제 운영 실사나 독립 성과 검증은 아니다. [원문 1](https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/)
+
 ### G14. Moderna — 근거 자료에서 의약품 개발 문서 초안
 
 - **문제**: 임상, 제품과 마케팅 팀이 수백 쪽의 근거 자료를 검토해 Target Product Profile을 공동 작성한다.
@@ -325,7 +439,9 @@
 - **사람의 판단**: 임상·제품·마케팅 전문가가 가정과 트레이드오프를 검토하고 최종 개발 방향을 정한다.
 - **운영 경계**: AI가 의약품 안전성이나 개발 결정을 대신하는 사례가 아니라 근거 검토와 문서 초안을 보조하는 흐름이다.
 - **로드맵에서 배울 점**: 근거와 가정의 명시적 구분, 문장별 출처, 분야별 승인, 자료 버전과 변경 영향 추적이 핵심이다.
-- **근거와 한계**: 공급사 보고서에 실린 사례이며 구체적인 기간 단축 수치와 독립 검증은 공개되지 않았다. [OpenAI](https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/)
+- **근거와 한계**: 공급사 보고서에 실린 사례이며 일부 핵심 분석 단계를 수주에서 수시간으로 줄였다고 자체 보고했다. 전체 TPP의 단축률·측정 설계·독립 검증은 공개하지 않았다. [OpenAI](https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/)
+
+추가 확인 `G14-source-confirmation-20261026` (확인 2026-10-26): 일부 핵심 분석 단계를 수주에서 수시간으로 줄였다는 보고이며 전체 TPP 기간은 아니다. 이전 NONE을 SELF로 정정한다. 원문에 자체 보고가 있으나 독립 검증으로 승격하지 않는다. [원문 1](https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/)
 
 ### G15. Klarna — 자동 상담과 복잡 민원의 상담사 인계
 
@@ -337,35 +453,54 @@
 - **로드맵에서 배울 점**: 자동 처리율만 목표로 삼지 않는다. 복잡 민원이 상담사에게 정확히 전달되는지, 처리 품질과 재문의가 어떻게 달라지는지, 고객이 사람을 선택할 수 있는지, 숙련 상담사가 어려운 문제를 계속 처리할 여건이 있는지 함께 확인해야 한다.
 - **근거와 한계**: 초기 수치는 회사·공급사 발표이고 후속 운영 방향은 주요 언론으로 교차 확인했다. 완전한 철회가 아니라 사람과 AI의 역할 재조정으로 보는 편이 정확하다. [초기 공식 사례](https://openai.com/index/klarna/) · [AP 후속 보도](https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929)
 
-## 최종 원문 대조의 범위
+추가 확인 `G15-source-confirmation-20261026` (확인 2026-10-26): 초기 상담 수치는 회사·공급사 자체 발표다. 700명 업무 상당량은 실제 해고 인원이 아니다. [원문 1](https://openai.com/index/klarna/)
 
-2026-10-26에 아래 기존 원문의 수치·도입 표현을 대조했다. 후속·정정 항목을 추가한 사례는 위 9개이며 나머지 검토는 해당 수치의 표현 확인에 한정했다. 조직의 현재 운영이나 전체 25개 사례를 실사한 결과가 아니다.
+추가 확인 `G15-operating-adjustment-confirmation` (확인 2026-10-26): 복잡한 상담에 사람 지원을 보강했다고 보도했다. 운영 방향만 교차 확인하며 초기 수치의 독립 검증은 아니다. [원문 1](https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929)
 
-| 대조한 항목 | 확인 범위 |
-|---|---|
-| K04·K05·K07·K08·K09 | 시간 수치와 환산 가정, 사내 시범 분모, 플랫폼 계획, 사람·통화 단위, 시설 도입 범위 |
-| G02·G07·G08·G09·G10 | NPS/CSAT 구분, 수작업 기간 추산, 확대 계획, 법률 업무 절감의 주장 범위, 시험과 이후 배포 |
-| G11·G12·G13·G15 | 비용 절감 잠재력, 전체 챗봇과 생성형 기능 구분, 조사 시간, 초기 자체 발표와 AP의 후속 운영 보도 |
-| G03 | Siemens 원문 조회가 시간 초과로 끝나 현재 수치를 재확인하지 못함. 기존 날짜와 출처를 보존 |
 
-## 로드맵 사례 후보로 바꾸는 방법
+### G16. Virgin Atlantic
 
-외부 사례를 그대로 복제하지 않는다. 아래 항목을 새 조직의 조건에 맞춰 다시 정한 뒤에만 `case-studies/` 후보로 제안한다.
+- **업무와 판단**: 자료를 모아 고객 여정을 비교하고 제품팀이 결과를 수정·선택한다.
+- **근거와 한계**: `G16-initial-review`, 발행 2026-08-10, 확인 2026-10-26. 전사 ROI나 고객 성과는 검증하지 않았다. [원문 1](https://openai.com/index/virgin-atlantic/chatgpt-work/)
 
-1. 업무를 시작시키는 사건과 완료 상태
-2. 최신 상태를 확인할 원본 시스템
-3. AI가 읽고 제안하고 실행할 수 있는 범위
-4. 사람이 승인·수정·거절해야 하는 지점
-5. 정상·경계·실패·공격 평가 사례
-6. 중복, 부분 실패, 권한 오류와 외부 시스템 복구 방법
-7. 사용자 수정 부담과 실제 업무 결과를 확인할 지표
-8. 공개 자료로 확인한 사실과 새 조직에 적용할 가설의 구분
+### G17. Zapier
 
-## 분류 제안
+- **업무와 판단**: 리드 누락 점검·캠페인 자료 준비·보고를 연결하고 팀이 결과를 검토한다.
+- **근거와 한계**: `G17-initial-review`, 발행 2026-08-10, 확인 2026-10-26. 7자리 파이프라인 가치는 실현 매출이 아니며 상시 공통 맥락 체계는 계획이다. [원문 1](https://openai.com/index/zapier/)
 
-기존 `primary_domain`은 업무 기능을 나타낸다. 업종 다양성을 보여 주기 위해 이를 무리하게 늘리기보다 별도의 `industry` 축을 두는 방법을 먼저 검토할 수 있다.
+### G18. Bundesagentur für Arbeit
 
-- 업무 기능 예시: 고객·매출, 사람·협업, 재무·구매, 데이터·운영, 공통 통합·운영
-- 산업 예시: 제조, 금융, 보험, 의료, 공공, 교육, 복지, 리테일, 법무, 소프트웨어, 제약
+- **업무와 판단**: 표준 전화 문의를 보조하고 복잡한 문의와 법적 결정은 직원에게 남긴다.
+- **근거와 한계**: `G18-initial-review`, 발행 2026-09-23, 확인 2026-10-26. AI 처리량·시간 절감 실적은 미공개다. 개인기록 활용은 후속 계획이다. [원문 1](https://www.arbeitsagentur.de/en/press/2026-36-more-service-and-shorter-waiting-times-federal-employment-agency-starts-test-phase-with-ai-voice-assistance)
 
-업무 기능은 책임과 시스템 흐름을 찾는 축이고, 산업은 규제·데이터·현장 조건을 비교하는 보조 축이다.
+### G19. Deaconess Health
+
+- **업무와 판단**: 환자 대화·차트에 맞춘 근거를 조회하고 임상가가 판단한다.
+- **근거와 한계**: `G19-initial-review`, 발행 2026-09-29, 확인 2026-10-26. 진단 정확도·임상 효과 연구가 아니며 300개 기관은 실증 표본이 아니다. [원문 1](https://www.abridge.com/blog/deaconess-olivia-taylor-abridge-assistant)
+
+### G20. DXC Technology
+
+- **업무와 판단**: 보험 문서를 분류·구조화하고 중요한 결정은 사람에게 넘겨 이력을 남긴다.
+- **근거와 한계**: `G20-initial-review`, 발행 2026-10-15, 확인 2026-10-26. 첫 계산 초안 80%를 전체 정확도로 쓰지 않는다. 1,100개 고객·전체 보험계약 규모도 Claude 실사용 분모가 아니다. [원문 1](https://dxc.com/insights/customer-stories/dxc-claude-insurance-backbone)
+
+### G21. Carvana
+
+- **업무와 판단**: Slack 경보를 조사해 PR을 제안하고 사람이 검토한다.
+- **근거와 한계**: `G21-initial-review`, 발행일 미상, 확인 2026-10-26. 2주·5건은 별도 조사 시험이다. 56% 경보 감소·65% 답변시간 단축의 표본과 측정기간은 미공개다. [원문](https://claude.com/customers/carvana)
+
+### G22. Pictet
+
+- **업무와 판단**: 내부 지침 대조·업무 도구 제작을 지원하며 리스크팀이 용도·데이터 범위를 검토한다.
+- **근거와 한계**: `G22-initial-review`, 발행 미상, 확인 2026-10-26. 본문 게시일·전체 품질 평가 미공개. 접근·교육 규모를 업무 성과로 쓰지 않는다. [원문 1](https://claude.com/customers/pictet)
+
+### G23. GE Appliances
+
+- **업무와 판단**: 부품 공급사 주문 상태 문의를 자동화하고 담당자가 공급망 업무를 처리한다.
+- **근거와 한계**: `G23-initial-review`, 발행 2026-04-22, 확인 2026-10-26. 계산식·대조군·세부 승인 절차 미공개. 기준일 이전 근거다. [원문 1](https://pressroom.geappliances.com/news/ge-appliances-reinvents-manufacturing-operations-at-scale-with-google-clouds-gemini-enterprise)
+
+`G23-later-recap`: 9월 공급사 글은 4월 회사 발표의 성과를 다시 설명한다. 새 관측이나 독립 검증이 아니며 수치를 중복 집계하지 않는다. [원문 1](https://cloud.google.com/transform/agentic-factory-manufacturing-new-age-of-autonomy-industrial-ai)
+
+### G24. MING Labs
+
+- **업무와 판단**: 조정 에이전트 Major Tom을 중단하고 업무 소유권을 다시 설계했다.
+- **근거와 한계**: `G24-initial-review`, 발행 2026-04-02, 확인 2026-10-26. 13일 뒤 특정 역할을 중단한 자기보고다. 다른 에이전트 효과와 합치거나 회사 전체 철회로 쓰지 않는다. [원문 1](https://www.minglabs.com/insights/articles/we-fired-an-ai-agent) · [원문 2](https://www.minglabs.com/insights/articles/we-fired-an-ai-agent.json)

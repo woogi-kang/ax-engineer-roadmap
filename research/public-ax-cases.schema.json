@@ -81,7 +81,8 @@
               "organization-official",
               "joint-official",
               "vendor-customer-case",
-              "mixed-official-independent"
+              "mixed-official-independent",
+              "government-report"
             ]
           },
           "deployment_stage": {
@@ -125,7 +126,8 @@
           "review_status": {
             "enum": [
               "not-rechecked",
-              "selected-claims-reviewed"
+              "selected-claims-reviewed",
+              "initial-claims-reviewed"
             ],
             "description": "Whether selected follow-up or correction claims are recorded. not-rechecked means the original case-wide evidence has not been reverified; it does not mean no original URL or individual figure was spot-checked."
           },
@@ -145,7 +147,12 @@
               "adjusted-operation",
               "unknown"
             ],
-            "description": "Preserved classification from the last full catalog review. Each correction references this baseline; earlier correction claims remain historical records."
+            "description": "First recorded classification for this case: the original full-review value for baseline cases, or introduction-time classification for new cases. Corrections reference this preserved value."
+          },
+          "introduced_at": {
+            "type": "string",
+            "format": "date",
+            "description": "Date this case entered this catalog. Omitted for the preserved baseline catalog."
           }
         }
       }
@@ -160,7 +167,8 @@
       "required": [
         "reviewed_case_ids",
         "scope",
-        "baseline_source_count"
+        "baseline_source_count",
+        "baseline_case_ids"
       ],
       "properties": {
         "reviewed_case_ids": {
@@ -175,7 +183,18 @@
           "const": "selected-claims-only"
         },
         "baseline_source_count": {
-          "const": 26
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of unique introduction-source URLs among preserved baseline cases."
+        },
+        "baseline_case_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[KG][0-9]{2}$"
+          }
         }
       }
     }
@@ -235,7 +254,9 @@
             "outcome",
             "operating-boundary",
             "deployment-plan",
-            "counterevidence"
+            "counterevidence",
+            "initial-review",
+            "source-confirmation"
           ]
         },
         "statement": {
