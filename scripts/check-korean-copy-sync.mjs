@@ -30,11 +30,20 @@ function localLinks(source, file) {
   return links;
 }
 
-function hasOpeningDefinition(source) {
+function inlineText(tokens) {
+  return tokens.map((token) => {
+    if (token.type === "html" || token.type === "image") return "";
+    if (Array.isArray(token.tokens)) return inlineText(token.tokens);
+    if (["text", "escape", "codespan"].includes(token.type)) return token.text;
+    return token.type === "br" ? " " : "";
+  }).join("");
+}
+
+export function hasOpeningDefinition(source) {
   for (const token of marked.lexer(source, { gfm: true })) {
     if (token.type === "heading" && token.depth === 2) break;
     if (token.type !== "paragraph") continue;
-    const text = marked.parseInline(token.text).replace(/<[^>]*>/g, "").trim();
+    const text = inlineText(token.tokens ?? []).trim();
     const roleName = /^(?:An?\s+)?AX\s+(?:Engineer|엔지니어)(?![A-Za-z])/i;
     if (roleName.test(text) && text.replace(roleName, "").trim().length > 0) return true;
   }
