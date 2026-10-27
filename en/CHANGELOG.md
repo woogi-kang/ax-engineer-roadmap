@@ -4,13 +4,16 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ## [Unreleased]
 
-## [0.4.0] - 2026-10-27
-
 ### Added
 
 - A 16-case Beauty/D2C VOC development set (32 labeled normal, edge, and failure cases in total), personal-data rejection, blocking of source conflicts and reversed timestamps, run-cost recording, and a latency benchmark option
 - A Beauty/D2C VOC P2 approval replay with version-bound approval, authority re-check before execution, request and approval expiry, idempotent execution, approval packets, an audit log, and 10 scenarios
 - A P1 independent review kit for a non-implementer judging new inputs. The repository does not yet contain a review record
+
+## [0.4.0] - 2026-10-27
+
+### Added
+
 - Added 15 company/institution workflow cases, bringing the catalog to 16 Korean and 24 international entries, with recheck results, corrections, and access failures for the original 25
 - Added 27 bilingual job-posting records with responsibilities, requirements, recruitment signals, publication/check dates, structured data, and status/date validation
 - Added the 2026-10-26 evidence refresh record covering collection scope, held material, source access, and limitations
