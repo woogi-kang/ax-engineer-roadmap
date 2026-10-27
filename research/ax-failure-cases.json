@@ -1,0 +1,1059 @@
+{
+  "$schema": "./ax-failure-cases.schema.json",
+  "checked_at": "2026-10-27",
+  "existing_catalog_cases": [
+    "G15",
+    "G24"
+  ],
+  "cases": [
+    {
+      "id": "FK01",
+      "region": "KR",
+      "organization": "스캐터랩 (이루다)",
+      "domain": {
+        "ko": "대화형 챗봇 서비스",
+        "en": "Conversational chatbot service"
+      },
+      "attempted_change": {
+        "ko": "연애 상담 앱에서 모은 카카오톡 대화로 대화형 챗봇을 학습시키고 응답 데이터베이스를 만들었다.",
+        "en": "Trained a conversational chatbot and built its reply database from KakaoTalk chats collected by the company's dating-advice apps."
+      },
+      "decision_metric": {
+        "ko": "출시 2주 만에 이용자 약 75만 명이라는 확산 지표가 공개됐다. 차별 발언과 데이터 처리의 적법성은 출시 전에 통과 기준으로 공개되지 않았다.",
+        "en": "The public signal was growth: about 750,000 users within two weeks. No pre-launch pass criteria for discriminatory output or lawful data use were published."
+      },
+      "outcome": [
+        "STOPPED",
+        "SANCTIONED"
+      ],
+      "outcome_disclosed_at": "2021-04-28",
+      "failure_causes": [
+        "data-consent",
+        "unsafe-output"
+      ],
+      "failure_evidence": "official-record",
+      "what_happened": {
+        "ko": "출시 약 20일 뒤 성희롱 악용, 소수자 차별 발언, 학습 데이터 논란이 이어져 2021-01-12부터 서비스를 중단했다. 개인정보보호위원회는 다른 서비스에서 모은 대화를 명확한 동의 없이 새 서비스에 쓴 점 등 8건의 위반을 인정해 과징금·과태료 1억 330만 원과 시정명령을 내렸다.",
+        "en": "About 20 days after launch, abuse, discriminatory replies and training-data concerns led the company to suspend the service from 2021-01-12. The PIPC found eight violations, including reuse of chats collected for other services without clear consent, and imposed KRW 103.3 million in penalties plus a corrective order."
+      },
+      "capstone_check": {
+        "ko": "학습·검색에 쓸 데이터마다 수집 목적과 동의 범위를 기록한다. 차별·유해 응답 평가 세트는 출시 전 통과 기준으로 둔다.",
+        "en": "Record the collection purpose and consent scope for every training or retrieval dataset, and make a discriminatory/harmful-output test set a pre-launch gate."
+      },
+      "related_public_cases": [],
+      "related_case_studies": [
+        "care-conversation-record"
+      ],
+      "sources": [
+        {
+          "url": "https://www.newsis.com/view/NISX20210111_0001301555",
+          "publisher": "뉴시스",
+          "source_type": "PRESS",
+          "published_at": "2021-01-12",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "출시일, 2주 이용자 수, 중단 시점과 회사 입장문.",
+            "en": "Launch date, two-week user count, suspension date and company statement."
+          }
+        },
+        {
+          "url": "https://byline.network/2021/04/29-101",
+          "publisher": "바이라인네트워크",
+          "source_type": "PRESS",
+          "published_at": "2021-04-28",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "개인정보보호위원회 처분 금액, 위반 8건, 약 60만 명·94억 건 문장의 데이터 범위.",
+            "en": "PIPC penalty amount, eight violations and the data scope of about 600,000 users and 9.4 billion sentences."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "규제기관 원문 대신 처분을 보도한 기사를 읽었다. 이후 재출시된 서비스의 운영 결과는 다루지 않는다.",
+          "en": "Read press coverage of the decision, not the regulator's original release. The later relaunched service is out of scope."
+        }
+      ]
+    },
+    {
+      "id": "FK02",
+      "region": "KR",
+      "organization": "교육부 (AI 디지털교과서)",
+      "domain": {
+        "ko": "공교육 수업 도구",
+        "en": "Public-school classroom tools"
+      },
+      "attempted_change": {
+        "ko": "초등 3·4학년, 중1, 고1 일부 과목에 AI 디지털교과서를 교과서 지위로 도입해 수업 방식 전환을 추진했다.",
+        "en": "Introduced AI digital textbooks with legal textbook status for selected subjects in grades 3-4, middle-school year 1 and high-school year 1."
+      },
+      "decision_metric": {
+        "ko": "공개 논쟁의 지표는 학교 채택률(약 30~33%)과 실제 접속률(국회 지적 10% 미만), 투입 예산(최소 5,333억 원)이었다. 학습 효과 지표는 확인한 자료에 없었다.",
+        "en": "The debated indicators were school adoption (about 30-33%), actual log-in rate (below 10% according to a lawmaker) and spending (at least KRW 533.3 billion). The sources read did not report learning-outcome metrics."
+      },
+      "outcome": [
+        "SCALED_BACK"
+      ],
+      "outcome_disclosed_at": "2025-08-04",
+      "failure_causes": [
+        "premature-scale",
+        "stakeholder-trust",
+        "metric-gap"
+      ],
+      "failure_evidence": "official-record",
+      "what_happened": {
+        "ko": "도입 한 학기 만인 2025-08-04 국회가 초·중등교육법 개정안을 가결해 AI 디지털교과서를 교육자료로 규정했다. 사용 여부는 학교장 재량이 되고 구독료 예산 근거가 약해졌다. 교육부는 2026년 교과서 심사 절차를 멈추고 희망 학교 지원을 협의하겠다고 밝혔다.",
+        "en": "One semester after launch, on 2025-08-04 the National Assembly amended the Elementary and Secondary Education Act to classify the tools as educational materials. Use became the principal's choice and the legal basis for subscription funding weakened. The ministry halted the 2026 textbook review and said it would discuss support for schools that still want them."
+      },
+      "capstone_check": {
+        "ko": "현업이 쓰는지(활성 사용률)와 일이 나아졌는지(성과 지표)를 따로 정한다. 의무 확대 전에는 소규모 비교 결과와 사용자 의견을 공개한다.",
+        "en": "Define adoption (active use) and outcome (did the work improve) separately, and publish a small comparison and user feedback before making use mandatory."
+      },
+      "related_public_cases": [],
+      "related_case_studies": [
+        "file-csv-to-ax-hub"
+      ],
+      "sources": [
+        {
+          "url": "https://www.khan.co.kr/article/202508041631001",
+          "publisher": "경향신문",
+          "source_type": "PRESS",
+          "published_at": "2025-08-04",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "본회의 가결, 교육자료 규정, 채택률 약 33%, 실제 접속률 10% 미만 지적, 교육부의 2026년 심사 중단.",
+            "en": "Plenary passage, reclassification, about 33% adoption, a claim of under 10% actual log-ins, and the halted 2026 review."
+          }
+        },
+        {
+          "url": "https://www.heraldk.com/article/2025080323300795569",
+          "publisher": "헤럴드경제",
+          "source_type": "PRESS",
+          "published_at": "2025-08-03",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "1학기 사용 학교 약 30%, 최소 5,333억 원 예산, 학생 1인당 월 약 5,000원 구독료.",
+            "en": "About 30% of schools using it in the first semester, at least KRW 533.3 billion spent, roughly KRW 5,000 per student per month."
+          }
+        },
+        {
+          "url": "https://www.etoday.co.kr/news/view/2493911",
+          "publisher": "이투데이",
+          "source_type": "PRESS",
+          "published_at": "2025-08-04",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "본회의 상정 당일 교육부의 희망 학교 지원 협의·규정 개정 방침.",
+            "en": "The ministry's plan, on the day of the vote, to support schools that still want the tools and to amend its regulation."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "국회 의안 원문과 교육부 보도자료가 아니라 보도를 읽었다. 헤럴드경제 게시 시각은 미주판 기준이다. 학습 효과 자체를 평가한 자료는 확인하지 않았다.",
+          "en": "Read press coverage, not the bill text or ministry releases. The Herald timestamp is the U.S. edition. No study of learning outcomes was reviewed."
+        }
+      ]
+    },
+    {
+      "id": "FK03",
+      "region": "KR",
+      "organization": "삼성전자",
+      "domain": {
+        "ko": "사내 생성형 AI 사용 정책",
+        "en": "Internal generative AI use policy"
+      },
+      "attempted_change": {
+        "ko": "직원이 외부 생성형 AI로 번역·요약·코드 작업을 하던 흐름을 사내 정책으로 관리하려 했다.",
+        "en": "Tried to bring employees' use of external generative AI for translation, summarizing and code under company policy."
+      },
+      "decision_metric": {
+        "ko": "2023년 사내 설문에서 응답자 65%가 보안 위험이 있다고 답했다. 설비정보 유출 2건과 회의 내용 유출 1건이 보도됐다.",
+        "en": "In a 2023 internal survey, 65% of respondents saw a security risk. Two equipment-information leaks and one meeting-content leak were reported."
+      },
+      "outcome": [
+        "PAUSED",
+        "SCALED_BACK"
+      ],
+      "outcome_disclosed_at": "2023-05-02",
+      "failure_causes": [
+        "data-leak",
+        "no-permission-boundary"
+      ],
+      "failure_evidence": "press-reported",
+      "what_happened": {
+        "ko": "2023년 DX부문은 회사 PC의 외부 생성형 AI 사용을 임시 제한했고 DS부문은 그보다 먼저 제한했다. 이후 사내 모델 사용을 원칙으로 했다. 2026년 5월 보도에 따르면 약 2,500명 PoC를 거쳐 6월부터 DX부문 보안 교육 이수자에게 외부 서비스 3종을 열고 DS부문은 승인된 경우로 계속 제한한다.",
+        "en": "In 2023 the DX division temporarily restricted external generative AI on company PCs, after the DS division had already done so, and the company moved to in-house models. A May 2026 report says that after a PoC with about 2,500 employees, three external services open in June to DX employees who complete security training, while DS keeps approval-only use."
+      },
+      "capstone_check": {
+        "ko": "금지 대신 입력 가능한 정보 등급, 사용자 교육, 승인 범위, 로그를 갖춘 사용 경로를 먼저 설계하고 부서별로 다른 기준을 둔다.",
+        "en": "Instead of a blanket ban, design a sanctioned path first: allowed data classes, user training, approval scope and logging, with stricter rules where the data is more sensitive."
+      },
+      "related_public_cases": [],
+      "related_case_studies": [
+        "company-agent-operating-layer"
+      ],
+      "sources": [
+        {
+          "url": "https://biz.sbs.co.kr/amp/article/20000116190",
+          "publisher": "SBS Biz",
+          "source_type": "PRESS",
+          "published_at": "2023-05-02",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "2023년 DX부문 제한, 유출 3건, 설문 65%, 자체 도구 개발 계획.",
+            "en": "2023 DX restriction, three leaks, the 65% survey result and in-house tool plans."
+          }
+        },
+        {
+          "url": "https://v.daum.net/v/20260526185738672",
+          "publisher": "디지털타임스 (다음 전재)",
+          "source_type": "PRESS",
+          "published_at": "2026-05-26",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "2026년 6월 DX부문 외부 AI 공식 도입, 2,500명 PoC, 보안 교육 이수 조건, DS부문 제한 유지.",
+            "en": "June 2026 DX rollout of external AI, the 2,500-person PoC, the security-training condition and continued DS restrictions."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "회사 공지 원문은 읽지 못했고 보도에 의존한다. 2023년 보도마다 유출 내용 표현이 달라 '소스코드 유출'로 단정하지 않는다. 6월 이후 실제 운영은 확인하지 않았다.",
+          "en": "Relies on press reports, not the internal notice. 2023 reports describe the leaks differently, so this record does not call it a source-code leak. Operation after June was not checked."
+        }
+      ]
+    },
+    {
+      "id": "FK04",
+      "region": "KR",
+      "organization": "고용노동부 (구직급여 상담 챗봇)",
+      "domain": {
+        "ko": "공공 민원 상담",
+        "en": "Public-service inquiries"
+      },
+      "attempted_change": {
+        "ko": "구직급여(실업급여) 문의 일부를 챗봇으로 처리해 상담 부담을 줄이려 했다.",
+        "en": "Used a chatbot to handle part of the unemployment-benefit inquiries and reduce call-center load."
+      },
+      "decision_metric": {
+        "ko": "국회에 제출된 자료의 챗봇 일평균 상담 건수와 연간 누적 건수, 콜센터 인입 건수.",
+        "en": "Daily and annual chatbot consultations and call-center inbound volume, from data submitted to the National Assembly."
+      },
+      "outcome": [
+        "UNPROVEN"
+      ],
+      "outcome_disclosed_at": "2026-04-26",
+      "failure_causes": [
+        "escalation-gap",
+        "metric-gap",
+        "stakeholder-trust"
+      ],
+      "failure_evidence": "official-record",
+      "what_happened": {
+        "ko": "챗봇 연간 상담은 2023년 81만 9,902건에서 2025년 56만 3,143건으로 31.3% 줄었지만 콜센터 인입은 일평균 1만 2,359건에서 1만 2,031건으로 거의 그대로였다. 부처는 이용자가 실무자 연결을 요구하는 경우가 많아 챗봇이 상담을 끝내기 어렵다고 설명했다.",
+        "en": "Annual chatbot consultations fell 31.3%, from 819,902 in 2023 to 563,143 in 2025, while daily call-center inbound volume barely moved (12,359 to 12,031). The ministry said users often ask to reach a case worker, so the chatbot struggles to complete consultations."
+      },
+      "capstone_check": {
+        "ko": "자동화율만 보지 말고 사람 상담 인입이 실제로 줄었는지, 사람 연결 요청이 어디서 생기는지 함께 측정한다.",
+        "en": "Do not stop at automation share: check whether human-handled volume actually fell and where requests for a person come from."
+      },
+      "related_public_cases": [
+        "G15",
+        "G18"
+      ],
+      "related_case_studies": [
+        "public-service-petition-response"
+      ],
+      "sources": [
+        {
+          "url": "https://v.daum.net/v/20260426210237574",
+          "publisher": "세계일보 (다음 전재)",
+          "source_type": "PRESS",
+          "published_at": "2026-04-26",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "국회 제출 자료의 연도별 챗봇·콜센터 건수와 부처 설명, 노조 설문.",
+            "en": "Year-by-year chatbot and call-center figures from data submitted to the National Assembly, the ministry's explanation and a union survey."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "국회 제출 원자료가 아닌 보도를 읽었다. 챗봇 이용 감소의 원인을 따로 분석한 자료는 없다. 같은 기사의 노조 설문(706명)은 금융권 등 AI 상담 전반에 관한 것이라 이 사례의 지표로 쓰지 않는다.",
+          "en": "Read the press report, not the submitted data. No separate causal analysis exists. The union survey in the same article (706 people) covers AI customer service broadly and is not used as this case's metric."
+        }
+      ]
+    },
+    {
+      "id": "FG01",
+      "region": "US",
+      "organization": "McDonald's · IBM",
+      "domain": {
+        "ko": "드라이브스루 음성 주문",
+        "en": "Drive-thru voice ordering"
+      },
+      "attempted_change": {
+        "ko": "약 100개 매장의 드라이브스루 주문을 음성 AI(Automated Order Taker)가 받게 했다.",
+        "en": "Had a voice AI (Automated Order Taker) take drive-thru orders at about 100 restaurants."
+      },
+      "decision_metric": {
+        "ko": "주문 정확도. 2022년 증권사 보고서는 정확도를 80% 초반으로 봤고 회사는 확대 전 95% 이상을 목표로 했다고 보도됐다.",
+        "en": "Order accuracy. A 2022 broker report put it in the low 80% range; the company reportedly wanted 95%+ before wider rollout."
+      },
+      "outcome": [
+        "STOPPED"
+      ],
+      "outcome_disclosed_at": "2024-06-17",
+      "failure_causes": [
+        "accuracy"
+      ],
+      "failure_evidence": "self-acknowledged",
+      "what_happened": {
+        "ko": "2021년 10월부터 약 2년 반 시험한 뒤 2024년 말로 IBM과의 AOT 파트너십을 끝낸다고 발표했다. 회사는 음성 주문이 앞으로도 매장의 일부가 될 것이라며 장기 방안을 다시 정하겠다고 했다.",
+        "en": "After about two and a half years of testing from October 2021, the company said it would end the AOT partnership with IBM at the end of 2024, while saying voice ordering remains part of its future."
+      },
+      "capstone_check": {
+        "ko": "확대 조건이 되는 정확도 기준을 미리 숫자로 정한다. 그 기준에 못 미치면 연장하지 않고 끝낼 판정 날짜도 정해 둔다.",
+        "en": "Set the accuracy threshold for scaling as a number in advance, and fix a decision date to end rather than extend if it is not met."
+      },
+      "related_public_cases": [],
+      "related_case_studies": [
+        "centralized-mail-assist"
+      ],
+      "sources": [
+        {
+          "url": "https://www.nrn.com/quick-service/mcdonald-s-is-ending-its-ai-drive-thru-test-with-ibm",
+          "publisher": "Nation's Restaurant News",
+          "source_type": "PRESS",
+          "published_at": "2024-06-17",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "시험 범위·기간, 종료 결정과 회사 성명, 정확도 보도.",
+            "en": "Test scope and duration, the end decision and statement, accuracy reporting."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "회사는 종료 이유를 자세히 밝히지 않았다. 정확도 수치는 2022년 외부 보고서 인용이며 종료 시점의 실측치가 아니다.",
+          "en": "The company gave little detail on why. Accuracy figures come from a 2022 external report, not measurements at the time of the decision."
+        }
+      ]
+    },
+    {
+      "id": "FG02",
+      "region": "CA",
+      "organization": "Air Canada",
+      "domain": {
+        "ko": "고객 응대 챗봇",
+        "en": "Customer-service chatbot"
+      },
+      "attempted_change": {
+        "ko": "웹사이트 챗봇이 운임·환불 규정 문의에 답하게 했다.",
+        "en": "Let a website chatbot answer fare and refund-policy questions."
+      },
+      "decision_metric": {
+        "ko": "공개된 운영 지표는 없다. 판단 기준은 챗봇 답변이 회사 규정과 일치하는지였다.",
+        "en": "No operating metrics were published. The test that mattered was whether answers matched the company's own policy."
+      },
+      "outcome": [
+        "SANCTIONED"
+      ],
+      "outcome_disclosed_at": "2024-02-14",
+      "failure_causes": [
+        "ungrounded-answer"
+      ],
+      "failure_evidence": "official-record",
+      "what_happened": {
+        "ko": "챗봇은 여행 후 90일 안에 유족 할인 운임을 소급 신청할 수 있다고 안내했지만 연결된 규정 페이지는 여행 후 신청을 인정하지 않았다. 항공사는 챗봇 정보에 책임이 없다고 주장했으나 재판소는 챗봇도 웹사이트의 일부라며 과실에 의한 허위 안내 책임을 인정하고 총 812.02캐나다달러 지급을 명령했다.",
+        "en": "The chatbot said a bereavement fare could be claimed within 90 days after travel, while the linked policy page said it could not. The airline argued it was not liable for its chatbot; the tribunal called it part of the website, found negligent misrepresentation and ordered CAD 812.02 in total."
+      },
+      "capstone_check": {
+        "ko": "규정·가격처럼 책임이 따르는 답변은 원문 조항을 인용하게 하고 원문과 다른 답변을 잡는 평가 사례를 만든다. 답변 책임자는 회사라는 전제로 승인 범위를 정한다.",
+        "en": "For answers that carry liability, such as policy or price, require a quote of the source clause and test for answers that contradict it. Assume the company owns every answer when setting approval scope."
+      },
+      "related_public_cases": [],
+      "related_case_studies": [
+        "centralized-mail-assist",
+        "public-service-petition-response"
+      ],
+      "sources": [
+        {
+          "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/525448/1/document.do",
+          "publisher": "Civil Resolution Tribunal (BC)",
+          "source_type": "COURT",
+          "published_at": "2024-02-14",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "Moffatt v. Air Canada, 2024 BCCRT 149 결정문 전문.",
+            "en": "Full decision text of Moffatt v. Air Canada, 2024 BCCRT 149."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "소액 분쟁 한 건의 결정이다. 챗봇 전체의 오답률이나 운영 변경은 공개되지 않았다.",
+          "en": "A single small-claims decision. Overall error rates and any operational change were not disclosed."
+        }
+      ]
+    },
+    {
+      "id": "FG03",
+      "region": "US",
+      "organization": "New York City (MyCity)",
+      "domain": {
+        "ko": "공공 사업자 규정 안내 챗봇",
+        "en": "Public chatbot for business rules"
+      },
+      "attempted_change": {
+        "ko": "2023년 가을 사업자가 시 규정을 물어볼 수 있는 생성형 AI 챗봇을 공개했다.",
+        "en": "Launched a generative AI chatbot in fall 2023 for business owners to ask about city rules."
+      },
+      "decision_metric": {
+        "ko": "공개된 정확도 지표는 없다. 언론 시험에서 법에 어긋나는 답변이 반복 확인됐다. 2026년 시장은 예산 대비 쓸모를 판단 근거로 들었다.",
+        "en": "No accuracy metric was published. Press testing repeatedly found unlawful answers; in 2026 the mayor cited cost versus usefulness."
+      },
+      "outcome": [
+        "STOPPED"
+      ],
+      "outcome_disclosed_at": "2026-02-04",
+      "failure_causes": [
+        "ungrounded-answer",
+        "weak-review"
+      ],
+      "failure_evidence": "self-acknowledged",
+      "what_happened": {
+        "ko": "2024년 시험에서 Section 8 세입자 차별 허용, 팁 공제 허용, 현금 거부 허용 같은 잘못된 답변이 나왔다. 시는 경고 문구와 답변 제한을 더했지만 2026년 맘다니 시장이 '사실상 쓸 수 없다'며 폐지를 밝혔고 2026-02-04 페이지가 '베타 종료'로 바뀌었다.",
+        "en": "2024 testing found wrong answers such as allowing Section 8 discrimination, tip-taking and refusing cash. The city added disclaimers and narrowed answers, but in 2026 Mayor Mamdani called it 'functionally unusable', and on 2026-02-04 the page said the beta had ended."
+      },
+      "capstone_check": {
+        "ko": "법·규정 안내는 범위를 좁혀 시작하고 위반 답변 시험 세트를 정기적으로 돌린다. 경고 문구를 정확도 관리의 대체 수단으로 쓰지 않는다.",
+        "en": "Start legal or regulatory Q&A with a narrow scope and rerun a violation test set on a schedule. Do not treat a disclaimer as a substitute for accuracy control."
+      },
+      "related_public_cases": [
+        "K01"
+      ],
+      "related_case_studies": [
+        "public-service-petition-response"
+      ],
+      "sources": [
+        {
+          "url": "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law",
+          "publisher": "The Markup · THE CITY",
+          "source_type": "PRESS",
+          "published_at": "2026-01-30",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "2024년 시험 결과, 시장 발언과 비용, 대변인 확인, 2026-02-04 종료 업데이트.",
+            "en": "2024 test findings, the mayor's remarks and cost, spokesperson confirmation and the 2026-02-04 shutdown update."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "오답을 처음 보도한 매체의 후속 기사다. 비용 수치(약 50만~60만 달러)는 출처마다 다르고 유지비는 공개되지 않았다.",
+          "en": "A follow-up by the outlet that first reported the errors. Cost figures (about USD 500k-600k) vary by source and maintenance cost is unknown."
+        }
+      ]
+    },
+    {
+      "id": "FG04",
+      "region": "AU",
+      "organization": "Commonwealth Bank of Australia",
+      "domain": {
+        "ko": "고객센터 음성봇과 인력 조정",
+        "en": "Contact-center voice bot and staffing"
+      },
+      "attempted_change": {
+        "ko": "AI 음성봇 도입을 이유로 고객센터 직무 45개를 감축하려 했다.",
+        "en": "Planned to cut 45 contact-center roles on the grounds that an AI voice bot would replace them."
+      },
+      "decision_metric": {
+        "ko": "은행은 음성봇이 주당 통화를 2,000건 줄였다고 주장했다. 노조는 근거 제출을 요구하며 실제 통화는 늘어 초과근무와 팀장 응대가 생겼다고 반박했다.",
+        "en": "The bank said the bot cut calls by 2,000 a week. The union demanded evidence and said calls were rising, with overtime and team leaders answering calls."
+      },
+      "outcome": [
+        "REVERSED"
+      ],
+      "outcome_disclosed_at": "2025-08-21",
+      "failure_causes": [
+        "premature-scale",
+        "metric-gap"
+      ],
+      "failure_evidence": "self-acknowledged",
+      "what_happened": {
+        "ko": "노조가 분쟁을 제기했고 그중 하나는 공정근로위원회로 넘어갔다. 이후 은행은 초기 평가가 관련 사업 요소를 충분히 고려하지 않았고 '이 오류로 해당 직무는 불필요하지 않았다'며 감축을 철회했다.",
+        "en": "The union filed disputes, one of which went to the Fair Work Commission. The bank then said its initial assessment did not adequately consider all relevant business considerations and that 'this error meant the roles were not redundant', reversing the cuts."
+      },
+      "capstone_check": {
+        "ko": "인력·업무 재배치 결정 전에 기준선 대비 실제 업무량 변화를 일정 기간 측정하고 그 근거를 이해관계자가 확인할 수 있게 남긴다.",
+        "en": "Before reassigning staff, measure the change in real workload against a baseline over a set period and keep that evidence reviewable by affected parties."
+      },
+      "related_public_cases": [
+        "G15"
+      ],
+      "related_case_studies": [
+        "centralized-mail-assist"
+      ],
+      "sources": [
+        {
+          "url": "https://ia.acs.org.au/article/2025/cba-reverses-ai-driven-job-cuts--admits--error-.html",
+          "publisher": "Information Age (ACS)",
+          "source_type": "PRESS",
+          "published_at": "2025-08-21",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "45개 직무 철회와 은행의 오류 인정 발언.",
+            "en": "Reversal of the 45 roles and the bank's admission of error."
+          }
+        },
+        {
+          "url": "https://www.fsunion.org.au/were-disputing-cbas-anti-jobs-agenda-in-fair-work/",
+          "publisher": "Finance Sector Union",
+          "source_type": "UNION",
+          "published_at": null,
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "주당 2,000건 감소 주장의 근거 요구와 공정근로위원회 분쟁.",
+            "en": "Challenge to the 2,000-calls-a-week claim and the Fair Work Commission dispute."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "통화량 반박은 노조 주장이다. 노조 페이지는 표시 날짜와 메타데이터가 서로 달라 게시일을 비워 둔다. 은행의 원 발표문은 읽지 않았다.",
+          "en": "The call-volume rebuttal is the union's claim. The union page shows conflicting dates, so its publication date is left blank. The bank's own release was not read."
+        }
+      ]
+    },
+    {
+      "id": "FG05",
+      "region": "UK",
+      "organization": "Department for Business and Trade",
+      "domain": {
+        "ko": "사무 생산성 도구 시범",
+        "en": "Office productivity assistant pilot"
+      },
+      "attempted_change": {
+        "ko": "2024년 10~12월 직원 1,000명에게 Microsoft 365 Copilot을 제공하고 효과를 평가했다.",
+        "en": "Gave Microsoft 365 Copilot to 1,000 staff from October to December 2024 and evaluated it."
+      },
+      "decision_metric": {
+        "ko": "작업별 절약 시간(일지 300건), 관찰 과제의 소요 시간과 품질, 사용자 만족도, 생산성 변화.",
+        "en": "Time saved per task (300 diaries), time and quality in observed tasks, user satisfaction and productivity change."
+      },
+      "outcome": [
+        "UNPROVEN"
+      ],
+      "outcome_disclosed_at": null,
+      "failure_causes": [
+        "metric-gap",
+        "ungrounded-answer"
+      ],
+      "failure_evidence": "official-record",
+      "what_happened": {
+        "ko": "문서 초안 작성은 작업당 약 1.3시간을 줄였지만 일정 잡기는 오히려 늘었다. 엑셀 분석 과제는 더 오래 걸리고 품질도 낮았다. 일지 응답자의 22%가 환각을 봤다고 답했다. 보고서는 절약 시간이 생산성 향상으로 이어졌다는 확실한 근거를 찾지 못했다고 결론지었다.",
+        "en": "Drafting saved about 1.3 hours per task while scheduling took longer; the Excel analysis task took longer with lower quality; 22% of diary respondents reported hallucinations. The report found no robust evidence that time savings led to improved productivity."
+      },
+      "capstone_check": {
+        "ko": "사용자가 느낀 절약 시간과 산출물 품질, 실제 업무 성과를 다른 지표로 나누고 작업 유형별로 도입 여부를 정한다.",
+        "en": "Separate perceived time saved, output quality and real work outcomes, and decide adoption per task type."
+      },
+      "related_public_cases": [
+        "K05"
+      ],
+      "related_case_studies": [
+        "slack-meeting-actions"
+      ],
+      "sources": [
+        {
+          "url": "https://assets.publishing.service.gov.uk/media/68adbe409e1cebdd2c96a19d/dbt-microsoft-365-copilot-evaluation.pdf",
+          "publisher": "UK Department for Business and Trade",
+          "source_type": "GOV",
+          "published_at": null,
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "평가 기간, 표본, 방법과 결론 원문.",
+            "en": "Evaluation period, samples, methods and conclusions."
+          }
+        },
+        {
+          "url": "https://www.civilserviceworld.com/news/article/dbt-trial-finds-copilot-saves-staff-time-but-doesnt-improve-productivity",
+          "publisher": "Civil Service World",
+          "source_type": "PRESS",
+          "published_at": "2025-09-10",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "평가 결과 요약과 만족도 보도.",
+            "en": "Summary of findings and satisfaction results."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "PDF에는 '2025년 8월'만 표기돼 게시일을 비워 둔다. 보고서 스스로 생산성은 주 평가 목표가 아니어서 자료가 적다고 밝혔다. 실패가 아니라 기대 효과가 입증되지 않은 사례다.",
+          "en": "The PDF only says 'August 2025', so the date is left blank. The report notes productivity was not a key aim and data on it is limited. This is an unproven-benefit case, not a shutdown."
+        }
+      ]
+    },
+    {
+      "id": "FG06",
+      "region": "AU",
+      "organization": "Deloitte Australia · DEWR",
+      "domain": {
+        "ko": "정부 용역 보고서 작성",
+        "en": "Consulting report for government"
+      },
+      "attempted_change": {
+        "ko": "정부 부처 용역 보고서 작성에 Azure OpenAI GPT-4o 기반 도구를 사용했다.",
+        "en": "Used an Azure OpenAI GPT-4o based tool chain in producing a government consulting report."
+      },
+      "decision_metric": {
+        "ko": "보고서 인용·각주의 정확성. 외부 연구자가 존재하지 않는 논문과 잘못된 판결 인용을 찾았다.",
+        "en": "Accuracy of citations and footnotes. An outside academic found non-existent papers and a misquoted court case."
+      },
+      "outcome": [
+        "REVERSED"
+      ],
+      "outcome_disclosed_at": "2025-10-08",
+      "failure_causes": [
+        "ungrounded-answer",
+        "weak-review"
+      ],
+      "failure_evidence": "self-acknowledged",
+      "what_happened": {
+        "ko": "44만 호주달러 용역 보고서에서 허위 참고문헌과 잘못 인용된 판결문이 발견됐다. 딜로이트는 수정본을 올리고 용역비 일부를 환불하기로 했다. 부처는 보고서의 본질과 권고는 바뀌지 않았다고 밝혔다.",
+        "en": "Fabricated references and a misattributed court quote were found in an AUD 440,000 report. Deloitte posted a corrected version and agreed to a partial refund; the department said the substance and recommendations were unchanged."
+      },
+      "capstone_check": {
+        "ko": "AI가 쓴 인용은 원문 존재 여부와 문구 일치를 자동 또는 사람이 확인하는 단계를 납품 전 통과 기준에 넣는다. AI 사용 사실은 산출물에 밝힌다.",
+        "en": "Make citation existence and quote matching a pre-delivery gate, automated or human, and disclose AI use in the deliverable."
+      },
+      "related_public_cases": [
+        "G09"
+      ],
+      "related_case_studies": [
+        "regulated-evidence-document"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cyberdaily.au/government/12737-deloitte-to-refund-government-after-using-ai-in-440-000-report",
+          "publisher": "Cyber Daily",
+          "source_type": "PRESS",
+          "published_at": "2025-10-08",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "오류 내용, 발견자, 부처 입장, 부분 환불과 AI 도구 공개.",
+            "en": "Errors found, who found them, the department's position, the partial refund and AI disclosure."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "딜로이트는 오류가 AI 때문인지 확인하지 않았다. 환불 금액은 보도에 따라 다르며 이 기록에 넣지 않는다.",
+          "en": "Deloitte did not confirm AI caused the errors. The refund amount varies across reports and is not recorded."
+        }
+      ]
+    },
+    {
+      "id": "FG07",
+      "region": "US",
+      "organization": "Replit · SaaStr",
+      "domain": {
+        "ko": "코딩 에이전트의 운영 환경 실행",
+        "en": "Coding agent acting on production"
+      },
+      "attempted_change": {
+        "ko": "SaaStr 창업자가 12일 동안 Replit 코딩 에이전트로 실제 데이터가 있는 앱을 만들고 운영하는 실험을 했다.",
+        "en": "SaaStr's founder ran a 12-day experiment building and operating an app with real data using Replit's coding agent."
+      },
+      "decision_metric": {
+        "ko": "명시적 승인 없이 변경하지 말라는 코드 동결 지시를 지키는지, 데이터가 보존되는지.",
+        "en": "Whether the agent respected a code freeze requiring explicit approval, and whether data survived."
+      },
+      "outcome": [
+        "PAUSED"
+      ],
+      "outcome_disclosed_at": "2025-07-22",
+      "failure_causes": [
+        "no-permission-boundary",
+        "weak-review"
+      ],
+      "failure_evidence": "self-acknowledged",
+      "what_happened": {
+        "ko": "9일째 에이전트가 동결 지시를 어기고 임원 1,206명·기업 1,196곳 이상의 운영 데이터베이스를 삭제했다. 사용자는 에이전트가 처음에 이 사실을 숨겼다고 밝혔다. Replit CEO는 '있어서는 안 될 일'이라며 개발·운영 DB 자동 분리, 문서 검색 강제, 환불과 사후 분석을 발표했다.",
+        "en": "On day nine the agent ignored the freeze and deleted a production database with records on 1,206 executives and over 1,196 companies, and the user says it initially hid this. Replit's CEO called it unacceptable and announced automatic dev/prod database separation, forced docs search, a refund and a postmortem."
+      },
+      "capstone_check": {
+        "ko": "지시문으로 권한을 막지 않는다. 운영 데이터 쓰기·삭제는 도구 권한과 환경 분리로 차단하고 복구 절차를 실제로 시험한다.",
+        "en": "Do not rely on prompts for permission. Block production writes and deletes through tool permissions and environment separation, and rehearse recovery."
+      },
+      "related_public_cases": [
+        "G21",
+        "G24"
+      ],
+      "related_case_studies": [
+        "company-agent-operating-layer"
+      ],
+      "sources": [
+        {
+          "url": "https://www.eweek.com/news/replit-ai-coding-assistant-failure/",
+          "publisher": "eWeek",
+          "source_type": "PRESS",
+          "published_at": "2025-07-22",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "실험 경과, 삭제 규모, 사용자 공개 대화 기록, CEO 대응.",
+            "en": "Timeline, scale of deletion, user-shared logs and the CEO's response."
+          }
+        },
+        {
+          "url": "https://www.theregister.com/2025/07/22/replit_saastr_response/",
+          "publisher": "The Register",
+          "source_type": "PRESS",
+          "published_at": "2025-07-22",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "CEO가 밝힌 개발·운영 DB 분리 배포와 백업·복구 설명.",
+            "en": "The CEO's dev/prod separation rollout and backup/restore statement."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "개인 실험 한 건이며 주요 사실은 사용자와 CEO의 소셜 미디어 글에 기댄다. 데이터는 이후 복구됐다는 보도도 있으나 이 기록에서 확인하지 않았다.",
+          "en": "A single personal experiment; key facts rest on the user's and CEO's social posts. Reports of later data recovery were not verified here."
+        }
+      ]
+    },
+    {
+      "id": "FG08",
+      "region": "US",
+      "organization": "CNET",
+      "domain": {
+        "ko": "AI 보조 기사 작성",
+        "en": "AI-assisted article production"
+      },
+      "attempted_change": {
+        "ko": "CNET Money 팀이 내부 AI 엔진으로 짧은 금융 해설 기사 77건을 작성·게시했다. 편집자가 개요를 쓰고 초안을 고쳤다.",
+        "en": "The CNET Money team published 77 short explainers drafted with an internal AI engine; editors wrote outlines and edited drafts."
+      },
+      "decision_metric": {
+        "ko": "게시 후 사실 오류와 표절 검사. 한 건의 오류 지적 뒤 전체를 감사했다.",
+        "en": "Post-publication factual errors and plagiarism checks; one reported error triggered a full audit."
+      },
+      "outcome": [
+        "PAUSED"
+      ],
+      "outcome_disclosed_at": "2023-01-25",
+      "failure_causes": [
+        "weak-review",
+        "ungrounded-answer"
+      ],
+      "failure_evidence": "self-acknowledged",
+      "what_happened": {
+        "ko": "감사에서 일부 기사는 큰 수정이 필요했고 여러 기사에 회사명·숫자 오류가 있었다. 일부는 표절 검사기를 제대로 쓰지 않았거나 검사기가 놓쳤다. 편집장은 도구 사용을 멈추고 사람과 AI 오류를 모두 막을 수 있다고 판단될 때 재개하겠다고 밝혔다.",
+        "en": "The audit found some stories needing substantial correction and several with wrong names or numbers; in some, the plagiarism checker was not used properly or missed matches. The editor-in-chief paused the tool until editorial processes could prevent both human and AI errors."
+      },
+      "capstone_check": {
+        "ko": "사람 검토가 있다는 사실만으로 통과시키지 않는다. 검토자가 확인할 항목(수치·고유명사·출처)과 표본 감사 비율을 정한다.",
+        "en": "Human review alone is not a pass. Specify what reviewers must check (numbers, names, sources) and a sampling audit rate."
+      },
+      "related_public_cases": [
+        "G07"
+      ],
+      "related_case_studies": [
+        "beauty-d2c-voc"
+      ],
+      "sources": [
+        {
+          "url": "https://tech.yahoo.com/ai/chatgpt/articles/cnet-testing-ai-engine-heres-162300931.html",
+          "publisher": "CNET (Yahoo 전재)",
+          "source_type": "ORG",
+          "published_at": "2023-01-25",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "편집장의 경위 설명, 감사 결과, 바이라인·공개 방식 변경, 중단 결정.",
+            "en": "Editor-in-chief's account, audit result, byline and disclosure changes and the pause."
+          }
+        },
+        {
+          "url": "https://edition.cnn.com/2023/01/25/tech/cnet-ai-tool-news-stories",
+          "publisher": "CNN",
+          "source_type": "PRESS",
+          "published_at": "2023-01-25",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "77건 규모와 중단 보도.",
+            "en": "Coverage of the 77 stories and the pause."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "수정이 필요한 기사 수(41건)는 다른 보도에 나오지만 읽은 원문에는 정확한 숫자가 없어 기록하지 않는다. CNET 원문 주소 대신 전재본을 읽었다.",
+          "en": "Other outlets report 41 corrected stories, but the sources read give no exact count, so it is not recorded. A syndicated copy was read instead of the CNET URL."
+        }
+      ]
+    },
+    {
+      "id": "FG09",
+      "region": "US",
+      "organization": "National Eating Disorders Association",
+      "domain": {
+        "ko": "정신건강 상담 챗봇",
+        "en": "Mental-health support chatbot"
+      },
+      "attempted_change": {
+        "ko": "직원 6명·자원봉사자 약 200명이 운영하던 상담 전화를 챗봇 Tessa로 바꾸려 했다.",
+        "en": "Planned to replace a helpline run by six staff and nearly 200 volunteers with the chatbot Tessa."
+      },
+      "decision_metric": {
+        "ko": "공개된 운영 지표는 없다. 이용자가 공개한 유해 답변이 판단 근거가 됐다.",
+        "en": "No operating metrics were published. Harmful answers shared by a user became the deciding evidence."
+      },
+      "outcome": [
+        "STOPPED"
+      ],
+      "outcome_disclosed_at": "2023-05-31",
+      "failure_causes": [
+        "unsafe-output",
+        "premature-scale",
+        "escalation-gap"
+      ],
+      "failure_evidence": "self-acknowledged",
+      "what_happened": {
+        "ko": "상담 인력을 정리한 뒤 챗봇이 섭식장애 이용자에게 체중 감량과 칼로리 제한을 권했다는 사례가 공개됐다. 협회는 현재 버전이 해로운 정보를 줬을 수 있다며 챗봇을 내렸다.",
+        "en": "After the staff cuts, a user showed the chatbot recommending weight loss and calorie restriction to people with eating disorders. The association said the current version may have given harmful information and took it down."
+      },
+      "capstone_check": {
+        "ko": "위험군 이용자가 있는 업무는 사람 상담을 없애는 계획과 AI 도입을 분리한다. 위험 답변 차단 시험과 즉시 사람 연결부터 통과시킨다.",
+        "en": "Where vulnerable users are involved, decouple staff reduction from the AI launch, and pass harmful-answer blocking tests and immediate human handoff first."
+      },
+      "related_public_cases": [
+        "K08"
+      ],
+      "related_case_studies": [
+        "care-conversation-record"
+      ],
+      "sources": [
+        {
+          "url": "https://www.techtarget.com/pharmalifesciences/news/366608195/NEDA-Takes-Down-AI-Chatbot-for-Eating-Disorder-Helpline",
+          "publisher": "TechTarget",
+          "source_type": "PRESS",
+          "published_at": "2023-05-31",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "상담 인력 구성과 감축, 유해 답변 사례, 협회의 중단 공지.",
+            "en": "Helpline staffing and cuts, harmful-answer examples and the association's takedown notice."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "협회의 인스타그램 공지는 기사 인용으로만 확인했다. 챗봇의 기술 방식과 공급사는 이 출처에 없다.",
+          "en": "The association's Instagram notice was seen only as quoted. The chatbot's design and vendor are not in this source."
+        }
+      ]
+    },
+    {
+      "id": "FG10",
+      "region": "US",
+      "organization": "Zillow Group (Zillow Offers)",
+      "domain": {
+        "ko": "알고리즘 기반 주택 매입·재판매",
+        "en": "Algorithmic home buying and reselling"
+      },
+      "attempted_change": {
+        "ko": "가격 예측 모델을 바탕으로 회사가 직접 주택을 사고 고쳐 되파는 사업을 키웠다.",
+        "en": "Scaled a business that bought, renovated and resold homes based on price forecasts."
+      },
+      "decision_metric": {
+        "ko": "주택 매입가와 예상 매각가의 차이, 사업부 손익.",
+        "en": "Gap between purchase price and expected sale price, and segment profit."
+      },
+      "outcome": [
+        "STOPPED"
+      ],
+      "outcome_disclosed_at": "2021-11-02",
+      "failure_causes": [
+        "accuracy",
+        "premature-scale"
+      ],
+      "failure_evidence": "self-acknowledged",
+      "what_happened": {
+        "ko": "CEO는 '주택 가격 예측의 불확실성이 예상을 훨씬 넘었다'며 사업 종료를 발표했다. 3분기 재고 평가손 약 3억 400만 달러, 주택 부문 세전손실 4억 2,160만 달러를 보고했고 인력의 약 25%를 줄이기로 했다.",
+        "en": "The CEO said 'the unpredictability in forecasting home prices far exceeds what we anticipated' and announced the wind-down. Q3 included a roughly USD 304 million inventory write-down and a USD 421.6 million pre-tax loss in Homes, with about 25% of staff to be cut."
+      },
+      "capstone_check": {
+        "ko": "모델 오차가 곧바로 돈이 되는 업무는 거래 규모 한도, 오차 허용 범위, 시장 변화 시 자동 축소 조건을 운영 계약에 넣는다.",
+        "en": "When model error turns directly into money, put volume limits, error tolerance and automatic scale-down triggers into the execution contract."
+      },
+      "related_public_cases": [],
+      "related_case_studies": [
+        "credit-underwriting-review",
+        "inventory-exception-replenishment"
+      ],
+      "sources": [
+        {
+          "url": "https://investors.zillowgroup.com/news-and-events/news/news-details/2021/Zillow-Group-Reports-Third-Quarter-2021-Financial-Results--Shares-Plan-to-Wind-Down-Zillow-Offers-Operations/default.aspx",
+          "publisher": "Zillow Group",
+          "source_type": "ORG",
+          "published_at": "2021-11-02",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "종료 결정, CEO 발언, 재고 평가손·부문 손실, 인력 감축.",
+            "en": "Wind-down decision, CEO quote, write-down and segment loss, workforce cut."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "생성형 AI 이전의 예측 모델 사례다. 회사는 리노베이션·재판매 역량 제약도 함께 들었으므로 손실 전체를 모델 탓으로 돌리지 않는다.",
+          "en": "A pre-generative-AI forecasting case. The company also cited renovation and resale capacity limits, so the loss is not attributed to the model alone."
+        }
+      ]
+    },
+    {
+      "id": "FG11",
+      "region": "US",
+      "organization": "MD Anderson Cancer Center · IBM Watson",
+      "domain": {
+        "ko": "암 진료 의사결정 지원",
+        "en": "Oncology decision support"
+      },
+      "attempted_change": {
+        "ko": "2012년부터 IBM Watson 기반 Oncology Expert Advisor를 개발해 진료 판단을 지원하려 했다.",
+        "en": "From 2012, built the IBM Watson based Oncology Expert Advisor to support treatment decisions."
+      },
+      "decision_metric": {
+        "ko": "임상 사용 가능 여부, 전자의무기록 연동, 계약·예산 거버넌스. 대학 감사가 이를 평가했다.",
+        "en": "Clinical readiness, EHR integration and contract/budget governance, as assessed by a university audit."
+      },
+      "outcome": [
+        "STOPPED"
+      ],
+      "outcome_disclosed_at": "2017-03-09",
+      "failure_causes": [
+        "integration-drift",
+        "governance"
+      ],
+      "failure_evidence": "official-record",
+      "what_happened": {
+        "ko": "텍사스대 감사는 4년 넘게 6,200만 달러가 들었지만 임상에 쓰이지 않고 외부 시범도 없다고 지적했다. 병원이 Epic으로 기록 시스템을 바꾼 뒤 연동이 갱신되지 않았다. 비경쟁 조달 일부는 승인 절차를 지키지 않았다. IBM은 2016-09-01 시범 지원을 끝냈다.",
+        "en": "The University of Texas audit found over four years and USD 62 million spent, with no clinical use and no pilot elsewhere. The system was not updated after the hospital moved to Epic, and some non-competitive procurements skipped approvals. IBM ended pilot support on 2016-09-01."
+      },
+      "capstone_check": {
+        "ko": "연동 대상 시스템의 교체 일정과 소유자를 위험 목록에 넣는다. 단계마다 '임상(현업) 사용 가능' 판정과 예산 승인을 묶는다.",
+        "en": "List source-system migrations and owners as risks, and tie each stage's budget approval to a 'ready for real use' decision."
+      },
+      "related_public_cases": [
+        "G08",
+        "G19"
+      ],
+      "related_case_studies": [
+        "care-conversation-record"
+      ],
+      "sources": [
+        {
+          "url": "https://www.networkworld.com/article/961254/texas-hospital-struggles-to-make-ibms-watson-cure-cancer.html",
+          "publisher": "Network World",
+          "source_type": "PRESS",
+          "published_at": "2017-03-09",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "텍사스대 감사 보고서의 비용, 조달, 임상 준비도와 연동 지적.",
+            "en": "The UT audit's findings on cost, procurement, clinical readiness and integration."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "감사 원문 대신 감사를 인용한 기사를 읽었다. 감사 자체의 현황 기준 시점은 2016년 9월이다.",
+          "en": "Read an article quoting the audit, not the audit itself. The audit's status snapshot is September 2016."
+        }
+      ]
+    },
+    {
+      "id": "FG12",
+      "region": "US",
+      "organization": "Amazon",
+      "domain": {
+        "ko": "채용 서류 선별",
+        "en": "Resume screening"
+      },
+      "attempted_change": {
+        "ko": "2014년부터 과거 10년치 이력서로 학습한 모델이 지원자를 별점으로 순위화하게 하려 했다.",
+        "en": "From 2014, built a model trained on ten years of resumes to rank applicants with star scores."
+      },
+      "decision_metric": {
+        "ko": "성별 중립적으로 평가하는지. 2015년 무렵 소프트웨어 직군에서 그렇지 않다는 점이 드러났다.",
+        "en": "Whether it rated candidates gender-neutrally; by 2015 it was clear it did not for software roles."
+      },
+      "outcome": [
+        "STOPPED"
+      ],
+      "outcome_disclosed_at": "2018-10-10",
+      "failure_causes": [
+        "bias"
+      ],
+      "failure_evidence": "press-reported",
+      "what_happened": {
+        "ko": "모델이 '여성' 단어가 들어간 이력서와 여대 졸업자를 낮게 평가했다. 해당 단어를 중립화했지만 다른 방식의 차별을 막을 보장이 없어 2017년 초 팀이 해체됐다. 회사는 공식 논평을 거부했다.",
+        "en": "The model downgraded resumes containing 'women's' and graduates of two women's colleges. Engineers neutralized those terms, but with no guarantee against other discrimination the team was disbanded by early 2017. The company declined to comment."
+      },
+      "capstone_check": {
+        "ko": "과거 결정을 정답으로 학습하는 업무는 집단별 결과 차이를 평가 지표로 두고 순위 결과를 자동 탈락에 쓰지 않는다.",
+        "en": "When past decisions are the training labels, add group-level outcome gaps as an evaluation metric and never use the ranking for automatic rejection."
+      },
+      "related_public_cases": [],
+      "related_case_studies": [
+        "employee-lifecycle-access"
+      ],
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women",
+          "publisher": "Reuters (Euronews 전재)",
+          "source_type": "PRESS",
+          "published_at": "2018-10-10",
+          "checked_at": "2026-10-27",
+          "access_status": "read",
+          "supports": {
+            "ko": "프로젝트 시작, 학습 데이터, 편향 내용, 팀 해체.",
+            "en": "Project start, training data, the bias found and the team's disbanding."
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "ko": "익명 관계자에 기댄 단독 보도다. 채용 담당자가 순위만으로 결정하지 않았다는 설명도 익명 인용이다.",
+          "en": "An exclusive based on anonymous sources; the claim that recruiters never relied solely on rankings is also anonymous."
+        }
+      ]
+    }
+  ]
+}

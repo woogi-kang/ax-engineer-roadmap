@@ -161,7 +161,7 @@ Compare systems of record, approval points, and failure handling across 15 workf
 
 Runnable example: **1** · Design documents: **14** · [Workflow cases and implementation scope](case-studies/README.md)
 
-The runnable example uses synthetic data and rule-based code to implement partial P1 functionality. Its implemented scope and what remains unproven are described in the [example overview](case-studies/beauty-d2c-voc/README.md#current-execution-evidence). The separate [catalog of 40 Korean and international public cases](research/public-ax-cases.md) examines workflows and reported outcomes from outside organizations, with evidence and limitations.
+The runnable example uses synthetic data and rule-based code to implement partial P1 functionality. Its implemented scope and what remains unproven are described in the [example overview](case-studies/beauty-d2c-voc/README.md#current-execution-evidence). The separate [catalog of 40 Korean and international public cases](research/public-ax-cases.md) examines workflows and reported outcomes from outside organizations, with evidence and limitations. The [16 public failure and stop cases](research/ax-failure-cases.md) record what each organization tried to change and why it stopped, with a capstone design checklist. Read them before choosing a capstone workflow.
 
 <details>
 <summary>One runnable example: why a classification can still need more information</summary>

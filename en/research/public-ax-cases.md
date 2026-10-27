@@ -22,6 +22,8 @@ Deployment labels describe the time and scope stated by the source, not guarante
 
 Practice questions are editorial design proposals, not implemented or validated results.
 
+Stopped, reversed, sanctioned and unproven cases are collected separately in [Public AX failure and stop cases](ax-failure-cases.md). That page only references G15 and G24 from this catalog and does not count them again.
+
 ## Overview
 
 | ID | Region | Workflow / industry | Organization | Source | Deployment | Outcome |

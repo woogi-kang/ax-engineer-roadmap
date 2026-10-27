@@ -9,6 +9,7 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Added 12 AX, AI agent, and FDE posting records (J028–J039), bringing the hiring registry to 39, and recorded per-platform access results and held candidates from 2026-10-27
 - Added a monthly title-level list of every Korean AX, AI Agent, and FDE posting (October 2026: 138 JobKorea postings), with collection criteria, procedure, and a generator and check script
 - Added a last-month job-posting summary (postings and open counts by type) with monthly list links to Step 1 of both root READMEs, regenerated and checked with the monthly list
+- Added 16 public AX failure and stop cases (4 Korean, 12 international) with the attempted change, deciding metric, outcome, cause tags, sources and check dates, a capstone design checklist, structured data and a bilingual consistency check
 
 ### Changed
 
