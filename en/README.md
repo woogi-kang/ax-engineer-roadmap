@@ -48,7 +48,7 @@ flowchart LR
 | Builds evaluation, security, observability, and recovery | Risk exceptions in place of security and legal owners |
 | Designs business adoption and operational handoff | Permanently taking over users' manual work |
 
-[Read the role model](roadmap/role-model.md) · [Roles observed in job material](research/ax-engineer-role-review.md) · [Job-posting records](research/hiring-signals.md)
+[Read the role model](roadmap/role-model.md) · [Roles observed in job material](research/ax-engineer-role-review.md) · [Job-posting records](research/hiring-signals.md) · [Monthly job-posting lists](research/hiring-monthly/README.md)
 
 ## Find your starting point
 
@@ -89,6 +89,18 @@ Learn the responsibilities of an AX Engineer and how role scope differs between 
 
 - [ ] I can explain what an AX Engineer does and what the role does not decide alone.
 - [ ] I can take one posting and say whether it leans toward discovery, implementation, operations, or support.
+
+<!-- hiring-monthly:start -->
+**Last month's job postings (October 2026)**: 138 Korean AX, AI Agent, and FDE postings that opened between 2026-09-27 and 2026-10-27, collected from JobKorea. As of 2026-10-27, 132 were open and 6 closed.
+
+| Type | Postings | Open |
+|---|---|---|
+| AX | 47 | 45 |
+| AI Agent | 72 | 70 |
+| FDE | 19 | 17 |
+
+Reposts and project postings are mixed in, so these are not unique vacancies. The list is updated monthly. [Full October 2026 list](research/hiring-monthly/2026-10.md) · [Monthly collection criteria](research/hiring-monthly/README.md)
+<!-- hiring-monthly:end -->
 
 ### Step 2. Learn the technical foundations
 

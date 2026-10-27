@@ -232,6 +232,51 @@ export function monthFiles() {
   return fs.readdirSync(dataDir).filter((name) => /^\d{4}-\d{2}\.json$/.test(name)).sort();
 }
 
+export const readmeMarkers = ["<!-- hiring-monthly:start -->", "<!-- hiring-monthly:end -->"];
+const readmes = { ko: "README.md", en: "en/README.md" };
+
+export function renderReadmeBlock(data, months, language) {
+  const ko = language === "ko";
+  const l = labels[language];
+  const p = data.postings;
+  const base = "research/hiring-monthly";
+  const rows = roleTypes.map((role) => {
+    const items = p.filter((x) => x.role_type === role);
+    return `| ${l.role[role]} | ${items.length} | ${count(items, (x) => x.status === "open")} |`;
+  });
+  const open = count(p, (x) => x.status === "open");
+  const closed = count(p, (x) => x.status === "closed");
+  const collected = data.platforms.filter((x) => x.status === "collected").map((x) => l.platformName[x.name]).join(", ");
+  const archive = months.filter((month) => month !== data.month).map((month) => `[${monthName(month, language)}](${base}/${month}.md)`).join(" · ");
+  const lines = ko
+    ? [
+        `**최근 한 달 채용 공고(${monthName(data.month, "ko")})**: ${data.window.from}~${data.window.to}에 접수가 시작된 국내 AX·AI Agent·FDE 공고 ${p.length}건을 ${collected}에서 모았습니다. ${data.checked_at} 확인 기준으로 모집 중 ${open}건, 마감 ${closed}건입니다.`,
+        "",
+        "| 유형 | 공고 | 모집 중 |",
+        "|---|---|---|",
+        ...rows,
+        "",
+        `재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 목록은 매달 갱신합니다. [${monthName(data.month, "ko")} 전체 목록](${base}/${data.month}.md) · [월간 수집 기준](${base}/README.md)${archive ? ` · 지난 목록: ${archive}` : ""}`,
+      ]
+    : [
+        `**Last month's job postings (${monthName(data.month, "en")})**: ${p.length} Korean AX, AI Agent, and FDE postings that opened between ${data.window.from} and ${data.window.to}, collected from ${collected}. As of ${data.checked_at}, ${open} were open and ${closed} closed.`,
+        "",
+        "| Type | Postings | Open |",
+        "|---|---|---|",
+        ...rows,
+        "",
+        `Reposts and project postings are mixed in, so these are not unique vacancies. The list is updated monthly. [Full ${monthName(data.month, "en")} list](${base}/${data.month}.md) · [Monthly collection criteria](${base}/README.md)${archive ? ` · Archive: ${archive}` : ""}`,
+      ];
+  return [readmeMarkers[0], ...lines, readmeMarkers[1]].join("\n");
+}
+
+export function replaceReadmeBlock(source, blockText) {
+  const start = source.indexOf(readmeMarkers[0]);
+  const end = source.indexOf(readmeMarkers[1]);
+  if (start < 0 || end < start) return null;
+  return source.slice(0, start) + blockText + source.slice(end + readmeMarkers[1].length);
+}
+
 function run(check) {
   const failures = [];
   for (const name of monthFiles()) {
@@ -248,6 +293,18 @@ function run(check) {
         fs.mkdirSync(path.dirname(target), { recursive: true });
         fs.writeFileSync(target, content);
       }
+    }
+  }
+  const months = monthFiles().map((name) => name.replace(/\.json$/, ""));
+  if (months.length) {
+    const latest = JSON.parse(fs.readFileSync(path.join(dataDir, `${months.at(-1)}.json`), "utf8"));
+    for (const [language, file] of Object.entries(readmes)) {
+      const target = path.join(root, file);
+      const source = fs.readFileSync(target, "utf8");
+      const updated = replaceReadmeBlock(source, renderReadmeBlock(latest, [...months].reverse(), language));
+      if (updated === null) failures.push(`${file}: missing ${readmeMarkers.join(" / ")} markers`);
+      else if (check && updated !== source) failures.push(`${file} monthly hiring summary is out of date; run npm run generate:hiring-monthly`);
+      else if (!check) fs.writeFileSync(target, updated);
     }
   }
   if (failures.length) {
