@@ -20,7 +20,7 @@ AX Engineer Roadmap prioritizes contributions that strengthen decisions and evid
 
 ## Local setup and full validation
 
-Use Node.js `22.23.1` or newer and Python `3.11.15` or newer. Run the same validation as CI from a fresh clone.
+Use Node.js `22.23.4` or newer and Python `3.11.18` or newer. Run the same validation as CI from a fresh clone.
 
 ```bash
 npm run verify

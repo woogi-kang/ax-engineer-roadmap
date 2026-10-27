@@ -4,18 +4,26 @@
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-10-27
+
 ### Added
 
 - 기업·기관 업무 사례 15개를 추가해 국내 16개·해외 24개로 확장하고 기존 25개 사례의 재확인 결과와 정정·접근 실패를 기록
 - 채용 공고 기록 27개의 한영 책임·요건·모집 표시·게시일·확인일, 구조화 데이터와 상태·날짜 검사를 추가
 - 수집 범위, 보류 자료, 원문 접근 상태와 근거 한계를 담은 2026-10-26 자료 갱신 기록
-
 - 경력 초반·개발 경험·도메인 경험별 진입 경로와 첫 결과물·검수 기준
 - P3 UI 통합 점검표와 P5 Skills 재사용 카드, 실패 시험과 채택·보류·폐기 기준
 - 제안·명세·제품 지원을 구분하는 표준 검토 목록과 정식 학습 기준 반영 조건
 - 2026-10-26 검토를 반영한 역할 비교와 공개 사례 K04·K05·G08의 후속 근거
 - 공개 사례의 주장별 발표일·관측기간·확인일·표본·방법·접근 상태·한계 기록과 검증
 - 한국어 내용을 추가하거나 수정할 때 `korean-humanizer`를 적용하는 프로젝트·기여 지침
+- 국내 10개·해외 15개 공개 AX 사례 카탈로그와 25개 전체의 사례-실습 연결표
+- 공공 민원, 여신·인수심사, 설비 이상·정비, 상담·진료 기록, 규제 근거 문서 시뮬레이션 사례
+- 업무 기능과 별도로 공통·리테일·공공·금융·제조·의료·복지·법무·생명과학 조건을 비교하는 `industry` 메타데이터
+- 공개 사례 25개의 출처 유형·도입 단계·성과 검증·원문 URL·내부 사례 반영 관계를 기록한 JSON 목록
+- `SECURITY.md`, `SUPPORT.md`, `CITATION.cff`, CODEOWNERS, Bug report 양식, Dependabot, CodeQL
+- 사례 산업 필터, URL 상태 공유, 사례별 산업·난이도·위험·근거 단계 표시
+- 주간 외부 링크 상태 검사와 새로 복제한 저장소의 전체 검증 명령(`npm run verify`)
 
 ### Changed
 
@@ -27,25 +35,6 @@
 - 한영 기술 문서와 실습의 권한 회수·정책 장애·버전 변경·반복 평가·역할별 검수 기준 보강
 - 실험 카드와 업무 후보 평가표에 완료 업무당 총비용, 검수·재작업 부담, 확대·중단 조건 추가
 - 공개 구현 1개와 설계 문서 14개의 근거 수준을 유지하고 부분 출처 갱신을 전체 재검증과 구분
-
-### Removed
-
-- 기존 웹프로젝트와 사이트 연결·배포 설정을 제거하고 문서·사례·실습 검증은 저장소에서 독립적으로 유지
-
-## [0.4.0] - 2026-08-01 (릴리스 후보)
-
-### Added
-
-- 국내 10개·해외 15개 공개 AX 사례 카탈로그와 25개 전체의 사례-실습 연결표
-- 공공 민원, 여신·인수심사, 설비 이상·정비, 상담·진료 기록, 규제 근거 문서 시뮬레이션 사례
-- 업무 기능과 별도로 공통·리테일·공공·금융·제조·의료·복지·법무·생명과학 조건을 비교하는 `industry` 메타데이터
-- 공개 사례 25개의 출처 유형·도입 단계·성과 검증·원문 URL·내부 사례 반영 관계를 기록한 JSON 목록
-- `SECURITY.md`, `SUPPORT.md`, `CITATION.cff`, CODEOWNERS, Bug report 양식, Dependabot, CodeQL
-- 사례 산업 필터, URL 상태 공유, 사례별 산업·난이도·위험·근거 단계 표시
-- 주간 외부 링크 상태 검사와 새로 복제한 저장소의 전체 검증 명령(`npm run verify`)
-
-### Changed
-
 - 업무별 적용 사례를 10개에서 15개로 확장하고 README·영문판·인터랙티브 로드맵을 동기화
 - 기존 10개 사례에 관련 공개 사례의 설계 질문과 통제 방식을 반영
 - README와 인터랙티브 로드맵의 AX 정의, 사례명, 안내 문구를 같은 한국어 용어와 문체로 맞춤
@@ -57,6 +46,10 @@
 - Beauty/D2C 산출물 목록에서 파이프라인 생성물과 수동 표시 자산을 분리하고, 빈 작업 디렉터리에서 생성 결과가 바이트 단위로 같은지 검증
 - Pages 배포를 문서·사례·Python·사이트 검증 뒤에만 실행하도록 통합
 - Next.js·React·Vite·Cloudflare·Wrangler 관련 의존성을 보안 패치하고 감사 결과를 0건으로 정리
+
+### Removed
+
+- 기존 웹프로젝트와 사이트 연결·배포 설정을 제거하고 문서·사례·실습 검증은 저장소에서 독립적으로 유지
 
 ### Security
 
@@ -124,8 +117,8 @@
 - 공개 기여 규칙과 GitHub Issue·PR 템플릿
 - 로드맵·업무 전환 8단계·성숙도·실습·사례·템플릿 전체 영어판
 
-[Unreleased]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.3.0...HEAD
-[0.4.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/woogi-kang/ax-engineer-roadmap/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/woogi-kang/ax-engineer-roadmap/releases/tag/v0.1.0
