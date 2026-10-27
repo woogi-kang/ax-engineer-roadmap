@@ -6,6 +6,7 @@ This directory records the external evidence behind the roadmap's role model, st
 
 - [Public AX case catalog](public-ax-cases.md): compares workflows, human judgment, reported results, and evidence limits across 16 Korean and 24 international cases.
 - [Job-posting records](hiring-signals.md): responsibilities, requirements, recruitment signals, and check dates for 39 records. Possible duplicates mean this is not a unique-vacancy count.
+- [Monthly job-posting lists](hiring-monthly/README.md): every Korean AX, AI Agent, and FDE posting found each month at title level, with the collection criteria and procedure. The October 2026 list has 138 JobKorea postings.
 - [2026-10-26 evidence refresh](evidence-refresh-2026-10-26.md): collection scope, additions, corrections, access failures, and held material.
 - [Public case-to-practice table](public-case-application-map.md): shows where the original 25 cases inform practice and suggests questions from 15 additions.
 - [Public AX Engineer role review](ax-engineer-role-review.md): separates the 2026-07-23 baseline from role and training evidence checked on 2026-10-26, and compares internal AX with adjacent responsibilities.
@@ -25,6 +26,6 @@ This directory records the external evidence behind the roadmap's role model, st
 
 All 25 existing public cases were attempted on 2026-10-26. Main source bodies were read for 24; K06 POSCO remains historical because access failed. Fifteen workflow cases bring the catalog to 40. The [case registry](../../research/public-ax-cases.json) contains 54 unique URLs, including all 26 original sources.
 
-Job records show 11 open signals, eight closed signals, and eight unknown states. Only GM has a verified publication date after 2026-08-01; the other 26 records are undated. Check dates do not substitute for publication dates, and this sample does not establish market growth or decline.
+The 39 job records show 19 open signals, 12 closed signals, and eight unknown states. Only GM has a verified publication date after 2026-08-01; the other 38 records are undated. Check dates do not substitute for publication dates, and this sample does not establish market growth or decline.
 
 Company figures without observation periods, samples, or methods remain self-reported. Follow-up external evidence does not change the evidence levels of the one runnable public simulation and 14 designs without execution evidence.
