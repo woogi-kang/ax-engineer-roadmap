@@ -48,7 +48,7 @@ flowchart LR
 | 평가·보안·관측·복구를 만든다 | 보안·법무 담당자 대신 위험 예외 승인 |
 | 현업 적용과 운영 인수인계를 설계한다 | 사용자의 수동 업무를 영구적으로 대신하기 |
 
-[역할 모델 자세히 보기](roadmap/role-model.md) · [공고에서 확인한 역할](research/ax-engineer-role-review.md) · [채용 공고 기록](research/hiring-signals.md)
+[역할 모델 자세히 보기](roadmap/role-model.md) · [공고에서 확인한 역할](research/ax-engineer-role-review.md) · [채용 공고 기록](research/hiring-signals.md) · [월간 채용 공고 목록](research/hiring-monthly/README.md)
 
 ## 나에게 맞는 시작점
 
@@ -89,6 +89,18 @@ AX 엔지니어가 맡는 책임과 회사마다 다른 역할 범위를 파악�
 
 - [ ] AX 엔지니어가 하는 일과 혼자 결정하지 않는 일을 구분해 설명할 수 있다.
 - [ ] 관심 있는 공고 하나를 골라 업무 발굴·구현·운영·지원 중 어디에 무게가 있는지 말할 수 있다.
+
+<!-- hiring-monthly:start -->
+**최근 한 달 채용 공고(2026년 10월)**: 2026-09-27~2026-10-27에 접수가 시작된 국내 AX·AI Agent·FDE 공고 138건을 잡코리아에서 모았습니다. 2026-10-27 확인 기준으로 모집 중 132건, 마감 6건입니다.
+
+| 유형 | 공고 | 모집 중 |
+|---|---|---|
+| AX | 47 | 45 |
+| AI Agent | 72 | 70 |
+| FDE | 19 | 17 |
+
+재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 목록은 매달 갱신합니다. [2026년 10월 전체 목록](research/hiring-monthly/2026-10.md) · [월간 수집 기준](research/hiring-monthly/README.md)
+<!-- hiring-monthly:end -->
 
 ### 2단계. 기술 기초 익히기
 

@@ -61,8 +61,8 @@ The queries are AX, AX 엔지니어, AX 개발자, AI 전환, AI Agent, AI 에�
 3. Judge role scope from titles and record exclusions with reasons.
 4. On each remaining detail page, check the application start date, deadline, closed notice, apply method, employment type, location, and experience. Move postings that opened outside the window to the excluded list.
 5. Write `research/hiring-monthly/YYYY-MM.json`. Posting IDs start at `MYYMM-001` in platform-number order.
-6. Run `npm run generate:hiring-monthly` to produce the Korean and English lists, and link the new month above.
-7. Pass `npm run check` and `npm run test:hiring`. The check covers the window, status rules, ID order, duplicates, and whether generated documents are current.
+6. Run `npm run generate:hiring-monthly` to produce the Korean and English lists, and link the new month above. The same command updates the last-month summary between the `hiring-monthly` markers in both root READMEs to the latest month.
+7. Pass `npm run check` and `npm run test:hiring`. The check covers the window, status rules, ID order, duplicates, and whether generated documents and the README summary are current.
 8. In the PR body, report candidate, excluded, and held counts and platform access results.
 
 A few postings whose bodies show clear responsibilities and requirements can also be added to the detailed sample in [Job-posting records](../hiring-signals.md). That step is optional and reviewed separately from the monthly list.

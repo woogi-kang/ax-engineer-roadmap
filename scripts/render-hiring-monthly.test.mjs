@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { renderMonth, validateMonth } from "./render-hiring-monthly.mjs";
+import { readmeMarkers, renderMonth, renderReadmeBlock, replaceReadmeBlock, validateMonth } from "./render-hiring-monthly.mjs";
 
 function fixture() {
   const note = { ko: "합성 기록", en: "Synthetic record" };
@@ -47,4 +47,14 @@ test("rejects start dates outside the window and repeated platform ids", () => {
   const failures = validateMonth(data);
   assert.ok(failures.some((failure) => failure.includes("outside the window")));
   assert.ok(failures.some((failure) => failure.includes("listed more than once")));
+});
+
+test("replaces only the marked README block with the latest month", () => {
+  const data = fixture();
+  const block = renderReadmeBlock(data, ["2026-10", "2026-09"], "ko");
+  assert.match(block, /공고 2건/);
+  assert.match(block, /지난 목록: \[2026년 9월\]\(research\/hiring-monthly\/2026-09\.md\)/);
+  const source = `앞\n${readmeMarkers[0]}\n옛 요약\n${readmeMarkers[1]}\n뒤\n`;
+  assert.equal(replaceReadmeBlock(source, block), `앞\n${block}\n뒤\n`);
+  assert.equal(replaceReadmeBlock("표시 없음", block), null);
 });
