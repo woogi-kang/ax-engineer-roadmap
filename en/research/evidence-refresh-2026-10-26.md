@@ -13,7 +13,7 @@ This refresh reread company cases, follow-up sources, and job-posting bodies. Th
 | Availability displays | 11 open signals, 8 explicit closed signals, 8 unknown |
 | Publication dates | 1 posting has a source-verified date since 2026-08-01; the rest are undated |
 
-[Company cases](public-ax-cases.md) · [Hiring records](hiring-signals.md) · [Role interpretation](ax-engineer-role-review.md)
+[Company cases](public-ax-cases.md) · [AX roles explained through job postings](hiring-signals.md) · [Role interpretation](ax-engineer-role-review.md)
 
 ## Added workflows
 

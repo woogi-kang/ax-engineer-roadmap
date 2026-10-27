@@ -10,6 +10,10 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Added a monthly title-level list of every Korean AX, AI Agent, and FDE posting (October 2026: 138 JobKorea postings), with collection criteria, procedure, and a generator and check script
 - Added a last-month job-posting summary (postings and open counts by type) with monthly list links to Step 1 of both root READMEs, regenerated and checked with the monthly list
 
+### Changed
+
+- Renamed the two job-posting pages to "AX roles explained through job postings" (curated sample for understanding the role) and "Monthly hiring snapshot" (full monthly list), and opened each with its purpose and a link to the other
+
 ## [0.4.0] - 2026-10-27
 
 ### Added
