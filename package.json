@@ -4,7 +4,7 @@
   "private": true,
   "description": "Practical AX Engineer roadmap in Korean and English",
   "engines": {
-    "node": ">=22.23.1"
+    "node": ">=22.23.4"
   },
   "scripts": {
     "bootstrap": "npm ci --ignore-scripts",

@@ -219,4 +219,4 @@ VOC 분석, 회의 후속 업무, 입퇴사 권한 관리, 법인카드 정산, 
 
 [기여 안내](CONTRIBUTING.md) · [질문과 지원](SUPPORT.md) · [출처 정책](research/source-policy.md) · [프로젝트 운영](GOVERNANCE.md) · [보안](SECURITY.md) · [행동강령](CODE_OF_CONDUCT.md)
 
-다음 릴리스 후보: `v0.4.0` · 공개 릴리스 기록: `v0.3.0` · [MIT License](LICENSE)
+최신 릴리스: `v0.4.0` · 이전 릴리스: `v0.3.0` · [MIT License](LICENSE)
