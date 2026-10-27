@@ -4,6 +4,8 @@ Use this template to define the input, output, evaluation, permission, approval,
 
 Mark whether each item is planned, tested in a sandbox, or verified in actual operation. Leave result fields empty for tests not yet run. Use [Execution Rules and Controls](../delivery-lifecycle/05-execution-contracts.md) for state, authority, and recovery criteria.
 
+Answer the [capstone design checklist](../research/ax-failure-cases.md#checklist-for-capstone-design) before filling this in. Record answer liability, review items, permission blocks, and human handoff conditions in the matching sections of this document.
+
 ## 1. Purpose and ownership
 
 | Field | Content |

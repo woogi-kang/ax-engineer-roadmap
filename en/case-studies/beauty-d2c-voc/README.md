@@ -13,6 +13,12 @@ Current values cover only what this repository can reproduce. A current P label 
 
 > Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies K04's agent review to the manual review queue and owner approval. G07's editorial approval and edit-rate measures inform proposal approval and reviewer-effort evaluation.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FG08 CNET (`PAUSED`): Human review alone is not a pass. Specify what reviewers must check (numbers, names, sources) and a sampling audit rate.
+<!-- failure-cases:end -->
+
 ## Case type
 
 This is not an internal diagnosis or consulting outcome for a specific company. Public cases contribute evaluation questions only; the executable input is a synthetic fixture built around common Beauty/D2C workflow patterns.

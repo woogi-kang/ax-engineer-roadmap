@@ -13,6 +13,7 @@ These templates help AX Engineers and their collaborators check decisions, owner
 - [Reusable skill card](reusable-skill-card.md)
 - [UI integration checklist](ui-integration-checklist.md)
 - [Applied AX case catalog](../case-studies/README.md)
+- [Capstone design checklist](../research/ax-failure-cases.md#checklist-for-capstone-design): questions drawn from public failure and stop cases. Carry the answers into the workflow execution rules and experiment card.
 
 ## Usage principles
 

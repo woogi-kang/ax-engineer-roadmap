@@ -19,6 +19,12 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 This is a **learning simulation of an AX workflow transformation** that consolidates personal AI outputs, CSV files spread across multiple folders, and meeting signals about blockers and approvals into structured work records, then prepares a Slack digest draft. It is not a case of an actual company adoption, nor does it claim improvements in time, cost, or quality.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FK02 교육부 (AI 디지털교과서) (`SCALED_BACK`): Define adoption (active use) and outcome (did the work improve) separately, and publish a small comparison and user feedback before making use mandatory.
+<!-- failure-cases:end -->
+
 ## 1. Case type and classification
 
 | Item | Classification |

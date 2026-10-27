@@ -6,6 +6,7 @@ This document shows where the original 25 entries in the [public AX case catalog
 - Source refresh: `2026-10-26`. All 25 baseline cases were attempted; access failures and limits are recorded separately.
 - Public evidence: `K01-K16`, `G01-G24`
 - Roadmap application: reinforce 10 existing cases and add five simulation cases
+- Links between failure and stop cases and the practice cases are recorded separately in the [public AX failure and stop cases](ax-failure-cases.md) and the [case index](../case-studies/README.md#links-to-public-and-failure-cases).
 
 ## Application rules
 

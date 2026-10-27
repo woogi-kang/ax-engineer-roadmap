@@ -28,6 +28,34 @@ The 16-record Beauty/D2C VOC set reproduces an existing synthetic demo. It imple
 | Shared integration and operations / cross-industry | [Shared Mail Assistance Across Workflows](centralized-mail-assist/README.md) | 4 / high | SaaS, internal APIs | Approval before sending | P1–P5 | Pre-implementation design document |
 | Shared integration and operations / cross-industry | [Shared Agent Operations Foundation](company-agent-operating-layer/README.md) | 5 / high | SaaS, internal APIs | Bounded by workflow | P2–P5 | Pre-implementation design document |
 
+Case names and evidence stages alone must not be used to infer a company's internal state, actual use, official process change, or productivity, cost, or revenue improvements.
+
+## Links to public and failure cases
+
+Each case document links to two kinds of external evidence. The [public case-to-practice table](../research/public-case-application-map.md) shows which controls from workflows published by external organizations were carried into the design. The [public AX failure and stop cases](../research/ax-failure-cases.md) record why similar work was stopped or reversed. The related checks are copied into each case document under `Failure-case check`.
+
+Both sources are announcements, reporting, or public records from external organizations, not execution results of the cases in this repository. The table below is generated from `related_case_studies` in [`ax-failure-cases.json`](../../research/ax-failure-cases.json). Cases without a linked record still apply all eight questions in the [capstone design checklist](../research/ax-failure-cases.md#checklist-for-capstone-design).
+
+<!-- failure-cases:start -->
+| Case | Linked failure and stop cases |
+|---|---|
+| [Beauty/D2C global VOC → workflow proposal](beauty-d2c-voc/README.md) | FG08 CNET |
+| [Public petitions → cited drafts and clusters](public-service-petition-response/README.md) | FK04 고용노동부 (구직급여 상담 챗봇), FG02 Air Canada, FG03 New York City (MyCity) |
+| [Identify follow-up actions for approval from Slack meeting records](slack-meeting-actions/README.md) | FG05 Department for Business and Trade |
+| [Employee lifecycle → account and access operations](employee-lifecycle-access/README.md) | FG12 Amazon |
+| [Corporate-card evidence → journal-entry draft](corporate-card-expense/README.md) | None yet; use the common checklist |
+| [Sales evidence → electronic tax invoice and payment reconciliation](electronic-tax-invoice-reconciliation/README.md) | None yet; use the common checklist |
+| [Vendor onboarding and bank-account change → verifiable approval](vendor-master-account-change/README.md) | None yet; use the common checklist |
+| [Company evidence → credit and underwriting review draft](credit-underwriting-review/README.md) | FG10 Zillow Group (Zillow Offers) |
+| [Scattered files and CSVs → reviewable work hub (AX Hub)](file-csv-to-ax-hub/README.md) | FK02 교육부 (AI 디지털교과서) |
+| [Evidence → source-linked regulated document](regulated-evidence-document/README.md) | FG06 Deloitte Australia · DEWR |
+| [Inventory exceptions → purchase and transfer proposals](inventory-exception-replenishment/README.md) | FG10 Zillow Group (Zillow Offers) |
+| [Equipment anomaly → maintenance proposal](equipment-anomaly-maintenance/README.md) | None yet; use the common checklist |
+| [Care conversation → record and risk escalation](care-conversation-record/README.md) | FK01 스캐터랩 (이루다), FG09 National Eating Disorders Association, FG11 MD Anderson Cancer Center · IBM Watson |
+| [Shared Mail Assistance Across Workflows](centralized-mail-assist/README.md) | FG01 McDonald's · IBM, FG02 Air Canada, FG04 Commonwealth Bank of Australia |
+| [Shared Agent Operations Foundation](company-agent-operating-layer/README.md) | FK03 삼성전자, FG07 Replit · SaaStr |
+<!-- failure-cases:end -->
+
 ## Recommended learning order
 
 1. [Scattered files and CSVs → reviewable work hub (AX Hub)](file-csv-to-ax-hub/README.md)

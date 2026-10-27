@@ -26,7 +26,7 @@ Use Node.js `22.23.4` or newer and Python `3.11.18` or newer. Run the same valid
 npm run verify
 ```
 
-`verify` installs the dependency used for README rendering checks, then checks internal links, bilingual mirrors, case metadata, the public-case registry, version synchronization, README rendering, source-record validation regression tests, the Beauty/D2C Python tests and committed-artifact reproduction, and npm security audit. Full external-link health depends on the network and therefore runs separately through `npm run check:external` and the weekly workflow.
+`verify` installs the dependency used for README rendering checks, then checks internal links, bilingual mirrors, case metadata, the public-case, failure-case, and hiring registries, version synchronization, README rendering, source-record validation regression tests, the Beauty/D2C Python tests and committed-artifact reproduction, and npm security audit. Full external-link health depends on the network and therefore runs separately through `npm run check:external` and the weekly workflow.
 
 ## Roadmap item format
 
@@ -81,6 +81,10 @@ Add `case.json` to each new case directory and follow [`case.schema.json`](../ca
 Do not mix current execution with the target design. Put only the scope demonstrated by published artifacts in `current_write_impact`, `current_autonomy`, and `implemented_project_stages`. `implemented_project_stages` identifies stages with implemented functionality, not completion of all exit criteria such as the minimum evaluation count and independent review. Put broader designed targets in `designed_write_impact`, `designed_autonomy`, and `designed_project_stages`. After changing `case.json`, run `npm run generate:cases` and commit the regenerated current-scope and design-target tables in the Korean and English case documents.
 
 When adding or changing a public organization case, update both language catalogs and [`public-ax-cases.json`](../research/public-ax-cases.json). Keep source provenance, deployment stage, and outcome verification in separate fields.
+
+Add failure and stop cases separately from the success catalog, to [`ax-failure-cases.json`](../research/ax-failure-cases.json) and both language documents. After changing `related_case_studies`, run `npm run generate:failure-links` to regenerate each case's `Failure-case check` and the link table in the case index.
+
+Add posting records to [`hiring-signals.json`](../research/hiring-signals.json) and both language explainers. For the monthly list, build the JSON by following the [collection criteria](research/hiring-monthly/README.md), then run `npm run generate:hiring-monthly` to update the list and the README summary.
 
 To claim an outcome measured by the contributor, provide its period, sample, and calculation method. If those details cannot be disclosed, remove the figure and retain only observable states. When citing an outside organization's reported metric, identify the reporting party and unreported conditions, and distinguish self-report from independent verification. Follow the [source policy](research/source-policy.md).
 

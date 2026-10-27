@@ -19,6 +19,12 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 When an employee's status changes, accounts, permissions, devices, and initial work should change with it. This case goes beyond generating onboarding instructions. It prepares the required changes, allows only approved actions in test systems, and keeps cancellation and offboarding recoverable.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FG12 Amazon (`STOPPED`): When past decisions are the training labels, add group-level outcome gaps as an evaluation metric and never use the ranking for automatic rejection.
+<!-- failure-cases:end -->
+
 ## 1. Case type and current evidence
 
 - Type: workflow

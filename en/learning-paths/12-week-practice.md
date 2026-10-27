@@ -57,6 +57,7 @@ Use an existing authorized test system for UI practice. Without that environment
 
 - Distinguish users, process owners, and people who may be harmed.
 - Compare three workflow candidates by value, frequency, evidence, data, risk, and recoverability.
+- Look up why similar work stopped in the [public failure and stop cases](../research/ax-failure-cases.md) and answer the [capstone design checklist](../research/ax-failure-cases.md#checklist-for-capstone-design).
 - Record the current flow, bottlenecks, waiting, and exceptions.
 - Define success and stop conditions plus initial non-goals.
 

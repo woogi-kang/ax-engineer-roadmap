@@ -78,7 +78,7 @@ Where accuracy fell short of the bar for scaling (FG01, FG10), the stop can also
 
 ## Checklist for capstone design
 
-After choosing a capstone workflow, answer the questions below and carry the answers into the [execution contract](../toolkit/execution-contract.md) and [experiment card](../toolkit/experiment-card.md). Parentheses list the cases behind each question.
+After choosing a capstone workflow, answer the questions below and carry the answers into the [workflow execution rules](../toolkit/execution-contract.md) and [experiment card](../toolkit/experiment-card.md). Parentheses list the cases behind each question.
 
 1. Who is accountable, and at what cost, when the AI is wrong here? Does every answer or action carry its source? (FG02, FG03, FG06)
 2. Have you defined what reviewers check and a sampling audit rate, beyond 'a human looks at it'? (FG06, FG08)

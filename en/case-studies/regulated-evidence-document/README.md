@@ -17,6 +17,12 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 This simulation reads synthetic contract, research, and product material and drafts a regulated document whose statements link to sources and separate facts from assumptions. It is not legal advice, a regulatory submission, or a clinical or product decision.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FG06 Deloitte Australia · DEWR (`REVERSED`): Make citation existence and quote matching a pre-delivery gate, automated or human, and disclose AI use in the deliverable.
+<!-- failure-cases:end -->
+
 ## 1. Current evidence and classification
 
 - Evidence: `simulation-design`

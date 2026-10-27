@@ -17,6 +17,10 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 This manufacturing simulation finds anomaly candidates in synthetic sensor streams and links them to equipment history and safety procedures before drafting a maintenance ticket. AI never starts, stops, controls, or changes physical equipment or safety interlocks.
 
+<!-- failure-cases:start -->
+> Failure-case check: The [public AX failure and stop cases](../../research/ax-failure-cases.md) do not yet link a record directly to this workflow. Before turning this design into practice, answer the eight questions in the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design).
+<!-- failure-cases:end -->
+
 ## 1. Current evidence and classification
 
 - Evidence: `simulation-design`
