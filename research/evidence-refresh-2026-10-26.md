@@ -13,7 +13,7 @@
 | 모집 표시 | 확인 11개, 마감 표시 8개, 미확인 8개 |
 | 게시일 | 2026-08-01 이후 게시일을 원문에서 확인한 공고 1개. 나머지는 게시일 미상 |
 
-[기업 사례 목록](public-ax-cases.md) · [채용 공고 기록](hiring-signals.md) · [역할 해석](ax-engineer-role-review.md)
+[기업 사례 목록](public-ax-cases.md) · [공고로 보는 AX 직무 해설](hiring-signals.md) · [역할 해석](ax-engineer-role-review.md)
 
 ## 새로 추가한 업무
 

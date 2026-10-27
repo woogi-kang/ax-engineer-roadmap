@@ -145,7 +145,7 @@ export function renderMonth(data, language) {
     lines.push(
       `# ${monthName(data.month, "ko")} 국내 AX·AI Agent·FDE 채용 공고 목록`,
       "",
-      `접수 시작일이 ${data.window.from}부터 ${data.window.to}까지인 국내 공고를 제목 수준에서 모은 월간 목록이다. 확인일은 ${data.checked_at}이다. 수집 기준과 절차는 [월간 수집 기준](README.md)에 있고, 책임과 요건을 자세히 정리한 표본은 [채용 공고 기록](../hiring-signals.md)에 따로 둔다.`,
+      `접수 시작일이 ${data.window.from}부터 ${data.window.to}까지인 국내 공고를 제목 수준에서 모은 월간 목록이다. 확인일은 ${data.checked_at}이다. 수집 기준과 절차는 [월간 채용 현황과 수집 기준](README.md)에 있고, 공고별 책임과 요건은 [공고로 보는 AX 직무 해설](../hiring-signals.md)에서 다룬다.`,
       "",
       "## 요약",
       "",
@@ -165,7 +165,7 @@ export function renderMonth(data, language) {
     lines.push(
       `# Korean AX, AI Agent, and FDE job postings: ${monthName(data.month, "en")}`,
       "",
-      `This monthly list records, at title level, Korean postings whose applications opened between ${data.window.from} and ${data.window.to}. Checked on ${data.checked_at}. The collection criteria and procedure are in [Monthly collection criteria](README.md); the detailed sample of responsibilities and requirements stays in [Job-posting records](../hiring-signals.md). Company, title, employment, location, and experience cells keep the original Korean text.`,
+      `This monthly list records, at title level, Korean postings whose applications opened between ${data.window.from} and ${data.window.to}. Checked on ${data.checked_at}. The collection criteria and procedure are in [Monthly hiring snapshot and collection criteria](README.md); per-posting responsibilities and requirements are in [AX roles explained through job postings](../hiring-signals.md). Company, title, employment, location, and experience cells keep the original Korean text.`,
       "",
       "## Summary",
       "",
@@ -250,22 +250,22 @@ export function renderReadmeBlock(data, months, language) {
   const archive = months.filter((month) => month !== data.month).map((month) => `[${monthName(month, language)}](${base}/${month}.md)`).join(" · ");
   const lines = ko
     ? [
-        `**최근 한 달 채용 공고(${monthName(data.month, "ko")})**: ${data.window.from}~${data.window.to}에 접수가 시작된 국내 AX·AI Agent·FDE 공고 ${p.length}건을 ${collected}에서 모았습니다. ${data.checked_at} 확인 기준으로 모집 중 ${open}건, 마감 ${closed}건입니다.`,
+        `**월간 채용 현황(${monthName(data.month, "ko")})**: ${data.window.from}~${data.window.to}에 접수가 시작된 국내 AX·AI Agent·FDE 공고 ${p.length}건을 ${collected}에서 모았습니다. ${data.checked_at} 확인 기준으로 모집 중 ${open}건, 마감 ${closed}건입니다.`,
         "",
         "| 유형 | 공고 | 모집 중 |",
         "|---|---|---|",
         ...rows,
         "",
-        `재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 목록은 매달 갱신합니다. [${monthName(data.month, "ko")} 전체 목록](${base}/${data.month}.md) · [월간 수집 기준](${base}/README.md)${archive ? ` · 지난 목록: ${archive}` : ""}`,
+        `재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 목록은 매달 갱신합니다. 공고별 책임과 요건은 [공고로 보는 AX 직무 해설](research/hiring-signals.md)에서 볼 수 있습니다. [${monthName(data.month, "ko")} 전체 목록](${base}/${data.month}.md) · [수집 기준](${base}/README.md)${archive ? ` · 지난 목록: ${archive}` : ""}`,
       ]
     : [
-        `**Last month's job postings (${monthName(data.month, "en")})**: ${p.length} Korean AX, AI Agent, and FDE postings that opened between ${data.window.from} and ${data.window.to}, collected from ${collected}. As of ${data.checked_at}, ${open} were open and ${closed} closed.`,
+        `**Monthly hiring snapshot (${monthName(data.month, "en")})**: ${p.length} Korean AX, AI Agent, and FDE postings that opened between ${data.window.from} and ${data.window.to}, collected from ${collected}. As of ${data.checked_at}, ${open} were open and ${closed} closed.`,
         "",
         "| Type | Postings | Open |",
         "|---|---|---|",
         ...rows,
         "",
-        `Reposts and project postings are mixed in, so these are not unique vacancies. The list is updated monthly. [Full ${monthName(data.month, "en")} list](${base}/${data.month}.md) · [Monthly collection criteria](${base}/README.md)${archive ? ` · Archive: ${archive}` : ""}`,
+        `Reposts and project postings are mixed in, so these are not unique vacancies. The list is updated monthly. For per-posting responsibilities and requirements, see [AX roles explained through job postings](research/hiring-signals.md). [Full ${monthName(data.month, "en")} list](${base}/${data.month}.md) · [Collection criteria](${base}/README.md)${archive ? ` · Archive: ${archive}` : ""}`,
       ];
   return [readmeMarkers[0], ...lines, readmeMarkers[1]].join("\n");
 }

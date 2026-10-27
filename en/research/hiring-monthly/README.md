@@ -1,6 +1,8 @@
-# Monthly job-posting collection criteria
+# Monthly hiring snapshot and collection criteria
 
-Each month, Korean AX, AI Agent, and FDE postings are recorded at title level using the same method. [Job-posting records](../hiring-signals.md), which summarize responsibilities and requirements in both languages, remain a representative sample. This directory holds the full list of postings opened during each month.
+> Read this page to see how many Korean AX, AI Agent, and FDE postings are out now and what kinds they are. A full title-level list is rebuilt every month. To understand the role by reading individual responsibilities and requirements, see [AX roles explained through job postings](../hiring-signals.md).
+
+Postings are collected the same way each month. Monthly lists, criteria, and procedure follow below.
 
 ## Monthly lists
 
@@ -65,7 +67,7 @@ The queries are AX, AX 엔지니어, AX 개발자, AI 전환, AI Agent, AI 에�
 7. Pass `npm run check` and `npm run test:hiring`. The check covers the window, status rules, ID order, duplicates, and whether generated documents and the README summary are current.
 8. In the PR body, report candidate, excluded, and held counts and platform access results.
 
-A few postings whose bodies show clear responsibilities and requirements can also be added to the detailed sample in [Job-posting records](../hiring-signals.md). That step is optional and reviewed separately from the monthly list.
+A few postings whose bodies show clear responsibilities and requirements can also be added to the detailed sample in [AX roles explained through job postings](../hiring-signals.md). That step is optional and reviewed separately from the monthly list.
 
 ## Data fields
 

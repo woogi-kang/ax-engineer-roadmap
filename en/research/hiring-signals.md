@@ -1,4 +1,6 @@
-# AX and Adjacent Role Posting Records
+# AX Roles Explained Through Job Postings
+
+> Read this page to understand the responsibilities and requirements AX and adjacent roles actually carry, based on posting bodies. It is a curated representative sample and is not fully refreshed each month. For how many postings are open now, see [Monthly hiring snapshot](hiring-monthly/README.md).
 
 Checked: **2026-10-26** (J001–J027) · **2026-10-27** (J028–J039) · Recent-publication window starts: **2026-08-01**
 
