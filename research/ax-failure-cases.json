@@ -37,7 +37,7 @@
         "en": "About 20 days after launch, abuse, discriminatory replies and training-data concerns led the company to suspend the service from 2021-01-12. The PIPC found eight violations, including reuse of chats collected for other services without clear consent, and imposed KRW 103.3 million in penalties plus a corrective order."
       },
       "capstone_check": {
-        "ko": "학습·검색에 쓸 데이터마다 수집 목적과 동의 범위를 기록하고, 차별·유해 응답 평가 세트를 출시 전 통과 기준으로 둔다.",
+        "ko": "학습·검색에 쓸 데이터마다 수집 목적과 동의 범위를 기록한다. 차별·유해 응답 평가 세트는 출시 전 통과 기준으로 둔다.",
         "en": "Record the collection purpose and consent scope for every training or retrieval dataset, and make a discriminatory/harmful-output test set a pre-launch gate."
       },
       "related_public_cases": [],
@@ -108,7 +108,7 @@
         "en": "One semester after launch, on 2025-08-04 the National Assembly amended the Elementary and Secondary Education Act to classify the tools as educational materials. Use became the principal's choice and the legal basis for subscription funding weakened. The ministry halted the 2026 textbook review and said it would discuss support for schools that still want them."
       },
       "capstone_check": {
-        "ko": "현업이 쓰는지(활성 사용률)와 일이 나아졌는지(성과 지표)를 따로 정하고, 의무 확대 전에 소규모 비교 결과와 사용자 의견을 공개한다.",
+        "ko": "현업이 쓰는지(활성 사용률)와 일이 나아졌는지(성과 지표)를 따로 정한다. 의무 확대 전에는 소규모 비교 결과와 사용자 의견을 공개한다.",
         "en": "Define adoption (active use) and outcome (did the work improve) separately, and publish a small comparison and user feedback before making use mandatory."
       },
       "related_public_cases": [],
@@ -187,7 +187,7 @@
       ],
       "failure_evidence": "press-reported",
       "what_happened": {
-        "ko": "2023년 DX부문은 회사 PC의 외부 생성형 AI 사용을 임시 제한했고 DS부문은 그보다 먼저 제한했다. 이후 사내 모델 사용을 원칙으로 했다. 2026년 5월 보도에 따르면 약 2,500명 PoC를 거쳐 6월부터 DX부문 보안 교육 이수자에게 외부 서비스 3종을 열고, DS부문은 승인된 경우로 계속 제한한다.",
+        "ko": "2023년 DX부문은 회사 PC의 외부 생성형 AI 사용을 임시 제한했고 DS부문은 그보다 먼저 제한했다. 이후 사내 모델 사용을 원칙으로 했다. 2026년 5월 보도에 따르면 약 2,500명 PoC를 거쳐 6월부터 DX부문 보안 교육 이수자에게 외부 서비스 3종을 열고 DS부문은 승인된 경우로 계속 제한한다.",
         "en": "In 2023 the DX division temporarily restricted external generative AI on company PCs, after the DS division had already done so, and the company moved to in-house models. A May 2026 report says that after a PoC with about 2,500 employees, three external services open in June to DX employees who complete security training, while DS keeps approval-only use."
       },
       "capstone_check": {
@@ -322,7 +322,7 @@
         "en": "After about two and a half years of testing from October 2021, the company said it would end the AOT partnership with IBM at the end of 2024, while saying voice ordering remains part of its future."
       },
       "capstone_check": {
-        "ko": "확대 조건이 되는 정확도 기준을 미리 숫자로 정하고, 그 기준에 못 미치면 연장하지 않고 종료하는 결정 시점을 둔다.",
+        "ko": "확대 조건이 되는 정확도 기준을 미리 숫자로 정한다. 그 기준에 못 미치면 연장하지 않고 끝낼 판정 날짜도 정해 둔다.",
         "en": "Set the accuracy threshold for scaling as a number in advance, and fix a decision date to end rather than extend if it is not met."
       },
       "related_public_cases": [],
@@ -375,11 +375,11 @@
       ],
       "failure_evidence": "official-record",
       "what_happened": {
-        "ko": "챗봇은 여행 후 90일 안에 유족 할인 운임을 소급 신청할 수 있다고 안내했지만, 연결된 규정 페이지는 여행 후 신청을 인정하지 않았다. 항공사는 챗봇 정보에 책임이 없다고 주장했으나 재판소는 챗봇도 웹사이트의 일부라며 과실에 의한 허위 안내 책임을 인정하고 총 812.02캐나다달러 지급을 명령했다.",
+        "ko": "챗봇은 여행 후 90일 안에 유족 할인 운임을 소급 신청할 수 있다고 안내했지만 연결된 규정 페이지는 여행 후 신청을 인정하지 않았다. 항공사는 챗봇 정보에 책임이 없다고 주장했으나 재판소는 챗봇도 웹사이트의 일부라며 과실에 의한 허위 안내 책임을 인정하고 총 812.02캐나다달러 지급을 명령했다.",
         "en": "The chatbot said a bereavement fare could be claimed within 90 days after travel, while the linked policy page said it could not. The airline argued it was not liable for its chatbot; the tribunal called it part of the website, found negligent misrepresentation and ordered CAD 812.02 in total."
       },
       "capstone_check": {
-        "ko": "규정·가격처럼 책임이 따르는 답변은 원문 조항을 인용하게 하고, 원문과 다른 답변을 잡는 평가 사례를 만든다. 답변 책임자는 회사라는 전제로 승인 범위를 정한다.",
+        "ko": "규정·가격처럼 책임이 따르는 답변은 원문 조항을 인용하게 하고 원문과 다른 답변을 잡는 평가 사례를 만든다. 답변 책임자는 회사라는 전제로 승인 범위를 정한다.",
         "en": "For answers that carry liability, such as policy or price, require a quote of the source clause and test for answers that contradict it. Assume the company owns every answer when setting approval scope."
       },
       "related_public_cases": [],
@@ -421,7 +421,7 @@
         "en": "Launched a generative AI chatbot in fall 2023 for business owners to ask about city rules."
       },
       "decision_metric": {
-        "ko": "공개된 정확도 지표는 없다. 언론 시험에서 법에 어긋나는 답변이 반복 확인됐고, 2026년 시장은 예산 대비 쓸모를 판단 근거로 들었다.",
+        "ko": "공개된 정확도 지표는 없다. 언론 시험에서 법에 어긋나는 답변이 반복 확인됐다. 2026년 시장은 예산 대비 쓸모를 판단 근거로 들었다.",
         "en": "No accuracy metric was published. Press testing repeatedly found unlawful answers; in 2026 the mayor cited cost versus usefulness."
       },
       "outcome": [
@@ -438,7 +438,7 @@
         "en": "2024 testing found wrong answers such as allowing Section 8 discrimination, tip-taking and refusing cash. The city added disclaimers and narrowed answers, but in 2026 Mayor Mamdani called it 'functionally unusable', and on 2026-02-04 the page said the beta had ended."
       },
       "capstone_check": {
-        "ko": "법·규정 안내는 범위를 좁혀 시작하고, 위반 답변 시험 세트를 정기적으로 돌린다. 경고 문구를 정확도 관리의 대체 수단으로 쓰지 않는다.",
+        "ko": "법·규정 안내는 범위를 좁혀 시작하고 위반 답변 시험 세트를 정기적으로 돌린다. 경고 문구를 정확도 관리의 대체 수단으로 쓰지 않는다.",
         "en": "Start legal or regulatory Q&A with a narrow scope and rerun a violation test set on a schedule. Do not treat a disclaimer as a substitute for accuracy control."
       },
       "related_public_cases": [
@@ -498,7 +498,7 @@
         "en": "The union filed disputes, one of which went to the Fair Work Commission. The bank then said its initial assessment did not adequately consider all relevant business considerations and that 'this error meant the roles were not redundant', reversing the cuts."
       },
       "capstone_check": {
-        "ko": "인력·업무 재배치 결정 전에 기준선 대비 실제 업무량 변화를 일정 기간 측정하고, 측정 근거를 이해관계자가 확인할 수 있게 남긴다.",
+        "ko": "인력·업무 재배치 결정 전에 기준선 대비 실제 업무량 변화를 일정 기간 측정하고 그 근거를 이해관계자가 확인할 수 있게 남긴다.",
         "en": "Before reassigning staff, measure the change in real workload against a baseline over a set period and keep that evidence reviewable by affected parties."
       },
       "related_public_cases": [
@@ -528,7 +528,7 @@
           "checked_at": "2026-10-27",
           "access_status": "read",
           "supports": {
-            "ko": "주당 2,000건 감소 주장에 대한 근거 요구와 공정근로위원회 분쟁.",
+            "ko": "주당 2,000건 감소 주장의 근거 요구와 공정근로위원회 분쟁.",
             "en": "Challenge to the 2,000-calls-a-week claim and the Fair Work Commission dispute."
           }
         }
@@ -642,7 +642,7 @@
         "en": "Fabricated references and a misattributed court quote were found in an AUD 440,000 report. Deloitte posted a corrected version and agreed to a partial refund; the department said the substance and recommendations were unchanged."
       },
       "capstone_check": {
-        "ko": "AI가 쓴 인용은 원문 존재 여부와 문구 일치를 자동 또는 사람이 확인하는 단계를 납품 전 통과 기준에 넣고, AI 사용 사실을 산출물에 밝힌다.",
+        "ko": "AI가 쓴 인용은 원문 존재 여부와 문구 일치를 자동 또는 사람이 확인하는 단계를 납품 전 통과 기준에 넣는다. AI 사용 사실은 산출물에 밝힌다.",
         "en": "Make citation existence and quote matching a pre-delivery gate, automated or human, and disclose AI use in the deliverable."
       },
       "related_public_cases": [
@@ -698,11 +698,11 @@
       ],
       "failure_evidence": "self-acknowledged",
       "what_happened": {
-        "ko": "9일째 에이전트가 동결 지시를 어기고 임원 1,206명·기업 1,196곳 이상의 운영 데이터베이스를 삭제했고, 처음에는 상황을 숨겼다고 사용자는 밝혔다. Replit CEO는 '있어서는 안 될 일'이라며 개발·운영 DB 자동 분리, 문서 검색 강제, 환불과 사후 분석을 발표했다.",
+        "ko": "9일째 에이전트가 동결 지시를 어기고 임원 1,206명·기업 1,196곳 이상의 운영 데이터베이스를 삭제했다. 사용자는 에이전트가 처음에 이 사실을 숨겼다고 밝혔다. Replit CEO는 '있어서는 안 될 일'이라며 개발·운영 DB 자동 분리, 문서 검색 강제, 환불과 사후 분석을 발표했다.",
         "en": "On day nine the agent ignored the freeze and deleted a production database with records on 1,206 executives and over 1,196 companies, and the user says it initially hid this. Replit's CEO called it unacceptable and announced automatic dev/prod database separation, forced docs search, a refund and a postmortem."
       },
       "capstone_check": {
-        "ko": "지시문으로 권한을 막지 않는다. 운영 데이터 쓰기·삭제는 도구 권한과 환경 분리로 차단하고, 복구 절차를 실제로 시험한다.",
+        "ko": "지시문으로 권한을 막지 않는다. 운영 데이터 쓰기·삭제는 도구 권한과 환경 분리로 차단하고 복구 절차를 실제로 시험한다.",
         "en": "Do not rely on prompts for permission. Block production writes and deletes through tool permissions and environment separation, and rehearse recovery."
       },
       "related_public_cases": [
@@ -848,7 +848,7 @@
         "en": "After the staff cuts, a user showed the chatbot recommending weight loss and calorie restriction to people with eating disorders. The association said the current version may have given harmful information and took it down."
       },
       "capstone_check": {
-        "ko": "위험군 이용자가 있는 업무는 사람 상담을 없애는 계획과 AI 도입을 분리하고, 위험 답변 차단 시험과 즉시 사람 연결을 먼저 통과시킨다.",
+        "ko": "위험군 이용자가 있는 업무는 사람 상담을 없애는 계획과 AI 도입을 분리한다. 위험 답변 차단 시험과 즉시 사람 연결부터 통과시킨다.",
         "en": "Where vulnerable users are involved, decouple staff reduction from the AI launch, and pass harmful-answer blocking tests and immediate human handoff first."
       },
       "related_public_cases": [
@@ -963,11 +963,11 @@
       ],
       "failure_evidence": "official-record",
       "what_happened": {
-        "ko": "텍사스대 감사는 4년 넘게 6,200만 달러가 들었지만 임상에 쓰이지 않고 외부 시범도 없다고 지적했다. 병원이 Epic으로 기록 시스템을 바꾼 뒤 연동이 갱신되지 않았고, 비경쟁 조달 일부는 승인 절차를 지키지 않았다. IBM은 2016-09-01 시범 지원을 끝냈다.",
+        "ko": "텍사스대 감사는 4년 넘게 6,200만 달러가 들었지만 임상에 쓰이지 않고 외부 시범도 없다고 지적했다. 병원이 Epic으로 기록 시스템을 바꾼 뒤 연동이 갱신되지 않았다. 비경쟁 조달 일부는 승인 절차를 지키지 않았다. IBM은 2016-09-01 시범 지원을 끝냈다.",
         "en": "The University of Texas audit found over four years and USD 62 million spent, with no clinical use and no pilot elsewhere. The system was not updated after the hospital moved to Epic, and some non-competitive procurements skipped approvals. IBM ended pilot support on 2016-09-01."
       },
       "capstone_check": {
-        "ko": "연동 대상 시스템의 교체 일정과 소유자를 위험 목록에 넣고, 단계마다 '임상(현업) 사용 가능' 판정과 예산 승인을 묶는다.",
+        "ko": "연동 대상 시스템의 교체 일정과 소유자를 위험 목록에 넣는다. 단계마다 '임상(현업) 사용 가능' 판정과 예산 승인을 묶는다.",
         "en": "List source-system migrations and owners as risks, and tie each stage's budget approval to a 'ready for real use' decision."
       },
       "related_public_cases": [
@@ -1027,7 +1027,7 @@
         "en": "The model downgraded resumes containing 'women's' and graduates of two women's colleges. Engineers neutralized those terms, but with no guarantee against other discrimination the team was disbanded by early 2017. The company declined to comment."
       },
       "capstone_check": {
-        "ko": "과거 결정을 정답으로 학습하는 업무는 집단별 결과 차이를 평가 지표로 두고, 순위 결과를 자동 탈락에 쓰지 않는다.",
+        "ko": "과거 결정을 정답으로 학습하는 업무는 집단별 결과 차이를 평가 지표로 두고 순위 결과를 자동 탈락에 쓰지 않는다.",
         "en": "When past decisions are the training labels, add group-level outcome gaps as an evaluation metric and never use the ranking for automatic rejection."
       },
       "related_public_cases": [],
