@@ -5,6 +5,7 @@ This directory records the external evidence behind the roadmap's role model, st
 ## Documents
 
 - [Public AX case catalog](public-ax-cases.md): compares workflows, human judgment, reported results, and evidence limits across 16 Korean and 24 international cases.
+- [Public AX failure and stop cases](ax-failure-cases.md): read this before designing a capstone. Four Korean and 12 international cases that were stopped, reversed, sanctioned or left unproven, with what was being changed, the deciding metric, why it stopped and design checks.
 - [AX roles explained through job postings](hiring-signals.md): read this to understand the role. A curated sample of 39 posting bodies with responsibilities, requirements, recruitment signals, and check dates. Possible duplicates mean this is not a unique-vacancy count.
 - [Monthly hiring snapshot](hiring-monthly/README.md): read this to see how many postings are out now. Every Korean AX, AI Agent, and FDE posting found each month at title level, with the collection criteria and procedure. The October 2026 list has 138 JobKorea postings.
 - [2026-10-26 evidence refresh](evidence-refresh-2026-10-26.md): collection scope, additions, corrections, access failures, and held material.

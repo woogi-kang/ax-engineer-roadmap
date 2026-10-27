@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public AX failure, stop and rollback case registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "checked_at", "existing_catalog_cases", "cases"],
+  "properties": {
+    "$schema": { "const": "./ax-failure-cases.schema.json" },
+    "checked_at": { "type": "string", "format": "date", "description": "Date the sources in this registry were last read." },
+    "existing_catalog_cases": {
+      "type": "array",
+      "uniqueItems": true,
+      "description": "Public AX catalog cases that already record an adjustment or stop. They are analysed by reference and not duplicated here.",
+      "items": { "type": "string", "pattern": "^[KG][0-9]{2}$" }
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "region", "organization", "domain", "attempted_change", "decision_metric", "outcome", "outcome_disclosed_at", "failure_causes", "failure_evidence", "what_happened", "capstone_check", "related_public_cases", "related_case_studies", "sources", "limitations"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^F[KG][0-9]{2}$" },
+          "region": { "type": "string", "minLength": 2 },
+          "organization": { "type": "string", "minLength": 1 },
+          "domain": { "$ref": "#/$defs/localizedText" },
+          "attempted_change": { "$ref": "#/$defs/localizedText" },
+          "decision_metric": { "$ref": "#/$defs/localizedText" },
+          "outcome": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "enum": ["STOPPED", "PAUSED", "REVERSED", "SCALED_BACK", "SANCTIONED", "UNPROVEN"] }
+          },
+          "outcome_disclosed_at": { "$ref": "#/$defs/nullableDate", "description": "Date the outcome became public in the sources read. It can differ from the internal decision date." },
+          "failure_causes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "enum": ["accuracy", "ungrounded-answer", "unsafe-output", "bias", "data-consent", "data-leak", "no-permission-boundary", "weak-review", "escalation-gap", "metric-gap", "premature-scale", "integration-drift", "governance", "stakeholder-trust"] }
+          },
+          "failure_evidence": { "enum": ["official-record", "self-acknowledged", "press-reported"] },
+          "what_happened": { "$ref": "#/$defs/localizedText" },
+          "capstone_check": { "$ref": "#/$defs/localizedText" },
+          "related_public_cases": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^[KG][0-9]{2}$" } },
+          "related_case_studies": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" } },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["url", "publisher", "source_type", "published_at", "checked_at", "access_status", "supports"],
+              "properties": {
+                "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+                "publisher": { "type": "string", "minLength": 1 },
+                "source_type": { "enum": ["ORG", "GOV", "COURT", "UNION", "PRESS"] },
+                "published_at": { "$ref": "#/$defs/nullableDate" },
+                "checked_at": { "type": "string", "format": "date" },
+                "access_status": { "enum": ["read", "unavailable"] },
+                "supports": { "$ref": "#/$defs/localizedText" }
+              }
+            }
+          },
+          "limitations": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/localizedText" } }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ko", "en"],
+      "properties": {
+        "ko": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "nullableDate": { "type": ["string", "null"], "format": "date" }
+  }
+}
