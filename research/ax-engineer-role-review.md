@@ -74,6 +74,8 @@ Rapport Labs의 AX팀 공개 글은 구성원이 AI를 실제 업무에 쓰며 �
 
 채널 간 원 공고 ID가 연결되지 않으면 별도 기록으로 남긴다. 이 27개를 고유 채용 건수로 세지 않으며 채용 증가율, 평균 연봉, 시장 규모를 계산하지 않는다. 게시일이 2026-08-01 이후임을 확인한 공고는 GM 1개이고 나머지 26개는 게시일 미상이다.
 
+2026-10-27에는 업무가 겹치는 AI Agent 엔지니어와 FDE 공고까지 범위를 넓혀 12개를 더했다. 현재 공고 기록은 39개이고 모집 표시 확인 19개, 마감 표시 확인 12개, 미확인 8개다. FDE 직함도 고객 현장의 LLM 시스템 구축부터 보안 인증·테스트 자동화 제품 적용까지 범위가 넓다.
+
 | 구분 | 자료와 날짜 | 확인한 내용과 한계 |
 |---|---|---|
 | 기준일 이후 발표 | [GM, Sr. AI/Automation Engineer, HR Technology](https://search-careers.gm.com/en/jobs/jr-202605425/sr-ai-automation-engineer-hr-technology-remote-india-night-shift/) (2026-09-21 게시) | HR 조직의 ServiceNow·Workday 통합, 요구 분석, 테스트, 배포와 보안을 맡는다. AX라는 직함 없이 내부 업무 전환을 맡는 사례다. |
