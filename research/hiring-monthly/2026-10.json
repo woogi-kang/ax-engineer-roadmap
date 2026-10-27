@@ -2595,11 +2595,11 @@
   "held": [
     {
       "platform_id": "50098832",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50098832",
+      "url": null,
       "company": "㈜조인아이티",
       "title_original": "자동차.AI Agent구축/즉시-3개월/고급/의왕/경험(LLM연계,RAG 등/상세참조/",
-      "reason": "unreadable",
-      "note": "상세 페이지 본문을 읽지 못함"
+      "reason": "removed",
+      "note": "2026-10-27 상세 본문을 읽지 못했고 같은 날 링크 검사에서 404를 반환"
     }
   ],
   "excluded": [

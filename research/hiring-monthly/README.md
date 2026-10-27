@@ -37,6 +37,7 @@
 - 모집 중(`open`): 마감일이 확인일 이후이거나 상시 채용이고, 마감 표시가 없다.
 - 마감(`closed`): 페이지에 마감 표시가 있거나(`closed-notice`) 마감일이 지났다(`deadline-passed`).
 - 미확인(`unknown`): 상세 페이지를 읽었지만 상태를 판단할 수 없다. 페이지 자체를 읽지 못한 공고는 목록에 넣지 않고 보류(`held`)로 둔다.
+- 공고 페이지가 404를 반환하면 보류 사유를 `removed`로 바꾸고 `url`을 `null`로 둔다. 외부 링크 검사(`npm run check:external`)가 깨진 링크로 실패하지 않게 하기 위해서다.
 - 남은 시간 표시는 캐시된 값일 수 있으므로 상태 판단에 쓰지 않는다.
 - 태그: `project-or-freelance`(프로젝트 투입·프리랜서), `company-undisclosed`(헤드헌팅 등 기업명 비공개), `training-matching`(교육기관 매칭 공고).
 

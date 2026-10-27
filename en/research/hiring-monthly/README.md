@@ -37,6 +37,7 @@ Borderline postings stay in the excluded list with their reason so the next mont
 - Open (`open`): the deadline is on or after the check date, or the posting is rolling, and no closed notice appears.
 - Closed (`closed`): the page shows a closed notice (`closed-notice`) or the deadline has passed (`deadline-passed`).
 - Unverified (`unknown`): the detail page was read but its status could not be judged. A posting whose page could not be read is held (`held`) instead of listed.
+- If a posting page returns 404, set the held reason to `removed` and its `url` to `null` so the external link check (`npm run check:external`) does not fail on a dead link.
 - Remaining-time counters can be cached and are not used to judge status.
 - Tags: `project-or-freelance`, `company-undisclosed` (for example, headhunter postings), and `training-matching` (postings matched through a training program).
 

@@ -31,6 +31,7 @@ const labels = {
       "adjacent-subtrack": "검색 랭킹·데이터 모델링 하위 직무",
       "outside-window": "접수 시작일이 수집 기간 이전",
       unreadable: "상세 페이지를 읽지 못함",
+      removed: "공고 페이지가 삭제됨(404)",
     },
     platform: { collected: "수집", "not-collected": "미수집" },
     platformName: { jobkorea: "잡코리아", saramin: "사람인", wanted: "원티드", linkedin: "링크드인" },
@@ -57,6 +58,7 @@ const labels = {
       "adjacent-subtrack": "Search ranking or data modeling subtrack",
       "outside-window": "Application opened before the window",
       unreadable: "Detail page could not be read",
+      removed: "Posting page removed (404)",
     },
     platform: { collected: "Collected", "not-collected": "Not collected" },
     platformName: { jobkorea: "JobKorea", saramin: "Saramin", wanted: "Wanted", linkedin: "LinkedIn" },
@@ -110,6 +112,7 @@ export function validateMonth(data) {
   }
   for (const item of [...data.held, ...data.excluded]) {
     if (!labels.ko.reason[item.reason]) failures.push(`${item.platform_id}: unknown reason ${item.reason}`);
+    if (item.reason === "removed" ? item.url !== null : !item.url) failures.push(`${item.platform_id}: only removed postings drop their url`);
   }
   return failures;
 }
@@ -209,7 +212,9 @@ export function renderMonth(data, language) {
     }
     for (const item of items) {
       const extra = item.start_date ? (ko ? ` (접수 시작 ${item.start_date})` : ` (opened ${item.start_date})`) : "";
-      lines.push(`- [${item.company} / ${item.title_original}](${item.url}): ${l.reason[item.reason]}${extra}.`);
+      const name = `${item.company} / ${item.title_original}`;
+      const label = item.url ? `[${name}](${item.url})` : `${name} (${ko ? "잡코리아" : "JobKorea"} ${item.platform_id})`;
+      lines.push(`- ${label}: ${l.reason[item.reason]}${extra}.`);
     }
   };
   side(ko ? "보류" : "Held", data.held);
