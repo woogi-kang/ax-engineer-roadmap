@@ -4,6 +4,10 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ## [Unreleased]
 
+### Added
+
+- Added 12 AX, AI agent, and FDE posting records (J028–J039), bringing the hiring registry to 39, and recorded per-platform access results and held candidates from 2026-10-27
+
 ## [0.4.0] - 2026-10-27
 
 ### Added

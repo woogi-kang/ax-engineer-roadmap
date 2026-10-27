@@ -1,18 +1,19 @@
 # AX and Adjacent Role Posting Records
 
-Checked: **2026-10-26** · Recent-publication window starts: **2026-08-01**
+Checked: **2026-10-26** (J001–J027) · **2026-10-27** (J028–J039) · Recent-publication window starts: **2026-08-01**
 
-These are **27 posting records** whose role bodies were read. Channels without a confirmed original-ID match remain separate; this is not a count of unique vacancies or new jobs. `added_at` is the registry-entry date, not the first date a posting appeared online.
+These are **39 posting records** whose role bodies were read. Channels without a confirmed original-ID match remain separate; this is not a count of unique vacancies or new jobs. `added_at` is the registry-entry date, not the first date a posting appeared online.
 
-- Open indications: 11 · Closed indications: 8 · Unverified: 8
-- Primary-source classification: 12 company/institution/official ATS records · 15 recruitment-platform records
-- One original has a verified publication date within the window: GM. The other 26 have unknown publication dates.
+- Open indications: 19 · Closed indications: 12 · Unverified: 8
+- Primary-source classification: 15 company/institution/official ATS records · 24 recruitment-platform records
+- One original has a verified publication date within the window: GM. The other 38 have unknown publication dates.
 
 Availability and source access are separate. An application link or open label does not establish successful submission. An explicit closed label takes precedence over a future deadline or rolling-recruitment wording. The check date is when returned material was read, not a guarantee of real-time availability.
 
 ## Reading the records
 
 - Compare the actual workflow and implementation, operating, and support responsibilities. Internal AX, customer delivery, pre-sales, and hybrid roles remain distinct.
+- From J028, AI agent engineer and FDE (Forward Deployed Engineer) postings are included when their work overlaps with AX, even without AX in the title. When the body does not show the target work, the role scope is unclassified.
 - Required/listed and preferred qualifications are concise summaries. Candidate-profile postings are identified as lacking formal required/preferred divisions. An unverified preference list does not mean no preferences exist.
 - Project links are this roadmap’s editorial suggestions, not employer endorsement or a hiring guarantee.
 - Related material without a confirmed identity match is stored in `related_sources` and excluded from this posting’s availability aggregation.
@@ -50,6 +51,18 @@ Availability and source access are separate. An application link or open label d
 | [J025](#j025) | 대웅 | [대웅] AX Engineer | Internal AX | Closed indication observed |
 | [J026](#j026) | 대웅 | [대웅] Senior AX Engineer | Internal AX | Closed indication observed |
 | [J027](#j027) | 윗유 | [윗유] AX Engineer | Internal AX | Open indication observed |
+| [J028](#j028) | 채널코퍼레이션(Channel Corp.) | Forward Deployed Engineer | Hybrid | Open indication observed |
+| [J029](#j029) | Databricks | AI Engineer - FDE (Forward Deployed Engineer) | Customer delivery | Open indication observed |
+| [J030](#j030) | 슈퍼브에이아이(Superb AI) | [R&D] Forward Deployed Engineer | Customer delivery | Open indication observed |
+| [J031](#j031) | SAMG엔터테인먼트 | [SAMG엔터] AX Engineer 경력직 모집 | Internal AX | Closed indication observed |
+| [J032](#j032) | 에고이즘 | [그로스팀] AX Engineer | Internal AX | Open indication observed |
+| [J033](#j033) | 다비치안경체인 | [다비치안경체인] AX 엔지니어 · LLM 엔지니어 경력직 채용 | Internal AX | Open indication observed |
+| [J034](#j034) | 단국대학교병원 | AX센터 리드AX엔지니어 (기간제) 모집 | Internal AX | Closed indication observed |
+| [J035](#j035) | 네이버클라우드 | AI Security 분야 채용 (경력) - AI Security FDE 엔지니어 | Customer delivery | Closed indication observed |
+| [J036](#j036) | 메타넷글로벌 | Forward Deployed Engineer 채용 | Customer delivery | Closed indication observed |
+| [J037](#j037) | 와이즈스톤 | [와이즈스톤/주 35시간] FDE(Forward Deployed Engineer) 채용 | Customer delivery | Open indication observed |
+| [J038](#j038) | 현대오토에버 | AI Agent 엔지니어 | Unclassified | Open indication observed |
+| [J039](#j039) | 퍼블릭에이아이 | [퍼블릭에이아이] AI Agent / AX 개발자 채용 | Customer delivery | Open indication observed |
 
 ### J001
 
@@ -499,6 +512,200 @@ A posting for improving an existing internal platform and operating workflow aut
 - `J027-S1` [Recruitment platform](https://career.rememberapp.co.kr/job/posting/347613): Body read · Open indication observed. Published unknown / closes 2026-11-09 / checked 2026-10-26. A 2026-11-09 deadline and application button were observed.
 - [Related material excluded from availability aggregation](https://recruit.wanted.co.kr/wd/392673): The company/title or description is similar, but the original ID match is unconfirmed. Its dates and availability are not merged into this record.
 
+### J028
+
+**채널코퍼레이션(Channel Corp.) / Forward Deployed Engineer**
+
+An FDE posting covering both internal and customer AX work.
+
+- Location: 서울 강남구, 하이브리드. Record ID: `lever-zoyi:905bc3bd-d788-4d17-b463-ae23b6a910b2`.
+- Scope: Hybrid · Open indication observed · Publication date unknown.
+- Responsibilities: Diagnose problems from customer data, processes, and organizations; design, build, and validate solutions. Own stable operation with sales, CS, operations, and product teams; turn prototypes into structures the product team can scale.
+- Required or listed qualifications: Requires 5+ years of engineering, strong coding, and ownership from problem definition to execution. Requires direct work with large or complex customers and business-impact judgment.
+- Preferences: No separate list verified.
+- Limits: An application button was observed; no application was submitted. No deadline was shown. An aggregator's 2025-10-16 date was not transferred as the original publication date. The application asks for two essays on AI problem-solving experience. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P2](../projects/02-human-approved-workflow.md) · [P4](../projects/04-production-pilot.md) · [P5](../projects/05-second-workflow-reuse.md)
+
+- `J028-S1` [Company/institution or official ATS](https://jobs.lever.co/zoyi/905bc3bd-d788-4d17-b463-ae23b6a910b2): Body read · Open indication observed. Published unknown / closes unknown / checked 2026-10-27. The job body and an Apply for this job button were observed.
+- [Related material excluded from availability aggregation](https://startup.jobs/forward-deployed-engineer-channel-corp-7365085): An aggregator repost. It appears to match the original, but its date and availability are not merged into this record.
+
+### J029
+
+**Databricks / AI Engineer - FDE (Forward Deployed Engineer)**
+
+A Seoul FDE posting that owns customer GenAI applications through production rollout.
+
+- Location: Seoul, South Korea. Record ID: `databricks-careers:8574655002`.
+- Scope: Customer delivery · Open indication observed · Publication date unknown.
+- Responsibilities: Build GenAI solutions with recent research techniques and own production rollouts of customer-facing and internal applications. Act as a technical advisor to customers and influence roadmap priorities with product and engineering teams.
+- Required or listed qualifications: Requires 7+ years building GenAI applications such as RAG, multi-agent systems, Text2SQL, and fine-tuning, plus production deployment including evaluation and optimization. Requires cloud ML production deployments, a quantitative graduate degree or equivalent experience, native-level Korean, and professional English.
+- Preferences: Prefers large-scale distributed data processing with the Databricks platform and Apache Spark.
+- Limits: An application button was observed; no application was submitted. The company page showed no publication date. An aggregator's 2026-06-04 date was not transferred. Customer travel may occur every four to eight weeks. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
+
+- `J029-S1` [Company/institution or official ATS](https://www.databricks.com/company/careers/professional-services-operations/ai-engineer---fde-forward-deployed-engineer-8574655002): Body read · Open indication observed. Published unknown / closes unknown / checked 2026-10-27. The job body and an Apply now button were observed.
+- [Related material excluded from availability aggregation](https://startup.jobs/ai-engineer-fde-forward-deployed-engineer-databricks-8009888): An aggregator repost. It appears to match the original, but its date and availability are not merged into this record.
+
+### J030
+
+**슈퍼브에이아이(Superb AI) / [R&D] Forward Deployed Engineer**
+
+An FDE posting that deploys a vision foundation model at customer sites.
+
+- Location: KR Office. Record ID: `superb-ai-careers:eJP2fEb0`.
+- Scope: Customer delivery · Open indication observed · Publication date unknown.
+- Responsibilities: Build field solutions on the ZERO vision foundation model and improve performance on real data. Set up Docker/Kubernetes deployments and field experiments, keep cloud, air-gapped, and edge pipelines stable, and package results as reusable modules.
+- Required or listed qualifications: Requires finishing projects with stable code and hands-on computer vision or VLM model experience. Requires Linux comfort, willingness to learn networking and containers, and structuring and explaining ambiguous problems.
+- Preferences: Prefers TensorRT/ONNX Runtime optimization, VLM/LLM serving and quantization, and fine-tuning or evaluation-metric design. Prefers GPU server, Kubernetes, or Jetson operations and system integration in manufacturing, logistics, or security settings.
+- Limits: An application button was observed; no application was submitted. Experience is listed as unrestricted. The work centers on field deployment of vision models rather than LLM workflow automation. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md) · [P5](../projects/05-second-workflow-reuse.md)
+
+- `J030-S1` [Company/institution or official ATS](https://careers.superb-ai.com/job_posting/eJP2fEb0): Body read · Open indication observed. Published unknown / closes unknown / checked 2026-10-27. The job body and an application button were observed. The deadline reads as closing upon hire.
+
+### J031
+
+**SAMG엔터테인먼트 / [SAMG엔터] AX Engineer 경력직 모집**
+
+A posting for finding repetitive business work and building internal platforms and automation workflows.
+
+- Location: 서울 강남구. Record ID: `jobkorea:49869409`.
+- Scope: Internal AX · Closed indication observed · Publication date unknown.
+- Responsibilities: Find repetitive work and bottlenecks, define requirements with business teams, and implement automation. Build API and data integrations with ERP and internal or external services, validate with PoCs and MVPs, and handle deployment, monitoring, and incidents.
+- Required or listed qualifications: Requires 3+ years of web or internal business-system development and backend or full-stack experience. Requires RDBMS/SQL, REST API integration, and turning business requirements into features.
+- Preferences: Prefers cloud deployment, DevOps, and ERP, back-office, or settlement-system operations. Prefers applying LLM APIs, AI agents, or RAG to workflow automation.
+- Limits: The page showed no closed label, but the passed deadline classifies it as closed. The returned page's remaining-time counter did not match the check date and was not used as evidence. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P1](../projects/01-safe-assistant.md) · [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
+
+- `J031-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/49869409): Body read · Closed indication observed. Published unknown / closes 2026-10-18 / checked 2026-10-27. The 2026-10-18 deadline precedes the check date. Applications opened on 2026-08-27.
+
+### J032
+
+**에고이즘 / [그로스팀] AX Engineer**
+
+A growth-team AX posting that connects D2C data with an agent knowledge base.
+
+- Location: 서울 성동구. Record ID: `jobkorea:50020418`.
+- Scope: Internal AX · Open indication observed · Publication date unknown.
+- Responsibilities: Prioritize AX work from business problems and operate ETL that connects sales-channel, database, and storage data. Manage the agent knowledge base and data definitions, and build and operate automation with LLM APIs.
+- Required or listed qualifications: Requires building and operating ETL or data pipelines and cloud infrastructure such as AWS. Requires building an agent harness with context, tool calls, logs, and evaluation, and using coding agents.
+- Preferences: Prefers combined PM/PO work and understanding of D2C or e-commerce data. Prefers RAG/vector databases, data warehouses, and TypeScript full-stack experience.
+- Limits: An application button was observed; no application was submitted. The page lists 3+ years and regular or contract employment. The same company's internship posting is treated as a separate role and not merged. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P1](../projects/01-safe-assistant.md) · [P2](../projects/02-human-approved-workflow.md) · [P3](../projects/03-sandbox-integration.md)
+
+- `J032-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50020418): Body read · Open indication observed. Published unknown / closes 2026-11-17 / checked 2026-10-27. A 2026-11-17 deadline and a company-site application button were observed. Applications opened on 2026-09-18.
+
+### J033
+
+**다비치안경체인 / [다비치안경체인] AX 엔지니어 · LLM 엔지니어 경력직 채용**
+
+A retail AX posting that hires separately for demand forecasting and recommendation, and internal RAG.
+
+- Location: 서울 종로구. Record ID: `jobkorea:50092193`.
+- Scope: Internal AX · Open indication observed · Publication date unknown.
+- Responsibilities: The AX engineer builds store demand-forecasting and recommendation models, company-wide AX use cases, and a conversational system manual. The LLM engineer fine-tunes, quantizes, and serves open-source sLLMs and runs RAG over internal rules and manuals. Both roles provide inference APIs.
+- Required or listed qualifications: Both roles require 5+ years. The AX engineer role requires production ML models such as forecasting or recommendation, plus SQL/RDBMS skills. The LLM engineer role requires fine-tuning such as LoRA or quantization, and RAG construction with a vector database.
+- Preferences: Prefers retail, distribution, or franchise data analysis and FastAPI/Flask model serving. Prefers on-premises or private LLM operations and papers or open-source contributions.
+- Limits: An application button was observed; no application was submitted. One posting contains two roles and is kept as one record. Backend integration is stated to remain with the existing development team. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P1](../projects/01-safe-assistant.md) · [P4](../projects/04-production-pilot.md)
+
+- `J033-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50092193): Body read · Open indication observed. Published unknown / closes 2026-10-31 / checked 2026-10-27. A 2026-10-31 deadline and an instant-apply button were observed. Applications opened on 2026-10-01.
+
+### J034
+
+**단국대학교병원 / AX센터 리드AX엔지니어 (기간제) 모집**
+
+A lead posting for internal web services and LLM features at a hospital AX center.
+
+- Location: 충남 천안시 동남구. Record ID: `jobkorea:50069967`.
+- Scope: Internal AX · Closed indication observed · Publication date unknown.
+- Responsibilities: Design, deploy, and operate front end, back end, LLM, and RAG features for internal web services. Define requirements with business and IT teams, integrate with existing systems, and develop internal AX engineers through review, documentation, and mentoring.
+- Required or listed qualifications: Requires building, deploying, and operating services from UI to API and database, and React or Vue internal screens. Requires applying LLMs to workflow automation, RAG implementation, and work with non-developers and IT staff.
+- Preferences: Prefers ontology or knowledge-graph work, on-premises and internal-system integration, and technical leadership.
+- Limits: The explicit closed label takes precedence over the remaining deadline. The role is a 12-month fixed-term contract. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P1](../projects/01-safe-assistant.md) · [P4](../projects/04-production-pilot.md) · [P5](../projects/05-second-workflow-reuse.md)
+
+- `J034-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50069967): Body read · Closed indication observed. Published unknown / closes 2026-10-29 / checked 2026-10-27. A closed notice and closed-posting label were observed; the retained deadline is 2026-10-29.
+
+### J035
+
+**네이버클라우드 / AI Security 분야 채용 (경력) - AI Security FDE 엔지니어**
+
+An FDE posting that deploys AI security solutions into air-gapped public, financial, and infrastructure environments.
+
+- Location: 경기 성남시 분당구. Record ID: `jobkorea:50089308`.
+- Scope: Customer delivery · Closed indication observed · Publication date unknown.
+- Responsibilities: Survey client network structures, security requirements, and equipment intake, and design around security review and certification timelines. Run on-premises packages and PoCs, trace field issues with developers, standardize per-agency configurations, and collect metrics through export approval.
+- Required or listed qualifications: Requires 3+ years building or consulting on security systems for public, financial, or infrastructure clients and air-gapped operations. Requires public-sector security review or certification, multi-organization PM coordination, and extended on-site work.
+- Preferences: Prefers OT/ICS security, on-premises AI deployment, and N2SF, financial, or defense security requirements. Prefers prior on-site FDE work, agent workflows or MCP integration, and turning deployment methods into reusable assets.
+- Limits: Security certification, air-gapped deployment, and field operations outweigh model development. The bundled AI Security posting (50089194) mixes other roles and is not merged. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P2](../projects/02-human-approved-workflow.md) · [P4](../projects/04-production-pilot.md)
+
+- `J035-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50089308): Body read · Closed indication observed. Published unknown / closes 2026-10-14 / checked 2026-10-27. A closed notice was observed; the deadline is 2026-10-14.
+
+### J036
+
+**메타넷글로벌 / Forward Deployed Engineer 채용**
+
+A senior FDE posting for building LLM and RAG search systems on customer sites.
+
+- Location: 경기 용인시 기흥구. Record ID: `jobkorea:50033675`.
+- Scope: Customer delivery · Closed indication observed · Publication date unknown.
+- Responsibilities: Analyze customer needs and design LLM/RAG architectures and knowledge-graph or Text2SQL data pipelines. Implement back end, front end, and infrastructure, and own on-site deployment, QA, stabilization, and post-launch monitoring.
+- Required or listed qualifications: Requires 8+ years, Python/TypeScript backend work, and LLM orchestration such as LangGraph. Requires RAG on Elasticsearch or vector databases, knowledge-based search experience, and customer-site deployment.
+- Preferences: Prefers Confluence/Jira Data Center integration and permission models, and HR, administration, or ERP knowledge. Prefers HWP document parsing, LLM evaluation design, and air-gapped AI service delivery.
+- Limits: The page showed no closed label, but the passed deadline classifies it as closed. The application start date was not observed. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
+
+- `J036-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50033675): Body read · Closed indication observed. Published unknown / closes 2026-10-21 / checked 2026-10-27. The 2026-10-21 deadline precedes the check date.
+
+### J037
+
+**와이즈스톤 / [와이즈스톤/주 35시간] FDE(Forward Deployed Engineer) 채용**
+
+An FDE posting for applying an AI test-automation product at customer sites.
+
+- Location: 서울 강남구. Record ID: `jobkorea:50080913`.
+- Scope: Customer delivery · Open indication observed · Publication date unknown.
+- Responsibilities: Install and configure the product for customers, verify behavior after rollout, handle issues, and train users. Develop and maintain Playwright UI automation scripts and turn field experience into product requirements.
+- Required or listed qualifications: Requires software testing or QA experience or equivalent understanding, plus scenario design and defect analysis. Requires writing automation scripts or reading and modifying code, and visiting customer sites.
+- Preferences: Prefers Playwright, Selenium, or Appium work, e-commerce QA, and practical LLM/AI tool use.
+- Limits: An application button was observed; no application was submitted. Field rollout of a test-automation product outweighs LLM system building. It is kept as an example of how FDE scope varies by employer. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
+
+- `J037-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50080913): Body read · Open indication observed. Published unknown / closes 2026-10-30 / checked 2026-10-27. A 2026-10-30 deadline and an instant-apply button were observed. Applications opened on 2026-09-30.
+
+### J038
+
+**현대오토에버 / AI Agent 엔지니어**
+
+An AI agent posting for workflow automation through agent orchestration and MCP integration.
+
+- Location: 서울 강남구. Record ID: `jobkorea:50109924`.
+- Scope: Unclassified · Open indication observed · Publication date unknown.
+- Responsibilities: Design agentic AI architecture and implement multi-agent orchestration and MCP-based channel integration. Develop and tune AI APIs and microservices, and apply agent-based workflow automation.
+- Required or listed qualifications: Requires 5+ years, agent architecture and orchestration skills, and experience with several agentic AI tools. Requires connecting agents to tools, resources, and systems, and linking MLOps pipelines to services.
+- Preferences: Prefers A2A/MCP-based development, knowledge graphs or ontologies, and cloud AI service deployment.
+- Limits: An application button was observed; no application was submitted. The body does not say whether automation targets internal, affiliate, or customer work, so the scope is unclassified. The match to the company career-site ID was not checked. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md) · [P5](../projects/05-second-workflow-reuse.md)
+
+- `J038-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50109924): Body read · Open indication observed. Published unknown / closes 2026-10-29 / checked 2026-10-27. A 2026-10-29 deadline and a company-site application button were observed. Applications opened on 2026-10-06.
+
+### J039
+
+**퍼블릭에이아이 / [퍼블릭에이아이] AI Agent / AX 개발자 채용**
+
+A posting for building AI agents for public-sector and enterprise customers from PoC to production.
+
+- Location: 서울 서초구. Record ID: `jobkorea:50165483`.
+- Scope: Customer delivery · Open indication observed · Publication date unknown.
+- Responsibilities: Build AI agents with LangGraph/LangChain and business-specific RAG and Text2SQL question answering. Design LLM serving, prompts, and guardrails, and take customer services from PoC to production.
+- Required or listed qualifications: Requires Python backend experience (1+ year junior, 3+ years experienced) and building RAG or LLM applications. Requires interest in implementing new papers and team collaboration.
+- Preferences: Prefers public-sector SI or air-gapped development, VLM document search, Kubernetes operations, and LLM fine-tuning.
+- Limits: An application button was observed; no application was submitted. The page lists entry-level or experienced candidates and contract employment. The JobKorea role body was read from the description frame separate from the posting page. The application start date may differ from publication, so it was not recorded as the publication date. Qualifications summarize the read body. An empty preference list means no separate list was verified, not that no preferences exist.
+- Practice links: [P1](../projects/01-safe-assistant.md) · [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
+
+- `J039-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50165483): Body read · Open indication observed. Published unknown / closes 2026-11-13 / checked 2026-10-27. A 2026-11-13 deadline and an instant-apply button were observed. Applications opened on 2026-10-14.
+
 ## Search coverage and held candidates
 
 Twenty-one queries explored official hiring/company pages and recruitment platforms, and all 15 URLs from the previous role review were reopened. The main list requires directly read role bodies. Nine items below remain separate because of body-access, original-source, identity, or scope limits. Neither these records nor platform search totals support hiring-growth or average-pay estimates.
@@ -542,4 +749,41 @@ site:recruit.wanted.co.kr "뉴셀렉트" "AX Engineer"
 
 </details>
 
-Rapport Labs’ 2026-04-10 practitioner article and Anthropic’s 2026-10-02 training announcement remain in the [role review](ax-engineer-role-review.md). They are not job postings and are excluded from the 27 records. Title variation, search visibility, access failures, and missing dates prevent claims of market-wide coverage.
+Rapport Labs’ 2026-04-10 practitioner article and Anthropic’s 2026-10-02 training announcement remain in the [role review](ax-engineer-role-review.md). They are not job postings and are excluded from the posting records. Title variation, search visibility, access failures, and missing dates prevent claims of market-wide coverage.
+
+### Additional search on 2026-10-27
+
+Twelve records with readable bodies (J028–J039) were added from AX, AI agent, and FDE searches across Saramin, JobKorea, Wanted, LinkedIn, and employer career pages: nine from JobKorea and three from company or official ATS pages. Access differed by platform, so coverage is uneven.
+
+- Wanted: detail pages returned errors to the research tool, so bodies were not read. Search hits such as AIRS Medical's AX Engineer (361768) and WERT Intelligence's AX Backend Engineer (369335) were not added.
+- LinkedIn: the job-search page was blocked by robots rules, so no postings were read.
+- Saramin: detail pages did not expose role bodies or application buttons, so none entered the registry. The Naver Cloud FDE role seen in a Saramin category list was read from its JobKorea original (J035).
+- JobKorea: deadlines and application buttons came from the posting page; duties and qualifications came from the separate description frame. Some returned pages showed remaining-time counters that did not match the check date, so availability relies only on deadlines, closed notices, and application buttons.
+- Aggregators such as startup.jobs were used only to locate originals; their dates and states were not transferred.
+
+Held candidates:
+
+- [Cohere / Forward Deployed Engineer, Agentic Platform (Korea)](https://jobs.ashbyhq.com/cohere/031c2335-db85-4265-8a88-a54b911be36a): The Ashby original returned only a meta description. The body was readable only on aggregators, so it was not promoted.
+- [Cognition / Forward Deployed Engineer - South Korea](https://startup.jobs/forward-deployed-engineer-south-korea-cognition-8409634): Only an aggregator body was read; no original posting URL was found.
+- [BCG X / (Senior) Forward Deployed AI Engineer, South Korea](https://careers.bcg.com/global/en/job/56549/-Senior-Forward-Deployed-AI-Engineer-South-Korea-BCG-X): Only a position-filled notice remained, with no body.
+- [메드에이아이 / AI Agent Engineer / AX Lead](https://www.jobkorea.co.kr/Recruit/GI_Read/49910145): A deadline and application button were visible, but the duties and qualifications were not read.
+- [에스케이쉴더스 / LLM & AI Agent Engineer](https://www.jobkorea.co.kr/Recruit/GI_Read/50224621): The description was provided only as an image, so duties and qualifications were not verified.
+- [무신사 / AX Engineer](https://www.bzpp.co.kr/biz/businessDetailView/BR251208A00124): A selective repost showed a 2026-04-05 deadline in metadata alongside rolling-application wording, so availability could not be determined.
+- [라이넨스 / [Vision AI & 자동화 설비] AX 엔지니어](https://zighang.com/recruitment/10d1e7b9-24b1-4507-96ca-98fcba1c8d94): An aggregator showed a closed label, and the Wanted original was not readable.
+
+<details>
+<summary>Queries used on 2026-10-27</summary>
+
+```text
+AX 엔지니어 채용 공고 2026
+"AX Engineer" 채용 원티드 OR 사람인 OR 잡코리아
+"AX" engineer job Seoul linkedin
+saramin AX 엔지니어 채용 AI Agent
+Forward Deployed Engineer Seoul Korea job
+AI Agent 엔지니어 채용 공고 원티드
+"Forward Deployed Engineer" 채용 2026 한국 FDE 신입 경력
+JobKorea search: ai agent / Forward Deployed Engineer / AX 엔지니어
+Saramin category list: AIX
+```
+
+</details>

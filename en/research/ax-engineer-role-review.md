@@ -74,6 +74,8 @@ These are purpose-selected qualitative examples of responsibilities. The [27 pos
 
 Channels without a confirmed original-ID match remain separate records. These 27 records are not a unique-vacancy count and do not support hiring-growth, average-pay, or market-size estimates. Only GM has a verified publication date after 2026-08-01; the other 26 records are undated.
 
+On 2026-10-27 the scope was widened to AI agent engineer and FDE postings with overlapping work, adding 12 records. The registry now holds 39 records: 19 open, 12 closed, and eight unknown. FDE titles also vary widely, from building LLM systems on customer sites to security certification and test-automation product rollout.
+
 | Category | Source and date | Finding and limit |
 |---|---|---|
 | Published after the baseline | [GM, Sr. AI/Automation Engineer, HR Technology](https://search-careers.gm.com/en/jobs/jr-202605425/sr-ai-automation-engineer-hr-technology-remote-india-night-shift/) (posted 2026-09-21) | Integrates ServiceNow and Workday for HR, with requirements, testing, deployment, and security responsibilities. This is internal workflow transformation without an AX title. |
