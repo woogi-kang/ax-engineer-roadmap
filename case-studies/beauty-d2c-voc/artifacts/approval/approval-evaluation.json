@@ -1,0 +1,557 @@
+{
+  "all_expectations_passed": true,
+  "approval_bypass_count": 0,
+  "blocked_reasons": {
+    "already_executed": 1,
+    "approval_expired": 1,
+    "approver_revoked": 1,
+    "duplicate_execution": 1,
+    "duplicate_request": 1,
+    "not_approved:cancelled": 1,
+    "not_approved:expired": 1,
+    "not_approved:pending": 1,
+    "not_approved:rejected": 1,
+    "reason_required": 1,
+    "request_cancelled": 1,
+    "request_expired": 1,
+    "safety_role_required": 1,
+    "stale_version": 1,
+    "topic_out_of_scope": 1,
+    "unknown_request": 1
+  },
+  "decision_counts": {
+    "approve": 6,
+    "approve_with_edits": 1,
+    "reject": 1,
+    "request_info": 1
+  },
+  "edit_rate": 0.1111,
+  "event_count": 40,
+  "external_write_count": 0,
+  "mock_execution_count": 4,
+  "review_minutes_total": 61,
+  "rows": [
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e01",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S1-normal-approval"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e02",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S1-normal-approval"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e03",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S1-normal-approval"
+    },
+    {
+      "actual": [
+        "blocked",
+        "duplicate_execution"
+      ],
+      "event_id": "e04",
+      "expected": [
+        "blocked",
+        "duplicate_execution"
+      ],
+      "passed": true,
+      "scenario": "S2-duplicate-request-and-execution"
+    },
+    {
+      "actual": [
+        "blocked",
+        "already_executed"
+      ],
+      "event_id": "e05",
+      "expected": [
+        "blocked",
+        "already_executed"
+      ],
+      "passed": true,
+      "scenario": "S2-duplicate-request-and-execution"
+    },
+    {
+      "actual": [
+        "blocked",
+        "duplicate_request"
+      ],
+      "event_id": "e06",
+      "expected": [
+        "blocked",
+        "duplicate_request"
+      ],
+      "passed": true,
+      "scenario": "S2-duplicate-request-and-execution"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e07",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S3-authority-and-revocation"
+    },
+    {
+      "actual": [
+        "blocked",
+        "topic_out_of_scope"
+      ],
+      "event_id": "e08",
+      "expected": [
+        "blocked",
+        "topic_out_of_scope"
+      ],
+      "passed": true,
+      "scenario": "S3-authority-and-revocation"
+    },
+    {
+      "actual": [
+        "blocked",
+        "safety_role_required"
+      ],
+      "event_id": "e09",
+      "expected": [
+        "blocked",
+        "safety_role_required"
+      ],
+      "passed": true,
+      "scenario": "S3-authority-and-revocation"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e10",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S3-authority-and-revocation"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e11",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S3-authority-and-revocation"
+    },
+    {
+      "actual": [
+        "blocked",
+        "approver_revoked"
+      ],
+      "event_id": "e12",
+      "expected": [
+        "blocked",
+        "approver_revoked"
+      ],
+      "passed": true,
+      "scenario": "S3-authority-and-revocation"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e13",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S3-authority-and-revocation"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e14",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S3-authority-and-revocation"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e15",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S4-proposal-changed-while-waiting"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e16",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S4-proposal-changed-while-waiting"
+    },
+    {
+      "actual": [
+        "accepted",
+        "prior_approval_invalidated"
+      ],
+      "event_id": "e17",
+      "expected": [
+        "accepted",
+        "prior_approval_invalidated"
+      ],
+      "passed": true,
+      "scenario": "S4-proposal-changed-while-waiting"
+    },
+    {
+      "actual": [
+        "blocked",
+        "not_approved:pending"
+      ],
+      "event_id": "e18",
+      "expected": [
+        "blocked",
+        "not_approved:pending"
+      ],
+      "passed": true,
+      "scenario": "S4-proposal-changed-while-waiting"
+    },
+    {
+      "actual": [
+        "blocked",
+        "stale_version"
+      ],
+      "event_id": "e19",
+      "expected": [
+        "blocked",
+        "stale_version"
+      ],
+      "passed": true,
+      "scenario": "S4-proposal-changed-while-waiting"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e20",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S4-proposal-changed-while-waiting"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e21",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S4-proposal-changed-while-waiting"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e22",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S5-approve-with-edits"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e23",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S5-approve-with-edits"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e24",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S5-approve-with-edits"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e25",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S6-reject-needs-reason"
+    },
+    {
+      "actual": [
+        "blocked",
+        "reason_required"
+      ],
+      "event_id": "e26",
+      "expected": [
+        "blocked",
+        "reason_required"
+      ],
+      "passed": true,
+      "scenario": "S6-reject-needs-reason"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e27",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S6-reject-needs-reason"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e28",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S6-reject-needs-reason"
+    },
+    {
+      "actual": [
+        "blocked",
+        "not_approved:rejected"
+      ],
+      "event_id": "e29",
+      "expected": [
+        "blocked",
+        "not_approved:rejected"
+      ],
+      "passed": true,
+      "scenario": "S6-reject-needs-reason"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e30",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S7-approver-absent-request-expires"
+    },
+    {
+      "actual": [
+        "blocked",
+        "request_expired"
+      ],
+      "event_id": "e31",
+      "expected": [
+        "blocked",
+        "request_expired"
+      ],
+      "passed": true,
+      "scenario": "S7-approver-absent-request-expires"
+    },
+    {
+      "actual": [
+        "blocked",
+        "not_approved:expired"
+      ],
+      "event_id": "e32",
+      "expected": [
+        "blocked",
+        "not_approved:expired"
+      ],
+      "passed": true,
+      "scenario": "S7-approver-absent-request-expires"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e33",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S8-cancelled-request"
+    },
+    {
+      "actual": [
+        "accepted",
+        "req-scent에서 이미 처리한 제안"
+      ],
+      "event_id": "e34",
+      "expected": [
+        "accepted",
+        "req-scent에서 이미 처리한 제안"
+      ],
+      "passed": true,
+      "scenario": "S8-cancelled-request"
+    },
+    {
+      "actual": [
+        "blocked",
+        "request_cancelled"
+      ],
+      "event_id": "e35",
+      "expected": [
+        "blocked",
+        "request_cancelled"
+      ],
+      "passed": true,
+      "scenario": "S8-cancelled-request"
+    },
+    {
+      "actual": [
+        "blocked",
+        "not_approved:cancelled"
+      ],
+      "event_id": "e36",
+      "expected": [
+        "blocked",
+        "not_approved:cancelled"
+      ],
+      "passed": true,
+      "scenario": "S8-cancelled-request"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e37",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S9-approval-expires-before-execution"
+    },
+    {
+      "actual": [
+        "accepted",
+        null
+      ],
+      "event_id": "e38",
+      "expected": [
+        "accepted",
+        null
+      ],
+      "passed": true,
+      "scenario": "S9-approval-expires-before-execution"
+    },
+    {
+      "actual": [
+        "blocked",
+        "approval_expired"
+      ],
+      "event_id": "e39",
+      "expected": [
+        "blocked",
+        "approval_expired"
+      ],
+      "passed": true,
+      "scenario": "S9-approval-expires-before-execution"
+    },
+    {
+      "actual": [
+        "blocked",
+        "unknown_request"
+      ],
+      "event_id": "e40",
+      "expected": [
+        "blocked",
+        "unknown_request"
+      ],
+      "passed": true,
+      "scenario": "S10-unknown-request"
+    }
+  ],
+  "scenario_count": 10,
+  "wait_minutes_median": 110
+}

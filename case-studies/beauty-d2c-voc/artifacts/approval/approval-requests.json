@@ -1,0 +1,371 @@
+[
+  {
+    "approval_valid_until": "2026-08-05T02:30:00+00:00",
+    "decisions": [
+      {
+        "actor": "ops-manager",
+        "at": "2026-08-03T11:30:00+09:00",
+        "decision": "approve",
+        "event_id": "e02",
+        "reason": null,
+        "review_minutes": 7,
+        "version": 1,
+        "wait_minutes": 150
+      }
+    ],
+    "execution_id": "mock-exec-001",
+    "expires_at": "2026-08-06T00:00:00+00:00",
+    "proposal_id": "proposal-packaging",
+    "request_id": "req-packaging",
+    "safety_signal": false,
+    "state": "executed",
+    "submitted_at": "2026-08-03T09:00:00+09:00",
+    "topic": "packaging",
+    "version": 1,
+    "version_history": [
+      {
+        "content_hash": "c42da3ff06ea7160",
+        "version": 1
+      }
+    ],
+    "work_item": {
+      "evidence_refs": [
+        "voc-001",
+        "voc-006",
+        "voc-010",
+        "voc-013",
+        "voc-017",
+        "voc-026"
+      ],
+      "markets": [
+        "JP",
+        "KR",
+        "US"
+      ],
+      "priority": "normal",
+      "team": "packaging-logistics",
+      "title": "용기·포장 불량 원인 확인"
+    }
+  },
+  {
+    "approval_valid_until": "2026-08-06T04:00:00+00:00",
+    "decisions": [
+      {
+        "actor": "qa-lead",
+        "at": "2026-08-04T10:10:00+09:00",
+        "decision": "approve",
+        "event_id": "e10",
+        "reason": null,
+        "review_minutes": 12,
+        "version": 1,
+        "wait_minutes": 70
+      },
+      {
+        "actor": "qa-backup",
+        "at": "2026-08-04T13:00:00+09:00",
+        "decision": "approve",
+        "event_id": "e13",
+        "reason": null,
+        "review_minutes": 9,
+        "version": 1,
+        "wait_minutes": 240
+      }
+    ],
+    "execution_id": "mock-exec-002",
+    "expires_at": "2026-08-07T00:00:00+00:00",
+    "proposal_id": "proposal-irritation",
+    "request_id": "req-irritation",
+    "safety_signal": true,
+    "state": "executed",
+    "submitted_at": "2026-08-04T09:00:00+09:00",
+    "topic": "irritation",
+    "version": 1,
+    "version_history": [
+      {
+        "content_hash": "3b9022f28bac17f8",
+        "version": 1
+      }
+    ],
+    "work_item": {
+      "evidence_refs": [
+        "voc-003",
+        "voc-011",
+        "voc-019",
+        "voc-031"
+      ],
+      "markets": [
+        "JP",
+        "KR",
+        "US"
+      ],
+      "priority": "high",
+      "team": "quality-safety",
+      "title": "피부 이상 반응 신고 확인"
+    }
+  },
+  {
+    "approval_valid_until": "2026-08-07T01:50:00+00:00",
+    "decisions": [
+      {
+        "actor": "ops-manager",
+        "at": "2026-08-05T10:00:00+09:00",
+        "decision": "approve",
+        "event_id": "e16",
+        "reason": null,
+        "review_minutes": 5,
+        "version": 1,
+        "wait_minutes": 60
+      },
+      {
+        "actor": "ops-manager",
+        "at": "2026-08-05T10:50:00+09:00",
+        "decision": "approve",
+        "event_id": "e20",
+        "reason": null,
+        "review_minutes": 4,
+        "version": 2,
+        "wait_minutes": 110
+      }
+    ],
+    "execution_id": "mock-exec-003",
+    "expires_at": "2026-08-08T01:20:00+00:00",
+    "proposal_id": "proposal-delivery",
+    "request_id": "req-delivery",
+    "safety_signal": false,
+    "state": "executed",
+    "submitted_at": "2026-08-05T09:00:00+09:00",
+    "topic": "delivery",
+    "version": 2,
+    "version_history": [
+      {
+        "content_hash": "c05f7516d7b8de45",
+        "version": 1
+      },
+      {
+        "content_hash": "5b99634391fbe5fd",
+        "reason": "voc-014와 채널만 다른 같은 문장이라 근거 수에서 제외",
+        "version": 2
+      }
+    ],
+    "work_item": {
+      "evidence_refs": [
+        "voc-009",
+        "voc-014",
+        "voc-018"
+      ],
+      "markets": [
+        "JP",
+        "KR",
+        "US"
+      ],
+      "priority": "normal",
+      "team": "logistics-cs",
+      "title": "배송 지연 구간 확인"
+    }
+  },
+  {
+    "approval_valid_until": "2026-08-08T06:00:00+00:00",
+    "decisions": [
+      {
+        "actor": "pm-lead",
+        "at": "2026-08-06T15:00:00+09:00",
+        "decision": "approve_with_edits",
+        "event_id": "e23",
+        "reason": "voc-028은 향을 칭찬한 리뷰라 불만 근거에서 제외",
+        "review_minutes": 11,
+        "version": 1,
+        "wait_minutes": 360
+      }
+    ],
+    "execution_id": "mock-exec-004",
+    "expires_at": "2026-08-09T00:00:00+00:00",
+    "proposal_id": "proposal-scent",
+    "request_id": "req-scent",
+    "safety_signal": false,
+    "state": "executed",
+    "submitted_at": "2026-08-06T09:00:00+09:00",
+    "topic": "scent",
+    "version": 1,
+    "version_history": [
+      {
+        "content_hash": "f1bb8ec11bf80f80",
+        "version": 1
+      }
+    ],
+    "work_item": {
+      "evidence_refs": [
+        "voc-004",
+        "voc-008"
+      ],
+      "markets": [
+        "JP",
+        "KR",
+        "US"
+      ],
+      "priority": "low",
+      "team": "product-planning",
+      "title": "향 강도 피드백 검토"
+    }
+  },
+  {
+    "decisions": [
+      {
+        "actor": "pm-lead",
+        "at": "2026-08-07T09:40:00+09:00",
+        "decision": "request_info",
+        "event_id": "e27",
+        "reason": "사용 기간 안내 문구가 이미 있는지 확인 필요",
+        "review_minutes": 6,
+        "version": 1,
+        "wait_minutes": 40
+      },
+      {
+        "actor": "pm-lead",
+        "at": "2026-08-07T16:00:00+09:00",
+        "decision": "reject",
+        "event_id": "e28",
+        "reason": "상세페이지에 이미 8주 사용 기준이 있어 새 업무가 필요 없음",
+        "review_minutes": 4,
+        "version": 1,
+        "wait_minutes": 420
+      }
+    ],
+    "execution_id": null,
+    "expires_at": "2026-08-10T00:00:00+00:00",
+    "proposal_id": "proposal-product_effect",
+    "request_id": "req-product-effect",
+    "safety_signal": false,
+    "state": "rejected",
+    "submitted_at": "2026-08-07T09:00:00+09:00",
+    "topic": "product_effect",
+    "version": 1,
+    "version_history": [
+      {
+        "content_hash": "38644be494021fcc",
+        "version": 1
+      }
+    ],
+    "work_item": {
+      "evidence_refs": [
+        "voc-012",
+        "voc-029"
+      ],
+      "markets": [
+        "KR",
+        "US"
+      ],
+      "priority": "low",
+      "team": "product-planning",
+      "title": "제품 효과 기대치 안내 검토"
+    }
+  },
+  {
+    "decisions": [],
+    "execution_id": null,
+    "expires_at": "2026-08-13T00:00:00+00:00",
+    "proposal_id": "proposal-product_effect",
+    "request_id": "req-product-effect-retry",
+    "safety_signal": false,
+    "state": "expired",
+    "submitted_at": "2026-08-10T09:00:00+09:00",
+    "topic": "product_effect",
+    "version": 1,
+    "version_history": [
+      {
+        "content_hash": "38644be494021fcc",
+        "version": 1
+      }
+    ],
+    "work_item": {
+      "evidence_refs": [
+        "voc-012",
+        "voc-029"
+      ],
+      "markets": [
+        "KR",
+        "US"
+      ],
+      "priority": "low",
+      "team": "product-planning",
+      "title": "제품 효과 기대치 안내 검토"
+    }
+  },
+  {
+    "decisions": [],
+    "execution_id": null,
+    "expires_at": "2026-08-14T00:00:00+00:00",
+    "proposal_id": "proposal-scent",
+    "request_id": "req-scent-followup",
+    "safety_signal": false,
+    "state": "cancelled",
+    "submitted_at": "2026-08-11T09:00:00+09:00",
+    "topic": "scent",
+    "version": 1,
+    "version_history": [
+      {
+        "content_hash": "f1bb8ec11bf80f80",
+        "version": 1
+      }
+    ],
+    "work_item": {
+      "evidence_refs": [
+        "voc-004",
+        "voc-008",
+        "voc-028"
+      ],
+      "markets": [
+        "JP",
+        "KR",
+        "US"
+      ],
+      "priority": "low",
+      "team": "product-planning",
+      "title": "향 강도 피드백 검토"
+    }
+  },
+  {
+    "approval_valid_until": "2026-08-14T00:30:00+00:00",
+    "decisions": [
+      {
+        "actor": "ops-manager",
+        "at": "2026-08-12T09:30:00+09:00",
+        "decision": "approve",
+        "event_id": "e38",
+        "reason": null,
+        "review_minutes": 3,
+        "version": 1,
+        "wait_minutes": 30
+      }
+    ],
+    "execution_id": null,
+    "expires_at": "2026-08-15T00:00:00+00:00",
+    "proposal_id": "proposal-delivery",
+    "request_id": "req-delivery-followup",
+    "safety_signal": false,
+    "state": "expired",
+    "submitted_at": "2026-08-12T09:00:00+09:00",
+    "topic": "delivery",
+    "version": 1,
+    "version_history": [
+      {
+        "content_hash": "5b99634391fbe5fd",
+        "version": 1
+      }
+    ],
+    "work_item": {
+      "evidence_refs": [
+        "voc-009",
+        "voc-014",
+        "voc-018"
+      ],
+      "markets": [
+        "JP",
+        "KR",
+        "US"
+      ],
+      "priority": "normal",
+      "team": "logistics-cs",
+      "title": "배송 지연 구간 확인"
+    }
+  }
+]

@@ -3,13 +3,16 @@
     "action_boundary": "proposal_only",
     "evidence_refs": [
       "voc-003",
-      "voc-011"
+      "voc-011",
+      "voc-019",
+      "voc-031"
     ],
     "markets": [
+      "JP",
       "KR",
       "US"
     ],
-    "observed_count": 2,
+    "observed_count": 4,
     "proposal_id": "proposal-irritation",
     "requires_human_approval": true,
     "safety_signal": true,
@@ -21,13 +24,16 @@
       "voc-001",
       "voc-006",
       "voc-010",
-      "voc-013"
+      "voc-013",
+      "voc-017",
+      "voc-026"
     ],
     "markets": [
+      "JP",
       "KR",
       "US"
     ],
-    "observed_count": 4,
+    "observed_count": 6,
     "proposal_id": "proposal-packaging",
     "requires_human_approval": true,
     "safety_signal": false,
@@ -37,13 +43,16 @@
     "action_boundary": "proposal_only",
     "evidence_refs": [
       "voc-009",
-      "voc-014"
+      "voc-014",
+      "voc-018",
+      "voc-024"
     ],
     "markets": [
+      "JP",
       "KR",
       "US"
     ],
-    "observed_count": 2,
+    "observed_count": 4,
     "proposal_id": "proposal-delivery",
     "requires_human_approval": true,
     "safety_signal": false,
@@ -53,16 +62,34 @@
     "action_boundary": "proposal_only",
     "evidence_refs": [
       "voc-004",
-      "voc-008"
+      "voc-008",
+      "voc-028"
     ],
     "markets": [
       "JP",
-      "KR"
+      "KR",
+      "US"
     ],
-    "observed_count": 2,
+    "observed_count": 3,
     "proposal_id": "proposal-scent",
     "requires_human_approval": true,
     "safety_signal": false,
     "topic": "scent"
+  },
+  {
+    "action_boundary": "proposal_only",
+    "evidence_refs": [
+      "voc-012",
+      "voc-029"
+    ],
+    "markets": [
+      "KR",
+      "US"
+    ],
+    "observed_count": 2,
+    "proposal_id": "proposal-product_effect",
+    "requires_human_approval": true,
+    "safety_signal": false,
+    "topic": "product_effect"
   }
 ]

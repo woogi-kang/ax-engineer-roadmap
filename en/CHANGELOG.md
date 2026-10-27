@@ -4,6 +4,12 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ## [Unreleased]
 
+### Added
+
+- A 16-case Beauty/D2C VOC development set (32 labeled normal, edge, and failure cases in total), personal-data rejection, blocking of source conflicts and reversed timestamps, run-cost recording, and a latency benchmark option
+- A Beauty/D2C VOC P2 approval replay with version-bound approval, authority re-check before execution, request and approval expiry, idempotent execution, approval packets, an audit log, and 10 scenarios
+- A P1 independent review kit for a non-implementer judging new inputs. The repository does not yet contain a review record
+
 ## [0.4.0] - 2026-10-27
 
 ### Added

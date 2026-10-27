@@ -1,0 +1,46 @@
+[
+  {
+    "approver_id": "qa-lead",
+    "role": "safety_reviewer",
+    "topics": [
+      "irritation",
+      "packaging"
+    ],
+    "revoked_at": null
+  },
+  {
+    "approver_id": "qa-backup",
+    "role": "safety_reviewer",
+    "topics": [
+      "irritation"
+    ],
+    "revoked_at": null
+  },
+  {
+    "approver_id": "ops-manager",
+    "role": "operations_manager",
+    "topics": [
+      "packaging",
+      "delivery"
+    ],
+    "revoked_at": null
+  },
+  {
+    "approver_id": "pm-lead",
+    "role": "product_manager",
+    "topics": [
+      "scent",
+      "product_effect"
+    ],
+    "revoked_at": null
+  },
+  {
+    "approver_id": "cs-lead",
+    "role": "cs_manager",
+    "topics": [
+      "irritation",
+      "delivery"
+    ],
+    "revoked_at": null
+  }
+]

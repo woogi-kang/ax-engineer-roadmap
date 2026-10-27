@@ -106,5 +106,139 @@
       "missing_or_empty:source_url"
     ],
     "warnings": []
+  },
+  {
+    "evidence_ref": "voc-019",
+    "next_action": "human_review",
+    "safety_flag": true,
+    "source_id": "voc-019",
+    "status": "review_required",
+    "topic": "irritation",
+    "validation_errors": [],
+    "warnings": [
+      "safety_review_required"
+    ]
+  },
+  {
+    "evidence_ref": "voc-020",
+    "next_action": "exclude_and_return_to_provider",
+    "safety_flag": false,
+    "source_id": "voc-020",
+    "status": "rejected",
+    "topic": null,
+    "validation_errors": [
+      "forbidden:personal_data"
+    ],
+    "warnings": []
+  },
+  {
+    "evidence_ref": "voc-021",
+    "next_action": "exclude_and_return_to_provider",
+    "safety_flag": false,
+    "source_id": "voc-021",
+    "status": "rejected",
+    "topic": null,
+    "validation_errors": [
+      "forbidden:personal_data"
+    ],
+    "warnings": []
+  },
+  {
+    "evidence_ref": "voc-022",
+    "next_action": "resolve_source_conflict",
+    "safety_flag": false,
+    "source_id": "voc-022",
+    "status": "conflict",
+    "topic": null,
+    "validation_errors": [
+      "conflict:source_id_content"
+    ],
+    "warnings": []
+  },
+  {
+    "evidence_ref": "voc-022",
+    "next_action": "resolve_source_conflict",
+    "safety_flag": false,
+    "source_id": "voc-022",
+    "status": "conflict",
+    "topic": null,
+    "validation_errors": [
+      "conflict:source_id_content"
+    ],
+    "warnings": []
+  },
+  {
+    "evidence_ref": "voc-023",
+    "next_action": "correct_or_exclude_input",
+    "safety_flag": false,
+    "source_id": "voc-023",
+    "status": "invalid",
+    "topic": null,
+    "validation_errors": [
+      "invalid:time_order"
+    ],
+    "warnings": []
+  },
+  {
+    "evidence_ref": "voc-026",
+    "next_action": "human_review",
+    "safety_flag": false,
+    "source_id": "voc-026",
+    "status": "review_required",
+    "topic": "packaging",
+    "validation_errors": [],
+    "warnings": [
+      "mixed_language"
+    ]
+  },
+  {
+    "evidence_ref": "voc-027",
+    "next_action": "correct_or_exclude_input",
+    "safety_flag": false,
+    "source_id": "voc-027",
+    "status": "invalid",
+    "topic": null,
+    "validation_errors": [
+      "unsupported:market"
+    ],
+    "warnings": []
+  },
+  {
+    "evidence_ref": "voc-030",
+    "next_action": "human_review",
+    "safety_flag": true,
+    "source_id": "voc-030",
+    "status": "review_required",
+    "topic": "unknown",
+    "validation_errors": [],
+    "warnings": [
+      "unclassified:topic",
+      "safety_review_required"
+    ]
+  },
+  {
+    "evidence_ref": "voc-031",
+    "next_action": "human_review",
+    "safety_flag": true,
+    "source_id": "voc-031",
+    "status": "review_required",
+    "topic": "irritation",
+    "validation_errors": [],
+    "warnings": [
+      "stale:published_at",
+      "safety_review_required"
+    ]
+  },
+  {
+    "evidence_ref": "voc-032",
+    "next_action": "correct_or_exclude_input",
+    "safety_flag": false,
+    "source_id": "voc-032",
+    "status": "invalid",
+    "topic": null,
+    "validation_errors": [
+      "invalid:source_url"
+    ],
+    "warnings": []
   }
 ]

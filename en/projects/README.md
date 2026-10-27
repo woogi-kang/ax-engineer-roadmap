@@ -48,7 +48,7 @@ The [applied AX cases](../case-studies/README.md) apply the same P1–P5 exit cr
 
 `—` means P4 is not included in that case's designed path. A P5 item in the same row is a learning direction, not completion or a P4 waiver. Before verifying P5 execution, establish passing evidence for P1–P3 and either the organizational or simulation setting of P4. If the selected case omits P4, complete it through separate practice. When using P4 evidence from another workflow, follow the [P5 entry conditions](05-second-workflow-reuse.md) to identify what transfers and which conditions need new tests.
 
-Beauty/D2C VOC's 16 synthetic inputs define the reproducible demo scope. P1 requires at least 20 evaluation cases, independent review on inputs not used in development, and its remaining criteria. A successful demo or unit-test run does not establish a full P1 pass.
+Beauty/D2C VOC publishes 32 evaluation cases written by the implementer and a P2 approval replay. P1 also requires independent review on inputs not used in development and a rules-versus-model comparison, so a successful demo or unit-test run does not establish a full P1 pass. The [case's P1 criteria check](../case-studies/beauty-d2c-voc/README.md#p1-exit-criteria-check) lists what remains.
 
 ## Verify with a new scenario
 

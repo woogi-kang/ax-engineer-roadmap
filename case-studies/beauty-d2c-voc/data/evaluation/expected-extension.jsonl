@@ -1,0 +1,16 @@
+{"source_id":"voc-017","expected_status":"ready","expected_topic":"packaging","expected_safety_flag":false}
+{"source_id":"voc-018","expected_status":"ready","expected_topic":"delivery","expected_safety_flag":false}
+{"source_id":"voc-019","expected_status":"review_required","expected_topic":"irritation","expected_safety_flag":true}
+{"source_id":"voc-020","expected_status":"rejected","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-021","expected_status":"rejected","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-022","expected_status":"conflict","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-023","expected_status":"invalid","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-024","expected_status":"ready","expected_topic":"delivery","expected_safety_flag":false}
+{"source_id":"voc-025","expected_status":"spam","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-026","expected_status":"review_required","expected_topic":"packaging","expected_safety_flag":false}
+{"source_id":"voc-027","expected_status":"invalid","expected_topic":null,"expected_safety_flag":false}
+{"source_id":"voc-028","expected_status":"ready","expected_topic":"scent","expected_safety_flag":false}
+{"source_id":"voc-029","expected_status":"ready","expected_topic":"product_effect","expected_safety_flag":false}
+{"source_id":"voc-030","expected_status":"review_required","expected_topic":"unknown","expected_safety_flag":true}
+{"source_id":"voc-031","expected_status":"review_required","expected_topic":"irritation","expected_safety_flag":true}
+{"source_id":"voc-032","expected_status":"invalid","expected_topic":null,"expected_safety_flag":false}

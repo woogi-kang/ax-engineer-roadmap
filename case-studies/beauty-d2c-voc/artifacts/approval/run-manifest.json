@@ -1,0 +1,55 @@
+{
+  "generated_outputs": [
+    {
+      "path": "artifacts/approval/approval-audit-log.jsonl",
+      "sha256": "e595f648512754e37830b07cafcd13abf165ff02ff3fe7e8d267db6bfc64fa96"
+    },
+    {
+      "path": "artifacts/approval/approval-evaluation.json",
+      "sha256": "6d110e60622d8f7189a4f2d9868fcbfabae9ab12ec38dd1007ea326ded7ea3e4"
+    },
+    {
+      "path": "artifacts/approval/approval-packets.md",
+      "sha256": "6e214712b33e75a0fde4547f7d3f936eb97af3520dc1c245251639201038cca2"
+    },
+    {
+      "path": "artifacts/approval/approval-requests.json",
+      "sha256": "2955ffae38fe9c9f5b8b278d53a5d3f52c1eadc6bf5c1e2e6e7f3f88420d7388"
+    },
+    {
+      "path": "artifacts/approval/mock-executions.jsonl",
+      "sha256": "f543cca88b17464b2402df31a7328dad37ec006d85c9184fd5bd4807b6b46b89"
+    }
+  ],
+  "schema": "beauty-d2c-voc-approval-manifest-v1",
+  "sources": [
+    {
+      "path": "data/approval/approvers.json",
+      "sha256": "8d88fb9f3a90325d00469dd5b4ed59632d05ca16866983387c262a4c8effd5fd"
+    },
+    {
+      "path": "data/approval/events.jsonl",
+      "sha256": "4722e83957dc4f8e74883b79ae0683a6ea62a2051dfbe47bf246c6ded35dc679"
+    },
+    {
+      "path": "data/approval/expected-outcomes.jsonl",
+      "sha256": "d1aa9e76790a93ce51a496da1798a9190e6e8b20ab322cdc0f8f7132aee785fb"
+    },
+    {
+      "path": "data/input/voc-sample.jsonl",
+      "sha256": "135146bb749be4471b299264dd4e5212ab65eb0cd2a4440c2cb9683f48e9c34f"
+    },
+    {
+      "path": "data/input/voc-extension.jsonl",
+      "sha256": "ee5aade42b43333d9b487b034732cf52c8e219c07ebbac31fcce4658ebfaef09"
+    },
+    {
+      "path": "pipeline/run_pipeline.py",
+      "sha256": "74e0821cbfe529995fd00faaf4f07fceef43d9caa4074e028b93209581845fe1"
+    },
+    {
+      "path": "pipeline/approval_workflow.py",
+      "sha256": "853147944d7508cdb99f64ee80a896ef137c1ec68d620a2a2e077b57f481efaa"
+    }
+  ]
+}

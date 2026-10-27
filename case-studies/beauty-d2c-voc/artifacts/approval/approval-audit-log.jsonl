@@ -1,0 +1,40 @@
+{"actor": "system", "at": "2026-08-03T09:00:00+09:00", "event_id": "e01", "outcome": "accepted", "reason": null, "request_id": "req-packaging", "type": "submit", "version": 1}
+{"actor": "ops-manager", "at": "2026-08-03T11:30:00+09:00", "decision": "approve", "event_id": "e02", "outcome": "accepted", "reason": null, "request_id": "req-packaging", "type": "decide", "version": 1}
+{"actor": "system", "at": "2026-08-03T11:35:00+09:00", "event_id": "e03", "execution_id": "mock-exec-001", "outcome": "accepted", "reason": null, "request_id": "req-packaging", "type": "execute"}
+{"actor": "system", "at": "2026-08-03T11:35:02+09:00", "event_id": "e04", "first_execution_id": "mock-exec-001", "outcome": "blocked", "reason": "duplicate_execution", "request_id": "req-packaging", "type": "execute"}
+{"actor": "system", "at": "2026-08-03T11:40:00+09:00", "event_id": "e05", "first_execution_id": "mock-exec-001", "outcome": "blocked", "reason": "already_executed", "request_id": "req-packaging", "type": "execute"}
+{"actor": "system", "at": "2026-08-03T11:41:00+09:00", "event_id": "e06", "outcome": "blocked", "reason": "duplicate_request", "request_id": "req-packaging", "type": "submit"}
+{"actor": "system", "at": "2026-08-04T09:00:00+09:00", "event_id": "e07", "outcome": "accepted", "reason": null, "request_id": "req-irritation", "type": "submit", "version": 1}
+{"actor": "ops-manager", "at": "2026-08-04T09:20:00+09:00", "event_id": "e08", "outcome": "blocked", "reason": "topic_out_of_scope", "request_id": "req-irritation", "type": "decide"}
+{"actor": "cs-lead", "at": "2026-08-04T09:25:00+09:00", "event_id": "e09", "outcome": "blocked", "reason": "safety_role_required", "request_id": "req-irritation", "type": "decide"}
+{"actor": "qa-lead", "at": "2026-08-04T10:10:00+09:00", "decision": "approve", "event_id": "e10", "outcome": "accepted", "reason": null, "request_id": "req-irritation", "type": "decide", "version": 1}
+{"actor": "security-admin", "approver_id": "qa-lead", "at": "2026-08-04T10:30:00+09:00", "event_id": "e11", "outcome": "accepted", "reason": null, "request_id": "req-irritation", "type": "revoke_approver"}
+{"actor": "system", "at": "2026-08-04T10:35:00+09:00", "event_id": "e12", "outcome": "blocked", "reason": "approver_revoked", "request_id": "req-irritation", "type": "execute"}
+{"actor": "qa-backup", "at": "2026-08-04T13:00:00+09:00", "decision": "approve", "event_id": "e13", "outcome": "accepted", "reason": null, "request_id": "req-irritation", "type": "decide", "version": 1}
+{"actor": "system", "at": "2026-08-04T13:05:00+09:00", "event_id": "e14", "execution_id": "mock-exec-002", "outcome": "accepted", "reason": null, "request_id": "req-irritation", "type": "execute"}
+{"actor": "system", "at": "2026-08-05T09:00:00+09:00", "event_id": "e15", "outcome": "accepted", "reason": null, "request_id": "req-delivery", "type": "submit", "version": 1}
+{"actor": "ops-manager", "at": "2026-08-05T10:00:00+09:00", "decision": "approve", "event_id": "e16", "outcome": "accepted", "reason": null, "request_id": "req-delivery", "type": "decide", "version": 1}
+{"actor": "voc-analyst", "at": "2026-08-05T10:20:00+09:00", "event_id": "e17", "outcome": "accepted", "reason": "prior_approval_invalidated", "request_id": "req-delivery", "type": "update_proposal", "version": 2}
+{"actor": "system", "at": "2026-08-05T10:25:00+09:00", "event_id": "e18", "outcome": "blocked", "reason": "not_approved:pending", "request_id": "req-delivery", "type": "execute"}
+{"actor": "ops-manager", "at": "2026-08-05T10:40:00+09:00", "current_version": 2, "event_id": "e19", "outcome": "blocked", "reason": "stale_version", "request_id": "req-delivery", "type": "decide"}
+{"actor": "ops-manager", "at": "2026-08-05T10:50:00+09:00", "decision": "approve", "event_id": "e20", "outcome": "accepted", "reason": null, "request_id": "req-delivery", "type": "decide", "version": 2}
+{"actor": "system", "at": "2026-08-05T10:55:00+09:00", "event_id": "e21", "execution_id": "mock-exec-003", "outcome": "accepted", "reason": null, "request_id": "req-delivery", "type": "execute"}
+{"actor": "system", "at": "2026-08-06T09:00:00+09:00", "event_id": "e22", "outcome": "accepted", "reason": null, "request_id": "req-scent", "type": "submit", "version": 1}
+{"actor": "pm-lead", "at": "2026-08-06T15:00:00+09:00", "decision": "approve_with_edits", "event_id": "e23", "outcome": "accepted", "reason": null, "request_id": "req-scent", "type": "decide", "version": 1}
+{"actor": "system", "at": "2026-08-06T15:10:00+09:00", "event_id": "e24", "execution_id": "mock-exec-004", "outcome": "accepted", "reason": null, "request_id": "req-scent", "type": "execute"}
+{"actor": "system", "at": "2026-08-07T09:00:00+09:00", "event_id": "e25", "outcome": "accepted", "reason": null, "request_id": "req-product-effect", "type": "submit", "version": 1}
+{"actor": "pm-lead", "at": "2026-08-07T09:30:00+09:00", "event_id": "e26", "outcome": "blocked", "reason": "reason_required", "request_id": "req-product-effect", "type": "decide"}
+{"actor": "pm-lead", "at": "2026-08-07T09:40:00+09:00", "decision": "request_info", "event_id": "e27", "outcome": "accepted", "reason": null, "request_id": "req-product-effect", "type": "decide", "version": 1}
+{"actor": "pm-lead", "at": "2026-08-07T16:00:00+09:00", "decision": "reject", "event_id": "e28", "outcome": "accepted", "reason": null, "request_id": "req-product-effect", "type": "decide", "version": 1}
+{"actor": "system", "at": "2026-08-07T16:05:00+09:00", "event_id": "e29", "outcome": "blocked", "reason": "not_approved:rejected", "request_id": "req-product-effect", "type": "execute"}
+{"actor": "system", "at": "2026-08-10T09:00:00+09:00", "event_id": "e30", "outcome": "accepted", "reason": null, "request_id": "req-product-effect-retry", "type": "submit", "version": 1}
+{"actor": "system", "at": "2026-08-11T09:00:00+09:00", "event_id": "e33", "outcome": "accepted", "reason": null, "request_id": "req-scent-followup", "type": "submit", "version": 1}
+{"actor": "voc-analyst", "at": "2026-08-11T09:30:00+09:00", "event_id": "e34", "outcome": "accepted", "reason": "req-scent에서 이미 처리한 제안", "request_id": "req-scent-followup", "type": "cancel"}
+{"actor": "pm-lead", "at": "2026-08-11T10:00:00+09:00", "event_id": "e35", "outcome": "blocked", "reason": "request_cancelled", "request_id": "req-scent-followup", "type": "decide"}
+{"actor": "system", "at": "2026-08-11T10:05:00+09:00", "event_id": "e36", "outcome": "blocked", "reason": "not_approved:cancelled", "request_id": "req-scent-followup", "type": "execute"}
+{"actor": "system", "at": "2026-08-12T09:00:00+09:00", "event_id": "e37", "outcome": "accepted", "reason": null, "request_id": "req-delivery-followup", "type": "submit", "version": 1}
+{"actor": "ops-manager", "at": "2026-08-12T09:30:00+09:00", "decision": "approve", "event_id": "e38", "outcome": "accepted", "reason": null, "request_id": "req-delivery-followup", "type": "decide", "version": 1}
+{"actor": "pm-lead", "at": "2026-08-13T10:00:00+09:00", "event_id": "e31", "outcome": "blocked", "reason": "request_expired", "request_id": "req-product-effect-retry", "type": "decide"}
+{"actor": "system", "at": "2026-08-13T10:05:00+09:00", "event_id": "e32", "outcome": "blocked", "reason": "not_approved:expired", "request_id": "req-product-effect-retry", "type": "execute"}
+{"actor": "system", "at": "2026-08-14T12:00:00+09:00", "event_id": "e39", "outcome": "blocked", "reason": "approval_expired", "request_id": "req-delivery-followup", "type": "execute"}
+{"actor": "system", "at": "2026-08-14T12:10:00+09:00", "event_id": "e40", "outcome": "blocked", "reason": "unknown_request", "request_id": "req-missing", "type": "execute"}

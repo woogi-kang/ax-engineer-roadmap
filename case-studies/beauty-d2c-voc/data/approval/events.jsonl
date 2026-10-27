@@ -1,0 +1,40 @@
+{"event_id":"e01","at":"2026-08-03T09:00:00+09:00","type":"submit","request_id":"req-packaging","proposal_id":"proposal-packaging","actor":"system"}
+{"event_id":"e02","at":"2026-08-03T11:30:00+09:00","type":"decide","request_id":"req-packaging","actor":"ops-manager","decision":"approve","version":1,"review_minutes":7}
+{"event_id":"e03","at":"2026-08-03T11:35:00+09:00","type":"execute","request_id":"req-packaging","actor":"system","idempotency_key":"exec-packaging-1"}
+{"event_id":"e04","at":"2026-08-03T11:35:02+09:00","type":"execute","request_id":"req-packaging","actor":"system","idempotency_key":"exec-packaging-1"}
+{"event_id":"e05","at":"2026-08-03T11:40:00+09:00","type":"execute","request_id":"req-packaging","actor":"system","idempotency_key":"exec-packaging-2"}
+{"event_id":"e06","at":"2026-08-03T11:41:00+09:00","type":"submit","request_id":"req-packaging","proposal_id":"proposal-packaging","actor":"system"}
+{"event_id":"e07","at":"2026-08-04T09:00:00+09:00","type":"submit","request_id":"req-irritation","proposal_id":"proposal-irritation","actor":"system"}
+{"event_id":"e08","at":"2026-08-04T09:20:00+09:00","type":"decide","request_id":"req-irritation","actor":"ops-manager","decision":"approve","version":1,"review_minutes":3}
+{"event_id":"e09","at":"2026-08-04T09:25:00+09:00","type":"decide","request_id":"req-irritation","actor":"cs-lead","decision":"approve","version":1,"review_minutes":4}
+{"event_id":"e10","at":"2026-08-04T10:10:00+09:00","type":"decide","request_id":"req-irritation","actor":"qa-lead","decision":"approve","version":1,"review_minutes":12}
+{"event_id":"e11","at":"2026-08-04T10:30:00+09:00","type":"revoke_approver","request_id":"req-irritation","actor":"security-admin","approver_id":"qa-lead"}
+{"event_id":"e12","at":"2026-08-04T10:35:00+09:00","type":"execute","request_id":"req-irritation","actor":"system","idempotency_key":"exec-irritation-1"}
+{"event_id":"e13","at":"2026-08-04T13:00:00+09:00","type":"decide","request_id":"req-irritation","actor":"qa-backup","decision":"approve","version":1,"review_minutes":9}
+{"event_id":"e14","at":"2026-08-04T13:05:00+09:00","type":"execute","request_id":"req-irritation","actor":"system","idempotency_key":"exec-irritation-2"}
+{"event_id":"e15","at":"2026-08-05T09:00:00+09:00","type":"submit","request_id":"req-delivery","proposal_id":"proposal-delivery","actor":"system"}
+{"event_id":"e16","at":"2026-08-05T10:00:00+09:00","type":"decide","request_id":"req-delivery","actor":"ops-manager","decision":"approve","version":1,"review_minutes":5}
+{"event_id":"e17","at":"2026-08-05T10:20:00+09:00","type":"update_proposal","request_id":"req-delivery","actor":"voc-analyst","remove_evidence_refs":["voc-024"],"reason":"voc-014와 채널만 다른 같은 문장이라 근거 수에서 제외"}
+{"event_id":"e18","at":"2026-08-05T10:25:00+09:00","type":"execute","request_id":"req-delivery","actor":"system","idempotency_key":"exec-delivery-1"}
+{"event_id":"e19","at":"2026-08-05T10:40:00+09:00","type":"decide","request_id":"req-delivery","actor":"ops-manager","decision":"approve","version":1,"review_minutes":1}
+{"event_id":"e20","at":"2026-08-05T10:50:00+09:00","type":"decide","request_id":"req-delivery","actor":"ops-manager","decision":"approve","version":2,"review_minutes":4}
+{"event_id":"e21","at":"2026-08-05T10:55:00+09:00","type":"execute","request_id":"req-delivery","actor":"system","idempotency_key":"exec-delivery-2"}
+{"event_id":"e22","at":"2026-08-06T09:00:00+09:00","type":"submit","request_id":"req-scent","proposal_id":"proposal-scent","actor":"system"}
+{"event_id":"e23","at":"2026-08-06T15:00:00+09:00","type":"decide","request_id":"req-scent","actor":"pm-lead","decision":"approve_with_edits","version":1,"review_minutes":11,"reason":"voc-028은 향을 칭찬한 리뷰라 불만 근거에서 제외","edits":{"remove_evidence_refs":["voc-028"]}}
+{"event_id":"e24","at":"2026-08-06T15:10:00+09:00","type":"execute","request_id":"req-scent","actor":"system","idempotency_key":"exec-scent-1"}
+{"event_id":"e25","at":"2026-08-07T09:00:00+09:00","type":"submit","request_id":"req-product-effect","proposal_id":"proposal-product_effect","actor":"system"}
+{"event_id":"e26","at":"2026-08-07T09:30:00+09:00","type":"decide","request_id":"req-product-effect","actor":"pm-lead","decision":"reject","version":1,"review_minutes":2}
+{"event_id":"e27","at":"2026-08-07T09:40:00+09:00","type":"decide","request_id":"req-product-effect","actor":"pm-lead","decision":"request_info","version":1,"review_minutes":6,"reason":"사용 기간 안내 문구가 이미 있는지 확인 필요"}
+{"event_id":"e28","at":"2026-08-07T16:00:00+09:00","type":"decide","request_id":"req-product-effect","actor":"pm-lead","decision":"reject","version":1,"review_minutes":4,"reason":"상세페이지에 이미 8주 사용 기준이 있어 새 업무가 필요 없음"}
+{"event_id":"e29","at":"2026-08-07T16:05:00+09:00","type":"execute","request_id":"req-product-effect","actor":"system","idempotency_key":"exec-product-effect-1"}
+{"event_id":"e30","at":"2026-08-10T09:00:00+09:00","type":"submit","request_id":"req-product-effect-retry","proposal_id":"proposal-product_effect","actor":"system"}
+{"event_id":"e33","at":"2026-08-11T09:00:00+09:00","type":"submit","request_id":"req-scent-followup","proposal_id":"proposal-scent","actor":"system"}
+{"event_id":"e34","at":"2026-08-11T09:30:00+09:00","type":"cancel","request_id":"req-scent-followup","actor":"voc-analyst","reason":"req-scent에서 이미 처리한 제안"}
+{"event_id":"e35","at":"2026-08-11T10:00:00+09:00","type":"decide","request_id":"req-scent-followup","actor":"pm-lead","decision":"approve","version":1,"review_minutes":1}
+{"event_id":"e36","at":"2026-08-11T10:05:00+09:00","type":"execute","request_id":"req-scent-followup","actor":"system","idempotency_key":"exec-scent-2"}
+{"event_id":"e37","at":"2026-08-12T09:00:00+09:00","type":"submit","request_id":"req-delivery-followup","proposal_id":"proposal-delivery","actor":"system"}
+{"event_id":"e38","at":"2026-08-12T09:30:00+09:00","type":"decide","request_id":"req-delivery-followup","actor":"ops-manager","decision":"approve","version":1,"review_minutes":3}
+{"event_id":"e31","at":"2026-08-13T10:00:00+09:00","type":"decide","request_id":"req-product-effect-retry","actor":"pm-lead","decision":"approve","version":1,"review_minutes":3}
+{"event_id":"e32","at":"2026-08-13T10:05:00+09:00","type":"execute","request_id":"req-product-effect-retry","actor":"system","idempotency_key":"exec-product-effect-2"}
+{"event_id":"e39","at":"2026-08-14T12:00:00+09:00","type":"execute","request_id":"req-delivery-followup","actor":"system","idempotency_key":"exec-delivery-3"}
+{"event_id":"e40","at":"2026-08-14T12:10:00+09:00","type":"execute","request_id":"req-missing","actor":"system","idempotency_key":"exec-missing-1"}

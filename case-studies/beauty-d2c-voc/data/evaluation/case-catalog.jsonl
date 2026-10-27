@@ -1,0 +1,32 @@
+{"source_id":"voc-001","case_type":"normal","checks":"한국어 포장 불량"}
+{"source_id":"voc-002","case_type":"failure","checks":"같은 시장·상품·채널·문장 중복"}
+{"source_id":"voc-003","case_type":"edge","checks":"영어 피부 이상 반응 안전 신호"}
+{"source_id":"voc-004","case_type":"normal","checks":"일본어 향 불만"}
+{"source_id":"voc-005","case_type":"failure","checks":"원문 누락"}
+{"source_id":"voc-006","case_type":"edge","checks":"상품 식별자 누락"}
+{"source_id":"voc-007","case_type":"failure","checks":"홍보성 스팸"}
+{"source_id":"voc-008","case_type":"edge","checks":"한영 혼합 문장"}
+{"source_id":"voc-009","case_type":"edge","checks":"1년 넘은 게시물"}
+{"source_id":"voc-010","case_type":"edge","checks":"게시 시각 누락"}
+{"source_id":"voc-011","case_type":"edge","checks":"눈 자극 안전 신호"}
+{"source_id":"voc-012","case_type":"normal","checks":"제품 효과 불만"}
+{"source_id":"voc-013","case_type":"normal","checks":"영어 포장 누수"}
+{"source_id":"voc-014","case_type":"normal","checks":"영어 배송 지연"}
+{"source_id":"voc-015","case_type":"edge","checks":"주제를 알 수 없는 문장"}
+{"source_id":"voc-016","case_type":"failure","checks":"출처 URL 누락"}
+{"source_id":"voc-017","case_type":"normal","checks":"일본어 포장 불량"}
+{"source_id":"voc-018","case_type":"normal","checks":"일본어 배송 지연"}
+{"source_id":"voc-019","case_type":"edge","checks":"일본어 피부 이상 반응 안전 신호"}
+{"source_id":"voc-020","case_type":"failure","checks":"전화번호가 들어간 금지 입력"}
+{"source_id":"voc-021","case_type":"failure","checks":"이메일이 들어간 금지 입력"}
+{"source_id":"voc-022","case_type":"failure","checks":"같은 원문 식별자에 서로 다른 내용"}
+{"source_id":"voc-023","case_type":"failure","checks":"게시 시각이 수집 시각보다 늦음"}
+{"source_id":"voc-024","case_type":"edge","checks":"같은 문장이지만 채널이 다름"}
+{"source_id":"voc-025","case_type":"failure","checks":"한국어 홍보성 스팸"}
+{"source_id":"voc-026","case_type":"edge","checks":"일영 혼합 문장"}
+{"source_id":"voc-027","case_type":"failure","checks":"허용하지 않은 시장"}
+{"source_id":"voc-028","case_type":"edge","checks":"부정문 속 안전 단어"}
+{"source_id":"voc-029","case_type":"normal","checks":"한국어 제품 효과 불만"}
+{"source_id":"voc-030","case_type":"edge","checks":"사고 보고가 아닌 안전 질문"}
+{"source_id":"voc-031","case_type":"edge","checks":"오래된 안전 신호"}
+{"source_id":"voc-032","case_type":"failure","checks":"https가 아닌 출처 URL"}
