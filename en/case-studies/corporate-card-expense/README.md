@@ -19,6 +19,10 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 Collecting card transactions and receipts is relatively easy to automate. The harder work is deciding which evidence is missing, which expense conflicts with company policy, and who confirms the account and cost allocation.
 
+<!-- failure-cases:start -->
+> Failure-case check: The [public AX failure and stop cases](../../research/ax-failure-cases.md) do not yet link a record directly to this workflow. Before turning this design into practice, answer the eight questions in the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design).
+<!-- failure-cases:end -->
+
 ## 1. Case type and current evidence
 
 - Type: workflow

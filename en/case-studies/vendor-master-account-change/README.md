@@ -19,6 +19,10 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 Vendor and payment-account changes affect many future payments. This case focuses less on document extraction and more on separating requester, verifier, approver, and executor while keeping evidence and the actual master-data result traceable.
 
+<!-- failure-cases:start -->
+> Failure-case check: The [public AX failure and stop cases](../../research/ax-failure-cases.md) do not yet link a record directly to this workflow. Before turning this design into practice, answer the eight questions in the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design).
+<!-- failure-cases:end -->
+
 ## 1. Case type and current evidence
 
 - Type: workflow

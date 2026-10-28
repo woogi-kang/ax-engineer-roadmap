@@ -13,6 +13,7 @@
 - [Skills 재사용 카드](reusable-skill-card.md)
 - [UI 통합 점검표](ui-integration-checklist.md)
 - [업무별 적용 사례 카탈로그](../case-studies/README.md)
+- [캡스톤 설계 점검표](../research/ax-failure-cases.md#캡스톤-설계에-쓰는-점검표): 공개 실패·중단 사례에서 뽑은 질문. 답은 업무 실행 규칙과 실험 카드에 옮긴다.
 
 ## 사용 원칙
 

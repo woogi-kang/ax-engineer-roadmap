@@ -17,6 +17,14 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 This high-risk simulation converts fictional care conversations into structured record drafts and routes risk signals to professionals. It provides no diagnosis, treatment, or emergency service and creates no official record without professional sign-off.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FK01 스캐터랩 (이루다) (`STOPPED · SANCTIONED`): Record the collection purpose and consent scope for every training or retrieval dataset, and make a discriminatory/harmful-output test set a pre-launch gate.
+> - FG09 National Eating Disorders Association (`STOPPED`): Where vulnerable users are involved, decouple staff reduction from the AI launch, and pass harmful-answer blocking tests and immediate human handoff first.
+> - FG11 MD Anderson Cancer Center · IBM Watson (`STOPPED`): List source-system migrations and owners as risks, and tie each stage's budget approval to a 'ready for real use' decision.
+<!-- failure-cases:end -->
+
 ## 1. Current evidence and classification
 
 - Evidence: `simulation-design`

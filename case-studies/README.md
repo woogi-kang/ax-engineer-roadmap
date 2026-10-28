@@ -30,6 +30,32 @@ Beauty/D2C VOC의 16건은 기존 데모를 재현하는 합성 평가 세트다
 
 사례명과 근거 단계만으로 특정 회사의 내부 상태, 실제 사용 여부, 공식 절차 전환이나 생산성·비용·매출 개선 효과를 추정해서는 안 된다.
 
+## 공개 사례·실패 사례와의 연결
+
+각 사례 문서는 두 종류의 외부 근거와 연결된다. [공개 사례-실습 연결표](../research/public-case-application-map.md)는 외부 조직이 발표한 업무 흐름에서 어떤 통제 방식을 설계에 가져왔는지 보여 준다. [공개 AX 실패·중단 사례](../research/ax-failure-cases.md)는 비슷한 업무가 왜 멈추거나 되돌려졌는지 기록한다. 관련 점검 항목은 각 사례 문서의 `실패 사례 점검`에 옮겨 두었다.
+
+두 자료 모두 외부 조직의 발표·보도·공적 기록이며 이 저장소 사례의 실행 결과가 아니다. 아래 표는 [`ax-failure-cases.json`](../research/ax-failure-cases.json)의 `related_case_studies`에서 생성한다. 연결한 기록이 없는 사례에도 [캡스톤 설계 점검표](../research/ax-failure-cases.md#캡스톤-설계에-쓰는-점검표)의 여덟 질문을 그대로 적용한다.
+
+<!-- failure-cases:start -->
+| 사례 | 연결한 실패·중단 사례 |
+|---|---|
+| [Beauty/D2C 글로벌 VOC → 업무 제안](beauty-d2c-voc/README.md) | FG08 CNET |
+| [공공 민원 → 근거 답변·중복 묶음](public-service-petition-response/README.md) | FK04 고용노동부 (구직급여 상담 챗봇), FG02 Air Canada, FG03 New York City (MyCity) |
+| [Slack 회의 기록에서 승인할 후속 업무 찾기](slack-meeting-actions/README.md) | FG05 Department for Business and Trade |
+| [입사·이동·퇴사 → 계정·권한 운영](employee-lifecycle-access/README.md) | FG12 Amazon |
+| [법인카드·경비 증빙 → 전표 초안](corporate-card-expense/README.md) | 없음. 공통 점검표 사용 |
+| [매출 근거 → 전자세금계산서 발행·입금 대사](electronic-tax-invoice-reconciliation/README.md) | 없음. 공통 점검표 사용 |
+| [거래처 등록·계좌 변경 → 검증 가능한 승인](vendor-master-account-change/README.md) | 없음. 공통 점검표 사용 |
+| [기업 자료 → 여신·인수심사 검토 초안](credit-underwriting-review/README.md) | FG10 Zillow Group (Zillow Offers) |
+| [흩어진 파일·CSV → 검토 가능한 업무 허브(AX Hub)](file-csv-to-ax-hub/README.md) | FK02 교육부 (AI 디지털교과서) |
+| [근거 자료 → 출처 연결 규제 문서 초안](regulated-evidence-document/README.md) | FG06 Deloitte Australia · DEWR |
+| [재고 예외 → 발주·창고 이동 제안](inventory-exception-replenishment/README.md) | FG10 Zillow Group (Zillow Offers) |
+| [설비 이상 → 정비 제안](equipment-anomaly-maintenance/README.md) | 없음. 공통 점검표 사용 |
+| [상담·진료 대화 → 기록·위험 이관](care-conversation-record/README.md) | FK01 스캐터랩 (이루다), FG09 National Eating Disorders Association, FG11 MD Anderson Cancer Center · IBM Watson |
+| [여러 업무가 함께 쓰는 메일 보조](centralized-mail-assist/README.md) | FG01 McDonald's · IBM, FG02 Air Canada, FG04 Commonwealth Bank of Australia |
+| [여러 업무를 위한 에이전트 운영 기반](company-agent-operating-layer/README.md) | FK03 삼성전자, FG07 Replit · SaaStr |
+<!-- failure-cases:end -->
+
 ## 추천 학습 순서
 
 1. [흩어진 파일·CSV → 검토 가능한 업무 허브(AX Hub)](file-csv-to-ax-hub/README.md)

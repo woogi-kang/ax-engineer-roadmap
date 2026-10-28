@@ -19,6 +19,12 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 This is a **learning simulation of an AX workflow transformation** that receives a request in Slack, connects knowledge in Notion, Google Workspace artifacts, and work state in monday.com, then prepares a meeting pre-read and action items. Only human-approved items are written to a monday.com sandbox, with a Friday follow-up on current state. It does not claim adoption or actual workflow outcomes at a specific company.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FG05 Department for Business and Trade (`UNPROVEN`): Separate perceived time saved, output quality and real work outcomes, and decide adoption per task type.
+<!-- failure-cases:end -->
+
 ## 1. Case type and classification
 
 | Item | Classification |

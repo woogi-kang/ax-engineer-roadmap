@@ -77,6 +77,7 @@ Beauty/D2C VOC의 합성 입력 16건은 공개 데모의 재현 범위다. P1�
 - [업무 실행 규칙](../toolkit/execution-contract.md)
 - [근거 기록](../toolkit/evidence-ledger.md)
 - [사례 문서](../toolkit/case-study-template.md)
+- [캡스톤 설계 점검표](../research/ax-failure-cases.md#캡스톤-설계에-쓰는-점검표): 공개 실패·중단 사례 16건에서 뽑은 여덟 질문. 업무를 고른 직후 답하고 결과를 실행 규칙과 실험 카드에 옮긴다.
 
 ## 통과 규칙
 

@@ -17,6 +17,13 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 > Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies G02's gradual workflow expansion to the gates between read-only assistance, drafts, and approved changes. G10's defect and rework measures help decide whether the shared foundation should expand to more workflows.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FK03 삼성전자 (`PAUSED · SCALED_BACK`): Instead of a blanket ban, design a sanctioned path first: allowed data classes, user training, approval scope and logging, with stricter rules where the data is more sensitive.
+> - FG07 Replit · SaaStr (`PAUSED`): Do not rely on prompts for permission. Block production writes and deletes through tool permissions and environment separation, and rehearse recovery.
+<!-- failure-cases:end -->
+
 ## Case type
 
 This is not a company-wide agent deployed at a real organization or evidence of operating outcomes. It is a **learning and reference organization-wide practice design** that assumes common execution rules have already been reused in two different workflows, then asks what should be shared at organization scale.

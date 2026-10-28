@@ -17,6 +17,14 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 > Public-case use: The [public case-to-practice table](../../research/public-case-application-map.md) applies K04 to source-checked reply drafts and G13 to customer and project-data freshness. G15 informs the conditions that stop automatic replies and hand complex cases to a responsible person.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FG01 McDonald's · IBM (`STOPPED`): Set the accuracy threshold for scaling as a number in advance, and fix a decision date to end rather than extend if it is not met.
+> - FG02 Air Canada (`SANCTIONED`): For answers that carry liability, such as policy or price, require a quote of the source clause and test for answers that contradict it. Assume the company owns every answer when setting approval scope.
+> - FG04 Commonwealth Bank of Australia (`REVERSED`): Before reassigning staff, measure the change in real workload against a baseline over a set period and keep that evidence reviewable by affected parties.
+<!-- failure-cases:end -->
+
 ## Case type
 
 This is not the result of a real company implementation or evidence of operating outcomes. It is a **learning and reference simulation design for mail assistance shared across workflows** using synthetic email, test accounts, and a sandbox delivery environment.

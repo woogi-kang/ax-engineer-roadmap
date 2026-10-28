@@ -26,7 +26,7 @@ Node.js `22.23.4` 이상과 Python `3.11.18` 이상이 필요하다. 새로 복�
 npm run verify
 ```
 
-`verify`는 README 렌더링 검사에 필요한 의존성을 설치한 뒤 내부 링크, 한국어·영어 문서, 사례 메타데이터, 공개 사례 JSON 목록, 버전이 서로 맞는지 검사한다. 이어 README 렌더링, 출처 기록 검사의 회귀 테스트, Beauty/D2C Python 테스트와 커밋 산출물 재현, npm 보안 감사를 확인한다. 외부 링크 전체 상태 검사는 네트워크에 의존하므로 `npm run check:external`과 GitHub Actions의 주간 검사에서 따로 실행한다.
+`verify`는 README 렌더링 검사에 필요한 의존성을 설치한 뒤 내부 링크, 한국어·영어 문서, 사례 메타데이터, 공개 사례·실패 사례·채용 기록 JSON, 버전이 서로 맞는지 검사한다. 이어 README 렌더링, 출처 기록 검사의 회귀 테스트, Beauty/D2C Python 테스트와 커밋 산출물 재현, npm 보안 감사를 확인한다. 외부 링크 전체 상태 검사는 네트워크에 의존하므로 `npm run check:external`과 GitHub Actions의 주간 검사에서 따로 실행한다.
 
 ## 로드맵 항목 형식
 
@@ -81,6 +81,10 @@ npm run verify
 현재 공개 결과와 목표 설계를 섞지 않는다. `current_write_impact`, `current_autonomy`, `implemented_project_stages`에는 공개 코드와 산출물이 실제로 입증한 범위만 기록한다. `implemented_project_stages`는 해당 단계의 기능 구현을 가리킨다. 최소 평가 수, 독립 검수 등 모든 통과 조건의 완료 기록은 아니다. 더 넓게 설계한 목표는 `designed_write_impact`, `designed_autonomy`, `designed_project_stages`에 둔다. `case.json`을 바꾸면 `npm run generate:cases`로 한국어·영어 사례 문서의 현재 범위와 설계 목표 표를 다시 생성하고 함께 커밋한다.
 
 공개 조직 사례를 추가하거나 바꾸면 한국어·영어 카탈로그와 [`public-ax-cases.json`](research/public-ax-cases.json)을 함께 갱신한다. 출처 유형, 도입 단계, 성과 검증을 서로 다른 필드로 유지한다.
+
+실패·중단 사례는 성공 카탈로그와 분리해 [`ax-failure-cases.json`](research/ax-failure-cases.json)과 한국어·영어 문서에 함께 추가한다. `related_case_studies`를 바꾸면 `npm run generate:failure-links`로 사례 문서의 `실패 사례 점검`과 사례 목록의 연결표를 다시 생성한다.
+
+공고 기록은 [`hiring-signals.json`](research/hiring-signals.json)과 한국어·영어 해설에 추가한다. 월간 목록은 [수집 기준](research/hiring-monthly/README.md)의 절차대로 JSON을 만든 뒤 `npm run generate:hiring-monthly`로 문서와 README 요약을 갱신한다.
 
 직접 측정한 성과를 주장하려면 기간·표본·계산 방법을 제공한다. 공개할 수 없다면 해당 수치를 지우고 관찰 가능한 상태만 남긴다. 외부 조직이 발표한 수치를 인용할 때는 발표 주체와 미공개 조건을 명시하고 자체 발표와 독립 검증을 구분한다. 세부 기준은 [출처 정책](research/source-policy.md)을 따른다.
 

@@ -17,6 +17,12 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 This high-risk simulation combines synthetic applications, financial statements, transaction and collateral evidence, and policy rules into a review draft. AI never approves, rejects, prices, or sets a limit.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FG10 Zillow Group (Zillow Offers) (`STOPPED`): When model error turns directly into money, put volume limits, error tolerance and automatic scale-down triggers into the execution contract.
+<!-- failure-cases:end -->
+
 ## 1. Current evidence and classification
 
 - Evidence: `simulation-design`

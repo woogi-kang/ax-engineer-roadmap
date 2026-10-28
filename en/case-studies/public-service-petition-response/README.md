@@ -17,6 +17,14 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 This simulation links synthetic petitions to statutes, policies, and precedent responses, then asks a caseworker to review both the draft and clusters of similar cases. AI never sends a public response or closes a case.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FK04 고용노동부 (구직급여 상담 챗봇) (`UNPROVEN`): Do not stop at automation share: check whether human-handled volume actually fell and where requests for a person come from.
+> - FG02 Air Canada (`SANCTIONED`): For answers that carry liability, such as policy or price, require a quote of the source clause and test for answers that contradict it. Assume the company owns every answer when setting approval scope.
+> - FG03 New York City (MyCity) (`STOPPED`): Start legal or regulatory Q&A with a narrow scope and rerun a violation test set on a schedule. Do not treat a disclaimer as a substitute for accuracy control.
+<!-- failure-cases:end -->
+
 ## 1. Current evidence and classification
 
 - Evidence: `simulation-design`

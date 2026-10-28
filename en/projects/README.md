@@ -76,7 +76,7 @@ Templates:
 - [Experiment Card](../toolkit/experiment-card.md)
 - [Workflow Execution Rules](../toolkit/execution-contract.md)
 - [Evidence Ledger](../toolkit/evidence-ledger.md)
-- [Case Study](../toolkit/case-study-template.md)
+- [Capstone design checklist](../research/ax-failure-cases.md#checklist-for-capstone-design): eight questions drawn from 16 public failure and stop cases. Answer them right after choosing the workflow and carry the answers into the execution rules and experiment card.
 
 ## Exit rule
 

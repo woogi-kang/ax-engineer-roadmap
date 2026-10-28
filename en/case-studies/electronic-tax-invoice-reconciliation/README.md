@@ -19,6 +19,10 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 Electronic tax invoice work does not end when one document is created. Contract, order, acceptance, and accounting state must be checked; an accountable person must approve issuance; and issuance, transmission, and payment results must be reconciled. This case practices that full flow with synthetic data and test systems.
 
+<!-- failure-cases:start -->
+> Failure-case check: The [public AX failure and stop cases](../../research/ax-failure-cases.md) do not yet link a record directly to this workflow. Before turning this design into practice, answer the eight questions in the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design).
+<!-- failure-cases:end -->
+
 ## 1. Case type and current evidence
 
 - Type: workflow

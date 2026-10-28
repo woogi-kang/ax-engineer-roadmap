@@ -19,6 +19,12 @@ The case-specific P-stage tables supplement the [common project exit criteria](.
 
 Reordering whenever inventory crosses a threshold can create excess stock or duplicate orders. This case combines current stock, committed orders, inbound supply, stock in other locations, and supplier constraints to present accountable operators with bounded options.
 
+<!-- failure-cases:start -->
+> Failure-case check: These records from the [public AX failure and stop cases](../../research/ax-failure-cases.md) are linked to this workflow. Check the items below before turning this design into practice, and use the [capstone design checklist](../../research/ax-failure-cases.md#checklist-for-capstone-design) for the rest.
+>
+> - FG10 Zillow Group (Zillow Offers) (`STOPPED`): When model error turns directly into money, put volume limits, error tolerance and automatic scale-down triggers into the execution contract.
+<!-- failure-cases:end -->
+
 ## 1. Case type and current evidence
 
 - Type: workflow

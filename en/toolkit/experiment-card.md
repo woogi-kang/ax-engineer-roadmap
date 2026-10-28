@@ -1,5 +1,7 @@
 # Experiment Card
 
+Answer the metric and decision questions in the [capstone design checklist](../research/ax-failure-cases.md#checklist-for-capstone-design) first. Record usage, time saved, and work outcomes as separate metrics, and keep the scale-up and stop thresholds and the decision date on this card.
+
 ## Basic information
 
 | Field | Content |
