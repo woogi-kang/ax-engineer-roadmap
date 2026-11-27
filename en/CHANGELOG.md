@@ -21,6 +21,7 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Linked the capstone design checklist from the common project tools, toolkit index, workflow execution rules, experiment card, Week 1 of the 12-week path, and the public case-to-practice table, and added failure-case, posting-record, and monthly-list update steps to the contribution guide
 - Added a short path for small fixes to the contribution guide (edit on GitHub without setup, fix one language only, maintainers check the Korean polish) and named the skill repository that `korean-humanizer` refers to in the contribution guide and working instructions
 - Added the caution on inferring from case names and evidence stages, previously only in Korean, to the English case index
+- Added a section to both root READMEs stating the repository's goal and, for each of three pillars (market observation, competency map, practice kit), what is available now and what does not exist yet
 - Renamed the two job-posting pages to "AX roles explained through job postings" (curated sample for understanding the role) and "Monthly hiring snapshot" (full monthly list), and opened each with its purpose and a link to the other
 
 ### Fixed
