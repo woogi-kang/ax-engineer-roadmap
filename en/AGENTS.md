@@ -6,7 +6,7 @@ Work within the current user request. Preserve uncommitted changes and research 
 
 ## Korean writing
 
-Use the `korean-humanizer` skill whenever adding Korean content or revising Korean sentences. Read the session's registered `SKILL.md` and obtain the full instructions. If the skill cannot be located or read, report that limitation and do not claim the pass is complete.
+Use the `korean-humanizer` skill whenever adding Korean content or revising Korean sentences. The skill is [hjongc/humanizer-kr](https://github.com/hjongc/humanizer-kr). Read the session's registered `SKILL.md` and obtain the full instructions. If it is not registered, read the repository's `SKILL.md` and `references/` and apply them. If the skill cannot be located or read, report that limitation and do not claim the pass is complete.
 
 1. Verify sources and scope, then draft the content. Establish facts, numbers, dates, and implementation status at this stage.
 2. Review added or changed Korean text for translationese, inflated claims, abstract wording, and repetitive sentence patterns.
