@@ -22,6 +22,7 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Generated the overview table and case sections of the public AX case catalog from `public-ax-cases.json` (`npm run generate:public-cases`), moving the case text that existed only in Markdown into each case's `catalog` field. Sentences already recorded in `claims` are taken from the claim when rendering instead of copied, and the check fails when a document differs from the generated output. Document content is unchanged apart from one duplicate blank line removed before G16
 - Added a short path for small fixes to the contribution guide (edit on GitHub without setup, fix one language only, maintainers check the Korean polish) and named the skill repository that `korean-humanizer` refers to in the contribution guide and working instructions
 - Added the caution on inferring from case names and evidence stages, previously only in Korean, to the English case index
+- Added a section to both root READMEs stating the repository's goal and, for each of three pillars (market observation, competency map, practice kit), what is available now and what does not exist yet
 - Renamed the two job-posting pages to "AX roles explained through job postings" (curated sample for understanding the role) and "Monthly hiring snapshot" (full monthly list), and opened each with its purpose and a link to the other
 
 ### Fixed
