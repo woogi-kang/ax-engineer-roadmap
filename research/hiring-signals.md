@@ -24,6 +24,7 @@
 
 ## 기록 목록
 
+<!-- hiring-signals:start -->
 | ID | 회사 | 원문 직함 | 역할 범위 | 페이지의 모집 표시 |
 |---|---|---|---|---|
 | [J001](#j001) | FuriosaAI | Software Engineer, Compiler (AX Engineer) | 내부 AX | 미확인 |
@@ -707,6 +708,7 @@ AI 테스트 자동화 솔루션을 고객 현장에 적용하는 FDE 공고다.
 - 실습 연결: [P1](../projects/01-safe-assistant.md) · [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
 
 - `J039-S1` [채용 플랫폼](https://www.jobkorea.co.kr/Recruit/GI_Read/50165483): 본문 확인 · 모집 표시 확인. 발행 미상 / 마감 2026-11-13 / 확인 2026-10-27. 2026-11-13 마감일과 즉시지원 버튼을 확인했다. 접수 시작일은 2026-10-14다.
+<!-- hiring-signals:end -->
 
 ## 탐색 범위와 보류한 후보
 

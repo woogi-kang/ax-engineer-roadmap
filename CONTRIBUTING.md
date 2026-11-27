@@ -11,6 +11,17 @@ AX Engineer Roadmap은 기술 이름을 늘리는 것보다 현장에서 검증�
 - 템플릿 개선
 - 오탈자, 깨진 링크, 접근성 개선
 
+## 작은 수정은 바로 보내도 된다
+
+오탈자, 깨진 링크, 어색한 문장 같은 작은 수정은 별도 준비 없이 보낼 수 있다.
+
+- GitHub 화면에서 파일을 고쳐 Pull Request를 연다. Node.js와 Python을 설치하지 않아도 된다. 검사는 CI가 실행한다.
+- 한국어판이나 영어판 중 한쪽만 고쳐도 된다. 다른 언어판은 메인테이너가 병합 전에 맞춘다.
+- `korean-humanizer`를 적용하지 못했다면 PR에 그렇게 적는다. 메인테이너가 병합 전에 문장을 확인한다.
+- 고칠 곳만 알리려면 [Issue](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new/choose)로 남긴다.
+
+새 사례와 역량 항목, 출처·수치 변경, 스크립트 수정은 아래 절차를 따른다.
+
 ## 기여 전에 확인할 것
 
 1. [출처 정책](research/source-policy.md)을 읽는다.
@@ -20,7 +31,7 @@ AX Engineer Roadmap은 기술 이름을 늘리는 것보다 현장에서 검증�
 
 ## 로컬 준비와 전체 검사
 
-Node.js `22.23.4` 이상과 Python `3.11.18` 이상이 필요하다. 새로 복제한 저장소에서 CI와 같은 검사를 실행한다.
+작은 수정이 아니라면 로컬에서 검사한다. Node.js `22.23.4` 이상과 Python `3.11.18` 이상이 필요하다. 새로 복제한 저장소에서 CI와 같은 검사를 실행한다.
 
 ```bash
 npm run verify
@@ -51,7 +62,7 @@ npm run verify
 
 ## 한국어 문장과 용어
 
-한국어 내용을 새로 추가하거나 문장을 고칠 때마다 `korean-humanizer` 스킬로 문장을 정돈한다. 출처를 확인해 초안을 쓴 뒤, 추가·수정한 구간에서 어색한 표현을 찾고 다듬은 다음 의미가 유지됐는지 다시 읽는다. 자세한 작업 순서는 [프로젝트 작업 지침](AGENTS.md)을 따른다.
+한국어 내용을 새로 추가하거나 문장을 고칠 때마다 `korean-humanizer` 스킬로 문장을 정돈한다. 이 스킬은 [hjongc/humanizer-kr](https://github.com/hjongc/humanizer-kr)이다. 설치하지 않았다면 저장소의 `SKILL.md`를 읽고 최소 수정 절차를 따른다. 출처를 확인해 초안을 쓴 뒤, 추가·수정한 구간에서 어색한 표현을 찾고 다듬은 다음 의미가 유지됐는지 다시 읽는다. 자세한 작업 순서는 [프로젝트 작업 지침](AGENTS.md)을 따른다.
 
 - 사실·수치·날짜·고유명사·인용·기술 약어와 근거 링크를 윤문 때문에 바꾸지 않는다.
 - 기술 문서는 담백한 설명체를 유지하고 기존의 자연스러운 문장을 일괄 치환하지 않는다.
@@ -82,9 +93,9 @@ npm run verify
 
 공개 조직 사례를 추가하거나 바꾸면 한국어·영어 카탈로그와 [`public-ax-cases.json`](research/public-ax-cases.json)을 함께 갱신한다. 출처 유형, 도입 단계, 성과 검증을 서로 다른 필드로 유지한다.
 
-실패·중단 사례는 성공 카탈로그와 분리해 [`ax-failure-cases.json`](research/ax-failure-cases.json)과 한국어·영어 문서에 함께 추가한다. `related_case_studies`를 바꾸면 `npm run generate:failure-links`로 사례 문서의 `실패 사례 점검`과 사례 목록의 연결표를 다시 생성한다.
+실패·중단 사례는 성공 카탈로그와 분리해 [`ax-failure-cases.json`](research/ax-failure-cases.json)에 추가한다. 한국어·영어 문서의 요약표와 사례별 기록은 `npm run generate:failure-cases`로 다시 생성한다. 이 구간은 직접 고치지 않는다. 문서 첫머리의 건수와 원인별 표는 문서에서 함께 고친다. `related_case_studies`를 바꾸면 `npm run generate:failure-links`로 사례 문서의 `실패 사례 점검`과 사례 목록의 연결표를 다시 생성한다.
 
-공고 기록은 [`hiring-signals.json`](research/hiring-signals.json)과 한국어·영어 해설에 추가한다. 월간 목록은 [수집 기준](research/hiring-monthly/README.md)의 절차대로 JSON을 만든 뒤 `npm run generate:hiring-monthly`로 문서와 README 요약을 갱신한다.
+공고 기록은 [`hiring-signals.json`](research/hiring-signals.json)에 추가한다. 한국어·영어 해설의 기록 목록과 기록별 내용은 `npm run generate:hiring-signals`로 다시 생성한다. 이 구간은 직접 고치지 않는다. 문서 첫머리의 집계 문장은 문서에서 함께 고친다. 월간 목록은 [수집 기준](research/hiring-monthly/README.md)의 절차대로 JSON을 만든 뒤 `npm run generate:hiring-monthly`로 문서와 README 요약을 갱신한다.
 
 직접 측정한 성과를 주장하려면 기간·표본·계산 방법을 제공한다. 공개할 수 없다면 해당 수치를 지우고 관찰 가능한 상태만 남긴다. 외부 조직이 발표한 수치를 인용할 때는 발표 주체와 미공개 조건을 명시하고 자체 발표와 독립 검증을 구분한다. 세부 기준은 [출처 정책](research/source-policy.md)을 따른다.
 
@@ -93,9 +104,9 @@ npm run verify
 - 한 PR에는 하나의 논점만 담는다.
 - 변경 이유와 독자에게 미치는 영향을 설명한다.
 - 새 링크에는 확인일과 출처 유형을 기록한다.
-- `npm run verify`를 실행한다.
+- 작은 수정이 아니라면 `npm run verify`를 실행한다.
 - 자동 생성한 초안이라도 제출자가 사실, 책임 주체, 한국어 문장을 직접 검토한다.
-- 한국어 추가·수정 구간에 `korean-humanizer`를 적용하고 의미 보존을 확인한다.
+- 한국어 추가·수정 구간에 `korean-humanizer`를 적용하고 의미 보존을 확인한다. 적용하지 못했다면 PR에 적는다.
 
 ## 라이선스
 

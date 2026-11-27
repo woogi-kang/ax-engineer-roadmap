@@ -275,6 +275,10 @@
               "identity_confirmed": {
                 "type": "boolean"
               },
+              "not_found_record_url": {
+                "type": "string",
+                "format": "uri"
+              },
               "note": {
                 "$ref": "#/$defs/localizedText"
               }

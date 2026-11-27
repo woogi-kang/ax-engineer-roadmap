@@ -28,6 +28,7 @@ AI 도입을 시도했다가 중단하거나 되돌린 사례, 규제·법적 �
 
 ## 한눈에 보기
 
+<!-- failure-case-index:start -->
 | ID | 지역 | 조직 | 업무 | 주요 원인 | 결과 | 근거 |
 |---|---|---|---|---|---|---|
 | FK01 | KR | 스캐터랩 (이루다) | 대화형 챗봇 서비스 | 데이터 동의 위반, 유해 출력 | STOPPED · SANCTIONED | RECORD |
@@ -46,6 +47,7 @@ AI 도입을 시도했다가 중단하거나 되돌린 사례, 규제·법적 �
 | FG10 | US | Zillow Group (Zillow Offers) | 알고리즘 기반 주택 매입·재판매 | 정확도 미달, 검증 전 확대 | STOPPED | ADMITTED |
 | FG11 | US | MD Anderson Cancer Center · IBM Watson | 암 진료 의사결정 지원 | 연동 시스템 변경, 조달·예산 거버넌스 | STOPPED | RECORD |
 | FG12 | US | Amazon | 채용 서류 선별 | 편향 | STOPPED | PRESS |
+<!-- failure-case-index:end -->
 
 ## 반복되는 실패 원인
 
@@ -91,6 +93,7 @@ AI 도입을 시도했다가 중단하거나 되돌린 사례, 규제·법적 �
 
 ## 사례별 기록
 
+<!-- failure-case-records:start -->
 ### 국내 사례
 
 #### FK01. 스캐터랩 (이루다): 대화형 챗봇 서비스
@@ -294,6 +297,7 @@ AI 도입을 시도했다가 중단하거나 되돌린 사례, 규제·법적 �
 - **한계**: 익명 관계자에 기댄 단독 보도다. 채용 담당자가 순위만으로 결정하지 않았다는 설명도 익명 인용이다.
 - **출처**:
   - [Reuters (Euronews 전재)](https://www.euronews.com/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women) (언론 보도, 게시 2018-10-10, 확인 2026-10-27): 프로젝트 시작, 학습 데이터, 편향 내용, 팀 해체.
+<!-- failure-case-records:end -->
 
 ## 기존 카탈로그와의 관계
 
