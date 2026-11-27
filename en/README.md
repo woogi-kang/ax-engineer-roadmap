@@ -104,15 +104,15 @@ Learn the responsibilities of an AX Engineer and how role scope differs between 
 - [ ] I can take one posting and say whether it leans toward discovery, implementation, operations, or support.
 
 <!-- hiring-monthly:start -->
-**Monthly hiring snapshot (October 2026)**: 138 Korean AX, AI Agent, and FDE postings that opened between 2026-09-27 and 2026-10-27, collected from JobKorea. As of 2026-10-27, 132 were open and 6 closed.
+**Monthly hiring snapshot (November 2026)**: 156 Korean AX, AI Agent, and FDE postings that opened between 2026-10-28 and 2026-11-27, collected from JobKorea. As of 2026-11-27, 156 were open and 0 closed.
 
 | Type | Postings | Open |
 |---|---|---|
-| AX | 47 | 45 |
-| AI Agent | 72 | 70 |
-| FDE | 19 | 17 |
+| AX | 82 | 82 |
+| AI Agent | 54 | 54 |
+| FDE | 20 | 20 |
 
-Reposts and project postings are mixed in, so these are not unique vacancies. The list is updated monthly. For per-posting responsibilities and requirements, see [AX roles explained through job postings](research/hiring-signals.md). [Full October 2026 list](research/hiring-monthly/2026-10.md) · [Collection criteria](research/hiring-monthly/README.md)
+Reposts and project postings are mixed in, so these are not unique vacancies. The list is updated monthly. For per-posting responsibilities and requirements, see [AX roles explained through job postings](research/hiring-signals.md). [Full November 2026 list](research/hiring-monthly/2026-11.md) · [Collection criteria](research/hiring-monthly/README.md) · Archive: [October 2026](research/hiring-monthly/2026-10.md)
 <!-- hiring-monthly:end -->
 
 ### Step 2. Learn the technical foundations
