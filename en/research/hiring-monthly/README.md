@@ -6,6 +6,7 @@ Postings are collected the same way each month. Monthly lists, criteria, and pro
 
 ## Monthly lists
 
+- [November 2026](2026-11.md): applications opened 2026-10-28 to 2026-11-27, 156 JobKorea postings (including 17 reposts with the same company and title as October).
 - [October 2026](2026-10.md): applications opened 2026-09-27 to 2026-10-27, 138 JobKorea postings.
 
 ## Collection scope
@@ -35,7 +36,7 @@ Borderline postings stay in the excluded list with their reason so the next mont
 
 ## Classification and status
 
-- Type: `fde` if the title has FDE, Forward Deployed, or FD 엔지니어; otherwise `ai-agent` if it has Agent, 에이전트, or Agentic; otherwise `ax`.
+- Type: `fde` if the title has FDE, Forward Deployed, or FD 엔지니어; otherwise `ai-agent` if it has Agent, 에이전트, Agentic, or 에이전틱; otherwise `ax`.
 - Open (`open`): the deadline is on or after the check date, or the posting is rolling, and no closed notice appears.
 - Closed (`closed`): the page shows a closed notice (`closed-notice`) or the deadline has passed (`deadline-passed`).
 - Unverified (`unknown`): the detail page was read but its status could not be judged. A posting whose page could not be read is held (`held`) instead of listed.
@@ -45,14 +46,14 @@ Borderline postings stay in the excluded list with their reason so the next mont
 
 ## Platform methods
 
-| Platform | Method | October 2026 result |
-| --- | --- | --- |
-| JobKorea | Search `https://www.jobkorea.co.kr/Search/?stext=<query>&tabType=recruit&Page_No=<n>`, detail `https://www.jobkorea.co.kr/Recruit/GI_Read/<number>` | Collected |
-| Saramin | Detail pages attempted | Metadata only, not collected |
-| Wanted | Posting pages attempted | Client error, not collected |
-| LinkedIn | Not attempted | Robots rules, not collected |
+| Platform | Method | October 2026 result | November 2026 result |
+| --- | --- | --- | --- |
+| JobKorea | Search `https://www.jobkorea.co.kr/Search/?stext=<query>&tabType=recruit&Page_No=<n>`, detail `https://www.jobkorea.co.kr/Recruit/GI_Read/<number>` | Collected | Collected |
+| Saramin | Detail pages and search lists attempted | Metadata only, not collected | Lists show no posting numbers or links and stale dates, not collected |
+| Wanted | Posting pages attempted | Client error, not collected | Client error, not collected |
+| LinkedIn | Not attempted | Robots rules, not collected | Robots rules, not collected |
 
-JobKorea search results are sorted by relevance and show no dates. Posting numbers increase over time, so candidates are first filtered by number. In October 2026, numbers from 50053000 opened on or after 2026-09-27, and postings opened on 2026-10-27 were around 50250000. Next month, recalibrate the starting number near the last number in the previous list (50252108 this time).
+JobKorea search results are sorted by relevance and show no dates. Posting numbers increase over time, so candidates are first filtered by number. In October 2026, numbers from 50053000 opened on or after 2026-09-27, and postings opened on 2026-10-27 were around 50250000. Next month, recalibrate the starting number near the last number in the previous list (50252108 for October 2026, 50441743 for November 2026). Some postings above the lower bound still opened before the window (3 in November 2026), so filter again by the start date on the detail page. New postings are scattered deep in relevance-sorted results, so read every query to its last results page.
 
 The queries are AX, AX 엔지니어, AX 개발자, AI 전환, AI Agent, AI 에이전트, 에이전트, Agentic, FDE, and Forward Deployed. If Saramin, Wanted, or LinkedIn become readable, use the same queries and add their postings to the same file with a different `platform` value.
 
