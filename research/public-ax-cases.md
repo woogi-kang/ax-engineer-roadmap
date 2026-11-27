@@ -26,6 +26,7 @@
 
 ## 한눈에 보기
 
+<!-- public-case-index:start -->
 | 번호 | 지역 | 업무·산업 | 공개 조직 | 출처 | 도입 | 성과 |
 |---|---|---|---|---|---|---|
 | K01 | KR | 민원 답변 추천과 중복 민원 군집화 | 국민권익위원회 외 | ORG | LIMITED | NONE |
@@ -68,7 +69,9 @@
 | G22 | CH | 내부 규정 대조와 역할별 데이터 접근을 갖춘 업무 도구 제작 | Pictet | VENDOR | LIMITED | SELF |
 | G23 | US | 부품 공급사 주문 상태 문의와 공급망 처리 | GE Appliances | ORG | LIVE | SELF |
 | G24 | GLOBAL | 전사 에이전트 조정 역할의 중단과 업무 책임 재설계 | MING Labs | ORG | ADJUSTED | SELF |
+<!-- public-case-index:end -->
 
+<!-- public-case-records:start -->
 ## 국내 사례
 
 ### K01. 국민권익위원회 외 — 민원 답변 추천과 중복 민원 군집화
@@ -459,7 +462,6 @@
 
 추가 확인 `G15-operating-adjustment-confirmation` (확인 2026-10-26): 복잡한 상담에 사람 지원을 보강했다고 보도했다. 운영 방향만 교차 확인하며 초기 수치의 독립 검증은 아니다. [원문 1](https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929)
 
-
 ### G16. Virgin Atlantic
 
 - **업무와 판단**: 자료를 모아 고객 여정을 비교하고 제품팀이 결과를 수정·선택한다.
@@ -506,3 +508,4 @@
 
 - **업무와 판단**: 조정 에이전트 Major Tom을 중단하고 업무 소유권을 다시 설계했다.
 - **근거와 한계**: `G24-initial-review`, 발행 2026-04-02, 확인 2026-10-26. 13일 뒤 특정 역할을 중단한 자기보고다. 다른 에이전트 효과와 합치거나 회사 전체 철회로 쓰지 않는다. [원문 1](https://www.minglabs.com/insights/articles/we-fired-an-ai-agent) · [원문 2](https://www.minglabs.com/insights/articles/we-fired-an-ai-agent.json)
+<!-- public-case-records:end -->

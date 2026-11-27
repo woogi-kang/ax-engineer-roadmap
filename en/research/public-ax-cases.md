@@ -26,6 +26,7 @@ Stopped, reversed, sanctioned and unproven cases are collected separately in [Pu
 
 ## Overview
 
+<!-- public-case-index:start -->
 | ID | Region | Workflow / industry | Organization | Source | Deployment | Outcome |
 |---|---|---|---|---|---|---|
 | K01 | KR | Petition response drafts and duplicate clustering | 국민권익위원회 외 | ORG | LIMITED | NONE |
@@ -68,7 +69,9 @@ Stopped, reversed, sanctioned and unproven cases are collected separately in [Pu
 | G22 | CH | Internal policy comparison and role-scoped workflow tooling | Pictet | VENDOR | LIMITED | SELF |
 | G23 | US | Supplier order-status inquiries and parts operations | GE Appliances | ORG | LIVE | SELF |
 | G24 | GLOBAL | Retirement of an agent-coordination role and redesign of accountability | MING Labs | ORG | ADJUSTED | SELF |
+<!-- public-case-index:end -->
 
+<!-- public-case-records:start -->
 ## Korean cases
 
 ### K01. ACRC and participating agencies — draft responses and duplicate-petition clustering
@@ -435,7 +438,6 @@ Review `G15-source-confirmation-20261026` (checked 2026-10-26): Initial service 
 
 Review `G15-operating-adjustment-confirmation` (checked 2026-10-26): AP reports additional human support for complex cases. Only the operating direction is cross-checked, not the initial metrics. [Source 1](https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929)
 
-
 ### G16. Virgin Atlantic
 
 - **Workflow and judgment**: Teams assemble journey evidence; product staff review findings and choose actions.
@@ -482,3 +484,4 @@ Review `G15-operating-adjustment-confirmation` (checked 2026-10-26): AP reports 
 
 - **Workflow and judgment**: MING retired coordination agent Major Tom and redesigned workflow ownership.
 - **Evidence and limits**: `G24-initial-review`, published 2026-04-02, checked 2026-10-26. Self-report of one role retired after 13 days, not other agents’ outcomes or companywide AI withdrawal. [Source 1](https://www.minglabs.com/insights/articles/we-fired-an-ai-agent) · [Source 2](https://www.minglabs.com/insights/articles/we-fired-an-ai-agent.json)
+<!-- public-case-records:end -->

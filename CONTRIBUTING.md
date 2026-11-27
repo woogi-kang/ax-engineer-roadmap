@@ -91,7 +91,7 @@ npm run verify
 
 현재 공개 결과와 목표 설계를 섞지 않는다. `current_write_impact`, `current_autonomy`, `implemented_project_stages`에는 공개 코드와 산출물이 실제로 입증한 범위만 기록한다. `implemented_project_stages`는 해당 단계의 기능 구현을 가리킨다. 최소 평가 수, 독립 검수 등 모든 통과 조건의 완료 기록은 아니다. 더 넓게 설계한 목표는 `designed_write_impact`, `designed_autonomy`, `designed_project_stages`에 둔다. `case.json`을 바꾸면 `npm run generate:cases`로 한국어·영어 사례 문서의 현재 범위와 설계 목표 표를 다시 생성하고 함께 커밋한다.
 
-공개 조직 사례를 추가하거나 바꾸면 한국어·영어 카탈로그와 [`public-ax-cases.json`](research/public-ax-cases.json)을 함께 갱신한다. 출처 유형, 도입 단계, 성과 검증을 서로 다른 필드로 유지한다.
+공개 조직 사례를 추가하거나 바꿀 때는 [`public-ax-cases.json`](research/public-ax-cases.json)을 고친다. 사례 본문은 각 사례의 `catalog`에 적는다. `claims`에 이미 있는 문장은 다시 적지 않고 주장 ID로 가리킨다. 한국어·영어 카탈로그의 한눈에 보기 표와 사례별 본문은 `npm run generate:public-cases`로 다시 생성한다. 이 구간은 직접 고치지 않는다. 문서 첫머리의 사례 수와 원문 URL 수는 문서에서 함께 고친다. 출처 유형, 도입 단계, 성과 검증을 서로 다른 필드로 유지한다.
 
 실패·중단 사례는 성공 카탈로그와 분리해 [`ax-failure-cases.json`](research/ax-failure-cases.json)에 추가한다. 한국어·영어 문서의 요약표와 사례별 기록은 `npm run generate:failure-cases`로 다시 생성한다. 이 구간은 직접 고치지 않는다. 문서 첫머리의 건수와 원인별 표는 문서에서 함께 고친다. `related_case_studies`를 바꾸면 `npm run generate:failure-links`로 사례 문서의 `실패 사례 점검`과 사례 목록의 연결표를 다시 생성한다.
 

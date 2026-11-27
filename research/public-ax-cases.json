@@ -94,6 +94,48 @@
         "public-service-petition-response"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "국민권익위원회 외 — 민원 답변 추천과 중복 민원 군집화",
+          "en": "ACRC and participating agencies — draft responses and duplicate-petition clustering"
+        },
+        "points": {
+          "problem": {
+            "ko": "담당자가 민원 요지, 관련 법령, 과거 사례와 매뉴얼을 각각 찾고 비슷한 민원을 반복 처리해야 한다.",
+            "en": "Caseworkers separately search the petition, law, precedents, and manuals, then repeatedly handle similar submissions."
+          },
+          "verified_workflow": {
+            "ko": "AI가 민원 요지와 관련 법령을 찾고 답변 초안을 제시한다. 기간과 유사도 기준을 받은 뒤 비슷한 민원을 군집화하고, 담당자가 선택한 묶음을 일괄 처리한다.",
+            "en": "AI finds relevant law and proposes a response. It also clusters semantically similar petitions within a selected period; a caseworker confirms the group before bulk handling."
+          },
+          "ai_role": {
+            "ko": "검색, 요약, 답변 초안, 의미 기반 군집화, 이슈 추이 분석.",
+            "en": "Retrieval, summarization, response drafting, semantic clustering, and issue-trend analysis."
+          },
+          "human_judgment": {
+            "ko": "담당자가 초안을 수정·재작성하고 군집과 일괄 처리 대상을 확인한다.",
+            "en": "Caseworkers edit or rewrite the draft and approve each cluster and bulk-processing target."
+          },
+          "operating_boundary": {
+            "ko": "식품의약품안전처에는 답변 추천을, 국토교통부·인천광역시·시흥시에는 중복 민원 처리를 먼저 적용했다. 전체 국민신문고로 즉시 확대된 상태는 아니다."
+          },
+          "roadmap_lesson": {
+            "ko": "법령·기존 민원·매뉴얼의 출처 표시, 수정 이력, 잘못 묶인 민원의 분리, 담당자 승인과 재처리 절차가 핵심이다.",
+            "en": "Expose citations, preserve edit history, support splitting a bad cluster, and require approval and reprocessing controls."
+          },
+          "evidence": {
+            "ko": "서비스 개시는 확인되지만 정확도, 처리 시간, 담당자 수정률은 공개되지 않았다. 근거 코드는 `ORG · LIMITED · NONE`이다. [대한민국 정책브리핑](https://www.korea.kr/news/policyNewsView.do?newsId=156743148)",
+            "en": "Launch at selected agencies is confirmed, but accuracy, handling time, and edit rate are not public. [Korea Policy Briefing](https://www.korea.kr/news/policyNewsView.do?newsId=156743148)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "K01-source-confirmation",
+            "style": "source-check"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K01-baseline",
@@ -205,6 +247,48 @@
         "credit-underwriting-review"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "신한은행 — 법인 여신 분석과 의견서 작성 지원",
+          "en": "Shinhan Bank — corporate borrower analysis and credit-opinion support"
+        },
+        "points": {
+          "problem": {
+            "ko": "영업점 직원이 업체 현황, 재무, 산업, 거래, 담보와 기술 경쟁력 자료를 모아 기업을 분석하고 여신 의견서를 작성한다.",
+            "en": "Branch staff gather company, financial, industry, transaction, collateral, and technology data to write a corporate credit opinion."
+          },
+          "verified_workflow": {
+            "ko": "직원이 요청하면 여러 기업 정보를 통합하고 12개 주요 산업의 특성을 반영해 분석 결과를 보여준다.",
+            "en": "The system integrates company information and applies analysis logic tailored to 12 major industries."
+          },
+          "ai_role": {
+            "ko": "데이터 정리, 산업별 재무 해석 지원, 의견서에 필요한 정보 통합.",
+            "en": "Data organization, industry-aware financial interpretation, and evidence integration for an opinion."
+          },
+          "human_judgment": {
+            "ko": "직원이 분석을 검토하고 기업별 금융 판단과 제안을 맡는다.",
+            "en": "Staff review the analysis and own the company-specific credit judgment and proposal."
+          },
+          "operating_boundary": {
+            "ko": "LLM 단독 판단이 아니라 은행의 기업분석 경험·데이터와 업종별 분석 로직을 함께 사용한다고 설명한다."
+          },
+          "roadmap_lesson": {
+            "ko": "재무 수치의 원본, 산업별 규칙 버전, 분석과 승인 권한, 의견서에 인용한 근거를 분리해야 한다.",
+            "en": "Separate source financials, industry-rule versions, analysis rights, approval rights, and cited evidence."
+          },
+          "evidence": {
+            "ko": "도입은 확인되지만 심사 시간, 승인 품질, 오판률은 공개되지 않았다. 근거 코드는 `ORG · LIMITED · NONE`이다. [신한금융그룹](https://www.shinhangroup.com/kr/archive/press/detail/679)",
+            "en": "Deployment is confirmed; review time, decision quality, and error rate are not public. [Shinhan Financial Group](https://www.shinhangroup.com/kr/archive/press/detail/679)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "K02-source-confirmation",
+            "style": "source-check"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K02-baseline",
@@ -316,6 +400,54 @@
         "credit-underwriting-review"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "신한라이프 — 대화형 가입설계와 전산심사",
+          "en": "Shinhan Life — conversational insurance-plan design and screening"
+        },
+        "points": {
+          "problem": {
+            "ko": "설계사가 여러 화면을 오가며 고객 조건, 보장 한도와 특약 규칙을 맞추고 반복해서 설계를 수정한다.",
+            "en": "Planners move across screens to align customer conditions, coverage limits, and rider rules, then repeatedly revise a plan."
+          },
+          "verified_workflow": {
+            "ko": "고객 동의를 받은 정보와 보장 내용을 분석해 설계안과 추천 설명을 제시하고, 설계사가 대화형으로 수정하면 전산심사도 함께 돌린다.",
+            "en": "With customer consent, the system analyzes customer and coverage data, proposes a plan and explanation, accepts conversational edits, and runs computerized screening."
+          },
+          "ai_role": {
+            "ko": "설계 방향과 대안 추천, 규칙에 맞춘 수정 지원, 추천 설명 초안.",
+            "en": "Direction and alternative recommendations, rule-aware edits, and explanation drafts."
+          },
+          "human_judgment": {
+            "ko": "설계사가 추천안을 수정하고 고객과 선택을 확인한다.",
+            "en": "The planner changes the recommendation and confirms the choice with the customer."
+          },
+          "operating_boundary": {
+            "ko": "고객 동의, 상품 규칙과 전산심사를 통과해야 하며 AI 추천만으로 가입이 확정되는 흐름으로 설명되지 않는다."
+          },
+          "roadmap_lesson": {
+            "ko": "상품 규칙의 결정론적 검사와 생성형 추천을 분리하고, 고객 동의·설계 변경·심사 결과를 한 감사 기록에 함께 남겨야 한다.",
+            "en": "Separate deterministic product-rule checks from generative recommendations and join consent, changes, and screening results in one audit trail."
+          },
+          "evidence": {
+            "ko": "기존 2월 자료는 개시를 설명하며 성과 수치가 없었다. 아래 후속 발표의 자체 수치를 반영해 근거 코드는 `ORG · LIMITED · SELF`다. [신한금융그룹](https://shinhangroup.com/kr/archive/press/detail/637)",
+            "en": "The February source describes launch without outcome measures; the follow-up below adds self-reported timing evidence (`ORG · LIMITED · SELF`). [Shinhan Financial Group](https://shinhangroup.com/kr/archive/press/detail/637)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "K03-source-confirmation",
+            "style": "source-check"
+          },
+          {
+            "text": {
+              "ko": "추가 확인 `K03-lico2-speed` (발행 2026-10-16, 확인 2026-10-26): LICO 2.0은 추천 속도 약 35% 개선을 발표했다. 표본·기간·속도 정의가 없으며 설계 품질 개선으로 읽지 않는다. [원문](https://shinhangroup.com/kr/archive/press/detail/993)",
+              "en": "Additional check `K03-lico2-speed` (published 2026-10-16; checked 2026-10-26): LICO 2.0 reports about 35% faster recommendations; sample, dates, and speed definition are missing, and this is not design-quality evidence. [Source](https://shinhangroup.com/kr/archive/press/detail/993)"
+            }
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K03-baseline",
@@ -472,6 +604,66 @@
         "centralized-mail-assist"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "LG유플러스 — 상담 중 답변 추천과 후처리 지원",
+          "en": "LG Uplus — in-call answer recommendation and after-call support"
+        },
+        "points": {
+          "problem": {
+            "ko": "상담사가 통화 중 고객 상황을 이해하고 여러 내부 자료에서 절차와 주의사항을 찾은 뒤 상담 결과를 분류·정리한다.",
+            "en": "Agents must understand a caller, search internal procedures, respond, and classify the outcome."
+          },
+          "verified_workflow": {
+            "ko": "AI가 대화를 분석해 내부 정보를 검색하고 고객 상황에 맞는 답변을 추천하며 상담 후 분류까지 지원한다.",
+            "en": "AI analyzes the conversation, retrieves internal information, recommends a contextual answer, and supports after-call classification."
+          },
+          "ai_role": {
+            "ko": "대화 이해, 내부 지식 검색, 복합 질문 답변 생성, 상담 분류.",
+            "en": "Conversation understanding, knowledge retrieval, answer generation, and classification."
+          },
+          "human_judgment": {
+            "ko": "상담사가 추천 내용을 바탕으로 고객에게 안내하고 예외 상황을 처리한다.",
+            "en": "The agent chooses what to tell the customer and handles exceptions."
+          },
+          "reported_result": {
+            "ko": "회사는 전체 상담 시간이 평균 19%, 월 약 117만 분 줄었다고 발표했다.",
+            "en": "LG reported a 19% average reduction in total consultation time, about 1.17 million minutes per month."
+          },
+          "roadmap_lesson": {
+            "ko": "답변 정확도와 함께 잘못된 추천을 상담사가 알아차리는 시간, 다른 담당자에게 넘긴 비율, 상담 후 기록 품질을 평가해야 한다."
+          },
+          "evidence": {
+            "ko": "실제 운영과 회사 측 수치는 확인되지만 월간 환산 가정은 공개됐으나 평가 표본, 별도 통제집단과 원자료는 공개되지 않았다. 근거 코드는 `ORG · LIVE · SELF`다. [LG](https://www.lg.co.kr/media/release/29014)",
+            "en": "Live use is confirmed, but the monthly extrapolation assumptions are public, while the evaluation sample, separate control group, and raw observations are not. [LG](https://www.lg.co.kr/media/release/29014)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "추가 확인 `K04-followup-metrics` (발행 2026-09-30, 확인 2026-10-26): 회사는 2024년 대비 2026년 상담 시간 16% 감소, 대기시간 47초에서 5초로 감소, 연간 약 800만 건의 AI 문의 처리를 발표했다. 17개 센터 운영을 설명하지만 지표별 관측기간, 표본·분모, 별도 통제집단과 세부 계산 방법은 공개하지 않았다. 기존 19% 수치와 같은 조건으로 측정했다는 근거가 없어 두 수치를 이어 성과 추세로 해석하지 않는다. 자체 발표인 `SELF`를 유지한다. [LG 후속 발표](https://lg.co.kr/media/release/30616)",
+              "en": "Follow-up `K04-followup-metrics` (published 2026-09-30; checked 2026-10-26): LG Uplus reported 16% less consultation time in 2026 than in 2024, waits falling from 47 to 5 seconds, and about 8 million AI-handled inquiries annually. It describes 17 centers without metric-specific observation dates, samples, or denominators; no separately reported control group or detailed calculation method is provided. The earlier 19% figure has not been matched to these conditions; the two figures do not establish a trend. Outcome evidence remains `SELF`. [LG follow-up](https://lg.co.kr/media/release/30616)"
+            }
+          },
+          {
+            "text": {
+              "ko": "추가 확인 `K04-followup-human-choice`: 같은 발표는 상담 방식 선택권, 65세 이상 고객의 상담사 우선 응대, AI Auto QA를 활용한 코칭을 설명한다. 독립 운영 감사 결과는 아니다. 실습에서는 사람 상담 선택과 예외 이관, 평가 결과를 코칭으로 바꾸는 절차도 시험한다.",
+              "en": "Follow-up `K04-followup-human-choice`: the same announcement describes customer choice of consultation mode, human-agent priority for customers aged 65 and above, and coaching informed by AI Auto QA. This is not an independent operational audit. Practice should test human-channel choice, exception escalation, and how review findings inform coaching."
+            }
+          },
+          {
+            "text": {
+              "ko": "추가 정정 `K04-baseline-calculation-clarification` (원문 발행 2025-05-27, 확인 2026-10-26): 기존 [LG 발표](https://www.lg.co.kr/media/release/29014)는 대기 17초와 통화 30초 절감, 하루 약 7만5000건과 20근무일을 월 약 117만 분의 환산 근거로 제시한다. 산출 방법 전체가 미공개라는 서술은 정정한다. 이 가정이 독립 효과 검증이나 2026년 수치와의 직접 비교를 가능하게 하지는 않는다.",
+              "en": "Calculation correction `K04-baseline-calculation-clarification` (published 2025-05-27; checked 2026-10-26): the [original LG release](https://www.lg.co.kr/media/release/29014) gives savings of 17 waiting seconds and 30 talk seconds, about 75,000 daily calls, and 20 workdays as its basis for roughly 1.17 million minutes monthly. The claim that no calculation basis was public is corrected. These assumptions do not establish independent effects or comparability with the 2026 figure."
+            }
+          },
+          {
+            "claim": "K04-source-confirmation",
+            "style": "source-check"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K04-baseline",
@@ -715,6 +907,60 @@
         "slack-meeting-actions"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "삼성SDS — 회의록·담당자별 후속 업무·메일 초안",
+          "en": "Samsung SDS — minutes, assigned follow-up work, and communication drafts"
+        },
+        "points": {
+          "problem": {
+            "ko": "회의 자막·번역·회의록, 담당자와 기한이 있는 후속 업무, 메일·메신저 요약을 사람이 반복 작성한다.",
+            "en": "People repeatedly create captions, translations, minutes, follow-up work with owners and deadlines, summaries, and email drafts."
+          },
+          "verified_workflow": {
+            "ko": "Brity Works의 미팅, 메일, 메신저와 문서에서 자막, 번역, 요약, 회의록과 초안을 생성한다.",
+            "en": "Brity Works creates these artifacts across meetings, mail, messaging, and documents."
+          },
+          "ai_role": {
+            "ko": "음성 인식, 번역, 회의 요약, 후속 업무 후보 추출, 대화 요약, 메일 초안.",
+            "en": "Speech recognition, translation, summarization, follow-up-work extraction, and drafting."
+          },
+          "human_judgment": {
+            "ko": "사용자가 결과를 확인하고 공유·발송·후속 업무 반영 여부를 결정한다.",
+            "en": "Users verify the output and decide whether to share, send, or apply it."
+          },
+          "reported_result": {
+            "ko": "약 1만 명 사내 시범에서 회의록 작성 시간 75% 이상, 메일 요약·초안 시간 66% 이상 절감했다고 발표했다."
+          },
+          "roadmap_lesson": {
+            "ko": "회의 참석자 동의, 발언자·결정·제안 구분, 후속 업무의 담당자·기한 확인, 외부 발송 승인을 각각 정해야 한다.",
+            "en": "Separate attendee consent, decision-versus-suggestion labeling, follow-up owner and deadline confirmation, and external-send approval."
+          },
+          "evidence": {
+            "ko": "사내 시범과 회사 측 수치이며 측정 설계와 오류율은 공개되지 않았다. 근거 코드는 `ORG · PILOT · SELF`다. [삼성SDS](https://www.samsungsds.com/kr/news/sds-genai-mediaday.html)",
+            "en": "Samsung reported over 75% less minutes-writing time and over 66% less email work in an internal pilot of about 10,000 people; methods and error rates are not public. [Samsung SDS](https://www.samsungsds.com/kr/news/sds-genai-mediaday.html)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "추가 확인 `K05-followup-public-sector` (발행 2026-08-13, 확인 2026-10-26): 삼성SDS는 중앙부처 9곳이 Brity Works 도입을 확정했고 2026년 8월까지 서비스를 순차 개시할 계획이라고 발표했다. 9곳은 도입 기관 수이며 성과 평가 표본이 아니다. 모든 기관의 운영 개시나 사용 성과는 이 자료로 확인할 수 없다. 기존 약 1만 명 사내 시범과 모집단이 다르므로 `PILOT` 분류와 기존 성과의 범위를 보존한다. [삼성SDS 후속 발표](https://www.samsungsds.com/kr/news/sds-2608013.html)",
+              "en": "Follow-up `K05-followup-public-sector` (published 2026-08-13; checked 2026-10-26): Samsung SDS announced that nine central-government ministries had selected Brity Works, with staged service starts planned by August 2026. Nine is a count of selecting institutions, not an outcome-evaluation sample. This source does not verify operation or results in all institutions. Their population differs from the earlier internal pilot of about 10,000 people; the original `PILOT` classification and outcome scope are preserved. [Samsung SDS follow-up](https://www.samsungsds.com/kr/news/sds-2608013.html)"
+            }
+          },
+          {
+            "claim": "K05-source-confirmation",
+            "style": "source-check"
+          },
+          {
+            "text": {
+              "ko": "추가 확인 `K05-public-service-launch` (발행 2026-04-30, 확인 2026-10-26): 온AI 서비스 개시와 70여 기관의 Drive 사용은 서로 구분한다. 8월의 9개 부처와도 분모가 다르며 사내 시범의 절감률을 적용하지 않는다. [원문](https://www.samsungsds.com/kr/news/bw-260430.html)",
+              "en": "Additional check `K05-public-service-launch` (published 2026-04-30; checked 2026-10-26): Separate the OnAI launch from Drive use at about 70 agencies and August’s nine ministries; internal savings do not transfer. [Source](https://www.samsungsds.com/kr/news/bw-260430.html)"
+            }
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K05-baseline",
@@ -918,6 +1164,50 @@
         "equipment-anomaly-maintenance"
       ],
       "review_status": "not-rechecked",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "포스코 — 센서·영상 기반 예지정비와 경고",
+          "en": "POSCO — sensor- and vision-based predictive maintenance"
+        },
+        "points": {
+          "problem": {
+            "ko": "설비 점검이 숙련자의 경험과 사후 대응에 의존하면 미세한 이상 징후나 작업자 인지 지연을 놓칠 수 있다.",
+            "en": "Experience-led inspection and reactive maintenance can miss subtle equipment anomalies or delay operator awareness."
+          },
+          "recorded_workflow": {
+            "ko": "PIMS가 공정 설비 데이터를 통합 분석하고, 압연 공정과 영상 모니터링 모델이 코일 폭 불일치와 강판 치우침을 감지해 작업자에게 경고한다.",
+            "en": "PIMS integrates equipment data; rolling-process and vision models detect coil-width mismatch and plate drift and warn operators."
+          },
+          "ai_role": {
+            "ko": "센서·영상 이상 탐지, 상태 비교, 사전 경고.",
+            "en": "Sensor and video anomaly detection, state comparison, and early warning."
+          },
+          "human_judgment": {
+            "ko": "작업자가 경고를 확인하고 정비·운전 조치를 결정한다.",
+            "en": "Operators confirm the warning and decide maintenance or operating action."
+          },
+          "operating_boundary": {
+            "ko": "AI가 설비를 임의로 정지시키는 사례가 아니라 안전하고 정확한 작업자 판단을 돕는 구조로 설명된다."
+          },
+          "roadmap_lesson": {
+            "ko": "정상 기준, 경고 임계값, 누락·오탐 비용, 센서 장애, 수동 운전과 긴급 정지 절차가 LLM 품질보다 먼저다.",
+            "en": "Normal baselines, alert thresholds, false-positive and false-negative cost, sensor failure, manual operation, and emergency stop come before model fluency."
+          },
+          "evidence": {
+            "ko": "기존 자료는 현장 적용을 설명했지만 장애 감소량과 오탐률은 제시하지 않았다. 근거 코드는 `ORG · LIVE · NONE`이다. [포스코그룹 뉴스룸](https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/)",
+            "en": "The earlier source described field use without failure-reduction or false-alert measures. [POSCO Newsroom](https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%B2%A0%EC%86%8C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EC%84%A4%EB%B9%84%EB%A5%BC-%EC%9D%BD%EB%8B%A4-data-ai-%EA%B8%B0%EB%B0%98/)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "2026-10-26 접근 확인: 기존 원문과 검색에서 찾은 후속 원문은 502로 열리지 않았다. 검색 본문만으로 새 검증 주장을 등록하지 않았으며 위 설명과 `LIVE · NONE`은 이전 근거의 범위로 유지한다.",
+              "en": "Access check on 2026-10-26: the original and a follow-up found in search returned 502. Search excerpts do not support a new verified claim; the description and `LIVE · NONE` retain their earlier evidence scope."
+            }
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K06-baseline",
@@ -985,6 +1275,54 @@
         "equipment-anomaly-maintenance"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "LG전자 — 개발 단계 완성품 품질 예측",
+          "en": "LG Electronics — finished-product quality prediction during development"
+        },
+        "points": {
+          "problem": {
+            "ko": "제품 개발 과정에서 여러 설계·시험 조건을 비교해 완성품 품질을 예측하는 데 긴 시간이 든다.",
+            "en": "Comparing design and test conditions to predict finished-product quality is slow."
+          },
+          "verified_workflow": {
+            "ko": "AI 품질 예측 기술의 개발을 발표했다. 개발자가 결과를 활용할 웹 기반 `Eng.AI`와 제품 설계 적용은 당시 계획으로 제시됐다.",
+            "en": "LG announced development of AI quality-prediction technology; the web-based `Eng.AI` interface and staged product-design use were plans at publication."
+          },
+          "ai_role": {
+            "ko": "개발 조건과 품질 데이터 분석, 완성품 품질 예측.",
+            "en": "Development-condition analysis and finished-product quality prediction."
+          },
+          "human_judgment": {
+            "ko": "개발자가 예측을 검토하고 시험·설계 변경과 출시 판단에 반영한다.",
+            "en": "Developers decide additional tests, design changes, and release implications."
+          },
+          "reported_result": {
+            "ko": "회사는 품질 예측 시간을 기존 대비 최대 99% 단축했다고 발표했다."
+          },
+          "roadmap_lesson": {
+            "ko": "모델 예측과 실제 시험 결과의 차이, 제품군별 데이터 이동, 안전 기준과 출시 승인 절차를 별도로 관리해야 한다.",
+            "en": "Track model-versus-test variance, product-family data drift, safety criteria, and release approval separately."
+          },
+          "evidence": {
+            "ko": "기술 개발과 회사 측 최대치가 공개됐지만 제품군, 표본과 측정 방법은 확인되지 않았다. 실제 플랫폼 운영은 이 자료로 확인할 수 없어 근거 코드는 `ORG · UNKNOWN · SELF`로 정정한다. [LG](https://www.lg.co.kr/media/release/28789)",
+            "en": "LG reported up to 99% less prediction time, but product scope, sample, and measurement method are not public. [LG](https://www.lg.co.kr/media/release/28789)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "운영 경계 정정 `K07-platform-plan-correction` (원문 발행 2025-03-27, 확인 2026-10-26): Eng.AI는 발표 당시 준비 중인 플랫폼이었다. 이미 개발자가 사용한다는 서술과 `LIMITED` 분류를 입증할 수 없어 `UNKNOWN`으로 낮췄다. 기술의 최대 99% 수치는 회사 발표로 유지하며 플랫폼 운영 성과로 옮기지 않는다.",
+              "en": "Operating-boundary correction `K07-platform-plan-correction` (published 2025-03-27; checked 2026-10-26): Eng.AI was a planned platform. Existing developer use and the earlier `LIMITED` classification were not established, so deployment is corrected to `UNKNOWN`. The maximum 99% remains a company technology claim, not a platform-operating outcome."
+            }
+          },
+          {
+            "claim": "K07-source-confirmation",
+            "style": "source-check"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K07-baseline",
@@ -1152,6 +1490,54 @@
         "care-conversation-record"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "SK텔레콤 — 취약계층 안부 확인과 상담 이관",
+          "en": "SK Telecom — check-in calls and escalation for vulnerable people"
+        },
+        "points": {
+          "problem": {
+            "ko": "생활지원사와 지자체가 많은 취약계층 가구에 정기적으로 연락하고 위험 신호를 놓치지 않아야 한다.",
+            "en": "Care workers and local governments must contact many households regularly without missing risk signals."
+          },
+          "verified_workflow": {
+            "ko": "AI콜이 주 1회 안부를 확인하고 위험 발화를 찾은 뒤 전문 상담사와 병원 동행 같은 사람의 지원으로 연결한다.",
+            "en": "AI calls weekly, detects concerning statements, and connects the case to human counseling or support such as a hospital visit."
+          },
+          "ai_role": {
+            "ko": "반복 안부 전화, 응답 분류, 위험 발화 탐지.",
+            "en": "Repetitive calls, response classification, and risk-signal detection."
+          },
+          "human_judgment": {
+            "ko": "관제·상담 인력이 통화 결과를 확인하고 심리상담, 방문, 병원 동행이나 긴급 지원을 결정한다.",
+            "en": "Monitoring and counseling staff decide counseling, visits, hospital accompaniment, or emergency support."
+          },
+          "reported_result": {
+            "ko": "회사는 1년 동안 11만 명 이상의 안부를 확인하고 위험 신호가 있는 4,063명을 전문 상담으로 연결했다고 발표했다."
+          },
+          "roadmap_lesson": {
+            "ko": "성공 기준은 통화량이 아니라 놓친 위험 신호, 잘못된 경보, 실제 인계 완료, 연락 실패 재시도와 긴급 대응 시간이다.",
+            "en": "Measure missed risks, false alerts, completed handoffs, retry policy, and emergency response time—not call volume alone."
+          },
+          "evidence": {
+            "ko": "운영 규모는 공식 발표지만 독립 평가와 민감도·특이도는 공개되지 않았다. 근거 코드는 `ORG · LIVE · SELF`다. [SK텔레콤 뉴스룸](https://news.sktelecom.com/200115)",
+            "en": "SKT reported check-ins covering more than 110,000 people and 4,063 counseling handoffs in one year; independent sensitivity and specificity are not public. [SK Telecom Newsroom](https://news.sktelecom.com/200115)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "단위 정정 `K08-people-unit-correction` (원문 발행 2023-11-28, 확인 2026-10-26): 원문은 110,538명과 약 176만 건의 전화를 구분한다. 영문의 11만 건 안부 확인으로 읽히는 표현을 11만 명 이상으로 고쳤다. 4,063명 전문 상담 연결도 사람 수이며 안전 효과의 검증값은 아니다.",
+              "en": "Unit correction `K08-people-unit-correction` (published 2023-11-28; checked 2026-10-26): the source distinguishes 110,538 people from about 1.76 million calls. English wording implying 110,000 check-in events is corrected to more than 110,000 people. The 4,063 counseling connections also count people, not verified safety effects."
+            }
+          },
+          {
+            "claim": "K08-source-confirmation",
+            "style": "source-check"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K08-baseline",
@@ -1307,6 +1693,60 @@
         "care-conversation-record"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "SK텔레콤 — 발달장애인 행동 기록 지원",
+          "en": "SK Telecom — behavioral-record support for people with developmental disabilities"
+        },
+        "points": {
+          "problem": {
+            "ko": "돌봄 인력이 돌발 행동을 관찰하면서 빈도와 패턴을 동시에 기록하기 어렵다.",
+            "en": "Care staff cannot easily observe sudden behavior and record its frequency and pattern at the same time."
+          },
+          "verified_workflow": {
+            "ko": "CCTV 인프라의 비전 AI가 행동 이벤트를 인식해 빈도와 패턴을 기록하고 돌봄 인력이 검토한다.",
+            "en": "Vision AI uses existing CCTV infrastructure to identify behavioral events and create records for care-worker review."
+          },
+          "ai_role": {
+            "ko": "행동 인식, 이벤트 분류, 관찰 기록 생성.",
+            "en": "Behavior recognition, event classification, and observation-record generation."
+          },
+          "human_judgment": {
+            "ko": "돌봄 담당자가 맥락을 확인하고 기록·지원 계획에 반영한다.",
+            "en": "Care staff validate context and decide how records affect support plans."
+          },
+          "reported_result": {
+            "ko": "회사는 동일 환경 대비 기록 작업 시간을 최대 90% 단축했다고 발표했다."
+          },
+          "roadmap_lesson": {
+            "ko": "영상 동의와 보존, 사람별 오인식 편향, 위험 행동의 즉시 대응과 사후 기록을 분리해야 한다.",
+            "en": "Separate video consent and retention, identity-related bias, immediate safety response, and later recordkeeping."
+          },
+          "evidence": {
+            "ko": "발표 당시 12개 시설 사용과 공급사 측 최대치이며 지표별 표본과 임상적 효과는 공개되지 않았다. 도입 단계는 제한 운영으로 정정해 `ORG · LIMITED · SELF`다. [SK텔레콤 뉴스룸](https://news.sktelecom.com/214674)",
+            "en": "SKT describes use at 12 facilities and reports up to 90% less record work; metric-level samples and clinical impact are not public. Deployment is corrected to limited operation. [SK Telecom Newsroom](https://news.sktelecom.com/214674)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "도입 범위 정정 `K09-deployment-scope-correction` (원문 발행 2025-08-28, 확인 2026-10-26): 원문이 사용 중인 12개 시설을 명시하므로 기존 `PILOT`을 `LIMITED`로 정정했다. 시설 수는 90% 수치의 표본이 아니며 발표 당시의 도입 범위를 현재 운영 확인으로 확대하지 않는다.",
+              "en": "Deployment-scope correction `K09-deployment-scope-correction` (published 2025-08-28; checked 2026-10-26): the source explicitly describes 12 sites in use, correcting the earlier `PILOT` label to `LIMITED`. Site count is not the sample for the 90% measure; publication-time scope does not verify current operation."
+            }
+          },
+          {
+            "claim": "K09-source-confirmation",
+            "style": "source-check"
+          },
+          {
+            "text": {
+              "ko": "추가 확인 `K09-expert-intervention-boundary` (발행 2026-06-10, 확인 2026-10-26): 전문가가 행동 기록을 검토해 중재를 정한다. 케어 LLM과 보호자 AI는 개발·구상 단계이며 임상 효과가 검증된 것은 아니다. [원문](https://news.sktelecom.com/226306)",
+              "en": "Additional check `K09-expert-intervention-boundary` (published 2026-06-10; checked 2026-10-26): Experts review records for intervention; the care LLM and guardian AI remain development/plans, without verified clinical effects. [Source](https://news.sktelecom.com/226306)"
+            }
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K09-baseline",
@@ -1518,6 +1958,54 @@
         "care-conversation-record"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "LG유플러스 — 출결·상담·활동 기록 통합",
+          "en": "LG Uplus — unified attendance, counseling, and activity records"
+        },
+        "points": {
+          "problem": {
+            "ko": "교사가 출결 서류, 학습 활동, 상담과 학사 일정을 서로 다른 화면과 문서에서 관리한다.",
+            "en": "Teachers manage attendance, learning activity, counseling, and schedules across different screens and documents."
+          },
+          "verified_workflow": {
+            "ko": "학생정보시스템, 학습관리시스템과 상담 데이터를 묶어 교사가 출결, 학생 카드, AI 기반 활동 기록과 상담 자료를 함께 조회하게 한다.",
+            "en": "The product connects student-information, learning-management, and counseling data to provide attendance, student cards, AI-supported activity records, and counseling material."
+          },
+          "ai_role": {
+            "ko": "기록 통합·분석, 학생별 활동·상담 자료와 교육 활동 제안.",
+            "en": "Record integration and analysis, student-level activity and counseling material, and suggested learning activities."
+          },
+          "human_judgment": {
+            "ko": "교사가 기록을 확인하고 상담, 평가와 교육 활동에 사용할지 결정한다.",
+            "en": "Teachers verify records and decide their use in counseling, evaluation, and teaching."
+          },
+          "operating_boundary": {
+            "ko": "제주교육청과의 협약은 2026학년도 시범 제공 계획이다. 실제 개시나 전국 학교의 운영 성과는 확인하지 못했다."
+          },
+          "roadmap_lesson": {
+            "ko": "학생 데이터 최소화, 교사의 수정권, 자동 생성 기록의 근거, 학교생활기록 반영 전 승인과 정정 절차가 필요하다.",
+            "en": "Require data minimization, teacher correction rights, evidence for generated records, and approval and correction before official student-record use."
+          },
+          "evidence": {
+            "ko": "제품 구성과 시범 제공 계획을 확인했다. 실제 시범 개시를 입증하지 못해 근거 코드는 `ORG · UNKNOWN · NONE`으로 정정한다. [LG유플러스](https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140)",
+            "en": "Product scope and a planned Jeju pilot are documented; actual pilot operation is not established, so the classification is corrected to `ORG · UNKNOWN · NONE`. [LG Uplus](https://www.lguplus.com/biz/all/product-service/metaverse/superschool/B000000140)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "K10-source-confirmation",
+            "style": "source-check"
+          },
+          {
+            "text": {
+              "ko": "추가 확인 `K10-pilot-plan-correction` (발행 2025-12-12, 확인 2026-10-26): 2025-12-12 협약은 시범학교 10곳과 2026학년도 제공 계획이다. 개시 증거가 없어 `PILOT`을 `UNKNOWN`으로 정정하며 이전 분류를 이력으로 남긴다. [원문](https://news.lguplus.com/20952)",
+              "en": "Additional check `K10-pilot-plan-correction` (published 2025-12-12; checked 2026-10-26): The 2025-12-12 agreement plans ten schools and 2026 service; without launch evidence, `PILOT` becomes `UNKNOWN`, preserving the prior classification in history. [Source](https://news.lguplus.com/20952)"
+            }
+          }
+        ]
+      },
       "claims": [
         {
           "id": "K10-baseline",
@@ -1683,6 +2171,27 @@
       "review_status": "initial-claims-reviewed",
       "baseline_deployment_stage": "operation",
       "introduced_at": "2026-10-26",
+      "catalog": {
+        "layout": "summary",
+        "heading": {
+          "ko": "HSAD: 소비자 조사",
+          "en": "HSAD: consumer research"
+        },
+        "points": {
+          "workflow": {
+            "ko": "응답에 맞춘 추가 질문으로 조사하고 분석한다. 회사는 조사 기간을 4주 이상에서 약 2주로 줄이고 조사·분석 비용을 약 70% 절감했다고 발표했다. 비교한 프로젝트 수와 비용 항목은 미공개다.",
+            "en": "Adaptive questions support research. The company reports research time falling from more than four weeks to about two and research/analysis costs falling by roughly 70%. Project count and included costs are undisclosed."
+          },
+          "practice": {
+            "ko": "질문 분기 뒤에도 응답 비교가 가능한지, 동의·원문 보존·분석 검수가 어디서 필요한지 시험한다.",
+            "en": "Test comparability after branching, consent, source retention, and analysis review."
+          },
+          "evidence": {
+            "ko": "조사 품질·대표성·동의 절차와 최종 승인 통제는 확인하지 못했다. `ORG · LIVE · SELF`. [원문 2026-09-30](https://lg.co.kr/media/release/30615)",
+            "en": "Research quality, representativeness, consent procedures, and final approval controls were not established. `ORG · LIVE · SELF`. [Source 2026-09-30](https://lg.co.kr/media/release/30615)"
+          }
+        }
+      },
       "claims": [
         {
           "id": "K11-initial-review",
@@ -1752,6 +2261,27 @@
       "review_status": "initial-claims-reviewed",
       "baseline_deployment_stage": "operation",
       "introduced_at": "2026-10-26",
+      "catalog": {
+        "layout": "summary",
+        "heading": {
+          "ko": "현대자동차그룹: 앱 리뷰 답변",
+          "en": "Hyundai Motor Group: app-review replies"
+        },
+        "points": {
+          "workflow": {
+            "ko": "리뷰를 분류하고 근거 지식으로 초안을 만든 뒤 담당자가 검토·전달한다. 평균 처리 시간 35분에서 5분으로의 단축은 회사 발표이며 표본과 산식은 미공개다.",
+            "en": "Classify reviews, draft from source knowledge, then obtain staff review before delivery. The reported average handling-time change from 35 to five minutes is a company comparison with an undisclosed sample and calculation."
+          },
+          "practice": {
+            "ko": "출처가 바뀌거나 답변이 틀렸을 때 승인·수정·발송 기록을 대조한다.",
+            "en": "Compare approval, correction, and send records when evidence changes or replies are wrong."
+          },
+          "evidence": {
+            "ko": "85%는 처리 범위다. 9월 자동화는 계획이다. `ORG · LIVE · SELF`. [원문 2026-08-12](https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation)",
+            "en": "85% is coverage; September automation was planned. `ORG · LIVE · SELF`. [Source 2026-08-12](https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation)"
+          }
+        }
+      },
       "claims": [
         {
           "id": "K12-initial-review",
@@ -1820,6 +2350,27 @@
       "review_status": "initial-claims-reviewed",
       "baseline_deployment_stage": "operation",
       "introduced_at": "2026-10-26",
+      "catalog": {
+        "layout": "summary",
+        "heading": {
+          "ko": "현대자동차그룹: 정비 지원",
+          "en": "Hyundai Motor Group: maintenance assistance"
+        },
+        "points": {
+          "workflow": {
+            "ko": "정비사가 매뉴얼·정비 기록을 검색하고 공식 근거를 확인한다. 대응 시간 약 42% 단축은 회사 발표이며 작업별 정의와 평가 표본은 미공개다.",
+            "en": "Technicians retrieve manuals and maintenance records and verify official evidence. The reported response-time reduction of roughly 42% is a company comparison with undisclosed task definitions and evaluation sample."
+          },
+          "practice": {
+            "ko": "차종·버전이 다른 근거의 거절과 위험 작업의 사람 인계를 시험한다.",
+            "en": "Test rejection of wrong-model or obsolete evidence and human escalation for hazardous work."
+          },
+          "evidence": {
+            "ko": "진단 정확도나 자율 수리의 증거가 아니다. `ORG · LIVE · SELF`. [원문 2026-08-12](https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation) [원문 2026-10-22](https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day)",
+            "en": "Not evidence of diagnostic accuracy or autonomous repair. `ORG · LIVE · SELF`. [Source 2026-08-12](https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-group-dx-ax-ai-innovation) [Source 2026-10-22](https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day)"
+          }
+        }
+      },
       "claims": [
         {
           "id": "K13-initial-review",
@@ -1932,6 +2483,27 @@
       "review_status": "initial-claims-reviewed",
       "baseline_deployment_stage": "operation",
       "introduced_at": "2026-10-26",
+      "catalog": {
+        "layout": "summary",
+        "heading": {
+          "ko": "현대자동차그룹: VIN 대조",
+          "en": "Hyundai Motor Group: VIN checks"
+        },
+        "points": {
+          "workflow": {
+            "ko": "VIN 인식으로 생산 순서를 대조한다. 73개 공정은 적용 범위다.",
+            "en": "VIN recognition checks production sequence; 73 processes describes deployment scope."
+          },
+          "practice": {
+            "ko": "판독 실패·등록 정보 지연·수동 재개 권한을 별도 조건으로 시험한다.",
+            "en": "Test unreadable identifiers, stale records, and manual-restart authority separately."
+          },
+          "evidence": {
+            "ko": "조치 권한은 미공개다. 단위가 다른 거점 수와 추세를 비교하지 않는다. `ORG · LIVE · NONE`. [원문 2026-10-22](https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day)",
+            "en": "Action authority is undisclosed; process and location counts are not comparable. `ORG · LIVE · NONE`. [Source 2026-10-22](https://hyundaimotorgroup.co.kr/ko/news/hyundai-motor-group-softeer-tech-talk-off-day)"
+          }
+        }
+      },
       "claims": [
         {
           "id": "K14-initial-review",
@@ -2000,6 +2572,27 @@
       "review_status": "initial-claims-reviewed",
       "baseline_deployment_stage": "limited-operation",
       "introduced_at": "2026-10-26",
+      "catalog": {
+        "layout": "summary",
+        "heading": {
+          "ko": "동원그룹: 해외 법인 협업",
+          "en": "Dongwon Group: global collaboration"
+        },
+        "points": {
+          "workflow": {
+            "ko": "번역·회의록·일정·사내 정보 조회를 활용한다는 공급사 사례다.",
+            "en": "A vendor account describes translation, minutes, schedules, and internal lookup."
+          },
+          "practice": {
+            "ko": "발언자·결정·제안의 번역 오류와 공유 권한을 확인한다.",
+            "en": "Check speaker, decision, and proposal translation errors and sharing permissions."
+          },
+          "evidence": {
+            "ko": "사용자 범위·발송 승인 절차는 미공개다. 같은 행사에서 소개된 Cowork의 운영을 뜻하지 않는다. `VENDOR · LIMITED · NONE`. [원문 2026-09-08](https://www.samsungsds.com/kr/news/sds20260908.html)",
+            "en": "User coverage and send approvals are undisclosed; this does not establish use of Cowork, shown at the same event. `VENDOR · LIMITED · NONE`. [Source 2026-09-08](https://www.samsungsds.com/kr/news/sds20260908.html)"
+          }
+        }
+      },
       "claims": [
         {
           "id": "K15-initial-review",
@@ -2068,6 +2661,27 @@
       "review_status": "initial-claims-reviewed",
       "baseline_deployment_stage": "limited-operation",
       "introduced_at": "2026-10-26",
+      "catalog": {
+        "layout": "summary",
+        "heading": {
+          "ko": "LG전자: 판금 제조 분석",
+          "en": "LG Electronics: sheet-metal analysis"
+        },
+        "points": {
+          "workflow": {
+            "ko": "제조 데이터를 연결해 불량 원인과 생산 조건을 분석한다는 정부 자료다.",
+            "en": "A government account describes linking manufacturing data to analyze defects and conditions."
+          },
+          "practice": {
+            "ko": "원소재·설비 상태 변경 뒤의 예측과 실제 검사 결과, 조건 변경 승인을 대조한다.",
+            "en": "Compare predictions with inspections after material or equipment changes and check change approval."
+          },
+          "evidence": {
+            "ko": "개별 성과·승인 권한은 미공개다. 170여 사업장의 집계 성과를 LG전자 효과로 옮기지 않는다. K07과 다른 업무다. `GOV · LIMITED · NONE`. [원문 2026-09-11](https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172187/view)",
+            "en": "Individual outcomes and approval authority are undisclosed; aggregated results across about 170 sites are not LG’s effect. This differs from K07. `GOV · LIMITED · NONE`. [Source 2026-09-11](https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172187/view)"
+          }
+        }
+      },
       "claims": [
         {
           "id": "K16-initial-review",
@@ -2135,6 +2749,52 @@
         "centralized-mail-assist"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Morgan Stanley — 고객 미팅에서 CRM 기록과 후속 초안",
+          "en": "Morgan Stanley — meeting notes, CRM records, and follow-up drafts"
+        },
+        "points": {
+          "problem": {
+            "ko": "금융자문사가 방대한 내부 문서를 찾고 고객 미팅 뒤 기록과 후속 연락을 정리한다.",
+            "en": "Financial advisers search a large internal corpus and document meetings and follow-up work."
+          },
+          "verified_workflow": {
+            "ko": "내부 지식 도우미로 문서를 찾고, 고객 동의를 받은 Zoom 녹음은 `Debrief`가 고객 노트와 후속 메시지 초안으로 바꿔 CRM에 기록할 수 있게 한다.",
+            "en": "An internal knowledge assistant retrieves documents. With client consent, `Debrief` turns Zoom recordings into client notes and follow-up drafts connected to CRM."
+          },
+          "ai_role": {
+            "ko": "내부 검색, 연구 요약, 미팅 요약, 후속 업무와 연락 초안.",
+            "en": "Internal search, research and meeting summaries, follow-up work, and communication drafts."
+          },
+          "human_judgment": {
+            "ko": "자문사가 생성 결과를 수정·확정하고 고객에게 보낼 내용을 결정한다.",
+            "en": "Advisers edit and approve the record and any client communication."
+          },
+          "operating_control": {
+            "ko": "실제 미팅 유형을 반영한 평가 세트와 일일 회귀 평가를 운영한다고 설명한다."
+          },
+          "roadmap_lesson": {
+            "ko": "고위험 지식 업무에서는 RAG만이 아니라 전문가 채점, 회귀 평가, 고객 동의와 CRM 쓰기 전 검토가 함께 필요하다.",
+            "en": "High-risk knowledge work needs expert scoring, regression evaluation, customer consent, and review before CRM writes—not RAG alone."
+          },
+          "evidence": {
+            "ko": "98% 팀 사용률 등은 공급사와 고객이 함께 발표한 수치로 독립 검증되지 않았다. 근거 코드는 `VENDOR · LIVE · SELF`다. [OpenAI](https://openai.com/index/morgan-stanley/)",
+            "en": "Adoption figures, including 98% team usage, come from a joint vendor/customer story and are not independently verified. [OpenAI](https://openai.com/index/morgan-stanley/)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G01-source-confirmation-20261026",
+            "style": "review"
+          },
+          {
+            "claim": "G01-finance-design-partnership",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G01-baseline",
@@ -2290,6 +2950,54 @@
         "employee-lifecycle-access"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "IBM — HR 문의에서 인사이동·재직증명 처리까지",
+          "en": "IBM — from HR questions to employee transfers and employment verification"
+        },
+        "points": {
+          "problem": {
+            "ko": "여러 HR 챗봇과 문의 채널이 분산돼 직원과 관리자가 정책을 찾고 반복 요청을 처리하기 어렵다.",
+            "en": "Fragmented HR bots and channels make policy search and repetitive requests difficult."
+          },
+          "verified_workflow": {
+            "ko": "`AskHR`가 정책 문의에 답하는 단일 창구에서 출발해 재직증명서 발급과 직원 이동 같은 실제 HR 업무까지 처리하도록 확장됐다.",
+            "en": "`AskHR` grew from a single policy-answering entry point to HR operations such as employment verification and employee transfers."
+          },
+          "ai_role": {
+            "ko": "의도 분류, 정책 검색·응답, HR 도메인 라우팅, 정형 업무 실행.",
+            "en": "Intent classification, policy retrieval and answers, domain routing, and structured execution."
+          },
+          "human_judgment": {
+            "ko": "복잡한 요청은 HR 전문가가 처리하고 조직 변경 같은 관리자 업무에는 기존 권한 체계를 적용한다.",
+            "en": "HR specialists take complex cases; established permissions still govern manager actions."
+          },
+          "reported_result": {
+            "ko": "IBM은 초기 NPS가 -35였고 이후 CSAT로 지표를 바꿔 +74를 기록했다고 설명한다. 같은 지표가 상승한 것으로 연결하지 않는다."
+          },
+          "roadmap_lesson": {
+            "ko": "한 번에 기존 문의 채널을 닫으면 위험하다. 작은 업무부터 시험하고 복잡한 요청을 HR 담당자에게 빠르게 넘기는 경로와 사용자 피드백을 남겨야 한다.",
+            "en": "Pilot small workflows, hand complex requests to HR specialists quickly, and retain feedback instead of closing all channels in one migration."
+          },
+          "evidence": {
+            "ko": "장기 운영 과정은 공식 사례지만 지표 산식과 외부 검증은 제한적이다. [IBM](https://www.ibm.com/case-studies/ibm-transformation/ask-hr)",
+            "en": "IBM reports an early NPS of -35, then a CSAT score of +74 after changing the metric. These do not establish improvement on one consistent measure; the CSAT calculation and samples are not public. [IBM](https://www.ibm.com/case-studies/ibm-transformation/ask-hr)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "지표 정정 `G02-metric-correction` (게시일 미상, 확인 2026-10-26): [IBM 원문](https://www.ibm.com/case-studies/ibm-transformation/ask-hr)은 NPS에서 CSAT로 전환했다고 명시한다. 기존 문서의 CSAT -35→+74 표기는 잘못됐다. 각 지표의 조사기간·표본과 CSAT 산식은 미공개이며 자체 발표인 `SELF`를 유지한다. 이 확인은 지표명 정정에 한정하며 새 시장 변화나 인과효과를 입증하지 않는다.",
+              "en": "Metric correction `G02-metric-correction` (publication date unknown; checked 2026-10-26): the [IBM source](https://www.ibm.com/case-studies/ibm-transformation/ask-hr) explicitly switches from NPS to CSAT. The earlier catalog's CSAT -35 to +74 description was incorrect. Fieldwork periods, samples, and the CSAT calculation are unreported; the case remains self-reported `SELF`. This check is limited to metric wording and establishes neither a new market change nor a causal effect."
+            }
+          },
+          {
+            "claim": "G02-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G02-baseline",
@@ -2449,6 +3157,48 @@
         "equipment-anomaly-maintenance"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Siemens·thyssenkrupp — 자동화 코드·센서 설정·검사 문서",
+          "en": "Siemens and thyssenkrupp — automation code, sensor setup, and inspection documents"
+        },
+        "points": {
+          "problem": {
+            "ko": "배터리·수소 조립라인 같은 자동화 장비는 제어 코드, 센서 구성, 품질검사 단계와 문서를 반복 작성해야 한다.",
+            "en": "Automated assembly lines repeatedly require control code, sensor configuration, inspection steps, and documentation."
+          },
+          "verified_workflow": {
+            "ko": "Industrial Copilot이 제어 엔지니어링의 데이터 관리, 센서 설정, 코드와 검사 보고서 작성을 지원한다.",
+            "en": "Industrial Copilot supports data management, sensor setup, code, visualizations, and inspection-report drafting."
+          },
+          "ai_role": {
+            "ko": "자동화 코드 생성, 패널 시각화, 설정·문서 초안, 문제 해결 질의.",
+            "en": "Automation-code generation, panel visualization, setup and document drafts, and troubleshooting answers."
+          },
+          "human_judgment": {
+            "ko": "엔지니어가 생성 코드를 수정하고 장비 안전·검사 기준을 확인한 뒤 배포한다.",
+            "en": "Engineers edit code, confirm equipment safety and inspection requirements, and authorize deployment."
+          },
+          "reported_result": {
+            "ko": "Siemens는 패널 시각화를 30초에 만들고 생성 코드에 약 20% 수정이 필요했다고 발표했다."
+          },
+          "roadmap_lesson": {
+            "ko": "산업 AI는 생성 속도보다 PLC·센서 상태, 안전 인터록, 시뮬레이션, 변경 승인과 롤백이 완료 기준이다.",
+            "en": "Completion requires PLC and sensor state, safety interlocks, simulation, change approval, and rollback—not generation speed alone."
+          },
+          "evidence": {
+            "ko": "고객 사용과 확대 계획은 공식 발표지만 성과 수치는 공급사 측 자료다. [Siemens](https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai)",
+            "en": "Siemens reported 30-second visualizations and about 20% code modification; these are vendor-reported measures. [Siemens](https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G03-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G03-baseline",
@@ -2569,6 +3319,48 @@
         "inventory-exception-replenishment"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Jabil — 작업자 문제 해결과 구매 조사 지원",
+          "en": "Jabil — shop-floor troubleshooting and procurement research"
+        },
+        "points": {
+          "problem": {
+            "ko": "생산 작업자가 여러 문서, 장애 티켓과 지식 문서에서 진단 방법을 찾고 구매·고객 담당자는 별도의 조사를 반복한다.",
+            "en": "Operators search documents, tickets, and knowledge bases for diagnostics while procurement and account teams repeat separate research."
+          },
+          "verified_workflow": {
+            "ko": "작업 현장 도우미가 여러 지식 원본을 검색해 문제 해결 정보를 보여주며, 이후 구매·고객 조사를 맡는 별도 도우미도 추가됐다.",
+            "en": "A shop-floor assistant searches multiple knowledge sources and was extended to procurement and customer research."
+          },
+          "ai_role": {
+            "ko": "제조 지식 검색, 진단 정보 제공, 구매·고객 조사 지원.",
+            "en": "Manufacturing-knowledge retrieval, diagnostic information, and research support."
+          },
+          "human_judgment": {
+            "ko": "작업자가 진단을 확인하고 실제 장비 조치를 결정하며 구매 담당자가 제안의 타당성을 검토한다.",
+            "en": "Operators decide physical action; procurement staff validate proposals."
+          },
+          "operating_boundary": {
+            "ko": "첫 버전은 일주일에 만들었지만 이후 여러 데이터 원본을 추가했다고 설명한다. 빠른 프로토타입과 운영 준비는 구분해야 한다."
+          },
+          "roadmap_lesson": {
+            "ko": "문서 최신성, 설비·공장별 차이, 다국어, 티켓 상태, 위험 작업 이관과 현장 피드백이 핵심이다.",
+            "en": "Document freshness, site-specific equipment, language, ticket state, dangerous-work escalation, and floor feedback matter more than prototype speed."
+          },
+          "evidence": {
+            "ko": "공급사 고객 사례이며 공개된 배포·처리시간 수치가 생성형 도우미만의 효과라고 분리되지는 않는다. [AWS](https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/)",
+            "en": "This is an AWS customer story, and published deployment and time figures do not isolate the assistant's effect. [AWS](https://aws.amazon.com/solutions/case-studies/jabil-manufacturing-transformation-generative-ai/)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G04-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G04-baseline",
@@ -2680,6 +3472,52 @@
         "equipment-anomaly-maintenance"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Bosch Rexroth — 대규모 제품군 기술지원 검색",
+          "en": "Bosch Rexroth — technical-support search across a large product range"
+        },
+        "points": {
+          "problem": {
+            "ko": "서비스 담당자가 50만 개가 넘는 유압 제품과 기술 자료에서 정확한 답을 찾아야 한다.",
+            "en": "Service staff must find correct answers among technical material for more than 500,000 hydraulic products."
+          },
+          "verified_workflow": {
+            "ko": "Hydraulic Hub의 Smart Assistant가 제품 데이터를 검색해 서비스팀의 기술 질의와 문제 해결을 지원한다.",
+            "en": "Hydraulic Hub's Smart Assistant retrieves product data to support service questions and troubleshooting."
+          },
+          "ai_role": {
+            "ko": "제품·기술 문서 검색, 답변과 문제 해결 안내.",
+            "en": "Product and technical-document retrieval, answers, and troubleshooting guidance."
+          },
+          "human_judgment": {
+            "ko": "서비스 담당자가 제품과 현장 조건을 확인하고 실제 안내·정비 조치를 결정한다.",
+            "en": "Service staff confirm product and site conditions before advising or acting."
+          },
+          "operating_boundary": {
+            "ko": "제품 수가 많다는 사실은 답변 정확도를 보장하지 않는다. 제품 버전과 문서 유효기간을 함께 조회해야 한다."
+          },
+          "roadmap_lesson": {
+            "ko": "부품 번호·제품 버전·설치 환경을 입력 계약으로 두고, 답변에 원문과 적용 가능 제품을 표시해야 한다.",
+            "en": "Make part number, version, and installation environment an input contract; return source text and applicable products with every answer."
+          },
+          "evidence": {
+            "ko": "구축과 사용 목적은 확인되지만 처리 시간, 해결률과 오류율은 공개되지 않았다. [AWS](https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/)",
+            "en": "Purpose and deployment are public, but handling time, resolution rate, and error rate are not. [AWS](https://aws.amazon.com/solutions/case-studies/bosch-rexroth-generativeai/)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G05-source-confirmation-20261026",
+            "style": "review"
+          },
+          {
+            "claim": "G05-hydraulic-hub-workflow",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G05-baseline",
@@ -2835,6 +3673,52 @@
         "inventory-exception-replenishment"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Walmart — 상품 성과 원인 분석과 운영 티켓",
+          "en": "Walmart — merchandise-performance analysis and operations tickets"
+        },
+        "points": {
+          "problem": {
+            "ko": "상품 담당자가 여러 보고서와 스프레드시트를 모아 기대보다 성과가 높거나 낮은 이유를 찾고 운영 문제를 해결한다.",
+            "en": "Merchants combine reports and spreadsheets to explain over- or under-performance and resolve operational issues."
+          },
+          "verified_workflow": {
+            "ko": "`Wally`가 자체 상품 데이터를 이해하는 의미 계층을 사용해 데이터 입력·분석, 원인 진단, 운영 질의와 미해결 티켓 생성을 지원한다.",
+            "en": "`Wally` uses a semantic layer over merchandise data for data entry, analysis, root-cause candidates, operational questions, and unresolved-ticket creation."
+          },
+          "ai_role": {
+            "ko": "복잡한 상품 데이터 해석, 원인 후보 제시, 사용 방법 안내, 티켓 생성.",
+            "en": "Complex data interpretation, cause candidates, usage guidance, and ticket creation."
+          },
+          "human_judgment": {
+            "ko": "상품 담당자가 분석을 검토하고 가격·재고·프로모션 같은 전략과 실행을 결정한다.",
+            "en": "Merchants decide pricing, inventory, promotion, and execution."
+          },
+          "operating_boundary": {
+            "ko": "향후 설정 가능한 통제 안에서 전술적 작업을 자율 실행하는 방향은 계획이며 현재 완료된 운영 범위로 보지 않는다."
+          },
+          "roadmap_lesson": {
+            "ko": "상관관계와 원인을 구분하고, 상품 상태 재조회, 추천 근거, 전략 결정과 전술 실행 권한을 분리해야 한다.",
+            "en": "Distinguish correlation from cause and separate state refresh, recommendation evidence, strategy, and tactical execution authority."
+          },
+          "evidence": {
+            "ko": "내부 도입과 기능은 공식 발표지만 정량 성과는 공개되지 않았다. [Walmart](https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants)",
+            "en": "Internal deployment and capabilities are official; quantitative outcomes are not public, and future autonomy remains a plan. [Walmart](https://corporate.walmart.com/news/2025/03/18/walmart-develops-genai-powered-assistant-for-walmart-merchants)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G06-source-confirmation-20261026",
+            "style": "review"
+          },
+          {
+            "claim": "G06-agent-profiles-plan",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G06-baseline",
@@ -2990,6 +3874,58 @@
         "beauty-d2c-voc"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "CarMax — 리뷰 요약과 대규모 상품 콘텐츠",
+          "en": "CarMax — review summaries and product-page content"
+        },
+        "points": {
+          "problem": {
+            "ko": "수천 개 차량 페이지에 고객 리뷰와 모델별 정보를 일관된 품질로 작성·갱신하려면 많은 편집 시간이 든다.",
+            "en": "Keeping thousands of vehicle pages consistent and current requires extensive editorial work."
+          },
+          "verified_workflow": {
+            "ko": "AI가 고객 리뷰와 차량 정보를 요약해 페이지 초안을 만들고 편집자가 맥락과 브랜드 문체를 검토한다.",
+            "en": "AI summarizes customer reviews and vehicle information; editors verify context, accuracy, and brand voice."
+          },
+          "ai_role": {
+            "ko": "리뷰 요약, 모델·트림 설명과 관련 콘텐츠 초안.",
+            "en": "Review summaries and model, trim, and related-content drafts."
+          },
+          "human_judgment": {
+            "ko": "편집자가 게시 전 정확성, 맥락과 브랜드 문체를 승인한다.",
+            "en": "Editors approve each page before publishing."
+          },
+          "reported_result": {
+            "ko": "5,000개 페이지의 리뷰 요약을 수개월에 만들고 편집 검토 승인율 80%를 기록했다고 발표했다."
+          },
+          "roadmap_lesson": {
+            "ko": "생성량보다 편집 수정률, 사실 오류, 오래된 차량 정보, 페이지별 근거와 게시 취소가 운영 지표다.",
+            "en": "Track edit rate, factual error, stale vehicle data, page-level evidence, and unpublishing—not generation volume alone."
+          },
+          "evidence": {
+            "ko": "Microsoft 고객 사례의 회사 측 수치이며 수작업 11년이라는 자체 추산을 비교 기준으로 제시했지만 상세 측정 설계와 장기 품질은 공개되지 않았다. [Microsoft](https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service)",
+            "en": "Microsoft reports 5,000 pages produced in months and an 80% editorial approval rate, against a company estimate of 11 manual years; detailed measurement design and long-term quality are not public. [Microsoft](https://www.microsoft.com/en/customers/story/1501304071775762777-carmax-retailer-azure-openai-service)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "비교 기준 정정 `G07-comparison-basis-clarification` (원문 발행 2022-05-24, 확인 2026-10-26): 회사는 수작업으로 약 11년이 걸릴 것이라는 추산을 비교 기준으로 밝혔다. 실제 병행 대조군이나 11년의 실측 작업 기록은 아니다. 5,000개 페이지 수와 80% 편집 승인율의 평가 분모도 구분한다.",
+              "en": "Comparison correction `G07-comparison-basis-clarification` (published 2022-05-24; checked 2026-10-26): the company disclosed an estimate of roughly 11 manual years as its comparator, not a concurrent control or 11 years of observed work. Distinguish the 5,000 production pages from the evaluation denominator for the 80% approval rate."
+            }
+          },
+          {
+            "claim": "G07-source-confirmation-20261026",
+            "style": "review"
+          },
+          {
+            "claim": "G07-customer-app-boundary",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G07-baseline",
@@ -3189,6 +4125,64 @@
         "care-conversation-record"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Corewell Health — 진료 대화에서 임상 기록 초안",
+          "en": "Corewell Health — clinical-note drafts from care conversations"
+        },
+        "points": {
+          "problem": {
+            "ko": "의료진이 환자와 대화하면서 기록하고 진료 후 구조화된 임상 문서를 완성해야 한다.",
+            "en": "Clinicians must converse with patients and later complete structured clinical documentation."
+          },
+          "verified_workflow": {
+            "ko": "진료 대화를 기록 초안으로 변환하고 의료진 검토 후 전자의무기록에 반영하도록 설계됐다.",
+            "en": "The system turns the care conversation into a draft for clinician review before entry into the electronic health record."
+          },
+          "ai_role": {
+            "ko": "대화 인식, 임상 기록 구조화, 초안 생성.",
+            "en": "Conversation recognition, clinical-note structuring, and drafting."
+          },
+          "human_judgment": {
+            "ko": "의료진이 누락·오류를 수정하고 최종 기록을 확정한다.",
+            "en": "Clinicians fix omissions and errors and sign the final note."
+          },
+          "reported_result": {
+            "ko": "90일 파일럿 뒤 21개 병원과 300개 이상 외래·후속 진료 거점의 의료진 4,000명에게 확대할 계획을 발표했다."
+          },
+          "roadmap_lesson": {
+            "ko": "환자 동의, 대화 원문에서 초안 문장의 근거 구간을 찾는 기능, 전문과별 평가, 의료진 수정 부담과 EHR 반영 전 승인이 필요하다.",
+            "en": "Require patient consent, source-conversation traceability, specialty-specific evaluation, edit-burden measurement, and approval before EHR write."
+          },
+          "evidence": {
+            "ko": "솔루션 공급사의 파일럿·설문 결과이며 임상 결과나 독립 연구로 일반화할 수 없다. [Abridge](https://www.abridge.com/case-study/corewell-health)",
+            "en": "Abridge reported planned expansion after a 90-day pilot to 4,000 clinicians across 21 hospitals and more than 300 sites; this is a vendor pilot story, not an independent clinical-outcome study. [Abridge](https://www.abridge.com/case-study/corewell-health)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "추가 확인 `G08-relationship-events-study` (발행 2026-06-29, 확인 2026-10-26): 단일 레지던시 학회 초록은 진료 47건 중 관계상 중요 사건이 있는 26건을 비교했다. 같은 진료의 의료진 구술 기록과 AI 기록을 전사문에 대조하고 패널이 0~2점으로 평가했다. 해당 사건의 기록 점수는 의료진 기록이 14건, AI 기록이 2건에서 더 높았다. 진료 표본 수집일과 모델 버전은 미공개다. 작은 단일기관 연구이므로 모든 임상 기록이나 최신 모델로 일반화하지 않는다. 기준일 이전에 발표됐지만 기존 조사에서 빠진 근거이며 공급사의 확대 계획과 별개로 다룬다. [Corewell Health, Human Relationships and AI Hype](https://scholarlyworks.corewellhealth.org/family_medicine_confabstract/34/)",
+              "en": "Follow-up `G08-relationship-events-study` (published 2026-06-29; checked 2026-10-26): a single-residency conference abstract compared the 26 of 47 visits containing relationship-significant events. A panel scored clinician-dictated and AI notes against a transcript from the same visit on a 0–2 scale. Clinician notes scored higher in 14 cases; AI notes in two. Collection dates and model version are unreported. This small study does not generalize to all clinical documentation or current models. It is missing pre-baseline evidence, separate from the vendor's expansion plan. [Corewell Health, Human Relationships and AI Hype](https://scholarlyworks.corewellhealth.org/family_medicine_confabstract/34/)"
+            }
+          },
+          {
+            "text": {
+              "ko": "실습에서는 기록 시간과 함께 관계상 중요 사건의 누락, 의료진의 추가 기록과 수정 부담을 평가한다. 원래 사례의 `PILOT · SELF`를 승격하지 않는다.",
+              "en": "Practice should evaluate omitted relationship events, clinician additions, and correction burden alongside recording time. The original case remains `PILOT · SELF`."
+            }
+          },
+          {
+            "claim": "G08-source-confirmation-20261026",
+            "style": "review"
+          },
+          {
+            "claim": "G08-clinician-assistant-interview",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G08-baseline",
@@ -3396,6 +4390,48 @@
         "regulated-evidence-document"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Foley Hoag — M&A 실사·공시표·소송 문서 초안",
+          "en": "Foley Hoag — M&A diligence tables and litigation drafts"
+        },
+        "points": {
+          "problem": {
+            "ko": "변호사가 대규모 데이터룸과 소송 문서를 읽어 조항, 쟁점, 사실과 공시 항목을 구조화한다.",
+            "en": "Lawyers structure clauses, issues, facts, and disclosure items from large deal rooms and litigation records."
+          },
+          "verified_workflow": {
+            "ko": "계약서를 표로 만들고 쟁점을 인용과 함께 표시하며 공시표 초안을 생성한다. 소송에서는 재판 문서에서 사실 후보를 모은다.",
+            "en": "The system builds contract tables, flags issues with citations, drafts disclosure schedules, and identifies candidate facts in court documents."
+          },
+          "ai_role": {
+            "ko": "계약 분석, 조항·쟁점 추출, 표와 공시표 초안, 소송 사실 정리.",
+            "en": "Contract analysis, clause and issue extraction, tables and schedules, and litigation-fact organization."
+          },
+          "human_judgment": {
+            "ko": "변호사가 인용 원문과 쟁점을 검증하고 법률 판단과 고객 전달물을 확정한다.",
+            "en": "Lawyers verify quoted sources, make legal judgments, and approve client work."
+          },
+          "reported_result": {
+            "ko": "공급사는 M&A 검토 주기를 최소 3분의 1 줄인 사례와 특정 소송 실험에서 8~10시간을 절감한 사례를 소개한다."
+          },
+          "roadmap_lesson": {
+            "ko": "모든 결론을 원문 인용에 연결하고, 비밀유지·권한·법역·문서 버전과 변호사 최종 검토를 강제해야 한다.",
+            "en": "Tie each conclusion to source text and enforce confidentiality, jurisdiction, document version, access control, and lawyer sign-off."
+          },
+          "evidence": {
+            "ko": "공급사 고객 사례와 내부 설문 수치이며 사건별 난이도와 품질 비교는 공개되지 않았다. [Harvey](https://www.harvey.ai/customers/foley-hoag)",
+            "en": "Harvey reports at least a one-third reduction in some M&A review cycles and 8–10 hours saved in a litigation experiment; case comparability and quality methods are not public. [Harvey](https://www.harvey.ai/customers/foley-hoag)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G09-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G09-baseline",
@@ -3507,6 +4543,54 @@
         "company-agent-operating-layer"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Accenture — 테스트·레거시 이해·기술부채 처리",
+          "en": "Accenture — tests, legacy-code understanding, and technical debt"
+        },
+        "points": {
+          "problem": {
+            "ko": "개발자가 테스트, 레거시 코드 이해와 반복 구현에 시간을 쓰며 기술부채가 쌓인다.",
+            "en": "Developers spend time on tests, legacy-code comprehension, repetitive implementation, and accumulated technical debt."
+          },
+          "verified_workflow": {
+            "ko": "Copilot을 단위·기능·성능 테스트 작성, 레거시 코드 설명과 리팩터링, 공통 코드 재사용에 적용한다.",
+            "en": "Copilot is used for unit, functional, and performance tests, legacy explanation and refactoring, and reuse of common code."
+          },
+          "ai_role": {
+            "ko": "코드·테스트 초안, 코드 설명, 리팩터링 제안.",
+            "en": "Code and test drafts, explanations, and refactoring suggestions."
+          },
+          "human_judgment": {
+            "ko": "개발자가 설계, 코드 리뷰, 테스트 결과, 보안 검사와 배포를 책임진다.",
+            "en": "Developers own architecture, review, test outcomes, security checks, and deployment."
+          },
+          "evaluation_method": {
+            "ko": "20명 파일럿에서 시작해 450명 사용군과 200명 대조군의 무작위 대조시험을 했다고 설명한다. 이후 수천 명에게 확대 배포했다고 밝혀 시범 단계로만 분류하지 않는다."
+          },
+          "roadmap_lesson": {
+            "ko": "수용한 코드량보다 성공 빌드, 결함, 변경 실패율, 리뷰 부담, 보안 문제와 재작업을 비교해야 한다.",
+            "en": "Compare successful builds, defects, change-failure rate, review burden, security findings, and rework—not accepted code volume."
+          },
+          "evidence": {
+            "ko": "GitHub 고객 사례이며 실험의 전체 방법과 효과 크기는 공개되지 않았다. [GitHub](https://github.com/customer-stories/accenture)",
+            "en": "GitHub describes a 20-person pilot, a randomized controlled trial with 450 users and 200 controls, and subsequent rollout to thousands. The full method and effect size are not public; deployment is corrected from pilot to operation. [GitHub](https://github.com/customer-stories/accenture)"
+          }
+        },
+        "notes": [
+          {
+            "text": {
+              "ko": "도입 범위 정정 `G10-rollout-scope-correction` (게시일 미상, 확인 2026-10-26): 기존 `PILOT` 분류는 원문에 명시된 시험 이후 수천 명 확대 배포를 빠뜨려 `LIVE`로 정정했다. 450명과 200명은 시험 집단이며 현재 사용자가 아니다. 공급사 서술이고 정확한 날짜가 없어 최근 채용·도입 증가나 독립 성과로 해석하지 않는다.",
+              "en": "Deployment-scope correction `G10-rollout-scope-correction` (publication date unknown; checked 2026-10-26): the earlier `PILOT` label omitted the source-reported rollout to thousands after the trial and is corrected to `LIVE`. The 450 and 200 are trial groups, not current users. Vendor reporting and unknown dates do not establish recent hiring or adoption growth or independent outcomes."
+            }
+          },
+          {
+            "claim": "G10-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G10-baseline",
@@ -3674,6 +4758,48 @@
         "credit-underwriting-review"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "EXL — 인수심사 서류 추출과 검토 지원",
+          "en": "EXL — underwriting-document extraction and review support"
+        },
+        "points": {
+          "problem": {
+            "ko": "보험 인수심사자가 수백 쪽의 의료·가입 서류를 읽고 초기 평가를 구조화한다.",
+            "en": "Insurance underwriters read hundreds of pages of medical and application records to structure an initial assessment."
+          },
+          "verified_workflow": {
+            "ko": "OCR과 텍스트 분석으로 문서를 추출하고 개인정보를 제거한 뒤 RAG 도우미가 심사 검토를 지원한다.",
+            "en": "OCR and text analysis extract documents, remove personal information, and feed a RAG assistant for review support."
+          },
+          "ai_role": {
+            "ko": "스캔 문서 추출, 민감정보 제거, 관련 문서 검색, 초기 평가 지원.",
+            "en": "Scan extraction, sensitive-data removal, document retrieval, and initial-assessment support."
+          },
+          "human_judgment": {
+            "ko": "인수심사자가 자료와 제안을 검토하고 위험·가입 결정을 내린다.",
+            "en": "Underwriters verify the evidence and own risk and enrollment decisions."
+          },
+          "reported_result": {
+            "ko": "EXL은 심사 과정을 수일에서 수시간으로 줄일 수 있고 비용을 최대 80% 낮출 잠재력이 있다고 분석했다. 실측 성과로 제시된 값은 아니다."
+          },
+          "roadmap_lesson": {
+            "ko": "OCR 누락, 의료정보 보호, 근거 문서 연결, 상품별 심사 규칙과 최종 심사자 승인을 분리해야 한다.",
+            "en": "Separate OCR completeness, health-data protection, source linkage, product rules, and final-underwriter approval."
+          },
+          "evidence": {
+            "ko": "실제 보험사 이름과 방법론이 공개되지 않은 공급사 사례다. `최대 80%`는 검증된 보편 결과가 아니라 공급사 분석이다. [AWS](https://aws.amazon.com/solutions/case-studies/exl-case-study/)",
+            "en": "EXL estimates a shift from days to hours and potential cost reduction up to 80%, but the insurer and methodology are not disclosed. [AWS](https://aws.amazon.com/solutions/case-studies/exl-case-study/)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G11-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G11-baseline",
@@ -3793,6 +4919,48 @@
         "public-service-petition-response"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "부에노스아이레스시 — 정부 정보 통합과 관광 질의",
+          "en": "City of Buenos Aires — unified government information and tourism questions"
+        },
+        "points": {
+          "problem": {
+            "ko": "여러 시민 서비스 채널과 분산된 정부 정보 때문에 주민과 방문자가 필요한 답을 찾기 어렵다.",
+            "en": "Fragmented public-service channels make government information hard to find."
+          },
+          "verified_workflow": {
+            "ko": "`Boti`가 여러 정부 정보를 한 채널에서 보여주고, 생성형 AI는 우선 관광·문화처럼 민감도가 낮은 질문에 스페인어·영어로 답한다.",
+            "en": "`Boti` provides a single channel, while generative AI starts in lower-sensitivity tourism and culture queries with personalized Spanish and English responses."
+          },
+          "ai_role": {
+            "ko": "정부 지식 검색, 자연어 질의, 관광 일정과 정보 개인화.",
+            "en": "Government-knowledge retrieval, natural-language questions, and tourism information and itinerary personalization."
+          },
+          "human_judgment": {
+            "ko": "정부팀이 지식, 언어·정치적 민감성, 허용 범위와 서비스 확대를 관리한다.",
+            "en": "Government teams manage the corpus, language and political sensitivity, allowed scope, and expansion."
+          },
+          "operating_boundary": {
+            "ko": "월 200만 건을 처리하는 전체 Boti와 생성형 AI 적용분을 같은 성과로 간주하면 안 된다. 공개 자료상 생성형 기능은 제한된 관광 영역에서 시작했다."
+          },
+          "roadmap_lesson": {
+            "ko": "민감도가 낮은 업무로 시작하고, 공식 정보의 기준 시스템, 다국어·정치적 중립·개인정보 보호와 채널마다 같은 답을 내는지 평가해야 한다.",
+            "en": "Begin with low-sensitivity work and evaluate authoritative sources, multilingual consistency, political neutrality, privacy, and channel parity."
+          },
+          "evidence": {
+            "ko": "Microsoft 고객 사례이며 생성형 기능과 기존 챗봇의 효과가 일부 함께 서술돼 있다. [Microsoft](https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service)",
+            "en": "Do not attribute Boti's overall two million monthly interactions to its limited generative feature. The Microsoft story partially blends the two. [Microsoft](https://www.microsoft.com/en/customers/story/21596-government-of-the-city-of-buenos-aires-azure-open-ai-service)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G12-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G12-baseline",
@@ -3905,6 +5073,48 @@
         "slack-meeting-actions"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Lumen Technologies — 고객 조사와 접촉 준비",
+          "en": "Lumen Technologies — account research and outreach preparation"
+        },
+        "points": {
+          "problem": {
+            "ko": "B2B 판매자가 고객에게 연락하기 전 여러 시스템에서 기업·계약·관계 정보를 모으고 회의 기록을 정리한다.",
+            "en": "B2B sellers combine company, contract, relationship, and meeting data across systems before outreach."
+          },
+          "verified_workflow": {
+            "ko": "Copilot과 Salesforce 연결을 이용해 고객 조사, 노트 작성과 행정 작업을 줄이고 영업 데이터와 상호작용 기록을 맞춘다.",
+            "en": "Copilot and Salesforce integration support account research, notes, administrative work, and alignment of sales data with interaction history."
+          },
+          "ai_role": {
+            "ko": "고객 조사 요약, 회의 노트, 접촉 자료와 후속 작업 초안.",
+            "en": "Account-research summaries, meeting notes, outreach material, and follow-up drafts."
+          },
+          "human_judgment": {
+            "ko": "판매자가 고객 맥락, 메시지와 영업 행동을 결정한다.",
+            "en": "Sellers choose the customer context, message, and sales action."
+          },
+          "reported_result": {
+            "ko": "회사는 고객 접촉 조사가 4시간에서 15분으로 줄었다고 발표했다."
+          },
+          "roadmap_lesson": {
+            "ko": "조사 시간뿐 아니라 CRM 최신성, 잘못된 고객 정보, 메시지 검수, 중복 접촉과 실제 영업 결과를 함께 측정해야 한다.",
+            "en": "Measure CRM freshness, wrong account facts, message review, duplicate contact, and actual sales outcomes alongside research time."
+          },
+          "evidence": {
+            "ko": "Microsoft 고객 사례의 회사 측 추산이며 표본과 산출법은 공개되지 않았다. [Microsoft](https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/)",
+            "en": "Lumen reports reducing account research from four hours to 15 minutes, but sample and calculation are not public. [Microsoft](https://www.microsoft.com/en/customers/story/1771760434465986810-lumen-microsoft-copilot-telecommunications-en-united-states/)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G13-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G13-baseline",
@@ -4016,6 +5226,48 @@
         "regulated-evidence-document"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Moderna — 근거 자료에서 의약품 개발 문서 초안",
+          "en": "Moderna — development-document drafts from evidence"
+        },
+        "points": {
+          "problem": {
+            "ko": "임상, 제품과 마케팅 팀이 수백 쪽의 근거 자료를 검토해 Target Product Profile을 공동 작성한다.",
+            "en": "Clinical, product, and marketing teams jointly review hundreds of pages to create a Target Product Profile."
+          },
+          "verified_workflow": {
+            "ko": "최대 약 300쪽의 자료에서 사실과 가정을 추출하고 구조화된 섹션 초안과 오류 후보를 만든 뒤 여러 팀이 검토한다.",
+            "en": "The system extracts facts and assumptions from up to about 300 pages, creates structured section drafts, and flags possible errors for cross-functional review."
+          },
+          "ai_role": {
+            "ko": "대규모 근거 자료 요약, 사실·가정 추출, 문서 구조화와 오류 후보 표시.",
+            "en": "Large-corpus summarization, fact and assumption extraction, document structuring, and error candidates."
+          },
+          "human_judgment": {
+            "ko": "임상·제품·마케팅 전문가가 가정과 트레이드오프를 검토하고 최종 개발 방향을 정한다.",
+            "en": "Domain specialists validate assumptions and trade-offs and decide the development direction."
+          },
+          "operating_boundary": {
+            "ko": "AI가 의약품 안전성이나 개발 결정을 대신하는 사례가 아니라 근거 검토와 문서 초안을 보조하는 흐름이다."
+          },
+          "roadmap_lesson": {
+            "ko": "근거와 가정의 명시적 구분, 문장별 출처, 분야별 승인, 자료 버전과 변경 영향 추적이 핵심이다.",
+            "en": "Explicitly separate evidence from assumptions and track sentence-level sources, domain approvals, versions, and change impact."
+          },
+          "evidence": {
+            "ko": "공급사 보고서에 실린 사례이며 일부 핵심 분석 단계를 수주에서 수시간으로 줄였다고 자체 보고했다. 전체 TPP의 단축률·측정 설계·독립 검증은 공개하지 않았다. [OpenAI](https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/)",
+            "en": "This is a vendor report; Moderna reports weeks-to-hours changes for a core analytical step in some cases, not the entire TPP. Detailed measurement and independent validation are not public. [OpenAI](https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G14-source-confirmation-20261026",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G14-baseline",
@@ -4128,6 +5380,53 @@
         "centralized-mail-assist"
       ],
       "review_status": "selected-claims-reviewed",
+      "catalog": {
+        "layout": "detailed",
+        "heading": {
+          "ko": "Klarna — 자동 상담과 복잡 민원의 상담사 인계",
+          "en": "Klarna — automated service with agent handoff for complex cases"
+        },
+        "points": {
+          "problem": {
+            "ko": "다국어 결제·쇼핑 상담을 24시간 처리하면서 환불, 반품, 금융 습관과 신원 도용 같은 복잡한 문제도 다뤄야 한다.",
+            "en": "A multilingual payments service must run around the clock while handling refunds, returns, financial habits, identity theft, and disputes."
+          },
+          "initial_workflow": {
+            "ko": "AI 도우미가 환불·반품을 포함한 상담을 처리하고 사람 상담 수준의 만족도, 반복 문의 25% 감소, 해결 시간 11분에서 2분 미만을 달성했다고 발표했다.",
+            "en": "Klarna reported human-level satisfaction, 25% fewer repeat inquiries, and resolution time falling from 11 minutes to under two."
+          },
+          "later_change": {
+            "ko": "AP는 비용 절감과 함께 신원 도용 같은 복잡한 문제에는 숙련된 사람이 필요해 일부 인력을 다시 투입했다고 보도했다.",
+            "en": "AP reported that, alongside cost savings, Klarna restored some staffing because complex cases such as identity theft require experienced people."
+          },
+          "ai_role": {
+            "ko": "대량의 반복·다국어 상담과 정형 업무 처리.",
+            "en": "High-volume, repetitive, multilingual support and structured actions."
+          },
+          "human_judgment": {
+            "ko": "복잡한 신원·분쟁·예외 문제를 처리하고 AI가 해결하지 못한 상담을 이어받는다.",
+            "en": "Skilled staff take identity, dispute, and exception cases and unresolved AI conversations."
+          },
+          "roadmap_lesson": {
+            "ko": "자동 처리율만 목표로 삼지 않는다. 복잡 민원이 상담사에게 정확히 전달되는지, 처리 품질과 재문의가 어떻게 달라지는지, 고객이 사람을 선택할 수 있는지, 숙련 상담사가 어려운 문제를 계속 처리할 여건이 있는지 함께 확인해야 한다.",
+            "en": "Do not optimize automation rate alone; design escalation accuracy, complex-case quality, repeat contact, the right to choose a human, and retention of expert service skills."
+          },
+          "evidence": {
+            "ko": "초기 수치는 회사·공급사 발표이고 후속 운영 방향은 주요 언론으로 교차 확인했다. 완전한 철회가 아니라 사람과 AI의 역할 재조정으로 보는 편이 정확하다. [초기 공식 사례](https://openai.com/index/klarna/) · [AP 후속 보도](https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929)",
+            "en": "Initial metrics are company and vendor claims; the operating adjustment is independently reported. This is better read as rebalancing human and AI roles than a complete reversal. [Initial official story](https://openai.com/index/klarna/) · [AP follow-up](https://apnews.com/article/artificial-intelligence-chatbot-customer-service-call-center-ca87ae77d7c6797ebb2628bd1b532929)"
+          }
+        },
+        "notes": [
+          {
+            "claim": "G15-source-confirmation-20261026",
+            "style": "review"
+          },
+          {
+            "claim": "G15-operating-adjustment-confirmation",
+            "style": "review"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G15-baseline",
@@ -4285,6 +5584,9 @@
         "beauty-d2c-voc"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief"
+      },
       "claims": [
         {
           "id": "G16-initial-review",
@@ -4354,6 +5656,9 @@
         "slack-meeting-actions"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief"
+      },
       "claims": [
         {
           "id": "G17-initial-review",
@@ -4423,6 +5728,9 @@
         "care-conversation-record"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief"
+      },
       "claims": [
         {
           "id": "G18-initial-review",
@@ -4492,6 +5800,9 @@
         "regulated-evidence-document"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief"
+      },
       "claims": [
         {
           "id": "G19-initial-review",
@@ -4561,6 +5872,9 @@
         "regulated-evidence-document"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief"
+      },
       "claims": [
         {
           "id": "G20-initial-review",
@@ -4630,6 +5944,19 @@
         "slack-meeting-actions"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief",
+        "points": {
+          "workflow": {
+            "ko": "Slack 경보를 조사해 PR을 제안하고 사람이 검토한다.",
+            "en": "Slack alerts lead to investigated PRs for human review."
+          },
+          "evidence": {
+            "ko": "`G21-initial-review`, 발행일 미상, 확인 2026-10-26. 2주·5건은 별도 조사 시험이다. 56% 경보 감소·65% 답변시간 단축의 표본과 측정기간은 미공개다. [원문](https://claude.com/customers/carvana)",
+            "en": "`G21-initial-review`, publication unknown, checked 2026-10-26. The two-week/five-case investigation test is separate. Samples and measurement periods for 56% fewer alerts and 65% faster answers are unreported. [Source](https://claude.com/customers/carvana)"
+          }
+        }
+      },
       "claims": [
         {
           "id": "G21-initial-review",
@@ -4699,6 +6026,9 @@
         "employee-lifecycle-access"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief"
+      },
       "claims": [
         {
           "id": "G22-initial-review",
@@ -4768,6 +6098,15 @@
         "inventory-exception-replenishment"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief",
+        "notes": [
+          {
+            "claim": "G23-later-recap",
+            "style": "plain"
+          }
+        ]
+      },
       "claims": [
         {
           "id": "G23-initial-review",
@@ -4882,6 +6221,9 @@
         "slack-meeting-actions"
       ],
       "review_status": "initial-claims-reviewed",
+      "catalog": {
+        "layout": "brief"
+      },
       "claims": [
         {
           "id": "G24-initial-review",
