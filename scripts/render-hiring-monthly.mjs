@@ -38,7 +38,7 @@ const labels = {
     rolling: "상시",
     unknownDate: "미확인",
     duplicate: (id) => `${id}와 중복 가능`,
-    linkRemoved: (date) => `공고 페이지 삭제(404), ${date} 확인`,
+    linkRemoved: (date) => `공고 페이지가 삭제됨(404), ${date} 확인`,
   },
   en: {
     role: { ax: "AX", "ai-agent": "AI Agent", fde: "FDE" },
@@ -268,7 +268,7 @@ export function renderReadmeBlock(data, months, language) {
         "|---|---|---|",
         ...rows,
         "",
-        `재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 다음 목록은 수집 방식을 다시 확인한 뒤 추가하며, 정기 갱신 일정은 아직 정하지 않았습니다. 공고별 책임과 요건은 [공고로 보는 AX 직무 해설](research/hiring-signals.md)에서 볼 수 있습니다. [${monthName(data.month, "ko")} 전체 목록](${base}/${data.month}.md) · [수집 기준](${base}/README.md)${archive ? ` · 지난 목록: ${archive}` : ""}`,
+        `재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 다음 목록은 수집 방식을 다시 확인한 뒤 추가합니다. 갱신 주기는 아직 정하지 않았습니다. 공고별 책임과 요건은 [공고로 보는 AX 직무 해설](research/hiring-signals.md)에서 볼 수 있습니다. [${monthName(data.month, "ko")} 전체 목록](${base}/${data.month}.md) · [수집 기준](${base}/README.md)${archive ? ` · 지난 목록: ${archive}` : ""}`,
       ]
     : [
         `**Monthly hiring snapshot (${monthName(data.month, "en")})**: ${p.length} Korean AX, AI Agent, and FDE postings that opened between ${data.window.from} and ${data.window.to}, collected from ${collected}. As of ${data.checked_at}, ${open} were open and ${closed} closed.`,

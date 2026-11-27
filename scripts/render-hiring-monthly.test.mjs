@@ -60,7 +60,7 @@ test("keeps a listed posting whose page was removed later, without its link", ()
   const ko = renderMonth(data, "ko");
   assert.match(ko, /목록 2건: 모집 중 1건 · 마감 1건/);
   assert.match(ko, /\| AX Engineer \(잡코리아 1\) \|/);
-  assert.match(ko, /공고 페이지 삭제\(404\), 2026-11-27 확인/);
+  assert.match(ko, /공고 페이지가 삭제됨\(404\), 2026-11-27 확인/);
   assert.doesNotMatch(ko, /example\.com\/1\)/);
   assert.match(renderMonth(data, "en"), /posting page removed \(404\), checked 2026-11-27/);
   data.postings[1].removed_checked_at = "2026-11-27";
