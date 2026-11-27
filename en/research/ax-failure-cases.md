@@ -28,6 +28,7 @@ This repository did not investigate these organizations or independently determi
 
 ## At a glance
 
+<!-- failure-case-index:start -->
 | ID | Region | Organization | Workflow | Main causes | Outcome | Evidence |
 |---|---|---|---|---|---|---|
 | FK01 | KR | 스캐터랩 (이루다) | Conversational chatbot service | Data consent, Unsafe output | STOPPED · SANCTIONED | RECORD |
@@ -46,6 +47,7 @@ This repository did not investigate these organizations or independently determi
 | FG10 | US | Zillow Group (Zillow Offers) | Algorithmic home buying and reselling | Accuracy shortfall, Premature scale | STOPPED | ADMITTED |
 | FG11 | US | MD Anderson Cancer Center · IBM Watson | Oncology decision support | Integration drift, Procurement governance | STOPPED | RECORD |
 | FG12 | US | Amazon | Resume screening | Bias | STOPPED | PRESS |
+<!-- failure-case-index:end -->
 
 ## Recurring causes
 
@@ -91,6 +93,7 @@ After choosing a capstone workflow, answer the questions below and carry the ans
 
 ## Case records
 
+<!-- failure-case-records:start -->
 ### Korean cases
 
 #### FK01. 스캐터랩 (이루다) — Conversational chatbot service
@@ -294,6 +297,7 @@ After choosing a capstone workflow, answer the questions below and carry the ans
 - **Limitations**: An exclusive based on anonymous sources; the claim that recruiters never relied solely on rankings is also anonymous.
 - **Sources**:
   - [Reuters (Euronews 전재)](https://www.euronews.com/2018/10/10/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women) (press, published 2018-10-10, checked 2026-10-27): Project start, training data, the bias found and the team's disbanding.
+<!-- failure-case-records:end -->
 
 ## Relation to the existing catalog
 

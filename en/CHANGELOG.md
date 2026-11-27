@@ -14,6 +14,7 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 
 ### Changed
 
+- Generated the record index and record sections of the job-posting explainer, and the summary table and case records of the failure and stop cases, from their JSON registries (`npm run generate:hiring-signals`, `npm run generate:failure-cases`); the checks now fail when a document differs from the generated output or the cause table counts differ from the registry. Document content is unchanged
 - Restructured the root README as a step-by-step roadmap for juniors and career changers (starting-point table, Steps 1–5 with documents and self-checks, FAQ)
 - Linked the capstone design checklist from the common project tools, toolkit index, workflow execution rules, experiment card, Week 1 of the 12-week path, and the public case-to-practice table, and added failure-case, posting-record, and monthly-list update steps to the contribution guide
 - Added the caution on inferring from case names and evidence stages, previously only in Korean, to the English case index
