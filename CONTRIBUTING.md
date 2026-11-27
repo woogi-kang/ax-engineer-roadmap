@@ -93,9 +93,9 @@ npm run verify
 
 공개 조직 사례를 추가하거나 바꾸면 한국어·영어 카탈로그와 [`public-ax-cases.json`](research/public-ax-cases.json)을 함께 갱신한다. 출처 유형, 도입 단계, 성과 검증을 서로 다른 필드로 유지한다.
 
-실패·중단 사례는 성공 카탈로그와 분리해 [`ax-failure-cases.json`](research/ax-failure-cases.json)과 한국어·영어 문서에 함께 추가한다. `related_case_studies`를 바꾸면 `npm run generate:failure-links`로 사례 문서의 `실패 사례 점검`과 사례 목록의 연결표를 다시 생성한다.
+실패·중단 사례는 성공 카탈로그와 분리해 [`ax-failure-cases.json`](research/ax-failure-cases.json)에 추가한다. 한국어·영어 문서의 요약표와 사례별 기록은 `npm run generate:failure-cases`로 다시 생성한다. 이 구간은 직접 고치지 않는다. 문서 첫머리의 건수와 원인별 표는 문서에서 함께 고친다. `related_case_studies`를 바꾸면 `npm run generate:failure-links`로 사례 문서의 `실패 사례 점검`과 사례 목록의 연결표를 다시 생성한다.
 
-공고 기록은 [`hiring-signals.json`](research/hiring-signals.json)과 한국어·영어 해설에 추가한다. 월간 목록은 [수집 기준](research/hiring-monthly/README.md)의 절차대로 JSON을 만든 뒤 `npm run generate:hiring-monthly`로 문서와 README 요약을 갱신한다.
+공고 기록은 [`hiring-signals.json`](research/hiring-signals.json)에 추가한다. 한국어·영어 해설의 기록 목록과 기록별 내용은 `npm run generate:hiring-signals`로 다시 생성한다. 이 구간은 직접 고치지 않는다. 문서 첫머리의 집계 문장은 문서에서 함께 고친다. 월간 목록은 [수집 기준](research/hiring-monthly/README.md)의 절차대로 JSON을 만든 뒤 `npm run generate:hiring-monthly`로 문서와 README 요약을 갱신한다.
 
 직접 측정한 성과를 주장하려면 기간·표본·계산 방법을 제공한다. 공개할 수 없다면 해당 수치를 지우고 관찰 가능한 상태만 남긴다. 외부 조직이 발표한 수치를 인용할 때는 발표 주체와 미공개 조건을 명시하고 자체 발표와 독립 검증을 구분한다. 세부 기준은 [출처 정책](research/source-policy.md)을 따른다.
 

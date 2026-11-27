@@ -24,6 +24,7 @@ Availability and source access are separate. An application link or open label d
 
 ## Record index
 
+<!-- hiring-signals:start -->
 | ID | Employer | Original title | Role scope | Observed availability |
 |---|---|---|---|---|
 | [J001](#j001) | FuriosaAI | Software Engineer, Compiler (AX Engineer) | Internal AX | Unverified |
@@ -707,6 +708,7 @@ A posting for building AI agents for public-sector and enterprise customers from
 - Practice links: [P1](../projects/01-safe-assistant.md) · [P3](../projects/03-sandbox-integration.md) · [P4](../projects/04-production-pilot.md)
 
 - `J039-S1` [Recruitment platform](https://www.jobkorea.co.kr/Recruit/GI_Read/50165483): Body read · Open indication observed. Published unknown / closes 2026-11-13 / checked 2026-10-27. A 2026-11-13 deadline and an instant-apply button were observed. Applications opened on 2026-10-14.
+<!-- hiring-signals:end -->
 
 ## Search coverage and held candidates
 
