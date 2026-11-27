@@ -38,6 +38,7 @@ const labels = {
     rolling: "상시",
     unknownDate: "미확인",
     duplicate: (id) => `${id}와 중복 가능`,
+    linkRemoved: (date) => `공고 페이지 삭제(404), ${date} 확인`,
   },
   en: {
     role: { ax: "AX", "ai-agent": "AI Agent", fde: "FDE" },
@@ -65,6 +66,7 @@ const labels = {
     rolling: "Rolling",
     unknownDate: "Unknown",
     duplicate: (id) => `possible duplicate of ${id}`,
+    linkRemoved: (date) => `posting page removed (404), checked ${date}`,
   },
 };
 
@@ -95,6 +97,12 @@ export function validateMonth(data) {
     if (posting.status_basis === "deadline-passed" && (!passed || posting.status !== "closed")) failures.push(`${label}: deadline-passed needs a past deadline and closed status`);
     if (posting.status === "open" && (passed || posting.status_basis !== "deadline-and-no-closed-notice")) failures.push(`${label}: open needs a current deadline and no closed notice`);
     if (posting.status_basis === "closed-notice" && posting.status !== "closed") failures.push(`${label}: closed-notice needs closed status`);
+    if (posting.url === null) {
+      if (!datePattern.test(posting.removed_checked_at ?? "") || posting.removed_checked_at < data.checked_at) {
+        failures.push(`${label}: a posting without a url needs removed_checked_at on or after checked_at`);
+      }
+    } else if (typeof posting.url !== "string" || !posting.url) failures.push(`${label}: url must be a link or null`);
+    else if (posting.removed_checked_at !== undefined) failures.push(`${label}: removed_checked_at is only for postings whose url is null`);
     byPlatformId.set(posting.platform_id, posting.id);
   });
   for (const item of [...data.postings, ...data.held, ...data.excluded]) {
@@ -187,12 +195,16 @@ export function renderMonth(data, language) {
     const notes = posting.tags.map((tag) => l.tag[tag]);
     if (posting.possible_duplicate_of) notes.push(l.duplicate(idOf.get(posting.possible_duplicate_of)));
     if (posting.note && ko) notes.push(posting.note);
+    if (posting.url === null) notes.push(l.linkRemoved(posting.removed_checked_at));
     const basis = l.basis[posting.status_basis];
     const status = basis ? `${l.status[posting.status]} (${basis})` : l.status[posting.status];
+    const title = posting.url
+      ? `[${cell(posting.title_original)}](${posting.url})`
+      : `${cell(posting.title_original)} (${l.platformName[posting.platform ?? "jobkorea"]} ${posting.platform_id})`;
     lines.push(`| ${[
       posting.id,
       cell(posting.company),
-      `[${cell(posting.title_original)}](${posting.url})`,
+      title,
       l.role[posting.role_type],
       posting.start_date ?? l.unknownDate,
       posting.deadline === "rolling" ? l.rolling : posting.deadline,
@@ -256,7 +268,7 @@ export function renderReadmeBlock(data, months, language) {
         "|---|---|---|",
         ...rows,
         "",
-        `재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 목록은 매달 갱신합니다. 공고별 책임과 요건은 [공고로 보는 AX 직무 해설](research/hiring-signals.md)에서 볼 수 있습니다. [${monthName(data.month, "ko")} 전체 목록](${base}/${data.month}.md) · [수집 기준](${base}/README.md)${archive ? ` · 지난 목록: ${archive}` : ""}`,
+        `재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 다음 목록은 수집 방식을 다시 확인한 뒤 추가하며, 정기 갱신 일정은 아직 정하지 않았습니다. 공고별 책임과 요건은 [공고로 보는 AX 직무 해설](research/hiring-signals.md)에서 볼 수 있습니다. [${monthName(data.month, "ko")} 전체 목록](${base}/${data.month}.md) · [수집 기준](${base}/README.md)${archive ? ` · 지난 목록: ${archive}` : ""}`,
       ]
     : [
         `**Monthly hiring snapshot (${monthName(data.month, "en")})**: ${p.length} Korean AX, AI Agent, and FDE postings that opened between ${data.window.from} and ${data.window.to}, collected from ${collected}. As of ${data.checked_at}, ${open} were open and ${closed} closed.`,
@@ -265,7 +277,7 @@ export function renderReadmeBlock(data, months, language) {
         "|---|---|---|",
         ...rows,
         "",
-        `Reposts and project postings are mixed in, so these are not unique vacancies. The list is updated monthly. For per-posting responsibilities and requirements, see [AX roles explained through job postings](research/hiring-signals.md). [Full ${monthName(data.month, "en")} list](${base}/${data.month}.md) · [Collection criteria](${base}/README.md)${archive ? ` · Archive: ${archive}` : ""}`,
+        `Reposts and project postings are mixed in, so these are not unique vacancies. The next list will be added after the collection method is rechecked; no regular update schedule is set yet. For per-posting responsibilities and requirements, see [AX roles explained through job postings](research/hiring-signals.md). [Full ${monthName(data.month, "en")} list](${base}/${data.month}.md) · [Collection criteria](${base}/README.md)${archive ? ` · Archive: ${archive}` : ""}`,
       ];
   return [readmeMarkers[0], ...lines, readmeMarkers[1]].join("\n");
 }

@@ -49,6 +49,24 @@ test("rejects start dates outside the window and repeated platform ids", () => {
   assert.ok(failures.some((failure) => failure.includes("listed more than once")));
 });
 
+test("keeps a listed posting whose page was removed later, without its link", () => {
+  const data = fixture();
+  data.postings[0].url = null;
+  assert.ok(validateMonth(data).some((failure) => failure.includes("needs removed_checked_at")));
+  data.postings[0].removed_checked_at = "2026-10-20";
+  assert.ok(validateMonth(data).some((failure) => failure.includes("needs removed_checked_at")));
+  data.postings[0].removed_checked_at = "2026-11-27";
+  assert.deepEqual(validateMonth(data), []);
+  const ko = renderMonth(data, "ko");
+  assert.match(ko, /목록 2건: 모집 중 1건 · 마감 1건/);
+  assert.match(ko, /\| AX Engineer \(잡코리아 1\) \|/);
+  assert.match(ko, /공고 페이지 삭제\(404\), 2026-11-27 확인/);
+  assert.doesNotMatch(ko, /example\.com\/1\)/);
+  assert.match(renderMonth(data, "en"), /posting page removed \(404\), checked 2026-11-27/);
+  data.postings[1].removed_checked_at = "2026-11-27";
+  assert.ok(validateMonth(data).some((failure) => failure.includes("only for postings whose url is null")));
+});
+
 test("replaces only the marked README block with the latest month", () => {
   const data = fixture();
   const block = renderReadmeBlock(data, ["2026-10", "2026-09"], "ko");

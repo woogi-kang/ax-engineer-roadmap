@@ -99,7 +99,7 @@ Learn the responsibilities of an AX Engineer and how role scope differs between 
 | AI Agent | 72 | 70 |
 | FDE | 19 | 17 |
 
-Reposts and project postings are mixed in, so these are not unique vacancies. The list is updated monthly. For per-posting responsibilities and requirements, see [AX roles explained through job postings](research/hiring-signals.md). [Full October 2026 list](research/hiring-monthly/2026-10.md) · [Collection criteria](research/hiring-monthly/README.md)
+Reposts and project postings are mixed in, so these are not unique vacancies. The next list will be added after the collection method is rechecked; no regular update schedule is set yet. For per-posting responsibilities and requirements, see [AX roles explained through job postings](research/hiring-signals.md). [Full October 2026 list](research/hiring-monthly/2026-10.md) · [Collection criteria](research/hiring-monthly/README.md)
 <!-- hiring-monthly:end -->
 
 ### Step 2. Learn the technical foundations

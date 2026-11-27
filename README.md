@@ -99,7 +99,7 @@ AX 엔지니어가 맡는 책임과 회사마다 다른 역할 범위를 파악�
 | AI Agent | 72 | 70 |
 | FDE | 19 | 17 |
 
-재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 목록은 매달 갱신합니다. 공고별 책임과 요건은 [공고로 보는 AX 직무 해설](research/hiring-signals.md)에서 볼 수 있습니다. [2026년 10월 전체 목록](research/hiring-monthly/2026-10.md) · [수집 기준](research/hiring-monthly/README.md)
+재게시와 프로젝트 공고가 섞여 있어 고유 채용 수는 아닙니다. 다음 목록은 수집 방식을 다시 확인한 뒤 추가하며, 정기 갱신 일정은 아직 정하지 않았습니다. 공고별 책임과 요건은 [공고로 보는 AX 직무 해설](research/hiring-signals.md)에서 볼 수 있습니다. [2026년 10월 전체 목록](research/hiring-monthly/2026-10.md) · [수집 기준](research/hiring-monthly/README.md)
 <!-- hiring-monthly:end -->
 
 ### 2단계. 기술 기초 익히기

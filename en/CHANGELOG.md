@@ -19,6 +19,11 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Added the caution on inferring from case names and evidence stages, previously only in Korean, to the English case index
 - Renamed the two job-posting pages to "AX roles explained through job postings" (curated sample for understanding the role) and "Monthly hiring snapshot" (full monthly list), and opened each with its purpose and a link to the other
 
+### Fixed
+
+- Updated the monthly-list generator, check, and collection criteria so a posting whose page was removed after listing (M2610-131, 404 confirmed on 2026-11-27) keeps its entry and status while only its link is dropped
+- Corrected the statement that the monthly hiring list is updated every month to match the current state (only the October 2026 list exists and no regular update schedule is set)
+
 ## [0.4.0] - 2026-10-27
 
 ### Added

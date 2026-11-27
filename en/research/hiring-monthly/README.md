@@ -1,8 +1,8 @@
 # Monthly hiring snapshot and collection criteria
 
-> Read this page to see how many Korean AX, AI Agent, and FDE postings are out now and what kinds they are. A full title-level list is rebuilt every month. To understand the role by reading individual responsibilities and requirements, see [AX roles explained through job postings](../hiring-signals.md).
+> Read this page to see how many Korean AX, AI Agent, and FDE postings are out now and what kinds they are. A full title-level list is built one month at a time. To understand the role by reading individual responsibilities and requirements, see [AX roles explained through job postings](../hiring-signals.md).
 
-Postings are collected the same way each month. Monthly lists, criteria, and procedure follow below.
+Postings are collected the same way for each list. As of 2026-11-27 only the October 2026 list exists. The next list will be added after the collection method is rechecked, and no regular update schedule is set yet. Monthly lists, criteria, and procedure follow below.
 
 ## Monthly lists
 
@@ -39,7 +39,7 @@ Borderline postings stay in the excluded list with their reason so the next mont
 - Open (`open`): the deadline is on or after the check date, or the posting is rolling, and no closed notice appears.
 - Closed (`closed`): the page shows a closed notice (`closed-notice`) or the deadline has passed (`deadline-passed`).
 - Unverified (`unknown`): the detail page was read but its status could not be judged. A posting whose page could not be read is held (`held`) instead of listed.
-- If a posting page returns 404, set the held reason to `removed` and its `url` to `null` so the external link check (`npm run check:external`) does not fail on a dead link.
+- If a posting page returns 404, set the held reason to `removed` and its `url` to `null` so the external link check (`npm run check:external`) does not fail on a dead link. If a posting already in the list later returns 404, do not remove it. Keep its status as of the check date, set only `url` to `null`, and record the date the 404 was confirmed in `removed_checked_at`.
 - Remaining-time counters can be cached and are not used to judge status.
 - Tags: `project-or-freelance`, `company-undisclosed` (for example, headhunter postings), and `training-matching` (postings matched through a training program).
 
@@ -75,6 +75,7 @@ A few postings whose bodies show clear responsibilities and requirements can als
 | --- | --- |
 | `month`, `window`, `checked_at` | List month, application start window, check date |
 | `queries`, `platforms` | Queries used and per-platform collection results |
+| `postings[].url`, `removed_checked_at` | Posting address. If the page is removed after listing, set it to `null` and record the date the 404 was confirmed |
 | `postings[].role_type` | `ax`, `ai-agent`, `fde` |
 | `postings[].start_date`, `start_basis` | Start date shown on the page, or `null` with `id-range` |
 | `postings[].deadline` | Deadline or `rolling` |
