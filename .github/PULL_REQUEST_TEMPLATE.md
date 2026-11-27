@@ -23,6 +23,8 @@
 
 ## 검증 / Validation
 
+<!-- 오탈자·링크 같은 작은 수정이라면 아래 항목을 비워 둬도 됩니다. 검사는 CI가 실행합니다. / For small fixes such as typos or links, you may leave these unchecked; CI runs the checks. -->
+
 - [ ] `npm run verify`
 - [ ] 변경된 링크를 직접 열어 봤다. / I opened and checked the changed links.
 - [ ] 새 역량 항목이 `이해·선택·적용·검증·실패 대응` 또는 `Understand · Choose · Apply · Verify · Handle failure` 형식을 따른다.
