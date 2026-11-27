@@ -32,12 +32,22 @@ const labels = {
       "outside-window": "접수 시작일이 수집 기간 이전",
       unreadable: "상세 페이지를 읽지 못함",
       removed: "공고 페이지가 삭제됨(404)",
+      sales: "영업 직무",
+      overseas: "해외 근무",
+      "business-planning": "사업개발·사업기획·행정 직무",
+      "training-program": "교육생 모집 공고",
+      instructor: "강사·튜터 직무",
+      "hardware-control": "제어 하드웨어 설계 직무",
+      "academic-research": "대학 교원·연구원 채용",
+      "creative-content": "광고 크리에이티브·콘텐츠 제작 직무",
+      "hr-admin": "인사·총무 직무",
     },
     platform: { collected: "수집", "not-collected": "미수집" },
     platformName: { jobkorea: "잡코리아", saramin: "사람인", wanted: "원티드", linkedin: "링크드인" },
     rolling: "상시",
     unknownDate: "미확인",
     duplicate: (id) => `${id}와 중복 가능`,
+    linkRemoved: (date) => `공고 페이지가 삭제됨(404), ${date} 확인`,
   },
   en: {
     role: { ax: "AX", "ai-agent": "AI Agent", fde: "FDE" },
@@ -59,12 +69,22 @@ const labels = {
       "outside-window": "Application opened before the window",
       unreadable: "Detail page could not be read",
       removed: "Posting page removed (404)",
+      sales: "Sales role",
+      overseas: "Job located outside Korea",
+      "business-planning": "Business development, planning, or administration role",
+      "training-program": "Trainee recruitment for a training program",
+      instructor: "Instructor or tutor role",
+      "hardware-control": "Control hardware design role",
+      "academic-research": "University faculty or researcher hiring",
+      "creative-content": "Advertising creative or content production role",
+      "hr-admin": "HR or general affairs role",
     },
     platform: { collected: "Collected", "not-collected": "Not collected" },
     platformName: { jobkorea: "JobKorea", saramin: "Saramin", wanted: "Wanted", linkedin: "LinkedIn" },
     rolling: "Rolling",
     unknownDate: "Unknown",
     duplicate: (id) => `possible duplicate of ${id}`,
+    linkRemoved: (date) => `posting page removed (404), checked ${date}`,
   },
 };
 
@@ -95,6 +115,12 @@ export function validateMonth(data) {
     if (posting.status_basis === "deadline-passed" && (!passed || posting.status !== "closed")) failures.push(`${label}: deadline-passed needs a past deadline and closed status`);
     if (posting.status === "open" && (passed || posting.status_basis !== "deadline-and-no-closed-notice")) failures.push(`${label}: open needs a current deadline and no closed notice`);
     if (posting.status_basis === "closed-notice" && posting.status !== "closed") failures.push(`${label}: closed-notice needs closed status`);
+    if (posting.url === null) {
+      if (!datePattern.test(posting.removed_checked_at ?? "") || posting.removed_checked_at < data.checked_at) {
+        failures.push(`${label}: a posting without a url needs removed_checked_at on or after checked_at`);
+      }
+    } else if (typeof posting.url !== "string" || !posting.url) failures.push(`${label}: url must be a link or null`);
+    else if (posting.removed_checked_at !== undefined) failures.push(`${label}: removed_checked_at is only for postings whose url is null`);
     byPlatformId.set(posting.platform_id, posting.id);
   });
   for (const item of [...data.postings, ...data.held, ...data.excluded]) {
@@ -187,12 +213,16 @@ export function renderMonth(data, language) {
     const notes = posting.tags.map((tag) => l.tag[tag]);
     if (posting.possible_duplicate_of) notes.push(l.duplicate(idOf.get(posting.possible_duplicate_of)));
     if (posting.note && ko) notes.push(posting.note);
+    if (posting.url === null) notes.push(l.linkRemoved(posting.removed_checked_at));
     const basis = l.basis[posting.status_basis];
     const status = basis ? `${l.status[posting.status]} (${basis})` : l.status[posting.status];
+    const title = posting.url
+      ? `[${cell(posting.title_original)}](${posting.url})`
+      : `${cell(posting.title_original)} (${l.platformName[posting.platform ?? "jobkorea"]} ${posting.platform_id})`;
     lines.push(`| ${[
       posting.id,
       cell(posting.company),
-      `[${cell(posting.title_original)}](${posting.url})`,
+      title,
       l.role[posting.role_type],
       posting.start_date ?? l.unknownDate,
       posting.deadline === "rolling" ? l.rolling : posting.deadline,
