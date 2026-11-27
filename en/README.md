@@ -15,6 +15,7 @@ This repository is a roadmap for juniors and career changers preparing for AX en
 
 ## Contents
 
+- [What this repository is building](#what-this-repository-is-building)
 - [What does an AX Engineer do?](#what-does-an-ax-engineer-do)
 - [Find your starting point](#find-your-starting-point)
 - [Roadmap at a glance](#roadmap-at-a-glance)
@@ -26,6 +27,18 @@ This repository is a roadmap for juniors and career changers preparing for AX en
 - [Working templates](#working-templates)
 - [Frequently asked questions](#frequently-asked-questions)
 - [Source principles and participation](#source-principles-and-participation)
+
+## What this repository is building
+
+This repository helps people preparing for AX engineering **check what the market actually asks for with data, build work that matches it, and show that work with evidence**. It is building three things. The table also lists what does not exist yet.
+
+| Pillar | Available now | Not yet available |
+|---|---|---|
+| Market observation | [AX roles explained through job postings](research/hiring-signals.md) · [Monthly hiring snapshot](research/hiring-monthly/README.md) · [Public cases](research/public-ax-cases.md) · [Failure and stop cases](research/ax-failure-cases.md) | Data organized so that experience, technology, and competency requirements in postings can be counted |
+| Competency map | [Role model](roadmap/role-model.md) · [Competency framework](roadmap/competency-map.md) · [Seven technical foundations](technical-foundations/README.md) | Competency weights confirmed with posting data, and learning resources for each area |
+| Practice kit | [P1–P5 exit criteria](projects/README.md) · [Workflow cases](case-studies/README.md) · [Runnable synthetic VOC example](case-studies/beauty-d2c-voc/README.md) | Starter code and reference implementations for P1–P3 that run right after cloning |
+
+The five roadmap steps below follow these three in learning order.
 
 ## What does an AX Engineer do?
 
