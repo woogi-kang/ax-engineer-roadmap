@@ -11,6 +11,17 @@ AX Engineer Roadmap prioritizes contributions that strengthen decisions and evid
 - Template improvements
 - Typo, broken-link, and accessibility fixes
 
+## Small fixes can be sent right away
+
+Small fixes such as typos, broken links, and awkward sentences need no setup.
+
+- Edit the file on GitHub and open a pull request. You do not need Node.js or Python; CI runs the checks.
+- You may fix only the Korean or only the English edition. A maintainer aligns the other edition before merging.
+- If you could not apply `korean-humanizer`, say so in the pull request. A maintainer checks the sentences before merging.
+- To only report what needs fixing, open an [issue](https://github.com/woogi-kang/ax-engineer-roadmap/issues/new/choose).
+
+New cases and competency entries, source or figure changes, and script changes follow the steps below.
+
 ## Before contributing
 
 1. Read the [source policy](research/source-policy.md).
@@ -20,7 +31,7 @@ AX Engineer Roadmap prioritizes contributions that strengthen decisions and evid
 
 ## Local setup and full validation
 
-Use Node.js `22.23.4` or newer and Python `3.11.18` or newer. Run the same validation as CI from a fresh clone.
+Validate locally unless the change is a small fix. Use Node.js `22.23.4` or newer and Python `3.11.18` or newer. Run the same validation as CI from a fresh clone.
 
 ```bash
 npm run verify
@@ -51,7 +62,7 @@ When adding a Korean document, update the same path under `en/`. The English edi
 
 ## Writing and terminology
 
-Apply the `korean-humanizer` skill whenever adding Korean content or revising Korean sentences. Verify the evidence and write a draft first, then identify and polish awkward passages in the changed text and reread it for preserved meaning. Follow the [project working instructions](AGENTS.md).
+Apply the `korean-humanizer` skill whenever adding Korean content or revising Korean sentences. The skill is [hjongc/humanizer-kr](https://github.com/hjongc/humanizer-kr). If it is not installed, read the repository's `SKILL.md` and follow its minimal-edit procedure. Verify the evidence and write a draft first, then identify and polish awkward passages in the changed text and reread it for preserved meaning. Follow the [project working instructions](AGENTS.md).
 
 - Do not change facts, numbers, dates, proper names, quotations, technical abbreviations, or evidence links for stylistic reasons.
 - Keep technical documentation plain and do not replace sound existing prose in bulk.
@@ -93,9 +104,9 @@ To claim an outcome measured by the contributor, provide its period, sample, and
 - Keep one issue or argument per pull request.
 - Explain why the change is needed and how it affects readers.
 - Record the verification date and source type for new links.
-- Run `npm run verify`.
+- Run `npm run verify` unless the change is a small fix.
 - Even when a draft is generated with AI, the submitter must personally review its facts and language.
-- Apply `korean-humanizer` to added or revised Korean passages and verify that their meaning is preserved.
+- Apply `korean-humanizer` to added or revised Korean passages and verify that their meaning is preserved. If you could not apply it, say so in the pull request.
 
 ## License
 
