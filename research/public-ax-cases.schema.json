@@ -38,6 +38,7 @@
           "source_urls",
           "related_cases",
           "review_status",
+          "catalog",
           "claims",
           "baseline_deployment_stage"
         ],
@@ -131,6 +132,87 @@
             ],
             "description": "Whether selected follow-up or correction claims are recorded. not-rechecked means the original case-wide evidence has not been reverified; it does not mean no original URL or individual figure was spot-checked."
           },
+          "catalog": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "layout"
+            ],
+            "description": "Text of this case's section in the Markdown catalogs, printed by scripts/render-public-cases.mjs. It holds only prose that the claims do not record; lines that repeat a claim are assembled from the claim.",
+            "properties": {
+              "layout": {
+                "enum": [
+                  "detailed",
+                  "summary",
+                  "brief"
+                ],
+                "description": "detailed: labeled points followed by notes. summary: workflow, practice, and evidence points, then a generated claim-record line. brief: workflow and evidence lines generated from the initial-review claim; a point stored here replaces the generated line."
+              },
+              "heading": {
+                "$ref": "#/$defs/localizedText",
+                "description": "Section title printed after the case ID. When omitted, the organization name is printed."
+              },
+              "points": {
+                "type": "object",
+                "additionalProperties": false,
+                "description": "Labeled lines, printed in the order fixed by the renderer. Each layout accepts only its own points.",
+                "properties": {
+                  "problem": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "verified_workflow": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "recorded_workflow": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "initial_workflow": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "later_change": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "ai_role": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "human_judgment": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "operating_boundary": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "reported_result": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "operating_control": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "evaluation_method": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "roadmap_lesson": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "workflow": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "practice": {
+                    "$ref": "#/$defs/catalogText"
+                  },
+                  "evidence": {
+                    "$ref": "#/$defs/catalogText"
+                  }
+                }
+              },
+              "notes": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/catalogNote"
+                }
+              }
+            }
+          },
           "claims": {
             "type": "array",
             "minItems": 1,
@@ -215,6 +297,47 @@
         "en": {
           "type": "string",
           "minLength": 1
+        }
+      }
+    },
+    "catalogText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ko"
+      ],
+      "description": "One catalog line. en is omitted where the English catalog has no matching line.",
+      "properties": {
+        "ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "catalogNote": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A paragraph after the points. Give either text, or claim with style; the renderer rejects any other combination.",
+      "properties": {
+        "text": {
+          "$ref": "#/$defs/localizedText"
+        },
+        "claim": {
+          "type": "string",
+          "pattern": "^[KG][0-9]{2}-[a-z0-9-]+$",
+          "description": "ID of a claim in the same case. The paragraph is assembled from that claim."
+        },
+        "style": {
+          "enum": [
+            "source-check",
+            "review",
+            "plain"
+          ],
+          "description": "source-check: publication and check dates, then the claim statement. review: check date, then the statement, limitations, and numbered sources. plain: the review body with only the claim ID in front."
         }
       }
     },
