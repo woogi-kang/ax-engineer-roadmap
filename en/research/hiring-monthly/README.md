@@ -7,7 +7,7 @@ Postings are collected the same way each month. Monthly lists, criteria, and pro
 ## Monthly lists
 
 - [November 2026](2026-11.md): applications opened 2026-10-28 to 2026-11-27, 156 JobKorea postings (including 17 reposts with the same company and title as October).
-- [October 2026](2026-10.md): applications opened 2026-09-27 to 2026-10-27, 137 JobKorea postings (one moved to held after it was found removed on 2026-11-27).
+- [October 2026](2026-10.md): applications opened 2026-09-27 to 2026-10-27, 138 JobKorea postings (one had its link dropped after its page was found removed on 2026-11-27).
 
 ## Collection scope
 
@@ -40,7 +40,7 @@ Borderline postings stay in the excluded list with their reason so the next mont
 - Open (`open`): the deadline is on or after the check date, or the posting is rolling, and no closed notice appears.
 - Closed (`closed`): the page shows a closed notice (`closed-notice`) or the deadline has passed (`deadline-passed`).
 - Unverified (`unknown`): the detail page was read but its status could not be judged. A posting whose page could not be read is held (`held`) instead of listed.
-- If a posting page returns 404, set the held reason to `removed` and its `url` to `null` so the external link check (`npm run check:external`) does not fail on a dead link.
+- If a posting page returns 404, set the held reason to `removed` and its `url` to `null` so the external link check (`npm run check:external`) does not fail on a dead link. If a posting already in the list later returns 404, do not remove it. Keep its status as of the check date, set only `url` to `null`, and record the date the 404 was confirmed in `removed_checked_at`.
 - Remaining-time counters can be cached and are not used to judge status.
 - Tags: `project-or-freelance`, `company-undisclosed` (for example, headhunter postings), and `training-matching` (postings matched through a training program).
 
@@ -76,6 +76,7 @@ A few postings whose bodies show clear responsibilities and requirements can als
 | --- | --- |
 | `month`, `window`, `checked_at` | List month, application start window, check date |
 | `queries`, `platforms` | Queries used and per-platform collection results |
+| `postings[].url`, `removed_checked_at` | Posting address. If the page is removed after listing, set it to `null` and record the date the 404 was confirmed |
 | `postings[].role_type` | `ax`, `ai-agent`, `fde` |
 | `postings[].start_date`, `start_basis` | Start date shown on the page, or `null` with `id-range` |
 | `postings[].deadline` | Deadline or `rolling` |

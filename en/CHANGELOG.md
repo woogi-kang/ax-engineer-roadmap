@@ -7,7 +7,7 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 ### Added
 
 - Added 12 AX, AI agent, and FDE posting records (J028–J039), bringing the hiring registry to 39, and recorded per-platform access results and held candidates from 2026-10-27
-- Added a monthly title-level list of every Korean AX, AI Agent, and FDE posting (October 2026: 137 JobKorea postings), with collection criteria, procedure, and a generator and check script
+- Added a monthly title-level list of every Korean AX, AI Agent, and FDE posting (October 2026: 138 JobKorea postings), with collection criteria, procedure, and a generator and check script
 - Added a last-month job-posting summary (postings and open counts by type) with monthly list links to Step 1 of both root READMEs, regenerated and checked with the monthly list
 - Added 16 public AX failure and stop cases (4 Korean, 12 international) with the attempted change, deciding metric, outcome, cause tags, sources and check dates, a capstone design checklist, structured data and a bilingual consistency check
 - Added linked failure-case checks (`Failure-case check`) to all 15 case documents and a per-case link table to the case index, generated and checked from `ax-failure-cases.json` (`npm run generate:failure-links`)
@@ -20,6 +20,10 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Linked the capstone design checklist from the common project tools, toolkit index, workflow execution rules, experiment card, Week 1 of the 12-week path, and the public case-to-practice table, and added failure-case, posting-record, and monthly-list update steps to the contribution guide
 - Added the caution on inferring from case names and evidence stages, previously only in Korean, to the English case index
 - Renamed the two job-posting pages to "AX roles explained through job postings" (curated sample for understanding the role) and "Monthly hiring snapshot" (full monthly list), and opened each with its purpose and a link to the other
+
+### Fixed
+
+- Updated the monthly-list generator, check, and collection criteria so a posting whose page was removed after listing (M2610-131, 404 confirmed on 2026-11-27) keeps its entry and status while only its link is dropped
 
 ## [0.4.0] - 2026-10-27
 

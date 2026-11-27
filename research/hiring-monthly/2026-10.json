@@ -2440,6 +2440,27 @@
     {
       "id": "M2610-131",
       "platform": "jobkorea",
+      "platform_id": "50244295",
+      "url": null,
+      "removed_checked_at": "2026-11-27",
+      "company": "㈜조인아이티",
+      "title_original": "Dify기반AI워크플로우및Agent개발/11.02-27.01/고급/역삼역/필수회신 참조/",
+      "role_type": "ai-agent",
+      "start_date": "2026-10-26",
+      "start_basis": "page",
+      "deadline": "2026-11-25",
+      "status": "open",
+      "status_basis": "deadline-and-no-closed-notice",
+      "employment": "프리랜서",
+      "location": "서울 강남구",
+      "experience": "9년이상",
+      "tags": [
+        "project-or-freelance"
+      ]
+    },
+    {
+      "id": "M2610-132",
+      "platform": "jobkorea",
       "platform_id": "50247501",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50247501",
       "company": "㈜케이씨엠에스",
@@ -2458,7 +2479,7 @@
       ]
     },
     {
-      "id": "M2610-132",
+      "id": "M2610-133",
       "platform": "jobkorea",
       "platform_id": "50249209",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50249209",
@@ -2478,7 +2499,7 @@
       ]
     },
     {
-      "id": "M2610-133",
+      "id": "M2610-134",
       "platform": "jobkorea",
       "platform_id": "50249214",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50249214",
@@ -2498,7 +2519,7 @@
       ]
     },
     {
-      "id": "M2610-134",
+      "id": "M2610-135",
       "platform": "jobkorea",
       "platform_id": "50251229",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50251229",
@@ -2516,7 +2537,7 @@
       "tags": []
     },
     {
-      "id": "M2610-135",
+      "id": "M2610-136",
       "platform": "jobkorea",
       "platform_id": "50251239",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50251239",
@@ -2534,7 +2555,7 @@
       "tags": []
     },
     {
-      "id": "M2610-136",
+      "id": "M2610-137",
       "platform": "jobkorea",
       "platform_id": "50251252",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50251252",
@@ -2552,7 +2573,7 @@
       "tags": []
     },
     {
-      "id": "M2610-137",
+      "id": "M2610-138",
       "platform": "jobkorea",
       "platform_id": "50252108",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50252108",
@@ -2580,14 +2601,6 @@
       "title_original": "자동차.AI Agent구축/즉시-3개월/고급/의왕/경험(LLM연계,RAG 등/상세참조/",
       "reason": "removed",
       "note": "2026-10-27 상세 본문을 읽지 못했고 같은 날 링크 검사에서 404를 반환"
-    },
-    {
-      "platform_id": "50244295",
-      "url": null,
-      "company": "㈜조인아이티",
-      "title_original": "Dify기반AI워크플로우및Agent개발/11.02-27.01/고급/역삼역/필수회신 참조/",
-      "reason": "removed",
-      "note": "2026-10-27 목록에 M2610-131로 넣었으나 2026-11-27 링크 검사에서 404를 반환해 보류로 옮김"
     }
   ],
   "excluded": [
