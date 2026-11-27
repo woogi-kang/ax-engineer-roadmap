@@ -7,7 +7,7 @@ Postings are collected the same way each month. Monthly lists, criteria, and pro
 ## Monthly lists
 
 - [November 2026](2026-11.md): applications opened 2026-10-28 to 2026-11-27, 156 JobKorea postings (including 17 reposts with the same company and title as October).
-- [October 2026](2026-10.md): applications opened 2026-09-27 to 2026-10-27, 138 JobKorea postings.
+- [October 2026](2026-10.md): applications opened 2026-09-27 to 2026-10-27, 137 JobKorea postings (one moved to held after it was found removed on 2026-11-27).
 
 ## Collection scope
 
