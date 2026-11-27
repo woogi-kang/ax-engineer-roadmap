@@ -12,14 +12,21 @@ This project follows the intent of [Semantic Versioning](https://semver.org/) to
 - Added 16 public AX failure and stop cases (4 Korean, 12 international) with the attempted change, deciding metric, outcome, cause tags, sources and check dates, a capstone design checklist, structured data and a bilingual consistency check
 - Added linked failure-case checks (`Failure-case check`) to all 15 case documents and a per-case link table to the case index, generated and checked from `ax-failure-cases.json` (`npm run generate:failure-links`)
 
+- Added the November 2026 monthly hiring snapshot (applications opened 2026-10-28 to 11-27, 156 JobKorea postings, 139 new versus October) and exclusion reason codes for sales, overseas jobs, business development and planning, trainee recruitment, instructors, control hardware, university faculty and researchers, advertising creative, and HR or general affairs
+
 ### Changed
 
 - Generated the record index and record sections of the job-posting explainer, and the summary table and case records of the failure and stop cases, from their JSON registries (`npm run generate:hiring-signals`, `npm run generate:failure-cases`); the checks now fail when a document differs from the generated output or the cause table counts differ from the registry. Document content is unchanged
 - Restructured the root README as a step-by-step roadmap for juniors and career changers (starting-point table, Steps 1–5 with documents and self-checks, FAQ)
 - Linked the capstone design checklist from the common project tools, toolkit index, workflow execution rules, experiment card, Week 1 of the 12-week path, and the public case-to-practice table, and added failure-case, posting-record, and monthly-list update steps to the contribution guide
 - Generated the overview table and case sections of the public AX case catalog from `public-ax-cases.json` (`npm run generate:public-cases`), moving the case text that existed only in Markdown into each case's `catalog` field. Sentences already recorded in `claims` are taken from the claim when rendering instead of copied, and the check fails when a document differs from the generated output. Document content is unchanged apart from one duplicate blank line removed before G16
+- Added a short path for small fixes to the contribution guide (edit on GitHub without setup, fix one language only, maintainers check the Korean polish) and named the skill repository that `korean-humanizer` refers to in the contribution guide and working instructions
 - Added the caution on inferring from case names and evidence stages, previously only in Korean, to the English case index
 - Renamed the two job-posting pages to "AX roles explained through job postings" (curated sample for understanding the role) and "Monthly hiring snapshot" (full monthly list), and opened each with its purpose and a link to the other
+
+### Fixed
+
+- Updated the monthly-list generator, check, and collection criteria so a posting whose page was removed after listing (M2610-131, 404 confirmed on 2026-11-27) keeps its entry and status while only its link is dropped
 
 ## [0.4.0] - 2026-10-27
 
